@@ -1,7 +1,9 @@
 # Release selection and provenance
 
-This private repository is a fresh snapshot, not a rewrite of the workspace
-history. source_summary.json pins the source commit and tree;
+This repository is a fresh snapshot, not a rewrite of the workspace
+history. It was independently reviewed and first published privately; the
+author subsequently authorized public visibility. source_summary.json pins
+the source commit and tree;
 source_tree.jsonl independently lists every tracked workspace path/mode/blob.
 source_manifest.jsonl accounts for each with include/exclude reasons, size
 and SHA-256. Included thesis paths lose only the ug_thesis_2026/ prefix.

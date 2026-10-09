@@ -2,8 +2,8 @@
   {
     "path": "README.md",
     "reason": "reviewer navigation, verification, selection, or excluded-data placeholder",
-    "sha256": "f31adc9e782a6ad141e2e1823c78a16c4efba51cbce6538aac729a0de9ed3dac",
-    "size": 4320,
+    "sha256": "be4ff106701825a8a2e33993cc4421ff89a04483f4c389cadae942633dd281a6",
+    "size": 4307,
     "source_kind": "release_authored"
   },
   {
@@ -37,8 +37,8 @@
   {
     "path": "release/SELECTION.md",
     "reason": "reviewer navigation, verification, selection, or excluded-data placeholder",
-    "sha256": "159d12573a29755610966dae41ef1cb93eef4048c9c4a9b918f668184c447cf4",
-    "size": 2923,
+    "sha256": "bfa2451104ad919d1920b8f8d16ee553baaa3ba1e0c42f3bc735768b1040838c",
+    "size": 3030,
     "source_kind": "release_authored"
   },
   {
@@ -51,8 +51,8 @@
   {
     "path": "release/THIRD_PARTY_NOTICES.md",
     "reason": "reviewer navigation, verification, selection, or excluded-data placeholder",
-    "sha256": "8f48892d1a4fde4da2b11d0ddcb82c4156b0cf1a9f0bbe209299a9f03b3f3be9",
-    "size": 1516,
+    "sha256": "71c90c5431b7155c32044326d41f4d04d5fd58f1e78c5c3cdcd257c0f3ef2ab8",
+    "size": 1486,
     "source_kind": "release_authored"
   },
   {

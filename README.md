@@ -44,11 +44,11 @@ The results below are historical pinned measurements, not new release runs.
 This is a single-person, single-camera, rigid marked-object study. It does
 not track fingers. Recovery has holding-context and visibility limits;
 regrasping, free-arm occlusion and simultaneous marker loss remain limits.
-The private snapshot includes scientific source and pinned evidence, but
+The public snapshot includes scientific source and pinned evidence, but
 excludes raw recordings, model weights and generated environments. Full
 reproduction needs the original data and workstation dependencies.
 [Reproduction limits](release/REPRODUCTION.md). The Unity character's
-redistribution rights have not been established for a future public release.
+redistribution rights have not been established by this release.
 [Credits and rights](release/THIRD_PARTY_NOTICES.md).
 
 ## Repository map
