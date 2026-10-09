@@ -1,0 +1,48 @@
+{
+  "purpose": "Slide 12 static figure replaced by the chain-growth film (D-387).",
+  "generator": "presentation/defense_2026/anim/patch_slide12_video.py",
+  "generator_sha256": "e5cad824e6216bef7b3c3d5a2991fd3f480dcaa931d71c5a74d2e2ceb469db19",
+  "pptx": "presentation/defense_2026/Thesis_Defence_2026.pptx",
+  "old": {
+    "sha256": "da94af7c11b30defdc5de453b0014c5f2b396bc99740293e188770d766a0a749",
+    "bytes": 102708312,
+    "entries": 495
+  },
+  "new": {
+    "sha256": "3dcaf1068b5e7668e8b8ed325e2145027d7bb91566e89ea31ee3cc581d43dff1",
+    "bytes": 103078203,
+    "entries": 496
+  },
+  "zip_entry_comparison": {
+    "changed_crc": [
+      "ppt/slides/_rels/slide12.xml.rels",
+      "ppt/slides/slide12.xml"
+    ],
+    "added": [
+      "ppt/media/p12_chain_growth.mp4",
+      "ppt/media/p12_chain_growth.png"
+    ],
+    "removed": [
+      "ppt/media/image10.png"
+    ],
+    "unchanged_entries": 492
+  },
+  "media_counts_after": {
+    "total": 149,
+    "mp4": 26,
+    "png": 123
+  },
+  "template": {
+    "slide": "ppt/slides/slide13.xml",
+    "shape": "p13-Torso_Frame_From_Standing_T_Pose.mp4",
+    "timing": "p:video / p:cMediaNode vol 80000, cond delay 0"
+  },
+  "slide12_relationships": {
+    "media": "rId2",
+    "video": "rId4",
+    "image": "rId5"
+  },
+  "film_sha256": "c3c72c7c25199f1271c0f533575a5113b8e605c4e82332038680b005c5419650",
+  "poster_sha256": "30f28ff9b2b206e164be00057698cfac0a262e8230ffe64457989b0661f67d65",
+  "playback_in_powerpoint": "not verified (author check)"
+}

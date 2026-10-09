@@ -1,0 +1,37 @@
+[+] scene written once -> /dev/shm/aruco_scene (desk, wall, camera poses + gravity, tabletop drop 7 mm, cube 70 mm, sensor FOVy 43.1 deg)
+[info] merging /dev/shm/rt_person_v2 + /dev/shm/rt_object_v2 -> /dev/shm/integrated_scene_v2 (delay 2 frame(s) = 66.7 ms)
+[done] 2129 output ticks
+[person] measured 254  interp 1845  held 30  blend 0  bridge 0
+[object] measured 251  interp 1743  held 119  blend 16  bridge 57
+[cadence] tick interval ms: p50 33.12  p95 35.10  p99 35.23  max 35.50
+[clock] final session rate 0.9999 session s per wall s
+[csv] /home/luo/Desktop/New_SandBox/v2/output/v2_integrate_dump.csv
+[info] calibration: v2/output/scene_calibration_r5_v2.json (object marker 45 mm)
+[done] consumed 2099 frames (0 skipped by latest-wins) in 71.0 s (29.6 fps sustained), object live on 1994
+
+=== per-stage profile (ms) ===
+  detect       p50   12.97  p95   13.77  p99   14.19  max   19.35
+  pnp          p50    0.14  p95    0.19  p99    0.22  max    0.50
+  filter+map   p50    0.16  p95    0.19  p99    0.21  max    0.93
+  total        p50   13.27  p95   14.11  p99   14.63  max   19.77
+[csv] /home/luo/Desktop/New_SandBox/v2/output/v2_object_dump.csv
+[info] source: bag Video/recording_20260825_222315.bag (recorded pacing)
+[info] ring /dev/shm/rt_frames: 8 slots x 1536032 B, color format format.bgr8, depth scale 0.001000 m/unit
+[info] timestamp domain: timestamp_domain.global_time
+[done] published 2099 frames in 71.0 s (29.6 fps sustained)
+[stage] align+publish ms: p50 2.36  p95 2.54  p99 2.67  max 6.01
+[jitter] inter-frame hw delta ms: p50 33.36  p95 33.37  p99 33.39  max 33.39  (nominal 33.33)
+[info] MediaPipe heavy on gpu, ring: /dev/shm/rt_frames
+[info] robust occlusion solver (gate + sphere recovery)
+[done] consumed 2099 frames (0 skipped by latest-wins) in 71.0 s (29.6 fps sustained)
+[robust] gated {'left_shoulder': 7, 'left_hip': 540, 'right_hip': 544, 'left_wrist': 31, 'right_elbow': 35, 'right_wrist': 2}, recovered {'right_hip': 589, 'left_hip': 565, 'left_shoulder': 12, 'left_elbow': 66, 'right_shoulder': 15, 'right_elbow': 109, 'right_wrist': 39, 'left_wrist': 129}, stabilized {'left_arm_tau_flex_hold': 283, 'left_arm_rate_limit': 58, 'right_arm_rate_limit': 37, 'right_arm_tau_flex_hold': 318}, calibrated forearm lengths {'hip_width': 0.185, 'torso_sh_R': 0.575, 'forearm_L': 0.262, 'shoulder_width': 0.339, 'upper_arm_L': 0.275, 'torso_sh_L': 0.594, 'forearm_R': 0.241, 'upper_arm_R': 0.269, 'torso_hip_L': 0.568, 'torso_hip_R': 0.57} m
+
+=== per-stage profile (ms) ===
+  mediapipe    p50    8.03  p95   21.90  p99   25.84  max   31.03
+  deproj+filt  p50    0.40  p95    0.52  p99    0.60  max    0.71
+  solve        p50    0.34  p95    0.43  p99    0.50  max    0.57
+  shm-write    p50    0.00  p95    0.01  p99    0.01  max    0.01
+  total        p50    8.78  p95   22.62  p99   26.61  max   31.76
+  30 fps budget 33.3 ms -> p99 headroom 6.7 ms
+[csv] /home/luo/Desktop/New_SandBox/v2/output/v2_person_dump.csv
+[launcher] broker + pipelines ready -- stream started

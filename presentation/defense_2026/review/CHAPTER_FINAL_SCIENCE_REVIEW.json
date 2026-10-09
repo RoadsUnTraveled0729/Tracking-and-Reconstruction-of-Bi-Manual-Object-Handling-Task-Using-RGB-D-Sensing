@@ -1,0 +1,1310 @@
+{
+  "status": "PASS",
+  "scope": "Independent scientific source review of 50 main pages and 25 Q&A pages, exact equation-display fidelity, selected rendered derivations/failure pages, and source-status review of the holding-input clip. This is not final desktop-PowerPoint playback certification.",
+  "reviewed_at_utc": "2026-09-23T03:28:02.152796+00:00",
+  "goal": "Verify chapter order, derivation correctness, detector/reconstruction distinctions, memory-copy explanation, and reference-qualified results in the English black-background revision.",
+  "key_finding": "The requested approximately 5 cm example is frame 1890: final recovered FK wrist 5.01 cm from a manual right-watch feature, versus plain FK 14.03 cm. The raw wrist remains available; elbow rejection causes both arm inputs to be masked before recovery.",
+  "source_hashes": {
+    "writing/v9/Thesis_V9.pdf": "cab52bddd93b9ef40b9c42f718b9a17ba6af6f2a7a08124a8ce366ee30d9c929",
+    "presentation/defense_2026/equation_catalog.json": "19c33f8c2c92ee6ed7cf1c74482715d8e236b9d1be131893b736a9d6221cdaae",
+    "eval/reports/r5_recovery_labeled.json": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820",
+    "eval/reports/r7_failure_mask.md": "ef1df5688bffafdc5b9e6b11222634ddc3034469d1288f60c731f802641b2121",
+    "presentation/v9/anim/video1_overlay.py": "bd92ee379893136322e7d1e1112f78108a7e9735672688c1d60191dff45a0d52",
+    "v1/mediapipe/extract_landmarks_to_csv.py": "3c7936e078a25c9c4907e58f1c218775a13be7d319cfaa7a01d01baa7d93bee2",
+    "v2/common/shm_ring.py": "8b91db56d862e6370fe82cb896bf9f25b4d2dac2c982e1863c53f72482ea222c",
+    "eval/failure/recovery_core.py": "879c56426a6f8e1d673aab6543d59c9bd220b14ecdd5130cf38f0833f9db114b",
+    "eval/offset/fit_offset.py": "4daef5a80aeb6020c2feed835532ff8fa13e13b09962afa3067523616725589c",
+    "writing/v9/audit_evidence/remove_intermediate_frame/ch7_visual_examples_sources.json": "52454e04d91e7642da71e4f9254d5da3a4e5a78d12c319c4625fb9c9cd5c206e",
+    "presentation/defense_2026/talk_content.json": "bb6fa80980d4368a35f5c649d4ee353ab79fee19a555cf7c1b239c7a94888fd3",
+    "presentation/defense_2026/backup_content.json": "dfad2bf22156133415bac86a4642ba98cbb7fea07b4200a5693d3eb0c329d4a7",
+    "presentation/defense_2026/DEFENSE_SCRIPT.md": "1e8feac6ac93a3bc73776cc32bf833a083ba0e66f6e5843fa8b0e07582b7fcd0",
+    "presentation/defense_2026/build_deck.py": "1beeec5cda72a5daf6f971d7b664845e9078eab733c4e09176900b5e365ca53a",
+    "presentation/defense_2026/equations/white_manifest.json": "e4cd89088b7dec56e9c410549a3e51caa4250635e4851d1d57d9f13b6ddb1b44",
+    "presentation/defense_2026/QA_PREP.md": "f9d3edc050b30cf754dcfe49eb414101ab6677b5b98fd7ed75e239371edfbc26",
+    "presentation/defense_2026/revision_id_map.json": "f5fe0cd3a0a8209390026b06551a27396162b2e975dc034327c8e6e26357ec2a",
+    "writing/v9/audit_evidence/ch7_restructured/object.json": "9b6835fca5dde6e892f8a1ad09a420dd239f32c27044a6179a1968f2fa1bd9fd",
+    "writing/v9/audit_evidence/ch7_restructured/human.json": "50735fe852f47a5c40a4e467da741b1359855382adb4b43b5955be2d0f3ef90b",
+    "writing/v9/audit_evidence/ch7_restructured/bare_model.json": "8b6a9abdf1e768b6f91fbc93bf3774b7f2d9f31883d21b6b1efc54bde6d6b2b2",
+    "writing/v9/audit_evidence/ch7_restructured/synthetic.json": "aa063ae243d3b8e087ed68b0252fcdd5c77e68536f30b2989c7f1218730cb88c",
+    "writing/v9/audit_evidence/ch7_restructured/natural.json": "a9672848ca11738ef78f02c81ea52636a28151f40f0b9cde38f364ddfa24288f",
+    "v2/dataset/r6b_probe_baseline.txt": "a1bc42153105c4ec50eac70f35059c7079c05325cba94e36bc48d72821b31182",
+    "v2/dataset/m03_rail_corrected.txt": "9a04a6029f04609ed06f31113a25921dcf4e94d00d130619d180556a935375ec",
+    "v2/dataset/m03_rail_corrected.json": "6bc1c4703774e6b0642955a3eed68211fae8e1b58d79077bffa9781339a9ee05",
+    "v2/integration/v2_integrate.py": "70a0b4eb7e1fdb0c1dd731d3d1effa63f14d30e39bd5f269d7770fb151e05cc1",
+    "Unity/Assets/Scripts/IntegratedSceneReceiverV2.cs": "6239ad603a0ec52b2a380200209e83c059180cd498346c2ad884eb6414dc0446",
+    "eval/output/recovery_r7/failure_mask.csv": "b7d4038bd8e7df145ec82ff9e0348ba7aabba98e47e9957c65c4ac113f6bca00",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.csv": "53e897c553efad6dfd74e9f1c430a4c29e8340538be0ca5ad531f8c50ba14505",
+    "presentation/defense_2026/committee_materials/provenance/p21-Holding_Input_And_Torso_Rejection.json": "1c4f58f94b76c4971d7884804aeffa6b88922ca27248fad1c74905be2d3e8efd",
+    "presentation/defense_2026/committee_materials/provenance/p21-Holding_Input_And_Torso_Rejection_state_audit.json": "c0818adcd1b44e438560b1a3ae65197409c8af7332b36b4071d73443d29654c4"
+  },
+  "chapter_order": [
+    {
+      "chapter": 1,
+      "title": "Introduction",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "thesis_first_printed_page": 1
+    },
+    {
+      "chapter": 2,
+      "title": "Experimental Setup and Measurements",
+      "pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "thesis_first_printed_page": 7
+    },
+    {
+      "chapter": 3,
+      "title": "Kinematic Modelling",
+      "pages": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "thesis_first_printed_page": 21
+    },
+    {
+      "chapter": 4,
+      "title": "Object Tracking and Scene Reconstruction",
+      "pages": [
+        19
+      ],
+      "thesis_first_printed_page": 40
+    },
+    {
+      "chapter": 5,
+      "title": "Pose Recovery During Tracking Failure",
+      "pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "thesis_first_printed_page": 48
+    },
+    {
+      "chapter": 6,
+      "title": "System Integration and Graphical Reconstruction",
+      "pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "thesis_first_printed_page": 66
+    },
+    {
+      "chapter": 7,
+      "title": "Experimental Evaluation",
+      "pages": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "thesis_first_printed_page": 85
+    },
+    {
+      "chapter": 8,
+      "title": "Real-Time Feasibility",
+      "pages": [
+        45,
+        46,
+        47
+      ],
+      "thesis_first_printed_page": 107
+    },
+    {
+      "chapter": 9,
+      "title": "Discussion",
+      "pages": [
+        48
+      ],
+      "thesis_first_printed_page": 116
+    },
+    {
+      "chapter": 10,
+      "title": "Conclusions and Future Work",
+      "pages": [
+        49
+      ],
+      "thesis_first_printed_page": 121
+    }
+  ],
+  "main_pages": 50,
+  "qa_pages": 25,
+  "exact_narration_passages_verified": 75,
+  "qa_guide_authorship": {
+    "path": "presentation/defense_2026/QA_PREP.md",
+    "authored_by_this_reviewer": true,
+    "validation": "35 existing questions and source-citation prefixes preserved; presentation navigation remapped from revision_id_map.json; three sourced clarification answers added; seven categories and 38 questions retained. The left-set result is explicitly a median statement.",
+    "independent_review_owner": "root",
+    "root_independent_review": "PASS: root independently inspected the remapped navigation and new Q1.6-Q1.8 against previously checked flags, metrics and manual annotation.",
+    "followup_clarification": {
+      "question": "Q2.2",
+      "change": "The 0.06 m radius and about 12 cm free-elbow displacement are explicitly the thesis worked example, separate from illustrative prior-selection geometry on presentation pages 29 and 57.",
+      "source": "Thesis V9 Section 5.6, printed p.64 / PDF p.78; equation 5.10 evaluation. build_deck.py restrained_elbow_visual separately uses illustrative shoulder-to-wrist distance 0.36 m and segment lengths 0.28/0.25 m.",
+      "source_confirmed": true,
+      "numeric_claim_changed": false,
+      "previous_guide_sha256": "48e9fd919caebe4acdecf32d80e1847c9b1b92a86cefc3a0211a94552498806a",
+      "current_guide_sha256": "f9d3edc050b30cf754dcfe49eb414101ab6677b5b98fd7ed75e239371edfbc26"
+    }
+  },
+  "qa_backprojection_chapter_check": {
+    "page": 68,
+    "chapter": 2,
+    "section": "Q&A | Chapter 2: Experimental Setup and Measurements",
+    "verified": true
+  },
+  "equation_fidelity": {
+    "count": 30,
+    "checks": [
+      {
+        "key": "eq_2_1",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "62fe4263b0420cebc244ef5b303b498e7ce2a95d9705d4f0bf481089bf64546e",
+        "display_sha256": "1b65739f57c3988aaed3e2142567c8dbef10052623489493c718bfa2235a20a3"
+      },
+      {
+        "key": "eq_3_10",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "7cdb86caf72432e67d165a92f9178851c3b1f1e625dedb51f82ad9f8df76832b",
+        "display_sha256": "a596f9db9037b98509ec32cdf26364e7124eb1db4e1195cd3d9634ec9713470a"
+      },
+      {
+        "key": "eq_3_11",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "854bcb23e0f20284b8799b62a03fd0ddf0eb39296ccaf55c1ec2f1af04c5a2e4",
+        "display_sha256": "798530ac051e5a5e2f26bcdbdeedb8990d396ce25a68ba46c275e7615ff9eb28"
+      },
+      {
+        "key": "eq_3_12",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "dfef10d2f98aea01f5efeb2c6e3959b42f167f331156ebef79d4968f27d06cf8",
+        "display_sha256": "76ee4dee17367185e61e3e224ee75895a5df3f14e0a38dc25ca6f9d3fcacbdf4"
+      },
+      {
+        "key": "eq_3_15",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "304277b93d05558445e20cdc63560680ba0e2e4705fff768c17960e1b3e2ab7b",
+        "display_sha256": "5b9539fa9cdaa7a241443f0347bebcd47f5116104bbffef2c5e9bd76d3502247"
+      },
+      {
+        "key": "eq_3_16",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "8c2970b848f339e7c896c305639f7a56cf018b82173b9c98f672029980b80818",
+        "display_sha256": "de87efc610a3032b8dfab3b6db727ca9b1eaa8a32c11cbf8eb55ee14e2f0e20f"
+      },
+      {
+        "key": "eq_3_17",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "98e83c47ca99f3c86753d75064d867ec704bbf305d866b6f86d88b3e5b01596c",
+        "display_sha256": "3d780eead0fde56f520eb5caa06e35362e6761f86a2b2d2b8a5e54168a96ce94"
+      },
+      {
+        "key": "eq_3_18",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "9a5bf90881c7939bb07ad82cbb76ed7ee36ea6d29964f14b306347d8b0eed6b2",
+        "display_sha256": "ffbf683355780522422cbd02725bcb0ceca4ef9ef560a39bb9eeb0dd1a0993a2"
+      },
+      {
+        "key": "eq_3_19",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "74ea3dec4e8bb8b3d39a65429a39c67d37bc0441e681ccf5dd4421ce815d719c",
+        "display_sha256": "be6d40435751b7ca3a478cba397b1f93ae2b6e9a38087b639d1d3c774476f733"
+      },
+      {
+        "key": "eq_3_20",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "843df500d59f8c8a617242cd3a3b4dc0754e7f90bc7519c743ea8c0d47f5e9de",
+        "display_sha256": "39d15d8b4010261bc080baf77eea575b01cba711de32198b6ec160af6323a438"
+      },
+      {
+        "key": "eq_3_21",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "259bda562f37efa7fedeb8875b0be2dabd9b99be4069f2c2102d85101e2337ac",
+        "display_sha256": "127bf97d2fd19c348d92f2642236792ca8e642d494ddf7056be01e83bc9918ba"
+      },
+      {
+        "key": "eq_3_22",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "0b212f0d1b299f5b9496c07d0b3bef56e614e16ef245cfbe5b9c8439a7048f56",
+        "display_sha256": "9ca07840eadcb5fef478b3a0cbf8cfb90ef5629348f0271843f7c055880eba93"
+      },
+      {
+        "key": "eq_3_23",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "9946382fd15e173dfbc456ee847d33f0354a289f245c83da0bf5f1db115b2e36",
+        "display_sha256": "f91eba28d40ab1d8335df9c6ca5202ab0729008f85092ad9b269a8bbe5fdb96c"
+      },
+      {
+        "key": "eq_3_24",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "3f6330a61e88538157d401bb3050a95072814c10cacb2c8d36fc95941da0cf1f",
+        "display_sha256": "ba8a258cf7c6ec5760cfc7df8571ff7f78fc46f9f43dabd16ae781f821c1c838"
+      },
+      {
+        "key": "eq_3_3",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "2e79fb2bc8b618f544a36a5feeb5dfd8a19b889b5cd5584f404fc46af264032b",
+        "display_sha256": "8da74c8a3b271169c28915bb6c8d3bbd04e5997b0a03859e3b9e03562be286ea"
+      },
+      {
+        "key": "eq_3_7",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "e5699f5471710f8cd450f608a906195530a27f258eed66578f5ca353fac12f72",
+        "display_sha256": "d4ea3dea3e9b27cefa1d738ab1c875c8bb55b2edfc5c7a375b5dbc67be2207f6"
+      },
+      {
+        "key": "eq_3_8",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "748ac00d132eb1f5b15c696d3b8c3b6eaa50884a6dca709f29ff96f26abf6a2c",
+        "display_sha256": "2b61fded1b163734f82e7d060e56055c9b76210be30e37fc32261157ea517b98"
+      },
+      {
+        "key": "eq_3_9",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "34f7c98548f4c4f6522bf66434c0100ba0988a44e0fd9379747c01a49da65b2a",
+        "display_sha256": "98633357d497454a74c2f29f9e42b545699bbafbe51af8cbc8b38819128b4b81"
+      },
+      {
+        "key": "eq_4_1",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "44b9eec1a1b8e3ea00d74f73e428529fe275f491c363c79990199475e221a8f1",
+        "display_sha256": "335afc42f2d8f3d183308384f2d0d69a1ebc06db2a659770f7bb215904f60e82"
+      },
+      {
+        "key": "eq_5_10",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "9c5caa589138d8b44f818eb05193698c239df155a76eb4628cdb5fce4354ddec",
+        "display_sha256": "050d6ecfa456a01c19a788f3b70e0661922ee1f6ed9cbe74e2bbdd882ec901fb"
+      },
+      {
+        "key": "eq_5_11",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "b1f607dab4b29666ea73c344a936e79152fd35fea26d82aa083f642860a27c52",
+        "display_sha256": "d00fce3daa4b42e9562c6ca4755942957b928bdeef2ac24207a2ec999bfe6611"
+      },
+      {
+        "key": "eq_5_12",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "86fa2efabad638a64df11f7bfb434266156672e2b41519366363e9235c10f96f",
+        "display_sha256": "e76cf28dcd444914d27d08b4fba28204c15a97142a7cce1c4628346894eef1c1"
+      },
+      {
+        "key": "eq_5_2",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "e13de1d4b93299142bfe980fec22a467499d47d4751f155f967cb07eda9292cd",
+        "display_sha256": "fe8646ee77fac635544e89cd52b0f4ead2df31ba9f277c4ad6e839ba76adf3c1"
+      },
+      {
+        "key": "eq_5_4",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "31c69c1fef3606a982a2c1b5337399a98204e13fab2321b8b7258354cfe16cf1",
+        "display_sha256": "80ff422ad3b07e8e0faaf4bd74d7368fabc01fc0f3065519e34e9361d8b8ceca"
+      },
+      {
+        "key": "eq_5_7",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "8974b4d097fcbf1ffe92a8acc29f0617fd42e5cb2054f9a5668ea38cbc9c9713",
+        "display_sha256": "f43cd9816943ffc7914186813be964d846e115d8153da1b712ff2d1e88dafc13"
+      },
+      {
+        "key": "eq_5_8",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "15166971e1aa367f42fb8dabe8c4c67270631d9e01c75f76e7b059cf0b4145c2",
+        "display_sha256": "643eed0db779772f4425c795ea3bb17e8a76fe79d9393b229f4dd655ed8072ab"
+      },
+      {
+        "key": "eq_5_9",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "73b0c1941afdbf6e26b06df236e39e7489f05b0ed80fe36193da5b804063fcbd",
+        "display_sha256": "af3e2d4ebf336832d44c64566711ec34442a5c394083ffcc5f34473e7b0b5835"
+      },
+      {
+        "key": "eq_6_3",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "f5ecb7a45a4064c2c76b2b01289af8eec18a83c695c1941475ac65f13c890c98",
+        "display_sha256": "f0893e97b6c8cf6332bb9db4cb4fd0d8022a09506a298511b81cd89abb1b6a47"
+      },
+      {
+        "key": "eq_6_5",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "55be4f01f4377dbe17aabbf5fc00ada467799e36730ebc1f5f0d690f83f715be",
+        "display_sha256": "1c88b321f90de53e1ca3364894dfe726ba535a989962c3aea4329126302fea16"
+      },
+      {
+        "key": "eq_D_2",
+        "dimensions_equal": true,
+        "alpha_equal": true,
+        "all_visible_RGB_white": true,
+        "source_sha256": "5adf554baab184432ace617bc7cdae4a75908feb905458549bd1c01a1822635b",
+        "display_sha256": "fe1f6cf9ac595d08c7a79ca1492f62e3240329e8da183bf135c9df0fdd84be51"
+      }
+    ],
+    "interpretation": "RGB-only change to white. Every alpha byte, dimensions and source glyph geometry remain unchanged. Used equation-key set equals the manifest set."
+  },
+  "derivation_review": [
+    {
+      "pages": [
+        11,
+        12
+      ],
+      "equations": [
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12"
+      ],
+      "verified": "Hip direction plus right hip-to-shoulder vector define the torso plane. Cross products give an orthonormal basis; column assembly and right-hip translation give the transform. Three non-collinear construction points are compatible with the complete four-corner rigid torso model."
+    },
+    {
+      "pages": [
+        13,
+        69
+      ],
+      "equations": [
+        "3.15",
+        "3.16",
+        "3.17"
+      ],
+      "verified": "Rotation order is fixed before matrix-entry angle extraction. The full expanded product is retained on Q&A page 69. Singular Euler branches are not presented as unique measured angles."
+    },
+    {
+      "pages": [
+        14,
+        15
+      ],
+      "equations": [
+        "3.18",
+        "3.19",
+        "3.20",
+        "3.21"
+      ],
+      "verified": "The twist factor leaves the local first axis unchanged. The first column therefore determines swing only; asin extracts elevation, and atan2 of horizontal components extracts azimuth under the stated branch convention."
+    },
+    {
+      "pages": [
+        16
+      ],
+      "equations": [
+        "3.22",
+        "3.23"
+      ],
+      "verified": "Inverse swing is a rotation operator applied to a vector still described in L12. The perpendicular components encode twist; collinear segments cannot determine it."
+    },
+    {
+      "pages": [
+        17
+      ],
+      "equations": [
+        "3.3",
+        "3.24"
+      ],
+      "verified": "Rotation transpose maps a direction to L14 without translation. The unit local forearm supports the elbow-coordinate extraction; the second stored elbow coordinate supplies no extra ideal hinge degree of freedom."
+    },
+    {
+      "pages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "equations": [
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12"
+      ],
+      "verified": "Two lengths give two spheres; their reachable nondegenerate intersection is a circle. The law of cosines gives its center/radius. A direction-prior projection selects one point. Guarded near-extension and out-of-reach branches are explicitly outside the ideal circle demonstration."
+    }
+  ],
+  "selected_render_review": {
+    "path": "/tmp/Chapter_Dark_Candidate.pdf",
+    "sha256": "0e364646b24e6ae538a3fc7e02c4501b0712f651213faf978613ca1ce06c4699",
+    "pages_reviewed": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      26,
+      28,
+      29,
+      69,
+      10,
+      41,
+      42,
+      43
+    ],
+    "qualification": "This is the earlier 69-page candidate render. Mathematical glyphs and geometry were inspected. Subsequent source corrections changed section references, manual-reference wording and added pages 70-75; final publication rendering is separately owned by the root reviewer.",
+    "math_visual_result": "All inspected equation identities, vector/matrix labels, trigonometric arguments, subscripts and continuation terms were complete and readable. No rewritten notation or missing mathematical term was found."
+  },
+  "manual_hip_review": {
+    "pages": [
+      10,
+      43,
+      59
+    ],
+    "verified": "Page 10 explicitly identifies the upward L23/L24 placement as a manual torso-location illustration. Page 43 retains raw projected positions on the occluding block. The original photograph is unchanged; no depth value is assigned to the manually shifted pixels. Section 2.6 rejects inconsistent depth and repairs from accepted state; it does not prove anatomical joint locations."
+  },
+  "holding_input_review": {
+    "states_verified": 180,
+    "preview_camera_rectangles": [
+      {
+        "recording_frame": 650,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0650.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "d860a30f46af69377194eb4230ba9c87e99d457a87e0a57ea523ee5ec98fc2ee"
+      },
+      {
+        "recording_frame": 651,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0651.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "067b66499b8f4e20b6493a91fdb40899ceaf840afe8e55f73b20e8647c5b8a11"
+      },
+      {
+        "recording_frame": 705,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0705.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "b4d6ef22c2cebc6e7a78644a7e9737146426407bdb8d35fd1d103b2d26b4a060"
+      },
+      {
+        "recording_frame": 707,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0707.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "cf01d837ee3adb27c99ba7eb7c1e1d99489d11daddd72f8aceb2bd259719a6df"
+      },
+      {
+        "recording_frame": 758,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0758.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "beddaebc211b2ce4bfc6e8d62c9c9146717f581e9c05dd3681b38cc4d92ac8ae"
+      },
+      {
+        "recording_frame": 759,
+        "preview": "presentation/defense_2026/committee_materials/review/p21-Holding_Input_And_Torso_Rejection_frame0759.png",
+        "source_rectangle_pixel_identical": true,
+        "preview_sha256": "58498f179dbb4e1ba98712f5aff52d7cd9c1c5d53c923a649230364016654cb9"
+      }
+    ],
+    "asset": "presentation/defense_2026/committee_materials/videos/p21-Holding_Input_And_Torso_Rejection.mp4",
+    "asset_sha256": "dc0638ebb61daab9e85b4508c9ab2fb9e571b593fb5007ecb0c0b149d7ab3e6d",
+    "source": "presentation/defense_2026/media/grip_episode_context.mp4",
+    "source_sha256": "7987edf43aead372f4658482d38207f1ebb9355fe1ad2b425c42eddb69d4c432",
+    "torso_rejected_frames": [
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      682,
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716,
+      717,
+      718,
+      719,
+      720,
+      721,
+      722,
+      723,
+      724,
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738,
+      739,
+      740,
+      741,
+      742,
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750,
+      751,
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758
+    ],
+    "right_wrist_depth_missing_frames": [
+      705,
+      706,
+      707
+    ]
+  },
+  "holding_input_interpretation": "Returned 2D coordinates and a passing acquisition source code do not prove a hidden anatomical point or valid torso geometry. The source overlay suppresses flagged arm inputs but not the torso failure mask; the new external status strip reports that rejection. Right-wrist source code 2 means unavailable aligned depth at 705-707, not low MediaPipe visibility.",
+  "memory_copy_review": {
+    "pages": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      61
+    ],
+    "verified": "FrameRingReader.fetch copies color and depth into private byte buffers, then rechecks the sequence and requested frame identity. Copying leaves the shared payload in place until a later capture overwrites the slot. Branch results enter separate histories; the merger publishes a new 112-byte PSI2 combined record. Unity reads this derived record, retries at most three attempts, and retains the displayed state if no fresh valid publication is accepted.",
+    "limits": "Illustrative race sequences are not recorded scheduler traces; this review does not establish a formal cross-platform memory-ordering proof."
+  },
+  "natural_failure_cases": [
+    {
+      "frame": 1890,
+      "side": "right",
+      "stem": "recording_20260825_222315",
+      "figure": "writing/v9/figures/ch7_natural_proxy_right.png",
+      "figure_sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "metrics_cm": {
+        "recovered_cm": 15.2,
+        "measured_cm": 1.12,
+        "hold_cm": 17.28,
+        "plain_fk_cm": 14.03,
+        "hold_fk_cm": 20.39,
+        "recovery_fk_cm": 5.01
+      },
+      "raw_gate": {
+        "right_elbow": {
+          "vis": 0.4447,
+          "src": 1.0
+        },
+        "right_wrist": {
+          "vis": 0.6502,
+          "src": 0.0
+        }
+      },
+      "filtered_flag": {
+        "right_elbow": 3.0,
+        "right_wrist": 0.0
+      },
+      "mask": {
+        "time_s": 63.043226,
+        "d1_L": 0.0,
+        "d1_R": 1.0,
+        "d2_L": 0.0,
+        "d2_R": 0.0,
+        "d1_torso": 0.0,
+        "d3": 0.0,
+        "d4": 0.0,
+        "d5_L": 0.0,
+        "d5_R": 0.0,
+        "d5_torso": 0.0,
+        "fail_arm_L": 0.0,
+        "fail_arm_R": 1.0,
+        "fail_torso": 0.0
+      },
+      "reference": "One manually selected visible watch or bracelet point, deprojected with aligned depth. Not an anatomical joint centre."
+    },
+    {
+      "frame": 1462,
+      "side": "left",
+      "stem": "recording_20260825_222315",
+      "figure": "writing/v9/figures/ch7_natural_proxy_left.png",
+      "figure_sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "metrics_cm": {
+        "recovered_cm": 13.65,
+        "measured_cm": null,
+        "hold_cm": 7.26,
+        "plain_fk_cm": 14.02,
+        "hold_fk_cm": 14.29,
+        "recovery_fk_cm": 13.65
+      },
+      "raw_gate": {
+        "left_elbow": {
+          "vis": 0.472,
+          "src": 1.0
+        },
+        "left_wrist": {
+          "vis": 0.4038,
+          "src": 1.0
+        }
+      },
+      "filtered_flag": {
+        "left_elbow": 3.0,
+        "left_wrist": 3.0
+      },
+      "mask": {
+        "time_s": 48.768122,
+        "d1_L": 1.0,
+        "d1_R": 0.0,
+        "d2_L": 0.0,
+        "d2_R": 0.0,
+        "d1_torso": 0.0,
+        "d3": 1.0,
+        "d4": 1.0,
+        "d5_L": 0.0,
+        "d5_R": 0.0,
+        "d5_torso": 0.0,
+        "fail_arm_L": 1.0,
+        "fail_arm_R": 0.0,
+        "fail_torso": 1.0
+      },
+      "reference": "One manually selected visible watch or bracelet point, deprojected with aligned depth. Not an anatomical joint centre."
+    }
+  ],
+  "natural_failure_reference_qualification": {
+    "right": "Manual right-watch feature; final FK endpoint 5.01 cm at frame 1890. The object target is 15.20 cm from the label and is distinct from the final endpoint. The filtered detector wrist is present.",
+    "left": "Manual left-bracelet feature; frame 1462 plain FK 14.02 cm and recovered FK 13.65 cm. This single small improvement coexists with a worse aggregate left median; no uniform advantage is claimed.",
+    "aggregation": "Right failure subset n=4, left n=16; one annotator, visible-feature and aligned-depth reference. No independent anatomical joint-centre reference or uncertainty-subtracted distance is claimed."
+  },
+  "numeric_table_checks": [
+    {
+      "page": 53,
+      "row": "Rail / carry",
+      "source": "object.json.recordings.r6b.segments[0]",
+      "values": [
+        25.5,
+        24.36,
+        1.14
+      ]
+    },
+    {
+      "page": 53,
+      "row": "Rail / lift",
+      "source": "object.json.recordings.r6b.segments[1]",
+      "values": [
+        3.5,
+        4.03,
+        0.53
+      ]
+    },
+    {
+      "page": 53,
+      "row": "Rail / slide",
+      "source": "object.json.recordings.r6b.segments[2]",
+      "values": [
+        37.5,
+        38.59,
+        1.09
+      ]
+    },
+    {
+      "page": 53,
+      "row": "Handover / carry",
+      "source": "object.json.recordings.r7.segments[0]",
+      "values": [
+        25.5,
+        22.68,
+        2.82
+      ]
+    },
+    {
+      "page": 53,
+      "row": "Handover / lift",
+      "source": "object.json.recordings.r7.segments[1]",
+      "values": [
+        3.5,
+        4.35,
+        0.85
+      ]
+    },
+    {
+      "page": 53,
+      "row": "Handover / slide",
+      "source": "object.json.recordings.r7.segments[2]",
+      "values": [
+        37.5,
+        40.33,
+        2.83
+      ]
+    },
+    {
+      "page": [
+        40,
+        54
+      ],
+      "row": "Right",
+      "source": "bare_model.json and human.json, r7.right_wrist",
+      "values": [
+        650,
+        0.83,
+        5.5
+      ]
+    },
+    {
+      "page": [
+        40,
+        54
+      ],
+      "row": "Left",
+      "source": "bare_model.json and human.json, r7.left_wrist",
+      "values": [
+        589,
+        2.34,
+        6.8
+      ]
+    },
+    {
+      "page": 55,
+      "row": "Wrist / hold-last",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        1.5,
+        2.5,
+        3.1
+      ],
+      "n": 45
+    },
+    {
+      "page": 55,
+      "row": "Wrist / direction memory",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        2.5,
+        4.2,
+        4.6
+      ],
+      "n": 45
+    },
+    {
+      "page": 55,
+      "row": "Wrist / object-assisted",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        1.9,
+        2.7,
+        2.8
+      ],
+      "n": 45
+    },
+    {
+      "page": 55,
+      "row": "Elbow / hold-last",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        0.6,
+        1.3,
+        1.4
+      ],
+      "n": 45
+    },
+    {
+      "page": 55,
+      "row": "Elbow / direction memory",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        0.6,
+        1.5,
+        1.6
+      ],
+      "n": 45
+    },
+    {
+      "page": 55,
+      "row": "Elbow / object-assisted",
+      "source": "synthetic.json.results: higher motion",
+      "values": [
+        2.2,
+        2.9,
+        3.0
+      ],
+      "n": 45
+    },
+    {
+      "page": 56,
+      "row": "Left / plain solve",
+      "source": "natural.json.summary.failure.left.plain_fk",
+      "values": [
+        16,
+        12.3,
+        14.1,
+        14.2
+      ]
+    },
+    {
+      "page": 56,
+      "row": "Left / hold-last",
+      "source": "natural.json.summary.failure.left.hold_fk",
+      "values": [
+        16,
+        12.7,
+        14.3,
+        14.3
+      ]
+    },
+    {
+      "page": 56,
+      "row": "Left / object-assisted",
+      "source": "natural.json.summary.failure.left.recovery_fk",
+      "values": [
+        16,
+        13.1,
+        15.2,
+        19.1
+      ]
+    },
+    {
+      "page": 56,
+      "row": "Right / plain solve",
+      "source": "natural.json.summary.failure.right.plain_fk",
+      "values": [
+        4,
+        11.4,
+        13.6,
+        14.0
+      ]
+    },
+    {
+      "page": 56,
+      "row": "Right / hold-last",
+      "source": "natural.json.summary.failure.right.hold_fk",
+      "values": [
+        4,
+        17.6,
+        20.0,
+        20.4
+      ]
+    },
+    {
+      "page": 56,
+      "row": "Right / object-assisted",
+      "source": "natural.json.summary.failure.right.recovery_fk",
+      "values": [
+        4,
+        5.2,
+        5.5,
+        5.5
+      ]
+    }
+  ],
+  "main_human_chart_checked_against_same_sources": true,
+  "runtime_claim_review": {
+    "page": 47,
+    "pinned_sources": [
+      "v2/dataset/r6b_probe_baseline.txt",
+      "v2/dataset/m03_rail_corrected.txt",
+      "v2/dataset/m03_rail_corrected.json"
+    ],
+    "verified": "13.0 ms person p99, 16.7 ms object p99 and 0.63 ms largest added-stage p99 agree with the pinned replay outputs and thesis Section 8.4. The 174-pair five-frame alignment is retrospective. Render delay, filter lag and sensor-to-screen latency remain distinct; no complete live-camera validation is claimed."
+  },
+  "appended_qualitative_image_checks": [
+    {
+      "page": 70,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r6b_frame00095.png",
+      "sha256": "d95c364f5185f5b642641a30da7ae46fd12aad0807c93b937238a275be754ac0",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 70,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/r6b_unity_f00095.png",
+      "sha256": "f976120e4229dc971f325182e1688fc9a0e6ebf50b71f6748be7e585d6a28149",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 71,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r6b_frame00505.png",
+      "sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 71,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/r6b_unity_f00505.png",
+      "sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 72,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r6b_frame00700.png",
+      "sha256": "7588e17b916e6f9ea80cff0d86ec737225a97b068aed418a69999f08f526cca6",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 72,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/r6b_unity_f00700.png",
+      "sha256": "a39d8a61f537935f764b45e01f42a6405ae23aa48c3fa8abc1b131384d6d7520",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 73,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r7_frame00700.png",
+      "sha256": "b11e56d2c3cec3c2b4a8ab9af729fa891ccca81f82c9451f6637464927c1cd71",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 73,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00700.png",
+      "sha256": "f91d60447179d44466c1a77e5bbdece1a5e58d69bf55edc170ded6ac98ab2d72",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 74,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r7_frame00950.png",
+      "sha256": "e8b2fa2e2c72bee20511b2fd406c5332871707b397bf771d5eea5f7cb38e8a9f",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 74,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00950.png",
+      "sha256": "d4f46f476ca7cab707536f753ac1faf5c906cfde05542e7ce201e8110aaec972",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 75,
+      "role": "recorded",
+      "path": "writing/v9/figures/src/r7_frame01042.png",
+      "sha256": "843912c5c73203e5855c09739616d22ddb8191d1e9a66c3a1787fb41b716fdef",
+      "source_size_px": [
+        640,
+        480
+      ]
+    },
+    {
+      "page": 75,
+      "role": "reconstructed",
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f01042.png",
+      "sha256": "769075f9267f99df386092a31f4f4874356a720a6480a3a779bbc56b8c1beb7e",
+      "source_size_px": [
+        640,
+        480
+      ]
+    }
+  ],
+  "appended_visible_notations": [
+    {
+      "page": 70,
+      "caption": "Rendered hand and object remain separated during acquisition.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    },
+    {
+      "page": 71,
+      "caption": "Rendered grip position differs during lift.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    },
+    {
+      "page": 72,
+      "caption": "Rendered wrist and object remain misaligned during slide.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    },
+    {
+      "page": 73,
+      "caption": "Rendered right arm and hand differ from recorded placement.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    },
+    {
+      "page": 74,
+      "caption": "Front-of-body transfer; different rendered arm configuration.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    },
+    {
+      "page": 75,
+      "caption": "Rendered left hand does not align with the object.",
+      "review": "The stated hand/object or arm-configuration discrepancy is visible in the saved pair; no numerical size or causal attribution is added."
+    }
+  ],
+  "appended_render_review": {
+    "path": "/tmp/Chapter_Dark_75_Candidate.pdf",
+    "sha256": "66e1b3dbd4c953e530172e224d8046c72f8219d4bc36e954ab13fbd0d9de44a2",
+    "pages": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      75
+    ],
+    "qualification": "The reviewed pair images precede the final specific-caption wording. Final source captions were separately read against those same images."
+  },
+  "appended_qualitative_interpretation": "Rail pairs retain the per-recording sizing capture; handover pairs retain the archived torso override and are separate from the later trajectory-table capture. Matching source frame identifiers establish the saved pairing only, not new temporal/anatomical validation. Captions and notes preserve visible residuals and do not isolate a root cause.",
+  "resolved_findings": [
+    {
+      "id": "F01",
+      "pages": [
+        11,
+        14,
+        15,
+        16,
+        17,
+        26,
+        28,
+        69
+      ],
+      "issue": "Incorrect section references on derivation pages",
+      "resolution": "Torso axes use Section 3.2.2; root Section 3.4; shoulder Section 3.4.2; elbow Sections 3.1/3.4.3; elbow circle Section 5.5.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F02",
+      "pages": [
+        16,
+        17
+      ],
+      "issue": "Vector frame wording could change the interpretation of inverse swing and elbow extraction",
+      "resolution": "Equation 3.22 input and rotated output both retain L12; equation 3.24 uses the unit forearm direction in L14.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F03",
+      "pages": [
+        41,
+        42,
+        52,
+        56
+      ],
+      "issue": "Manual reference identity and different endpoint roles needed qualification",
+      "resolution": "Right reference is a watch feature; left reference is a bracelet. Final FK endpoint, filtered detector wrist and offered object target are distinguished.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F04",
+      "pages": [
+        56
+      ],
+      "issue": "Aggregate left/right medians had been described as if every frame had the same ordering",
+      "resolution": "Narration explicitly says lower median on the four-frame right set and higher median on the sixteen-frame left set.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F05",
+      "pages": [
+        10,
+        59
+      ],
+      "issue": "Hip preparation had been abbreviated as direction memory alone",
+      "resolution": "Accepted depth and direction memory are named. Manually shifted illustration is expressly separate from measured detector output.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F06",
+      "pages": [
+        34,
+        61
+      ],
+      "issue": "The 112-byte PSI2 packet was called a scene record, which could be confused with the static PSB3 scene packet",
+      "resolution": "It is described as the combined pose record. It is a newly packed publication, not concatenation.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F07",
+      "pages": [
+        60
+      ],
+      "issue": "Camera-to-object wording was ambiguous about transform direction",
+      "resolution": "Narration uses the object pose in camera coordinates and inverse calibrated desk-marker pose in camera coordinates.",
+      "status": "RESOLVED"
+    },
+    {
+      "id": "F08",
+      "pages": [
+        44,
+        51
+      ],
+      "issue": "Stale slide roles and appendix numbering after reordering",
+      "resolution": "Handover replay is described as a main-talk qualitative replay; appendix navigation includes the appended comparison pages.",
+      "status": "RESOLVED"
+    }
+  ],
+  "unresolved_scientific_findings": [],
+  "limits": [
+    "Final desktop PowerPoint playback and complete media decode are separate release checks.",
+    "The earlier candidate render predates the last source wording changes and added six pages.",
+    "The equation-display operation was checked against pinned source assets, not a new experimental validation.",
+    "No frozen thesis, v1, v2 or Unity implementation was edited by this review. The separately authorized QA_PREP.md update was authored by this reviewer and received root independent review.",
+    "Timing and user-selected recorded-video coverage are outside this scientific source audit."
+  ],
+  "decision": "Accept the reviewed scientific content and equation fidelity. Preserve the reference qualifications and provenance when binding the final media.",
+  "next": "Root reviewer verifies the final assembled deck and playback; refresh source hashes if any reviewed scientific wording changes.",
+  "qa_guide_binding_updated_at_utc": "2026-09-23T03:30:24.583504+00:00"
+}

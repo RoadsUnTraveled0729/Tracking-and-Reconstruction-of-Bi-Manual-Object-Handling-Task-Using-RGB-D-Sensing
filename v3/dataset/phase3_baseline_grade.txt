@@ -1,0 +1,12 @@
+manifest: /home/luo/Desktop/New_SandBox/v3/configs/scenarios_20260224.json (derived 2026-08-06 15:38:50, commit 7b05b7bda)
+
+=== strategy: baseline_hold ===
+    scenario   e_occ   e_max   reacq  recov tele   wstep  fmeas estcov
+ wrist_short    0.74    0.91    0.18      0    0    3.81  0.000   0.00
+  wrist_long    0.69    1.51    1.38      0    0    3.81  0.000   0.68
+  elbow_long    2.87    3.89    2.63      0    1    3.81  0.000   0.68
+             HARD GATE FAIL: teleport
+         hip    0.60    0.81    0.84      0    0    3.81  0.000   1.00
+   pose_loss    1.96    3.13    1.83      0    0    3.81  0.000   1.00
+    root_ref    1.11    2.51    0.43      0    2    3.81  0.000   1.00
+             HARD GATE FAIL: teleport

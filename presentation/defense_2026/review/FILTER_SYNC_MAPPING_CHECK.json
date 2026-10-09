@@ -1,0 +1,205 @@
+{
+  "status": "PASS",
+  "assets": [
+    {
+      "asset": "filter_hampel_sync",
+      "status": "PASS",
+      "output_frames": 561,
+      "source_frames": 100,
+      "duration_seconds": 18.7,
+      "maximum_trace_csv_rounding_error_m": 0.0,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "c5c108ed7cf5468e7f7b1b985884ea3737c84603913d8a935660687676d89ad7",
+      "asset_sha256": {
+        "mp4": "e3de4f38b2df66267feb1fd521b8c88b0c3d5afde4a9d88c9e5374766d612086",
+        "png": "abf4067e621d0ec5bfbf649279163b01db393311711e050abd544e8e2c6b8383"
+      }
+    },
+    {
+      "asset": "filter_gap_sync",
+      "status": "PASS",
+      "output_frames": 561,
+      "source_frames": 100,
+      "duration_seconds": 18.7,
+      "maximum_trace_csv_rounding_error_m": 4.614225668220229e-13,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "6e68113fd4ddc8a5e1c5df55f347d0067468d26c15a01e6b22db70980156677c",
+      "asset_sha256": {
+        "mp4": "b1d04ee7de1161cef509c57bf8e159626fbda5f94383c0f1731958265cbfc73f",
+        "png": "48f86ac079cc0791633165d4ae6533e1df237ec87cc97380e2c8d2e1ffeb8027"
+      }
+    },
+    {
+      "asset": "filter_butterworth_sync",
+      "status": "PASS",
+      "output_frames": 551,
+      "source_frames": 155,
+      "duration_seconds": 18.366666666666667,
+      "maximum_trace_csv_rounding_error_m": 4.948264020754323e-13,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "1e72b68a63e402b71076338c0740cd10a4bf15f5f0a7128bd6a0541063762f0e",
+      "asset_sha256": {
+        "mp4": "0dd667bf735f3848e597766e16d9041a1c71f5726dcf33397935735bc5a5f5b6",
+        "png": "80abd099a59f5352143a81322e973229361439c975a847099e49af70ff037105"
+      }
+    },
+    {
+      "asset": "filter_one_euro_sync",
+      "status": "PASS",
+      "output_frames": 551,
+      "source_frames": 155,
+      "duration_seconds": 18.366666666666667,
+      "maximum_trace_csv_rounding_error_m": 4.984901380566953e-13,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "1e130ad5de31201af0ce9c5d6d8d12b4fb824df692b908d51644cbf452aabf3e",
+      "asset_sha256": {
+        "mp4": "2042edd40e076cd9022dbb0f46adbfa9553bff679fccab95a51b7b15f1f5210b",
+        "png": "00a0af925ba02a8a00d01f33bcd4bbbe7ce560707983562c07d41a659a00cf2f"
+      }
+    },
+    {
+      "asset": "filter_savgol_sync",
+      "status": "PASS",
+      "output_frames": 551,
+      "source_frames": 155,
+      "duration_seconds": 18.366666666666667,
+      "maximum_trace_csv_rounding_error_m": 4.951594689828198e-13,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "2e06b830e385e6c0a7de71c6debae8f90ed26009dec7596637ac58bad7e10e11",
+      "asset_sha256": {
+        "mp4": "99579cd209455e181b8f22e6e846122b4a6d7cdf6100322d3c371cc371eaabd5",
+        "png": "43bab16a1b5dc318335bd6e7fa55dd9a36736465b65b3eebc6b59979b949e696"
+      }
+    },
+    {
+      "asset": "filter_median_sync",
+      "status": "PASS",
+      "output_frames": 551,
+      "source_frames": 155,
+      "duration_seconds": 18.366666666666667,
+      "maximum_trace_csv_rounding_error_m": 0.0,
+      "camera_plot_indices_and_timestamps_equal": true,
+      "shared_holds_verified": true,
+      "progression_uses_recorded_clock": true,
+      "raw_gaps_preserved": true,
+      "no_future_trace_samples": true,
+      "source_cache_hashes_verified": true,
+      "report_sha256": "8233ca7850c258affd9ead360edf684538bcb9e807f290b780c1d3c8f176e3a9",
+      "asset_sha256": {
+        "mp4": "63a85f27b26f30272eb4506636b47d7fcf31d2c4fdadae8daa4da3dc4c72ba5a",
+        "png": "db9032d40ea773c5865c901a500e067af31b670086bd7ef39091868012aef280"
+      }
+    }
+  ],
+  "prior_media_hashes_unchanged": 69,
+  "brief_sha256": "52f306b6731a10ddd9c00ececdeaab52f63c6705180b843c4f2c27d77f25ae9a",
+  "generator_sha256": "7202cc6152b74ac3eb6f25fab70a1b6d76f87f5bf536e45eafebae7e312cbe96",
+  "validator_sha256": "30b8f5d51fad018a623323cb87272ac05f6e7cb08a43e7813744232f65085637",
+  "fresh_numerical_checks": {
+    "status": "PASS",
+    "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+    "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+    "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+    "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+    "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+    "valid_runs_half_open": [
+      [
+        0,
+        11
+      ],
+      [
+        25,
+        550
+      ],
+      [
+        640,
+        646
+      ],
+      [
+        647,
+        674
+      ],
+      [
+        675,
+        678
+      ],
+      [
+        679,
+        681
+      ],
+      [
+        685,
+        900
+      ]
+    ],
+    "hampel_flagged_source_frames": [
+      36,
+      537,
+      760
+    ],
+    "hampel_frame_36_depth_m": 1.133,
+    "hampel_frame_36_local_depth_median_m": 1.101,
+    "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+    "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+    "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+    "gap_source_frames": [
+      681,
+      682,
+      683,
+      684
+    ],
+    "gap_valid_endpoints": [
+      680,
+      685
+    ],
+    "gap_interpolation_max_error_m": 0.0,
+    "butterworth_backward_vs_frozen_max_error_m": 0.0,
+    "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+    "median_window_vs_frozen_error_m": 0.0,
+    "one_euro_prefix_invariance_max_error_m": 0.0,
+    "one_euro_parameters": {
+      "min_cutoff_hz": 0.05,
+      "beta": 1.0
+    },
+    "parameters": {
+      "hampel_window": 7,
+      "hampel_k": 3.0,
+      "hampel_floor": 0.02,
+      "max_gap": 5,
+      "edge_fill": 0,
+      "butter_order": 4,
+      "cutoff_hz": 3.0,
+      "smooth_window": 9,
+      "smooth_polyorder": 2,
+      "oneeuro_mincutoff": 0.05,
+      "oneeuro_beta": 1.0,
+      "fs": "derive from median recorded time_s differences"
+    }
+  },
+  "scope": "Independent map/trace/source/hash verification; encoding and sampled decoded-pixel comparisons are in the per-asset reports"
+}

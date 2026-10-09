@@ -1,0 +1,7 @@
+recording,method,scope,n,mean_us,p95_us,note
+r7,AKC-literal,AkcArm.step,1499,102.539326,111.041998,perf_counter around AkcArm.step only; occlusion_filter and CSV access excluded
+r7,AKC-ray,AkcArm.step,1499,128.222453,139.784989,perf_counter around AkcArm.step only; occlusion_filter and CSV access excluded
+r7,AKC-EKF,AkcArm.step,1499,149.680648,161.734001,perf_counter around AkcArm.step only; occlusion_filter and CSV access excluded
+r7,ours-plain,run_variant,1499,371.322497,,run_variant wall time / n; includes pandas iterrows and the recording solver subclass
+r7,ours-memory,run_variant,1499,367.998175,,run_variant wall time / n; includes pandas iterrows and the recording solver subclass
+r7,ours-IK,run_variant,1499,378.638672,,run_variant wall time / n; includes pandas iterrows and the recording solver subclass

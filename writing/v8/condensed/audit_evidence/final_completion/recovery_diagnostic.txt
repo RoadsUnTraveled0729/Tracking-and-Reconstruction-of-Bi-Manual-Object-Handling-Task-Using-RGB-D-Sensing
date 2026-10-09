@@ -1,0 +1,7 @@
+Matplotlib created a temporary cache directory at /tmp/matplotlib-6lw_vme2 because the default path (/home/luo/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+UNREACHABLE 0.317 0.205 0.05 rawcos 1.9231545741324927 E [0.317, 0.0, 0.0] actual_lengths 0.317 0.267
+UNREACHABLE 0.205 0.317 0.05 rawcos -2.7299512195121958 E [-0.205, 0.0, 0.0] actual_lengths 0.205 0.255
+UNREACHABLE 0.317 0.205 0.6 rawcos 1.10006309148265 E [0.317, 0.0, 0.0] actual_lengths 0.317 0.283
+STALE_RIGHT_IK_count 45 first_last [(595, 46), (596, 47), (597, 48)] [(637, 88), (638, 89), (639, 90)]
+CONSTRAINED_LOW_FLEX_TWIST_CHANGES_count 18 examples [(7, -12.359271625673518, 3.3915973255901974, 2), (8, -12.359271625673516, -2.375550675673196, 2), (9, -12.359271625673518, -1.3708831298443442, 2), (10, -12.35927162567351, -0.4381109160917731, 2), (11, -12.359271625673498, 0.33919012899468726, 2), (12, -12.359271625673534, 0.8884313833300439, 2), (13, -12.359271625673513, 1.151870883161564, 2), (14, -12.359271625673504, 1.1162189904596858, 2)]
+PREFIX holding first8 [True, True, True, True, True, True, True, True] full first8 [True, True, True, True, True, False, False, False]

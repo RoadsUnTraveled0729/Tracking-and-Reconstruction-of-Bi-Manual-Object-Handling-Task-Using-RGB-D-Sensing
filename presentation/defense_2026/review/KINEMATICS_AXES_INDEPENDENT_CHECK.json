@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "validator_sha256": "201a81f8f6a193a349fbbeaee488149f9421fe412e3f992dfaf245e1fc702f49",
+  "source_manifest": "presentation/defense_2026/committee_materials/axes_revision/provenance/kinematic_source.json",
+  "source_manifest_sha256": "67c385e80bd67b01fa40b81cc91c34ecc84691be4f2a1652f0534a012f695d71",
+  "sources": {
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_filtered.csv": "3c3885d94daf8c6150727a280542bf60cdc69cb4a168344ad33894dda4420218",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.csv": "53e897c553efad6dfd74e9f1c430a4c29e8340538be0ca5ad531f8c50ba14505",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.meta.json": "0b90b2a5af5e00a1ee78bab929b1479eca0a3c8158952043bf1d69c67d291c6d",
+    "eval/output/recovery_r7/angles_recovery.csv": "0c7406ac547b23b28e48a48236cf0538da3d59c5953fcca60487a9d78f91aeae",
+    "eval/output/recovery_r7/failure_mask.csv": "b7d4038bd8e7df145ec82ff9e0348ba7aabba98e47e9957c65c4ac113f6bca00",
+    "v1/kinematics/root_frame.py": "8cd5782ab0e95701ab2c02aee5b7b1960e33c49987a49181bb114ad06e5d0875",
+    "v1/kinematics/shoulder.py": "39160c319430a9fd22af03ca77b835552a86f55f044241147d4739f280a4db69"
+  },
+  "movie_reports": {
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p13-Torso_Axes_From_Measured_Landmarks.json": "647a4e17c9cb99055fa120a3a754a1ec50899bf946059bcbb7acb2411a9dfcbc",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p14-Torso_Frame_And_Root_Transform.json": "0deba9e5f026f10fc7e2664a24ba4c68c389b0d43e02d39a4f0e06eada6f73bf",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p15-Root_Rotation_From_Torso_Axes.json": "f6e43d6df926d1f487ddcc2571e0ca506dd1b698eef5c07273329e2061ad72c7",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p16-Upper_Arm_Direction_In_Shoulder_Frame.json": "af359ada950da65c8e27aac0e886ab96c32f047205a67ff9596b41e54bea1a36",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p17-Shoulder_Swing_From_Upper_Arm_Direction.json": "19662d1a2df35f6d279ab2673c6251c452a9e2e35123bed77b8545c47322bb68",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p18-Shoulder_Twist_From_Forearm_Plane.json": "2d5a27a9923a071e541c08e4b9aa9a2b35f5e0f64ed7ef0373922a6bbb6853e0",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p19-Elbow_Angles_In_The_Rotated_Arm_Frame.json": "7bfc619a92d15923b502fb8ee22233b2d7182e8702e34384aed8725e79a83f8a",
+    "presentation/defense_2026/committee_materials/axes_revision/provenance/p20-Forearm_Component_And_Twist_Observability.json": "80b9c0047bc0713cde23b29c012fcaa277ff4faaabebad2eada9574d3517b4b8"
+  },
+  "checks": [
+    {
+      "name": "All source CSV, intrinsics and frozen formula hashes match",
+      "passed": true
+    },
+    {
+      "name": "Independent landmark root and analytic swing/twist construction",
+      "passed": true,
+      "max_basis_error": 1.2212453270876722e-15,
+      "max_shoulder_angle_error_deg": 8.526512829121202e-14
+    },
+    {
+      "name": "Proper orthonormal bases",
+      "passed": true,
+      "max_orthogonality_error": 9.992007221626409e-16
+    },
+    {
+      "name": "True L24/shoulder/elbow origins and page-specific bases",
+      "passed": true,
+      "max_origin_error_m": 0.0,
+      "max_basis_error": 1.2212453270876722e-15
+    },
+    {
+      "name": "Every recorded origin and endpoint independently projected with OpenCV",
+      "passed": true,
+      "triads_checked": 1200,
+      "max_error_px": 2.2737367544323206e-13
+    },
+    {
+      "name": "All selected raw points present, accepted root/right groups measured",
+      "passed": true
+    },
+    {
+      "name": "Exact source clock100-249 doubled with two-second endpoint holds",
+      "passed": true
+    },
+    {
+      "name": "All eight movie/poster hashes match reports",
+      "passed": true
+    }
+  ],
+  "qualifications": [
+    "No wrist orientation is observed or introduced.",
+    "Source points are filtered measurements, not independent anatomical ground truth.",
+    "This review checks geometry and mapping; encoded-video playback decoding is covered by producer checks."
+  ]
+}

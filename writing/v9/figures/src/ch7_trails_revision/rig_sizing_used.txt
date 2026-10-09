@@ -1,0 +1,7 @@
+source=/tmp/r5_rig_sizing
+stem=recording_20260831_065553
+requested_upper_arm_R=0.3170
+requested_forearm_R=0.2050
+requested_upper_arm_L=0.3100
+requested_forearm_L=0.2570
+requested_torso=0.5745

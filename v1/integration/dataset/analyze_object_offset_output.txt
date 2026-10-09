@@ -1,0 +1,47 @@
+=== 1. holding hand (whole video, 899 frames) ===
+  nearest wrist: right on 28% of frames, left on 72% (both hands cup the box in the recording; the nearer one stands in as the grip reference)
+
+=== 2. offset in the world frame (object MARKER - nearest wrist) ===
+  |marker - wrist| distance                    median   16.6 cm, mean   16.4, p95   22.0, max   24.2
+  |cube center - wrist| distance               median   14.5 cm, mean   14.3, p95   19.1, max   21.1
+  per-axis mean ± std (cm): x: +1.7 ± 8.0  y: -7.7 ± 2.3  z: -11.2 ± 4.8
+  offset direction (azimuth) swings -178 .. +178 deg over the video
+  -> NOT a constant world-frame vector: length ~constant, direction rotates
+
+  [carried vs resting] carried on 586/899 frames (marker > 6 cm above the tabletop or in motion); while resting the nearest-wrist distance runs up to 24 cm (hand simply leaves the box)
+
+=== 3. offset in the object's own frame: d = R_objT (wrist - marker) ===
+  (per holding hand, carried frames only — a grip vector is meaningless while the box rests on the desk)
+  left-holding (314 frames): mean [x, normal, z] = ( +3.8,  -8.2,  +8.6) cm, std = (3.8, 2.8, 2.5) cm
+  right-holding (249 frames): mean [x, normal, z] = (-11.0, -10.6,  +5.3) cm, std = (1.8, 0.9, 0.8) cm
+  -> along the marker normal both hands sit ~9-11 cm behind the marker: the cube face->center is 3.5 cm of that, the rest is the far half of the box + palm to the wrist joint
+  -> tight std per hand = each grip is rigid; the world-frame swing was just this fixed vector rotating with the box
+
+=== 4. residual after decoupling the constant grip vector(s) ===
+  residual, left-holding frames                median    4.6 cm, mean    5.0, p95    8.9, max   12.0
+  residual, right-holding frames               median    1.0 cm, mean    1.7, p95    3.8, max    6.8
+  residual, all carried frames                 median    3.3 cm, mean    3.5, p95    7.3, max   12.0
+  RMS 4.2 cm over 563 carried frames — the two-pipeline agreement through the anchor; the right-holding stretch (wrist fully visible to the sensor) shows the floor (~1 cm), the left-holding stretch adds MediaPipe wrist noise (that wrist is half-occluded by the carried box)
+  (while the box rests on the desk there is no grip relationship to measure: the hands leave, |marker-wrist| runs to 24 cm)
+  velocity Pearson r: 0.842 while carried (0.273 over the whole video — diluted by the resting stretch where both tracks are just noise around zero velocity)
+
+=== 5. rig hand (Unity FK) vs object and vs the wrist landmark ===
+  |marker - rig hand| distance                 median   20.4 cm, mean   19.8, p95   26.5, max   44.4
+  rig R hand vs R wrist landmark               median   13.4 cm, mean   13.4, p95   15.0, max   33.1
+  rig L hand vs L wrist landmark               median    7.3 cm, mean    8.0, p95   19.6, max   40.6
+  -> the rig-hand error is dominated by the FBX proportions (see rig_dimensions.csv vs the person)
+
+[+] /home/luo/Desktop/New_SandBox/integration/output/object_offset_analysis.png
+
+=== 6. rig proportions vs the measured person ===
+  segment                     rig (m) person (m)  ratio
+  shoulder_width                0.336      0.316   1.06
+  upper_arm_R                   0.217      0.279   0.78
+  upper_arm_L                   0.217      0.225   0.96
+  forearm_R                     0.295      0.185   1.59
+  forearm_L                     0.295      0.232   1.27
+  torso_hip_to_midshoulder      0.535      0.456   1.17
+  rig rest hip height: 0.824 m (scene desk top is at 0.72 m)
+  (FBX authored 3.25 m tall; display-scaled x0.523 at spawn to a 1.70 m person — dims above are post-scale)
+  -> mean remaining ratio 1.14x: overall scale is handled at spawn; what remains is the rig's NON-uniform proportions (forearm ratio 1.59x) — only per-bone retargeting could remove it
+  arm-length surplus (R, shoulder->wrist): +4.8 cm — the scale of the rig-hand-vs-object gap when the arm points at the box

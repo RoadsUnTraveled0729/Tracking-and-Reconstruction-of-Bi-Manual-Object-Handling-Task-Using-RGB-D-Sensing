@@ -1,0 +1,69 @@
+{
+  "status": "APPLICATION_VERIFIED_REQUIRED_OUTCOME_CHECK_FAILED",
+  "stem": "recording_20260825_222315",
+  "source_frames": {
+    "first": 0,
+    "last": 2097,
+    "count": 2098,
+    "terminal_source_frame": 2098,
+    "terminal_exclusion": "Existing capture loop does not retain final source sample"
+  },
+  "capture": "New engine rendering of archived display packets, with separately recorded model axes and camera matrices. Historical exact renderer build is not available.",
+  "geometry": "Documented archived R5 configuration: R upper/fore .256/.252 m, L upper/fore .262/.247 m, torso .479 m. This differs from current recovery sizing.",
+  "axes": "X red Y green Z blue. Five model triads before authored bone rest rotations, at rendered pelvis/shoulders/elbows. Pelvis is not anatomical L24; no wrist orientation. Length .12 m and width .004 m are explanatory overlay settings.",
+  "state": "Only original binary packet live/non-live flags. No current recovery tags, interpolation, solver execution or additional display smoothing.",
+  "camera": "Same calibrated SensorPOVCamera, logged world/projection matrices,1440x1080 capture target.",
+  "timing": {
+    "source_fps": 30,
+    "capture_speed": 0.25,
+    "export_fps": 30
+  },
+  "validation": {
+    "required_checker_status": "FAIL",
+    "archived_replay": "PASS",
+    "axes": "PASS",
+    "render_projection": "PASS",
+    "rig_sizing": "12 PASS / 0 FAIL",
+    "original_unity_checker": {
+      "passed": 7,
+      "failed": 1
+    },
+    "visual": "Same-source-frame comparisons retained separately; qualitative review does not establish pixel identity or anatomical accuracy."
+  },
+  "sources": {
+    "eval/unity_check/send_scene_r5.py": "cd88e66eb4c89070bc02fb8d3886e70bbfe1a3893facabb64ed28b07020afeba",
+    "v1/aruco/send_scene_poses.py": "2f4087bf22cb79cca288ae6c88c4d31f4de1e92d9670313329b8e1f78fa9ab26",
+    "eval/output/unity_check_r5/integrated_stream.csv": "af952121f3438fca5cd153ad59f4ed1a1b488d5ef01e35b4f985404ccc5b2f60",
+    "eval/output/scene_calibration_r5c.json": "48d4a24948cd4491e28cfdd95d3180ae91333916601e3607e423b6d75a72807e",
+    "eval/reports/r5_rig_sizing.json": "1b435110b78f88dc16196e9a34b22799109671e79af02a5ef2a694d89c8e7ed7",
+    "Unity/Assets/Scripts/IntegratedSceneReceiver.cs": "a738b7e125852c94725dac46e56256897160e77cd4ade3d8071aca5c4e2dced6",
+    "Unity/Assets/Scripts/ArucoSceneReceiver.cs": "e59fe58b990a342e1e380284e732a15768b2872039f2c6adbcce08a5d27a7d16",
+    "Unity/Assets/Scripts/EvalFrameDump.cs": "384ce84155cf7e19514aba83ba8baf1213f90c1586a0d0c0e3ebdaabfef2f186",
+    "presentation/defense_2026/unity_capture/replay_archived_packets.py": "496c3d314b95f82b4994fe2ec23048c1f76d2fde89b9310753a7651dcee3e464",
+    "presentation/defense_2026/unity_capture/capture_archived_r5.py": "51c369638004b14955f632503c2462b8234b40c759ba8aa9db54b392f0965683",
+    "presentation/defense_2026/unity_capture/validate_archived_replay.py": "a356b3a5967f86ae72371d162c4af47023310d9a292039af3d8560ef762dc49f",
+    "presentation/defense_2026/unity_capture/DefenseAxes.cs": "5e070dedf77424fc523f0bcba430b313492a3bde9805b7665a6e9793cccfca48",
+    "presentation/defense_2026/unity_capture/AxesOverlay.shader": "1fd1302a1fc1e6e43a97cc831a98fe84d3c3948926900735d5460525fa773dcf",
+    "presentation/defense_2026/unity_capture/finalize_archived_capture.py": "0499db5bf5731b888350273aa3f0be66725f92e38494547d9e96bc57fba7f35b",
+    "presentation/defense_2026/unity_capture/validate_archived_media.py": "62e4fff32e674e3795e3b163a98468ae17d1cde65aaa20862febda9975315d50",
+    "presentation/defense_2026/unity_capture/compare_archived_views.py": "41c2a58e9a955c4194bb4ec53ceb90b8e3a53de0291ebee4580e081ef9a633f7"
+  },
+  "outputs": {
+    "Archived_Unity_R5_Model_Axes.mp4": "68998986c64b0363d823a34e0ec01f1ebca44bbc138b104ec4e3bcbaaa916c45",
+    "integrated_stream.csv": "af952121f3438fca5cd153ad59f4ed1a1b488d5ef01e35b4f985404ccc5b2f60",
+    "archived_rig_sizing.json": "c4b27ab984dc0de77f44e60be337147dabcb6e170fba451e7f5d7632f3f37089",
+    "axes_matrices.csv": "d33d0ab6d3e19db6b228a19d20bab977fc8c8d52d90c9c22593b7150bddafa1c",
+    "unity_person_log.csv": "4332beadb82f1130ceed3987c0c43e3756cd425bb7577c44a4528361c4f8e420",
+    "unity_object_log.csv": "4c1c636f1994331bd01e039a20070bc3673de68ddf4afe06d08dd060ae5142c1",
+    "rig_dimensions.csv": "af9ae54916f5696ed68e62eb186a6d7cc95ff47412025c1dfa998e94d3e120eb",
+    "rig_sizing_used.txt": "9e3c5b1333ae72242252228661687b4090593a2d99fff805d3876723caa23f7e",
+    "archived_replay_check.json": "3927ddeb02d2623f0bda27f1af84b2fd9a8b9e4be16dcd060502e9216b1ad114",
+    "render_projection_check.json": "20b285e8b1828552c595e4d0504194a047c756a253b8274e990d821a238c5556",
+    "check_unity_log.json": "6ea98199674352cb5de6caeeaf84dd6aa76b2961e7469dd741fa3201aa13b990",
+    "check_rig_sizing.txt": "bbee7b602809ccf75b260afc55e1ea26dd60373d6f3ad88f8e639799d06186be",
+    "visual_comparison.json": "c84b355fa2a24bde9f7044e21219a86ae6ab0774f98e904bdef94721eb0d8906",
+    "REQUIRED_CHECKER_FINDING.md": "872d250739421869b8845e50fc71c470ebccf80b84b44d600cf6eeafb4373d21",
+    "media_check.json": "7d93d5d5b799004ce6933d4d23086e65b56257b142f029741ee2b4d4bfc1753d"
+  },
+  "privacy": "Raw editor/session/process logs stay under /tmp/defense_axes_capture/private_archived_logs, excluded from repository."
+}

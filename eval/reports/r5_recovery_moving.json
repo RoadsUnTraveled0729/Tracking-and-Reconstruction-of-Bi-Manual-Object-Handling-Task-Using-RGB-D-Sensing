@@ -1,0 +1,101 @@
+{
+ "stem": "recording_20260825_222315",
+ "windows": [
+  {
+   "side": "right",
+   "start": 865,
+   "stop": 895,
+   "truth_motion_deg": 50.1,
+   "obj_wrist_err_cm": {
+    "median": 1.15,
+    "p95": 1.64
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 1.88,
+      "p95": 10.79,
+      "max": 50.62
+     },
+     "fk_wrist_cm": {
+      "median": 2.04,
+      "p95": 10.71,
+      "max": 15.39
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 1.46,
+      "p95": 14.45,
+      "max": 16.79
+     },
+     "fk_wrist_cm": {
+      "median": 2.99,
+      "p95": 3.26,
+      "max": 3.28
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 4.41,
+      "p95": 20.62,
+      "max": 28.57
+     },
+     "fk_wrist_cm": {
+      "median": 1.67,
+      "p95": 2.17,
+      "max": 2.8
+     }
+    }
+   }
+  },
+  {
+   "side": "right",
+   "start": 870,
+   "stop": 902,
+   "truth_motion_deg": 50.2,
+   "obj_wrist_err_cm": {
+    "median": 1.25,
+    "p95": 1.7
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 3.36,
+      "p95": 18.33,
+      "max": 49.86
+     },
+     "fk_wrist_cm": {
+      "median": 2.17,
+      "p95": 21.0,
+      "max": 21.39
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 3.0,
+      "p95": 13.83,
+      "max": 13.93
+     },
+     "fk_wrist_cm": {
+      "median": 2.32,
+      "p95": 2.72,
+      "max": 4.79
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 5.44,
+      "p95": 22.04,
+      "max": 26.11
+     },
+     "fk_wrist_cm": {
+      "median": 1.65,
+      "p95": 2.39,
+      "max": 2.99
+     }
+    }
+   }
+  }
+ ]
+}

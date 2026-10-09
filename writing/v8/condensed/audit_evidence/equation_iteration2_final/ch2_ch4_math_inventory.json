@@ -1,0 +1,1074 @@
+[
+  {
+    "chapter": 2,
+    "content_index": 25,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "BAT",
+      " AP1 = BAT  BP1"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 28,
+    "kind": "tbl",
+    "equation_id": null,
+    "math_text": [
+      "WorldCameraT",
+      "WallCameraT",
+      "ObjectCameraT",
+      "ObjectWorldT = CameraWorldT",
+      "ObjectCameraT",
+      "CameraWorldT",
+      "WorldCameraT\u22121",
+      "F",
+      "L24Camera'T",
+      "L12L24T, L11L24T",
+      "L14L12T, L13L11T",
+      "S",
+      "UnitySceneT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 30,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "F",
+      "diag1, \u22121, 1",
+      "S",
+      "100001010"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 33,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "M",
+      "BAT",
+      "M = U \u03a3 VT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 34,
+    "kind": "eq",
+    "equation_id": "2.1",
+    "math_text": [
+      "BAR = U diag1, 1, detUVT VT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 35,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "WorldCameraM",
+      "WallCameraM",
+      "WorldCameraR",
+      "WallCameraR",
+      "ObjectWorldR"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 39,
+    "kind": "tbl",
+    "equation_id": null,
+    "math_text": [
+      "WallWorldT = CameraWorldT WallCameraT",
+      "CameraWorldT",
+      " Worldg"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 2,
+    "content_index": 48,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ObjectCameraT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 9,
+    "kind": "eq",
+    "equation_id": "3.1",
+    "math_text": [
+      " Camera'q = F  Camerap,        F = diag1, \u22121, 1"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 14,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "BAR",
+      "BAR",
+      "BAR =  AXB AYB AZB",
+      "BAR",
+      " APBORG",
+      "BAT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 15,
+    "kind": "eq",
+    "equation_id": "3.2",
+    "math_text": [
+      "BAT = BAR APBORG01,         AP1 = BAT  BP1"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 17,
+    "kind": "eq",
+    "equation_id": "3.3",
+    "math_text": [
+      " Bv = ABR  Av,        ABR = BART"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 18,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " AP"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 19,
+    "kind": "eq",
+    "equation_id": "3.4",
+    "math_text": [
+      " BP = BART  AP \u2212  APBORGABT = BAT\u22121 = BART\u2212BART  APBORG01"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 24,
+    "kind": "eq",
+    "equation_id": "3.5",
+    "math_text": [
+      "L24Camera'T = L24Camera'R Camera'PL24ORG01L12L24T = I L24PL12ORG01L14L12T = L14L12R L12PL14ORG01"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 25,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'T",
+      "L12L24T",
+      "L11L24T",
+      "L14L12T",
+      "L14L12R",
+      "L13L11T"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 26,
+    "kind": "eq",
+    "equation_id": "3.6",
+    "math_text": [
+      "L14Camera'T = L24Camera'T L12L24T L14L12T"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 27,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "Camera'L24T",
+      "Camera'L12T",
+      "Camera'L14T"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 34,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'P23",
+      " Camera'P24",
+      " Camera'P12"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 38,
+    "kind": "eq",
+    "equation_id": "3.7",
+    "math_text": [
+      " Camera'XL24 =  Camera'P24 \u2212  Camera'P23 Camera'P24 \u2212  Camera'P23"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 41,
+    "kind": "eq",
+    "equation_id": "3.8",
+    "math_text": [
+      " Camera's =  Camera'P12 \u2212  Camera'P24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 42,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera's"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 44,
+    "kind": "eq",
+    "equation_id": "3.9",
+    "math_text": [
+      " Camera'ZL24 =  Camera'XL24 \u00d7  Camera's Camera'XL24 \u00d7  Camera's"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 45,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'XL24",
+      " Camera's",
+      " Camera's",
+      " Camera'XL24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 47,
+    "kind": "eq",
+    "equation_id": "3.10",
+    "math_text": [
+      " Camera'YL24 =  Camera'ZL24 \u00d7  Camera'XL24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 48,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'ZL24",
+      " Camera'XL24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 50,
+    "kind": "eq",
+    "equation_id": "3.11",
+    "math_text": [
+      "L24Camera'R =  Camera'XL24 Camera'YL24 Camera'ZL24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 51,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'PL24ORG =  Camera'P24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 52,
+    "kind": "eq",
+    "equation_id": "3.12",
+    "math_text": [
+      "L24Camera'T = L24Camera'R Camera'P2401"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 53,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'R"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 63,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ty",
+      "tz",
+      "tt",
+      "ey"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 68,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'R"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 69,
+    "kind": "eq",
+    "equation_id": "3.13",
+    "math_text": [
+      "L12L24T = IL24Camera'RT Camera'P12 \u2212  Camera'P2401"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 70,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L12L24R = I",
+      " L24PL12ORG = L24Camera'RT Camera'P12 \u2212  Camera'P24",
+      " Camera'P12"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 72,
+    "kind": "eq",
+    "equation_id": "3.14",
+    "math_text": [
+      "L14L12T = L14L12RL24Camera'RT Camera'P14 \u2212  Camera'P1201"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 73,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L14L12R",
+      " L12PL14ORG",
+      "L24Camera'RT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 74,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'v =  Camera'P14 \u2212  Camera'P12",
+      " L24v = L24Camera'RT  Camera'v"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 77,
+    "kind": "eq",
+    "equation_id": "3.15",
+    "math_text": [
+      "R = Ryy Rxx Rzz"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 78,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "Rx",
+      "Ry",
+      "Rz"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 79,
+    "kind": "eq",
+    "equation_id": "3.16",
+    "math_text": [
+      "R = cycz + sysxsz\u2212cysz + sysxczsycxcxszcxcz\u2212sx\u2212sycz + cysxszsysz + cysxczcycx"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 80,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "mij",
+      "m",
+      "m23",
+      "\u2212sx",
+      "sycx, \u2212sx, cycx",
+      "cx"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 81,
+    "kind": "eq",
+    "equation_id": "3.17",
+    "math_text": [
+      "x=asin\u2212m23, y=atan2m13,m33, z=atan2m21,m22"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 82,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "m23 = 1",
+      "m13",
+      "m33"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 83,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "x = +90\u00b0:   y=atan2m12,m11,   z = 0x = \u221290\u00b0:   y=atan2\u2212m12,m11,   z = 0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 85,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'R,  Camera'PL24ORG",
+      "L24Camera'R"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 88,
+    "kind": "eq",
+    "equation_id": "3.18",
+    "math_text": [
+      "L14L12R = Ryty Rztz Rxtt"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 89,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ty",
+      "tz",
+      "tt",
+      "L14L12R",
+      " L12a"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 90,
+    "kind": "eq",
+    "equation_id": "3.19",
+    "math_text": [
+      " L12a =  L12XL14 = L14L12R  L14XL14 = Ryty Rztz  L14XL14 = cycz,  sz,  \u2212sycz"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 94,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " L12a",
+      "sz"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 95,
+    "kind": "eq",
+    "equation_id": "3.20",
+    "math_text": [
+      "tz = asinay"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 96,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "cz"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 97,
+    "kind": "eq",
+    "equation_id": "3.21",
+    "math_text": [
+      "ty = atan2\u2212az, ax"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 98,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "tz = \u00b190\u00b0",
+      "ty = 0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 100,
+    "kind": "eq",
+    "equation_id": "3.22",
+    "math_text": [
+      " L12f\u2032 = Rz\u2212tz Ry\u2212ty  L12f"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 101,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " L12f",
+      " L12f\u2032",
+      "tt",
+      "\u2212sin tt, cos tt"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 102,
+    "kind": "eq",
+    "equation_id": "3.23",
+    "math_text": [
+      "tt = atan2\u2212f\u2032y, f\u2032z"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 103,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " L12f\u2032"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 104,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "M = diag\u22121, 1, 1"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 106,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "L14Camera'R = L24Camera'R L12L24R L14L12R",
+      " L14g = L14Camera'RT  Camera'P16 \u2212  Camera'P14 Camera'P16 \u2212  Camera'P14",
+      " L14g"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 107,
+    "kind": "eq",
+    "equation_id": "3.24",
+    "math_text": [
+      "ez = asingy,      ey = atan2\u2212gz, gx"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 108,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ey = 0",
+      "ey = \u221290"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 109,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ez",
+      "ez"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 110,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "tt = 0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 120,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " Camera'P23 = (0.12, \u22120.18, 0.99) Camera'P24 = (\u22120.06, \u22120.19, 0.99) Camera'P12 = (\u22120.16, 0.33, 1.31)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 122,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " Camera'XL24 = (\u22121.00, \u22120.05, \u22120.04) Camera'ZL24 = (0.01, 0.53, \u22120.85) Camera'YL24 = (\u22120.06, 0.85, 0.53)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 123,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'XL24",
+      " Camera'ZL24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 124,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'R = \u22121.00\u22120.060.01\u22120.050.850.53\u22120.040.53\u22120.85"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 125,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Camera'PL24ORG =  Camera'P24"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 126,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "L24Camera'T = \u22121.00\u22120.060.01\u22120.06\u22120.050.850.53\u22120.19\u22120.040.53\u22120.850.990001"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 128,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "L12L24T = 1000.070100.630010.000001"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 130,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "x = asin\u22120.53 = \u221232.1\u00b0y = atan20.01, \u22120.85 = 179.5\u00b0z = atan2\u22120.05, 0.85 = \u22123.3\u00b0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 133,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " Camera'v =  Camera'P14 \u2212  Camera'P12 = (\u22120.04, \u22120.29, \u22120.12)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 135,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " L24v = L24Camera'RT  Camera'v = (0.05, \u22120.31, \u22120.05) L12a = (0.17, \u22120.97, \u22120.16)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 137,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " L12f = L24Camera'RT  Camera'P16 \u2212  Camera'P14 = (0.01, \u22120.20, 0.03)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 139,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "tz = asin\u22120.97 = \u221276.6\u00b0ty = atan20.16, 0.17 = 43.0\u00b0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 141,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " L12f\u2032 = Rz76.6\u00b0 Ry\u221243.0\u00b0  L12f = (0.19, \u22120.06, 0.03)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 143,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "tt = atan20.06, 0.03 = 59.9\u00b0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 145,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " L14g = (0.94, 0.00, 0.34)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 146,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "ez = 0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 147,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "ey = atan2\u22120.34, 0.94 = \u221219.8\u00b0"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 148,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " L24v"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 149,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "L14L12T = 0.170.95\u22120.270.05\u22120.970.12\u22120.20\u22120.31\u22120.160.300.94\u22120.050001"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 3,
+    "content_index": 150,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " L12a",
+      " Camera'PL14ORG1 = L14Camera'T 0, 0, 0, 1T",
+      " L14P161 = L14Camera'T\u22121  Camera'P161",
+      "ez = 0",
+      " L14g"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 7,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "WorldCameraT",
+      "ObjectCameraT",
+      "ObjectWorldT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 8,
+    "kind": "eq",
+    "equation_id": "4.1",
+    "math_text": [
+      "ObjectWorldT = CameraWorldT ObjectCameraT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 9,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "CameraWorldT = WorldCameraT\u22121"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 10,
+    "kind": "eq",
+    "equation_id": "4.2",
+    "math_text": [
+      "BAT = BAR APBORG0T1,     ABT = BART\u2212BART  APBORG0T1"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 11,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "CameraWorldT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 22,
+    "kind": "eq",
+    "equation_id": "4.3",
+    "math_text": [
+      " UnityPObjectORGi \u2212  UnityPObjectORGlast \u2264 vmax ti \u2212 tlastangleMappedMarker(i)MappedMarker(last)R \u2264 wmax ti \u2212 tlast"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 23,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "MappedMarker(last)UnityRT MappedMarker(i)UnityR",
+      "vmax",
+      "wmax"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 28,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "WorldCameraM = 1.000.00\u22120.02\u22120.02\u22120.48\u22120.88\u22120.010.88\u22120.48"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 29,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "WorldCameraT"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 30,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Worldg = (\u22120.02, 0.53, 0.85)"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 31,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      "CameraWorldR"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 32,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " WorldPCameraORG = \u2212CameraWorldR  CameraPWorldORG = (\u22120.01, \u22120.39, 0.43) m"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 35,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " CameraPObjectORG = (\u22120.21, 0.16, 1.02) m"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 37,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      "ObjectWorldR = CameraWorldR ObjectCameraR WorldPObjectORG = CameraWorldR  CameraPObjectORG +  WorldPCameraORG"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 39,
+    "kind": "mth",
+    "equation_id": null,
+    "math_text": [
+      " WorldPObjectORG = (\u22120.24, 0.43, \u22120.19) mObjectWorldR = 1.000.010.070.050.52\u22120.85\u22120.050.860.52"
+    ],
+    "all_present_in_document": true
+  },
+  {
+    "chapter": 4,
+    "content_index": 40,
+    "kind": "pm",
+    "equation_id": null,
+    "math_text": [
+      " Worldg"
+    ],
+    "all_present_in_document": true
+  }
+]

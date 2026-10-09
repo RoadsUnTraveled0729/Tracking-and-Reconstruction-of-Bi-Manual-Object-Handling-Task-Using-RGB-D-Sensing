@@ -1,0 +1,353 @@
+{
+  "status": "PASS",
+  "slide": 34,
+  "kind": "masked_comparison_figure",
+  "mode": "three-case",
+  "purpose": "Slide 34: the three recovery cases side by side at frame 489 of window 445-489, each with its window wrist median (plan declarative-stargazing-phoenix.md Milestone B, D-392; replaces the D-390 two-panel figure).",
+  "asset": "presentation/defense_2026/media/p34_masked_comparison.png",
+  "dimensions": [
+    1500,
+    1155
+  ],
+  "dpi": 300,
+  "figure_in": [
+    5.0,
+    3.85
+  ],
+  "font_family": "DejaVu Sans",
+  "background": "#000000",
+  "font_pt": {
+    "title": 12.5,
+    "label": 12.5
+  },
+  "font_px_at_dpi": {
+    "title": 52.1,
+    "label": 52.1
+  },
+  "sha256": {
+    "png": "32c8809559d9879e8c413e5ac18a035e9c3f5c971a0f075b52754b8efa1f6589"
+  },
+  "bytes": {
+    "png": 570742
+  },
+  "window": {
+    "name": "intermediate motion",
+    "frames": [
+      445,
+      489
+    ],
+    "source": "writing/v9/audit_evidence/ch7_restructured/synthetic_selection.json"
+  },
+  "medians_cm": {
+    "wrist": {
+      "hold-last": 1.2377,
+      "direction memory": 1.8839,
+      "object-assisted": 1.2092
+    },
+    "elbow": {
+      "hold-last": 0.6921,
+      "direction memory": 1.7304,
+      "object-assisted": 1.5992
+    }
+  },
+  "slide34_values_cm": {
+    "wrist": [
+      1.2,
+      1.9,
+      1.2
+    ],
+    "elbow": [
+      0.7,
+      1.7,
+      1.6
+    ]
+  },
+  "medians_match_slide34": true,
+  "thesis_check": {
+    "source": "writing/v9/Chapter_7_Evaluation.docx",
+    "table_7_5": {
+      "caption": "Table 7.5. Synthetic removal windows selected using valid unmasked wrist motion before method errors were calculated.",
+      "rows": [
+        [
+          "Window",
+          "Frame range",
+          "n",
+          "Reference wrist excursion (cm)"
+        ],
+        [
+          "Lower motion",
+          "490 to 534",
+          "45",
+          "0.6"
+        ],
+        [
+          "Intermediate motion",
+          "445 to 489",
+          "45",
+          "2.8"
+        ],
+        [
+          "Higher motion",
+          "557 to 601",
+          "45",
+          "5.1"
+        ]
+      ]
+    },
+    "table_7_7_intermediate_wrist_median_cm": {
+      "Hold-last": "1.2",
+      "Direction memory": "1.9",
+      "Object-assisted": "1.2"
+    },
+    "table_7_7_caption": "Table 7.7. Synthetic wrist reconstruction error relative to the valid unmasked model reconstruction.",
+    "wrist_medians_match_table_7_7": true
+  },
+  "still_frame": 489,
+  "still_source": {
+    "bag": "Video/recording_20260909_000024.bag",
+    "decode": "pyrealsense2 sequential, bgr8",
+    "frame_rgb_sha256": "6f3955cf03cb38d88d293bf00f1c053243c85a2437a9a3315aeba2753fa3fb02",
+    "index_check": "decoded frame 450 equals writing/v9/figures/src/r7_frame00450.png byte for byte",
+    "plan_deviation": "plan A3 named frame 450; at 450 the recovered chains lie under the reference"
+  },
+  "min_text_px": 40.0,
+  "text_measured": [
+    {
+      "text": "Hold last",
+      "font_px": 52.1,
+      "bbox_w_px": 228.5,
+      "bbox_h_px": 50.0
+    },
+    {
+      "text": "wrist 1.2 cm",
+      "font_px": 52.1,
+      "bbox_w_px": 361.5,
+      "bbox_h_px": 50.0
+    },
+    {
+      "text": "Direction memory",
+      "font_px": 52.1,
+      "bbox_w_px": 469.1,
+      "bbox_h_px": 50.0
+    },
+    {
+      "text": "wrist 1.9 cm",
+      "font_px": 52.1,
+      "bbox_w_px": 361.5,
+      "bbox_h_px": 50.0
+    },
+    {
+      "text": "Object-assisted",
+      "font_px": 52.1,
+      "bbox_w_px": 400.9,
+      "bbox_h_px": 50.0
+    },
+    {
+      "text": "wrist 1.2 cm",
+      "font_px": 52.1,
+      "bbox_w_px": 361.5,
+      "bbox_h_px": 50.0
+    }
+  ],
+  "layout_px": {
+    "gap": 15,
+    "title_band": 80,
+    "label_band": 80,
+    "panel_w": 490.0,
+    "photo_h": 995,
+    "scale_out_per_src_px": 3.2667
+  },
+  "crop_px": [
+    150,
+    60,
+    300,
+    364.59
+  ],
+  "line_pt": {
+    "case": 3.2,
+    "reference": 1.6,
+    "reference_halo": 3.0
+  },
+  "marker_pt": {
+    "ring": 19,
+    "ring_edge": 2.2,
+    "joint": 5.0
+  },
+  "reference_px": {
+    "shoulder": [
+      260.0,
+      84.0
+    ],
+    "elbow": [
+      221.9,
+      177.1
+    ],
+    "wrist": [
+      208.2,
+      257.1
+    ]
+  },
+  "panels": {
+    "hold-last": {
+      "title": "Hold last",
+      "label": "wrist 1.2 cm",
+      "colour": "#BBBBBB",
+      "panel_px": [
+        0.0,
+        0,
+        490.0,
+        1155
+      ],
+      "photo_px": [
+        0.0,
+        80,
+        490.0,
+        1075
+      ],
+      "recovered_px": {
+        "elbow": [
+          225.7,
+          180.4
+        ],
+        "wrist": [
+          201.3,
+          264.1
+        ]
+      },
+      "frame_error_cm": {
+        "elbow": 1.4104,
+        "wrist": 2.9977
+      },
+      "title_ink_h_px": 40,
+      "label_ink_h_px": 40
+    },
+    "direction memory": {
+      "title": "Direction memory",
+      "label": "wrist 1.9 cm",
+      "colour": "#B48CFF",
+      "panel_px": [
+        505.0,
+        0,
+        995.0,
+        1155
+      ],
+      "photo_px": [
+        505.0,
+        80,
+        995.0,
+        1075
+      ],
+      "recovered_px": {
+        "elbow": [
+          231.5,
+          181.0
+        ],
+        "wrist": [
+          219.1,
+          266.1
+        ]
+      },
+      "frame_error_cm": {
+        "elbow": 2.1532,
+        "wrist": 2.9197
+      },
+      "title_ink_h_px": 50,
+      "label_ink_h_px": 40
+    },
+    "object-assisted": {
+      "title": "Object-assisted",
+      "label": "wrist 1.2 cm",
+      "colour": "#E8B35A",
+      "panel_px": [
+        1010.0,
+        0,
+        1500.0,
+        1155
+      ],
+      "photo_px": [
+        1010.0,
+        80,
+        1500.0,
+        1075
+      ],
+      "recovered_px": {
+        "elbow": [
+          231.6,
+          180.5
+        ],
+        "wrist": [
+          208.7,
+          255.3
+        ]
+      },
+      "frame_error_cm": {
+        "elbow": 2.1303,
+        "wrist": 0.6699
+      },
+      "title_ink_h_px": 50,
+      "label_ink_h_px": 40
+    }
+  },
+  "labels": {
+    "hold-last": "wrist 1.2 cm",
+    "direction memory": "wrist 1.9 cm",
+    "object-assisted": "wrist 1.2 cm"
+  },
+  "projection": {
+    "model": "pinhole, no distortion, y flipped back to the sensor frame",
+    "copied_from": "eval/failure/make_label_compare_fig.py project()",
+    "intrinsics_source": "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.meta.json color_intrinsics",
+    "intrinsics": {
+      "fx": 607.561279296875,
+      "fy": 607.0150756835938,
+      "ppx": 323.93756103515625,
+      "ppy": 248.0174102783203,
+      "width": 640,
+      "height": 480
+    },
+    "check_against_measured_landmarks_frame489": {
+      "elbow": {
+        "reference_px": [
+          221.9,
+          177.1
+        ],
+        "measured_px": [
+          223.1,
+          174.1
+        ],
+        "distance_px": 3.28
+      },
+      "wrist": {
+        "reference_px": [
+          208.2,
+          257.1
+        ],
+        "measured_px": [
+          210.1,
+          251.1
+        ],
+        "distance_px": 6.2
+      }
+    },
+    "tolerance_px": 12.0
+  },
+  "shoulder_source": "filtered right_shoulder landmark, y flipped (evaluate_ch7_restructured.py line 217)",
+  "colours": {
+    "reference": "#FFFFFF",
+    "removed": "#FF4040",
+    "hold-last": "#BBBBBB",
+    "direction memory": "#B48CFF",
+    "object-assisted": "#E8B35A"
+  },
+  "inputs": {
+    "writing/v9/audit_evidence/ch7_restructured/synthetic_pairs.csv": "70768c7d796e4d20e700f3a95b77eddeb4744ae1b3c22000f6164867ef17d50e",
+    "writing/v9/audit_evidence/ch7_restructured/synthetic_selection.json": "e9740729adea89f5ca80f4ea26018ce433ae27dc9933d0f3481301d0e109a716",
+    "writing/v9/figures/src/r7_frame00450.png": "8510ec9a9fea76732956541ca6b555b0f3ea2e50d01c68c6245890646198fd68",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_filtered.csv": "3c3885d94daf8c6150727a280542bf60cdc69cb4a168344ad33894dda4420218",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.meta.json": "0b90b2a5af5e00a1ee78bab929b1479eca0a3c8158952043bf1d69c67d291c6d",
+    "writing/v9/Chapter_7_Evaluation.docx": "c31249f10b0143b6c6dc5cc9442361a6f52704a991a5c27723d09be39b9c3a0a",
+    "presentation/defense_2026/Thesis_Defence_2026.pptx": "a27dc653d3860e8076622e1923894c49a2c03e148551f06d1739eebdb15f2a80"
+  },
+  "generator": "presentation/defense_2026/anim/masked_comparison_figure.py",
+  "generator_sha256": "f292681433fc66728df9e1b37c061d0d4c2f1fae3dac8fb713eb5607979ed8c8"
+}

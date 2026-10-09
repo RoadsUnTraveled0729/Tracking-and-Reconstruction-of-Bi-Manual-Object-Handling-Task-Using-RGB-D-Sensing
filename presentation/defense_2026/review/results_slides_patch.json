@@ -1,0 +1,108 @@
+{
+  "purpose": "Results slides 33-35 reduced to the spoken script (D-389).",
+  "generator": "presentation/defense_2026/anim/patch_results_slides.py",
+  "generator_sha256": "16e1a98c2aa224315b0b3a597d010327bae08353b0573d244f89c2e268050342",
+  "pptx": "presentation/defense_2026/Thesis_Defence_2026.pptx",
+  "old": {
+    "sha256": "3dcaf1068b5e7668e8b8ed325e2145027d7bb91566e89ea31ee3cc581d43dff1",
+    "bytes": 103078203,
+    "entries": 496
+  },
+  "new": {
+    "sha256": "4e158522cf007fe6f06f69dd2770b442913cc9fa00ee9f2af3c34551994d9a37",
+    "bytes": 102013918,
+    "entries": 495
+  },
+  "zip_entry_comparison": {
+    "changed_crc": [
+      "ppt/slides/_rels/slide35.xml.rels",
+      "ppt/slides/slide33.xml",
+      "ppt/slides/slide34.xml",
+      "ppt/slides/slide35.xml"
+    ],
+    "added": [],
+    "removed": [
+      "ppt/media/image50.png"
+    ],
+    "unchanged_entries": 491
+  },
+  "left_image_still_named_by": [],
+  "media_counts_after": {
+    "total": 148,
+    "mp4": 26,
+    "png": 122
+  },
+  "edits": {
+    "slide33": {
+      "2": "Body, unoccluded: model and avatar",
+      "4": "Model elbow 0.36 / 1.08 cm",
+      "6": "Model wrist 0.83 / 2.34 cm",
+      "8": "Rig 5.3 to 6.8 cm",
+      "15": "Model elbow",
+      "16": "0.36",
+      "17": "1.08",
+      "19": "Model wrist",
+      "20": "0.83",
+      "21": "2.34",
+      "23": "Rig elbow",
+      "24": "5.3",
+      "25": "6.1",
+      "27": "Rig wrist",
+      "28": "5.5",
+      "29": "6.8"
+    },
+    "slide34": {
+      "amber_bold_ids": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "grey_ids": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        37,
+        38,
+        39,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "caption_52": "Right arm \u00b7 45 frames per window \u00b7 reference: unmasked reconstruction \u00b7 values in cm \u00b7 spoken: intermediate window 445-489"
+    },
+    "slide35": {
+      "deleted_ids": [
+        1006,
+        1007,
+        12,
+        11
+      ],
+      "removed_relationship": "rId3",
+      "picture_10_x": 7096790,
+      "label_9_x": 7096790,
+      "x_delta": 1409222,
+      "text_1003": "Watch landmark on the right wrist"
+    }
+  },
+  "colours_source": "ppt/slides/slide21.xml (E8B35A highlight, BBBBBB secondary label)",
+  "thesis_source": "writing/v9/Chapter_7_Evaluation.docx (model elbow 0.36 / 1.08 cm; model wrist 0.83 / 2.34 cm; Table 7.4 rig 5.3 / 6.1 and 5.5 / 6.8 cm)",
+  "powerpoint_view": "not verified (author check)"
+}

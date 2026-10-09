@@ -1,0 +1,46 @@
+{
+  "launched": "2026-09-14 18:05:38",
+  "view_config_sha256": "50f67d739498093977fb940f809cbfa1fb20a6221f8deb38f82bd3ddb5ba5d99",
+  "files": {
+    "carry.png": {
+      "bytes": 288781,
+      "sha256": "3ff3e333f5898562cefad7be555b134c15ecf84e416228231c4b5463d13f7b11"
+    },
+    "carry.json": {
+      "bytes": 946,
+      "sha256": "e381bdbc96510bf5ca64a3ddd98108591c085f76bbc1719fbac2c58bdbcc10df"
+    },
+    "lift.png": {
+      "bytes": 293532,
+      "sha256": "69bf2ddd444a2f785335dab7209a772265261a6c2b6c0b75b4bb9a91bbd3a186"
+    },
+    "lift.json": {
+      "bytes": 946,
+      "sha256": "5625c9eb36685c13de25a405405508ae6b0d81e8f0092e5ac96812383b170cf5"
+    },
+    "slide.png": {
+      "bytes": 322857,
+      "sha256": "36b1de3f6eae4d5db76bc7ed736093093bcd38eaf08b96207340fa3849e71272"
+    },
+    "slide.json": {
+      "bytes": 947,
+      "sha256": "b841576a29db425e38fe25c39a6ba8b1100c20d9bbfa1ca8fe2e0a2df6881b9e"
+    },
+    "unity_person_log.csv": {
+      "bytes": 115259,
+      "sha256": "88d5606a400b868fe253466e396fa7c4ed99ea1c6345fd110fd3ab0134294ceb"
+    },
+    "unity_object_log.csv": {
+      "bytes": 36370,
+      "sha256": "e9b7d53f11f0a6ad3bd45bee5f346e17969d08827e3c1d261bc7e93e2ab2ac53"
+    },
+    "rig_dimensions.csv": {
+      "bytes": 230,
+      "sha256": "d03f6670affcb0f224b21212f1681b34744899e2ba03a55dfd2b75007587a736"
+    },
+    "rig_sizing_used.txt": {
+      "bytes": 192,
+      "sha256": "65973b9e3eadb46f1d35433c569df18c9b742c377520669f33bdd821ab95bb56"
+    }
+  }
+}

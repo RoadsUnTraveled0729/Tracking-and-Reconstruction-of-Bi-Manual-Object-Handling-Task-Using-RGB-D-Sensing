@@ -1,0 +1,203 @@
+{
+ "stem": "recording_20260831_065553",
+ "alias": "r6b",
+ "windows": [
+  {
+   "frames": [
+    5,
+    820
+   ],
+   "n": 816,
+   "raw": {
+    "root_ex": {
+     "spread_deg": 15.34,
+     "std_deg": 5.52
+    },
+    "root_ey": {
+     "spread_deg": 57.57,
+     "std_deg": 19.68
+    },
+    "root_ez": {
+     "spread_deg": 10.79,
+     "std_deg": 3.49
+    }
+   },
+   "ray": {
+    "root_ex": {
+     "spread_deg": 18.05,
+     "std_deg": 6.15
+    },
+    "root_ey": {
+     "spread_deg": 2.25,
+     "std_deg": 1.47
+    },
+    "root_ez": {
+     "spread_deg": 4.22,
+     "std_deg": 1.53
+    },
+    "pelvis_drift_cm": 9.5
+   },
+   "hold": {
+    "root_ex": {
+     "spread_deg": 21.69,
+     "std_deg": 7.33
+    },
+    "root_ey": {
+     "spread_deg": 3.06,
+     "std_deg": 1.03
+    },
+    "root_ez": {
+     "spread_deg": 0.35,
+     "std_deg": 0.12
+    },
+    "pelvis_drift_cm": 0.0
+   },
+   "shoulder_mid_drift_cm": 13.37,
+   "pelvis_separation_cm": {
+    "median": 8.01,
+    "max": 15.3
+   },
+   "fk_wrist_separation_cm": {
+    "left": {
+     "median": 0.42,
+     "max": 16.28
+    },
+    "right": {
+     "median": 7.87,
+     "max": 30.29
+    }
+   }
+  },
+  {
+   "frames": [
+    823,
+    899
+   ],
+   "n": 77,
+   "raw": {
+    "root_ex": {
+     "spread_deg": 7.97,
+     "std_deg": 2.94
+    },
+    "root_ey": {
+     "spread_deg": 11.62,
+     "std_deg": 5.56
+    },
+    "root_ez": {
+     "spread_deg": 2.91,
+     "std_deg": 0.88
+    }
+   },
+   "ray": {
+    "root_ex": {
+     "spread_deg": 1.67,
+     "std_deg": 0.56
+    },
+    "root_ey": {
+     "spread_deg": 1.72,
+     "std_deg": 0.58
+    },
+    "root_ez": {
+     "spread_deg": 1.75,
+     "std_deg": 0.46
+    },
+    "pelvis_drift_cm": 1.88
+   },
+   "hold": {
+    "root_ex": {
+     "spread_deg": 2.12,
+     "std_deg": 0.7
+    },
+    "root_ey": {
+     "spread_deg": 0.01,
+     "std_deg": 0.0
+    },
+    "root_ez": {
+     "spread_deg": 0.0,
+     "std_deg": 0.0
+    },
+    "pelvis_drift_cm": 0.0
+   },
+   "shoulder_mid_drift_cm": 2.06,
+   "pelvis_separation_cm": {
+    "median": 3.36,
+    "max": 3.56
+   },
+   "fk_wrist_separation_cm": {
+    "left": {
+     "median": 7.23,
+     "max": 7.9
+    },
+    "right": {
+     "median": 0.0,
+     "max": 0.0
+    }
+   }
+  }
+ ],
+ "whole_recording": {
+  "frames_replaced": 893,
+  "frames_any_angle_changed": 895,
+  "per_angle_max_abs_deg": {
+   "root_ex": 24.14,
+   "root_ey": 38.68,
+   "root_ez": 15.11,
+   "Rsh_y": 179.7,
+   "Rsh_z": 16.23,
+   "Rsh_tau": 89.29,
+   "Rel_y": 0.0,
+   "Rel_z": 0.0,
+   "Lsh_y": 21.33,
+   "Lsh_z": 17.77,
+   "Lsh_tau": 22.55,
+   "Lel_y": 0.0,
+   "Lel_z": 0.0
+  },
+  "per_angle_median_abs_deg_on_replaced": {
+   "root_ex": 3.53,
+   "root_ey": 0.84,
+   "root_ez": 10.6,
+   "Rsh_y": 34.46,
+   "Rsh_z": 5.12,
+   "Rsh_tau": 89.29,
+   "Rel_y": 0.0,
+   "Rel_z": 0.0,
+   "Lsh_y": 9.8,
+   "Lsh_z": 10.84,
+   "Lsh_tau": 0.0,
+   "Lel_y": 0.0,
+   "Lel_z": 0.0
+  },
+  "root_tag_constrained_frames": {
+   "ray": 893,
+   "hold": 893
+  },
+  "solver_counters": {
+   "ray": {
+    "gated": {
+     "right_hip": 893,
+     "left_hip": 892
+    },
+    "ray_fixed": {
+     "left_hip": 891,
+     "right_hip": 891
+    },
+    "occluder_fixed": {
+     "right_hip": 2,
+     "left_hip": 1
+    }
+   },
+   "hold": {
+    "gated": {
+     "right_hip": 893,
+     "left_hip": 892
+    },
+    "hip_held": {
+     "right_hip": 893,
+     "left_hip": 892
+    },
+    "ray_fixed": {}
+   }
+  }
+ }
+}

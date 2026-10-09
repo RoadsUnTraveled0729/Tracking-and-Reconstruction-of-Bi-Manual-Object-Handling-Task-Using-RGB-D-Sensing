@@ -1,0 +1,4691 @@
+{
+  "status": "PASS",
+  "goal": "Independent final 78-page PowerPoint packaging and source-media integration review. No media re-encoding or full decode was performed.",
+  "artifacts": {
+    "pptx": "presentation/defense_2026/Thesis_Defence_2026.pptx",
+    "pptx_sha256": "91da042a92b3a6eacab6703a4dd53ffcc9ac192fd6d906d0ecc3d0834ca063e9",
+    "pdf": "presentation/defense_2026/Thesis_Defence_2026.pdf",
+    "pdf_sha256": "8dfb12d6aa7bd93a5f4ae7e5bdb985a5c22c64858ad354802ab9fa9ef6c6b543"
+  },
+  "current_media_contract": "presentation/defense_2026/committee_materials/axes_revision/media_contract.json",
+  "current_media_contract_sha256": "95d1446c18461b6457f5a4d000c2d235be9c14492f2cbee232ea830ddf07b3d9",
+  "source_hashes": {
+    "talk_content.json": "ebd4a991fd5b26083d0cdaa303f9faa5c36d060c7ff0aee1cb3b7b85654746a9",
+    "backup_content.json": "40c72dfaf68ebb061ddba245c30540e31eaa0f76d8bc564d5cfedd1f34111ea2",
+    "build_deck.py": "331265d422be2d50b6bab708d665eb6494006cd58b12178324c0443bb8adfbe9",
+    "SPEAKER_NOTES.md": "43a8ea9cc980b5d970a434aedbcb0da18f415c006125821daa2c320cfc591854",
+    "revision_id_map.json": "7116bc38cb0245e9aec4f63dc74bcac8f5d91d91c49bd65a7cae560f98142ba8"
+  },
+  "slides": 78,
+  "main": 53,
+  "hidden_qa": 25,
+  "embedded_movies": 23,
+  "embedded_gifs": 3,
+  "preserved_original_media": 161,
+  "navigation": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": [],
+    "16": [],
+    "17": [],
+    "18": [],
+    "19": [],
+    "20": [],
+    "21": [],
+    "22": [],
+    "23": [],
+    "24": [],
+    "25": [],
+    "26": [],
+    "27": [],
+    "28": [],
+    "29": [],
+    "30": [],
+    "31": [],
+    "32": [],
+    "33": [],
+    "34": [],
+    "35": [],
+    "36": [],
+    "37": [],
+    "38": [],
+    "39": [],
+    "40": [],
+    "41": [],
+    "42": [],
+    "43": [],
+    "44": [],
+    "45": [],
+    "46": [],
+    "47": [],
+    "48": [],
+    "49": [],
+    "50": [],
+    "51": [],
+    "52": [],
+    "53": [
+      54,
+      54
+    ],
+    "54": [
+      55,
+      55,
+      56,
+      56,
+      57,
+      57,
+      58,
+      58,
+      59,
+      59,
+      60,
+      60,
+      61,
+      61,
+      62,
+      62,
+      63,
+      63,
+      64,
+      64,
+      65,
+      65,
+      66,
+      66,
+      67,
+      67,
+      68,
+      68,
+      69,
+      69,
+      70,
+      70,
+      71,
+      71,
+      72,
+      72,
+      73,
+      73,
+      74,
+      74,
+      75,
+      75,
+      76,
+      76,
+      77,
+      77,
+      78,
+      78
+    ],
+    "55": [
+      54
+    ],
+    "56": [
+      54
+    ],
+    "57": [
+      54
+    ],
+    "58": [
+      54
+    ],
+    "59": [
+      54
+    ],
+    "60": [
+      54
+    ],
+    "61": [
+      54
+    ],
+    "62": [
+      54
+    ],
+    "63": [
+      54
+    ],
+    "64": [
+      54
+    ],
+    "65": [
+      54
+    ],
+    "66": [
+      54
+    ],
+    "67": [
+      54
+    ],
+    "68": [
+      54
+    ],
+    "69": [
+      54
+    ],
+    "70": [
+      54
+    ],
+    "71": [
+      54
+    ],
+    "72": [
+      54
+    ],
+    "73": [
+      54
+    ],
+    "74": [
+      54
+    ],
+    "75": [
+      54
+    ],
+    "76": [
+      54
+    ],
+    "77": [
+      54
+    ],
+    "78": [
+      54
+    ]
+  },
+  "embedded_media": [
+    {
+      "page": 6,
+      "key": "paired_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p06-Accepted_Body_Landmarks_With_Axes.mp4",
+      "sha256": "f7a5e0c1d1a831680bd3e4fb47623d5caa0f66f4cae545aed77c8caefdcdb565",
+      "type": "video"
+    },
+    {
+      "page": 7,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p07-Hampel_Spike_Removal.mp4",
+      "sha256": "59bd730723125c3db2ed48c402088bf503c27d2814393568c2522ae1711953c9",
+      "type": "video"
+    },
+    {
+      "page": 8,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p08-Short_Gap_Interpolation.mp4",
+      "sha256": "365f15aab7048696c75f5ac358b19e1a0d1b9f4562301e8dedace084f27d2a4a",
+      "type": "video"
+    },
+    {
+      "page": 9,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p09-Offline_Butterworth_Smoothing.mp4",
+      "sha256": "28788251f4df627908662a92f904805f4ffd8a6c8b5957806564ca9efca41a38",
+      "type": "video"
+    },
+    {
+      "page": 13,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p13-Torso_Axes_From_Measured_Landmarks.mp4",
+      "sha256": "3a19a6022b864f8e70d2661a9756faf21bccaf7845acff9fa6e93151eabe290b",
+      "type": "video"
+    },
+    {
+      "page": 14,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p14-Torso_Frame_And_Root_Transform.mp4",
+      "sha256": "4e5ddd1b4443b885ca75e60f2f223618976b2efff9c46da44a662700e0831229",
+      "type": "video"
+    },
+    {
+      "page": 15,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p15-Root_Rotation_From_Torso_Axes.mp4",
+      "sha256": "907945d5a2a2edf352002fd1fcb0921f5052a5e908fefbcc2f26b93f472c941c",
+      "type": "video"
+    },
+    {
+      "page": 16,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p16-Upper_Arm_Direction_In_Shoulder_Frame.mp4",
+      "sha256": "b446dfeb31be202e66a5e61193d8f1666b71dee8a4f22ecb357dcdb82e754308",
+      "type": "video"
+    },
+    {
+      "page": 17,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p17-Shoulder_Swing_From_Upper_Arm_Direction.mp4",
+      "sha256": "a1ca264d130c9c3ccf3b5f95c0c3f88a894da6cc791f604245a54e208f859d8f",
+      "type": "video"
+    },
+    {
+      "page": 18,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p18-Shoulder_Twist_From_Forearm_Plane.mp4",
+      "sha256": "ec9e47173c1c2a0cd4a1f069754ad9bdb52088d8940c4ac3be0bc810081f4fc4",
+      "type": "video"
+    },
+    {
+      "page": 19,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p19-Elbow_Angles_In_The_Rotated_Arm_Frame.mp4",
+      "sha256": "0b7c49a0c2b5ac6e838ad3e12ac50e084ee94f34ab9db53716549d73ca2e4757",
+      "type": "video"
+    },
+    {
+      "page": 20,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p20-Forearm_Component_And_Twist_Observability.mp4",
+      "sha256": "9e85e684bd33c7878fc063f2ea0959b75c5d1486ca8bbbd937a9db51da84de7a",
+      "type": "video"
+    },
+    {
+      "page": 23,
+      "key": "paired_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p23-Holding_Input_And_Torso_Rejection_With_Axes.mp4",
+      "sha256": "2f09f50dea1358b1f81ed507402896e861f24ea286dd0e3f835a5c5ba506b519",
+      "type": "video"
+    },
+    {
+      "page": 25,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p25-Grasp_Offset_During_Wrist_Depth_Loss_With_Axes.mp4",
+      "sha256": "1b744a5930b079c52d81476b5dd372aafcb814675fd42d96d240fba7dfb7f6d6",
+      "type": "video"
+    },
+    {
+      "page": 27,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p27-Fresh_Unity_Wrist_Loss_With_Model_Axes.mp4",
+      "sha256": "f3b84a04a0bba75c58b74462685466596bd4ba8c66b79e0a0b1130bfff702539",
+      "type": "video"
+    },
+    {
+      "page": 29,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p29-Elbow_Endpoint_Constraint_Circle_With_Axes.mp4",
+      "sha256": "74231478b2b7a0df6f56ca89a7c14d216e0de6bb943d275ffb0c4a567a05f66d",
+      "type": "video"
+    },
+    {
+      "page": 32,
+      "key": "paired_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p32-Controlled_Held_Joint_Fallback.mp4",
+      "sha256": "4bd2eb96df6d88d5718d61959f3cbff8166e21401457e0ee7dab5694684faea6",
+      "type": "video"
+    },
+    {
+      "page": 33,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p33-Single_Frame_Data_Flow.mp4",
+      "sha256": "bfec146b124828e243a6689f47809f99855018a3afc53e4f39e91539e752cc0d",
+      "type": "video"
+    },
+    {
+      "page": 34,
+      "key": "media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/animations/p34-Shared_Image_Private_Copies.gif",
+      "sha256": "d985c5a487dd12516258000dc515f9996295bde8776aacb90d44d180e7118e6a",
+      "type": "gif"
+    },
+    {
+      "page": 36,
+      "key": "media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/animations/p36-Temporal_Stream_Combination.gif",
+      "sha256": "e23fc03c07681234aaed08164b049c7a3d550167862769828085d5e5260ac6bc",
+      "type": "gif"
+    },
+    {
+      "page": 38,
+      "key": "media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/animations/p38-Python_Unity_Read_Write_Validation.gif",
+      "sha256": "adb7d02706d519b0f2b851c090afea95206b5eb898ce39a58128fa8e0f57a546",
+      "type": "gif"
+    },
+    {
+      "page": 41,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p41-Fresh_Unity_Integrated_Reconstruction_With_Model_Axes.mp4",
+      "sha256": "9ae6a65040e2975d914d056797d14e094794697abf6be4f450dbd1fb15eb636c",
+      "type": "video"
+    },
+    {
+      "page": 47,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p47-Fresh_Unity_Handover_With_Model_Axes.mp4",
+      "sha256": "248ab1df92d9e9d948468b94d268edc3caa8ae9865693fe6b3a9feea5918ebe6",
+      "type": "video"
+    },
+    {
+      "page": 49,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p49-Causal_One_Euro_Filtering.mp4",
+      "sha256": "b4ddb09a36cd4ef3be3779892a24cab628aef5b6e077a503ea084d54ac4164cb",
+      "type": "video"
+    },
+    {
+      "page": 67,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p67-Savitzky_Golay_Filtering.mp4",
+      "sha256": "71c0d2253607597af3e83cf9f04014158f82bf1de1ed752d3433b545fcdf68e2",
+      "type": "video"
+    },
+    {
+      "page": 68,
+      "key": "composite_media",
+      "path": "presentation/defense_2026/committee_materials/axes_revision/videos/p68-Median_Filtering.mp4",
+      "sha256": "3e6cb1ecf452114266783a5a34b8ad54cd547b5a036bf608cd8b3a1f0f034c8e",
+      "type": "video"
+    }
+  ],
+  "movie_timing": [
+    {
+      "page": 6,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 7,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 8,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 9,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 13,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 14,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 15,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 16,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 17,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 18,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 19,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 20,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 23,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 25,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 27,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 29,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 32,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 33,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 41,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 47,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 49,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 67,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    },
+    {
+      "page": 68,
+      "shape_id": "10",
+      "delay": [
+        "0"
+      ],
+      "click_action": "ppaction://media",
+      "explicit_play_command": false
+    }
+  ],
+  "external_links": [
+    {
+      "page": 64,
+      "target": "committee_materials/axes_revision/videos/p64-Derived_Memory_Records.mp4",
+      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    },
+    {
+      "page": 69,
+      "target": "committee_materials/axes_revision/videos/p69-Single_Frame_Overview.mp4",
+      "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink"
+    }
+  ],
+  "checks": [
+    {
+      "check": "ZIP CRC integrity",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "78 pages with 53 main and 25 Q&A",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Content IDs equal actual ordinals",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Current contract ordinals and page map",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page01 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page01 title correspondence",
+      "status": "PASS",
+      "detail": "Tracking and Reconstruction of Bi-Manual Object Handling Task Using RGB-D Sensing"
+    },
+    {
+      "check": "Page01 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page01 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page02 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page02 title correspondence",
+      "status": "PASS",
+      "detail": "Task and observations"
+    },
+    {
+      "check": "Page02 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page02 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page03 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page03 title correspondence",
+      "status": "PASS",
+      "detail": "Research question"
+    },
+    {
+      "check": "Page03 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page03 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page04 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page04 title correspondence",
+      "status": "PASS",
+      "detail": "System overview"
+    },
+    {
+      "check": "Page04 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page04 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page05 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page05 title correspondence",
+      "status": "PASS",
+      "detail": "Calibration"
+    },
+    {
+      "check": "Page05 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page05 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 title correspondence",
+      "status": "PASS",
+      "detail": "Landmark acceptance"
+    },
+    {
+      "check": "Page06 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media1.mp4"
+    },
+    {
+      "check": "Page06 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page06 declared paired_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p06-Accepted_Body_Landmarks_With_Axes.mp4"
+    },
+    {
+      "check": "Page06 declared paired_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p06-Accepted_Body_Landmarks_With_Axes.mp4"
+    },
+    {
+      "check": "Page06 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page06 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 title correspondence",
+      "status": "PASS",
+      "detail": "Spikes"
+    },
+    {
+      "check": "Page07 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media2.mp4"
+    },
+    {
+      "check": "Page07 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page07 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p07-Hampel_Spike_Removal.mp4"
+    },
+    {
+      "check": "Page07 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p07-Hampel_Spike_Removal.mp4"
+    },
+    {
+      "check": "Page07 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page07 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 title correspondence",
+      "status": "PASS",
+      "detail": "Short gaps"
+    },
+    {
+      "check": "Page08 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media3.mp4"
+    },
+    {
+      "check": "Page08 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page08 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p08-Short_Gap_Interpolation.mp4"
+    },
+    {
+      "check": "Page08 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p08-Short_Gap_Interpolation.mp4"
+    },
+    {
+      "check": "Page08 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page08 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 title correspondence",
+      "status": "PASS",
+      "detail": "Offline smoothing"
+    },
+    {
+      "check": "Page09 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media4.mp4"
+    },
+    {
+      "check": "Page09 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page09 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p09-Offline_Butterworth_Smoothing.mp4"
+    },
+    {
+      "check": "Page09 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p09-Offline_Butterworth_Smoothing.mp4"
+    },
+    {
+      "check": "Page09 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page09 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page10 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page10 title correspondence",
+      "status": "PASS",
+      "detail": "Hip-depth ambiguity"
+    },
+    {
+      "check": "Page10 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page10 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page11 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page11 title correspondence",
+      "status": "PASS",
+      "detail": "Camera and Camera-prime"
+    },
+    {
+      "check": "Page11 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page11 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page12 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page12 title correspondence",
+      "status": "PASS",
+      "detail": "T-pose reference"
+    },
+    {
+      "check": "Page12 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page12 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 title correspondence",
+      "status": "PASS",
+      "detail": "Torso axes"
+    },
+    {
+      "check": "Page13 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media5.mp4"
+    },
+    {
+      "check": "Page13 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page13 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p13-Torso_Axes_From_Measured_Landmarks.mp4"
+    },
+    {
+      "check": "Page13 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p13-Torso_Axes_From_Measured_Landmarks.mp4"
+    },
+    {
+      "check": "Page13 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page13 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 title correspondence",
+      "status": "PASS",
+      "detail": "Torso transform"
+    },
+    {
+      "check": "Page14 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media6.mp4"
+    },
+    {
+      "check": "Page14 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page14 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p14-Torso_Frame_And_Root_Transform.mp4"
+    },
+    {
+      "check": "Page14 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p14-Torso_Frame_And_Root_Transform.mp4"
+    },
+    {
+      "check": "Page14 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page14 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 title correspondence",
+      "status": "PASS",
+      "detail": "Root rotation angles"
+    },
+    {
+      "check": "Page15 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media7.mp4"
+    },
+    {
+      "check": "Page15 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page15 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p15-Root_Rotation_From_Torso_Axes.mp4"
+    },
+    {
+      "check": "Page15 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p15-Root_Rotation_From_Torso_Axes.mp4"
+    },
+    {
+      "check": "Page15 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page15 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 title correspondence",
+      "status": "PASS",
+      "detail": "From an arm direction to swing"
+    },
+    {
+      "check": "Page16 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media8.mp4"
+    },
+    {
+      "check": "Page16 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page16 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p16-Upper_Arm_Direction_In_Shoulder_Frame.mp4"
+    },
+    {
+      "check": "Page16 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p16-Upper_Arm_Direction_In_Shoulder_Frame.mp4"
+    },
+    {
+      "check": "Page16 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page16 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 title correspondence",
+      "status": "PASS",
+      "detail": "Shoulder swing"
+    },
+    {
+      "check": "Page17 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media9.mp4"
+    },
+    {
+      "check": "Page17 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page17 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p17-Shoulder_Swing_From_Upper_Arm_Direction.mp4"
+    },
+    {
+      "check": "Page17 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p17-Shoulder_Swing_From_Upper_Arm_Direction.mp4"
+    },
+    {
+      "check": "Page17 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page17 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 title correspondence",
+      "status": "PASS",
+      "detail": "Shoulder twist"
+    },
+    {
+      "check": "Page18 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media10.mp4"
+    },
+    {
+      "check": "Page18 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page18 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p18-Shoulder_Twist_From_Forearm_Plane.mp4"
+    },
+    {
+      "check": "Page18 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p18-Shoulder_Twist_From_Forearm_Plane.mp4"
+    },
+    {
+      "check": "Page18 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page18 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 title correspondence",
+      "status": "PASS",
+      "detail": "Elbow angles"
+    },
+    {
+      "check": "Page19 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media11.mp4"
+    },
+    {
+      "check": "Page19 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page19 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p19-Elbow_Angles_In_The_Rotated_Arm_Frame.mp4"
+    },
+    {
+      "check": "Page19 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p19-Elbow_Angles_In_The_Rotated_Arm_Frame.mp4"
+    },
+    {
+      "check": "Page19 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page19 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 title correspondence",
+      "status": "PASS",
+      "detail": "Observability"
+    },
+    {
+      "check": "Page20 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media12.mp4"
+    },
+    {
+      "check": "Page20 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page20 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p20-Forearm_Component_And_Twist_Observability.mp4"
+    },
+    {
+      "check": "Page20 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p20-Forearm_Component_And_Twist_Observability.mp4"
+    },
+    {
+      "check": "Page20 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page20 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page21 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page21 title correspondence",
+      "status": "PASS",
+      "detail": "Object pose"
+    },
+    {
+      "check": "Page21 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page21 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page22 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page22 title correspondence",
+      "status": "PASS",
+      "detail": "Output states"
+    },
+    {
+      "check": "Page22 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page22 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 title correspondence",
+      "status": "PASS",
+      "detail": "Holding context"
+    },
+    {
+      "check": "Page23 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media13.mp4"
+    },
+    {
+      "check": "Page23 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page23 declared paired_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p23-Holding_Input_And_Torso_Rejection_With_Axes.mp4"
+    },
+    {
+      "check": "Page23 declared paired_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p23-Holding_Input_And_Torso_Rejection_With_Axes.mp4"
+    },
+    {
+      "check": "Page23 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page23 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page24 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page24 title correspondence",
+      "status": "PASS",
+      "detail": "Grasp offset"
+    },
+    {
+      "check": "Page24 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page24 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 title correspondence",
+      "status": "PASS",
+      "detail": "Offset retention"
+    },
+    {
+      "check": "Page25 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media14.mp4"
+    },
+    {
+      "check": "Page25 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page25 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p25-Grasp_Offset_During_Wrist_Depth_Loss_With_Axes.mp4"
+    },
+    {
+      "check": "Page25 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p25-Grasp_Offset_During_Wrist_Depth_Loss_With_Axes.mp4"
+    },
+    {
+      "check": "Page25 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page25 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page26 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page26 title correspondence",
+      "status": "PASS",
+      "detail": "Object-derived wrist target"
+    },
+    {
+      "check": "Page26 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page26 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 title correspondence",
+      "status": "PASS",
+      "detail": "Wrist-loss context"
+    },
+    {
+      "check": "Page27 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media15.mp4"
+    },
+    {
+      "check": "Page27 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page27 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p27-Fresh_Unity_Wrist_Loss_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page27 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p27-Fresh_Unity_Wrist_Loss_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page27 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page27 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page28 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page28 title correspondence",
+      "status": "PASS",
+      "detail": "Two segment-length constraints"
+    },
+    {
+      "check": "Page28 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page28 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 title correspondence",
+      "status": "PASS",
+      "detail": "The circle of possible elbows"
+    },
+    {
+      "check": "Page29 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media16.mp4"
+    },
+    {
+      "check": "Page29 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page29 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p29-Elbow_Endpoint_Constraint_Circle_With_Axes.mp4"
+    },
+    {
+      "check": "Page29 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p29-Elbow_Endpoint_Constraint_Circle_With_Axes.mp4"
+    },
+    {
+      "check": "Page29 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page29 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page30 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page30 title correspondence",
+      "status": "PASS",
+      "detail": "Deriving the elbow circle"
+    },
+    {
+      "check": "Page30 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page30 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page31 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page31 title correspondence",
+      "status": "PASS",
+      "detail": "Selecting one elbow"
+    },
+    {
+      "check": "Page31 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page31 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 title correspondence",
+      "status": "PASS",
+      "detail": "Direction-memory fallback"
+    },
+    {
+      "check": "Page32 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media17.mp4"
+    },
+    {
+      "check": "Page32 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page32 declared paired_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p32-Controlled_Held_Joint_Fallback.mp4"
+    },
+    {
+      "check": "Page32 declared paired_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p32-Controlled_Held_Joint_Fallback.mp4"
+    },
+    {
+      "check": "Page32 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page32 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 title correspondence",
+      "status": "PASS",
+      "detail": "One frame through the system"
+    },
+    {
+      "check": "Page33 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media18.mp4"
+    },
+    {
+      "check": "Page33 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page33 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p33-Single_Frame_Data_Flow.mp4"
+    },
+    {
+      "check": "Page33 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p33-Single_Frame_Data_Flow.mp4"
+    },
+    {
+      "check": "Page33 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page33 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page34 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page34 title correspondence",
+      "status": "PASS",
+      "detail": "One capture, two readers"
+    },
+    {
+      "check": "Page34 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page34 declared media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p34-Shared_Image_Private_Copies.gif"
+    },
+    {
+      "check": "Page34 GIF embeds exact current bytes",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/animations/p34-Shared_Image_Private_Copies.gif"
+    },
+    {
+      "check": "Page34 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page34 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page34 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page35 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page35 title correspondence",
+      "status": "PASS",
+      "detail": "Derived pose records"
+    },
+    {
+      "check": "Page35 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page35 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page36 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page36 title correspondence",
+      "status": "PASS",
+      "detail": "A common render time"
+    },
+    {
+      "check": "Page36 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page36 declared media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p36-Temporal_Stream_Combination.gif"
+    },
+    {
+      "check": "Page36 GIF embeds exact current bytes",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/animations/p36-Temporal_Stream_Combination.gif"
+    },
+    {
+      "check": "Page36 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page36 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page36 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page37 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page37 title correspondence",
+      "status": "PASS",
+      "detail": "Python publication"
+    },
+    {
+      "check": "Page37 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page37 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page38 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page38 title correspondence",
+      "status": "PASS",
+      "detail": "Unity read verification"
+    },
+    {
+      "check": "Page38 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page38 declared media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p38-Python_Unity_Read_Write_Validation.gif"
+    },
+    {
+      "check": "Page38 GIF embeds exact current bytes",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/animations/p38-Python_Unity_Read_Write_Validation.gif"
+    },
+    {
+      "check": "Page38 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page38 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page38 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page39 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page39 title correspondence",
+      "status": "PASS",
+      "detail": "Mapping into Scene"
+    },
+    {
+      "check": "Page39 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page39 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page40 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page40 title correspondence",
+      "status": "PASS",
+      "detail": "Rig application"
+    },
+    {
+      "check": "Page40 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page40 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 title correspondence",
+      "status": "PASS",
+      "detail": "Integrated reconstruction"
+    },
+    {
+      "check": "Page41 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media19.mp4"
+    },
+    {
+      "check": "Page41 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page41 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p41-Fresh_Unity_Integrated_Reconstruction_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page41 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p41-Fresh_Unity_Integrated_Reconstruction_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page41 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page41 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page42 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page42 title correspondence",
+      "status": "PASS",
+      "detail": "Object reconstruction"
+    },
+    {
+      "check": "Page42 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page42 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page43 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page43 title correspondence",
+      "status": "PASS",
+      "detail": "Model and rendered rig"
+    },
+    {
+      "check": "Page43 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page43 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page44 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page44 title correspondence",
+      "status": "PASS",
+      "detail": "Right-arm tracking failure"
+    },
+    {
+      "check": "Page44 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page44 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page45 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page45 title correspondence",
+      "status": "PASS",
+      "detail": "A limited improvement"
+    },
+    {
+      "check": "Page45 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page45 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page46 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page46 title correspondence",
+      "status": "PASS",
+      "detail": "Landmarks on an occluding surface"
+    },
+    {
+      "check": "Page46 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page46 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 title correspondence",
+      "status": "PASS",
+      "detail": "Imperfect handover replay"
+    },
+    {
+      "check": "Page47 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media20.mp4"
+    },
+    {
+      "check": "Page47 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page47 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p47-Fresh_Unity_Handover_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page47 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p47-Fresh_Unity_Handover_With_Model_Axes.mp4"
+    },
+    {
+      "check": "Page47 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page47 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page48 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page48 title correspondence",
+      "status": "PASS",
+      "detail": "Causal processing"
+    },
+    {
+      "check": "Page48 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page48 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 title correspondence",
+      "status": "PASS",
+      "detail": "Adaptive smoothing"
+    },
+    {
+      "check": "Page49 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media21.mp4"
+    },
+    {
+      "check": "Page49 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page49 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p49-Causal_One_Euro_Filtering.mp4"
+    },
+    {
+      "check": "Page49 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p49-Causal_One_Euro_Filtering.mp4"
+    },
+    {
+      "check": "Page49 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page49 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page50 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page50 title correspondence",
+      "status": "PASS",
+      "detail": "Replay timing"
+    },
+    {
+      "check": "Page50 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page50 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page51 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page51 title correspondence",
+      "status": "PASS",
+      "detail": "Limitations"
+    },
+    {
+      "check": "Page51 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page51 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page52 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page52 title correspondence",
+      "status": "PASS",
+      "detail": "Contributions"
+    },
+    {
+      "check": "Page52 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page52 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page53 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page53 title correspondence",
+      "status": "PASS",
+      "detail": "Questions"
+    },
+    {
+      "check": "Page53 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page53 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page54 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page54 title correspondence",
+      "status": "PASS",
+      "detail": "Technical appendix"
+    },
+    {
+      "check": "Page54 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page54 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page55 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page55 title correspondence",
+      "status": "PASS",
+      "detail": "Evaluation references"
+    },
+    {
+      "check": "Page55 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page55 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page56 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page56 title correspondence",
+      "status": "PASS",
+      "detail": "Object endpoint lengths"
+    },
+    {
+      "check": "Page56 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page56 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page57 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page57 title correspondence",
+      "status": "PASS",
+      "detail": "Matched model and rig"
+    },
+    {
+      "check": "Page57 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page57 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page58 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page58 title correspondence",
+      "status": "PASS",
+      "detail": "Controlled removal"
+    },
+    {
+      "check": "Page58 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page58 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page59 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page59 title correspondence",
+      "status": "PASS",
+      "detail": "Natural tracking failures"
+    },
+    {
+      "check": "Page59 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page59 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page60 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page60 title correspondence",
+      "status": "PASS",
+      "detail": "Two-link reconstruction"
+    },
+    {
+      "check": "Page60 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page60 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page61 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page61 title correspondence",
+      "status": "PASS",
+      "detail": "Grasp-offset update"
+    },
+    {
+      "check": "Page61 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page61 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page62 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page62 title correspondence",
+      "status": "PASS",
+      "detail": "Torso preparation"
+    },
+    {
+      "check": "Page62 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page62 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page63 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page63 title correspondence",
+      "status": "PASS",
+      "detail": "Coordinate transforms"
+    },
+    {
+      "check": "Page63 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page63 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page64 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page64 title correspondence",
+      "status": "PASS",
+      "detail": "Record fields"
+    },
+    {
+      "check": "Page64 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page64 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page65 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page65 title correspondence",
+      "status": "PASS",
+      "detail": "Solver verification"
+    },
+    {
+      "check": "Page65 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page65 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page66 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page66 title correspondence",
+      "status": "PASS",
+      "detail": "Live-camera validation"
+    },
+    {
+      "check": "Page66 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page66 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 title correspondence",
+      "status": "PASS",
+      "detail": "Savitzky-Golay filtering"
+    },
+    {
+      "check": "Page67 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media22.mp4"
+    },
+    {
+      "check": "Page67 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page67 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p67-Savitzky_Golay_Filtering.mp4"
+    },
+    {
+      "check": "Page67 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p67-Savitzky_Golay_Filtering.mp4"
+    },
+    {
+      "check": "Page67 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page67 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 title correspondence",
+      "status": "PASS",
+      "detail": "Median filtering"
+    },
+    {
+      "check": "Page68 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 movie is internally embedded",
+      "status": "PASS",
+      "detail": "ppt/media/media23.mp4"
+    },
+    {
+      "check": "Page68 movie target and zero-delay timing",
+      "status": "PASS",
+      "detail": {
+        "shape_id": "10",
+        "delays": [
+          "0"
+        ]
+      }
+    },
+    {
+      "check": "Page68 declared composite_media filename uses final ordinal",
+      "status": "PASS",
+      "detail": "p68-Median_Filtering.mp4"
+    },
+    {
+      "check": "Page68 declared composite_media embeds exact current movie",
+      "status": "PASS",
+      "detail": "presentation/defense_2026/committee_materials/axes_revision/videos/p68-Median_Filtering.mp4"
+    },
+    {
+      "check": "Page68 movie has exact current poster",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 media agrees with frozen current contract",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 current media path is in notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page68 no linked external movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page69 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page69 title correspondence",
+      "status": "PASS",
+      "detail": "Original frame overview"
+    },
+    {
+      "check": "Page69 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page69 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page70 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page70 title correspondence",
+      "status": "PASS",
+      "detail": "Recovery guards"
+    },
+    {
+      "check": "Page70 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page70 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page71 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page71 title correspondence",
+      "status": "PASS",
+      "detail": "RGB-D back-projection"
+    },
+    {
+      "check": "Page71 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page71 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page72 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page72 title correspondence",
+      "status": "PASS",
+      "detail": "Root-angle derivation"
+    },
+    {
+      "check": "Page72 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page72 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page73 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page73 title correspondence",
+      "status": "PASS",
+      "detail": "Rail: object acquisition"
+    },
+    {
+      "check": "Page73 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page73 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page74 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page74 title correspondence",
+      "status": "PASS",
+      "detail": "Rail: lift"
+    },
+    {
+      "check": "Page74 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page74 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page75 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page75 title correspondence",
+      "status": "PASS",
+      "detail": "Rail: slide"
+    },
+    {
+      "check": "Page75 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page75 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page76 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page76 title correspondence",
+      "status": "PASS",
+      "detail": "Handover: right-hand slide"
+    },
+    {
+      "check": "Page76 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page76 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page77 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page77 title correspondence",
+      "status": "PASS",
+      "detail": "Handover: transfer"
+    },
+    {
+      "check": "Page77 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page77 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page78 hidden state",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page78 title correspondence",
+      "status": "PASS",
+      "detail": "Handover: left-hand slide"
+    },
+    {
+      "check": "Page78 complete current notes",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page78 no undeclared movie",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Final main page opens Q&A index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Index opens every technical appendix page",
+      "status": "PASS",
+      "detail": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "check": "Appendix55 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix56 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix57 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix58 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix59 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix60 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix61 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix62 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix63 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix64 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix65 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix66 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix67 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix68 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix69 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix70 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix71 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix72 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix73 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix74 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix75 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix76 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix77 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Appendix78 returns to index",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page64 supplied movie link follows current filename",
+      "status": "PASS",
+      "detail": [
+        "committee_materials/axes_revision/videos/p64-Derived_Memory_Records.mp4"
+      ]
+    },
+    {
+      "check": "Page64 supplied link resolves from delivery folder",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Page69 supplied movie link follows current filename",
+      "status": "PASS",
+      "detail": [
+        "committee_materials/axes_revision/videos/p69-Single_Frame_Overview.mp4"
+      ]
+    },
+    {
+      "check": "Page69 supplied link resolves from delivery folder",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "All embedded media are declared current assets",
+      "status": "PASS",
+      "detail": {
+        "declared": 26,
+        "movies": 23
+      }
+    },
+    {
+      "check": "Speaker script uses all 53 current main ordinals",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script01 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script02 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script03 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script04 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script05 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script06 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script07 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script08 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script09 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script10 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script11 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script12 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script13 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script14 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script15 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script16 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script17 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script18 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script19 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script20 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script21 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script22 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script23 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script24 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script25 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script26 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script27 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script28 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script29 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script30 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script31 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script32 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script33 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script34 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script35 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script36 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script37 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script38 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script39 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script40 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script41 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script42 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script43 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script44 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script45 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script46 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script47 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script48 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script49 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script50 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script51 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script52 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker script53 matches JSON",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker summary main count is current",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Speaker guide total duration is current",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/animations/p32-Shared_Image_Private_Copies.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/animations/p34-Temporal_Stream_Combination.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/animations/p36-Python_Unity_Read_Write_Validation.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/animations/p61-Derived_Memory_Records.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/animations/p66-Single_Frame_Overview.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p06-Accepted_Body_Landmarks.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p07-Hampel_Spike_Removal.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p08-Short_Gap_Interpolation.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p09-Offline_Butterworth_Smoothing.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p21-Holding_Input_And_Torso_Rejection.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p23-Grasp_Offset_During_Wrist_Depth_Loss.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p25-Archived_Wrist_Loss_Context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p27-Elbow_Endpoint_Constraint_Circle.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p30-Controlled_Held_Joint_Fallback.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p31-Single_Frame_Data_Flow.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p32-Shared_Image_Private_Copies.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p34-Temporal_Stream_Combination.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p36-Python_Unity_Read_Write_Validation.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p38-Integrated_Recorded_Reconstruction.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p44-Archived_Handover_Reconstruction.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p46-Causal_One_Euro_Filtering.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p61-Derived_Memory_Records.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p64-Savitzky_Golay_Filtering.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p65-Median_Filtering.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/posters/p66-Single_Frame_Overview.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p06-Accepted_Body_Landmarks.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p07-Hampel_Spike_Removal.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p08-Short_Gap_Interpolation.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p09-Offline_Butterworth_Smoothing.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p21-Holding_Input_And_Torso_Rejection.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p23-Grasp_Offset_During_Wrist_Depth_Loss.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p25-Archived_Wrist_Loss_Context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p27-Elbow_Endpoint_Constraint_Circle.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p30-Controlled_Held_Joint_Fallback.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p31-Single_Frame_Data_Flow.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p32-Shared_Image_Private_Copies.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p34-Temporal_Stream_Combination.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p36-Python_Unity_Read_Write_Validation.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p38-Integrated_Recorded_Reconstruction.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p44-Archived_Handover_Reconstruction.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p46-Causal_One_Euro_Filtering.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p61-Derived_Memory_Records.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p64-Savitzky_Golay_Filtering.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p65-Median_Filtering.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline committee_materials/videos/p66-Single_Frame_Overview.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/causal_replay.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/causal_replay.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_butterworth_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_candidate_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_candidate_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_gap_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_hampel_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_median.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_median.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_median.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_median_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_median_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_one_euro_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_savgol.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_savgol.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_savgol.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_savgol_sync.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/filter_savgol_sync.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/frame_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/frame_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/frame_journey.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/frame_journey.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/frame_journey.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/grasp_offset.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/grasp_offset.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/grasp_offset.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/grip_episode_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/grip_episode_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/held_fallback_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/held_fallback_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/masters/causal_replay.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched/r6b_frame_533.jpg",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched/torso_r7_f00100.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_elbow_constraints.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_elbow_constraints.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_frame_journey.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_frame_journey.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_grasp.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/matched_grasp.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_combine.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_combine.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_combine.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_flow.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_flow.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_flow.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_layout.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_layout.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_layout.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_race.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_race.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_race.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_records.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_records.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/memory_records.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/method_grasp_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/method_grasp_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/method_occlusion_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/method_occlusion_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/overview_archive/grasp_offset_full_overview.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/overview_archive/grasp_offset_full_overview.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/overview_archive/recovery_geometry_full_overview.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/overview_archive/recovery_geometry_full_overview.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/recovery_geometry.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/recovery_geometry.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/recovery_geometry.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_elbow.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_elbow.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_elbow.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_elbow_selected.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_frame_journey.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_frame_journey.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_frame_journey.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy_restrained.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy_restrained.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_memory_copy_restrained.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge_restrained.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge_restrained.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_merge_restrained.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write_restrained.gif",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write_restrained.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/teaching_read_write_restrained.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/wrist_prediction_context.mp4",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Preserved baseline media/wrist_prediction_context.png",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "161 previous media files verified",
+      "status": "PASS",
+      "detail": 161
+    },
+    {
+      "check": "PPTX stayed unchanged during review",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "PowerPoint-host playback is unavailable here; zero-delay movie timing and normal media click actions are inspected, not runtime execution.",
+    "GIF bytes and prior complete-decode reports are source-bound; animated-picture playback depends on the host.",
+    "Supplemental movies on pages 64/69 are intentionally supplied external files; retain the folder structure.",
+    "PDF is hash-bound as supplied; root owns final rendered visual acceptance."
+  ]
+}

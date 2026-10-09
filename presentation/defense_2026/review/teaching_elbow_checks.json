@@ -1,0 +1,68 @@
+{
+  "name": "teaching_elbow",
+  "dimensions": [
+    1440,
+    1080
+  ],
+  "editorial_duration_seconds": 36,
+  "editorial_gif_fps": 10,
+  "mp4_fps": 30,
+  "timing_scope": "Teaching holds and movement; not measured system timing",
+  "loop_transition": "Final held teaching stage restarts at stage one",
+  "sources": [
+    "writing/v9/Thesis_V9.pdf",
+    "presentation/defense_2026/anim/recovery_geometry.py"
+  ],
+  "status": "PASS",
+  "thesis_reference": "V9 Section5.5, Eqs.5.8-5.12",
+  "geometry": {
+    "scope": "Numerical consistency of an illustrative diagram, not an experiment",
+    "circle_upper_arm_max_error": 5.551115123125783e-17,
+    "circle_forearm_max_error": 5.551115123125783e-17,
+    "selected_upper_arm_error": 0.0,
+    "selected_forearm_error": 2.7755575615628914e-17,
+    "prior_projection_error": 0.0,
+    "projection_basis_orthogonality": 3.93276761243634e-17,
+    "selected_distance_minus_sampled_nearest_distance": -4.9107493163561694e-05
+  },
+  "geometry_label_clearance": "PASS: all projected locus points and visible candidate markers avoid glyph bounds by at least8px",
+  "geometry_source": "presentation/defense_2026/anim/recovery_geometry.py",
+  "geometry_source_sha256": "c4fc810fd2e4915e07846acfa86fb96676cbbfd65e5d9e836aa4ef1abfe3c122",
+  "elbow_generator_sha256": "d86fd1c802a72636b4de417e6e1dafc0c0492da08a03321149b4cf69c22cc61d",
+  "stages": [
+    "0-12 s: known shoulder and object-derived wrist target",
+    "12-24 s: three valid elbow alternatives, four-second holds",
+    "24-36 s: prior direction; three-second construction; five-second final hold"
+  ],
+  "camera": "Fixed orthographic projection of the same verified 3D geometry",
+  "max_visible_words": 9,
+  "min_font_px": 42,
+  "checked_frames": 1488,
+  "gif_decoded_frames": 33,
+  "gif_duration_ms": 36000,
+  "gif_loop": 0,
+  "gif_quantized_source_comparison": "PASS: every stored frame",
+  "mp4_full_decode": "PASS",
+  "mp4_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "36.000000"
+    }
+  },
+  "sha256": {
+    "gif": "8ce47d3be89cf75b0e90b414b20162ef6c6e85b86838c1ab1bc00ef271d94f47",
+    "mp4": "221b8e0797ed27a7f5465607f076c1e5b21401bae00f9161422174923749e749",
+    "png": "38b1cbaf7b9086a93d6be0b9d657b49c654418d691d3e015d65be97e802b44f0"
+  },
+  "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+  "selected_still_sha256": "50ad7c9fe9c598015aa4c179253831b59223ab392e27405f483f471bfbc38dfe"
+}

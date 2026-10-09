@@ -1,0 +1,11 @@
+selected_landmarks_raw.csv: 361 frames @ 30.0 fps, person-present span 6.0-18.0 s (361 frames)
+  [PASS] left_hip        coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_hip       coverage 100.0 %  longest gap  0.0 s
+  [PASS] left_shoulder   coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_shoulder  coverage 100.0 %  longest gap  0.0 s
+  [PASS] left_elbow      coverage 100.0 %  longest gap  0.0 s
+  [PASS] left_wrist      coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_elbow     coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_wrist     coverage 100.0 %  longest gap  0.0 s
+VERDICT: torso PASS | left-hand evaluation PASS | right-hand evaluation PASS
+[json] /home/luo/Desktop/bimanual-tracking/presentation/defense_2026/bank_processing/unified_four/p16/tracking_precondition_selected.json

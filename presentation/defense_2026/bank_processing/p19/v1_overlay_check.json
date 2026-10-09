@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETED",
+  "page": 19,
+  "qualification": "The unchanged checker produces diagnostic FK overlays and residuals, not an external-accuracy verdict.",
+  "adapter": {
+    "path": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/run_overlay_checker.py",
+    "sha256": "c862c112136a5d4f0527572e7f2bc1b70fcfd63571a2bcb239118f1d66dd5e27"
+  },
+  "frozen_checker": {
+    "path": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/eval/inspect/check_v1_overlay.py",
+    "sha256": "46e1b9f6ac1731c694bca162928222ca202dba243af261b32cbdf9212914cc07"
+  },
+  "path_adaptation": "Only module.ROOT redirects expected CSV/meta paths into a track-local input tree; --bag and --out are explicit.",
+  "numeric_logic_changed": false,
+  "inputs": {
+    "filtered": {
+      "original": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p19/landmarks_filtered.csv",
+      "copy": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/checker_inputs/v1/mediapipe/output/bank_p19_landmarks_filtered.csv",
+      "sha256": "4ed5ddfe03561b95c7f6fffeea939ca42d8b9f565f13baea9e6f04d8aade9092"
+    },
+    "meta": {
+      "original": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p19/landmarks_raw.meta.json",
+      "copy": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/checker_inputs/v1/mediapipe/output/bank_p19_landmarks_raw.meta.json",
+      "sha256": "bef9fd9467435c8779d9dd65a406668ff0b60a9e05b53835ff3334b04f56669b"
+    }
+  },
+  "outputs": {
+    "v1_overlay_baseline.mp4": {
+      "path": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p19/v1_overlay_check/v1_overlay_baseline.mp4",
+      "sha256": "80cdfd3bf883038ddeba4a820dd4eec5ece15ae48c2d1dd2a8b0f0e7404c35c5"
+    },
+    "v1_check_plots.png": {
+      "path": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p19/v1_overlay_check/v1_check_plots.png",
+      "sha256": "9a976a22ffcabfaf2ad2b731975dbde06e1ce649a038990f1f28215ad8ed5542"
+    }
+  }
+}

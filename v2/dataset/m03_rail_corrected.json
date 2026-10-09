@@ -1,0 +1,423 @@
+{
+  "alias": "r6b",
+  "angle_comparison": {
+    "pairing": "live frame f versus reference frame f-lag",
+    "one_handed": true,
+    "candidates": [
+      {
+        "lag_frames": -10,
+        "paired_frames": 163,
+        "pooled_median_deg": 2.1370976478735884
+      },
+      {
+        "lag_frames": -9,
+        "paired_frames": 164,
+        "pooled_median_deg": 2.057681767616941
+      },
+      {
+        "lag_frames": -8,
+        "paired_frames": 166,
+        "pooled_median_deg": 1.9950150737568606
+      },
+      {
+        "lag_frames": -7,
+        "paired_frames": 168,
+        "pooled_median_deg": 1.9910392997097262
+      },
+      {
+        "lag_frames": -6,
+        "paired_frames": 169,
+        "pooled_median_deg": 1.9857968648229303
+      },
+      {
+        "lag_frames": -5,
+        "paired_frames": 170,
+        "pooled_median_deg": 1.9424254525479796
+      },
+      {
+        "lag_frames": -4,
+        "paired_frames": 172,
+        "pooled_median_deg": 1.8912028186707772
+      },
+      {
+        "lag_frames": -3,
+        "paired_frames": 175,
+        "pooled_median_deg": 1.814683139795875
+      },
+      {
+        "lag_frames": -2,
+        "paired_frames": 178,
+        "pooled_median_deg": 1.732818590964257
+      },
+      {
+        "lag_frames": -1,
+        "paired_frames": 181,
+        "pooled_median_deg": 1.6001685897025766
+      },
+      {
+        "lag_frames": 0,
+        "paired_frames": 183,
+        "pooled_median_deg": 1.549003722832765
+      },
+      {
+        "lag_frames": 1,
+        "paired_frames": 182,
+        "pooled_median_deg": 1.4459441375691284
+      },
+      {
+        "lag_frames": 2,
+        "paired_frames": 180,
+        "pooled_median_deg": 1.376132019295298
+      },
+      {
+        "lag_frames": 3,
+        "paired_frames": 178,
+        "pooled_median_deg": 1.3738278887779387
+      },
+      {
+        "lag_frames": 4,
+        "paired_frames": 176,
+        "pooled_median_deg": 1.2855975483794992
+      },
+      {
+        "lag_frames": 5,
+        "paired_frames": 174,
+        "pooled_median_deg": 1.2290382352671259
+      },
+      {
+        "lag_frames": 6,
+        "paired_frames": 174,
+        "pooled_median_deg": 1.2654647336641744
+      },
+      {
+        "lag_frames": 7,
+        "paired_frames": 174,
+        "pooled_median_deg": 1.34049384269656
+      },
+      {
+        "lag_frames": 8,
+        "paired_frames": 172,
+        "pooled_median_deg": 1.3537079171172195
+      },
+      {
+        "lag_frames": 9,
+        "paired_frames": 170,
+        "pooled_median_deg": 1.3743415107830401
+      },
+      {
+        "lag_frames": 10,
+        "paired_frames": 167,
+        "pooled_median_deg": 1.3856928459866822
+      }
+    ],
+    "lag_frames": 5,
+    "groups": {
+      "R_shoulder": {
+        "median_deg": 3.895331075152413,
+        "p95_deg": 23.254568369952178
+      },
+      "R_elbow": {
+        "median_deg": 0.0007960298026290502,
+        "p95_deg": 1.0706395862116083
+      }
+    },
+    "paired_live_frames": [
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      665,
+      666,
+      668,
+      669,
+      670,
+      671,
+      672,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716,
+      717,
+      718,
+      719,
+      720,
+      721,
+      722,
+      723,
+      724,
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738,
+      739,
+      740,
+      741,
+      742,
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750,
+      751,
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758,
+      759,
+      760,
+      761,
+      762,
+      763,
+      764,
+      765,
+      766,
+      767,
+      768,
+      769,
+      770,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778,
+      779,
+      780,
+      781,
+      782,
+      783,
+      784,
+      785,
+      786,
+      787,
+      788,
+      789,
+      790,
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      797,
+      855,
+      856,
+      857,
+      858,
+      859,
+      860,
+      861,
+      862,
+      863,
+      864,
+      865,
+      866,
+      867,
+      868,
+      869,
+      870,
+      871,
+      872,
+      873,
+      874,
+      875,
+      876,
+      877,
+      878,
+      879,
+      880,
+      881,
+      882,
+      883,
+      884,
+      885,
+      886,
+      887,
+      888,
+      889,
+      890,
+      891,
+      892,
+      893,
+      894,
+      895,
+      896,
+      897,
+      898,
+      899
+    ],
+    "paired_frames": 174,
+    "pooled_median_deg": 1.2290382352671259,
+    "per_angle": {
+      "Rsh_y": {
+        "median_deg": 16.415874618068685,
+        "p95_deg": 26.941237570432378
+      },
+      "Rsh_z": {
+        "median_deg": 1.445856570270962,
+        "p95_deg": 2.304791504679865
+      },
+      "Rsh_tau": {
+        "median_deg": 7.035507513040713,
+        "p95_deg": 15.092628930893882
+      },
+      "Rel_y": {
+        "median_deg": 0.4109501373733053,
+        "p95_deg": 1.180549956212485
+      },
+      "Rel_z": {
+        "median_deg": 0.0,
+        "p95_deg": 9.947598300641241e-15
+      }
+    },
+    "worst_group_median_deg": 3.895331075152413,
+    "worst_group_p95_deg": 23.254568369952178
+  },
+  "checks": [
+    {
+      "name": "person coverage",
+      "passed": true,
+      "detail": "900/900 frames consumed"
+    },
+    {
+      "name": "person compute p99 in budget",
+      "passed": true,
+      "detail": "13.0 ms vs 33.3 ms"
+    },
+    {
+      "name": "object compute p99 in budget",
+      "passed": true,
+      "detail": "16.7 ms"
+    },
+    {
+      "name": "merger cadence p99 < 40 ms",
+      "passed": true,
+      "detail": "35.3 ms over 929 ticks"
+    },
+    {
+      "name": "causal lag <= 4 frames",
+      "passed": false,
+      "detail": "lag 5 frames; see JSON for every lag and sample count"
+    },
+    {
+      "name": "worst group median < 5 deg on clean frames",
+      "passed": true,
+      "detail": "3.895331075152413 deg (174 paired frames)"
+    },
+    {
+      "name": "worst group p95 < 20 deg on clean frames",
+      "passed": false,
+      "detail": "23.254568369952178 deg"
+    },
+    {
+      "name": "wrist estimates published (working hand)",
+      "passed": true,
+      "detail": "rec R 625 / L 0 frames"
+    },
+    {
+      "name": "CONSTRAINED output inside offline failure windows",
+      "passed": true,
+      "detail": "L 112 frames, R 101 frames"
+    },
+    {
+      "name": "right estimates cover offline episodes",
+      "passed": true,
+      "detail": "90 percent of 682 offline holding frames"
+    },
+    {
+      "name": "object live coverage",
+      "passed": true,
+      "detail": "829/900"
+    },
+    {
+      "name": "tags reach the merger output",
+      "passed": true,
+      "detail": "929 ticks with non-measured tags"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "m03_rail_inputs.zip:live/v2_person_dump.csv",
+      "bytes": 314301,
+      "sha256": "4b0e93d28a60d1fdbf14447b562383faf5a9e4230bb23e0b380e66e70abe7324"
+    },
+    {
+      "path": "m03_rail_inputs.zip:live/v2_object_dump.csv",
+      "bytes": 144752,
+      "sha256": "f56617c546dc38b5285c0c3369925b377af1254c7f82eae50a11a012fe038a14"
+    },
+    {
+      "path": "m03_rail_inputs.zip:live/v2_integrate_dump.csv",
+      "bytes": 263117,
+      "sha256": "65518136cb368855ba33090aac548d3988dd3db0f370d71180c634ba082ea939"
+    },
+    {
+      "path": "m03_rail_inputs.zip:reference/angles_recovery.csv",
+      "bytes": 142369,
+      "sha256": "f3688f03fbfbbbd83ed692b801252b6b4a7cb1f80fbcfcb6202a2f9205e6f57c"
+    },
+    {
+      "path": "m03_rail_inputs.zip:reference/failure_mask.csv",
+      "bytes": 35577,
+      "sha256": "b8fe75b4a40cb67e799a0c14794651f0fe91a566aedd8dd0694cabd16a53b659"
+    },
+    {
+      "path": "m03_rail_inputs.zip:reference/grip_episodes.json",
+      "bytes": 396,
+      "sha256": "3027c20cb3a2ad29090c328b037a6f891604655de66442fb20080589a375742c"
+    }
+  ],
+  "provenance": "Archived original rail live dumps; offline angles reconstructed with d2544cd solver and identified cached preprocessing, reproducing historical reported values. Failure mask and episodes are current cached references; episode regeneration was checked byte-identical. Not a new live replay.",
+  "archive_sha256": "87889e1fb26c7abae1f4ee0017cdec0cdd6eebec852bbde15d7aa3b055e78068"
+}

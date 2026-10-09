@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "baseline": "7243a2060df433a8ea6c3814ca7b594c8273618d",
+  "docx_path": "writing/v8/condensed/Chapter_7_Evaluation.docx",
+  "checks": {
+    "all_result_and_equation_tables": {
+      "status": "PASS",
+      "count": 15,
+      "combined_sha256": "fa2bb028c8c9ecfdb8583476ff0ae8311415c9e6dd38ea1047819cd6fc79188b",
+      "comparison": "byte-identical canonical XML against baseline"
+    },
+    "six_math_displays": {
+      "status": "PASS",
+      "count": 6,
+      "combined_sha256": "9931d406e5dbdc4d779e32c64f2fffabe3c439e5e9e2b4115416a378e45c38cf",
+      "comparison": "byte-identical canonical XML against baseline"
+    }
+  }
+}

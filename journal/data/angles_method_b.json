@@ -1,0 +1,1020 @@
+{
+ "method": "B",
+ "description": "Right-handed {Camera}, no flip (J-008); root x = L24 -> L23 (subject's left, J-002); R_B = [x | y | z]; arms: right arm mirrored to rest +x, left arm direct (J-012)",
+ "points_Camera": {
+  "L11": [
+   0.24144,
+   -0.364478,
+   1.309
+  ],
+  "L12": [
+   -0.089077,
+   -0.361564,
+   1.322
+  ],
+  "L13": [
+   0.317586,
+   -0.155948,
+   1.198
+  ],
+  "L14": [
+   -0.204043,
+   -0.173429,
+   1.253
+  ],
+  "L15": [
+   0.274541,
+   0.027962,
+   1.062
+  ],
+  "L16": [
+   -0.147205,
+   -0.013098,
+   1.133
+  ],
+  "L23": [
+   0.154989,
+   0.13865,
+   1.238
+  ],
+  "L24": [
+   -0.044015,
+   0.134514,
+   1.219
+  ]
+ },
+ "root_frame": {
+  "hip_vector_x_raw_p23_minus_p24": [
+   0.199004,
+   0.004136,
+   0.019
+  ],
+  "hip_vector_norm": 0.199951740458,
+  "x_X_L24star": [
+   0.995260153998,
+   0.0206849912411,
+   0.0950229288153
+  ],
+  "s_p12_minus_p24": [
+   -0.045062,
+   -0.496078,
+   0.103
+  ],
+  "x_cross_s": [
+   0.0492693385787,
+   -0.10679371908,
+   -0.4927945596
+  ],
+  "x_cross_s_norm": 0.506634823251,
+  "z_Z_L24star": [
+   0.0972482275548,
+   -0.210790325061,
+   -0.972681973257
+  ],
+  "y_Y_L24star": [
+   9.00040439414e-05,
+   -0.977312421899,
+   0.211802790117
+  ],
+  "y_norm": 1.0,
+  "x_dot_s": -0.0453224204764,
+  "R_root_columns_x_y_z": [
+   [
+    0.995260153998,
+    9.00040439414e-05,
+    0.0972482275548
+   ],
+   [
+    0.0206849912411,
+    -0.977312421899,
+    -0.210790325061
+   ],
+   [
+    0.0950229288153,
+    0.211802790117,
+    -0.972681973257
+   ]
+  ],
+  "det_R_root": 1.0
+ },
+ "root_euler": {
+  "decomposition": "R = Ry(y) Rx(x) Rz(z); x = asin(-m12), y = atan2(m02, m22), z = atan2(m10, m11)",
+  "m12": -0.210790325061,
+  "m12_clipped": -0.210790325061,
+  "asin_argument_minus_m12": 0.210790325061,
+  "m02": 0.0972482275548,
+  "m22": -0.972681973257,
+  "m10": 0.0206849912411,
+  "m11": -0.977312421899,
+  "atan2_y_arguments_m02_m22": [
+   0.0972482275548,
+   -0.972681973257
+  ],
+  "atan2_z_arguments_m10_m11": [
+   0.0206849912411,
+   -0.977312421899
+  ],
+  "gimbal_lock": false,
+  "x": {
+   "rad": 0.212383380182,
+   "deg": 12.1686713232
+  },
+  "y": {
+   "rad": 3.04194432849,
+   "deg": 174.290571536
+  },
+  "z": {
+   "rad": 3.12043063529,
+   "deg": 178.787505666
+  },
+  "euler_deg_x_y_z": [
+   12.1686713232,
+   174.290571536,
+   178.787505666
+  ],
+  "recompose_zxy": [
+   [
+    0.995260153998,
+    9.00040439415e-05,
+    0.0972482275548
+   ],
+   [
+    0.0206849912411,
+    -0.977312421899,
+    -0.210790325061
+   ],
+   [
+    0.0950229288153,
+    0.211802790117,
+    -0.972681973257
+   ]
+  ],
+  "recompose_max_abs_error": 2.35922392733e-16,
+  "reading_note": "Same ZXY formulas as Method A applied to R_B, a rotation of the right-handed {Camera} (x right, y DOWN, z forward); the angles are relative to {Camera} axes, not to the y-up {Camera'}, and are not Unity Euler angles"
+ },
+ "right_arm": {
+  "upper_arm_v_Camera_p14_minus_p12": [
+   -0.114966,
+   0.188135,
+   -0.069
+  ],
+  "forearm_v_Camera_p16_minus_p14": [
+   0.056838,
+   0.160331,
+   -0.12
+  ],
+  "upper_arm_in_root_R_T_v": [
+   -0.117086090126,
+   -0.198491412417,
+   0.0162777786203
+  ],
+  "forearm_in_root_R_T_v": [
+   0.0484822905058,
+   -0.18210469708,
+   0.0884530079412
+  ],
+  "mirror_M": [
+   [
+    -1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "upper_arm_mirrored_u_M_R_T_v": [
+   0.117086090126,
+   -0.198491412417,
+   0.0162777786203
+  ],
+  "forearm_mirrored_f_M_R_T_v": [
+   -0.0484822905058,
+   -0.18210469708,
+   0.0884530079412
+  ],
+  "rest_direction_local": "-x (mirrored to +x for the solve, J-012)",
+  "mirrored_solve": {
+   "solver_inputs": {
+    "p_sh": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "p_el": [
+     0.117086090126,
+     -0.198491412417,
+     0.0162777786203
+    ],
+    "p_wr": [
+     0.0686037996199,
+     -0.380596109497,
+     0.104730786562
+    ],
+    "R_root": [
+     [
+      1.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      1.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      1.0
+     ]
+    ]
+   },
+   "upper_arm_v_in_solver_root_R_T_v": [
+    0.117086090126,
+    -0.198491412417,
+    0.0162777786203
+   ],
+   "upper_arm_v_in_solver_root_norm": 0.231025884656,
+   "a_unit": [
+    0.506809400601,
+    -0.859173909074,
+    0.0704586788817
+   ],
+   "sz_a_y": -0.859173909074,
+   "th_z_asin_argument": -0.859173909074,
+   "th_y_atan2_arguments_minus_a_z_a_x": [
+    -0.0704586788817,
+    0.506809400601
+   ],
+   "gimbal": false,
+   "th_y": {
+    "rad": -0.138138592323,
+    "deg": -7.914758328
+   },
+   "th_z": {
+    "rad": -1.03365302129,
+    "deg": -59.223955601
+   },
+   "forearm_f_in_solver_root": [
+    -0.0484822905058,
+    -0.18210469708,
+    0.0884530079412
+   ],
+   "f_after_Ry_minus_th_y": [
+    -0.0358404987875,
+    -0.18210469708,
+    0.0942864028013
+   ],
+   "f_prime_unswung_Rz_minus_th_z_Ry_minus_th_y_f": [
+    0.138120605942,
+    -0.123973223988,
+    0.0942864028013
+   ],
+   "twist_atan2_arguments_minus_fp_y_fp_z": [
+    0.123973223988,
+    0.0942864028013
+   ],
+   "perp_hypot_fp_y_fp_z": 0.155753927781,
+   "twist_threshold_TWIST_EPS_times_norm_f": 2.08174416788e-07,
+   "twist_ok": true,
+   "th_t": {
+    "rad": 0.920584660473,
+    "deg": 52.7456157296
+   },
+   "Ry_th_y": [
+    [
+     0.990474027219,
+     0.0,
+     -0.137699678305
+    ],
+    [
+     0.0,
+     1.0,
+     0.0
+    ],
+    [
+     0.137699678305,
+     0.0,
+     0.990474027219
+    ]
+   ],
+   "Rz_th_z": [
+    [
+     0.511683685461,
+     0.859173909074,
+     0.0
+    ],
+    [
+     -0.859173909074,
+     0.511683685461,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "Rx_th_t": [
+    [
+     1.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.605354896308,
+     -0.795955683136
+    ],
+    [
+     0.0,
+     0.795955683136,
+     0.605354896308
+    ]
+   ],
+   "R_sh_Ry_Rz_Rx": [
+    [
+     0.506809400601,
+     0.405547783788,
+     -0.760707056972
+    ],
+    [
+     -0.859173909074,
+     0.309750224355,
+     -0.407277537411
+    ],
+    [
+     0.0704586788817,
+     0.859991740412,
+     0.505420400255
+    ]
+   ],
+   "R_arm_R_root_R_sh": [
+    [
+     0.506809400601,
+     0.405547783788,
+     -0.760707056972
+    ],
+    [
+     -0.859173909074,
+     0.309750224355,
+     -0.407277537411
+    ],
+    [
+     0.0704586788817,
+     0.859991740412,
+     0.505420400255
+    ]
+   ],
+   "g_raw_R_arm_T_forearm": [
+    0.138120605942,
+    -3.27904176086e-17,
+    0.155753927781
+   ],
+   "g_unit": [
+    0.663485014506,
+    -1.57514156228e-16,
+    0.748189571918
+   ],
+   "ez_asin_argument_g_y": -1.57514156228e-16,
+   "ey_atan2_arguments_minus_g_z_g_x": [
+    -0.748189571918,
+    0.663485014506
+   ],
+   "ey": {
+    "rad": -0.845329199907,
+    "deg": -48.4337954538
+   },
+   "ez": {
+    "rad": -1.57514156228e-16,
+    "deg": -9.02489636542e-15
+   },
+   "shoulder_deg_th_y_th_z_th_t": [
+    -7.914758328,
+    -59.223955601,
+    52.7456157296
+   ],
+   "elbow_deg_ey_ez": [
+    -48.4337954538,
+    -9.02489636542e-15
+   ],
+   "R_sh_R_elbow_Ry_ey_Rz_ez": [
+    [
+     -0.232892644802,
+     0.405547783788,
+     -0.883907241209
+    ],
+    [
+     -0.874769819892,
+     0.309750224355,
+     0.372602416416
+    ],
+    [
+     0.424898550485,
+     0.859991740412,
+     0.282622412804
+    ]
+   ]
+  },
+  "forward_upper": {
+   "rest": [
+    -1.0,
+    -0.0,
+    -0.0
+   ],
+   "reconstructed_unit": [
+    -0.497632549579,
+    0.814345978072,
+    -0.298667831541
+   ],
+   "measured_unit": [
+    -0.497632549579,
+    0.814345978072,
+    -0.298667831541
+   ],
+   "dot": 1.0
+  },
+  "forward_forearm": {
+   "rest": [
+    -1.0,
+    -0.0,
+    -0.0
+   ],
+   "reconstructed_unit": [
+    0.273030667634,
+    0.770176290026,
+    -0.576439707874
+   ],
+   "measured_unit": [
+    0.273030667634,
+    0.770176290026,
+    -0.576439707874
+   ],
+   "dot": 1.0
+  }
+ },
+ "left_arm": {
+  "solver_inputs": {
+   "p_sh": [
+    0.24144,
+    -0.364478,
+    1.309
+   ],
+   "p_el": [
+    0.317586,
+    -0.155948,
+    1.198
+   ],
+   "p_wr": [
+    0.274541,
+    0.027962,
+    1.062
+   ],
+   "R_root": [
+    [
+     0.995260153998,
+     9.00040439414e-05,
+     0.0972482275548
+    ],
+    [
+     0.0206849912411,
+     -0.977312421899,
+     -0.210790325061
+    ],
+    [
+     0.0950229288153,
+     0.211802790117,
+     -0.972681973257
+    ]
+   ]
+  },
+  "upper_arm_v_in_solver_root_R_T_v": [
+   0.0695509758114,
+   -0.227302215594,
+   0.0714166560819
+  ],
+  "upper_arm_v_in_solver_root_norm": 0.248201479077,
+  "a_unit": [
+   0.280219828141,
+   -0.915797183961,
+   0.287736625694
+  ],
+  "sz_a_y": -0.915797183961,
+  "th_z_asin_argument": -0.915797183961,
+  "th_y_atan2_arguments_minus_a_z_a_x": [
+   -0.287736625694,
+   0.280219828141
+  ],
+  "gimbal": false,
+  "th_y": {
+   "rad": -0.798632203907,
+   "deg": -45.7582546671
+  },
+  "th_z": {
+   "rad": -1.15748826793,
+   "deg": -66.3191925881
+  },
+  "forearm_f_in_solver_root": [
+   -0.0519599149086,
+   -0.208546581191,
+   0.0893322497259
+  ],
+  "f_after_Ry_minus_th_y": [
+   0.027746073766,
+   -0.208546581191,
+   0.0995501832694
+  ],
+  "f_prime_unswung_Rz_minus_th_z_Ry_minus_th_y_f": [
+   0.202130333456,
+   -0.0583510876777,
+   0.0995501832694
+  ],
+  "twist_atan2_arguments_minus_fp_y_fp_z": [
+   0.0583510876777,
+   0.0995501832694
+  ],
+  "perp_hypot_fp_y_fp_z": 0.11539102401,
+  "twist_threshold_TWIST_EPS_times_norm_f": 2.32748276309e-07,
+  "twist_ok": true,
+  "th_t": {
+   "rad": 0.530171540682,
+   "deg": 30.376591699
+  },
+  "Ry_th_y": [
+   [
+    0.697687254177,
+    0.0,
+    -0.716402467443
+   ],
+   [
+    0.0,
+    1.0,
+    0.0
+   ],
+   [
+    0.716402467443,
+    0.0,
+    0.697687254177
+   ]
+  ],
+  "Rz_th_z": [
+   [
+    0.401641031083,
+    0.915797183961,
+    0.0
+   ],
+   [
+    -0.915797183961,
+    0.401641031083,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "Rx_th_t": [
+   [
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.862720338287,
+    -0.505681340279
+   ],
+   [
+    0.0,
+    0.505681340279,
+    0.862720338287
+   ]
+  ],
+  "R_sh_Ry_Rz_Rx": [
+   [
+    0.280219828141,
+    0.188955192579,
+    -0.941155026079
+   ],
+   [
+    -0.915797183961,
+    0.346503886206,
+    -0.203102374909
+   ],
+   [
+    0.287736625694,
+    0.918820435146,
+    0.270141892701
+   ]
+  ],
+  "R_arm_R_root_R_sh": [
+   [
+    0.306791080711,
+    0.277444419575,
+    -0.910441555973
+   ],
+   [
+    0.840164211654,
+    -0.528412473919,
+    0.12208339307
+   ],
+   [
+    -0.44721731882,
+    -0.802374508228,
+    -0.395211105984
+   ]
+  ],
+  "g_raw_R_arm_T_forearm": [
+   0.202130333456,
+   4.57794341282e-18,
+   0.11539102401
+  ],
+  "g_unit": [
+   0.868450399121,
+   1.96690754725e-17,
+   0.49577606262
+  ],
+  "ez_asin_argument_g_y": 1.96690754725e-17,
+  "ey_atan2_arguments_minus_g_z_g_x": [
+   -0.49577606262,
+   0.868450399121
+  ],
+  "ey": {
+   "rad": -0.518728221598,
+   "deg": -29.7209378119
+  },
+  "ez": {
+   "rad": 1.96690754725e-17,
+   "deg": 1.1269550115e-15
+  },
+  "shoulder_deg_th_y_th_z_th_t": [
+   -45.7582546671,
+   -66.3191925881,
+   30.376591699
+  ],
+  "elbow_deg_ey_ez": [
+   -29.7209378119,
+   1.1269550115e-15
+  ],
+  "R_sh_R_elbow_Ry_ey_Rz_ez": [
+   [
+    -0.223245111554,
+    0.188955192579,
+    -0.956272741097
+   ],
+   [
+    -0.896017725666,
+    0.346503886206,
+    0.27764598347
+   ],
+   [
+    0.383814871338,
+    0.918820435146,
+    0.0919519031776
+   ]
+  ],
+  "upper_arm_v_Camera_p13_minus_p11": [
+   0.076146,
+   0.20853,
+   -0.111
+  ],
+  "forearm_v_Camera_p15_minus_p13": [
+   -0.043045,
+   0.18391,
+   -0.136
+  ],
+  "rest_direction_local": "+x (no mirror)",
+  "forward_upper": {
+   "rest": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "reconstructed_unit": [
+    0.306791080711,
+    0.840164211654,
+    -0.44721731882
+   ],
+   "measured_unit": [
+    0.306791080711,
+    0.840164211654,
+    -0.44721731882
+   ],
+   "dot": 1.0
+  },
+  "forward_forearm": {
+   "rest": [
+    1.0,
+    0.0,
+    0.0
+   ],
+   "reconstructed_unit": [
+    -0.184942293376,
+    0.790166968865,
+    -0.584322265052
+   ],
+   "measured_unit": [
+    -0.184942293376,
+    0.790166968865,
+    -0.584322265052
+   ],
+   "dot": 1.0
+  }
+ },
+ "angles13_names": [
+  "root_x",
+  "root_y",
+  "root_z",
+  "R_sh_th_y",
+  "R_sh_th_z",
+  "R_sh_th_t",
+  "R_elb_ey",
+  "R_elb_ez",
+  "L_sh_th_y",
+  "L_sh_th_z",
+  "L_sh_th_t",
+  "L_elb_ey",
+  "L_elb_ez"
+ ],
+ "angles13_deg": [
+  12.1686713232,
+  174.290571536,
+  178.787505666,
+  -7.914758328,
+  -59.223955601,
+  52.7456157296,
+  -48.4337954538,
+  -9.02489636542e-15,
+  -45.7582546671,
+  -66.3191925881,
+  30.376591699,
+  -29.7209378119,
+  1.1269550115e-15
+ ],
+ "angles13_rad": [
+  0.212383380182,
+  3.04194432849,
+  3.12043063529,
+  -0.138138592323,
+  -1.03365302129,
+  0.920584660473,
+  -0.845329199907,
+  -1.57514156228e-16,
+  -0.798632203907,
+  -1.15748826793,
+  0.530171540682,
+  -0.518728221598,
+  1.96690754725e-17
+ ],
+ "meta": {
+  "pick_json": "journal/data/perfect_frame.json",
+  "bag": "R7_rail_handover_earlier_take_20260908_235500.bag",
+  "frame_index": 1174,
+  "hw_frame_number": 1463,
+  "input_field": "model_landmarks[k].xyz_med5_m",
+  "input_field_reason": "5x5 median of nonzero aligned depth returns, deprojected with rs2_deproject_pixel_to_point: the frozen extractor's --depth-window 5 default, the values the thesis pipeline uses (pick JSON model_landmarks_note)",
+  "xyz_px_m_equals_xyz_med5_m_for_all_8": true,
+  "units": "metres (positions), radians and degrees (angles)",
+  "coordinate_frame_input": "camera (colour): X right, Y down, Z forward, metres"
+ },
+ "run": {
+  "script": "journal/scripts/compute_angles.py",
+  "tolerances": {
+   "TOL_BRIEF": 1e-09,
+   "TOL_EXACT": 1e-12
+  },
+  "frozen_constants": {
+   "GIMBAL_EPS": 1e-08,
+   "TWIST_EPS": 1e-06,
+   "euler_lock_threshold": 1e-08
+  }
+ },
+ "comparison_A_B": {
+  "R_B_T_F_R_A": [
+   [
+    -1.0,
+    -2.15607456912e-18,
+    -1.06393813398e-17
+   ],
+   [
+    3.82013630113e-18,
+    1.0,
+    2.16452499087e-18
+   ],
+   [
+    3.98313441184e-18,
+    3.68851298704e-17,
+    1.0
+   ]
+  ],
+  "R_B_T_F_R_A_max_abs_error_vs_M": 1.11022302463e-16,
+  "table": [
+   {
+    "name": "root_x",
+    "A_deg": -12.1686713232,
+    "B_deg": 12.1686713232,
+    "B_minus_A_deg": 24.3373426463,
+    "relation": "sign"
+   },
+   {
+    "name": "root_y",
+    "A_deg": 174.290571536,
+    "B_deg": 174.290571536,
+    "B_minus_A_deg": 0.0,
+    "relation": "same"
+   },
+   {
+    "name": "root_z",
+    "A_deg": 1.21249433447,
+    "B_deg": 178.787505666,
+    "B_minus_A_deg": 177.575011331,
+    "relation": "B = wrap(180 - A)"
+   },
+   {
+    "name": "R_sh_th_y",
+    "A_deg": -7.914758328,
+    "B_deg": -7.914758328,
+    "B_minus_A_deg": 0.0,
+    "relation": "same"
+   },
+   {
+    "name": "R_sh_th_z",
+    "A_deg": -59.223955601,
+    "B_deg": -59.223955601,
+    "B_minus_A_deg": 0.0,
+    "relation": "same"
+   },
+   {
+    "name": "R_sh_th_t",
+    "A_deg": 52.7456157296,
+    "B_deg": 52.7456157296,
+    "B_minus_A_deg": 7.1054273576e-15,
+    "relation": "same"
+   },
+   {
+    "name": "R_elb_ey",
+    "A_deg": -48.4337954538,
+    "B_deg": -48.4337954538,
+    "B_minus_A_deg": 7.1054273576e-15,
+    "relation": "same"
+   },
+   {
+    "name": "R_elb_ez",
+    "A_deg": -8.61104245489e-15,
+    "B_deg": -9.02489636542e-15,
+    "B_minus_A_deg": -4.13853910529e-16,
+    "relation": "same"
+   },
+   {
+    "name": "L_sh_th_y",
+    "A_deg": -45.7582546671,
+    "B_deg": -45.7582546671,
+    "B_minus_A_deg": 0.0,
+    "relation": "same"
+   },
+   {
+    "name": "L_sh_th_z",
+    "A_deg": -66.3191925881,
+    "B_deg": -66.3191925881,
+    "B_minus_A_deg": 1.42108547152e-14,
+    "relation": "same"
+   },
+   {
+    "name": "L_sh_th_t",
+    "A_deg": 30.376591699,
+    "B_deg": 30.376591699,
+    "B_minus_A_deg": 1.42108547152e-14,
+    "relation": "same"
+   },
+   {
+    "name": "L_elb_ey",
+    "A_deg": -29.7209378119,
+    "B_deg": -29.7209378119,
+    "B_minus_A_deg": 0.0,
+    "relation": "same"
+   },
+   {
+    "name": "L_elb_ez",
+    "A_deg": -1.73651584302e-15,
+    "B_deg": 1.1269550115e-15,
+    "B_minus_A_deg": 2.86347085452e-15,
+    "relation": "same"
+   }
+  ]
+ },
+ "checks": [
+  {
+   "name": "A: replicated R_root equals build_root_frame",
+   "pass": true,
+   "detail": "max abs diff 2.220e-16"
+  },
+  {
+   "name": "A: det(R_root_A) = +1",
+   "pass": true,
+   "detail": "det = 1.000000000000000"
+  },
+  {
+   "name": "A: replicated Euler equals euler_unity_zxy",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "A: recompose_zxy(root Euler A) reproduces R_root_A",
+   "pass": true,
+   "detail": "max abs error 2.637e-16"
+  },
+  {
+   "name": "A right arm: replicated arm angles equal solve_right_arm",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "A right arm: forward upper-arm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "A right arm: forward forearm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "A left arm (mirrored): replicated arm angles equal solve_right_arm",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "A left arm: replicated angles equal solve_left_arm",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "A left arm: forward upper-arm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "A left arm: forward forearm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "B: det(R_root_B) = +1",
+   "pass": true,
+   "detail": "det = 1.000000000000000"
+  },
+  {
+   "name": "B: replicated Euler equals euler_unity_zxy",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "B: recompose_zxy(root Euler B) reproduces R_root_B",
+   "pass": true,
+   "detail": "max abs error 2.359e-16"
+  },
+  {
+   "name": "B right arm (mirrored): replicated arm angles equal solve_right_arm",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "B right arm: forward upper-arm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "B right arm: forward forearm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "B left arm (direct): replicated arm angles equal solve_right_arm",
+   "pass": true,
+   "detail": "max abs diff 0.000e+00 deg"
+  },
+  {
+   "name": "B left arm: forward upper-arm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "B left arm: forward forearm direction reproduced (dot >= 1 - 1e-9)",
+   "pass": true,
+   "detail": "dot = 1.000000000000000"
+  },
+  {
+   "name": "R_B^T F R_A = diag(-1, 1, 1)",
+   "pass": true,
+   "detail": "max abs error 1.110e-16"
+  }
+ ]
+}

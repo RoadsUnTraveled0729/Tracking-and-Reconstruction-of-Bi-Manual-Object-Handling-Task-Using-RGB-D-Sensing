@@ -1,0 +1,8465 @@
+{
+  "status": "PASS",
+  "passed": 2112,
+  "failed": 0,
+  "failures": [],
+  "source_frames": 150,
+  "output_frames": 420,
+  "root_basis_max_residual": 2.220446049250313e-16,
+  "forearm_direction_max_residual": 3.5140553117146756e-16,
+  "interpretation": "Floating-point/source correspondence only; no anatomical accuracy claim.",
+  "double_precision_diagnostic_tolerance": 1e-12,
+  "source_manifest_sha256": "67c385e80bd67b01fa40b81cc91c34ecc84691be4f2a1652f0534a012f695d71",
+  "axis_renderer_sha256": "51f20372c946b2db57b4be108bd3c1ad546c8a56942f64b3ee550e9af04e5400",
+  "validator_sha256": "f27fde0079b8162e9ac3b89086b3afd23f80fc57ae9c9854a74fada905a0b61b",
+  "checks": [
+    {
+      "name": "Pinned source: filtered",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: raw",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: intrinsics",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: angles",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: failure_mask",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: root_formula",
+      "passed": true
+    },
+    {
+      "name": "Pinned source: arm_formula",
+      "passed": true
+    },
+    {
+      "name": "T-pose root convention",
+      "passed": true
+    },
+    {
+      "name": "Camera-prime reflection",
+      "passed": true
+    },
+    {
+      "name": "Analytic Camera-prime point projection",
+      "passed": true
+    },
+    {
+      "name": "Behind-camera points are rejected",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "100: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "100: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "100: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "100: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "100: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "100: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "100: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "101: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "101: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "101: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "101: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "101: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "101: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "101: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "102: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "102: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "102: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "102: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "102: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "102: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "102: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "103: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "103: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "103: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "103: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "103: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "103: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "103: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "104: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "104: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "104: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "104: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "104: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "104: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "104: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "105: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "105: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "105: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "105: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "105: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "105: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "105: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "106: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "106: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "106: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "106: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "106: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "106: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "106: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "107: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "107: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "107: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "107: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "107: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "107: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "107: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "108: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "108: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "108: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "108: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "108: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "108: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "108: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "109: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "109: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "109: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "109: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "109: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "109: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "109: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "110: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "110: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "110: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "110: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "110: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "110: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "110: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "111: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "111: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "111: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "111: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "111: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "111: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "111: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "112: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "112: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "112: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "112: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "112: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "112: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "112: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "113: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "113: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "113: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "113: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "113: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "113: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "113: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "114: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "114: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "114: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "114: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "114: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "114: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "114: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "115: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "115: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "115: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "115: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "115: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "115: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "115: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "116: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "116: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "116: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "116: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "116: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "116: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "116: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "117: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "117: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "117: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "117: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "117: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "117: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "117: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "118: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "118: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "118: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "118: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "118: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "118: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "118: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "119: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "119: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "119: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "119: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "119: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "119: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "119: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "120: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "120: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "120: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "120: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "120: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "120: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "120: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "121: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "121: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "121: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "121: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "121: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "121: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "121: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "122: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "122: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "122: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "122: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "122: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "122: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "122: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "123: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "123: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "123: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "123: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "123: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "123: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "123: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "124: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "124: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "124: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "124: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "124: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "124: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "124: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "125: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "125: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "125: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "125: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "125: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "125: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "125: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "126: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "126: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "126: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "126: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "126: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "126: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "126: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "127: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "127: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "127: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "127: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "127: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "127: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "127: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "128: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "128: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "128: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "128: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "128: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "128: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "128: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "129: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "129: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "129: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "129: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "129: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "129: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "129: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "130: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "130: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "130: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "130: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "130: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "130: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "130: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "131: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "131: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "131: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "131: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "131: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "131: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "131: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "132: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "132: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "132: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "132: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "132: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "132: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "132: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "133: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "133: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "133: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "133: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "133: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "133: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "133: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "134: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "134: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "134: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "134: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "134: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "134: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "134: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "135: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "135: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "135: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "135: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "135: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "135: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "135: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "136: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "136: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "136: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "136: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "136: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "136: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "136: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "137: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "137: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "137: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "137: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "137: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "137: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "137: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "138: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "138: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "138: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "138: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "138: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "138: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "138: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "139: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "139: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "139: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "139: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "139: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "139: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "139: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "140: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "140: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "140: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "140: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "140: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "140: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "140: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "141: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "141: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "141: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "141: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "141: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "141: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "141: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "142: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "142: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "142: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "142: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "142: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "142: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "142: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "143: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "143: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "143: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "143: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "143: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "143: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "143: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "144: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "144: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "144: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "144: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "144: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "144: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "144: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "145: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "145: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "145: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "145: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "145: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "145: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "145: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "146: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "146: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "146: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "146: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "146: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "146: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "146: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "147: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "147: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "147: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "147: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "147: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "147: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "147: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "148: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "148: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "148: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "148: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "148: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "148: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "148: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "149: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "149: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "149: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "149: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "149: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "149: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "149: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "150: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "150: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "150: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "150: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "150: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "150: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "150: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "151: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "151: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "151: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "151: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "151: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "151: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "151: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "152: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "152: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "152: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "152: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "152: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "152: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "152: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "153: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "153: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "153: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "153: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "153: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "153: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "153: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "154: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "154: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "154: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "154: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "154: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "154: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "154: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "155: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "155: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "155: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "155: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "155: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "155: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "155: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "156: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "156: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "156: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "156: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "156: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "156: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "156: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "157: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "157: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "157: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "157: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "157: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "157: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "157: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "158: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "158: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "158: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "158: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "158: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "158: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "158: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "159: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "159: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "159: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "159: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "159: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "159: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "159: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "160: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "160: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "160: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "160: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "160: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "160: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "160: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "161: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "161: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "161: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "161: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "161: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "161: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "161: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "162: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "162: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "162: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "162: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "162: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "162: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "162: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "163: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "163: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "163: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "163: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "163: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "163: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "163: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "164: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "164: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "164: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "164: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "164: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "164: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "164: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "165: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "165: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "165: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "165: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "165: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "165: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "165: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "166: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "166: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "166: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "166: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "166: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "166: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "166: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "167: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "167: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "167: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "167: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "167: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "167: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "167: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "168: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "168: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "168: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "168: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "168: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "168: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "168: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "169: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "169: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "169: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "169: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "169: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "169: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "169: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "170: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "170: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "170: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "170: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "170: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "170: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "170: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "171: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "171: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "171: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "171: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "171: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "171: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "171: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "172: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "172: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "172: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "172: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "172: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "172: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "172: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "173: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "173: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "173: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "173: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "173: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "173: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "173: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "174: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "174: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "174: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "174: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "174: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "174: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "174: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "175: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "175: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "175: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "175: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "175: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "175: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "175: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "176: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "176: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "176: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "176: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "176: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "176: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "176: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "177: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "177: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "177: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "177: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "177: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "177: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "177: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "178: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "178: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "178: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "178: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "178: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "178: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "178: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "179: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "179: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "179: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "179: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "179: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "179: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "179: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "180: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "180: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "180: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "180: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "180: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "180: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "180: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "181: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "181: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "181: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "181: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "181: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "181: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "181: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "182: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "182: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "182: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "182: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "182: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "182: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "182: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "183: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "183: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "183: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "183: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "183: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "183: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "183: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "184: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "184: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "184: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "184: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "184: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "184: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "184: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "185: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "185: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "185: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "185: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "185: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "185: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "185: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "186: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "186: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "186: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "186: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "186: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "186: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "186: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "187: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "187: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "187: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "187: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "187: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "187: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "187: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "188: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "188: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "188: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "188: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "188: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "188: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "188: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "189: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "189: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "189: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "189: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "189: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "189: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "189: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "190: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "190: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "190: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "190: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "190: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "190: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "190: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "191: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "191: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "191: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "191: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "191: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "191: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "191: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "192: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "192: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "192: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "192: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "192: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "192: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "192: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "193: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "193: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "193: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "193: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "193: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "193: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "193: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "194: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "194: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "194: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "194: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "194: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "194: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "194: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "195: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "195: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "195: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "195: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "195: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "195: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "195: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "196: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "196: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "196: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "196: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "196: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "196: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "196: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "197: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "197: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "197: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "197: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "197: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "197: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "197: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "198: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "198: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "198: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "198: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "198: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "198: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "198: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "199: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "199: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "199: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "199: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "199: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "199: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "199: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "200: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "200: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "200: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "200: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "200: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "200: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "200: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "201: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "201: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "201: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "201: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "201: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "201: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "201: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "202: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "202: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "202: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "202: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "202: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "202: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "202: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "203: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "203: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "203: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "203: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "203: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "203: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "203: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "204: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "204: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "204: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "204: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "204: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "204: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "204: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "205: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "205: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "205: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "205: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "205: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "205: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "205: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "206: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "206: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "206: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "206: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "206: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "206: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "206: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "207: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "207: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "207: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "207: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "207: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "207: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "207: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "208: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "208: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "208: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "208: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "208: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "208: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "208: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "209: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "209: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "209: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "209: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "209: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "209: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "209: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "210: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "210: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "210: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "210: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "210: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "210: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "210: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "211: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "211: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "211: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "211: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "211: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "211: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "211: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "212: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "212: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "212: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "212: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "212: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "212: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "212: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "213: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "213: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "213: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "213: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "213: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "213: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "213: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "214: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "214: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "214: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "214: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "214: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "214: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "214: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "215: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "215: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "215: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "215: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "215: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "215: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "215: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "216: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "216: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "216: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "216: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "216: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "216: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "216: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "217: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "217: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "217: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "217: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "217: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "217: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "217: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "218: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "218: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "218: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "218: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "218: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "218: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "218: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "219: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "219: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "219: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "219: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "219: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "219: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "219: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "220: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "220: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "220: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "220: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "220: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "220: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "220: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "221: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "221: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "221: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "221: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "221: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "221: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "221: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "222: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "222: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "222: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "222: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "222: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "222: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "222: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "223: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "223: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "223: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "223: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "223: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "223: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "223: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "224: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "224: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "224: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "224: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "224: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "224: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "224: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "225: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "225: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "225: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "225: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "225: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "225: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "225: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "226: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "226: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "226: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "226: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "226: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "226: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "226: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "227: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "227: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "227: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "227: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "227: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "227: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "227: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "228: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "228: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "228: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "228: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "228: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "228: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "228: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "229: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "229: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "229: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "229: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "229: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "229: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "229: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "230: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "230: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "230: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "230: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "230: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "230: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "230: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "231: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "231: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "231: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "231: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "231: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "231: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "231: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "232: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "232: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "232: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "232: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "232: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "232: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "232: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "233: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "233: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "233: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "233: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "233: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "233: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "233: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "234: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "234: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "234: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "234: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "234: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "234: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "234: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "235: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "235: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "235: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "235: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "235: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "235: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "235: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "236: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "236: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "236: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "236: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "236: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "236: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "236: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "237: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "237: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "237: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "237: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "237: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "237: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "237: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "238: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "238: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "238: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "238: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "238: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "238: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "238: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "239: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "239: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "239: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "239: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "239: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "239: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "239: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "240: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "240: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "240: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "240: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "240: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "240: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "240: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "241: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "241: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "241: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "241: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "241: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "241: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "241: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "242: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "242: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "242: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "242: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "242: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "242: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "242: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "243: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "243: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "243: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "243: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "243: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "243: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "243: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "244: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "244: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "244: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "244: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "244: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "244: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "244: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "245: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "245: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "245: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "245: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "245: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "245: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "245: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "246: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "246: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "246: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "246: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "246: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "246: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "246: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "247: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "247: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "247: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "247: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "247: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "247: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "247: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "248: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "248: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "248: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "248: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "248: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "248: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "248: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point left_hip",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point right_hip",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point left_shoulder",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point right_shoulder",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point left_elbow",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point right_elbow",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point left_wrist",
+      "passed": true
+    },
+    {
+      "name": "249: matching source point right_wrist",
+      "passed": true
+    },
+    {
+      "name": "249: thesis torso construction",
+      "passed": true
+    },
+    {
+      "name": "249: proper local basis",
+      "passed": true
+    },
+    {
+      "name": "249: upper-arm X direction",
+      "passed": true
+    },
+    {
+      "name": "249: elbow-frame forearm",
+      "passed": true
+    },
+    {
+      "name": "249: saved measured states",
+      "passed": true
+    },
+    {
+      "name": "249: source timestamp",
+      "passed": true
+    },
+    {
+      "name": "Shared half-speed source clock and endpoint holds",
+      "passed": true
+    }
+  ]
+}

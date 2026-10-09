@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "Bounded integration review of restored Chapter 7 supporting images, captions, local placement, result-table construction, and the six MATH equations",
+  "baseline_commit": "7243a2060df433a8ea6c3814ca7b594c8273618d",
+  "reviewed_builder": {
+    "path": "writing/v8/condensed/scripts/build_ch7.py",
+    "sha256": "c2f3dbaf530210c7dcccaa9303c353531bb948e98307b40539598bfc529f3d92",
+    "baseline_sha256": "766ed5f289bb029ef142bd6baf34b85a1e8cbe541f550111f88846c68f007cec"
+  },
+  "resolved_finding": {
+    "figure": "7.2",
+    "previous_text": "release",
+    "reason": "Frame 1200 shows the cube settled at the far end after both hands have withdrawn; it does not show the release event itself.",
+    "current_text": "arrival at the far end",
+    "status": "RESOLVED_IN_CURRENT_BUILDER"
+  },
+  "figure_checks": [
+    {
+      "figure": "7.1",
+      "result": "PASS",
+      "output": "writing/v8/condensed/figures/ch7_video_context_r6b.png",
+      "sha256": "efe60c84e89ee537f86ecf07e0e65017131fdf6e043176cdde846d32d784696f",
+      "frames": [95, 505, 700, 898],
+      "identification": ["object acquisition", "lift", "rail slide", "far-end placement"],
+      "placement": "Video strip immediately above the unchanged rail waypoint plot under one caption"
+    },
+    {
+      "figure": "7.2",
+      "result": "PASS_AFTER_RESOLVED_CAPTION_CORRECTION",
+      "output": "writing/v8/condensed/figures/ch7_video_context_r7.png",
+      "sha256": "decf421602f17da2e5e48b1625c2b35469371a04e9e1370bf44802c980358fce",
+      "frames": [700, 950, 1042, 1200],
+      "identification": ["right-hand slide", "two-hand transfer", "left-hand slide", "arrival at the far end"],
+      "placement": "Video strip immediately above the unchanged handover waypoint plot under one caption"
+    },
+    {
+      "figure": "7.7",
+      "result": "PASS",
+      "output": "writing/v8/condensed/figures/ch7_failure_context.png",
+      "sha256": "0c144808da4e1f88992d27e103f17889fe5a0e1d03b828415623f409eb6aaa78",
+      "frames_and_arms": {
+        "1427": "left",
+        "1462": "left",
+        "1777": "left",
+        "1890": "right"
+      },
+      "frame_1462_measured_wrist": null,
+      "placement": "Section 7.4.2 after the loop-recording context and before the clean-proxy baseline table",
+      "scope_check": "Caption explicitly separates these recorded natural-failure examples from Section 7.4.1 synthetic removal"
+    },
+    {
+      "figure": "7.8",
+      "result": "PASS",
+      "output": "writing/v8/condensed/figures/ch7_natural_proxy_left.png",
+      "sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "source_sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "frame": 1462,
+      "arm": "left",
+      "symbol_identification": {
+        "square": "manual wrist proxy",
+        "cross": "object-derived wrist estimate",
+        "blue_chain": "plain-solve arm in the left panel and object-assisted reconstructed arm in the right panel"
+      },
+      "plain_fk_cm": 14.02,
+      "object_assisted_fk_cm": 13.65,
+      "displayed_rounding_cm": [14.0, 13.7]
+    },
+    {
+      "figure": "7.9",
+      "result": "PASS",
+      "output": "writing/v8/condensed/figures/ch7_natural_proxy_right.png",
+      "sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "source_sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "frame": 1890,
+      "arm": "right",
+      "symbol_identification": {
+        "square": "manual wrist proxy",
+        "cross": "object-derived wrist estimate, not the final reconstructed wrist",
+        "blue_chain_endpoint": "final reconstructed wrist"
+      },
+      "plain_fk_cm": 14.03,
+      "object_derived_estimate_cm": 15.2,
+      "object_assisted_fk_cm": 5.01,
+      "displayed_plain_and_object_assisted_rounding_cm": [14.0, 5.0]
+    }
+  ],
+  "diagnostic_source": {
+    "path": "eval/reports/r5_recovery_labeled.json",
+    "sha256": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820"
+  },
+  "strip_presentation_check": {
+    "result": "PASS",
+    "manifest_path": "writing/v8/condensed/audit_evidence/ch7_visual_restoration/supporting_manifest.json",
+    "manifest_sha256": "230b1ed3b36025d36362de18c69f3fe2ac10a3e343ff9c13e18cc9528a36c825",
+    "strip_pixel_size": [2596, 594],
+    "nominal_header_font_px": 50,
+    "header_font_pt_at_6_1_in_width": 8.46,
+    "height_in_at_6_1_in_width": 1.396,
+    "title_lines": 2,
+    "source_pixels_identical": {
+      "ch7_video_context_r6b.png": [true, true, true, true],
+      "ch7_video_context_r7.png": [true, true, true, true],
+      "ch7_failure_context.png": [true, true, true, true]
+    },
+    "pixel_comparison_method": "Decoded each final PNG, cropped each 640 by 480 source-frame region below the 114-pixel title band, and required an empty Pillow ImageChops difference against the committed source PNG."
+  },
+  "baseline_invariance": {
+    "method": "Parsed current and baseline builders with Python ast; removed only the figure helper definition and top-level heading, prose, and figure presentation calls before comparing the remaining normalized AST.",
+    "computational_ast_equal": true,
+    "computational_ast_current_sha256": "9b751d5348a9bdc17b4088e11afcb51547c2d3d67643e79a6c96b7a985072422",
+    "computational_ast_baseline_sha256": "9b751d5348a9bdc17b4088e11afcb51547c2d3d67643e79a6c96b7a985072422",
+    "math_dictionary_equal": true,
+    "math_dictionary_key_count": 6,
+    "math_dictionary_ast_sha256": "80ba36e26025066856d34ad528eaebc377408298ed570d891ad8607a0194fbdf",
+    "equation_calls_equal": true,
+    "equation_call_count": 6,
+    "equation_calls_ast_sha256": "d78c845b0a66cd0bba879f02ec4ccddf851e63cb559afd70b649fbf9df92bec0",
+    "table_construction_equal": true,
+    "syntactic_table_call_count": 8,
+    "runtime_result_table_count": 9,
+    "table_calls_ast_sha256": "caca1e89cbf1f4ff771d4d19ceec2167f75acbb29d337d37cde28dc837b0c92d",
+    "note": "One syntactic table call is inside the elbow/wrist loop and produces Tables 7.6 and 7.7. The normalized computational AST equality covers all row construction, helper functions, evidence loading, loops, and table calls."
+  },
+  "pinned_input_diff": {
+    "result": "PASS_EMPTY_DIFF",
+    "command_scope": [
+      "writing/v8/condensed/audit_evidence/ch7_restructured",
+      "eval/reports/r5_recovery_labeled.json",
+      "writing/v8/condensed/figures/ch7_fig_label_f1462.png",
+      "writing/v8/condensed/figures/ch7_fig_label_f1890.png"
+    ],
+    "changed_paths_since_baseline": []
+  },
+  "remaining_findings": []
+}

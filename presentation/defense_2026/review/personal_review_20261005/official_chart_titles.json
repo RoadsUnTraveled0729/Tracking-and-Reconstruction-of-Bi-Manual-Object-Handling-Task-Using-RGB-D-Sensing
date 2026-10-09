@@ -1,0 +1,17 @@
+{
+  "exitCode": 0,
+  "report": {
+    "checks": [],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 0,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "84689f24990ee7a4bff2f0a5adc545b0854cb42bcd4c5c848a96ae7ffb61974d",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 78,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "stderr": ""
+}

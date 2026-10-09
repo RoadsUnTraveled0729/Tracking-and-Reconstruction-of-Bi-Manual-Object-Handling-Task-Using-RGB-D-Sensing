@@ -1,0 +1,186 @@
+{
+  "pages": 200,
+  "figure_pages": {
+    "2.1": 25,
+    "2.2": 26,
+    "2.3": 27,
+    "2.4": 28,
+    "2.5": 30,
+    "2.6": 36,
+    "2.7": 38,
+    "2.8": 39,
+    "2.9": 40,
+    "3.1": 43,
+    "3.2": 45,
+    "3.3": 47,
+    "3.4": 49,
+    "3.5": 51,
+    "3.6": 52,
+    "3.7": 56,
+    "4.1": 65,
+    "4.2": 67,
+    "5.1": 73,
+    "5.2": 76,
+    "5.3": 82,
+    "5.4": 85,
+    "5.5": 90,
+    "6.1": 96,
+    "6.2": 98,
+    "6.3": 100,
+    "6.4": 104,
+    "6.5": 112,
+    "7.1": 121,
+    "7.2": 124,
+    "7.3": 128,
+    "7.4": 130,
+    "7.5": 132,
+    "7.6": 134,
+    "7.7": 138,
+    "7.8": 139,
+    "7.9": 140,
+    "8.1": 143,
+    "8.2": 147,
+    "8.3": 148,
+    "9.1": 153,
+    "9.2": 159,
+    "A.1": 170,
+    "A.2": 171,
+    "C.1": 174,
+    "C.2": 175,
+    "D.1": 179,
+    "E.1": 182,
+    "E.2": 184,
+    "F.1": 189
+  },
+  "checks": [
+    {
+      "check": "Native mathematical content preserved",
+      "status": "PASS",
+      "detail": {
+        "objects": 339,
+        "unchanged": 232,
+        "punctuated": 107
+      }
+    },
+    {
+      "check": "All displays punctuated",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Embedded image bytes preserved",
+      "status": "PASS",
+      "detail": 52
+    },
+    {
+      "check": "All result-table content preserved",
+      "status": "PASS",
+      "detail": 27
+    },
+    {
+      "check": "Symmetric six-inch numbered equation layout",
+      "status": "PASS",
+      "detail": 56
+    },
+    {
+      "check": "All table grids within text area",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Text font sizes at least 12 point",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Section page geometry",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Selected glossary terms sorted",
+      "status": "PASS",
+      "detail": [
+        "camera frame {Camera}, C",
+        "display frame {Unity}, U",
+        "marker, fiducial marker",
+        "object frame {Object}, O",
+        "p95",
+        "PSF1, PSR2, PSB2, PSB3, PSI2",
+        "PUMA convention",
+        "RGB-D camera, sensor",
+        "scene frame {Scene}",
+        "T-pose",
+        "world frame {World}, W",
+        "y-up camera frame {Camera'}, C'"
+      ]
+    },
+    {
+      "check": "Native numbered acquisition steps",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "References after Appendix H",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Four populated navigation fields",
+      "status": "PASS",
+      "detail": [
+        118,
+        50,
+        27,
+        56
+      ]
+    },
+    {
+      "check": "No title/contents self-entry",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Cached Word reopen matches PDF",
+      "status": "PASS",
+      "detail": "PASS: identical substantive text by page and line; leader-dot counts and extraction whitespace ignored"
+    },
+    {
+      "check": "Dot-leader tabs in navigation caches",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "Literature source identities verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "All figure/table numbered introductions",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "One-page glossary before Chapter 1",
+      "status": "PASS",
+      "detail": 17
+    },
+    {
+      "check": "Every figure shares a page with its caption",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "No headings stranded at page foot",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "check": "Rendered text respects side margins",
+      "status": "PASS",
+      "detail": []
+    }
+  ],
+  "docx_sha256": "172f16b2c2ad4f6443808467307322d4f4fe89ad09bbd4e61061300eead2582e",
+  "pdf_sha256": "572a987addd1d51d8808f4f7a7321c084e95b2d92909fa8ce624be5b6c0b3288"
+}

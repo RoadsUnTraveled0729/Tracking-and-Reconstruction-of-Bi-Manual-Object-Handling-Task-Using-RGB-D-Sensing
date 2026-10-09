@@ -1,0 +1,73 @@
+{
+  "table_corners_local_m": [
+    [
+      -0.27283391551558406,
+      0.06929480877712958,
+      -0.11461546591249935
+    ],
+    [
+      -0.3067842155559138,
+      -0.256716759347269,
+      0.4054256701112545
+    ],
+    [
+      0.22278963406872193,
+      -0.2627158500809312,
+      0.4362374982550481
+    ],
+    [
+      0.25673993410905166,
+      0.0632957180434674,
+      -0.08380363776870577
+    ]
+  ],
+  "width_m": 0.5305033647861714,
+  "visible_depth_m": 0.6147185930005975,
+  "left_edge_pixels": [
+    [
+      25,
+      465
+    ],
+    [
+      90,
+      425
+    ],
+    [
+      145,
+      393
+    ],
+    [
+      177,
+      375
+    ]
+  ],
+  "right_edge_pixels": [
+    [
+      630,
+      435
+    ],
+    [
+      560,
+      407
+    ],
+    [
+      480,
+      375
+    ]
+  ],
+  "rear_edge_pixels": [
+    [
+      181,
+      371
+    ],
+    [
+      476,
+      371
+    ]
+  ],
+  "front_scope": "Image-clipped near extent; physical front edge is outside the recording.",
+  "table_plane": "Original calibration retained. Visible straight sides constrain a rectangular display surface.",
+  "wall": "Original marker plane and marker pose retained; wall mesh spans the task region instead of being horizontally centred on the offset marker.",
+  "legs": "Standard-height display geometry, not an estimated measurement.",
+  "body_and_object_stream": "Unchanged."
+}

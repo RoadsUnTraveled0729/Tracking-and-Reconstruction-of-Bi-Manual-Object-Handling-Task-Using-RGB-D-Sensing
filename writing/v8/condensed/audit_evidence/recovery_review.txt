@@ -1,0 +1,60 @@
+STATUS: COMPLETE
+GOAL: Audit Chapter 4-5 mathematics and recovery logic in newest condensed V8.
+KEY FINDING: Main transform and reachable IK derivations are correct and the frame-560 numerical example reproduces. The unreachable-geometry explanation and claimed universal memory/twist guards contain confirmed errors or implementation mismatches.
+VERIFIED: Read condensed chapter dumps/builders, recovery_core.py, grip_state.py, carry.py, occlusion_ext.py, failure-detector and pinned recovery reports; executed ch5_worked_example.py and a bounded 900-frame read-only diagnostic replay.
+ASSUMPTIONS/UNRESOLVED: No physical-camera truth or Unity rendering test. Printed positions are rounded; small apparent arithmetic differences are not findings. This report is read-only and changes no thesis files.
+DECISION: Separate confirmed wrong mathematics from differences between intended rules and actual evaluated implementation.
+NEXT: Correct thesis claims or implementation/evidence, then independently rerun affected checks.
+
+FINDING R1. HIGH: Unreachable wrist clipping does not solve both bone constraints; inner clipping sign is wrong in the prose.
+Location: Section 5.5, paragraph after Figure 5.5; condensed/scripts/build_ch5.py:419; equations (5.8)-(5.10). Implementation v1/kinematics/occlusion_ext.py:324-353.
+Quote: 'A wrist closer to the shoulder than the difference of the link lengths clips the cosine at the other end.'
+Derivation: c=(L1^2+r^2-L2^2)/(2 L1 r). For 0<r<L1-L2 when L1>L2, c>1, not c<-1. For L2>L1 and 0<r<L2-L1, c<-1. No exact intersection exists in either unreachable region. Clipping keeps |E-S|=L1 but generally violates |E-W|=L2; only the boundary distances satisfy both.
+Executed counterexamples using the production _ik_elbow:
+L1=.317,L2=.205,r=.05: raw cosine=1.923154574, elbow=(.317,0,0), actual forearm=.267 m, required=.205 m.
+L1=.205,L2=.317,r=.05: raw cosine=-2.729951220, elbow=(-.205,0,0), actual forearm=.255 m, required=.317 m.
+L1=.317,L2=.205,r=.600: raw cosine=1.100063091, elbow=(.317,0,0), actual forearm=.283 m, required=.205 m.
+Correction: explicitly restrict equations (5.8)-(5.12) to |L1-L2|<=r<=L1+L2 (with endpoint/coincident handling); describe clipping as a finite approximate fallback that relaxes wrist reach/bone consistency, or project the wrist to the feasible interval and disclose the endpoint displacement. Near-reach direction-memory substitution at occlusion_ext.py:710-713 also generally relaxes the forearm-length constraint even for reachable wrist targets. Do not imply exact two-link constraints survive that guard or subsequent angle slew limiting.
+
+FINDING R2. HIGH: Low-flexion twist hold is bypassed precisely on constrained recovery output.
+Location: Section 5.5 last paragraph, 'Below 15 degrees of elbow flexion the twist keeps its previous value and its group leaves the layer held'; builder build_ch5.py:429 (locate exact text if line moved).
+Implementation: occlusion_ext.py:739-748 clears live-mask bits for recovered groups before :769-784 applies twist hold. The hold assignment requires 'if hold and mask & tw_bit', so a group already tagged constrained is skipped.
+Executed replay of recording_20260831_065553 with recovery_core.build_inputs and RobustChainSolver, same inputs as pinned recovery outputs: 18 constrained right-arm frames had abs(elbow flexion)<15 degrees and nonzero twist change. Examples frame 7 flexion=-12.359271626 degrees, twist delta=+3.391597326 degrees; frame 8 flexion=-12.359271626, delta=-2.375550676; frame 9 delta=-1.370883130. Tag=2 (CONSTRAINED), not HELD. These are actual frame outputs, not a hypothetical test.
+Correction: document that current hold applies only to measured/live twists, including its recovery limitation; if universal hold is intended, fix the guard in an active copy, regenerate affected output, and update thesis measurements. Frozen v1 must not be edited.
+
+FINDING R3. MEDIUM: 45-frame memory expiry claim is not true for the IK swivel prior.
+Location: Section 5.3 final paragraph: 'A memory that has received no update for forty-five frames is stale and is not used'; Section 5.5 direction-memory selection.
+Implementation: direct memory rebuild _try_recover at occlusion_ext.py:381-395 checks horizon; near-reach guard :710-713 checks horizon. Ordinary IK call :715-717 passes self.u.get(useg) without a freshness check.
+Executed replay: 45 right-arm IK frames 595-639 consume prior memories aged 46-90 frames. These follow the real right-arm failure window, not synthetic arbitrary input.
+Correction: state that expiry bounds free memory extrapolation but the last measured direction remains a potentially stale swivel prior under object anchoring; alternatively enforce expiry and use stated down/depth priors, then regenerate results. The current wording gives the reader a stronger safeguard than implemented.
+
+FINDING R4. MEDIUM: Offline grip labels and fallback offsets are not strictly causal; specify this when describing 'carried from the past'.
+Location: Section 5.3 grip-state entry/exit paragraph and offset warm-up paragraph; Section 5.4 'Only the offset is carried from the past'.
+Implementation: grip_state.py:61-64 backdates entry by four frames; :72-75 retro-clears five exit frames. fit_episode_mu :94-112 uses all clean frames in the episode; recovery_core.py:135-147 fills pre-warmup slots with this full-episode fit (or recording-wide fit). carry.py:210-225 uses post-envelope rest centroid and centered moving_mask :104-110.
+Executed prefix counterexample: clean holding=true for frames0-4; release-distance=.4 for frames5-9, carried=true throughout. Running only first8 frames yields holding=true for frames5-7. Extending identical prefix to10 frames changes frames5-7 to false. Thus returned offline labels depend on future observations.
+Qualification: warmed-up EMA itself is causal given an episode, and scored windows explicitly exclude masked wrist observations; this does NOT by itself establish contamination of scored wrist positions. Actual frame560 uses the mature EMA last updated at549 and is verified causal with respect to offset updates. Chapter8 may already distinguish offline/online state; keep the finding scoped accordingly.
+Correction: call chapter5 preparation offline retrospective labeling/fitting, disclose up-to-four-frame state backdating and episode-wide warm-up fallback, and distinguish online delayed decisions from retrospectively relabeled output. Do not claim all offsets are strictly past-only.
+
+FINDING R5. MEDIUM: Appendix E.2 angular separation is not a general guarantee of perspective disambiguation (additional bounded review requested by parent).
+Location: condensed/scripts/build_appendix.py:245, paragraph beginning 'How far apart the two lobes sit...'.
+Quote: 'A marker whose projection is nearly an affine copy of the printed square gives almost no perspective cue, and the lobes collapse toward each other.'
+Exact counterexample: under orthographic projection, rotate planar points (X,Y,0) about y by +theta or -theta. Both project to (cos(theta)X,Y), while normals differ by 2theta. At theta=30 degrees, the affine images are identical but normals differ by60 degrees, exceeding the40-degree rule. The same indistinguishability is approached in distant small-target perspective imaging. Lobe angular separation and reprojection distinguishability are different quantities.
+Correction: describe 40 degrees as an implementation heuristic, not a general projective-conditioning result. Establish branch distinguishability using reprojection residual separation relative to corner uncertainty; retain physical/temporal priors where ambiguity persists. This is a self-contained geometry derivation, not a citation-dependent recollection.
+
+VERIFIED CORRECT:
+- (4.1) T_WO=inv(T_CW) T_CO and (4.2) rigid inverse are correct. Camera invariance explicitly requires the same camera pose for frozen anchor and object measurement, appropriately qualified in section4.1.
+- (4.3) elapsed-time translation and geodesic-rotation bounds are dimensionally and logically correct as speed guards. They do not prove marker-pose accuracy; the text should be read as a rejection guard only.
+- (5.1)-(5.4) rigid grip relation, inverse offset, least-squares arithmetic mean, and EMA update are correct when wrist/object are expressed in the same frame and R is orthogonal. Table5.1 calls p_wr person-space while (5.1)-(5.3) temporarily use its transformed world representation; adding frame superscripts would remove that notational overload. The prose immediately before(5.2) does explain the conversion, so this is not treated as a separate mathematical failure.
+- (5.5) normalized weighted direction update is valid for alpha=.30; denominator cannot vanish for unit inputs because norm((.7)u+(.3)v)>=.4. 'shorter than either' has the trivial equal-direction equality exception only.
+- Reachable two-sphere intersection, (5.9) law of cosines, (5.10) circle center/radius, (5.11) parameterization, and (5.12) projected-prior minimizer are correct. Perpendicular down/depth fallback candidates ensure one usable projection when r>0. The derivative dj/dr=-[r^2-L1^2+L2^2]/[2 L1 r^2 sin(j)] diverges at ordinary full extension, supporting the conditioning concern.
+- The coincident equal-length case has infinitely many geometrical elbows, rather than none, but the described solver can still intentionally reject it because its axis-based construction is undefined; clarify 'no answer from this construction' if revising.
+
+WORKED EXAMPLE VALIDATION:
+Executed: PYTHONDONTWRITEBYTECODE=1 /home/luo/anaconda3/bin/python writing/v8/scripts/ch5_worked_example.py
+Actual run originally omitted bytecode suppression; subsequent diagnostics supplied it. Script is read-only apart from ordinary import cache behavior.
+Inputs: pinned rail recording recording_20260831_065553, calibration eval/output/scene_calibration_r6bc.json, failure_mask.csv, stored angles_recovery.csv, per-recording offset-fit report.
+Output: frame560 offset h=(.0113,-.0409,.0522), |h|=.0672 m, last clean offset update549. Wrist world=(-.2122,.1317,.4819); person=(-.1856,-.0912,1.0441). Transform determinant1.000. L1=.317,L2=.205; r=.5071, reach ratio=.9715; cosj=.9817,j=10.97 degrees; circle radius=.0603; elbow=(-.2010,.0450,1.1966). Hand-derived vs pipeline elbow difference printed0.000 mm; link lengths exactly .3170/.2050 at shown precision. Upper-arm direction differs .74 degrees from memory, flexion28.09 degrees. Re-run angles vs stored CSV max difference printed0.0000 degrees.
+All seven output tags were2 (CONSTRAINED), live mask0, including root. The chapter's 'torso ... measured' description abstracts the actual hip-depth repairs; coordinate this with main review of torso-scope claims. The right-arm constrained tags stated at end of example are correct.
+
+REPRODUCIBILITY/LIMITS:
+The numerical checks were diagnostic evidence for this audit, not new thesis experiment results. Shell output is in the conversation; this file preserves numerical values and exact production call sites. No full hardware pipeline, rendering, or manual ground-truth exercise was performed. Main report should prioritize R1-R3, merge R4 with any existing chapter8 offline/online findings, and merge R5 with parent's Appendix E review.

@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-09-29T19:29:52.218695+00:00",
+  "base_commit": "1264bbbfe3a21316d1557bcdfc3441eeadadce88",
+  "scope": "D-216/D-217 presentation-feedback follow-up; authoring and package checks, not new source-science validation",
+  "passed": 24,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Source changes are exactly D-216 and D-217",
+      "status": "PASS",
+      "detail": "Swap 3/4; plural display headings/sections; first Motivation bullet in two arrays. All other fields, including notes and durations, unchanged."
+    },
+    {
+      "check": "Backup content unchanged",
+      "status": "PASS",
+      "detail": 14
+    },
+    {
+      "check": "Page counts and timing unchanged",
+      "status": "PASS",
+      "detail": {
+        "main": 39,
+        "hidden": 14,
+        "main_seconds": 1785
+      }
+    },
+    {
+      "check": "Round-5 mapping basis unchanged",
+      "status": "PASS",
+      "detail": "Only the current mapping is updated; embedded history stays identical."
+    },
+    {
+      "check": "Static-page mapping and headings agree",
+      "status": "PASS",
+      "detail": {
+        "old_2": [
+          4
+        ],
+        "motivation_page": 3,
+        "information_flow_page": 4
+      }
+    },
+    {
+      "check": "Contract media rows unchanged",
+      "status": "PASS",
+      "detail": 21
+    },
+    {
+      "check": "Contract binds the current mapping",
+      "status": "PASS",
+      "detail": "dfed3fb9bb6e86847a568202742e88a588191faf8fd8b5749133f5d99d1ce28c"
+    },
+    {
+      "check": "PPTX order is 1-53",
+      "status": "PASS",
+      "detail": 53
+    },
+    {
+      "check": "All PPTX titles match source",
+      "status": "PASS",
+      "detail": {
+        "matched": 53,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "All three plural heading strings are in PPTX",
+      "status": "PASS",
+      "detail": {
+        "2": "Discussions: what the evidence supports",
+        "34": "Discussions",
+        "35": "Discussions"
+      }
+    },
+    {
+      "check": "Complete Motivation bullet is in PPTX",
+      "status": "PASS",
+      "detail": "Robot learning, VR avatars and potential clinical assessment"
+    },
+    {
+      "check": "Only pages 40-53 are hidden",
+      "status": "PASS",
+      "detail": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "check": "All narration matches PPTX notes",
+      "status": "PASS",
+      "detail": {
+        "matched": 53,
+        "mismatches": []
+      }
+    },
+    {
+      "check": "Every embedded media payload is unchanged",
+      "status": "PASS",
+      "detail": {
+        "payloads": 55,
+        "baseline_commit": "1264bbbfe3a21316d1557bcdfc3441eeadadce88"
+      }
+    },
+    {
+      "check": "PDF has all 53 pages",
+      "status": "PASS",
+      "detail": 53
+    },
+    {
+      "check": "PDF opening and closing headings match source",
+      "status": "PASS",
+      "detail": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "mismatches": []
+      }
+    },
+    {
+      "check": "PDF has plural outline and completed Motivation wording",
+      "status": "PASS",
+      "detail": {
+        "outline_page": 2,
+        "motivation_page": 3,
+        "actual_bullet": "Robot learning, VR avatars and potential clinical assessment",
+        "bullet_box_pdf_points": [
+          59,
+          102,
+          363,
+          98
+        ],
+        "box_source": "build_deck.py restrained_bullets: x=0.82, y=1.42, width=5.03, height=1.36 inches; rounded outward to PDF point bounds",
+        "extraction_note": "Full-page layout text interleaves right-table headers between left-bullet lines; extraction from the existing bullet box verifies the complete phrase."
+      }
+    },
+    {
+      "check": "Script Markdown exactly matches current source",
+      "status": "PASS",
+      "detail": 53
+    },
+    {
+      "check": "Script export matches all current bytes and paragraphs",
+      "status": "PASS",
+      "detail": {
+        "paragraphs": 216,
+        "slide_sections": 53,
+        "script_pdf_pages": 14
+      }
+    },
+    {
+      "check": "Fresh package check binds current PPTX",
+      "status": "PASS",
+      "detail": {
+        "checks": 1331,
+        "failures": 0,
+        "overall": "PARTIAL",
+        "source_findings": 2
+      }
+    },
+    {
+      "check": "Fresh render binds current PPTX and PDF",
+      "status": "PASS",
+      "detail": {
+        "pptx_sha256": "1096465bde6f42ae6284e10399a3764888c2051e020aea008a021a4568b3dfcb",
+        "render_snapshot_sha256": "1096465bde6f42ae6284e10399a3764888c2051e020aea008a021a4568b3dfcb",
+        "snapshot_policy": "Declared GIF posters replace GIF picture relationships in the temporary PDF export copy only.",
+        "canonical_pptx_unchanged": true,
+        "poster_substitutions": [],
+        "pdf_sha256": "2ffada5d8e6330092b924f80aa54c93ecc3d9391286e7ca73a966c62a9be5886",
+        "preview_pages": 53,
+        "includes_hidden_slides": true,
+        "renderer_sha256": "69b8c2272dc7fb562f0b35110d56beb7a302e2884f90546dd3082a49826bf565"
+      }
+    },
+    {
+      "check": "Native layout has no warnings",
+      "status": "PASS",
+      "detail": {
+        "fit_warnings": 0,
+        "overlap_candidates": 0
+      }
+    },
+    {
+      "check": "Share-folder files match source bytes",
+      "status": "PASS",
+      "detail": [
+        "Thesis_Defence_2026.pptx",
+        "Thesis_Defence_2026.pdf",
+        "DEFENSE_SCRIPT.pdf"
+      ]
+    },
+    {
+      "check": "Share manifest binds each copied file",
+      "status": "PASS",
+      "detail": {
+        "git_commit": "26e954a",
+        "working_tree_differs_from_commit": false
+      }
+    }
+  ],
+  "current_files": {
+    "talk_content.json": "aad94d5ad687f11362a0450de8c46cd528b3aeabe426377985139770644e62d4",
+    "backup_content.json": "414164634dd1ffbd9cb35f76b5d36c287fe6bf65a21894052784c14c2cfc7e02",
+    "revision_id_map.json": "dfed3fb9bb6e86847a568202742e88a588191faf8fd8b5749133f5d99d1ce28c",
+    "Thesis_Defence_2026.pptx": "1096465bde6f42ae6284e10399a3764888c2051e020aea008a021a4568b3dfcb",
+    "Thesis_Defence_2026.pdf": "2ffada5d8e6330092b924f80aa54c93ecc3d9391286e7ca73a966c62a9be5886",
+    "DEFENSE_SCRIPT.md": "e2c80aa5ef5f55591d6985d7f473047f3e024ac9bec64630dc3b9339d6b1b318",
+    "DEFENSE_SCRIPT.docx": "23358cbe6ed134628349440431c9518d7f839b72ea17b055c472a41dc3dbc9b9",
+    "DEFENSE_SCRIPT.pdf": "58c7219c6889a63f554c5d460c9e32fca592fc45e1898075d08963b3cd74cafa",
+    "review/ARTIFACT_CHECK.json": "0d5e14dd1c2059578d42c19c3577259c8b49ffe4159d1cf42b9344c790a1f6a2",
+    "review/RENDER_CHECK.json": "171abbeb0a976a5e16aa51e957722a391a58884e3c49daf183311f9a2a3b8526",
+    "review/SCRIPT_EXPORT_CHECK.json": "493566848d205c529ef7cf8f60833d972db2a588f2755d4dbdca6aef892a4652"
+  },
+  "unchanged_embedded_payloads": {
+    "ppt/media/image1.png": "cad204dd070e93150d9f9671396c1c0a87c87fcc55b62ffe03eeddaef3d89737",
+    "ppt/media/image10.png": "b8517e61d17c04675de89ee0d38d58be342f029d652d38ebd499d7d90e9c863e",
+    "ppt/media/image11.png": "4b6947bb42b60b9ffecfab8925f8ba330c2fba0c3b8b306b02749aa18c0a8efd",
+    "ppt/media/image12.png": "652253225832910a1e7467b6b658d065372053d1287b93b0672c0cb0eda6a292",
+    "ppt/media/image13.png": "4473a22cf02dec9629fe14f7e47c027bcc1aed103ef96975c522b3fed6d0401e",
+    "ppt/media/image14.png": "f8b4786df65c501c219f46f7bca06843efecaab759fc84b34bc77066c76bb97b",
+    "ppt/media/image15.png": "6fc325af58a41e378f66c29c900f5cbebae4763c492ec2316e730992fcc468dc",
+    "ppt/media/image16.png": "8da37992bde10264f7506d53931ad730b4c0b60295f1c5983eb54e0a7dc9ec64",
+    "ppt/media/image17.png": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+    "ppt/media/image18.png": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+    "ppt/media/image19.png": "57e6c3932ffc19a34aff666f317165a90ef4e14d5bafa7870939a7801bb92b73",
+    "ppt/media/image2.png": "c7903d85141ae058cb18583359e9e599a246f50a745221bb0285db7941fe9dc4",
+    "ppt/media/image20.png": "0230a61176579eec907997b2d1aea08602421133083e3256c848662777210ba8",
+    "ppt/media/image21.png": "ec1c8453b382a33be3192bebe814690332bd30e12f11c870bd94b61118d0d8cb",
+    "ppt/media/image22.png": "274f4a1e7c02f6a8bb65a117e701823711432fad8b94ffd1ccfa1a73a20b4baf",
+    "ppt/media/image23.png": "f9cac4f4cd7d5a09f923606bdcb1f2ac5a31fa5b08baca52d8bdd7a985dfe161",
+    "ppt/media/image24.png": "9d3a5ec5c57db4b49dc8b0411553ce7fe46f35e7bd042814dab04c942a72eac1",
+    "ppt/media/image25.png": "153593898e531322d9f2592dfce7bd9884f92ac79537425d20075c6db87bdf16",
+    "ppt/media/image26.png": "edb5fc230d4ebf8880c5c2b33830c516f30a90562f73772b2c72726d3b6bc020",
+    "ppt/media/image27.png": "974936c68e3c2883375b85f1127a5fd766c81890b7b9513b649cd7700ca10c8e",
+    "ppt/media/image28.png": "9b50dd1f98e0c5fe3eeb80d6bca8a89ce00bef8564c35cbab7302d74edbdad54",
+    "ppt/media/image29.png": "bdfe39d4682150dc65e0863e36c704d7cff53b8a1cbb95a1a122c3e74dee7b6b",
+    "ppt/media/image3.png": "351270de488c3777bae5493186a34c30cf7fccd7495ad7daa550605f7ba9e6aa",
+    "ppt/media/image30.png": "33d04a3419a4a06b5dcaffbbbe900aa160b1fbdb033b5580c72910907a0f1050",
+    "ppt/media/image31.png": "3c7efe02ab87878be8ad67c682fca4e9d79790c1a4bbee770ccd7820e01213b3",
+    "ppt/media/image32.png": "4043bc7a435d7f5ca377f2c683763646e4878a93e72b86d4b43224bc29e62f8c",
+    "ppt/media/image33.png": "396c1adeb7891613fa42f1504867f498bd9af9b75f1bf685ebb56f5c884fdb11",
+    "ppt/media/image34.png": "04fb19856410a34cecd2bb97d642a63bec6b183e2f2e53cd9c34a92e090813f8",
+    "ppt/media/image35.png": "ace81be025d47578915d21d6af8d830b4a2db478a407432b2426a950d528043e",
+    "ppt/media/image36.png": "efc5a21da67c395d1cf7636cb93ba4123db7d118b382929108cfcd69a817decd",
+    "ppt/media/image37.png": "ebf18488281ec5e2d13b1219dfb94e4f86c610949f26d1e86de8a58fae370ffe",
+    "ppt/media/image4.png": "e1bb552e4ad63a797bfff415ef75881c6dc998169a0792773d950fd1362f03a2",
+    "ppt/media/image5.png": "b59444687ac52d97396c4c1a741c93f5bba62b4900c3b20fadd564494a5f0835",
+    "ppt/media/image6.png": "eb4b7f18a809d9c3bc763b239217fb07f2228003bf20b7f6e30c037de190af26",
+    "ppt/media/image7.png": "b0496de191ea582c68a87a456fe83aa7291c4e5a223f9e33b67d8ce0ec02dbc7",
+    "ppt/media/image8.png": "00a015082696fee58130498ed0e6f77bd61b753fe16e975acb8e39d50cdf0846",
+    "ppt/media/image9.png": "0170a82af0b541334ba54e3c0140bf70a21656476112549764d24792e605a793",
+    "ppt/media/media1.mp4": "a0e82d4e9b4a8e7918b701e01fbfce47cc2c7a18b054d8f1003b1ea7a3c71367",
+    "ppt/media/media10.mp4": "4bd2eb96df6d88d5718d61959f3cbff8166e21401457e0ee7dab5694684faea6",
+    "ppt/media/media11.mp4": "bfec146b124828e243a6689f47809f99855018a3afc53e4f39e91539e752cc0d",
+    "ppt/media/media12.mp4": "f60e4de15471645e5638e0e4527fddf94f3be11dc861ff36c4e08b1c18dc1771",
+    "ppt/media/media13.mp4": "248ab1df92d9e9d948468b94d268edc3caa8ae9865693fe6b3a9feea5918ebe6",
+    "ppt/media/media14.mp4": "b4ddb09a36cd4ef3be3779892a24cab628aef5b6e077a503ea084d54ac4164cb",
+    "ppt/media/media15.mp4": "59bd730723125c3db2ed48c402088bf503c27d2814393568c2522ae1711953c9",
+    "ppt/media/media16.mp4": "365f15aab7048696c75f5ac358b19e1a0d1b9f4562301e8dedace084f27d2a4a",
+    "ppt/media/media17.mp4": "71c0d2253607597af3e83cf9f04014158f82bf1de1ed752d3433b545fcdf68e2",
+    "ppt/media/media18.mp4": "3e6cb1ecf452114266783a5a34b8ad54cd547b5a036bf608cd8b3a1f0f034c8e",
+    "ppt/media/media2.mp4": "f7a5e0c1d1a831680bd3e4fb47623d5caa0f66f4cae545aed77c8caefdcdb565",
+    "ppt/media/media3.mp4": "28788251f4df627908662a92f904805f4ffd8a6c8b5957806564ca9efca41a38",
+    "ppt/media/media4.mp4": "82de608d69c2cf41ae6d7f7851313032f07854be7efdf547fa91f5e9a677b221",
+    "ppt/media/media5.mp4": "f59de24d7fd62e84052c5338649b73af291d60ede7417e581cba544b3a59b7b3",
+    "ppt/media/media6.mp4": "1078afdecf8fa4829ab81cc4d208b233b9715912b72d37fadd4f3c8d7307610b",
+    "ppt/media/media7.mp4": "2f09f50dea1358b1f81ed507402896e861f24ea286dd0e3f835a5c5ba506b519",
+    "ppt/media/media8.mp4": "1b744a5930b079c52d81476b5dd372aafcb814675fd42d96d240fba7dfb7f6d6",
+    "ppt/media/media9.mp4": "74231478b2b7a0df6f56ca89a7c14d216e0de6bb943d275ffb0c4a567a05f66d"
+  },
+  "historical_source_findings": [
+    {
+      "pages": [
+        25
+      ],
+      "scope": "Required historical Unity outcome checker",
+      "status": "FAIL",
+      "passed": 7,
+      "failed": 1,
+      "report": "presentation/defense_2026/unity_capture/r5_archived/check_unity_log.json",
+      "report_sha256": "6ea98199674352cb5de6caeeaf84dd6aa76b2961e7469dd741fa3201aa13b990",
+      "qualification": "Retained failed error-concentration assertion; source/frame/rig application checks are distinct. D-058 and D-066 retain the interpretation without waiving the failure."
+    },
+    {
+      "pages": [
+        31,
+        35
+      ],
+      "scope": "Required historical Unity outcome checker",
+      "status": "FAIL",
+      "passed": 7,
+      "failed": 1,
+      "report": "presentation/defense_2026/unity_capture/r7/check_unity_log.json",
+      "report_sha256": "c5dd5da002a6a95c22f2098d80409626453b537be2f5e38fb17783f3e25b9c9d",
+      "qualification": "Retained failed error-concentration assertion; source/frame/rig application checks are distinct. D-058 and D-066 retain the interpretation without waiving the failure."
+    }
+  ],
+  "not_verified": [
+    "Desktop PowerPoint playback and projected legibility.",
+    "Aloud rehearsal timing; 1785 s is an editorial target.",
+    "Unchanged media extraction/source caches were not regenerated."
+  ],
+  "visual_inspection": {
+    "page": 3,
+    "path": "presentation/defense_2026/preview/slide-03.png",
+    "result": "The worker viewed the rebuilt image: complete two-line application bullet, with no visible clipping or table overlap."
+  },
+  "acceptance": {
+    "date": "2026-09-29",
+    "source_review": "ACCEPT",
+    "independent_checker": {
+      "passed": 6,
+      "failed": 0,
+      "current_file_hashes_matched": 11
+    },
+    "master": {
+      "accepted": true,
+      "current_file_hashes_matched": 11,
+      "ascii_files_passed": 21,
+      "git_diff_check": "PASS",
+      "visually_inspected_pages": [
+        2,
+        3,
+        4,
+        34,
+        35,
+        36
+      ]
+    },
+    "evidence": "Master final-acceptance brief following independent reviewer/checker reports and direct master checks; retained in the task conversation.",
+    "delivery_state": "Content commit 26e954a05457b58db8572fb15df9dc6efc3e8ab2, workflow commit 99e0ec9 and package/documentation commit ca438bea1698eab159ac6c81531795266fb62d51 are on origin/master. Push permission was resolved; an independent git ls-remote check confirmed remote master ca438bea1698eab159ac6c81531795266fb62d51. Package metadata remains pinned to the content commit with a clean-content flag. This records the verified remote state before subsequent handoff edits."
+  }
+}

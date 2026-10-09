@@ -1,0 +1,74 @@
+{
+ "purpose": "Measured landmark pixels on the T-pose photograph for the overlay anchors; no landmark is hand-placed.",
+ "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+ "photo_sha256": "54e5137fc203f73bdedf63e44c0365d0df454c818c1941e639cca9be339391b4",
+ "photo_px": [
+  4032,
+  3024
+ ],
+ "exif_orientation": null,
+ "detector": "MediaPipe PoseLandmarker (Tasks API)",
+ "mediapipe_version": "0.10.15",
+ "model": "v1/mediapipe/models/pose_landmarker_heavy.task",
+ "model_sha256": "64437af838a65d18e5ba7a0d39b465540069bc8aae8308de3e318aad31fcbc7b",
+ "options": {
+  "running_mode": "IMAGE",
+  "delegate": "CPU",
+  "num_poses": 1,
+  "min_pose_detection_confidence": 0.3,
+  "min_pose_presence_confidence": 0.3
+ },
+ "options_source": "v1/mediapipe/extract_landmarks_to_csv.py make_landmarker (confidences, num_poses, model)",
+ "pixel_convention": "normalized x * width, y * height of the full photograph",
+ "landmarks": {
+  "11": {
+   "x_px": 2340.085,
+   "y_px": 1037.241,
+   "visibility": 1.0,
+   "presence": 1.0
+  },
+  "12": {
+   "x_px": 1993.966,
+   "y_px": 1067.413,
+   "visibility": 1.0,
+   "presence": 1.0
+  },
+  "13": {
+   "x_px": 2578.373,
+   "y_px": 1058.062,
+   "visibility": 0.9978,
+   "presence": 1.0
+  },
+  "14": {
+   "x_px": 1780.1,
+   "y_px": 1097.984,
+   "visibility": 0.991,
+   "presence": 1.0
+  },
+  "15": {
+   "x_px": 2807.084,
+   "y_px": 1034.695,
+   "visibility": 0.9982,
+   "presence": 1.0
+  },
+  "16": {
+   "x_px": 1562.155,
+   "y_px": 1079.561,
+   "visibility": 0.9947,
+   "presence": 1.0
+  },
+  "23": {
+   "x_px": 2269.277,
+   "y_px": 1580.843,
+   "visibility": 1.0,
+   "presence": 1.0
+  },
+  "24": {
+   "x_px": 2081.745,
+   "y_px": 1578.605,
+   "visibility": 1.0,
+   "presence": 1.0
+  }
+ },
+ "command": "/home/luo/anaconda3/bin/python presentation/defense_2026/make_frame_overlay_figures.py --measure-tpose"
+}

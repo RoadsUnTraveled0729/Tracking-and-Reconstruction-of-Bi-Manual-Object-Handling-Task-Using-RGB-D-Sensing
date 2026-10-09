@@ -1,0 +1,1092 @@
+{
+  "checks": [
+    {
+      "name": "basis map F is involutory",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "basis map F determinant",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "basis map S is involutory",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "basis map S determinant",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "basis map M is involutory",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "basis map M determinant",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-09 stated rolling-residual Hampel mask: ramp",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-09 stated rolling-residual Hampel mask: spike and missing point",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.15-3.17 independent 60-case matrix expansion",
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.17 independent and frozen Euler round trips",
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.17 both exact gimbal-lock branches, 18 cases",
+      "max_abs_error": 3.3306690738754696e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.18-3.24 reconstruct both measured segments, 81 cases",
+      "max_abs_error": 1.3322676295501878e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.24 ez zero for observable exact geometry",
+      "max_abs_error": 7.0865903706457605e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "left mirror preserves angles and reconstructed segment directions",
+      "max_abs_error": 8.883134733621015e-14,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.21 exact vertical shoulder branch folds azimuth into twist",
+      "max_abs_error": 2.7755575615628914e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 ordinary proper orthogonal result",
+      "max_abs_error": 2.6645352591003757e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 ordinary det +1",
+      "max_abs_error": 2.6645352591003757e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 ordinary attains Procrustes minimum",
+      "max_abs_error": 3.030561912531482e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 ordinary frozen implementation agrees",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 reflection branch proper orthogonal result",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 reflection branch det +1",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 reflection branch attains Procrustes minimum",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 reflection branch frozen implementation agrees",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.7-3.11 independent frame 533 construction vs frozen",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.6 chain reaches measured elbow using homogeneous point",
+      "max_abs_error": 4.85722573273506e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.4 inverse chain wrist coordinates vs direct local vector",
+      "max_abs_error": 6.938893903907228e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.13 shoulder z offset exactly zero",
+      "max_abs_error": 1.2818756318158377e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.14 rotation orthogonal and origin in shoulder basis",
+      "max_abs_error": 8.326672684688674e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "Table 3.1 all raw Camera positions",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 root axes and rotation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 shoulder origin in torso",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 root Euler values",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 upper arm Camera prime and parent vectors",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 arm unit direction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 forearm parent and unswung",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 right shoulder angles",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 right elbow angles",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 normalized elbow-frame direction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 elbow frame shoulder-relative rotation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 wrist in elbow frame",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "3.5 left shoulder and elbow angles",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-01 corrected elbow-origin product keeps homogeneous coordinate",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-01 corrected wrist inverse keeps homogeneous coordinate",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-02 corrected printed normalization yields unit forearm",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-02 corrected normalized Camera'-based formula matches solved g",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-03 retained T-pose decodes to the stated angles",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-04 operated perpendicular direction is +z at zero twist",
+      "max_abs_error": 6.682901596947281e-17,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-05 zero-pose left frame shares root orientation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-05 left arm extends along its negative x",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-06 all thirteen stated angular fields exist in the saved output",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "2.1 first ten detections reproduce stored anchor",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.2 rigid inverse against generic matrix inverse",
+      "max_abs_error": 1.7763568394002505e-15,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.1 object block rotation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.1 object block translation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.1 recalibrated camera-placement invariance",
+      "max_abs_error": 1.1102230246251565e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed mean matrix",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed inverse-anchor translation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed Camera object translation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed World object translation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed World object rotation",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 printed gravity",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 ranges and gravity-model heights",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-07 horizontal tabletop model has unit gravity normal",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-07 model origin height equals the saved calibration",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 independent full-recording cleaning mask matches pinned CSV",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "4.3 improper conjugation preserves translation norms and relative rotation trace",
+      "max_abs_error": 4.440892098500626e-16,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "Chapter 2: all numbered, inline, unnumbered and table expressions match final DOCX counts",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "Chapter 3: all numbered, inline, unnumbered and table expressions match final DOCX counts",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "Chapter 4: all numbered, inline, unnumbered and table expressions match final DOCX counts",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-01 final printed elbow-origin side includes the homogeneous one",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-01 final printed wrist inverse includes both homogeneous ones",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-02 final printed g definition includes a segment-norm denominator",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-03 final prose omits the false alternative T-pose",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-04 final prose identifies un-swinging before zero-twist direction",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-05 final caption distinguishes right +x and left -x",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-06 final prose distinguishes stored and independent angular quantities",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-07 final Chapter 2 defines the horizontal gravity-normal tabletop model",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-07 final Chapter 4 uses the model for all height references",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-08 final prose retains both heights without the unmeasured assurance",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    },
+    {
+      "name": "C234-09 final prose identifies two rolling-median passes",
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09,
+      "pass": true
+    }
+  ],
+  "facts": {
+    "hampel_definition_counterexample": {
+      "input_m": [
+        0.0,
+        0.01,
+        0.02,
+        0.03,
+        0.04,
+        0.05,
+        0.06,
+        0.07,
+        0.08,
+        0.09,
+        0.1,
+        0.11,
+        0.12,
+        0.13,
+        0.14
+      ],
+      "window": 7,
+      "center_index": 7,
+      "conventional_window_mad_m": 0.01999999999999999,
+      "implemented_rolling_residual_median_m": 0.0
+    },
+    "ch3_frame533": {
+      "camera": {
+        "11": [
+          0.216632,
+          -0.339886,
+          1.356005
+        ],
+        "12": [
+          -0.164807,
+          -0.334893,
+          1.314939
+        ],
+        "13": [
+          0.276845,
+          -0.026071,
+          1.377947
+        ],
+        "14": [
+          -0.199936,
+          -0.044425,
+          1.191882
+        ],
+        "15": [
+          0.243629,
+          0.200772,
+          1.253303
+        ],
+        "16": [
+          -0.200955,
+          0.105855,
+          1.057226
+        ],
+        "23": [
+          0.122081,
+          0.182729,
+          0.992992
+        ],
+        "24": [
+          -0.058376,
+          0.191447,
+          0.985908
+        ]
+      },
+      "camera_prime": {
+        "11": [
+          0.216632,
+          0.339886,
+          1.356005
+        ],
+        "12": [
+          -0.164807,
+          0.334893,
+          1.314939
+        ],
+        "13": [
+          0.276845,
+          0.026071,
+          1.377947
+        ],
+        "14": [
+          -0.199936,
+          0.044425,
+          1.191882
+        ],
+        "15": [
+          0.243629,
+          -0.200772,
+          1.253303
+        ],
+        "16": [
+          -0.200955,
+          -0.105855,
+          1.057226
+        ],
+        "23": [
+          0.122081,
+          -0.182729,
+          0.992992
+        ],
+        "24": [
+          -0.058376,
+          -0.191447,
+          0.985908
+        ]
+      },
+      "hip_length_m": 0.18080629255919162,
+      "spine_length_m": 0.6297799237209774,
+      "hip_spine_angle_deg": 83.80554626436384,
+      "root_rotation": [
+        [
+          -0.9980681393647995,
+          -0.06166248528747037,
+          0.007597834761274446
+        ],
+        [
+          -0.048217348393148105,
+          0.845893895516655,
+          0.5311672098704815
+        ],
+        [
+          -0.03918005230753155,
+          0.5297747214013055,
+          -0.8472329479342433
+        ]
+      ],
+      "root_euler_deg": [
+        -32.08435246601785,
+        179.48619538813466,
+        -3.2624236593846083
+      ],
+      "root_T": [
+        [
+          -0.9980681393647995,
+          -0.06166248528747037,
+          0.007597834761274446,
+          -0.058376
+        ],
+        [
+          -0.048217348393148105,
+          0.845893895516655,
+          0.5311672098704815,
+          -0.191447
+        ],
+        [
+          -0.03918005230753155,
+          0.5297747214013055,
+          -0.8472329479342433,
+          0.985908
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "shoulder_T": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.06795521919668601
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.62610289929526
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2818756318158377e-17
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "elbow_T": [
+        [
+          0.16977478022574435,
+          0.9468271975541114,
+          -0.27330346132299144,
+          0.05388811211761489
+        ],
+        [
+          -0.9726600687031365,
+          0.1164005247733291,
+          -0.20095598668092315,
+          -0.3087314544887486
+        ],
+        [
+          -0.15845792738045636,
+          0.2999486219410272,
+          0.9407028805345334,
+          -0.05029603658004367
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "upper_arm_camera_prime": [
+        -0.035128999999999994,
+        -0.290468,
+        -0.12305699999999997
+      ],
+      "upper_arm_parent": [
+        0.05388811211761489,
+        -0.3087314544887486,
+        -0.05029603658004367
+      ],
+      "upper_arm_unit": [
+        0.16977478022574413,
+        -0.9726600687031365,
+        -0.1584579273804562
+      ],
+      "upper_arm_length_m": 0.3174094058373192,
+      "forearm_parent": [
+        0.013538963674057993,
+        -0.19839544543074922,
+        0.03425344934407587
+      ],
+      "forearm_length_m": 0.20178541844494122,
+      "forearm_unswung": [
+        0.1898421715766157,
+        -0.059179863251991045,
+        0.034278984429974915
+      ],
+      "shoulder_angles_deg": [
+        43.02533037211281,
+        -76.57139800867998,
+        59.9191219065268
+      ],
+      "elbow_angles_deg": [
+        -19.81160477925548,
+        -6.563602548539169e-16
+      ],
+      "forearm_unit_elbow": [
+        0.9408121411330607,
+        -1.1455647526429943e-17,
+        0.33892848079886434
+      ],
+      "wrist_elbow_m": [
+        0.18984217157661576,
+        -1.3877787807814457e-17,
+        0.06839082532090712
+      ],
+      "left_angles_deg": [
+        [
+          76.0747257033767,
+          -53.522232107860034,
+          108.86492137278968
+        ],
+        [
+          -37.33975618883745,
+          1.136159903084029e-14
+        ]
+      ],
+      "all_source_flags_zero": {
+        "left_shoulder": {
+          "left_shoulder_src": "0",
+          "left_shoulder_flag": "0"
+        },
+        "right_shoulder": {
+          "right_shoulder_src": "0",
+          "right_shoulder_flag": "0"
+        },
+        "left_elbow": {
+          "left_elbow_src": "0",
+          "left_elbow_flag": "0"
+        },
+        "right_elbow": {
+          "right_elbow_src": "0",
+          "right_elbow_flag": "0"
+        },
+        "left_wrist": {
+          "left_wrist_src": "0",
+          "left_wrist_flag": "0"
+        },
+        "right_wrist": {
+          "right_wrist_src": "0",
+          "right_wrist_flag": "0"
+        },
+        "left_hip": {
+          "left_hip_src": "0",
+          "left_hip_flag": "0"
+        },
+        "right_hip": {
+          "right_hip_src": "0",
+          "right_hip_flag": "0"
+        }
+      }
+    },
+    "baseline_defect_counterexamples": {
+      "closing_origin_lhs_dimension": 3,
+      "closing_origin_rhs_dimension": 4,
+      "closing_wrist_matrix_shape": [
+        4,
+        4
+      ],
+      "closing_wrist_input_shape": [
+        3
+      ],
+      "baseline_g_hat_rhs_norm_m": 0.2017854184449412,
+      "g_hat_required_norm": 1,
+      "three_plus_four_per_arm": 11,
+      "actual_stream_field_count": 13,
+      "reference_swap_y_z_determinant": -1.0,
+      "reference_forward_as_up_proper_alternative": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "reference_forward_as_up_proper_euler": [
+        90.0,
+        180.0,
+        0.0
+      ],
+      "claimed_90_0_0_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.1102230246251565e-16,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          1.1102230246251565e-16
+        ]
+      ],
+      "left_zero_pose_positive_x_in_parent": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "left_zero_pose_upper_arm_direction": [
+        -1.0,
+        0,
+        0
+      ],
+      "closing_wrist_numpy_exception": "matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 3 is different from 4)"
+    },
+    "corrected_frame533_relations": {
+      "elbow_origin_homogeneous": [
+        -0.19993600000000003,
+        0.04442500000000005,
+        1.191882,
+        1.0
+      ],
+      "wrist_elbow_homogeneous": [
+        0.18984217157661576,
+        -1.3877787807814457e-17,
+        0.06839082532090712,
+        1.0
+      ],
+      "dimensionless_g": [
+        0.9408121411330607,
+        -1.1455647526429943e-17,
+        0.33892848079886434
+      ],
+      "stored_angular_columns": [
+        "root_ex",
+        "root_ey",
+        "root_ez",
+        "Rsh_y",
+        "Rsh_z",
+        "Rsh_tau",
+        "Rel_y",
+        "Rel_z",
+        "Lsh_y",
+        "Lsh_z",
+        "Lsh_tau",
+        "Lel_y",
+        "Lel_z"
+      ],
+      "independent_angular_quantities": 11
+    },
+    "frozen_anchor_after_camera_move_counterexample_m": 1.2533996749829723,
+    "ch4_frame533": {
+      "rotation_mean": [
+        [
+          0.9997035000000001,
+          -0.0014011999999999998,
+          -0.024250699999999997
+        ],
+        [
+          -0.0219071,
+          -0.4832485,
+          -0.875208
+        ],
+        [
+          -0.0104923,
+          0.8754808000000001,
+          -0.4831358
+        ]
+      ],
+      "mean_determinant": 0.9999960727718596,
+      "projection_max_change": 1.4383626888436751e-06,
+      "anchor": [
+        [
+          0.9997049383626889,
+          -0.00140118244415496,
+          -0.024250214452914517,
+          0.023457900000000004
+        ],
+        [
+          -0.02190758907816192,
+          -0.48324869684186655,
+          -0.8752089776398669,
+          0.1873768
+        ],
+        [
+          -0.010492557078071837,
+          0.8754820007792261,
+          -0.48313680521935803,
+          0.5524922999999999
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inverse_anchor": [
+        [
+          0.9997049383626889,
+          -0.02190758907816192,
+          -0.010492557078071837,
+          -0.013548947543492005
+        ],
+        [
+          -0.00140118244415496,
+          -0.48324869684186655,
+          0.8754820007792261,
+          -0.39311460100306056
+        ],
+        [
+          -0.024250214452914517,
+          -0.8752089776398669,
+          -0.48313680521935803,
+          0.43149208139733997
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "camera_range_from_world_cm": 58.3873342266917,
+      "camera_height_model_cm": 15.391618892163173,
+      "camera_object_position": [
+        -0.209474,
+        0.155957,
+        1.022892
+      ],
+      "camera_object_range_cm": 105.57035503345624,
+      "world_object_T": [
+        [
+          0.9974763574092809,
+          0.013288199308984606,
+          0.06974690992413995,
+          -0.23711053436664387
+        ],
+        [
+          0.052808213662897154,
+          0.517788174486882,
+          -0.8538770967734343,
+          0.42733642801594346
+        ],
+        [
+          -0.04746158191893931,
+          0.8554053330758863,
+          0.5157796813900356,
+          -0.19411986867057052
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "object_height_model_cm": 6.3197832245960335,
+      "gravity_world": [
+        -0.02123587887991239,
+        0.5300380933495296,
+        0.8477078842659145
+      ],
+      "gravity_tilt_deg": 32.03676541831223,
+      "origin_height_model_mm": -3.785060702663684,
+      "rail_plus_half_cube_cm": 7.3
+    },
+    "historical_photo_projection_pixels": {
+      "12": [
+        248,
+        93
+      ],
+      "23": [
+        399,
+        360
+      ],
+      "24": [
+        288,
+        366
+      ]
+    },
+    "tabletop_model_vs_depth_fit": {
+      "normal_angle_deg": 6.205200138612986,
+      "object_fitted_plane_signed_distance_cm": 6.205489291881622,
+      "object_height_along_gravity_to_fitted_plane_cm": 6.242060538921041,
+      "camera_fitted_plane_signed_distance_cm": 4.77589033700025,
+      "origin_fitted_plane_signed_distance_mm": -49.138898852912675
+    },
+    "descriptive_height_discrepancy_cm": 0.9802167754039663,
+    "ch4_gap": {
+      "detected": 899,
+      "total": 900,
+      "rejected_detected_frames": [],
+      "blanked_frames": [
+        786
+      ],
+      "raw_neighbor_x_cm": [
+        3.0441503343555247,
+        3.4119460678152596
+      ],
+      "interpolated_vs_neighbor_mean_mm": 1.0202988133097448,
+      "gap_step_mm": 3.292714269555873,
+      "gap_angle_deg": 1.1836101369990777,
+      "next_kept_step_mm": 4.947667332886971,
+      "filter_metadata": {
+        "source_csv": "eval/output/recording_20260831_065553_scaled_object_world.csv",
+        "output_csv": "eval/output/recording_20260831_065553_scaled_object_world_filtered.csv",
+        "params": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 8,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "rot_window": 5
+        },
+        "frames": 900,
+        "detected": 899,
+        "despiked": 10,
+        "bridged": 11,
+        "held_boundary": 0,
+        "smooth_dev_pos_mm": {
+          "median": 2.28,
+          "max": 27.58
+        },
+        "smooth_dev_rot_deg": {
+          "median": 1.616,
+          "max": 10.024
+        },
+        "export_time": "2026-09-01 22:20:33"
+      }
+    },
+    "math_coverage_counts": {
+      "2": {
+        "pm": 5,
+        "tbl": 2,
+        "eq": 1
+      },
+      "3": {
+        "eq": 24,
+        "pm": 35,
+        "mth": 16
+      },
+      "4": {
+        "pm": 8,
+        "eq": 3,
+        "mth": 5
+      }
+    },
+    "documents_checked": [
+      "writing/v8/Thesis_V8_Condensed.docx"
+    ]
+  }
+}

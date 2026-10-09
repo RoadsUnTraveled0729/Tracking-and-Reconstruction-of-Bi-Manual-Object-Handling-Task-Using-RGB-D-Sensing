@@ -1,0 +1,10 @@
+start_frame,stop_frame,duration_s,frames,entity,detectors,phase
+5,519,17.179,515,arm_L,d1_L,approach+manipulation
+7,24,0.601,18,arm_R,d1_R;d2_R;d5_R,approach
+21,32,0.401,12,torso,d1_torso,approach
+534,636,3.436,103,arm_L,d1_L;d5_L,manipulation
+550,639,3.002,90,arm_R,d1_R,manipulation
+632,899,8.94,268,torso,d1_torso;d3;d4;d5_torso,manipulation+retreat
+655,731,2.569,77,arm_L,d1_L,manipulation
+674,684,0.367,11,arm_R,d1_R,manipulation
+757,899,4.77,143,arm_L,d1_L,manipulation+retreat

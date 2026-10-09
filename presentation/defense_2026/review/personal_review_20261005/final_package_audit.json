@@ -1,0 +1,131 @@
+{
+  "chart_count": 0,
+  "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+  "finding_count": 24,
+  "findings": [
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide4.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide7.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide8.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide9.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide10.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide13.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide14.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide15.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide20.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide22.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide23.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide24.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide25.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide26.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide27.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide30.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide33.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide37.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide38.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide41.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide51.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide52.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide53.xml",
+      "relationship_id": ""
+    },
+    {
+      "code": "referenced_relationship_missing",
+      "part": "ppt/slides/slide75.xml",
+      "relationship_id": ""
+    }
+  ],
+  "notes_parts_skipped": 77,
+  "relationship_part_count": 169,
+  "slide_count": 77,
+  "status": "fail"
+}

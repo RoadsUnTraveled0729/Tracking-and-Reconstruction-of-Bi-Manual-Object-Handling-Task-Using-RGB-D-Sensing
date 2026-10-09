@@ -1,0 +1,3537 @@
+{
+ "purpose": "Coordinate-frame overlays on faded photographs and plain diagram panels for the frame_figure slot (round 8, M2a; plain panels and the page-7 static markers round 10, M2a).",
+ "generator": "presentation/defense_2026/make_frame_overlay_figures.py",
+ "generator_sha256": "ddd42c9f03653d9985dae4dfa49ea531dfe57c8198cabff609db201448e2a4d1",
+ "axis_renderer_colours": "presentation/defense_2026/anim/coordinate_axes.py AXIS_COLORS",
+ "axis_colors": {
+  "X": "#FF4040",
+  "Y": "#40E070",
+  "Z": "#408CFF"
+ },
+ "command": [
+  "/home/luo/anaconda3/bin/python presentation/defense_2026/make_frame_overlay_figures.py --measure-tpose",
+  "/home/luo/anaconda3/bin/python presentation/defense_2026/make_frame_overlay_figures.py"
+ ],
+ "working_directory": "repository root",
+ "interpreter": "/home/luo/anaconda3/bin/python",
+ "python": "3.11.9",
+ "library_versions": {
+  "opencv": "4.10.0",
+  "numpy": "1.26.4",
+  "pillow": "10.4.0"
+ },
+ "fade": {
+  "factor": 0.5,
+  "operation": "rint(resized_photo * (1 - 0.5)), overlays drawn afterwards",
+  "source": "eval/failure/make_label_compare_fig.py render_panel; figures/recovery/manifest.json --fade 0.5"
+ },
+ "label_size": {
+  "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  "em_px": 57,
+  "canvas_px": [
+   1440,
+   1200
+  ],
+  "deck_boxes_in": [
+   [
+    6.61,
+    5.0
+   ],
+   [
+    6.61,
+    4.75
+   ]
+  ],
+  "effective_pt": {
+   "6.61x5.0 in box": 17.1,
+   "6.61x4.75 in box": 16.25
+  },
+  "rule": "effective pt = em_px / (source px per placed inch) * 72 (knowledge/deck_fonts.md)"
+ },
+ "overlay_modes": {
+  "projected": "axes pushed through the panel camera model from a pinned calibrated pose",
+  "illustrative": "anchor and axis directions declared in the spec (anchors may be measured)"
+ },
+ "inputs": {
+  "eval/output/recording_20260831_065553_aruco_raw_scaled.csv": {
+   "sha256": "0e63c9409f3f00d54f571d769650d3c773a0238b9557a4b33c7ffdad9e82c66e",
+   "bytes": 421315
+  },
+  "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json": {
+   "sha256": "4ac6194dc17353888e13d6ad2d6ce9348d493fb2f4797cb3a3b7ae9559d1197c",
+   "bytes": 3466
+  },
+  "eval/output/scene_calibration_r6bc.json": {
+   "sha256": "b889d84be75fed40b6add38f0b247fc34f362392a5e705949c69587ae235f5c6",
+   "bytes": 5270
+  },
+  "eval/output/unity_check_r6b_v9/integrated_stream.csv": {
+   "sha256": "d5bc9db1c2d66348c5e29697a5ace1db4962f77adeffe629c2a20617ae17aaeb",
+   "bytes": 300617
+  },
+  "eval/output/unity_check_r6b_v9/unity_person_log.csv": {
+   "sha256": "4aec7f831caf4695b73935337ca37d86ef5ccf8975e0ca592822dc3eb1ced699",
+   "bytes": 258829
+  },
+  "presentation/defense_2026/figures/coordinate_frames/anchored_photos.json": {
+   "sha256": "dc9836f3e68313dad72608fe39999144d0a36c48c82bb5a353081ba4511e215f",
+   "bytes": 2031
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_camera_frames.json": {
+   "sha256": "0c3319cec329cf1242a26ae19ad37a04c54296122383fa270ee121534822f65b",
+   "bytes": 2187
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_landmark_frames.json": {
+   "sha256": "542748a2f7955b38f8e90256c0b20a33a116d39cc2aaa65b09a0cba2d60890b6",
+   "bytes": 2513
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_object_world.json": {
+   "sha256": "5a5d416757986285370f42f2eb0354461471334b1577a30109fecc8abd0d6236",
+   "bytes": 2963
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_rig_frames.json": {
+   "sha256": "ea5be88330df1ef5f21fdc9608386893b2cec58bb6c8ec2cdd701a26e1ebcd53",
+   "bytes": 2422
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_scene_mapping.json": {
+   "sha256": "cb309f7854be7765a8d17f0b2b422623eaa193dd6379dc3109cb833b05ab9b0c",
+   "bytes": 2848
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_static_markers.json": {
+   "sha256": "d1d085b920a5b0c29ef9e44001d27831b1105e8a7c7906d73287d503807ca2b5",
+   "bytes": 1693
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/spec_torso_root.json": {
+   "sha256": "175cbfe0bb6fd44bb7ffb9679ee07fd9d1a99a5eea48e1e2ed3e1e774b91b6a5",
+   "bytes": 5477
+  },
+  "presentation/defense_2026/figures/coordinate_frames/overlay/tpose_landmarks_mediapipe.json": {
+   "sha256": "4a626cb49c276e7c69d798fc650bc0ecf40e52585253c0759ba729b12c1b6c59",
+   "bytes": 1863
+  },
+  "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png": {
+   "sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+   "bytes": 440717
+  },
+  "presentation/defense_2026/figures/coordinate_frames/r6b_unity_f00505.png": {
+   "sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+   "bytes": 195629
+  },
+  "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg": {
+   "sha256": "54e5137fc203f73bdedf63e44c0365d0df454c818c1941e639cca9be339391b4",
+   "bytes": 3991852
+  },
+  "presentation/defense_2026/media/matched/r6b_frame_533.jpg": {
+   "sha256": "fe7f734dbaba27309ae520bc41b71d70b8e463c502c9e162ea013a31b51e9317",
+   "bytes": 95346
+  }
+ },
+ "reprojection_checks": {
+  "detector": "cv2.aruco.ArucoDetector DICT_5X5_50, CORNER_REFINE_APRILTAG (pinned settings, knowledge/marker_facts.md), corner mean",
+  "opencv": "4.10.0",
+  "residual_bound_px": {
+   "bound_px": 1.0,
+   "applies_to": [
+    "world_origin_vs_desk_marker",
+    "object_origin_vs_cube_marker",
+    "wall_origin_vs_wall_marker",
+    "frame533_world_origin_vs_desk_marker",
+    "frame533_wall_origin_vs_wall_marker"
+   ],
+   "rule": "the generator raises when a bounded residual exceeds bound_px (D-303); the unity_* checks are recorded without a bound"
+  },
+  "world_origin_vs_desk_marker": {
+   "projected_px": [
+    349.73,
+    453.89
+   ],
+   "detected_px": [
+    349.82000732421875,
+    454.6000061035156
+   ],
+   "residual_px": 0.72
+  },
+  "object_origin_vs_cube_marker": {
+   "projected_px": [
+    195.29,
+    351.55
+   ],
+   "detected_px": [
+    195.30999755859375,
+    351.5400085449219
+   ],
+   "residual_px": 0.02
+  },
+  "wall_origin_vs_wall_marker": {
+   "projected_px": [
+    118.72,
+    154.52
+   ],
+   "detected_px": [
+    118.79000091552734,
+    154.55999755859375
+   ],
+   "residual_px": 0.08
+  },
+  "frame_533_still": "presentation/defense_2026/media/matched/r6b_frame_533.jpg",
+  "frame533_world_origin_vs_desk_marker": {
+   "projected_px": [
+    349.73,
+    453.89
+   ],
+   "detected_px": [
+    349.8299865722656,
+    454.5899963378906
+   ],
+   "residual_px": 0.71
+  },
+  "frame533_wall_origin_vs_wall_marker": {
+   "projected_px": [
+    118.72,
+    154.52
+   ],
+   "detected_px": [
+    118.75,
+    154.52999877929688
+   ],
+   "residual_px": 0.03
+  },
+  "unity_reference": "page-24 measured anchors in r6b_unity_f00505.png (anchored_photos.json anchor_measurement): desk marker corner mean (345.5, 443.0), red pelvis sphere centroid (340.0, 347.7)",
+  "unity_anchor_text": {
+   "World": "Desk marker (ArUco id 2, DICT_5X5_50, cv2.aruco.ArucoDetector 4.10.0) corner mean (349.5, 454.0) px in r6b_frame00505.png -> anchor_px [350, 454]",
+   "Scene": "Desk marker (ArUco id 2, same detector) corner mean (345.5, 443.0) px in r6b_unity_f00505.png -> anchor_px [346, 443]; the Scene origin itself lies on the floor below the desk, outside the rendered view",
+   "Rig anchor": "Centroid of the red joint sphere at the pelvis (R>150, G<60, B<60; 277 px) (340.0, 347.7) px in r6b_unity_f00505.png -> anchor_px [340, 348]",
+   "Camera": "Placed at the upper-left image corner [34, 72] px; the camera frame has no visible point in the image"
+  },
+  "unity_world_origin_vs_desk_marker": {
+   "projected_px": [
+    345.77,
+    445.87
+   ],
+   "measured_px": [
+    345.5,
+    443.0
+   ],
+   "residual_px": 2.88
+  },
+  "unity_pelvis_vs_red_sphere": {
+   "projected_px": [
+    339.28,
+    351.23
+   ],
+   "measured_px": [
+    340.0,
+    347.7
+   ],
+   "residual_px": 3.61,
+   "note": "the held sphere sits slightly in front of the bone along the line of sight (thesis Section 6.3), so its centre projects near the bone origin"
+  }
+ },
+ "outputs": [
+  {
+   "name": "static_markers",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_static_markers.png",
+   "sha256": "31334b203f4dcca9d1837652c05d545af27d82618c1e83ee93a492c7ac6f1c20",
+   "bytes": 1105505,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_static_markers.json",
+   "spec_sha256": "d1d085b920a5b0c29ef9e44001d27831b1105e8a7c7906d73287d503807ca2b5",
+   "spec_used": {
+    "output": "overlay_static_markers.png",
+    "thesis_source": "Thesis V9 Section 2.2.2, Eq. 2.1 (static marker calibration: desk marker = World, wall marker = gravity reference)",
+    "panels": [
+     {
+      "id": "rgb",
+      "photo": "presentation/defense_2026/media/matched/r6b_frame_533.jpg",
+      "crop_px": [
+       0,
+       0,
+       640,
+       480
+      ],
+      "box_px": [
+       0,
+       0,
+       1440,
+       1080
+      ],
+      "camera": {
+       "type": "recording_intrinsics",
+       "meta": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json"
+      }
+     }
+    ],
+    "frames": [
+     {
+      "name": "World",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+      "pose": {
+       "type": "calibration_world",
+       "calibration": "eval/output/scene_calibration_r6bc.json"
+      },
+      "length_m": 0.09,
+      "name_label": {
+       "text": "World",
+       "offset": [
+        -190,
+        -20
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "Y": [
+        -48,
+        10
+       ],
+       "Z": [
+        48,
+        -10
+       ]
+      }
+     },
+     {
+      "name": "Wall",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+      "pose": {
+       "type": "calibration_marker",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "key": "T_cam_wall"
+      },
+      "length_m": 0.3,
+      "name_label": {
+       "text": "Wall",
+       "offset": [
+        0,
+        95
+       ],
+       "anchor": "mm"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "Z: normal to each marker face",
+      "xy": [
+       40,
+       1140
+      ],
+      "anchor": "lm"
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Section 2.2.2, Eq. 2.1 (static marker calibration: desk marker = World, wall marker = gravity reference)",
+   "panels": [
+    {
+     "id": "rgb",
+     "photo": "presentation/defense_2026/media/matched/r6b_frame_533.jpg",
+     "photo_sha256": "fe7f734dbaba27309ae520bc41b71d70b8e463c502c9e162ea013a31b51e9317",
+     "crop_px": [
+      0,
+      0,
+      640,
+      480
+     ],
+     "box_px": [
+      0,
+      0,
+      1440,
+      1080
+     ],
+     "scale": 2.25,
+     "resample": "cv2.INTER_CUBIC",
+     "fade": 0.5,
+     "camera_model": {
+      "fx": 607.561279296875,
+      "fy": 607.0150756835938,
+      "cx": 323.93756103515625,
+      "cy": 248.0174102783203,
+      "source": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json color_intrinsics (distortion coefficients all zero)"
+     }
+    }
+   ],
+   "frames": [
+    {
+     "frame": "World",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+     "pose_type": "calibration_world",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json"
+     ],
+     "pose_detail": {
+      "pose": "T_cam_desk of the scene calibration (World = desk marker id 2 frame)"
+     },
+     "origin_cam_m": [
+      0.023458,
+      0.187377,
+      0.552492
+     ],
+     "basis_cam_columns": [
+      [
+       0.999705,
+       -0.001401,
+       -0.02425
+      ],
+      [
+       -0.021908,
+       -0.483249,
+       -0.875209
+      ],
+      [
+       -0.010493,
+       0.875482,
+       -0.483137
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.09,
+     "origin_px": [
+      786.9,
+      1021.24
+     ],
+     "endpoints_px": {
+      "X": [
+       1010.0,
+       1017.15
+      ],
+      "Y": [
+       779.38,
+       869.33
+      ],
+      "Z": [
+       786.0,
+       849.46
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       1026,
+       991,
+       1071,
+       1039
+      ],
+      "Y": [
+       710,
+       854,
+       752,
+       902
+      ],
+      "Z": [
+       810,
+       814,
+       855,
+       862
+      ],
+      "name": [
+       511,
+       975,
+       680,
+       1025
+      ]
+     }
+    },
+    {
+     "frame": "Wall",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+     "pose_type": "calibration_marker",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json"
+     ],
+     "pose_detail": {
+      "pose": "T_cam_wall of the scene calibration"
+     },
+     "origin_cam_m": [
+      -1.029836,
+      -0.469617,
+      3.048961
+     ],
+     "basis_cam_columns": [
+      [
+       0.996173,
+       -0.042529,
+       0.076362
+      ],
+      [
+       -0.038157,
+       -0.997597,
+       -0.057838
+      ],
+      [
+       0.078639,
+       0.054703,
+       -0.995401
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.3,
+     "origin_px": [
+      267.13,
+      347.67
+     ],
+     "endpoints_px": {
+      "X": [
+       403.64,
+       344.2
+      ],
+      "Y": [
+       263.91,
+       215.46
+      ],
+      "Z": [
+       228.38,
+       316.22
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       420,
+       318,
+       465,
+       366
+      ],
+      "Y": [
+       241,
+       150,
+       283,
+       198
+      ],
+      "Z": [
+       174,
+       266,
+       219,
+       314
+      ],
+      "name": [
+       204,
+       416,
+       329,
+       466
+      ]
+     }
+    }
+   ],
+   "points": [],
+   "texts": [
+    {
+     "text": "Z: normal to each marker face",
+     "box": [
+      37,
+      1114,
+      911,
+      1164
+     ]
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9855
+   }
+  },
+  {
+   "name": "camera_frames",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_camera_frames.png",
+   "sha256": "c6bac5eb5f67bd64cddac38273edcd2e6aa76897be006ae00754d7e15358483b",
+   "bytes": 57261,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_camera_frames.json",
+   "spec_sha256": "0c3319cec329cf1242a26ae19ad37a04c54296122383fa270ee121534822f65b",
+   "spec_used": {
+    "output": "overlay_camera_frames.png",
+    "thesis_source": "Thesis V9 Section 3.1, Eq. 3.1 and Figure 3.2 (Camera and Camera' share the optical centre, F = diag(1, -1, 1))",
+    "panels": [
+     {
+      "id": "diagram",
+      "background": "plain",
+      "box_px": [
+       0,
+       0,
+       1440,
+       1200
+      ]
+     }
+    ],
+    "frames": [
+     {
+      "name": "Camera",
+      "panel": "diagram",
+      "mode": "illustrative",
+      "thesis_source": "Eq. 3.1 and Figure 3.2: x right, y down, z into the scene",
+      "anchor_canvas_px": [
+       560,
+       540
+      ],
+      "anchor_note": "the shared optical centre, drawn as in thesis Figure 3.2; z is drawn oblique and foreshortened to show depth",
+      "axes_canvas": {
+       "X": [
+        1,
+        0.18
+       ],
+       "Y": [
+        0,
+        1
+       ],
+       "Z": [
+        0.89,
+        -0.456
+       ]
+      },
+      "length_px": 330,
+      "axis_length_scale": {
+       "Z": 0.7
+      },
+      "axis_labels": {
+       "X": "x (both)",
+       "Y": "Camera y (down)",
+       "Z": "z (both)"
+      },
+      "axis_label_offsets": {
+       "X": [
+        30,
+        0
+       ],
+       "Y": [
+        0,
+        50
+       ],
+       "Z": [
+        25,
+        -20
+       ]
+      },
+      "axis_label_anchors": {
+       "X": "lm",
+       "Y": "mm",
+       "Z": "lm"
+      }
+     },
+     {
+      "name": "Camera'",
+      "panel": "diagram",
+      "mode": "illustrative",
+      "thesis_source": "Eq. 3.1 and Figure 3.2: F flips y only; x right, y up, z into the scene, same origin",
+      "anchor_canvas_px": [
+       560,
+       540
+      ],
+      "anchor_note": "the same optical centre as Camera; x and z coincide with Camera and are drawn once more on the same pixels",
+      "axes_canvas": {
+       "X": [
+        1,
+        0.18
+       ],
+       "Y": [
+        0,
+        -1
+       ],
+       "Z": [
+        0.89,
+        -0.456
+       ]
+      },
+      "length_px": 330,
+      "axis_length_scale": {
+       "Z": 0.7
+      },
+      "axis_labels": {
+       "Y": "Camera' y (up)"
+      },
+      "axis_label_offsets": {
+       "Y": [
+        0,
+        -50
+       ]
+      },
+      "axis_label_anchors": {
+       "Y": "mm"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "one shared origin (the optical centre)",
+      "xy": [
+       720,
+       1065
+      ],
+      "anchor": "mm",
+      "panel": "diagram"
+     },
+     {
+      "text": "F = diag(1, -1, 1): only y changes sign",
+      "xy": [
+       720,
+       1145
+      ],
+      "anchor": "mm",
+      "panel": "diagram"
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Section 3.1, Eq. 3.1 and Figure 3.2 (Camera and Camera' share the optical centre, F = diag(1, -1, 1))",
+   "panels": [
+    {
+     "id": "diagram",
+     "background": "plain",
+     "box_px": [
+      0,
+      0,
+      1440,
+      1200
+     ],
+     "fill_rgb": [
+      0,
+      0,
+      0
+     ],
+     "note": "diagram panel, no photograph; deck background 000000 (build_deck.py)"
+    }
+   ],
+   "frames": [
+    {
+     "frame": "Camera",
+     "panel": "diagram",
+     "overlay_mode": "illustrative",
+     "source": "Eq. 3.1 and Figure 3.2: x right, y down, z into the scene",
+     "anchor_source": "the shared optical centre, drawn as in thesis Figure 3.2; z is drawn oblique and foreshortened to show depth",
+     "length_px": 330,
+     "axis_directions_canvas": {
+      "X": [
+       0.984183,
+       0.177153
+      ],
+      "Y": [
+       0.0,
+       1.0
+      ],
+      "Z": [
+       0.889984,
+       -0.455992
+      ]
+     },
+     "z_symbol": null,
+     "axis_length_scale": {
+      "Z": 0.7
+     },
+     "origin_px": [
+      560.0,
+      540.0
+     ],
+     "endpoints_px": {
+      "X": [
+       884.78,
+       598.46
+      ],
+      "Y": [
+       560.0,
+       870.0
+      ],
+      "Z": [
+       765.59,
+       434.67
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       911,
+       572,
+       1143,
+       629
+      ],
+      "Y": [
+       311,
+       894,
+       809,
+       955
+      ],
+      "Z": [
+       787,
+       388,
+       1015,
+       445
+      ]
+     }
+    },
+    {
+     "frame": "Camera'",
+     "panel": "diagram",
+     "overlay_mode": "illustrative",
+     "source": "Eq. 3.1 and Figure 3.2: F flips y only; x right, y up, z into the scene, same origin",
+     "anchor_source": "the same optical centre as Camera; x and z coincide with Camera and are drawn once more on the same pixels",
+     "length_px": 330,
+     "axis_directions_canvas": {
+      "X": [
+       0.984183,
+       0.177153
+      ],
+      "Y": [
+       0.0,
+       -1.0
+      ],
+      "Z": [
+       0.889984,
+       -0.455992
+      ]
+     },
+     "z_symbol": null,
+     "axis_length_scale": {
+      "Z": 0.7
+     },
+     "origin_px": [
+      560.0,
+      540.0
+     ],
+     "endpoints_px": {
+      "X": [
+       884.78,
+       598.46
+      ],
+      "Y": [
+       560.0,
+       210.0
+      ],
+      "Z": [
+       765.59,
+       434.67
+      ]
+     },
+     "label_boxes": {
+      "Y": [
+       344,
+       134,
+       776,
+       195
+      ]
+     }
+    }
+   ],
+   "points": [],
+   "texts": [
+    {
+     "text": "one shared origin (the optical centre)",
+     "box": [
+      185,
+      1039,
+      1256,
+      1100
+     ],
+     "panel": "diagram"
+    },
+    {
+     "text": "F = diag(1, -1, 1): only y changes sign",
+     "box": [
+      172,
+      1119,
+      1268,
+      1180
+     ],
+     "panel": "diagram"
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "photo_panels": 0,
+    "note": "plain diagram only; no photograph to fade"
+   }
+  },
+  {
+   "name": "landmark_frames",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_landmark_frames.png",
+   "sha256": "e44cdf1fa8c350352334258b8e0fd5190247ecc42df9f7e8782aeaf438b88265",
+   "bytes": 1770341,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_landmark_frames.json",
+   "spec_sha256": "542748a2f7955b38f8e90256c0b20a33a116d39cc2aaa65b09a0cba2d60890b6",
+   "spec_used": {
+    "output": "overlay_landmark_frames.png",
+    "thesis_source": "Thesis V9 Sections 3.2.1 and 3.2.2, Figure 3.5 (landmarks L11-L16, L23, L24; root at the right hip L24)",
+    "landmarks": "tpose_landmarks_mediapipe.json",
+    "panels": [
+     {
+      "id": "photo",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+      "crop_px": [
+       1280,
+       600,
+       3080,
+       2100
+      ],
+      "box_px": [
+       0,
+       0,
+       1440,
+       1200
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "panel": "photo",
+      "from": 16,
+      "to": 14
+     },
+     {
+      "panel": "photo",
+      "from": 14,
+      "to": 12
+     },
+     {
+      "panel": "photo",
+      "from": 12,
+      "to": 11
+     },
+     {
+      "panel": "photo",
+      "from": 11,
+      "to": 13
+     },
+     {
+      "panel": "photo",
+      "from": 13,
+      "to": 15
+     },
+     {
+      "panel": "photo",
+      "from": 12,
+      "to": 24
+     },
+     {
+      "panel": "photo",
+      "from": 11,
+      "to": 23
+     },
+     {
+      "panel": "photo",
+      "from": 23,
+      "to": 24
+     }
+    ],
+    "points": [
+     {
+      "panel": "photo",
+      "landmark": 16,
+      "label": {
+       "text": "L16",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 14,
+      "label": {
+       "text": "L14",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 12,
+      "label": {
+       "text": "L12",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 11,
+      "label": {
+       "text": "L11",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 13,
+      "label": {
+       "text": "L13",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 15,
+      "label": {
+       "text": "L15",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 23,
+      "label": {
+       "text": "L23",
+       "offset": [
+        75,
+        55
+       ]
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 24,
+      "radius": 14,
+      "rgb": [
+       255,
+       64,
+       64
+      ],
+      "label": {
+       "text": "L24",
+       "offset": [
+        -85,
+        40
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "shoulder  L11, L12",
+      "xy": [
+       30,
+       890
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "elbow  L13, L14",
+      "xy": [
+       30,
+       956
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "wrist  L15, L16",
+      "xy": [
+       30,
+       1022
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "hip  L23",
+      "xy": [
+       30,
+       1088
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "root  L24",
+      "xy": [
+       30,
+       1154
+      ],
+      "anchor": "lm",
+      "rgb": [
+       255,
+       64,
+       64
+      ]
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Sections 3.2.1 and 3.2.2, Figure 3.5 (landmarks L11-L16, L23, L24; root at the right hip L24)",
+   "panels": [
+    {
+     "id": "photo",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+     "photo_sha256": "54e5137fc203f73bdedf63e44c0365d0df454c818c1941e639cca9be339391b4",
+     "crop_px": [
+      1280,
+      600,
+      3080,
+      2100
+     ],
+     "box_px": [
+      0,
+      0,
+      1440,
+      1200
+     ],
+     "scale": 0.8,
+     "resample": "cv2.INTER_AREA",
+     "fade": 0.5
+    }
+   ],
+   "frames": [],
+   "points": [
+    {
+     "point": "L16",
+     "mode": "measured",
+     "xy_px": [
+      225.72,
+      383.65
+     ],
+     "label_box": [
+      170,
+      295,
+      280,
+      345
+     ],
+     "landmark": 16
+    },
+    {
+     "point": "L14",
+     "mode": "measured",
+     "xy_px": [
+      400.08,
+      398.39
+     ],
+     "label_box": [
+      345,
+      311,
+      455,
+      359
+     ],
+     "landmark": 14
+    },
+    {
+     "point": "L12",
+     "mode": "measured",
+     "xy_px": [
+      571.17,
+      373.93
+     ],
+     "label_box": [
+      516,
+      285,
+      626,
+      334
+     ],
+     "landmark": 12
+    },
+    {
+     "point": "L11",
+     "mode": "measured",
+     "xy_px": [
+      848.07,
+      349.79
+     ],
+     "label_box": [
+      793,
+      262,
+      903,
+      310
+     ],
+     "landmark": 11
+    },
+    {
+     "point": "L13",
+     "mode": "measured",
+     "xy_px": [
+      1038.7,
+      366.45
+     ],
+     "label_box": [
+      983,
+      278,
+      1093,
+      328
+     ],
+     "landmark": 13
+    },
+    {
+     "point": "L15",
+     "mode": "measured",
+     "xy_px": [
+      1221.67,
+      347.76
+     ],
+     "label_box": [
+      1166,
+      260,
+      1276,
+      309
+     ],
+     "landmark": 15
+    },
+    {
+     "point": "L23",
+     "mode": "measured",
+     "xy_px": [
+      791.42,
+      784.67
+     ],
+     "label_box": [
+      811,
+      813,
+      921,
+      863
+     ],
+     "landmark": 23
+    },
+    {
+     "point": "L24",
+     "mode": "measured",
+     "xy_px": [
+      641.4,
+      782.88
+     ],
+     "label_box": [
+      501,
+      796,
+      611,
+      845
+     ],
+     "landmark": 24
+    }
+   ],
+   "texts": [
+    {
+     "text": "shoulder  L11, L12",
+     "box": [
+      27,
+      864,
+      561,
+      920
+     ]
+    },
+    {
+     "text": "elbow  L13, L14",
+     "box": [
+      27,
+      930,
+      483,
+      986
+     ]
+    },
+    {
+     "text": "wrist  L15, L16",
+     "box": [
+      27,
+      996,
+      452,
+      1052
+     ]
+    },
+    {
+     "text": "hip  L23",
+     "box": [
+      27,
+      1062,
+      262,
+      1123
+     ]
+    },
+    {
+     "text": "root  L24",
+     "box": [
+      27,
+      1128,
+      288,
+      1178
+     ]
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9535
+   }
+  },
+  {
+   "name": "torso_root",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_torso_root.png",
+   "sha256": "725591eae790768b90a45a9a1c7c3b7ae8d1ed3bddcd821ff38e5c6397122bd3",
+   "bytes": 1067463,
+   "pixel_size": [
+    1586,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_torso_root.json",
+   "spec_sha256": "175cbfe0bb6fd44bb7ffb9679ee07fd9d1a99a5eea48e1e2ed3e1e774b91b6a5",
+   "spec_used": {
+    "output": "overlay_torso_root.png",
+    "thesis_source": "Thesis V9 Section 3.2.2, Eqs. 3.7-3.12 (X along the hip line to the subject's right, s up the trunk, Z forward, Y up; root pose at L24); right panel: Section 3.2.2 end (facing subject, R columns (-1,0,0), (0,1,0), (0,0,-1)) and Eqs. 3.15-3.17 (root angles (0, 180, 0))",
+    "landmarks": "tpose_landmarks_mediapipe.json",
+    "panels": [
+     {
+      "id": "photo",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+      "crop_px": [
+       1540,
+       600,
+       2490,
+       2100
+      ],
+      "box_px": [
+       0,
+       0,
+       760,
+       1200
+      ]
+     },
+     {
+      "id": "topview",
+      "background": "plain",
+      "box_px": [
+       800,
+       0,
+       1586,
+       1200
+      ]
+     }
+    ],
+    "lines": [
+     {
+      "panel": "photo",
+      "from": 23,
+      "to": 24,
+      "width": 5
+     },
+     {
+      "panel": "photo",
+      "from": 24,
+      "to": 12,
+      "arrow": true,
+      "dashed": true,
+      "width": 5,
+      "label": {
+       "text": "s",
+       "offset": [
+        -55,
+        0
+       ]
+      }
+     }
+    ],
+    "frames": [
+     {
+      "name": "root L24",
+      "panel": "photo",
+      "mode": "illustrative",
+      "thesis_source": "Eqs. 3.7-3.11: columns right, up, forward; Eq. 3.12 origin at the right hip L24",
+      "landmark": 24,
+      "axes_from": "torso_2d",
+      "length_px": 200,
+      "z_symbol": "out",
+      "anchor_note": "measured: MediaPipe L24 pixel (tpose_landmarks_mediapipe.json)",
+      "axis_labels": {
+       "X": "X right",
+       "Y": "Y up",
+       "Z": "Z forward"
+      },
+      "axis_label_offsets": {
+       "X": [
+        -25,
+        0
+       ],
+       "Y": [
+        25,
+        10
+       ],
+       "Z": [
+        0,
+        80
+       ]
+      },
+      "axis_label_anchors": {
+       "X": "rm",
+       "Y": "lm",
+       "Z": "mm"
+      },
+      "name_label": {
+       "text": "root L24",
+       "offset": [
+        0,
+        160
+       ],
+       "anchor": "mm"
+      }
+     },
+     {
+      "name": "Camera' (top view)",
+      "panel": "topview",
+      "mode": "illustrative",
+      "thesis_source": "Eq. 3.1: Camera' x right, y up, z into the scene; seen from above, y points at the viewer",
+      "anchor_canvas_px": [
+       1193,
+       800
+      ],
+      "anchor_note": "nominal geometry, not a measurement: the lens of the camera outline",
+      "axes_canvas": {
+       "X": [
+        1,
+        0
+       ],
+       "Z": [
+        0,
+        -1
+       ]
+      },
+      "length_px": 230,
+      "z_symbol": "out",
+      "z_symbol_axis": "Y",
+      "axis_labels": {
+       "X": "X",
+       "Y": "Y",
+       "Z": "Z"
+      },
+      "axis_label_offsets": {
+       "X": [
+        40,
+        0
+       ],
+       "Y": [
+        -55,
+        -50
+       ],
+       "Z": [
+        45,
+        0
+       ]
+      },
+      "name_label": {
+       "text": "Camera'",
+       "offset": [
+        -100,
+        55
+       ],
+       "anchor": "rm"
+      }
+     },
+     {
+      "name": "root L24 (top view)",
+      "panel": "topview",
+      "mode": "illustrative",
+      "thesis_source": "Section 3.2.2 end: a subject facing the camera has R = diag(-1, 1, -1) relative to Camera' (anim/coordinate_axes.py CANONICAL_ROOT); Eqs. 3.15-3.17 decode it to (0, 180, 0)",
+      "anchor_canvas_px": [
+       1123,
+       275
+      ],
+      "anchor_note": "nominal geometry, not a measurement: the right hip of a person facing the camera, seen from above",
+      "axes_canvas": {
+       "X": [
+        -1,
+        0
+       ],
+       "Z": [
+        0,
+        1
+       ]
+      },
+      "length_px": 200,
+      "z_symbol": "out",
+      "z_symbol_axis": "Y",
+      "axis_labels": {
+       "X": "X",
+       "Y": "Y",
+       "Z": "Z"
+      },
+      "axis_label_offsets": {
+       "X": [
+        -40,
+        0
+       ],
+       "Y": [
+        -50,
+        -55
+       ],
+       "Z": [
+        -45,
+        0
+       ]
+      },
+      "name_label": {
+       "text": "root L24",
+       "offset": [
+        -200,
+        150
+       ],
+       "anchor": "mm"
+      }
+     }
+    ],
+    "points": [
+     {
+      "panel": "photo",
+      "landmark": 23,
+      "label": {
+       "text": "L23",
+       "offset": [
+        30,
+        -45
+       ],
+       "anchor": "lm"
+      }
+     },
+     {
+      "panel": "photo",
+      "landmark": 12,
+      "label": {
+       "text": "L12",
+       "offset": [
+        0,
+        -62
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "Nominal top view",
+      "xy": [
+       1193,
+       45
+      ],
+      "anchor": "mm",
+      "panel": "topview"
+     },
+     {
+      "text": "facing the camera",
+      "xy": [
+       1193,
+       110
+      ],
+      "anchor": "mm",
+      "panel": "topview"
+     },
+     {
+      "text": "Half-turn about Y",
+      "xy": [
+       1193,
+       985
+      ],
+      "anchor": "mm",
+      "panel": "topview"
+     },
+     {
+      "text": "R = diag(-1, 1, -1)",
+      "xy": [
+       1193,
+       1062
+      ],
+      "anchor": "mm",
+      "panel": "topview"
+     },
+     {
+      "text": "Root angles (0, 180, 0)",
+      "xy": [
+       1193,
+       1140
+      ],
+      "anchor": "mm",
+      "panel": "topview"
+     }
+    ],
+    "canvas_px": [
+     1586,
+     1200
+    ],
+    "canvas_note": "6.61 / 5.00 x 1200 = 1586 px: the frame_figure box aspect, so the 57 px labels keep 17.1 pt effective (D-317)",
+    "shapes": [
+     {
+      "name": "shoulders (top view)",
+      "panel": "topview",
+      "type": "ellipse",
+      "canvas_px": [
+       1003,
+       225,
+       1383,
+       325
+      ]
+     },
+     {
+      "name": "head (top view)",
+      "panel": "topview",
+      "type": "ellipse",
+      "canvas_px": [
+       1153,
+       235,
+       1233,
+       315
+      ]
+     },
+     {
+      "name": "nose, facing direction",
+      "panel": "topview",
+      "type": "polygon",
+      "canvas_px": [
+       [
+        1176,
+        313
+       ],
+       [
+        1210,
+        313
+       ],
+       [
+        1193,
+        350
+       ]
+      ]
+     },
+     {
+      "name": "camera lens",
+      "panel": "topview",
+      "type": "polygon",
+      "canvas_px": [
+       [
+        1163,
+        822
+       ],
+       [
+        1223,
+        822
+       ],
+       [
+        1238,
+        800
+       ],
+       [
+        1148,
+        800
+       ]
+      ]
+     },
+     {
+      "name": "camera body",
+      "panel": "topview",
+      "type": "rect",
+      "canvas_px": [
+       1118,
+       822,
+       1268,
+       892
+      ]
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Section 3.2.2, Eqs. 3.7-3.12 (X along the hip line to the subject's right, s up the trunk, Z forward, Y up; root pose at L24); right panel: Section 3.2.2 end (facing subject, R columns (-1,0,0), (0,1,0), (0,0,-1)) and Eqs. 3.15-3.17 (root angles (0, 180, 0))",
+   "panels": [
+    {
+     "id": "photo",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+     "photo_sha256": "54e5137fc203f73bdedf63e44c0365d0df454c818c1941e639cca9be339391b4",
+     "crop_px": [
+      1540,
+      600,
+      2490,
+      2100
+     ],
+     "box_px": [
+      0,
+      0,
+      760,
+      1200
+     ],
+     "scale": 0.8,
+     "resample": "cv2.INTER_AREA",
+     "fade": 0.5
+    },
+    {
+     "id": "topview",
+     "background": "plain",
+     "box_px": [
+      800,
+      0,
+      1586,
+      1200
+     ],
+     "fill_rgb": [
+      0,
+      0,
+      0
+     ],
+     "note": "diagram panel, no photograph; deck background 000000 (build_deck.py)"
+    }
+   ],
+   "frames": [
+    {
+     "frame": "root L24",
+     "panel": "photo",
+     "overlay_mode": "illustrative",
+     "source": "Eqs. 3.7-3.11: columns right, up, forward; Eq. 3.12 origin at the right hip L24",
+     "axes_construction": "in-image: X along L23->L24 (Eq. 3.7), Y = in-plane part of s = L12 - L24 orthogonal to X; Z toward the viewer is not measurable in one photograph and is drawn as a ring",
+     "anchor_source": "measured: MediaPipe L24 pixel (tpose_landmarks_mediapipe.json)",
+     "length_px": 200,
+     "axis_directions_canvas": {
+      "X": [
+       -0.999929,
+       -0.011933
+      ],
+      "Y": [
+       0.011933,
+       -0.999929
+      ]
+     },
+     "z_symbol": "out",
+     "axis_length_scale": {},
+     "origin_px": [
+      433.4,
+      782.88
+     ],
+     "endpoints_px": {
+      "X": [
+       233.41,
+       780.5
+      ],
+      "Y": [
+       435.78,
+       582.9
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       14,
+       754,
+       211,
+       815
+      ],
+      "Y": [
+       456,
+       567,
+       588,
+       627
+      ],
+      "Z": [
+       292,
+       836,
+       574,
+       886
+      ],
+      "name": [
+       312,
+       916,
+       555,
+       966
+      ]
+     }
+    },
+    {
+     "frame": "Camera' (top view)",
+     "panel": "topview",
+     "overlay_mode": "illustrative",
+     "source": "Eq. 3.1: Camera' x right, y up, z into the scene; seen from above, y points at the viewer",
+     "anchor_source": "nominal geometry, not a measurement: the lens of the camera outline",
+     "length_px": 230,
+     "axis_directions_canvas": {
+      "X": [
+       1.0,
+       0.0
+      ],
+      "Z": [
+       0.0,
+       -1.0
+      ]
+     },
+     "z_symbol": "out",
+     "axis_length_scale": {},
+     "ring_axis": "Y",
+     "origin_px": [
+      1193.0,
+      800.0
+     ],
+     "endpoints_px": {
+      "X": [
+       1423.0,
+       800.0
+      ],
+      "Z": [
+       1193.0,
+       570.0
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       1440,
+       775,
+       1485,
+       823
+      ],
+      "Y": [
+       1117,
+       725,
+       1159,
+       773
+      ],
+      "Z": [
+       1215,
+       545,
+       1260,
+       593
+      ],
+      "name": [
+       851,
+       829,
+       1096,
+       879
+      ]
+     }
+    },
+    {
+     "frame": "root L24 (top view)",
+     "panel": "topview",
+     "overlay_mode": "illustrative",
+     "source": "Section 3.2.2 end: a subject facing the camera has R = diag(-1, 1, -1) relative to Camera' (anim/coordinate_axes.py CANONICAL_ROOT); Eqs. 3.15-3.17 decode it to (0, 180, 0)",
+     "anchor_source": "nominal geometry, not a measurement: the right hip of a person facing the camera, seen from above",
+     "length_px": 200,
+     "axis_directions_canvas": {
+      "X": [
+       -1.0,
+       0.0
+      ],
+      "Z": [
+       0.0,
+       1.0
+      ]
+     },
+     "z_symbol": "out",
+     "axis_length_scale": {},
+     "ring_axis": "Y",
+     "origin_px": [
+      1123.0,
+      275.0
+     ],
+     "endpoints_px": {
+      "X": [
+       923.0,
+       275.0
+      ],
+      "Z": [
+       1123.0,
+       475.0
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       860,
+       250,
+       905,
+       298
+      ],
+      "Y": [
+       1052,
+       195,
+       1094,
+       243
+      ],
+      "Z": [
+       1055,
+       450,
+       1100,
+       498
+      ],
+      "name": [
+       802,
+       399,
+       1045,
+       449
+      ]
+     }
+    }
+   ],
+   "points": [
+    {
+     "point": "L23",
+     "mode": "measured",
+     "xy_px": [
+      583.42,
+      784.67
+     ],
+     "label_box": [
+      610,
+      713,
+      720,
+      763
+     ],
+     "landmark": 23
+    },
+    {
+     "point": "L12",
+     "mode": "measured",
+     "xy_px": [
+      363.17,
+      373.93
+     ],
+     "label_box": [
+      308,
+      285,
+      418,
+      334
+     ],
+     "landmark": 12
+    }
+   ],
+   "texts": [
+    {
+     "text": "Nominal top view",
+     "box": [
+      942,
+      19,
+      1445,
+      80
+     ],
+     "panel": "topview"
+    },
+    {
+     "text": "facing the camera",
+     "box": [
+      930,
+      84,
+      1455,
+      145
+     ],
+     "panel": "topview"
+    },
+    {
+     "text": "Half-turn about Y",
+     "box": [
+      948,
+      959,
+      1438,
+      1009
+     ],
+     "panel": "topview"
+    },
+    {
+     "text": "R = diag(-1, 1, -1)",
+     "box": [
+      933,
+      1036,
+      1453,
+      1097
+     ],
+     "panel": "topview"
+    },
+    {
+     "text": "Root angles (0, 180, 0)",
+     "box": [
+      864,
+      1114,
+      1522,
+      1175
+     ],
+     "panel": "topview"
+    }
+   ],
+   "shapes": [
+    {
+     "shape": "shoulders (top view)",
+     "panel": "topview",
+     "mode": "illustrative",
+     "bbox_px": [
+      1003.0,
+      225.0,
+      1383.0,
+      325.0
+     ]
+    },
+    {
+     "shape": "head (top view)",
+     "panel": "topview",
+     "mode": "illustrative",
+     "bbox_px": [
+      1153.0,
+      235.0,
+      1233.0,
+      315.0
+     ]
+    },
+    {
+     "shape": "nose, facing direction",
+     "panel": "topview",
+     "mode": "illustrative",
+     "bbox_px": [
+      1176.0,
+      313.0,
+      1210.0,
+      350.0
+     ]
+    },
+    {
+     "shape": "camera lens",
+     "panel": "topview",
+     "mode": "illustrative",
+     "bbox_px": [
+      1148.0,
+      800.0,
+      1238.0,
+      822.0
+     ]
+    },
+    {
+     "shape": "camera body",
+     "panel": "topview",
+     "mode": "illustrative",
+     "bbox_px": [
+      1118.0,
+      822.0,
+      1268.0,
+      892.0
+     ]
+    }
+   ],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9612
+   }
+  },
+  {
+   "name": "object_world",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_object_world.png",
+   "sha256": "fec0d67dbdd641865b7de6df4a83468c774d2c427ddc515e06e63574e5df2963",
+   "bytes": 1096744,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_object_world.json",
+   "spec_sha256": "5a5d416757986285370f42f2eb0354461471334b1577a30109fecc8abd0d6236",
+   "spec_used": {
+    "output": "overlay_object_world.png",
+    "thesis_source": "Thesis V9 Section 4.1, Eq. 4.1 (Object in World through Camera); Section 2.2",
+    "panels": [
+     {
+      "id": "rgb",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png",
+      "photo_source": "writing/v9/figures/src/r6b_frame00505.png",
+      "crop_px": [
+       0,
+       0,
+       640,
+       480
+      ],
+      "box_px": [
+       0,
+       0,
+       1440,
+       1080
+      ],
+      "camera": {
+       "type": "recording_intrinsics",
+       "meta": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json"
+      }
+     }
+    ],
+    "frames": [
+     {
+      "name": "World",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+      "pose": {
+       "type": "calibration_world",
+       "calibration": "eval/output/scene_calibration_r6bc.json"
+      },
+      "length_m": 0.09,
+      "name_label": {
+       "text": "World",
+       "offset": [
+        -190,
+        -20
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "Y": [
+        -48,
+        10
+       ],
+       "Z": [
+        48,
+        -10
+       ]
+      }
+     },
+     {
+      "name": "Object",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "Object = cube marker (id 1) frame, frame 505 detection of the pinned chain",
+      "pose": {
+       "type": "aruco_row",
+       "csv": "eval/output/recording_20260831_065553_aruco_raw_scaled.csv",
+       "frame": 505,
+       "marker": 1
+      },
+      "length_m": 0.09,
+      "name_label": {
+       "text": "Object",
+       "offset": [
+        -200,
+        -70
+       ],
+       "anchor": "mm"
+      }
+     },
+     {
+      "name": "Wall",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+      "pose": {
+       "type": "calibration_marker",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "key": "T_cam_wall"
+      },
+      "length_m": 0.3,
+      "name_label": {
+       "text": "Wall",
+       "offset": [
+        0,
+        95
+       ],
+       "anchor": "mm"
+      }
+     },
+     {
+      "name": "Camera",
+      "panel": "rgb",
+      "mode": "illustrative",
+      "thesis_source": "Eq. 3.1 / Eq. 4.1: x right, y down, z into the scene",
+      "anchor_canvas_px": [
+       1100,
+       110
+      ],
+      "anchor_note": "legend at the upper-right image corner, clear of the wall marker at the upper left; the optical origin has no visible point in the image; directions are the image axes by definition",
+      "axes_canvas": {
+       "X": [
+        1,
+        0
+       ],
+       "Y": [
+        0,
+        1
+       ]
+      },
+      "length_px": 230,
+      "z_symbol": "into",
+      "axis_label_offsets": {
+       "X": [
+        42,
+        0
+       ],
+       "Y": [
+        0,
+        42
+       ],
+       "Z": [
+        -58,
+        -58
+       ]
+      },
+      "name_label": {
+       "text": "Camera",
+       "offset": [
+        30,
+        130
+       ],
+       "anchor": "lm"
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "Z: normal to each marker face",
+      "xy": [
+       40,
+       1140
+      ],
+      "anchor": "lm"
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Section 4.1, Eq. 4.1 (Object in World through Camera); Section 2.2",
+   "panels": [
+    {
+     "id": "rgb",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png",
+     "photo_sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+     "crop_px": [
+      0,
+      0,
+      640,
+      480
+     ],
+     "box_px": [
+      0,
+      0,
+      1440,
+      1080
+     ],
+     "scale": 2.25,
+     "resample": "cv2.INTER_CUBIC",
+     "fade": 0.5,
+     "photo_source": "writing/v9/figures/src/r6b_frame00505.png",
+     "photo_source_sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+     "byte_identical_to_source": true,
+     "camera_model": {
+      "fx": 607.561279296875,
+      "fy": 607.0150756835938,
+      "cx": 323.93756103515625,
+      "cy": 248.0174102783203,
+      "source": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json color_intrinsics (distortion coefficients all zero)"
+     }
+    }
+   ],
+   "frames": [
+    {
+     "frame": "World",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+     "pose_type": "calibration_world",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json"
+     ],
+     "pose_detail": {
+      "pose": "T_cam_desk of the scene calibration (World = desk marker id 2 frame)"
+     },
+     "origin_cam_m": [
+      0.023458,
+      0.187377,
+      0.552492
+     ],
+     "basis_cam_columns": [
+      [
+       0.999705,
+       -0.001401,
+       -0.02425
+      ],
+      [
+       -0.021908,
+       -0.483249,
+       -0.875209
+      ],
+      [
+       -0.010493,
+       0.875482,
+       -0.483137
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.09,
+     "origin_px": [
+      786.9,
+      1021.24
+     ],
+     "endpoints_px": {
+      "X": [
+       1010.0,
+       1017.15
+      ],
+      "Y": [
+       779.38,
+       869.33
+      ],
+      "Z": [
+       786.0,
+       849.46
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       1026,
+       991,
+       1071,
+       1039
+      ],
+      "Y": [
+       710,
+       854,
+       752,
+       902
+      ],
+      "Z": [
+       810,
+       814,
+       855,
+       862
+      ],
+      "name": [
+       511,
+       975,
+       680,
+       1025
+      ]
+     }
+    },
+    {
+     "frame": "Object",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "Object = cube marker (id 1) frame, frame 505 detection of the pinned chain",
+     "pose_type": "aruco_row",
+     "pose_sources": [
+      "eval/output/recording_20260831_065553_aruco_raw_scaled.csv"
+     ],
+     "pose_detail": {
+      "pose": "camera-from-marker 1, frame 505",
+      "ambig_code": "1.000000",
+      "reproj_px": 0.2289
+     },
+     "origin_cam_m": [
+      -0.213452,
+      0.171935,
+      1.008074
+     ],
+     "basis_cam_columns": [
+      [
+       0.997321,
+       -0.00697,
+       -0.072812
+      ],
+      [
+       -0.004299,
+       -0.999315,
+       0.036768
+      ],
+      [
+       -0.073019,
+       -0.036356,
+       -0.996668
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.09,
+     "origin_px": [
+      439.4,
+      790.98
+     ],
+     "endpoints_px": {
+      "X": [
+       560.02,
+       791.99
+      ],
+      "Y": [
+       437.61,
+       669.49
+      ],
+      "Z": [
+       401.38,
+       818.66
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       577,
+       767,
+       622,
+       815
+      ],
+      "Y": [
+       416,
+       604,
+       458,
+       652
+      ],
+      "Z": [
+       346,
+       817,
+       391,
+       865
+      ],
+      "name": [
+       143,
+       694,
+       335,
+       755
+      ]
+     }
+    },
+    {
+     "frame": "Wall",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+     "pose_type": "calibration_marker",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json"
+     ],
+     "pose_detail": {
+      "pose": "T_cam_wall of the scene calibration"
+     },
+     "origin_cam_m": [
+      -1.029836,
+      -0.469617,
+      3.048961
+     ],
+     "basis_cam_columns": [
+      [
+       0.996173,
+       -0.042529,
+       0.076362
+      ],
+      [
+       -0.038157,
+       -0.997597,
+       -0.057838
+      ],
+      [
+       0.078639,
+       0.054703,
+       -0.995401
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.3,
+     "origin_px": [
+      267.13,
+      347.67
+     ],
+     "endpoints_px": {
+      "X": [
+       403.64,
+       344.2
+      ],
+      "Y": [
+       263.91,
+       215.46
+      ],
+      "Z": [
+       228.38,
+       316.22
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       420,
+       318,
+       465,
+       366
+      ],
+      "Y": [
+       241,
+       150,
+       283,
+       198
+      ],
+      "Z": [
+       174,
+       266,
+       219,
+       314
+      ],
+      "name": [
+       204,
+       416,
+       329,
+       466
+      ]
+     }
+    },
+    {
+     "frame": "Camera",
+     "panel": "rgb",
+     "overlay_mode": "illustrative",
+     "source": "Eq. 3.1 / Eq. 4.1: x right, y down, z into the scene",
+     "anchor_source": "legend at the upper-right image corner, clear of the wall marker at the upper left; the optical origin has no visible point in the image; directions are the image axes by definition",
+     "length_px": 230,
+     "axis_directions_canvas": {
+      "X": [
+       1.0,
+       0.0
+      ],
+      "Y": [
+       0.0,
+       1.0
+      ]
+     },
+     "z_symbol": "into",
+     "axis_length_scale": {},
+     "origin_px": [
+      1100.0,
+      110.0
+     ],
+     "endpoints_px": {
+      "X": [
+       1330.0,
+       110.0
+      ],
+      "Y": [
+       1100.0,
+       340.0
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       1349,
+       85,
+       1394,
+       133
+      ],
+      "Y": [
+       1079,
+       357,
+       1121,
+       405
+      ],
+      "Z": [
+       1019,
+       27,
+       1064,
+       75
+      ],
+      "name": [
+       1127,
+       214,
+       1357,
+       264
+      ]
+     }
+    }
+   ],
+   "points": [],
+   "texts": [
+    {
+     "text": "Z: normal to each marker face",
+     "box": [
+      37,
+      1114,
+      911,
+      1164
+     ]
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9689
+   }
+  },
+  {
+   "name": "scene_mapping",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_scene_mapping.png",
+   "sha256": "9d000712b5233369b010daff33c619f88c82e272ebf946785c0b5e406fdd5791",
+   "bytes": 597607,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_scene_mapping.json",
+   "spec_sha256": "cb309f7854be7765a8d17f0b2b422623eaa193dd6379dc3109cb833b05ab9b0c",
+   "spec_used": {
+    "output": "overlay_scene_mapping.png",
+    "thesis_source": "Thesis V9 Sections 6.2 and 6.4, Eqs. 6.1 and 6.6 (swap S, gravity alignment G, floor translation tf)",
+    "panels": [
+     {
+      "id": "rgb",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png",
+      "photo_source": "writing/v9/figures/src/r6b_frame00505.png",
+      "crop_px": [
+       0,
+       0,
+       640,
+       480
+      ],
+      "box_px": [
+       0,
+       110,
+       700,
+       635
+      ],
+      "camera": {
+       "type": "recording_intrinsics",
+       "meta": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json"
+      }
+     },
+     {
+      "id": "unity",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_unity_f00505.png",
+      "photo_source": "writing/v9/figures/src/r6b_unity_f00505.png",
+      "crop_px": [
+       0,
+       0,
+       640,
+       480
+      ],
+      "box_px": [
+       740,
+       110,
+       1440,
+       635
+      ],
+      "camera": {
+       "type": "unity_sensor",
+       "calibration": "eval/output/scene_calibration_r6bc.json"
+      }
+     }
+    ],
+    "frames": [
+     {
+      "name": "World",
+      "panel": "rgb",
+      "mode": "projected",
+      "thesis_source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+      "pose": {
+       "type": "calibration_world",
+       "calibration": "eval/output/scene_calibration_r6bc.json"
+      },
+      "length_m": 0.12,
+      "axis_label_offsets": {
+       "Y": [
+        -45,
+        10
+       ],
+       "Z": [
+        45,
+        -10
+       ]
+      },
+      "name_label": {
+       "text": "World",
+       "offset": [
+        -200,
+        -60
+       ],
+       "anchor": "mm"
+      }
+     },
+     {
+      "name": "Scene",
+      "panel": "unity",
+      "mode": "projected",
+      "thesis_source": "Scene = G S World + tf (Eq. 6.6), axes drawn at the desk marker",
+      "pose": {
+       "type": "scene",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "person_log": "eval/output/unity_check_r6b_v9/unity_person_log.csv",
+       "frame": 505,
+       "anchor": "desk_marker"
+      },
+      "length_m": 0.12,
+      "name_label": {
+       "text": "Scene",
+       "offset": [
+        -200,
+        -60
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "Z": [
+        45,
+        -10
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "Recorded frame",
+      "xy": [
+       350,
+       55
+      ],
+      "anchor": "mm"
+     },
+     {
+      "text": "Unity view",
+      "xy": [
+       1090,
+       55
+      ],
+      "anchor": "mm"
+     },
+     {
+      "text": "swap S: exchange y and z (Eq. 6.1)",
+      "xy": [
+       40,
+       720
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "gravity G: turn up onto scene Y (Eq. 6.6)",
+      "xy": [
+       40,
+       810
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "floor tf: raise by d = {floor_d_cm} cm (Eq. 6.6)",
+      "xy": [
+       40,
+       900
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "Scene origin: on the floor below the",
+      "xy": [
+       40,
+       1030
+      ],
+      "anchor": "lm"
+     },
+     {
+      "text": "desk marker, outside the view",
+      "xy": [
+       40,
+       1110
+      ],
+      "anchor": "lm"
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Sections 6.2 and 6.4, Eqs. 6.1 and 6.6 (swap S, gravity alignment G, floor translation tf)",
+   "panels": [
+    {
+     "id": "rgb",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png",
+     "photo_sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+     "crop_px": [
+      0,
+      0,
+      640,
+      480
+     ],
+     "box_px": [
+      0,
+      110,
+      700,
+      635
+     ],
+     "scale": 1.09375,
+     "resample": "cv2.INTER_CUBIC",
+     "fade": 0.5,
+     "photo_source": "writing/v9/figures/src/r6b_frame00505.png",
+     "photo_source_sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126",
+     "byte_identical_to_source": true,
+     "camera_model": {
+      "fx": 607.561279296875,
+      "fy": 607.0150756835938,
+      "cx": 323.93756103515625,
+      "cy": 248.0174102783203,
+      "source": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json color_intrinsics (distortion coefficients all zero)"
+     }
+    },
+    {
+     "id": "unity",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_unity_f00505.png",
+     "photo_sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+     "crop_px": [
+      0,
+      0,
+      640,
+      480
+     ],
+     "box_px": [
+      740,
+      110,
+      1440,
+      635
+     ],
+     "scale": 1.09375,
+     "resample": "cv2.INTER_CUBIC",
+     "fade": 0.5,
+     "photo_source": "writing/v9/figures/src/r6b_unity_f00505.png",
+     "photo_source_sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+     "byte_identical_to_source": true,
+     "camera_model": {
+      "fx": 607.0150756835939,
+      "fy": 607.0150756835939,
+      "cx": 320.0,
+      "cy": 240.0,
+      "source": "Unity sensor POV camera: vertical field of view 43.145438 deg from eval/output/scene_calibration_r6bc.json (ArucoSceneReceiver.cs pov.fieldOfView), 640x480, centred principal point, square pixels"
+     }
+    }
+   ],
+   "frames": [
+    {
+     "frame": "World",
+     "panel": "rgb",
+     "overlay_mode": "projected",
+     "source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+     "pose_type": "calibration_world",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json"
+     ],
+     "pose_detail": {
+      "pose": "T_cam_desk of the scene calibration (World = desk marker id 2 frame)"
+     },
+     "origin_cam_m": [
+      0.023458,
+      0.187377,
+      0.552492
+     ],
+     "basis_cam_columns": [
+      [
+       0.999705,
+       -0.001401,
+       -0.02425
+      ],
+      [
+       -0.021908,
+       -0.483249,
+       -0.875209
+      ],
+      [
+       -0.010493,
+       0.875482,
+       -0.483137
+      ]
+     ],
+     "determinant": 1.0,
+     "length_m": 0.12,
+     "origin_px": [
+      382.52,
+      606.44
+     ],
+     "endpoints_px": {
+      "X": [
+       527.2,
+       603.79
+      ],
+      "Y": [
+       377.84,
+       511.91
+      ],
+      "Z": [
+       381.92,
+       491.83
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       544,
+       578,
+       589,
+       626
+      ],
+      "Y": [
+       311,
+       496,
+       353,
+       544
+      ],
+      "Z": [
+       403,
+       456,
+       448,
+       504
+      ],
+      "name": [
+       97,
+       520,
+       266,
+       570
+      ]
+     }
+    },
+    {
+     "frame": "Scene",
+     "panel": "unity",
+     "overlay_mode": "projected",
+     "source": "Scene = G S World + tf (Eq. 6.6), axes drawn at the desk marker",
+     "pose_type": "scene",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json",
+      "eval/output/unity_check_r6b_v9/unity_person_log.csv"
+     ],
+     "pose_detail": {
+      "pose": "Scene = G S World + tf (Eq. 6.6); axes carried into the camera by S G^T",
+      "G": [
+       [
+        0.999756,
+        0.021236,
+        0.006092
+       ],
+       [
+        -0.021236,
+        0.847708,
+        0.530038
+       ],
+       [
+        0.006092,
+        -0.530038,
+        0.847952
+       ]
+      ],
+      "tf_m": [
+       0.0,
+       0.716215,
+       0.0
+      ],
+      "scene_origin_cam_m": [
+       0.053918,
+       0.90187,
+       0.513313
+      ],
+      "anchor": "drawn at the desk-marker origin; the Scene origin lies on the floor outside the view"
+     },
+     "origin_cam_m": [
+      0.023458,
+      0.187377,
+      0.552492
+     ],
+     "basis_cam_columns": [
+      [
+       0.998937,
+       -0.042529,
+       0.017755
+      ],
+      [
+       -0.043432,
+       -0.997597,
+       0.053989
+      ],
+      [
+       -0.015417,
+       0.054703,
+       0.998384
+      ]
+     ],
+     "determinant": -1.0,
+     "length_m": 0.12,
+     "origin_px": [
+      1118.19,
+      597.67
+     ],
+     "endpoints_px": {
+      "X": [
+       1262.82,
+       592.14
+      ],
+      "Y": [
+       1111.8,
+       452.86
+      ],
+      "Z": [
+       1115.27,
+       563.94
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       1279,
+       565,
+       1324,
+       613
+      ],
+      "Y": [
+       1089,
+       387,
+       1131,
+       435
+      ],
+      "Z": [
+       1137,
+       528,
+       1182,
+       576
+      ],
+      "name": [
+       828,
+       511,
+       1008,
+       561
+      ]
+     }
+    }
+   ],
+   "points": [],
+   "texts": [
+    {
+     "text": "Recorded frame",
+     "box": [
+      119,
+      29,
+      580,
+      79
+     ]
+    },
+    {
+     "text": "Unity view",
+     "box": [
+      937,
+      29,
+      1242,
+      90
+     ]
+    },
+    {
+     "text": "swap S: exchange y and z (Eq. 6.1)",
+     "box": [
+      37,
+      694,
+      1046,
+      755
+     ]
+    },
+    {
+     "text": "gravity G: turn up onto scene Y (Eq. 6.6)",
+     "box": [
+      37,
+      784,
+      1197,
+      845
+     ]
+    },
+    {
+     "text": "floor tf: raise by d = 71.6 cm (Eq. 6.6)",
+     "box": [
+      37,
+      874,
+      1127,
+      935
+     ]
+    },
+    {
+     "text": "Scene origin: on the floor below the",
+     "box": [
+      37,
+      1004,
+      1063,
+      1065
+     ]
+    },
+    {
+     "text": "desk marker, outside the view",
+     "box": [
+      37,
+      1084,
+      906,
+      1140
+     ]
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9697
+   }
+  },
+  {
+   "name": "rig_frames",
+   "output": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_rig_frames.png",
+   "sha256": "02cb8ddf02574f98b6efefdcb831417dc9b10f4f1496368577071a3b07786283",
+   "bytes": 405685,
+   "pixel_size": [
+    1440,
+    1200
+   ],
+   "spec": "presentation/defense_2026/figures/coordinate_frames/overlay/spec_rig_frames.json",
+   "spec_sha256": "ea5be88330df1ef5f21fdc9608386893b2cec58bb6c8ec2cdd701a26e1ebcd53",
+   "spec_used": {
+    "output": "overlay_rig_frames.png",
+    "thesis_source": "Thesis V9 Section 6.3, Eqs. 6.4-6.5 (root L24, upper arm L14, forearm L16; bone rotations in the scene)",
+    "panels": [
+     {
+      "id": "unity",
+      "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_unity_f00505.png",
+      "photo_source": "writing/v9/figures/src/r6b_unity_f00505.png",
+      "crop_px": [
+       0,
+       0,
+       640,
+       480
+      ],
+      "box_px": [
+       0,
+       0,
+       1440,
+       1080
+      ],
+      "camera": {
+       "type": "unity_sensor",
+       "calibration": "eval/output/scene_calibration_r6bc.json"
+      }
+     }
+    ],
+    "frames": [
+     {
+      "name": "L24 root",
+      "panel": "unity",
+      "mode": "projected",
+      "pose": {
+       "type": "rig_segment",
+       "segment": "root",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "person_log": "eval/output/unity_check_r6b_v9/unity_person_log.csv",
+       "stream": "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+       "frame": 505
+      },
+      "length_m": 0.12,
+      "name_label": {
+       "text": "L24 root",
+       "offset": [
+        230,
+        120
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "Z": [
+        45,
+        55
+       ]
+      }
+     },
+     {
+      "name": "L14",
+      "panel": "unity",
+      "mode": "projected",
+      "pose": {
+       "type": "rig_segment",
+       "segment": "L14",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "person_log": "eval/output/unity_check_r6b_v9/unity_person_log.csv",
+       "stream": "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+       "frame": 505
+      },
+      "length_m": 0.09,
+      "name_label": {
+       "text": "L14",
+       "offset": [
+        -190,
+        0
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "X": [
+        -45,
+        0
+       ],
+       "Y": [
+        -40,
+        -20
+       ]
+      }
+     },
+     {
+      "name": "L16",
+      "panel": "unity",
+      "mode": "projected",
+      "pose": {
+       "type": "rig_segment",
+       "segment": "L16",
+       "calibration": "eval/output/scene_calibration_r6bc.json",
+       "person_log": "eval/output/unity_check_r6b_v9/unity_person_log.csv",
+       "stream": "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+       "frame": 505
+      },
+      "length_m": 0.09,
+      "name_label": {
+       "text": "L16",
+       "offset": [
+        -190,
+        40
+       ],
+       "anchor": "mm"
+      },
+      "axis_label_offsets": {
+       "Y": [
+        -50,
+        0
+       ]
+      }
+     }
+    ],
+    "texts": [
+     {
+      "text": "rig anchor: pelvis, root L24",
+      "xy": [
+       40,
+       1140
+      ],
+      "anchor": "lm"
+     }
+    ]
+   },
+   "thesis_source": "Thesis V9 Section 6.3, Eqs. 6.4-6.5 (root L24, upper arm L14, forearm L16; bone rotations in the scene)",
+   "panels": [
+    {
+     "id": "unity",
+     "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_unity_f00505.png",
+     "photo_sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+     "crop_px": [
+      0,
+      0,
+      640,
+      480
+     ],
+     "box_px": [
+      0,
+      0,
+      1440,
+      1080
+     ],
+     "scale": 2.25,
+     "resample": "cv2.INTER_CUBIC",
+     "fade": 0.5,
+     "photo_source": "writing/v9/figures/src/r6b_unity_f00505.png",
+     "photo_source_sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+     "byte_identical_to_source": true,
+     "camera_model": {
+      "fx": 607.0150756835939,
+      "fy": 607.0150756835939,
+      "cx": 320.0,
+      "cy": 240.0,
+      "source": "Unity sensor POV camera: vertical field of view 43.145438 deg from eval/output/scene_calibration_r6bc.json (ArucoSceneReceiver.cs pov.fieldOfView), 640x480, centred principal point, square pixels"
+     }
+    }
+   ],
+   "frames": [
+    {
+     "frame": "L24 root",
+     "panel": "unity",
+     "overlay_mode": "projected",
+     "source": "",
+     "pose_type": "rig_segment",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json",
+      "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+      "eval/output/unity_check_r6b_v9/unity_person_log.csv"
+     ],
+     "pose_detail": {
+      "pose": "segment root: Camera' rotation from the streamed angles (Eq. 6.4), carried to the camera by F; origin = rig joint hip of the receiver log",
+      "angles_deg": [
+       -10.8408,
+       176.6276,
+       -2.8066,
+       -48.7253,
+       -75.6081,
+       42.2067,
+       -15.838,
+       0.0,
+       40.0206,
+       -81.7986,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "origin_joint": "hip"
+     },
+     "origin_cam_m": [
+      0.038527,
+      0.222276,
+      1.213
+     ],
+     "basis_cam_columns": [
+      [
+       -0.996529,
+       -0.059931,
+       0.057775
+      ],
+      [
+       0.048091,
+       -0.980975,
+       -0.188081
+      ],
+      [
+       -0.067948,
+       0.18465,
+       -0.980453
+      ]
+     ],
+     "determinant": -1.0,
+     "length_m": 0.12,
+     "origin_px": [
+      763.38,
+      790.27
+     ],
+     "endpoints_px": {
+      "X": [
+       628.12,
+       798.51
+      ],
+      "Y": [
+       754.65,
+       655.62
+      ],
+      "Z": [
+       776.68,
+       789.01
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       565,
+       775,
+       610,
+       823
+      ],
+      "Y": [
+       731,
+       590,
+       773,
+       638
+      ],
+      "Z": [
+       798,
+       819,
+       843,
+       867
+      ],
+      "name": [
+       872,
+       884,
+       1115,
+       934
+      ]
+     }
+    },
+    {
+     "frame": "L14",
+     "panel": "unity",
+     "overlay_mode": "projected",
+     "source": "",
+     "pose_type": "rig_segment",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json",
+      "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+      "eval/output/unity_check_r6b_v9/unity_person_log.csv"
+     ],
+     "pose_detail": {
+      "pose": "segment L14: Camera' rotation from the streamed angles (Eq. 6.4), carried to the camera by F; origin = rig joint rel of the receiver log",
+      "angles_deg": [
+       -10.8408,
+       176.6276,
+       -2.8066,
+       -48.7253,
+       -75.6081,
+       42.2067,
+       -15.838,
+       0.0,
+       40.0206,
+       -81.7986,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "origin_joint": "rel",
+      "x_axis_vs_rig_bone_deg": 0.0
+     },
+     "origin_cam_m": [
+      -0.208525,
+      -0.026479,
+      1.244181
+     ],
+     "basis_cam_columns": [
+      [
+       -0.094551,
+       0.077215,
+       0.992521
+      ],
+      [
+       0.922942,
+       -0.366897,
+       0.116466
+      ],
+      [
+       -0.373146,
+       -0.927051,
+       0.036574
+      ]
+     ],
+     "determinant": -1.0,
+     "length_m": 0.09,
+     "origin_px": [
+      491.09,
+      510.93
+     ],
+     "endpoints_px": {
+      "X": [
+       475.14,
+       603.84
+      ],
+      "Y": [
+       482.82,
+       469.99
+      ],
+      "Z": [
+       589.5,
+       522.49
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       407,
+       578,
+       452,
+       626
+      ],
+      "Y": [
+       421,
+       424,
+       463,
+       472
+      ],
+      "Z": [
+       606,
+       502,
+       651,
+       550
+      ],
+      "name": [
+       246,
+       485,
+       356,
+       533
+      ]
+     }
+    },
+    {
+     "frame": "L16",
+     "panel": "unity",
+     "overlay_mode": "projected",
+     "source": "",
+     "pose_type": "rig_segment",
+     "pose_sources": [
+      "eval/output/scene_calibration_r6bc.json",
+      "eval/output/unity_check_r6b_v9/integrated_stream.csv",
+      "eval/output/unity_check_r6b_v9/unity_person_log.csv"
+     ],
+     "pose_detail": {
+      "pose": "segment L16: Camera' rotation from the streamed angles (Eq. 6.4), carried to the camera by F; origin = rig joint rh of the receiver log",
+      "angles_deg": [
+       -10.8408,
+       176.6276,
+       -2.8066,
+       -48.7253,
+       -75.6081,
+       42.2067,
+       -15.838,
+       0.0,
+       40.0206,
+       -81.7986,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "origin_joint": "rh",
+      "x_axis_vs_rig_bone_deg": 0.0
+     },
+     "origin_cam_m": [
+      -0.171643,
+      0.162058,
+      1.172637
+     ],
+     "basis_cam_columns": [
+      [
+       0.179914,
+       0.077215,
+       0.980647
+      ],
+      [
+       0.919691,
+       -0.366897,
+       -0.139842
+      ],
+      [
+       -0.348999,
+       -0.927051,
+       0.137024
+      ]
+     ],
+     "determinant": -1.0,
+     "length_m": 0.09,
+     "origin_px": [
+      520.09,
+      728.75
+     ],
+     "endpoints_px": {
+      "X": [
+       533.96,
+       833.0
+      ],
+      "Y": [
+       513.49,
+       701.8
+      ],
+      "Z": [
+       623.89,
+       712.28
+      ]
+     },
+     "label_boxes": {
+      "X": [
+       516,
+       847,
+       561,
+       895
+      ],
+      "Y": [
+       442,
+       676,
+       484,
+       724
+      ],
+      "Z": [
+       640,
+       681,
+       685,
+       729
+      ],
+      "name": [
+       275,
+       742,
+       385,
+       792
+      ]
+     }
+    }
+   ],
+   "points": [],
+   "texts": [
+    {
+     "text": "rig anchor: pelvis, root L24",
+     "box": [
+      37,
+      1114,
+      809,
+      1175
+     ]
+    }
+   ],
+   "shapes": [],
+   "label_effective_pt_worst_box": 16.25,
+   "fade_check": {
+    "base_max_value": 128,
+    "expected_max_value": 128,
+    "photo_pixels_unchanged_fraction": 0.9815
+   }
+  }
+ ]
+}

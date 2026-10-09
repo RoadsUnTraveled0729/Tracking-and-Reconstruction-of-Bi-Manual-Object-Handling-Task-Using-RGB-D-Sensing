@@ -1,0 +1,41 @@
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Thesis_V8_Condensed_TOC.docx | entries: 122
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/FrontMatter_V8_Condensed.docx
+abstract words: 348 | figures listed: 47 | tables listed: 26 | toc entries: 122
+literature citations: {'status': 'PASS', 'citation_occurrences': 132, 'cited_entries': 57, 'source_entries': 58, 'removed_uncited_source_numbers': [50], 'source_paragraphs_verified': 1793, 'checks': ['every source paragraph preserves text except citation numbers', 'every final citation resolves to the exact source reference text', 'global first-appearance order includes appendices', 'final bibliography is contiguous and contains no uncited entries']}
+
+counts per part, before the merge
+  Front matter                       paragraphs  410 | tables   1 | images   0 | equations    0
+  Chapter 1                          paragraphs   71 | tables   1 | images   0 | equations    0
+  Chapter 2                          paragraphs  232 | tables   4 | images   9 | equations   32
+  Chapter 3                          paragraphs  203 | tables  25 | images   7 | equations  129
+  Chapter 4                          paragraphs   47 | tables   3 | images   2 | equations   20
+  Chapter 5                          paragraphs  204 | tables  13 | images   5 | equations  118
+  Chapter 6                          paragraphs  151 | tables   8 | images   5 | equations   22
+  Chapter 7                          paragraphs  381 | tables  15 | images   6 | equations    6
+  Chapter 8                          paragraphs   77 | tables   1 | images   3 | equations    0
+  Chapter 9                          paragraphs   99 | tables   1 | images   2 | equations    0
+  Chapter 10                         paragraphs   14 | tables   0 | images   0 | equations    0
+  References (57 entries)            paragraphs   58 | tables   0 | images   0 | equations    0
+  Appendices                         paragraphs  314 | tables  12 | images   8 | equations   12
+  SUM                                paragraphs 2261 | tables  84 | images  47 | equations  339
+  ASSEMBLED DOCUMENT                 paragraphs 2261 | tables  84 | images  47 | equations  339
+  counts: PASS
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Thesis_V8_Condensed_TOC.docx | entries: 122
+
+headings: 113 body entries in the table of contents, 120 headings in the document
+  order and uniqueness: PASS
+  sequence: Chapter 1 | Chapter 2 | Chapter 3 | Chapter 4 | Chapter 5 | Chapter 6 | Chapter 7 | Chapter 8 | Chapter 9 | Chapter 10 | References | Appendix A | Appendix B | Appendix C | Appendix D | Appendix E | Appendix F | Appendix G | Appendix H
+
+placeholders in the assembled document: 1
+  bold  [DATE APPROVED]                                      Approval
+  all bold: PASS
+
+image parts in the package: 47 | unresolved image references: 0
+  images: PASS
+
+fonts in the body (w:ascii values): []
+colours in the body (w:color values): []
+theme font references: 0 | theme colour references: 0
+
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/Thesis_V8_Condensed.docx
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Thesis_V8_Condensed_Placeholders.md

@@ -1,0 +1,599 @@
+{
+ "title": "Thesis Defence Speaker Script",
+ "header": [
+  "Lanqing Luo",
+  "Tracking and Reconstruction of Bi Manual Object Handling Task Using RGB D Sensing",
+  "The main presentation contains 2,657 spoken words and follows slides 1\u201346. Its planned duration is 27 minutes, using the full 27 minute limit. The timing allows about 110 words per minute, slide changes and the viewing pauses marked below. Speak while the demonstrations play; do not add their full duration again. The schedule is a rehearsal guide, not a measured delivery time.",
+  "Checkpoints: finish motivation and goal at 02:21; finish the offline system at 18:31; finish results and next steps at 27:00. References are advanced without narration. Discussion pages are outside the main presentation budget."
+ ],
+ "emit_section_headings": true,
+ "timing": {
+  "wpm": 110,
+  "overhead_s": 2,
+  "cap_s": 1620,
+  "remainder_slide": 38,
+  "timed_slides": [
+   1,
+   46
+  ]
+ },
+ "blocks": [
+  {
+   "title": "Block 1 Motivation and goal",
+   "slides": [
+    1,
+    4
+   ],
+   "intro": null,
+   "page_break_before": false,
+   "sections": [
+    {
+     "title": "Motivation and goal (slides 1-4)",
+     "slides": [
+      1,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Block 2 Offline reconstruction system",
+   "slides": [
+    5,
+    30
+   ],
+   "intro": null,
+   "page_break_before": false,
+   "sections": [
+    {
+     "title": "System architecture (slide 5)",
+     "slides": [
+      5,
+      5
+     ]
+    },
+    {
+     "title": "Data preprocessing (slides 6-10)",
+     "slides": [
+      6,
+      10
+     ]
+    },
+    {
+     "title": "Kinematic model (slides 11-15)",
+     "slides": [
+      11,
+      15
+     ]
+    },
+    {
+     "title": "Object tracking (slides 16-18)",
+     "slides": [
+      16,
+      18
+     ]
+    },
+    {
+     "title": "Partial occlusion (slides 19-24)",
+     "slides": [
+      19,
+      24
+     ]
+    },
+    {
+     "title": "From modules to one system (slides 25-30)",
+     "slides": [
+      25,
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Block 3 Results and next steps",
+   "slides": [
+    31,
+    46
+   ],
+   "intro": null,
+   "page_break_before": false,
+   "sections": [
+    {
+     "title": "Results (slides 31-38)",
+     "slides": [
+      31,
+      38
+     ]
+    },
+    {
+     "title": "Limitations, future directions and summary (slides 39-41)",
+     "slides": [
+      39,
+      41
+     ]
+    },
+    {
+     "title": "References and close (slides 42-46)",
+     "slides": [
+      42,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Supporting discussion pages",
+   "slides": [
+    47,
+    77
+   ],
+   "intro": "Use these pages only when a related question arises. Slides 47\u201377 contain the QA material. None is included in the 27 minute main schedule.",
+   "page_break_before": true,
+   "sections": []
+  }
+ ],
+ "slides": {
+  "1": {
+   "title": "Thesis defence",
+   "cue": "Face the committee. Keep the opening brief.",
+   "spoken": "Good afternoon. My name is Lanqing Luo. Why does bimanual handling need a new capture method? Current methods burden either the person or the laboratory. This thesis investigates how one RGB-D camera and a kinematic model can reconstruct a person handling an object with both hands, without wearable sensors or a motion-capture laboratory.",
+   "timing_extra_s": 0
+  },
+  "2": {
+   "title": "Outline",
+   "cue": "Indicate the three blocks: motivation and goal, offline reconstruction system, results and next steps.",
+   "spoken": "The talk has three blocks. Block one is the motivation and goal. Block two is the offline reconstruction system, from architecture to each module. Block three covers results, real-time reconstruction, limitations and future directions.",
+   "timing_extra_s": 0
+  },
+  "3": {
+   "title": "Capturing bimanual handling today",
+   "cue": "Compare the sensing arrangements, then indicate the thesis row.",
+   "spoken": "Applications such as robot demonstrations and avatar animation need body and object reconstruction, yet each current approach falls short. Wearables place hardware on the user and need per-user calibration. Bimanual capture datasets rely on camera rigs and laboratory infrastructure. RGB-D landmark methods track a single hand, or the body without an object. Monocular methods reconstruct two hands but cannot track the object and leave depth ambiguous. This thesis targets the missing combination of upper body and tracked object in one frame.",
+   "timing_extra_s": 0
+  },
+  "4": {
+   "title": "Goal one RGB D camera one metric scene",
+   "cue": "Play the clip. Point to the cube as it changes hands.",
+   "spoken": "The goal is to reconstruct the upper body and a handled object together in one metric scene, using one RealSense D435 and nothing worn. The task of carrying the cube, placing it on a rail and transferring it between hands is tracked with three printed ArUco markers. A connected body model puts both in one calibrated Unity scene. Block two begins with the system architecture.",
+   "timing_extra_s": 4
+  },
+  "5": {
+   "title": "Offline system architecture",
+   "cue": "Trace the complete functional flow. Introduce the modules before their details.",
+   "spoken": "How do we turn one RGB-D stream into one metric scene? We split it into a person branch and a scene branch, solve each, and merge them in time in Unity. Capture provides aligned colour and depth. In the person branch, MediaPipe detects landmarks, depth gives their third coordinate, and preprocessing cleans the tracks. Recovery fills supported gaps before the solver calculates thirteen angles. In the scene branch, static markers fix the reference frame and a moving marker tracks the cube, whose pose can also support recovery.",
+   "timing_extra_s": 0
+  },
+  "6": {
+   "title": "Data preprocessing",
+   "cue": "Give a brief overview of the three problems and their matching filters.",
+   "spoken": "Preprocessing turns raw observations into clean tracks by removing spikes, filling short gaps and smoothing jitter, in that order. Hampel rejection, linear interpolation and Butterworth smoothing each handle one of these problems.",
+   "timing_extra_s": 0
+  },
+  "7": {
+   "title": "Raw observations detector and sensor",
+   "cue": "Play the overlay. Indicate a wrist and its depth sample.",
+   "spoken": "The raw observations combine detector landmarks with depth. MediaPipe reports thirty-three landmarks, and we retain eight: the shoulder, elbow, wrist and hip pairs. A five-by-five depth median supplies the third coordinate. Low visibility or missing depth makes the observation unavailable.",
+   "timing_extra_s": 0
+  },
+  "8": {
+   "title": "Spikes Hampel rejection",
+   "cue": "Point to the isolated excursion and its rejection.",
+   "spoken": "The Hampel filter rejects isolated spikes. It compares each sample with the median of a centred seven-frame window. The threshold is three times the scaled median absolute deviation, with a two-centimetre floor. A sample beyond it is rejected and marked missing, ready for the next stage.",
+   "timing_extra_s": 0
+  },
+  "9": {
+   "title": "Short gaps linear interpolation",
+   "cue": "Indicate the accepted samples on both sides of the gap.",
+   "spoken": "Linear interpolation fills short gaps. For an interior gap of at most five frames, we draw a straight line in time between the accepted samples on either side. Filled samples keep a repair flag, and longer gaps remain open for the recovery layer.",
+   "timing_extra_s": 0
+  },
+  "10": {
+   "title": "Jitter Butterworth smoothing",
+   "cue": "Play the raw and smoothed traces together.",
+   "spoken": "A fourth-order Butterworth low-pass filter at three hertz removes jitter. Running it forward and backward cancels phase delay. The backward pass uses future samples, so this step belongs to the offline system, and the causal version will replace it. Clean tracks then feed the body model.",
+   "timing_extra_s": 0
+  },
+  "11": {
+   "title": "Kinematic model",
+   "cue": "Give a brief overview of the root, shoulder and elbow levels.",
+   "spoken": "The kinematic model turns separate points into a connected body in three levels: a torso root at L24, shoulders carried by that root, and elbows carried by the shoulders. We first show the chain, then build each local frame.",
+   "timing_extra_s": 0
+  },
+  "12": {
+   "title": "Linked landmarks and constraints",
+   "cue": "Trace L24, the torso, the shoulder, the elbow and the wrist. Play the clip while speaking.",
+   "spoken": "The model links the eight landmarks into one chain from the right hip, L24, through the torso and shoulders to the elbows and wrists. Each local frame moves with its parent, so segment lengths and joint relationships stay consistent. The T-pose provides the reference, with zero arm angles and aligned local frames. We build the model in the y-up camera frame, and the backup pages explain the choice of handedness.",
+   "timing_extra_s": 0
+  },
+  "13": {
+   "title": "Level 1 the root frame at L24",
+   "cue": "Point along the hip line, then the forward axis, then the up axis.",
+   "spoken": "The root frame gives the torso its orientation. L24, the right hip, is the origin. The x axis is the unit vector along the hip line from the left hip to the right hip. The vector from the right hip up to the right shoulder is not an axis, it only selects the torso plane. The cross product of x with that vector, normalised, gives z, pointing forward out of the chest. A second cross product, z cross x, gives y, pointing up and perpendicular to both. The three unit axes are the columns of the root rotation matrix, and the right hip position is its translation, which places the root frame in the camera frame.",
+   "timing_extra_s": 2
+  },
+  "14": {
+   "title": "Level 2 the shoulder swing and twist",
+   "cue": "Play the sweep. Mirror the motion with your own arm if useful.",
+   "spoken": "The shoulder rotation is split into swing and twist because the upper arm alone cannot show its roll. Swing is the direction of the upper arm in the root frame: the elevation is the arcsine of its upward component, and the azimuth is the arctangent of its forward and sideways components. Twist is the roll about the arm axis, visible only in the plane perpendicular to the arm. We undo the swing, which makes that plane the y-z plane of the shoulder frame, project the forearm into it, and the arctangent of its two components gives the twist angle. The three angles recombine as one rotation, y, then z, then x, with the twist innermost, and the elbow position completes the shoulder-to-elbow transformation. A straight arm hides the twist, so the previous value is held.",
+   "timing_extra_s": 2
+  },
+  "15": {
+   "title": "Level 3 the elbow",
+   "cue": "Play the elbow motion. Indicate the local frame carried by the shoulder.",
+   "spoken": "The elbow angles separate elbow movement from torso and shoulder movement. The shoulder rotation carries the elbow frame down the upper arm, and we express the wrist-to-elbow direction in it. The equation gives two angular coordinates, and the video highlights flexion. The model outputs three root angles, three per shoulder and two per elbow, thirteen in total. Next comes the scene branch.",
+   "timing_extra_s": 2
+  },
+  "16": {
+   "title": "Object tracking",
+   "cue": "Introduce the fixed scene, static markers and dynamic marker.",
+   "spoken": "Object tracking works in a fixed scene, with a static camera and environment. Static markers give the desk origin and the wall vertical, and a dynamic marker follows the cube.",
+   "timing_extra_s": 0
+  },
+  "17": {
+   "title": "Static markers desk and wall",
+   "cue": "Point to the desk axes, then the wall axes.",
+   "spoken": "Static markers calibrate the scene once. The desk marker defines the World origin and anchors the Unity scene, and the wall marker supplies a vertical reference. For each marker, we average the first ten valid detections, using a mean position and an orientation projected back onto a proper rotation. Both branches then use this fixed calibration.",
+   "timing_extra_s": 0
+  },
+  "18": {
+   "title": "Moving marker the cube",
+   "cue": "Trace Object through Camera to World.",
+   "spoken": "The cube marker, tracked in every frame, gives a cleaned object track in World coordinates. Its camera pose, combined with the calibrated camera-to-World transformation, puts it in the desk reference. A sample is accepted when detection succeeds, the pose is finite and the displacement stays within bounds that grow with the time since the last accepted sample. This track will also support the body under occlusion.",
+   "timing_extra_s": 0
+  },
+  "19": {
+   "title": "Partial occlusion",
+   "cue": "Introduce reliability decision, Cases A/B/C, and the unsupported-group fallback before opening the details.",
+   "spoken": "Partial occlusion handling first marks unreliable landmarks, then recovers the body in three cases. Case A uses the elbow and direction memory, case B the tracked object, and case C two segment lengths. A group without enough support holds its last valid angles. We start with the validity overlay.",
+   "timing_extra_s": 0
+  },
+  "20": {
+   "title": "Identifying unreliable landmarks",
+   "cue": "Follow the three main bullets. Briefly name the six indented checks, then explain rejection and the three output states.",
+   "spoken": "Reliability checks decide which landmarks are trusted. The checks are acquisition validity, segment length, hip-shoulder alignment, shoulder-to-hip width ratio, landmark displacement and grasp plausibility. For a flagged arm, the elbow and wrist are removed together, and reconstruction uses the reliable information that remains. Each output group is then labelled measured, constrained or held.",
+   "timing_extra_s": 3
+  },
+  "21": {
+   "title": "Case A the wrist from the elbow and direction memory",
+   "cue": "Point to the elbow, the remembered direction and the rebuilt wrist.",
+   "spoken": "Case A rebuilds a missing wrist when the elbow is reliable. On measured frames, the forearm direction updates a memory with gain zero point three. During wrist loss, we place the wrist one calibrated forearm length from the elbow along that remembered direction. This support lasts for up to forty-five consecutive frames, and the output is labelled constrained.",
+   "timing_extra_s": 0
+  },
+  "22": {
+   "title": "Case B the wrist from the object",
+   "cue": "Point to the wrist-to-marker offset, then play the missing-depth event.",
+   "spoken": "Case B recovers a grasping wrist from the tracked object. During a stable grasp, the wrist keeps an approximately fixed offset in the marker's local frame, and clean observations update that offset slowly. When the wrist disappears, the offset freezes and the current object pose places the wrist. This method takes priority over direction memory when its conditions hold.",
+   "timing_extra_s": 0
+  },
+  "23": {
+   "title": "Case C the elbow from two lengths",
+   "cue": "The single film plays automatically: recorded RGB above, same-frame geometry below. Point out the two circular outlines, the amber candidate circle and the selected elbow. The prior is an EMA derived from preceding usable observations for this geometric example, not an archived recovery result.",
+   "spoken": "Case C recovers a missing elbow from two lengths, given the shoulder and a measured or rebuilt wrist. A sphere around the shoulder represents the upper-arm length, and a sphere around the wrist represents the forearm length. Their intersection is a circle of possible elbows. Projecting the remembered upper-arm direction into the circle's plane selects one point. The recorded example applies the same construction to the landmark data.",
+   "timing_extra_s": 6
+  },
+  "24": {
+   "title": "No support hold the last valid angles",
+   "cue": "Play the controlled test; point to the red held markers.",
+   "spoken": "Without support, a group holds its last valid angles while other groups keep moving. The system also limits angular change to fifteen degrees per frame and labels a limited output constrained. Each group therefore carries a measured, constrained or held state into Unity, and red markers show the held groups. Next, we connect the modules into one system.",
+   "timing_extra_s": 0
+  },
+  "25": {
+   "title": "From modules to one system",
+   "cue": "Let the animation loop. Trace both branches, the object-support link, the merger and Unity.",
+   "spoken": "This section joins the modules into one system in four steps: shared memory, records and time alignment, the mapping into Unity, and the integrated reconstruction. The animation traces frame 533 through the architecture. The person branch yields thirteen angles and their states, and the marker branch yields the object pose and its recovery constraint. Both carry frame identity and session time. The merger evaluates a common render time and publishes one combined state for Unity.",
+   "timing_extra_s": 7
+  },
+  "26": {
+   "title": "Shared memory frame access and dropped frames",
+   "cue": "Let the animation loop. Explain overwrite/skip and inconsistent-copy retry as separate events.",
+   "spoken": "A single writer serves two readers and never waits. The camera writes aligned frames into an eight-slot ring, frame n into slot n modulo eight. Each reader copies the newest settled frame and rechecks the sequence, accepting if unchanged and retrying if changed. Here the slower reader skips frames five twenty-nine to five thirty-two and takes five thirty-three. Overwriting old slots is a separate event from skipping.",
+   "timing_extra_s": 7
+  },
+  "27": {
+   "title": "Shared records and time alignment",
+   "cue": "Follow frame 533 from the shared image to the combined record.",
+   "spoken": "Each record carries a frame index and session time. The person record is eighty-four bytes, the object record forty-four and the combined record one hundred and twelve. Recovery rejects object support more than three frames away from the body frame. The merger works two frame intervals behind capture, interpolates short gaps, holds across longer gaps and blends the return of data over two ticks.",
+   "timing_extra_s": 0
+  },
+  "28": {
+   "title": "Mapping the body into Unity",
+   "cue": "Point to the pelvis anchor, then follow the rotation chain along one arm.",
+   "spoken": "Body data leaves the model in the y-up camera frame and enters Unity through one fixed anchor. The anchor combines the camera-axis conversion, calibrated camera pose and display-axis mapping, and is computed once. For each bone, Unity combines the anchor with the solved chain rotation and the bone's captured rest orientation, which accounts for the avatar's own local bone axes.",
+   "timing_extra_s": 0
+  },
+  "29": {
+   "title": "Mapping the ArUco frames into Unity",
+   "cue": "Follow the frame mappings, then point to the floor placement.",
+   "spoken": "The ArUco branch uses the right-handed World frame, and the matrix S exchanges its second and third coordinates for Unity. A point needs one mapping, but an orientation changes both its input and output bases, which gives S R S. The wall reference supplies the gravity alignment, and the floor sits seventy-one point six centimetres below the desk reference.",
+   "timing_extra_s": 0
+  },
+  "30": {
+   "title": "Integrated reconstruction",
+   "cue": "Play the replay. Let the committee watch before speaking.",
+   "spoken": "Both the recorded image and the Unity display show the same source frame. The replay applies the saved pelvis position, thirteen body angles and object pose. It also keeps the reconstruction states, so each displayed motion can be read with the decisions behind it. Block three evaluates this output against measurement.",
+   "timing_extra_s": 10
+  },
+  "31": {
+   "title": "Results",
+   "cue": "Introduce the three evaluation parts before showing their results.",
+   "spoken": "Does the reconstruction hold up against measurement, and does it run causally? We answer with three tests and a replay. The object is tested against tape lengths, the fully visible body against the raw landmarks, and the occluded body against a reference it cannot see. Each test names its reference first.",
+   "timing_extra_s": 0
+  },
+  "32": {
+   "title": "Object reconstructed lengths against the tape",
+   "cue": "Identify W1 to W4 in the pictures, then move across the table.",
+   "spoken": "The object is checked first because its pose serves twice: it is an output, and it is the reference that places a holding wrist when the wrist is lost. The test moves the cube through four waypoints along the lift and the rail. The three separations were tape measured, and the same waypoints were located in the reconstructed track of two recordings, rail and handover. The errors lie between zero point five three and two point eight three centimetres. The depth leg before the lift reconstructs short in both recordings, and the two legs after it reconstruct long.",
+   "timing_extra_s": 0
+  },
+  "33": {
+   "title": "Body unoccluded model and avatar",
+   "cue": "Play the three-panel film while speaking; point to the FK panel for the model rows.",
+   "spoken": "The fully visible body sets the baseline before any recovery is needed. The reference is the accepted raw landmark at the same frame, compared at two points along the display path, the kinematic model and the rendered avatar. The model elbow sits a median zero point three six centimetres from the measurement on the right and one point zero eight on the left, and the model wrist zero point eight three and two point three four. After mapping to the avatar, the rendered elbow and wrist are five to seven centimetres away, so most of the error enters in the rig mapping, not in the model.",
+   "timing_extra_s": 0
+  },
+  "34": {
+   "title": "Body occluded controlled removal",
+   "cue": "Orient the table by window and case; wrist rows, then elbow rows.",
+   "spoken": "Recovery is tested first: every other landmark stays clean, and the right elbow and wrist are deleted on purpose for forty-five frames, so the unmasked reconstruction is a known truth. A slow recording gives three such windows, ranked by wrist travel, and the middle one is spoken here. Holding the last angles leaves the wrist one point two centimetres and the elbow zero point seven from the truth. Direction memory gives one point nine and one point seven. Object assistance gives one point two and one point six. None is best for both joints.",
+   "timing_extra_s": 3
+  },
+  "35": {
+   "title": "Body occluded natural failures",
+   "cue": "Explain the image pair and the legend before the median.",
+   "spoken": "In the worst case the detector itself drifts, so several inputs are unstable at once and no mask defines the truth. A watch on the right wrist gives a manual label on the frames where tracking lost it. On those frames, object assistance brings the reconstructed wrist from a median of eleven point four centimetres to five point two from the label. That is the accuracy to expect when the input is unreliable and the held object is the only support.",
+   "timing_extra_s": 3
+  },
+  "36": {
+   "title": "Offline pass and causal structure",
+   "cue": "Name the trade-off first, then go down the six rows.",
+   "spoken": "Causal operation replaces the six steps that depend on future samples. The centred window becomes trailing, Butterworth becomes One Euro, and gap filling uses the merger's delay. Grasp initialisation, grasp exit and object cleaning update from available observations. The kinematic model is unchanged, and the cost is reconstruction quality against delay.",
+   "timing_extra_s": 0
+  },
+  "37": {
+   "title": "Causal replay within the frame budget",
+   "cue": "Show the adaptive-filter trace, then the timing numbers.",
+   "spoken": "The causal replay stays within the frame budget. Its One Euro filter adapts the cutoff to movement speed, with stronger smoothing in slow motion and faster response during movement. The pipeline follows approximately twenty-nine frames per second for nine hundred frames without dropping a frame. The ninety-ninth-percentile processing times are thirteen milliseconds for the body branch and sixteen point seven for the marker branch. These are branch processing times, not sensor-to-screen latency.",
+   "timing_extra_s": 0
+  },
+  "38": {
+   "title": "Recorded RGB and causal Unity reconstruction",
+   "cue": "Play the matched film once. Point out the fixed desk and wall before following the moving cube.",
+   "spoken": "The causal reconstruction matches the recorded scene. On the left is the recorded RGB, and on the right is its causal Unity reconstruction. Each RGB frame is paired with the latest available reconstruction state at that time. The oblique view shows the table in front of the person and the wall behind the task, both fixed while the body and cube move. That completes the results, and the limitations come next.",
+   "timing_extra_s": 10
+  },
+  "39": {
+   "title": "Limitations",
+   "cue": "State each assumption and its consequence in one sentence; do not argue with it.",
+   "spoken": "The limitations are the system's assumptions. The scene is static: camera, desk and wall are calibrated once, and moving any of them means recalibrating. Uncertain inputs are rejected or held rather than estimated, so a held value carries its error forward. The object must be small, since a large one hides landmarks, the hips first, and the root frame drifts. The torso is one rigid plate.",
+   "timing_extra_s": 0
+  },
+  "40": {
+   "title": "Future directions",
+   "cue": "Spend most of the time on the first two items.",
+   "spoken": "The main extension is to retain reliable image pixels when depth fails. The current rejection discards the complete landmark, although its two-dimensional location may still be useful, as Kwok and colleagues motivate. Dong and Payandeh's Bayesian kinematic approach suggests how uncertain observations can be combined with a connected model. Valid pixels, available depth and our kinematic constraints could then estimate hidden joints. Broader testing, additional calibrated views and stronger detection are further directions.",
+   "timing_extra_s": 0
+  },
+  "41": {
+   "title": "Summary",
+   "cue": "One sentence per contribution. Finish with the committee, not the screen.",
+   "spoken": "This thesis demonstrates upper-body and object reconstruction in one calibrated scene using a single RGB-D camera. The connected model and object constraints support recovery during local observation failures, with explicit output states. A causal implementation processes recorded data within the frame budget. The system provides a basis for broader evaluation and for reconstruction that makes better use of partial observations.",
+   "timing_extra_s": 0
+  },
+  "42": {
+   "title": "References 1 of 3",
+   "cue": "Advance without reading; references remain available for discussion.",
+   "spoken": null,
+   "timing_extra_s": 0
+  },
+  "43": {
+   "title": "References 2 of 3",
+   "cue": "Advance without reading.",
+   "spoken": null,
+   "timing_extra_s": 0
+  },
+  "44": {
+   "title": "References 3 of 3",
+   "cue": "Advance without reading.",
+   "spoken": null,
+   "timing_extra_s": 0
+  },
+  "45": {
+   "title": "Thank you",
+   "cue": "Face the committee.",
+   "spoken": "Thank you for your attention.",
+   "timing_extra_s": 0
+  },
+  "46": {
+   "title": "Questions",
+   "cue": "Open the relevant backup slide when it supports an answer.",
+   "spoken": "I am happy to take your questions.",
+   "timing_extra_s": 0
+  },
+  "47": {
+   "title": "Backup coordinate transformations between frames",
+   "cue": "For a question about coordinate transformations. Use the numbers on the right.",
+   "spoken": "A frame B is described in a frame A by its orientation, the three unit axes of B as columns, and the position of its origin. A point known in B is rotated by that orientation and shifted by the origin to be known in A: the homogeneous matrix does both in one product. Going back uses the transpose of the orientation, applied after subtracting the origin. Neighbouring frames of the chain each have such a matrix, and multiplying them along the chain gives the elbow frame directly in the camera frame. The table gives the worked example of frame 533: the right wrist expressed in the root frame from the printed Table 3.1 positions.",
+   "timing_extra_s": 0
+  },
+  "48": {
+   "title": "Left handed and right handed body model workflows",
+   "cue": "Trace the left-handed pathway on the left, then the right-handed pathway on the right. Compare the input and output coordinate-conversion stages.",
+   "spoken": "We use a left-handed body model to align coordinates before building the chain. A complete frame has shoulder, elbow, wrist and hip pairs: two points each, eight selected RGB-D landmarks. One matrix-vector product converts each point, giving eight per frame in matrix form. We then build the model, calculate thirteen joint angles, and apply Unity rotations without another handedness conversion. The right-handed model produces five rotation matrices: one root, two shoulders and two elbows. Each conversion multiplies three matrices, requiring two matrix-matrix products: ten per frame. Both models extract the same thirteen angles; input alignment removes the later output-conversion stage. Technical follow-up: Counts assume a complete frame with the shoulder, elbow, wrist and hip pairs: two selected landmarks per group and eight total. The five rotations are one root, two shoulders and two elbows. The LH input conversion can be represented as eight matrix-vector products. Each RH output basis conversion multiplies three matrices and therefore requires two matrix-matrix products, giving ten across five rotations. Both pathways produce thirteen joint angles: three root, six shoulder and four elbow angles. These are matrix-form representation counts, not counts of dense multiplication calls, measured CPU operations, or a runtime/FPS comparison. The current LH helper uses elementwise multiplication by [1, -1, 1], and fixed diagonal basis conversions can likewise be optimized. Both pathways retain the calibrated camera anchor and rig rest-axis corrections. Root, shoulder and elbow extraction use their respective rotation orders and bases; the ArUco World-frame swap is not the body conversion. For fixed frames and rotation orders, an equivalent scalar mapping may incorporate the conversion into angle extraction.",
+   "timing_extra_s": 0
+  },
+  "49": {
+   "title": "ArUco vs AprilTag in the published literature",
+   "cue": "For a question about the literature comparison.",
+   "spoken": "The comparison depends on the detector version and settings. The studies on this slide use different hardware and implementations, so their timing numbers cannot be ranked as if they came from one experiment. Earlier AprilTag versions had different speed trade-offs from AprilTag 3, whose published comparison reports faster detection than ArUco at higher recall. For a practical decision in this setup, I would put more weight on the controlled benchmark on the next slide.",
+   "timing_extra_s": 0
+  },
+  "50": {
+   "title": "AprilTag 3 faster corner errors converge at 96 px",
+   "cue": "For a question about the choice of marker detector.",
+   "spoken": "AprilTag 3 was faster in the controlled benchmark, so these results do not support choosing ArUco on speed grounds. The implemented system uses OpenCV's ArUco detector, with the cost and accuracy affected substantially by its corner-refinement setting. At a marker side of forty-eight pixels without added noise, the median detection times were about two point eight milliseconds for AprilTag 3 and ten point nine for this ArUco configuration. The displayed corner errors correct a constant coordinate-convention offset between the libraries. Their accuracy becomes closer at ninety-six pixels. This comparison supports considering AprilTag 3 in a future implementation. It does not mean that changing the detector alone resolves the reconstruction's other errors.",
+   "timing_extra_s": 0
+  },
+  "51": {
+   "title": "Transport candidates",
+   "cue": "For a question about shared memory, TCP, or UDP.",
+   "spoken": "The pipeline uses shared memory because the local consumers can read the latest available data without sending it through a network socket. A sequence lock helps the reader avoid accepting a record while it is being written. This design deliberately allows an old record to be superseded before a consumer reads it. TCP provides ordered, reliable delivery. UDP requires explicit handling of missing or reordered datagrams. The UDP loss on this slide is specific to the tested frame size, buffering, and receiver, rather than an inherent loss rate of the protocol. The copy counts are conceptual counts for this implementation.",
+   "timing_extra_s": 0
+  },
+  "52": {
+   "title": "Moving one frame package from Python to Unity",
+   "cue": "For a question about transport timing. Give the headline, then the measurement boundary.",
+   "spoken": "Shared memory had the lowest median transfer time in this benchmark: about zero point zero five nine milliseconds, compared with roughly zero point three milliseconds for TCP and UDP. The test moved a package of about one point five four megabytes between separate Python processes on the same workstation. The receiver stood in for Unity. That distinction matters: it did not include Unity's wait until the next rendered frame or the complete camera-to-screen path. UDP also lost packages under the tested receive-buffer and reassembly settings. These results characterise this transport experiment, not the end-to-end latency of the reconstruction system.",
+   "timing_extra_s": 0
+  },
+  "53": {
+   "title": "Savitzky Golay filtering",
+   "cue": "For a question about this alternative smoother.",
+   "spoken": "Savitzky-Golay fits a small polynomial to a moving window and uses its value at the centre. The candidate here uses a quadratic over nine samples. That can preserve the shape of movement peaks well, but its performance still depends on the window and signal. This video shows the filter candidate by itself. The comparative benchmark provides the basis for choosing the offline smoother.",
+   "timing_extra_s": 0
+  },
+  "54": {
+   "title": "Median filtering",
+   "cue": "For a question about median smoothing versus spike rejection.",
+   "spoken": "A moving median replaces every sample with the median of its window. The Hampel step uses a median to identify outliers and rejects only samples that fail its test. They therefore have different roles in the pipeline. The nine-sample median candidate suppresses spikes, but it can flatten real detail in the movement as well.",
+   "timing_extra_s": 0
+  },
+  "55": {
+   "title": "One Euro filtering",
+   "cue": "For a question about the causal filter.",
+   "spoken": "The One Euro filter changes its cutoff using an estimate of movement speed. For slow movement, stronger smoothing reduces visible fluctuations. As speed rises, the cutoff increases so the output can follow the movement more quickly. Both the speed estimate and position filter use information already received. The chosen parameters determine the remaining trade-off between smoothing and lag.",
+   "timing_extra_s": 0
+  },
+  "56": {
+   "title": "Butterworth for offline smoothing",
+   "cue": "For a question about the offline filter choice.",
+   "spoken": "The three-hertz Butterworth setting gave a useful compromise on the tested wrist track. It reduced the shake measure from six point three eight millimetres after despiking to two point eight six millimetres. Savitzky-Golay followed fast motion more closely, so Butterworth was not best on every criterion. Lowering the cutoff further reduced shake but increased deviation during faster motion. The forward-and-backward pass removes phase delay, while still changing the signal through smoothing. These measurements support the choice for this recording and parameter comparison.",
+   "timing_extra_s": 0
+  },
+  "57": {
+   "title": "One Euro for real time smoothing",
+   "cue": "For a question about the live filter or its delay.",
+   "spoken": "The tested one-hertz One Euro setting gave less shake and less estimated lag than the forward-only Butterworth candidate: two point four eight millimetres and eighty-five milliseconds, compared with two point eight eight millimetres and a hundred and forty-two milliseconds. The lag was estimated from the recorded wrist signals by cross-correlation. It is a filter comparison, not a measured sensor-to-screen latency. A lower-lag exponential moving average was also tested, but retained more shake. The causal pipeline uses the one-hertz One Euro setting. The stronger smoothing setting reported separately in Appendix F has greater lag.",
+   "timing_extra_s": 0
+  },
+  "58": {
+   "title": "Derivation Camera and the chain Eqs 3 1 3 3 1 of 2",
+   "cue": "For a question about the y reflection or coordinate transformations.",
+   "spoken": "Camera' reverses the sensor's y coordinate while keeping the same origin, x, and z. That is a reflection and changes handedness. The later homogeneous transformations combine an orientation with the location of a frame's origin. A point needs both pieces. A direction needs only the orientation, because translating the origin does not change the direction itself. The transpose of an orthonormal orientation matrix expresses that direction in the reverse frame relationship.",
+   "timing_extra_s": 0
+  },
+  "59": {
+   "title": "Derivation Camera and the chain Eqs 3 4 3 6 2 of 2",
+   "cue": "For a question about the chain or inverse transformation.",
+   "spoken": "Each transformation maps between a neighbouring pair of frames. Multiplying them gives the relationship across the whole chain, such as the elbow frame relative to Camera'. Inverting a point transformation reverses both the orientation and the origin displacement: first subtract the translation, then apply the inverse orientation. Using only the inverse rotation would miss the fact that the frame origins are in different places.",
+   "timing_extra_s": 0
+  },
+  "60": {
+   "title": "Derivation Torso and root frame Eqs 3 7 3 9 1 of 2",
+   "cue": "For a question about the torso axes.",
+   "spoken": "The torso orientation comes from two measured directions: the hip line and the direction from the right hip towards the right shoulder. The hip line defines the person's rightward axis. A cross product supplies a direction perpendicular to those inputs. Normalising gives unit axes, so their magnitudes do not carry the lengths of the measured body segments. The following step completes an orthogonal frame.",
+   "timing_extra_s": 0
+  },
+  "61": {
+   "title": "Derivation Torso and root frame Eqs 3 10 3 12 2 of 2",
+   "cue": "For a question about orthogonalisation or the root origin.",
+   "spoken": "The second cross product completes the upward axis perpendicular to the other two. The three unit axes become the columns of the root orientation matrix, and the right-hip position supplies its origin. This constructs a frame from the measured torso geometry. If the required landmarks are unreliable or their geometry degenerates, the frame also becomes unreliable, so the acceptance and failure checks are needed.",
+   "timing_extra_s": 0
+  },
+  "62": {
+   "title": "Derivation Shoulder and elbow frames Eqs 3 13 3 14",
+   "cue": "For a question about moving from the torso to the arm.",
+   "spoken": "These transformations place the shoulder and elbow frames in the chain. Each contains the orientation relationship and the displacement to the next origin. Keeping those relationships local means that turning the torso carries the attached arm frames with it. The arm's own rotations can then be described relative to the torso instead of mixing them with the person's overall orientation in front of the camera.",
+   "timing_extra_s": 0
+  },
+  "63": {
+   "title": "Derivation Root Euler angles Eqs 3 15 3 17",
+   "cue": "For a question about rotation order or the 180-degree value.",
+   "spoken": "The angles are extracted from the root rotation matrix using the rotation order defined here. With column vectors, the rightmost factor acts first, so the order must be kept consistent when interpreting the matrix and applying the angles. The nominal hundred-and-eighty-degree value follows from a person facing the camera under these axis conventions. It is a relationship between frames. Comparing an angle triple from another convention directly would be misleading even if both describe the same orientation.",
+   "timing_extra_s": 0
+  },
+  "64": {
+   "title": "Derivation Shoulder swing and twist Eqs 3 18 3 23",
+   "cue": "For a question about twist observability.",
+   "spoken": "The upper-arm direction determines the swing but leaves rotation about the arm's own axis unresolved. To obtain that twist, I use the forearm direction after accounting for the swing. Its transverse components provide the remaining angular information. As the elbow straightens, those components approach zero and become sensitive to noise. At exact alignment, the landmark geometry cannot determine the twist. Retaining the previous value provides continuity through that interval, with a held state rather than a claim of a new observation.",
+   "timing_extra_s": 0
+  },
+  "65": {
+   "title": "Derivation Elbow coordinates Eq 3 24",
+   "cue": "For a question about computing the elbow angles.",
+   "spoken": "I express the unit forearm direction in the frame carried by the shoulder rotation, including its twist. Equation three point twenty-four reads the two local angular coordinates from that direction. The main bending example highlights the dominant flexion component, while this backup shows the full coordinate equations. Describing the forearm locally separates its movement relative to the upper arm from the rotation of the entire chain. Together with the three root and six shoulder coordinates, the four elbow coordinates give thirteen angles.",
+   "timing_extra_s": 0
+  },
+  "66": {
+   "title": "Derivation Object pose in World Eqs 4 1 4 2",
+   "cue": "For a question about object calibration or sample acceptance.",
+   "spoken": "The object-to-camera pose is combined with the calibrated camera-to-World transformation. That composition puts the object in the fixed desk reference. The next equation tests the suitability of a sample for the track: the marker must be detected, the pose finite, and the step from the previous accepted sample compatible with the allowed movement over the elapsed time. A detector returning a pose and the pipeline accepting that pose are therefore different events.",
+   "timing_extra_s": 0
+  },
+  "67": {
+   "title": "Derivation Grasp offset Eqs 5 1 5 4",
+   "cue": "For a question about the offset, its update, or offline information.",
+   "spoken": "I subtract the marker position from the wrist position and express that displacement in the marker's local axes. During a stable grasp, this local offset is approximately constant even if the object rotates in the room. Each clean observation updates it with a gain of zero point zero two. Each grasp interval is initialised separately, and the offset is held during wrist tracking loss. The offline implementation uses an interval mean during initialisation. That uses information from the completed interval, so the causal version replaces it with a running mean of the initial clean observations.",
+   "timing_extra_s": 0
+  },
+  "68": {
+   "title": "Derivation Direction memory and wrist target Eqs 5 5 5 7",
+   "cue": "For a question about the two sources of recovery information.",
+   "spoken": "Direction memory stores segment directions updated from measured endpoints. If the elbow is still measured, a missing wrist can be placed one forearm length away along its remembered direction. Object assistance instead obtains the wrist target from the current object pose and the stored grasp offset. The first relies on continuity of arm direction. The second relies on a stable hand-object relationship. Their assumptions differ, and this is one reason their performance can differ across movements.",
+   "timing_extra_s": 0
+  },
+  "69": {
+   "title": "Derivation Elbow circle and prior Eqs 5 8 5 10 1 of 2",
+   "cue": "For a question about the circle of solutions.",
+   "spoken": "The shoulder, elbow, and wrist form a triangle with fixed upper-arm and forearm lengths. The shoulder-to-wrist distance is also known. The law of cosines therefore fixes the elbow's axial position and perpendicular distance from that line. Rotating the triangle around the shoulder-to-wrist line preserves all three distances, so the possible elbows form a circle. The segment lengths used here are estimated from landmark-track medians. They are effective model lengths rather than an independent anatomical measurement.",
+   "timing_extra_s": 0
+  },
+  "70": {
+   "title": "Derivation Elbow circle and prior Eqs 5 11 5 12 2 of 2",
+   "cue": "For a question about selecting the elbow or geometric failure cases.",
+   "spoken": "The circle parameterisation contains a free angular choice. I choose it by removing the component of the remembered upper-arm direction along the shoulder-to-wrist axis, then normalising and scaling the remaining direction to the circle radius. This adds a directional prior to the endpoint geometry. Near full reach the circle shrinks, and a vanishing projected direction can also make the construction ill-conditioned. Guard rules and fallback states handle those cases. The construction does not make the hidden elbow uniquely observable.",
+   "timing_extra_s": 0
+  },
+  "71": {
+   "title": "Derivation Mapping into Scene Eq 6 1 1 of 2",
+   "cue": "For a question about the axis exchange.",
+   "spoken": "The matrix S exchanges the second and third World coordinates to obtain the display-axis convention. Exchanging a pair of axes changes handedness. It is therefore a coordinate conversion that must also be handled consistently for orientations. At this stage, the up axis follows the desk-marker normal. The later gravity alignment relates it to the scene's vertical direction.",
+   "timing_extra_s": 0
+  },
+  "72": {
+   "title": "Derivation Mapping into Scene Eqs 6 2 6 3 2 of 2",
+   "cue": "For a question about the several coordinate operations.",
+   "spoken": "The body and object start in different frames, so the body mapping includes the Camera' reflection, the calibrated camera relationship, and the display-axis conversion. These equations collect the linear operations and translation into a single transformation. The reflection and axis exchange are also the reason part of the combined mapping can be written as a ninety-degree rotation. The useful check is that the final transformation sends the same physical point to the same scene position whichever branch supplied it.",
+   "timing_extra_s": 0
+  },
+  "73": {
+   "title": "Derivation Rig chain and rest axes Eqs 6 4 6 5",
+   "cue": "For a question about retargeting the model onto the avatar.",
+   "spoken": "The model's segment frame and the avatar's bone frame can have different local axes. I compose the solved chain with the captured reference orientation of each bone and the calibrated scene placement. That accounts explicitly for the rig's rest axes. The object orientation has both its reference and local marker axes converted into the display convention. The rig mapping instead retains the bone-axis relationship through its rest-orientation factor. The rendered-joint evaluation then checks the output after that mapping and display processing.",
+   "timing_extra_s": 0
+  },
+  "74": {
+   "title": "Derivation Gravity and floor Eq 6 6",
+   "cue": "For a question about scene placement or its effect on errors.",
+   "spoken": "The gravity alignment sets the scene's vertical direction, and a translation places the floor relative to the desk reference. The offset is seventy-one point six centimetres for the shown recording. A common rigid rotation and translation preserve distances between points. They can change the scene's orientation and placement, but cannot reduce an existing landmark error or make a mismatched hand-object relationship physically correct.",
+   "timing_extra_s": 0
+  },
+  "75": {
+   "title": "Derivation Evaluation measures Eqs 7 1 7 2 1 of 2",
+   "cue": "For a question about object-length error or line fitting.",
+   "spoken": "For length accuracy, I take the Euclidean distance between reconstructed waypoint positions and compare it with the corresponding tape measurement. The absolute error is in centimetres. The relative error divides by the measured length. For this reason, the same absolute error matters more for the short lift. The line fit serves a separate purpose: it characterises how the samples spread around a fitted straight direction. Since that direction is fitted from the reconstructed samples, it is not an independently registered physical path.",
+   "timing_extra_s": 0
+  },
+  "76": {
+   "title": "Derivation Evaluation measures Eqs 7 3 7 6 2 of 2",
+   "cue": "For a question about the quantity the reported errors actually measure.",
+   "spoken": "The perpendicular distances to the fitted line describe transverse scatter about that line. The joint-position measure compares a reconstructed joint with its stated reference at the same frame. In the human reconstruction test, that reference is an accepted raw three-dimensional landmark. In the synthetic removal test, it is the unmasked reconstruction of the same frames. These are different comparisons, so their numbers should always be reported with the reference named. Neither comparison alone supplies independent ground-truth motion accuracy.",
+   "timing_extra_s": 0
+  },
+  "77": {
+   "title": "Backup the causal run from its process logs",
+   "cue": "For a timing question: the compute strip and the frame, rate, dropped and tick readouts.",
+   "spoken": "The same causal run replayed from its logs: the recorded frame, the reconstruction, the per-frame compute of the landmark branch and the merger stream, with the frame, rate, dropped-frame and tick readouts. About 29 frames per second over 900 frames, none dropped.",
+   "timing_extra_s": 0
+  }
+ }
+}

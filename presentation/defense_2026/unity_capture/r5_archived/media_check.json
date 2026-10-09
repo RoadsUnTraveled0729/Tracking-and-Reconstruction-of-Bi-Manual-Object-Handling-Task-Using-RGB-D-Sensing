@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "Complete decoding and metadata of both new videos; exact source-index joins and decoded poster agreement. Independent pose/axis checks and retained legacy failure are separate.",
+  "movies": [
+    {
+      "path": "presentation/defense_2026/unity_capture/r5_archived/Archived_Unity_R5_Model_Axes.mp4",
+      "sha256": "68998986c64b0363d823a34e0ec01f1ebca44bbc138b104ec4e3bcbaaa916c45",
+      "frames": 2098,
+      "full_decode": "PASS"
+    },
+    {
+      "path": "presentation/defense_2026/committee_materials/bank_revision/videos/p41-Archived_Pose_Replay_With_Model_Axes.mp4",
+      "sha256": "f60e4de15471645e5638e0e4527fddf94f3be11dc861ff36c4e08b1c18dc1771",
+      "frames": 750,
+      "full_decode": "PASS"
+    }
+  ],
+  "source_map_sha256": "b5390c05fb1488f6a86cc595ed8e0270f90d46ac02f4e18ea94967d445e4791f",
+  "max_source_time_error_s": 7.343749999222382e-07,
+  "poster_sha256": "8da37992bde10264f7506d53931ad730b4c0b60295f1c5983eb54e0a7dc9ec64",
+  "poster_source_frame": 1380,
+  "poster_output_frame": 480,
+  "poster_mean_absolute_channel_difference": 0.7915634645061729,
+  "validator_sha256": "62e4fff32e674e3795e3b163a98468ae17d1cde65aaa20862febda9975315d50"
+}

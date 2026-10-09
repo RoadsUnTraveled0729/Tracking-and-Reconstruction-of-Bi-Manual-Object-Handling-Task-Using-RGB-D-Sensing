@@ -1,0 +1,51 @@
+{
+ "stem": "recording_20260831_065553",
+ "alias": "r6b",
+ "generated_utc": "2026-09-14T19:03:19Z",
+ "rule": {
+  "arms": "eval/reports/<stem>_offset_fit.json segment_lengths_m: median landmark-to-landmark distance over the recording (eval/offset/carry.py seg_lengths), reused at 3 dp",
+  "torso": "E-031/E-035: median over frames with fail_torso == 0 of the distance from the recovery pelvis (angles_recovery.csv pel_x/y/z, y negated into the landmark camera frame) to the measured mid-shoulder of the filtered landmarks"
+ },
+ "segment_lengths_m": {
+  "upper_arm_R": 0.317,
+  "forearm_R": 0.205,
+  "upper_arm_L": 0.31,
+  "forearm_L": 0.257,
+  "torso": 0.5745
+ },
+ "torso_detail": {
+  "value_m": 0.5745,
+  "n_frames": 620,
+  "mask": "fail_torso==0",
+  "landmarks": "filtered",
+  "pelvis": "recovery pelvis, y negated"
+ },
+ "used_by_capture": true,
+ "capture_note": "E-031 to E-033 captures used the receiver default torsoM 0.576 m (this rule evaluated 2026-09-07; E-035 records 0.5745 for it) and the receiver's loop arm constants, not this recording's arm lengths.",
+ "sources": [
+  {
+   "path": "eval/reports/recording_20260831_065553_offset_fit.json",
+   "sha256": "3dfc6b7570c79b78882642912713ca7fe38126c3c065f874301bfd1b694d49cb"
+  },
+  {
+   "path": "eval/output/recovery_r6b/angles_recovery.csv",
+   "sha256": "8f617768b38db2ecac55b135303f8bd8f0273615a8732079e68868f5047e1d74"
+  },
+  {
+   "path": "eval/output/recovery_r6b/failure_mask.csv",
+   "sha256": "b8fe75b4a40cb67e799a0c14794651f0fe91a566aedd8dd0694cabd16a53b659"
+  },
+  {
+   "path": "v1/mediapipe/output/recording_20260831_065553_landmarks_filtered.csv",
+   "sha256": "7c52c0725b78cf5a1a532b3ef2377c9e3a778f6beef6c1b3ca60a6c3c051652c"
+  },
+  {
+   "path": "eval/failure/recovery_core.py",
+   "sha256": "879c56426a6f8e1d673aab6543d59c9bd220b14ecdd5130cf38f0833f9db114b"
+  },
+  {
+   "path": "eval/unity_check/make_rig_sizing.py",
+   "sha256": "159510100e51d8016dbb0abac59efa038e7e4413faa31147937a64017e0553d9"
+  }
+ ]
+}

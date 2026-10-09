@@ -1,0 +1,1135 @@
+Unity Editor version:    6000.3.19f1 (7689f4515d75)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              NO
+System name:             Linux
+Distro version:          #63-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 15 19:04:15 UTC 2025
+Kernel version:          6.8.0-60-generic
+Architecture:            x86_64
+Available memory:        63389 MB
+Date:                    2026-09-09T07:52:16Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-luo doesn't exist
+[Licensing::Module] Successfully launched the LicensingClient (PId: 46233)
+Selected window backend: (null) 
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luo" at "2026-09-09T07:52:17.150987Z"
+[SignatureVerifier] Application signature verification not supported on this platform.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              78ae69ab1c23418a9a39d89b4de5137e
+  Correlation Id:          8262c3c45c487a3517d82f6106100cde
+  External correlation Id: 102079936518504970
+  Machine Id:              9mgx+HwmGmq3pSnv8Lxr+FXHW1c=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-luo" (connect: 0.25s, validation: 0.03s, handshake: 0.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-luo-notifications" at "2026-09-09T07:52:17.177606Z"
+[Licensing::Module] Connected to LicensingClient (PId: 46233, launch time: 0.00, total connection time: 0.27s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+Desktop is 3408 x 2130 @ 60 Hz
+Initialize udev device monitor.
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 3574195831091-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+
+COMMAND LINE ARGUMENTS:
+/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Unity
+-projectPath
+/home/luo/Desktop/New_SandBox/Unity
+-logFile
+/home/luo/Desktop/New_SandBox/writing/v8/condensed/figures/src/ch7_handover_trails/editor.log
+Successfully changed project path to: /home/luo/Desktop/New_SandBox/Unity
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.29s
+/home/luo/Desktop/New_SandBox/Unity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [126222998899520]  Target information:
+
+Player connection [126222998899520]  * "[IP] 172.16.63.161 [Port] 55504 [Flags] 2 [Guid] 2874128432 [EditorId] 2874128432 [Version] 1048832 [Id] LinuxEditor(16,172.16.63.161) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [126222998899520]  * "[IP] 172.16.149.120 [Port] 55504 [Flags] 2 [Guid] 2874128432 [EditorId] 2874128432 [Version] 1048832 [Id] LinuxEditor(16,172.16.63.161) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [126222998899520]  * "[IP] 100.68.248.77 [Port] 55504 [Flags] 2 [Guid] 2874128432 [EditorId] 2874128432 [Version] 1048832 [Id] LinuxEditor(16,172.16.63.161) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [126222998899520]  * "[IP] 192.168.195.193 [Port] 55504 [Flags] 2 [Guid] 2874128432 [EditorId] 2874128432 [Version] 1048832 [Id] LinuxEditor(16,172.16.63.161) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [126222998899520]  * "[IP] 172.17.0.1 [Port] 55504 [Flags] 2 [Guid] 2874128432 [EditorId] 2874128432 [Version] 1048832 [Id] LinuxEditor(16,172.16.63.161) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+
+Player connection [126222998899520] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [126222998899520] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-46198" after 0.0 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 1 unused hashed content files
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.19f1 (7689f4515d75)
+[Subsystems] Discovering subsystems at path /home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/luo/Desktop/New_SandBox/Unity/Assets
+kGfxThreadingModeSplitJobs is not supported on OpenGL Core. Reverting to kGfxThreadingModeDirect instead.
+GfxDevice: creating device client; kGfxThreadingModeDirect
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+Renderer: NVIDIA GeForce RTX 3080/PCIe/SSE2
+Vendor:   NVIDIA Corporation
+Version:  4.5.0 NVIDIA 575.57.08
+GLES:     0
+ GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragmen
+t_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoki
+ng_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_A
+RB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_t
+ranspose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters 
+GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_multiview_texture_multisample GL_EXT_multiview_timer_query GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod G
+L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_fd GL_NV_memory_object_sparse GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_fd GL_NV_timeline_semaphore GL_KHR_shader_subgroup GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_
+blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap GL_NV_conservative_raster_pre_snap_triangles GL_NV_conservative_raster_underestimation GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_barycentric GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_sha
+der_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_program_multiview GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_primitive_shading_rate GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_obje
+ct GL_NV_shader_subgroup_partitioned GL_NV_shader_texture_footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_dirty_tile_map GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_uniform_buffer_std430_layout GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_b
+lend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1946895256
+Initialize mono
+Mono path[0] = '/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed'
+Mono path[1] = '/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
+Mono config path = '/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56198
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001250 seconds.
+- Loaded All Assemblies, in  0.222 seconds
+Native extension for LinuxStandalone target not found
+Package Manager log level set to [2]
+[Licensing::Client] Successfully resolved entitlement details
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.112 seconds
+Domain Reload Profiling: 1334ms
+	BeginReloadAssembly (63ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (98ms)
+		LoadAssemblies (49ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (96ms)
+			TypeCache.Refresh (95ms)
+				TypeCache.ScanAssembly (87ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (1113ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1087ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (49ms)
+			ProcessInitializeOnLoadAttributes (92ms)
+			ProcessInitializeOnLoadMethodAttributes (916ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 41 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.inference@2.6.1 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ai.inference@9a123aee5df7)
+    com.unity.ai.navigation@2.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ai.navigation@f6367599281e)
+    com.unity.collab-proxy@2.2.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.collab-proxy@b26119cdd155)
+    com.unity.ide.rider@3.0.27 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ide.rider@8ca554ad34c2)
+    com.unity.ide.visualstudio@2.0.22 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ide.visualstudio@8140e851d83e)
+    com.unity.inputsystem@1.19.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.inputsystem@21a28c3a6c83)
+    com.unity.timeline@1.8.6 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.timeline@9ac0df085fa8)
+    com.unity.visualscripting@1.9.1 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.visualscripting@80ee0eef820c)
+    com.unity.burst@1.8.29 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.burst@6bb9aca3ef38)
+    com.unity.dt.app-ui@2.1.1 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.dt.app-ui@8ac7e730dd5d)
+    com.unity.collections@2.6.6 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.collections@9796e5ee0d9e)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.searcher@4.9.4 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.searcher@d45a78918735)
+    com.unity.mathematics@1.3.3 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.mathematics@19a9377c4ffa)
+    com.unity.nuget.mono-cecil@1.11.6 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.render-pipelines.universal@17.3.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.render-pipelines.universal@f7b470395a83)
+    com.unity.test-framework@1.6.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.test-framework@0bd5c5194236)
+    com.unity.ugui@2.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ugui@54a524a91133)
+    com.unity.modules.jsonserialize@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.jsonserialize)
+    com.unity.modules.ui@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.ui)
+    com.unity.modules.imgui@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.imgui)
+    com.unity.modules.audio@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.audio)
+    com.unity.modules.director@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.director)
+    com.unity.modules.animation@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.animation)
+    com.unity.modules.particlesystem@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.particlesystem)
+    com.unity.ext.nunit@2.0.5 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.ext.nunit@ec2d0043d6fc)
+    com.unity.render-pipelines.core@17.3.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.render-pipelines.core@ccb268ead2a8)
+    com.unity.shadergraph@17.3.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.shadergraph@f971f442e900)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.render-pipelines.universal-config@dbe3fd082d8f)
+    com.unity.modules.uielements@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.uielements)
+    com.unity.modules.ai@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.ai)
+    com.unity.modules.imageconversion@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.imageconversion)
+    com.unity.modules.physics@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.screencapture)
+    com.unity.modules.unitywebrequest@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.unitywebrequest)
+    com.unity.modules.terrain@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.terrain)
+    com.unity.modules.hierarchycore@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.hierarchycore)
+    com.unity.modules.androidjni@1.0.0 (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.unity.modules.androidjni)
+  Git packages:
+    com.coplaydev.unity-mcp@https://github.com/CoplayDev/unity-mcp.git?path=/MCPForUnity#main (location: /home/luo/Desktop/New_SandBox/Unity/Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://unix:/tmp/ilpp.sock-fd8430197386cf09c66ce2755af43fed
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/luo/Desktop/New_SandBox/Unity/
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 22.9734ms
+Starting: /home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/bee_backend --ipc --defer-dag-verification --dagfile="Library/Bee/2400b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: /home/luo/Desktop/New_SandBox/Unity
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
+[40m[1m[33mwarn[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll" in favor of "/home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll"
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.5.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.nuget.mono-cecil@ecb9724e46ff/Mono.Cecil.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 32.1541ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp.dll, with 133 defines and 307 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library/Bee/artifacts/2400b0aE.dag/Unity.Collections.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with /home/luo/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.6.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library/PackageCache/com.unity.burst@6bb9aca3ef38/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 230.2942ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp-Editor.dll, with 131 defines and 347 references
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 19.2075ms
+ExitCode: 0 Duration: 1s721ms
+[718/946    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[938/946    1s] Csc Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp.dll (+2 others)
+[939/946    0s] ILPostProcess Library/Bee/artifacts/2400b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp.dll, with 133 defines and 307 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[940/946    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[941/946    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[942/946    0s] Csc Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[943/946    0s] ILPostProcess Library/Bee/artifacts/2400b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/2400b0aE.dag/Assembly-CSharp-Editor.dll, with 131 defines and 347 references
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[944/946    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[945/946    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.70 seconds), 9 items updated, 946 evaluated
+AssetDatabase: script compilation time: 2.024626s
+Total cache size 266980072
+Total cache size after purge 266980072, took 00:00:00.0636916
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.477 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
+Native extension for LinuxStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.771 seconds
+Domain Reload Profiling: 3247ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (320ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (172ms)
+			TypeCache.Refresh (129ms)
+				TypeCache.ScanAssembly (119ms)
+			BuildScriptInfoCaches (35ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (2771ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2626ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (2230ms)
+			ProcessInitializeOnLoadMethodAttributes (260ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=b244d650fcbc5ccb6ab0abe20b527426): Total: 6.081 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=3329 ms
+		Asset DB Callback time: managed=202 ms, native=8 ms
+		Scripting: domain reloads=1, domain reload time=480 ms, compile time=2026 ms, other=34 ms
+		Project Asset Count: scripts=1457, non-scripts=4314
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 1
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 3.235ms
+	ApplyChangesToAssetFolders: 0.201ms
+	Scan: 326.720ms
+	OnSourceAssetsModified: 0.600ms
+	CategorizeAssetsWithTransientArtifact: 27.510ms
+	ProcessAssetsWithTransientArtifactChanges: 54.182ms
+	CategorizeAssets: 65.328ms
+	ImportOutOfDateAssets: 2779.703ms (751.844ms without children)
+		CompileScripts: 2025.814ms
+		ReloadNativeAssets: 0.022ms
+		UnloadImportedAssets: 0.741ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.546ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.735ms
+	PostProcessAllAssets: 203.858ms
+	Hotreload: 3.384ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 2.012ms
+	PersistCurrentRevisions: 0.111ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 6.739ms
+	Untracked: 2614.137ms
+
+Application.AssetDatabase Initial Refresh End
+AutoLocale: current locale expects 'C' but got 'en_CA.UTF-8'Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Scanning for USB devices : 8.940ms
+Initializing Unity extensions:
+UpdateMenuTitleForLanguage: 10
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Unity
+Unloading 60 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/rig.unity'
+	Deserialize:            3.553 ms
+	Integration:            164.927 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   168.486 ms
+Unloading 7829 unused Assets / (22.4 MB). Loaded Objects now: 8845.
+Memory consumption went from 232.9 MB to 210.5 MB.
+Total: 15.241445 ms (FindLiveObjects: 0.758405 ms CreateObjectMapping: 0.224554 ms MarkObjects: 7.255636 ms  DeleteObjects: 7.002410 ms)
+
+[LAYOUT] About to load UserSettings/Layouts/default-6000.dwlt, keepMainWindow=False
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+[LAYOUT] About to save layout /home/luo/Desktop/New_SandBox/Unity/UserSettings/Layouts/default-6000.dwlt
+[LAYOUT] About to save layout /home/luo/.config/unity3d/Preferences/Editor-5.x/Layouts/current/default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+Disable old input system
+[Project] Loading completed in 9.839 seconds
+	Project init time: 				8.491 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.031 seconds
+		Asset Database init time: 		0.108 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			1.345 seconds
+		Unity extensions init time: 	0.009 seconds
+		Asset Database refresh time: 	6.085 seconds
+	Scene opening time: 			1.026 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1788940346727,"processId":46198,"projectLoad":9.839407675,"projectInit":8.491117403,"templateInit":0.0,"packageManagerInit":0.031225186,"assetDatabaseInit":0.108431145,"globalIlluminationInit":0.003606502,"assembliesLoad":1.344760981,"unityExtensionsInit":0.009360067,"assetDatabaseRefresh":6.085458623,"sceneOpening":1.026225453}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1788940346727,"processId":46198,"editorVersion":"6000.3.19f1 (7689f4515d75)","branch":"6000.3/staging","buildType":"Release","platform":"Linux"}
+Asset Pipeline Refresh (id=1c321ec87f9545269a78488b448d16aa): Total: 0.160 seconds - Initiated by RefreshV2(ForceSynchronousImport)
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: [StartupConfigRewrite] refreshed 5 client config(s).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.StartupConfigRewrite:RunOnce () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/StartupConfigRewrite.cs:59)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:407)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Starting local HTTP server… (first run may take a minute while dependencies install)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.ServerManagementService:StartLocalHttpServer (bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/ServerManagementService.cs:343)
+MCPForUnity.Editor.Services.HttpAutoStartHandler/<AutoStartAsync>d__3:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/HttpAutoStartHandler.cs:86)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<MCPForUnity.Editor.Services.HttpAutoStartHandler/<AutoStartAsync>d__3> (MCPForUnity.Editor.Services.HttpAutoStartHandler/<AutoStartAsync>d__3&)
+MCPForUnity.Editor.Services.HttpAutoStartHandler:AutoStartAsync ()
+MCPForUnity.Editor.Services.HttpAutoStartHandler:OnEditorReady () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/HttpAutoStartHandler.cs:58)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:407)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Starting local HTTP server… (first run may take a minute while dependencies install)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.ServerManagementService:StartLocalHttpServer (bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/ServerManagementService.cs:343)
+McpAutoStart/<StartAsync>d__2:MoveNext () (at Assets/Editor/McpAutoStart.cs:42)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:Start<McpAutoStart/<StartAsync>d__2> (McpAutoStart/<StartAsync>d__2&)
+McpAutoStart:StartAsync ()
+McpAutoStart/<>c:<.cctor>b__1_0 () (at Assets/Editor/McpAutoStart.cs:29)
+UnityEditor.EditorApplication:Internal_CallDelayFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:407)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Created GICache directory at /home/luo/.cache/unity3d/GiCache. Took: 0.002s, timestamps: [10.136 - 10.138]
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Server ready on http://127.0.0.1:8080
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.HttpAutoStartHandler/<WaitForServerAndConnectAsync>d__4:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/HttpAutoStartHandler.cs:132)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:156)
+UnityEngine.UnitySynchronizationContext:Exec () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:84)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+<b><color=#cc3333>MCP-FOR-UNITY</color></b>: [WebSocket] Connection failed. Check that the server URL is correct, the server is running, and your API key (if required) is valid. (Detail: Unable to connect to the remote server)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+MCPForUnity.Editor.Helpers.McpLog:Error (string) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:50)
+MCPForUnity.Editor.Services.Transport.Transports.WebSocketTransportClient/<EstablishConnectionAsync>d__38:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/Transports/WebSocketTransportClient.cs:295)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task:FinishStageTwo ()
+System.Threading.Tasks.Task:Finish (bool)
+System.Threading.Tasks.Task:TrySetException (object)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetException (System.Exception)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:SetException (System.Exception)
+System.Net.WebSockets.ClientWebSocket/<ConnectAsyncCore>d__16:MoveNext ()
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task:FinishStageTwo ()
+System.Threading.Tasks.Task:Finish (bool)
+System.Threading.Tasks.Task:TrySetException (object)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Threading.Tasks.VoidTaskResult>:SetException (System.Exception)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder:SetException (System.Exception)
+System.Net.WebSockets.WebSocketHandle/<ConnectAsyncCore>d__26:MoveNext ()
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<System.Net.Sockets.Socket>:TrySetResult (System.Net.Sockets.Socket)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Net.Sockets.Socket>:SetResult (System.Net.Sockets.Socket)
+System.Net.WebSockets.WebSocketHandle/<ConnectSocketAsync>d__27:MoveNext ()
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:RunOrScheduleAction (System.Action,bool,System.Threading.Tasks.Task&)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Threading.Tasks.TaskCompletionSource`1<bool>:TrySetResult (bool)
+System.Net.Sockets.Socket/<>c:<ConnectAsync>b__10_0 (System.IAsyncResult)
+System.Net.Sockets.SocketAsyncResult/<>c:<Complete>b__27_0 (object)
+System.Threading.QueueUserWorkItemCallback:System.Threading.IThreadPoolWorkItem.ExecuteWorkItem ()
+System.Threading.ThreadPoolWorkQueue:Dispatch ()
+System.Threading._ThreadPoolWaitCallback:PerformWaitCallback ()
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 50)
+
+[Licensing::Client] Successfully resolved entitlement details
+McpAutoStart: MCP server up, session connected
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+McpAutoStart/<StartAsync>d__2:MoveNext () (at Assets/Editor/McpAutoStart.cs:58)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.BridgeControlService/<StartAsync>d__13:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/BridgeControlService.cs:115)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.TransportManager/<StartAsync>d__9:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/TransportManager.cs:66)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.Transports.WebSocketTransportClient/<StartAsync>d__33:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/Transports/WebSocketTransportClient.cs:130)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:156)
+UnityEngine.UnitySynchronizationContext:Exec () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:84)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)
+
+(Filename: Assets/Editor/McpAutoStart.cs Line: 58)
+
+<b><color=#cc7a00>MCP-FOR-UNITY</color></b>: Failed to start MCP transport: Http
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+MCPForUnity.Editor.Helpers.McpLog:Warn (string) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:45)
+MCPForUnity.Editor.Services.BridgeControlService/<StartAsync>d__13:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/BridgeControlService.cs:106)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.TransportManager/<StartAsync>d__9:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/TransportManager.cs:66)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.Transports.WebSocketTransportClient/<StartAsync>d__33:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/Transports/WebSocketTransportClient.cs:130)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:156)
+UnityEngine.UnitySynchronizationContext:Exec () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:84)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 45)
+
+[Licensing::Client] Successfully resolved entitlement details
+Starting new worker id: 0 with log in /home/luo/Desktop/New_SandBox/Unity/Logs/AssetImportWorker0.log
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Server ready on http://127.0.0.1:8080
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.HttpAutoStartHandler/<WaitForServerAndConnectAsync>d__4:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/HttpAutoStartHandler.cs:132)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:156)
+UnityEngine.UnitySynchronizationContext:Exec () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:84)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Session connected
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.HttpAutoStartHandler/<WaitForServerAndConnectAsync>d__4:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/HttpAutoStartHandler.cs:136)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.BridgeControlService/<StartAsync>d__13:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/BridgeControlService.cs:115)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.TransportManager/<StartAsync>d__9:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/TransportManager.cs:66)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.AwaitTaskContinuation:InvokeAction (object)
+System.Threading.Tasks.AwaitTaskContinuation:RunCallback (System.Threading.ContextCallback,object,System.Threading.Tasks.Task&)
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation:Run (System.Threading.Tasks.Task,bool)
+System.Threading.Tasks.Task:FinishContinuations ()
+System.Threading.Tasks.Task:FinishStageThree ()
+System.Threading.Tasks.Task`1<bool>:TrySetResult (bool)
+System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<bool>:SetResult (bool)
+MCPForUnity.Editor.Services.Transport.Transports.WebSocketTransportClient/<StartAsync>d__33:MoveNext () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/Transport/Transports/WebSocketTransportClient.cs:130)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:InvokeMoveNext (object)
+System.Threading.ExecutionContext:RunInternal (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Threading.ExecutionContext:Run (System.Threading.ExecutionContext,System.Threading.ContextCallback,object,bool)
+System.Runtime.CompilerServices.AsyncMethodBuilderCore/MoveNextRunner:Run ()
+System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation/<>c:<.cctor>b__7_0 (object)
+UnityEngine.UnitySynchronizationContext/WorkRequest:Invoke () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:156)
+UnityEngine.UnitySynchronizationContext:Exec () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:84)
+UnityEngine.UnitySynchronizationContext:ExecuteTasks () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/UnitySynchronizationContext.cs:110)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+Worker ready: AssetImportWorker0 0
+Starting new worker id: 1 with log in /home/luo/Desktop/New_SandBox/Unity/Logs/AssetImportWorker1.log
+[Worker0] Start importing Assets/Scripts/Chapter7TrailView.cs using Guid(6fe8faa2f0e36182192353d93c6b2c3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) 
+[Worker0] (ScriptedImporter)
+[Worker0]  -> (artifact id: 'c4977d0b9547441f5dda569e2ff2f619') in 0.041252488 seconds
+Worker ready: AssetImportWorker1 1
+[EvalPlayBootstrap] entering play mode
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EvalPlayBootstrap:Tick () (at Assets/Editor/EvalPlayBootstrap.cs:111)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: Assets/Editor/EvalPlayBootstrap.cs Line: 111)
+
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.594 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
+Native extension for LinuxStandalone target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.582 seconds
+Domain Reload Profiling: 2178ms
+	BeginReloadAssembly (397ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (43ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (271ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (154ms)
+		LoadAssemblies (64ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (107ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1582ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (889ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (681ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (369ms)
+Asset Pipeline Refresh (id=2b6e8fa43aea74cd38bef8275cae6f0f): Total: 2.306 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1681 ms
+		Asset DB Callback time: managed=18 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=605 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=1457, non-scripts=4314
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.321ms
+	ApplyChangesToAssetFolders: 0.197ms
+	Scan: 0.001ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.001ms
+	ProcessAssetsWithTransientArtifactChanges: 4.732ms
+	CategorizeAssets: 50.114ms
+	ImportOutOfDateAssets: 1589.579ms (1585.749ms without children)
+		CompileScripts: 0.722ms
+		CollectScriptTypesHashes: 0.942ms
+		ReloadNativeAssets: 0.540ms
+		UnloadImportedAssets: 0.749ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.533ms
+		InitializingProgressBar: 0.000ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.344ms
+	PostProcessAllAssets: 18.602ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.228ms
+	UnloadStreamsBegin: 1.359ms
+	PersistCurrentRevisions: 0.133ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 2.320ms
+	Untracked: 640.624ms
+
+[IntegratedSceneReceiver] torsoM override 0.576 -> 0.517 m (/tmp/r5_torso_m)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:Awake () (at Assets/Scripts/IntegratedSceneReceiver.cs:120)
+UnityEngine.GameObject:Internal_AddComponentWithType (System.Type)
+UnityEngine.GameObject:AddComponent (System.Type) (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:246)
+UnityEngine.GameObject:AddComponent<IntegratedSceneReceiver> () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/GameObject.bindings.cs:251)
+IntegratedSceneReceiver:BootstrapIntegrated () (at Assets/Scripts/IntegratedSceneReceiver.cs:98)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 120)
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.920 ms
+	Integration:            188.383 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   189.311 ms
+[PoseStream] Could not open /dev/shm/pose_stream (/dev/shm/pose_stream). Start the Python sender first, or switch transport to Udp. Retrying...
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+PoseStreamReceiver:OpenSharedMemory () (at Assets/Scripts/PoseStreamReceiver.cs:121)
+PoseStreamReceiver:Start () (at Assets/Scripts/PoseStreamReceiver.cs:75)
+
+(Filename: Assets/Scripts/PoseStreamReceiver.cs Line: 121)
+
+[ArmAngleReceiver] shm not available yet: /dev/shm/pose_arm
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogWarning (object)
+ArmAngleReceiver:Start () (at Assets/Scripts/ArmAngleReceiver.cs:108)
+
+(Filename: Assets/Scripts/ArmAngleReceiver.cs Line: 108)
+
+[ArucoSceneReceiver] scene built: gravity (-0.02, 0.85, 0.53), drop -0.011 m, cube 0.070 m, FOVy 43.1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+ArucoSceneReceiver:Start () (at Assets/Scripts/ArucoSceneReceiver.cs:344)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:150)
+
+(Filename: Assets/Scripts/ArucoSceneReceiver.cs Line: 344)
+
+[IntegratedSceneReceiver] rig rest height 3.252 m -> scaled x0.523 to 1.70 m
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:197)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 197)
+
+[IntegratedSceneReceiver] DEF-upper_arm.R spawn pose vs T-pose: upper 8.2 deg, forearm 5.7 deg (aligned)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:AlignArm (UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3) (at Assets/Scripts/IntegratedSceneReceiver.cs:270)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:217)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 270)
+
+[IntegratedSceneReceiver] DEF-upper_arm.L spawn pose vs T-pose: upper 8.2 deg, forearm 5.7 deg (aligned)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:AlignArm (UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Vector3) (at Assets/Scripts/IntegratedSceneReceiver.cs:270)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:218)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 270)
+
+[IntegratedSceneReceiver] torso 0.535 -> 0.517 m (x0.965)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:228)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 228)
+
+[IntegratedSceneReceiver] DEF-upper_arm.R: upper 0.210 -> 0.256 m (x1.221), forearm 0.285 -> 0.252 m
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:MatchArm (UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Transform,single,single) (at Assets/Scripts/IntegratedSceneReceiver.cs:287)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:232)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 287)
+
+[IntegratedSceneReceiver] DEF-upper_arm.L: upper 0.210 -> 0.262 m (x1.250), forearm 0.285 -> 0.247 m
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:MatchArm (UnityEngine.Transform,UnityEngine.Transform,UnityEngine.Transform,single,single) (at Assets/Scripts/IntegratedSceneReceiver.cs:287)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:233)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 287)
+
+[IntegratedSceneReceiver] rig dimensions -> /home/luo/Desktop/New_SandBox/v1/integration/output/rig_dimensions.csv
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:DumpRigDimensions () (at Assets/Scripts/IntegratedSceneReceiver.cs:315)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:235)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 315)
+
+[IntegratedSceneReceiver] person anchored at (-0.01, 0.15, -0.56) euler (355.99, 359.46, 357.90)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+IntegratedSceneReceiver:Start () (at Assets/Scripts/IntegratedSceneReceiver.cs:257)
+
+(Filename: Assets/Scripts/IntegratedSceneReceiver.cs Line: 257)
+
+[Licensing::Client] Successfully resolved entitlement details
+[Chapter7TrailView] captured right at 863
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Chapter7TrailView:Capture (Chapter7TrailView/Phase,int) (at Assets/Scripts/Chapter7TrailView.cs:226)
+Chapter7TrailView:LateUpdate () (at Assets/Scripts/Chapter7TrailView.cs:260)
+
+(Filename: Assets/Scripts/Chapter7TrailView.cs Line: 226)
+
+[Chapter7TrailView] captured handover at 1022
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Chapter7TrailView:Capture (Chapter7TrailView/Phase,int) (at Assets/Scripts/Chapter7TrailView.cs:226)
+Chapter7TrailView:LateUpdate () (at Assets/Scripts/Chapter7TrailView.cs:260)
+
+(Filename: Assets/Scripts/Chapter7TrailView.cs Line: 226)
+
+TrimDiskCacheJob: Current cache size 0mb
+[Chapter7TrailView] captured left at 1498
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Chapter7TrailView:Capture (Chapter7TrailView/Phase,int) (at Assets/Scripts/Chapter7TrailView.cs:226)
+Chapter7TrailView:LateUpdate () (at Assets/Scripts/Chapter7TrailView.cs:260)
+
+(Filename: Assets/Scripts/Chapter7TrailView.cs Line: 226)
+
+[EvalPlayBootstrap] stop flag -> leaving play mode
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EvalPlayBootstrap:Tick () (at Assets/Editor/EvalPlayBootstrap.cs:77)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: Assets/Editor/EvalPlayBootstrap.cs Line: 77)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.815 ms
+	Integration:            168.270 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   169.094 ms
+Unloading 20 unused Assets / (173.7 KB). Loaded Objects now: 9960.
+Memory consumption went from 374.0 MB to 373.8 MB.
+Total: 13.350557 ms (FindLiveObjects: 0.461979 ms CreateObjectMapping: 0.096762 ms MarkObjects: 12.756516 ms  DeleteObjects: 0.034940 ms)
+
+[EvalPlayBootstrap] quit flag -> exiting editor
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+EvalPlayBootstrap:Tick () (at Assets/Editor/EvalPlayBootstrap.cs:87)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: Assets/Editor/EvalPlayBootstrap.cs Line: 87)
+
+[LAYOUT] About to save layout /home/luo/Desktop/New_SandBox/Unity/UserSettings/Layouts/default-6000.dwlt
+[LAYOUT] About to save layout /home/luo/.config/unity3d/Preferences/Editor-5.x/Layouts/current/default-6000.dwlt
+<b><color=#2EA3FF>MCP-FOR-UNITY</color></b>: Stopped local HTTP server on port 8080 (PID: 46868)
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /home/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+MCPForUnity.Editor.Helpers.McpLog:Info (string,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs:40)
+MCPForUnity.Editor.Services.ServerManagementService:StopLocalHttpServerInternal (bool,System.Nullable`1<int>,bool) (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/ServerManagementService.cs:850)
+MCPForUnity.Editor.Services.ServerManagementService:StopManagedLocalHttpServer () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/ServerManagementService.cs:415)
+MCPForUnity.Editor.Services.McpEditorShutdownCleanup:OnEditorQuitting () (at ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Services/McpEditorShutdownCleanup.cs:50)
+UnityEditor.EditorApplication:Internal_EditorApplicationQuit () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:128)
+EvalPlayBootstrap:Tick () (at Assets/Editor/EvalPlayBootstrap.cs:88)
+UnityEditor.EditorApplication:Internal_CallUpdateFunctions () (at /home/bokken/build/output/unity/unity/Editor/Mono/EditorApplication.cs:392)
+
+(Filename: ./Library/PackageCache/com.coplaydev.unity-mcp@4ee62b097584/Editor/Helpers/McpLog.cs Line: 40)
+
+Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter)The command could not be loaded, possibly because:
+  * You intended to execute a .NET application:
+      The application 'build-server' does not exist.
+  * You intended to execute a .NET SDK command:
+      No .NET SDKs were found.
+
+Download a .NET SDK:
+https://aka.ms/dotnet-download
+
+Learn about SDK resolution:
+https://aka.ms/dotnet/sdk-not-found
+ -> (artifact id: '843d4c03bcb159add3ce27cfb36b77b5') in 0.004599172 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Asset Pipeline Refresh (id=077502972217a81a6aaecbba645d5042): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-luo-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-luo channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+[40m[32minfo[39m[22m[49m: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      ALC ILPP context 1 is unloading
+Cleanup mono
+debugger-agent: Unable to listen on 71
+[Package Manager] Server process was shutdown
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1788940404593,"processId":46198,"allocatedMemory":17019782,"memoryLabels":[{"Default":24121},{"Permanent":15960},{"Thread":1084616},{"Manager":841001},{"VertexData":8},{"Geometry":408},{"Texture":432},{"Shader":82180},{"Material":24},{"GfxDevice":36688},{"Animation":456},{"Audio":2656},{"FreeType":8},{"FontEngine":736},{"Physics":2146},{"Physics2D":16},{"Serialization":93896},{"Input":26888},{"JobScheduler":33024},{"TextLib":32952},{"Mono":32},{"MonoCode":96},{"ScriptingNativeRuntime":155096},{"BaseObject":1622856},{"Resource":1064},{"Renderer":3000},{"Transform":4717},{"File":3745},{"WebCam":80},{"Culling":32},{"Terrain":11298},{"Wind":24},{"String":46713},{"DynamicArray":106397},{"HashMap":144845},{"Utility":2669952},{"PoolAlloc":2672},{"AI":80},{"TypeTree":12461},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7384},{"Director":8208},{"CloudService":13808},{"WebRequest":7653},{"VR":47754},{"SceneManager":536},{"Video":64},{"LazyScriptCache":32},{"NativeArray":1080},{"Camera":17},{"Secure":10337},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57552},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":1416},{"CoreStats":13112},{"Identifiers":6480},{"Gui":268037},{"EditorUtility":210138},{"VersionControl":4},{"Undo":979},{"AssetDatabase":8965236},{"EditorGi":328},{"UnityConnect":29536},{"Upm":1744},{"AssetCompliance":64},{"DrivenProperties":72},{"LocalIPC":194},{"ProfilerEditor":9746},{"CoreBusinessMetrics":2335},{"Licensing":688},{"AssetReference":32},{"IPCStream":32}]}

@@ -1,0 +1,48 @@
+{
+  "name": "teaching_frame_journey",
+  "dimensions": [
+    1440,
+    1080
+  ],
+  "editorial_duration_seconds": 48,
+  "editorial_gif_fps": 10,
+  "mp4_fps": 30,
+  "timing_scope": "Teaching holds and movement; not measured system timing",
+  "loop_transition": "Final held teaching stage restarts at stage one",
+  "sources": [
+    "v2/common/shm_ring.py",
+    "v2/common/person_shm_v2.py",
+    "v2/integration/v2_integrate.py",
+    "Unity/Assets/Scripts/IntegratedSceneReceiverV2.cs"
+  ],
+  "status": "PASS",
+  "max_visible_words": 10,
+  "min_font_px": 42,
+  "checked_frames": 2059,
+  "gif_decoded_frames": 124,
+  "gif_duration_ms": 48000,
+  "gif_loop": 0,
+  "gif_quantized_source_comparison": "PASS: every stored frame",
+  "mp4_full_decode": "PASS",
+  "mp4_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1440,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "48.000000"
+    }
+  },
+  "sha256": {
+    "gif": "ef50e6c695e111dd0d45a20108ea21c943bac9f47d5278e4c137be180caee683",
+    "mp4": "ac76044b7754cde4bad868796e9a258b991adf447f1e6272535e55bcc66f0cdd",
+    "png": "4178ef3b98fb2ea07b9341580db2e329da5d2b2b02de4c425d38445ca8ff59d4"
+  },
+  "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff"
+}

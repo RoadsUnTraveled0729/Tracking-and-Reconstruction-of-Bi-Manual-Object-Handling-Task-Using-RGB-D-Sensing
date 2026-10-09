@@ -1,0 +1,63 @@
+{
+ "stem": "recording_20260909_000024",
+ "streamed": 1499,
+ "applied_person_frames": 1498,
+ "pngs": 1498,
+ "max_pelvis_diff_m": 5.561796636022187e-07,
+ "max_object_pos_diff_m": 0.0,
+ "max_hip_diff_m": 6.857038695878837e-07,
+ "hand_reprojection": {
+  "right": {
+   "clean": {
+    "n": 1165,
+    "median_px": 10.632394301045728,
+    "p95_px": 21.74593125067021
+   },
+   "arm_only": {
+    "n": 0
+   },
+   "torso_only": {
+    "n": 326,
+    "median_px": 10.28143640270649,
+    "p95_px": 25.123092879481998
+   },
+   "arm_and_torso": {
+    "n": 0
+   },
+   "clean_bias_px": [
+    5.443508131820039,
+    -0.7686782808865473
+   ],
+   "clean_debiased_median_px": 9.87625087138265,
+   "clean_debiased_p95_px": 21.76863046656147
+  },
+  "left": {
+   "clean": {
+    "n": 1109,
+    "median_px": 19.45362373994697,
+    "p95_px": 28.342460323287828
+   },
+   "arm_only": {
+    "n": 63,
+    "median_px": 21.786748547414074,
+    "p95_px": 25.90100392448774
+   },
+   "torso_only": {
+    "n": 326,
+    "median_px": 20.628031339435143,
+    "p95_px": 28.21703290790335
+   },
+   "arm_and_torso": {
+    "n": 0
+   },
+   "clean_bias_px": [
+    -17.76367785801017,
+    3.6268587380872077
+   ],
+   "clean_debiased_median_px": 8.457870991606086,
+   "clean_debiased_p95_px": 15.103029882271514
+  }
+ },
+ "passed": 7,
+ "failed": 1
+}

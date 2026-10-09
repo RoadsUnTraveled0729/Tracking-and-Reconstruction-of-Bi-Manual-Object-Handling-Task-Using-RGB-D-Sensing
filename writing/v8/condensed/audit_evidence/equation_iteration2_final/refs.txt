@@ -1,0 +1,4 @@
+defined: figures 47, tables 27, equations 52, sections 72, appendices ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+references checked: 619
+UNRESOLVED: none
+never referenced eq: ['3.15', '3.16', '3.19', '6.3', '7.3']

@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "policy": "Existing recorded scenes only; no new capture, experiment, or fabricated scene content.",
+  "composition_change": "Outer legend changed from Waypoint reference to Schematic scene guide, and superseded outer Start/W1/W2/W3 annotations were omitted; saved Unity rasters and recorded trails are unchanged.",
+  "native_composer": "writing/v8/condensed/scripts/make_ch7_trails_fig.py",
+  "native_composer_sha256": "b1de125653fdd4f9cdd6abe78e338548bb560be7de9eb1cef7fef889b992496e",
+  "table_scope_source": "writing/v8/condensed/audit_evidence/ch7_restructured/human.json",
+  "table_scope_source_sha256": "1b03df1ee415f80dc1fd6c360caec32685d47fd00e8aea7b0fa4ae526a97d8d1",
+  "assets": {
+    "r6b": {
+      "output": "writing/v8/condensed/figures/ch7_unity_trajectories_r6b.png",
+      "output_sha256": "39207e339960c9dcc0fed9086b6b4f7638e497fe84a26fb29814fd8d6157721f",
+      "dimensions_px": [
+        1565,
+        1468
+      ],
+      "layout_reference_composite": "writing/v8/condensed/figures/ch7_fig_unity_trails.png",
+      "layout_reference_sha256": "35bdb54381a38f3d7bd3708ac4cf653f91745e15e54b54c0c60f7dd43152fd19",
+      "source_compose_manifest": "writing/v8/condensed/figures/ch7_trails_compose.json",
+      "capture_manifest": "writing/v8/condensed/figures/src/ch7_trails_revision/manifest.json",
+      "source_hashes": {
+        "writing/v8/condensed/figures/ch7_trails_compose.json": "ae152c9571b280c7f894f6b2bb2c1c6f513319abb64ed6b4e6db6763b465cec4",
+        "writing/v8/condensed/figures/src/ch7_trails_revision/manifest.json": "450ebcfcfbbb966c0640aefe962a412904fc1b48a514787c508789cc241b5524",
+        "writing/v8/condensed/figures/ch7_trails_view.json": "3de73731f602f0474452dbae069bab150a31d1f81b413e0f33030a64bbde1be5",
+        "eval/reports/unity_check_r6b_trails/trails.txt": "4b21f03ddc86b0771664d8bbb628dcd9eb7cd49766ac5a7a7a53ece480b382ef",
+        "eval/reports/r6b_waypoints.json": "82cd85d4ccef9ea5306ba9fb31ff5a4ec08858be607cc122964a715457f964ec"
+      },
+      "historical_optional_source_hashes": {
+        "eval/output/recovery_r6b/angles_recovery.csv": "8f617768b38db2ecac55b135303f8bd8f0273615a8732079e68868f5047e1d74"
+      },
+      "crop_px": [
+        112,
+        78,
+        1200,
+        679
+      ],
+      "saved_capture_frames": [
+        {
+          "phase": "carry",
+          "interval": [
+            92,
+            500
+          ],
+          "posed_frame": 500
+        },
+        {
+          "phase": "lift",
+          "interval": [
+            501,
+            528
+          ],
+          "posed_frame": 528
+        },
+        {
+          "phase": "slide",
+          "interval": [
+            529,
+            899
+          ],
+          "posed_frame": 899
+        }
+      ],
+      "trajectory_samples_by_interval": {
+        "carry": {
+          "cube": {
+            "present": 409,
+            "interval_frames": 409
+          },
+          "wrist": {
+            "present": 409,
+            "interval_frames": 409
+          }
+        },
+        "lift": {
+          "cube": {
+            "present": 28,
+            "interval_frames": 28
+          },
+          "wrist": {
+            "present": 28,
+            "interval_frames": 28
+          }
+        },
+        "slide": {
+          "cube": {
+            "present": 370,
+            "interval_frames": 371
+          },
+          "wrist": {
+            "present": 371,
+            "interval_frames": 371
+          }
+        }
+      },
+      "table_valid_landmark_samples": {
+        "right_elbow": 100,
+        "right_wrist": 100
+      },
+      "contains": [
+        "marker-origin trail",
+        "model-wrist trail",
+        "Unity endpoint pose",
+        "schematic scene guide"
+      ],
+      "does_not_contain": [
+        "elbow trail",
+        "surveyed physical path",
+        "registered physical waypoint coordinates",
+        "superseded outer Start/W1/W2/W3 annotations",
+        "the exact valid-landmark subset used by the table"
+      ],
+      "suggested_caption": "Figure 7.3. Single-hand rail task in the saved Unity trajectory view. The panels show the saved marker-origin and model-wrist trails over the carry (frames 92-500), lift (501-528) and slide (529-899) intervals; the avatar and cube are posed at each interval's final frame. The dashed line is a schematic scene guide, not a surveyed or registered physical path. These task-interval trails provide qualitative context and are not the elbow and wrist samples used in Table 7.3."
+    },
+    "r7": {
+      "output": "writing/v8/condensed/figures/ch7_unity_trajectories_r7.png",
+      "output_sha256": "cf9d118a0b39934bd53287aa796d06d2164f23855c6f62617fe722550ca56b18",
+      "dimensions_px": [
+        1511,
+        1468
+      ],
+      "layout_reference_composite": "writing/v8/condensed/figures/ch7_fig_handover_trails.png",
+      "layout_reference_sha256": "7ab7773253f7bd6e03ea3b418f6db9a5274a7a563359a1440982a0258683f799",
+      "source_compose_manifest": "writing/v8/condensed/figures/ch7_handover_compose.json",
+      "capture_manifest": "writing/v8/condensed/figures/src/ch7_handover_trails/manifest.json",
+      "source_hashes": {
+        "writing/v8/condensed/figures/ch7_handover_compose.json": "fffb2440812b943ab9d3a44bc74c6cb562519dec0c44a56c1dccfe8b80e258c8",
+        "writing/v8/condensed/figures/src/ch7_handover_trails/manifest.json": "4d76d2064549a82f657eb943753e9d0ca4d5c6d2b2b27fa044aaa3bbadaf0cc7",
+        "writing/v8/condensed/figures/ch7_handover_view.json": "252c5331f678aa3a4a1244b62b585d83647b9893e2e979fc5b553c0cff163c88",
+        "eval/reports/unity_check_r7/trails.txt": "2e39a7af22e652996091defc05c09641b2046cad1f1af3cf4370eb2aedb8ec68",
+        "eval/reports/r7_waypoints.json": "4b20560b7e651eb127828b597ebb0c76b82ede5a4a7a0f3c174c131b16f20faa",
+        "eval/reports/r7_handover.json": "8e4588a6d216c5a98fb13e2eeb43d4638298a64b636f95b7619e71b5ef9a115c"
+      },
+      "historical_optional_source_hashes": {
+        "eval/output/recovery_r7/angles_recovery.csv": "0c7406ac547b23b28e48a48236cf0538da3d59c5953fcca60487a9d78f91aeae"
+      },
+      "crop_px": [
+        139,
+        103,
+        1200,
+        800
+      ],
+      "saved_capture_frames": [
+        {
+          "phase": "right hand",
+          "interval": [
+            137,
+            863
+          ],
+          "posed_frame": 863
+        },
+        {
+          "phase": "hand-over",
+          "interval": [
+            864,
+            1022
+          ],
+          "posed_frame": 1022
+        },
+        {
+          "phase": "left hand",
+          "interval": [
+            1023,
+            1498
+          ],
+          "posed_frame": 1498
+        }
+      ],
+      "trajectory_samples_by_interval": {
+        "right hand": {
+          "cube": {
+            "present": 726,
+            "interval_frames": 727
+          },
+          "wrist": {
+            "present": 727,
+            "interval_frames": 727
+          },
+          "wrist_left": {
+            "present": 727,
+            "interval_frames": 727
+          }
+        },
+        "hand-over": {
+          "cube": {
+            "present": 159,
+            "interval_frames": 159
+          },
+          "wrist": {
+            "present": 159,
+            "interval_frames": 159
+          },
+          "wrist_left": {
+            "present": 159,
+            "interval_frames": 159
+          }
+        },
+        "left hand": {
+          "cube": {
+            "present": 476,
+            "interval_frames": 476
+          },
+          "wrist": {
+            "present": 476,
+            "interval_frames": 476
+          },
+          "wrist_left": {
+            "present": 476,
+            "interval_frames": 476
+          }
+        }
+      },
+      "table_valid_landmark_samples": {
+        "right_elbow": 650,
+        "right_wrist": 650,
+        "left_elbow": 589,
+        "left_wrist": 589
+      },
+      "contains": [
+        "marker-origin trail",
+        "model-wrist trail",
+        "Unity endpoint pose",
+        "schematic scene guide"
+      ],
+      "does_not_contain": [
+        "elbow trail",
+        "surveyed physical path",
+        "registered physical waypoint coordinates",
+        "superseded outer Start/W1/W2/W3 annotations",
+        "the exact valid-landmark subset used by the table"
+      ],
+      "suggested_caption": "Figure 7.4. Handover task in the saved Unity trajectory view. The panels show the saved marker-origin and right- and left-model-wrist trails over the right-hand (frames 137-863), hand-over (864-1022) and left-hand (1023-1498) intervals; the avatar and cube are posed at each interval's final frame. The dashed line is a schematic scene guide, not a surveyed or registered physical path. These task-interval trails provide qualitative context and are not the arm-specific elbow and wrist samples used in Table 7.4."
+    }
+  }
+}

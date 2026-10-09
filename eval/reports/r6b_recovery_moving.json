@@ -1,0 +1,245 @@
+{
+ "stem": "recording_20260831_065553",
+ "windows": [
+  {
+   "side": "right",
+   "start": 212,
+   "stop": 256,
+   "truth_motion_deg": 4.0,
+   "obj_wrist_err_cm": {
+    "median": 0.52,
+    "p95": 1.14
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 24.64,
+      "p95": 58.94,
+      "max": 58.94
+     },
+     "fk_wrist_cm": {
+      "median": 1.68,
+      "p95": 2.94,
+      "max": 3.06
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 1.35,
+      "p95": 90.0,
+      "max": 90.26
+     },
+     "fk_wrist_cm": {
+      "median": 0.83,
+      "p95": 6.36,
+      "max": 8.61
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 3.75,
+      "p95": 84.96,
+      "max": 87.7
+     },
+     "fk_wrist_cm": {
+      "median": 0.57,
+      "p95": 9.73,
+      "max": 14.85
+     }
+    }
+   }
+  },
+  {
+   "side": "right",
+   "start": 272,
+   "stop": 316,
+   "truth_motion_deg": 3.0,
+   "obj_wrist_err_cm": {
+    "median": 0.99,
+    "p95": 1.88
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 29.68,
+      "p95": 46.1,
+      "max": 46.68
+     },
+     "fk_wrist_cm": {
+      "median": 2.83,
+      "p95": 3.13,
+      "max": 3.16
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 0.49,
+      "p95": 88.53,
+      "max": 89.47
+     },
+     "fk_wrist_cm": {
+      "median": 1.16,
+      "p95": 5.64,
+      "max": 7.86
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 3.72,
+      "p95": 87.46,
+      "max": 93.28
+     },
+     "fk_wrist_cm": {
+      "median": 1.13,
+      "p95": 6.01,
+      "max": 14.52
+     }
+    }
+   }
+  },
+  {
+   "side": "right",
+   "start": 332,
+   "stop": 376,
+   "truth_motion_deg": 6.0,
+   "obj_wrist_err_cm": {
+    "median": 1.21,
+    "p95": 2.09
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 23.79,
+      "p95": 57.4,
+      "max": 57.98
+     },
+     "fk_wrist_cm": {
+      "median": 2.47,
+      "p95": 4.56,
+      "max": 4.84
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 1.86,
+      "p95": 93.3,
+      "max": 96.41
+     },
+     "fk_wrist_cm": {
+      "median": 1.64,
+      "p95": 5.32,
+      "max": 7.37
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 4.29,
+      "p95": 108.67,
+      "max": 154.54
+     },
+     "fk_wrist_cm": {
+      "median": 1.02,
+      "p95": 4.93,
+      "max": 6.4
+     }
+    }
+   }
+  },
+  {
+   "side": "right",
+   "start": 392,
+   "stop": 436,
+   "truth_motion_deg": 6.0,
+   "obj_wrist_err_cm": {
+    "median": 2.55,
+    "p95": 3.73
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 15.78,
+      "p95": 89.19,
+      "max": 93.42
+     },
+     "fk_wrist_cm": {
+      "median": 1.33,
+      "p95": 1.92,
+      "max": 2.03
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 3.58,
+      "p95": 75.62,
+      "max": 75.99
+     },
+     "fk_wrist_cm": {
+      "median": 1.77,
+      "p95": 4.68,
+      "max": 6.94
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 3.87,
+      "p95": 74.62,
+      "max": 76.14
+     },
+     "fk_wrist_cm": {
+      "median": 2.68,
+      "p95": 4.43,
+      "max": 6.64
+     }
+    }
+   }
+  },
+  {
+   "side": "right",
+   "start": 452,
+   "stop": 496,
+   "truth_motion_deg": 5.2,
+   "obj_wrist_err_cm": {
+    "median": 0.93,
+    "p95": 2.0
+   },
+   "methods": {
+    "hold": {
+     "angle_deg": {
+      "median": 19.69,
+      "p95": 96.65,
+      "max": 97.69
+     },
+     "fk_wrist_cm": {
+      "median": 0.83,
+      "p95": 1.17,
+      "max": 1.23
+     }
+    },
+    "masked": {
+     "angle_deg": {
+      "median": 1.56,
+      "p95": 66.48,
+      "max": 66.89
+     },
+     "fk_wrist_cm": {
+      "median": 0.48,
+      "p95": 4.47,
+      "max": 7.33
+     }
+    },
+    "recovery": {
+     "angle_deg": {
+      "median": 1.97,
+      "p95": 70.06,
+      "max": 71.99
+     },
+     "fk_wrist_cm": {
+      "median": 0.96,
+      "p95": 4.62,
+      "max": 7.6
+     }
+    }
+   }
+  }
+ ]
+}

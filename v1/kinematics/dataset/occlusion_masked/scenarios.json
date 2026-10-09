@@ -1,0 +1,68 @@
+{
+  "base_filtered": "/home/luo/Desktop/New_SandBox/kinematics/dataset/real_20260224/recording_20260224_083945_landmarks_filtered.csv",
+  "base_raw": "/home/luo/Desktop/New_SandBox/kinematics/dataset/real_20260224/recording_20260224_083945_landmarks_raw.csv",
+  "scenarios": {
+    "wrist_short": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_wrist_short.csv",
+      "source": "raw",
+      "landmarks": [
+        "right_wrist"
+      ],
+      "start": 300,
+      "stop": 303
+    },
+    "wrist_long": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_wrist_long.csv",
+      "source": "filtered",
+      "landmarks": [
+        "right_wrist"
+      ],
+      "start": 400,
+      "stop": 445
+    },
+    "elbow_long": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_elbow_long.csv",
+      "source": "filtered",
+      "landmarks": [
+        "right_elbow"
+      ],
+      "start": 500,
+      "stop": 545
+    },
+    "hip": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_hip.csv",
+      "source": "filtered",
+      "landmarks": [
+        "left_hip"
+      ],
+      "start": 600,
+      "stop": 630
+    },
+    "root_ref": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_root_ref.csv",
+      "source": "filtered",
+      "landmarks": [
+        "right_shoulder"
+      ],
+      "start": 750,
+      "stop": 780
+    },
+    "pose_loss": {
+      "csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_pose_loss.csv",
+      "source": "filtered",
+      "landmarks": [
+        "left_shoulder",
+        "right_shoulder",
+        "left_elbow",
+        "right_elbow",
+        "left_wrist",
+        "right_wrist",
+        "left_hip",
+        "right_hip"
+      ],
+      "start": 700,
+      "stop": 710
+    }
+  },
+  "combo_csv": "/home/luo/Desktop/New_SandBox/kinematics/output/occlusion/masked_all_windows.csv"
+}

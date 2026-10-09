@@ -1,0 +1,132 @@
+{
+ "output": "overlay_camera_frames.png",
+ "thesis_source": "Thesis V9 Section 3.1, Eq. 3.1 and Figure 3.2 (Camera and Camera' share the optical centre, F = diag(1, -1, 1))",
+ "panels": [
+  {
+   "id": "diagram",
+   "background": "plain",
+   "box_px": [
+    0,
+    0,
+    1440,
+    1200
+   ]
+  }
+ ],
+ "frames": [
+  {
+   "name": "Camera",
+   "panel": "diagram",
+   "mode": "illustrative",
+   "thesis_source": "Eq. 3.1 and Figure 3.2: x right, y down, z into the scene",
+   "anchor_canvas_px": [
+    560,
+    540
+   ],
+   "anchor_note": "the shared optical centre, drawn as in thesis Figure 3.2; z is drawn oblique and foreshortened to show depth",
+   "axes_canvas": {
+    "X": [
+     1,
+     0.18
+    ],
+    "Y": [
+     0,
+     1
+    ],
+    "Z": [
+     0.89,
+     -0.456
+    ]
+   },
+   "length_px": 330,
+   "axis_length_scale": {
+    "Z": 0.7
+   },
+   "axis_labels": {
+    "X": "x (both)",
+    "Y": "Camera y (down)",
+    "Z": "z (both)"
+   },
+   "axis_label_offsets": {
+    "X": [
+     30,
+     0
+    ],
+    "Y": [
+     0,
+     50
+    ],
+    "Z": [
+     25,
+     -20
+    ]
+   },
+   "axis_label_anchors": {
+    "X": "lm",
+    "Y": "mm",
+    "Z": "lm"
+   }
+  },
+  {
+   "name": "Camera'",
+   "panel": "diagram",
+   "mode": "illustrative",
+   "thesis_source": "Eq. 3.1 and Figure 3.2: F flips y only; x right, y up, z into the scene, same origin",
+   "anchor_canvas_px": [
+    560,
+    540
+   ],
+   "anchor_note": "the same optical centre as Camera; x and z coincide with Camera and are drawn once more on the same pixels",
+   "axes_canvas": {
+    "X": [
+     1,
+     0.18
+    ],
+    "Y": [
+     0,
+     -1
+    ],
+    "Z": [
+     0.89,
+     -0.456
+    ]
+   },
+   "length_px": 330,
+   "axis_length_scale": {
+    "Z": 0.7
+   },
+   "axis_labels": {
+    "Y": "Camera' y (up)"
+   },
+   "axis_label_offsets": {
+    "Y": [
+     0,
+     -50
+    ]
+   },
+   "axis_label_anchors": {
+    "Y": "mm"
+   }
+  }
+ ],
+ "texts": [
+  {
+   "text": "one shared origin (the optical centre)",
+   "xy": [
+    720,
+    1065
+   ],
+   "anchor": "mm",
+   "panel": "diagram"
+  },
+  {
+   "text": "F = diag(1, -1, 1): only y changes sign",
+   "xy": [
+    720,
+    1145
+   ],
+   "anchor": "mm",
+   "panel": "diagram"
+  }
+ ]
+}

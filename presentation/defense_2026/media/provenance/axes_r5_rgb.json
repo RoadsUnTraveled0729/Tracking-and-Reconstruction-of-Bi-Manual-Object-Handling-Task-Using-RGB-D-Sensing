@@ -1,0 +1,4511 @@
+{
+  "status": "PASS",
+  "recording": "recording_20260825_222315",
+  "first": 900,
+  "last": 1649,
+  "source_csv": "v1/mediapipe/output/recording_20260825_222315_landmarks_raw.csv",
+  "source_csv_sha256": "04e9dc344e17529ad10dbedfebca17ae3d919cbe729016c352fc269a04cee6e7",
+  "frames": [
+    {
+      "frame": 900,
+      "time_s": 30.020815673828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00900.png",
+      "sha256": "2553d731064aa594ddb3eb6496b24f3172992a17defb697048079fa9a3a9334c"
+    },
+    {
+      "frame": 901,
+      "time_s": 30.054169189453123,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00901.png",
+      "sha256": "f22636e7b26455c82e6431375f88650e8e2f3d19464e5293f7195727596a993f"
+    },
+    {
+      "frame": 902,
+      "time_s": 30.087522705078126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00902.png",
+      "sha256": "977c996d599c60d8b5570fed6a14dc638c2be641742260fe8916718b030fd62c"
+    },
+    {
+      "frame": 903,
+      "time_s": 30.120876220703124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00903.png",
+      "sha256": "75ce3ed44a190e994069aee53bdb91c020ca7ba04edb3984f84613b21f7891d6"
+    },
+    {
+      "frame": 904,
+      "time_s": 30.1542294921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00904.png",
+      "sha256": "5f0dac60c40844364602e1b864aaf77c1c92b0dfa1e22e10199b22c91e770d6c"
+    },
+    {
+      "frame": 905,
+      "time_s": 30.1875830078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00905.png",
+      "sha256": "41b37f30077be1d73c5b247a8bb05cfa1b85256b43e2776be4daa2cd83603adf"
+    },
+    {
+      "frame": 906,
+      "time_s": 30.2209365234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00906.png",
+      "sha256": "24f88afb856228d542475530c7b248ef982f8179bf112a7359bb095924907371"
+    },
+    {
+      "frame": 907,
+      "time_s": 30.254289794921874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00907.png",
+      "sha256": "9dc9072ec18254bc180d358ef2847c0e1c428f1d0a43db59c567a74377111cd2"
+    },
+    {
+      "frame": 908,
+      "time_s": 30.28764306640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00908.png",
+      "sha256": "5576656c62f63b7286f9dae402ad3de33d897d1197c362927af68924d8376d68"
+    },
+    {
+      "frame": 909,
+      "time_s": 30.32099658203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00909.png",
+      "sha256": "603186e857d56b24f797b8b776953b75f64ff6ec717e3b09bf947a0c2c895244"
+    },
+    {
+      "frame": 910,
+      "time_s": 30.354349853515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00910.png",
+      "sha256": "fc9529056ba67d96f40aca02ed2db0dc2410477dcd8ad9dc1f7e19973a387f67"
+    },
+    {
+      "frame": 911,
+      "time_s": 30.387703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00911.png",
+      "sha256": "764a5ae473d9edef37c49aaa1479785f1653f9f0398ba64f5d7d827391a6c64a"
+    },
+    {
+      "frame": 912,
+      "time_s": 30.421056396484374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00912.png",
+      "sha256": "43c2c9afaef714fa963f376727de812445cdbf1a27c4f053ce1fa7a872714cf9"
+    },
+    {
+      "frame": 913,
+      "time_s": 30.45440966796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00913.png",
+      "sha256": "5c5ce030950aa45a4296e2b9fdccd3816f7bebbdfe8ebc198dd8a6bef4210b0d"
+    },
+    {
+      "frame": 914,
+      "time_s": 30.487764404296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00914.png",
+      "sha256": "6e26d8b24f86744621f866bbf5948519ed38a56647600185bcb8d176b9a21537"
+    },
+    {
+      "frame": 915,
+      "time_s": 30.52111767578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00915.png",
+      "sha256": "cfbe38006edf98fb004799d95f218497d28f3858d7f72c8daa3e62953968b873"
+    },
+    {
+      "frame": 916,
+      "time_s": 30.55447119140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00916.png",
+      "sha256": "3e46e0ffe8304f840c95531e2534ad677a26fcb7426178f0880b56c05b059ca7"
+    },
+    {
+      "frame": 917,
+      "time_s": 30.587824462890627,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00917.png",
+      "sha256": "c0faf69fd96e66bb6d11b00f5a7bf486b2ad93617fba7e5a82b0e841cd16fc4e"
+    },
+    {
+      "frame": 918,
+      "time_s": 30.621177978515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00918.png",
+      "sha256": "b7a21ad8b40ef989032534239b20acd642db89badca68614bdc8b905db0d62e5"
+    },
+    {
+      "frame": 919,
+      "time_s": 30.65453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00919.png",
+      "sha256": "8d5553345d046433d7bf6ae4a66ff698773250f5bc1424149b615d71ec092c2a"
+    },
+    {
+      "frame": 920,
+      "time_s": 30.687884521484374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00920.png",
+      "sha256": "baf0e9814071af2bd328b9f70c05f7ee924f82e09c3bc1cfa2a62e122d20f583"
+    },
+    {
+      "frame": 921,
+      "time_s": 30.72123779296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00921.png",
+      "sha256": "5779e0142ff0090115db8963dd4da77d344e8eca9a7c15b86e7878fc6876362f"
+    },
+    {
+      "frame": 922,
+      "time_s": 30.754591064453123,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00922.png",
+      "sha256": "7060dcf6e69264cd41c174c0e4a9ccf402703f84ddd5acf3b2badfbc2a606ee3"
+    },
+    {
+      "frame": 923,
+      "time_s": 30.7879443359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00923.png",
+      "sha256": "9d4a3622c238339c6f5f50e43d96e2eccc86e5e0c09be96845f8bf9747f37e3b"
+    },
+    {
+      "frame": 924,
+      "time_s": 30.82129736328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00924.png",
+      "sha256": "4c88d6dc72235348e74faabcf9907cd33acaafc8cad009941a4c720ac6092c61"
+    },
+    {
+      "frame": 925,
+      "time_s": 30.854650634765626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00925.png",
+      "sha256": "31604850ae983d73d35d2ef0bbf5fb4733a2148cd8ebef0435801e51171a6af0"
+    },
+    {
+      "frame": 926,
+      "time_s": 30.888003662109377,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00926.png",
+      "sha256": "49fde9587242d9540df5feed2a66c7992b36fa27bc4f1a2aaa98d6d3b2e5feef"
+    },
+    {
+      "frame": 927,
+      "time_s": 30.92135693359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00927.png",
+      "sha256": "97262716017b6bf3e11c990ad7051fde77e02ffa2140cffb4916baafeb3541db"
+    },
+    {
+      "frame": 928,
+      "time_s": 30.9547099609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00928.png",
+      "sha256": "b687dd8c913217e3ad17ebe3293e72f8cac5b6fe7e90fe74acb62951e0e6bd24"
+    },
+    {
+      "frame": 929,
+      "time_s": 30.98806298828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00929.png",
+      "sha256": "18e41f8987dc450a9dcd7f4e13535876ddfd62927739f8086f433e0bf051ab61"
+    },
+    {
+      "frame": 930,
+      "time_s": 31.021416015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00930.png",
+      "sha256": "71ebe0454c34ce25d859ed770b2028a60762803882cce2b8f05f2952cbaff2a5"
+    },
+    {
+      "frame": 931,
+      "time_s": 31.05476904296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00931.png",
+      "sha256": "916b605da8a82eb3e23d39b1f6ec19c1a8fbfc70ba965286414260f29068e007"
+    },
+    {
+      "frame": 932,
+      "time_s": 31.0881220703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00932.png",
+      "sha256": "3372b638fbad58cc0aa68f044ed2a051ea4acc17e0254c4bae908d525d3405c9"
+    },
+    {
+      "frame": 933,
+      "time_s": 31.12147509765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00933.png",
+      "sha256": "7eb7056ea5cd39c069bd1e1f78ef9ed487e5bc439a28058d66a8303812051dea"
+    },
+    {
+      "frame": 934,
+      "time_s": 31.154828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00934.png",
+      "sha256": "fa9efbfbcd1939d04ba6661031c98b3b40482db8fb23638a7a5a79bbe8ea1b32"
+    },
+    {
+      "frame": 935,
+      "time_s": 31.18818115234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00935.png",
+      "sha256": "61fb3b37a8f18e4a0e41dc66b875032a1d4e553b6bcfc9dfb8532ef11e9ad272"
+    },
+    {
+      "frame": 936,
+      "time_s": 31.221533935546876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00936.png",
+      "sha256": "47cc3755c364171b61860b24718ffb4f3bfd62acfb20a3ef8ac955ee1a486cbc"
+    },
+    {
+      "frame": 937,
+      "time_s": 31.25488671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00937.png",
+      "sha256": "a694bd93a67082a1d04ffa2b3469e818bba294b65377fcf00916c5e8082bf373"
+    },
+    {
+      "frame": 938,
+      "time_s": 31.28823974609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00938.png",
+      "sha256": "3188b52ad5e48d12e5cd533b1b6f5cf68f260dc040fa42a816465c1a4fb82d33"
+    },
+    {
+      "frame": 939,
+      "time_s": 31.321592529296876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00939.png",
+      "sha256": "0da99cc529edd96a1f95771b4861852b1f587d2065b349cb9a3d125e1ab342da"
+    },
+    {
+      "frame": 940,
+      "time_s": 31.3549453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00940.png",
+      "sha256": "93605e32e8dcf2a21fdf980722e0b6ec884a9fcf25c0960042d0e953e8394610"
+    },
+    {
+      "frame": 941,
+      "time_s": 31.388298095703124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00941.png",
+      "sha256": "0e56f39c3f12b507fce1dc84271626a0d44df5edbee34fda962ab7d9eca4cf08"
+    },
+    {
+      "frame": 942,
+      "time_s": 31.42165087890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00942.png",
+      "sha256": "f83fa221d0e1854e169dfb17eada4d800481d3a2e4f196b6002556717d9ca0f5"
+    },
+    {
+      "frame": 943,
+      "time_s": 31.455003662109377,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00943.png",
+      "sha256": "23f760dbed2f7181c79cd1f76c7ad2041affe3c7caf969c3cae1189fd79370b9"
+    },
+    {
+      "frame": 944,
+      "time_s": 31.4883564453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00944.png",
+      "sha256": "87195446a077172f6ea186dbb3d3514e9a27abc8810330eb310fee2527b577ab"
+    },
+    {
+      "frame": 945,
+      "time_s": 31.52171044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00945.png",
+      "sha256": "8e9f80a6b23520978f1933e626a61eea0564ed0bf494ebcf7fce50b9a954c491"
+    },
+    {
+      "frame": 946,
+      "time_s": 31.555064208984376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00946.png",
+      "sha256": "326519fa1d97e50f8a9ff1d56cc43459bc1a5635efdc1ddae56d2863adae469e"
+    },
+    {
+      "frame": 947,
+      "time_s": 31.588417724609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00947.png",
+      "sha256": "7c8e959ad25bb71a27d9133dc5517aaca4b22dc935d2b4efa6733d3d9238dee7"
+    },
+    {
+      "frame": 948,
+      "time_s": 31.621771484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00948.png",
+      "sha256": "7da46fc08ab725512c7deb51142a2c5e62cde532cc5ba51930f51fe4557b1d08"
+    },
+    {
+      "frame": 949,
+      "time_s": 31.655125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00949.png",
+      "sha256": "96b9dc7a2d6ed2670f9165a82667662bea89d20bc94fbc5697228bd662fd9dc0"
+    },
+    {
+      "frame": 950,
+      "time_s": 31.688478515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00950.png",
+      "sha256": "62982d81730faa71c571f8b42782958f2f1e1e5e5f9aa5c463b74bdae9b149d6"
+    },
+    {
+      "frame": 951,
+      "time_s": 31.72183203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00951.png",
+      "sha256": "aef585a026edd22e7ff77188dcabd2c8e6ee0930c8a5aea50b0f4787abc5cd77"
+    },
+    {
+      "frame": 952,
+      "time_s": 31.755185546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00952.png",
+      "sha256": "0fd1e19261d2aec944ad193dc85afa8009c3eef6e9e220699c82a5c67a59e85f"
+    },
+    {
+      "frame": 953,
+      "time_s": 31.7885390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00953.png",
+      "sha256": "2bdeed7aab8ea3885f039a179b18a4bab56db40c90186d180aa3bcd3f6566edc"
+    },
+    {
+      "frame": 954,
+      "time_s": 31.821892578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00954.png",
+      "sha256": "0dc88bd2b99ff02dbbf10971512d09037a78d8aa5bb795828749226d58f86e33"
+    },
+    {
+      "frame": 955,
+      "time_s": 31.855245849609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00955.png",
+      "sha256": "1c29aebe6574ef84f5726399e45cce52650390b4ce36a4a7787c0104a054a8e0"
+    },
+    {
+      "frame": 956,
+      "time_s": 31.888599365234374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00956.png",
+      "sha256": "6a3736757317676d36cd15d38528a28d504c2c8cd1a9f604638d63fe6f2514a2"
+    },
+    {
+      "frame": 957,
+      "time_s": 31.92195263671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00957.png",
+      "sha256": "6580179302d701c77be60964bcc2412ce1355ad3860b75b065c664c2ad9e0001"
+    },
+    {
+      "frame": 958,
+      "time_s": 31.95530615234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00958.png",
+      "sha256": "46c45b89ef454e7aa062b776aa2bc7ad0736614341f62fd92534535338fe0aa3"
+    },
+    {
+      "frame": 959,
+      "time_s": 31.988659423828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00959.png",
+      "sha256": "060c78a97f79ccc2e928dd88a7beb1949acd7f6b6d44271689743c4c51b543e6"
+    },
+    {
+      "frame": 960,
+      "time_s": 32.0220126953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00960.png",
+      "sha256": "4609e1a2327f591e489c5b5a2adad8b54aa83797fb7ece5de8a89386ff7b065c"
+    },
+    {
+      "frame": 961,
+      "time_s": 32.05536596679688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00961.png",
+      "sha256": "cf9ae4bbd24c95d3fce490a688e787b98ed28bc8ba12b5ce0c1e80ee6919dad0"
+    },
+    {
+      "frame": 962,
+      "time_s": 32.08871923828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00962.png",
+      "sha256": "87e742e3359dc0e114a4f3c0ea04658519f1216872401936e5a47997fb717fe1"
+    },
+    {
+      "frame": 963,
+      "time_s": 32.12207250976562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00963.png",
+      "sha256": "6374dcb1e9ff88a6c7c84de3baf637976daefd2cacead02af0bbbf9f732628d1"
+    },
+    {
+      "frame": 964,
+      "time_s": 32.15542578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00964.png",
+      "sha256": "ce82bc0d7e7aaf50b63f8445ef277fc83de9c539bd2f52f19720f86ff5c61a7c"
+    },
+    {
+      "frame": 965,
+      "time_s": 32.188779052734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00965.png",
+      "sha256": "3abcb9041aa2141524220fde8ed34098b53498e0f020c98732832b4d2ecce780"
+    },
+    {
+      "frame": 966,
+      "time_s": 32.22213232421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00966.png",
+      "sha256": "b4e369e4f9c36630bf6ebacb17fbfe480cdaee238d39e2934aed868dacadece4"
+    },
+    {
+      "frame": 967,
+      "time_s": 32.2554853515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00967.png",
+      "sha256": "31fd884955c17578c8c079f846c68e2f27bfc39e8637ff14aaaea6a40c159448"
+    },
+    {
+      "frame": 968,
+      "time_s": 32.28883862304688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00968.png",
+      "sha256": "e6354a24624d464e4b709a8c2a136e0d3ca9772301c343e3061263991feead8b"
+    },
+    {
+      "frame": 969,
+      "time_s": 32.32219165039062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00969.png",
+      "sha256": "bff5c3284529a011a7017d73b87b4997145dfc91b80318b5fa8ac799fe61a702"
+    },
+    {
+      "frame": 970,
+      "time_s": 32.35554467773437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00970.png",
+      "sha256": "261c879515e7bee6a269d7ca0991eb6230d54cf4fb3b8d505bc9cbf80f7b2b9e"
+    },
+    {
+      "frame": 971,
+      "time_s": 32.38889770507812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00971.png",
+      "sha256": "91cf62b7c3c0abe47beff8ee2a7091873e0a83291053c8f0c64fc1f6f4144f15"
+    },
+    {
+      "frame": 972,
+      "time_s": 32.42225073242187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00972.png",
+      "sha256": "9f0e76fc9161452061d631b2824782d4a1599e8ff785b1148ed3284a37ae4cd9"
+    },
+    {
+      "frame": 973,
+      "time_s": 32.45560375976562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00973.png",
+      "sha256": "8fc001a1d272fa3f1e23d17e6c1d9f19b174d3b909a151e743a5d459ae72711b"
+    },
+    {
+      "frame": 974,
+      "time_s": 32.48895678710937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00974.png",
+      "sha256": "7f3dbd5e97294db2681e990e4356213168307e1a9fc5e3f7602ba98d2db2a501"
+    },
+    {
+      "frame": 975,
+      "time_s": 32.52230981445312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00975.png",
+      "sha256": "20198c15c981252a84359e48e3bf7f688cf860a5cbf4fd2481928e5bfca2fdac"
+    },
+    {
+      "frame": 976,
+      "time_s": 32.55566357421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00976.png",
+      "sha256": "5b33bcae75bda99549434fd50302c7110db48ff25b82233b0afca8969fe9f86d"
+    },
+    {
+      "frame": 977,
+      "time_s": 32.589017578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00977.png",
+      "sha256": "513a4e7bb2c3fadb5af992071309f3c56da8cb10092ae28ac22808d6886b237e"
+    },
+    {
+      "frame": 978,
+      "time_s": 32.62237036132812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00978.png",
+      "sha256": "7ff6e862a3abea1edf21f566bbe49391459bd60d6361806cb06cdb5c38eef612"
+    },
+    {
+      "frame": 979,
+      "time_s": 32.65572314453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00979.png",
+      "sha256": "e4e96d0d8962a842e855e12af2bcacd66c0638f5deec2866bf7044a0ad7b1153"
+    },
+    {
+      "frame": 980,
+      "time_s": 32.68907592773437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00980.png",
+      "sha256": "27e5672298d599c1fbf59c0b751d94f9bd15c295a32e33b4487cd4b5001b36b4"
+    },
+    {
+      "frame": 981,
+      "time_s": 32.72242846679688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00981.png",
+      "sha256": "736cfdacd2a9f4f74ea8482ead4281eb310c8d0da084aaa79867880d0c74c184"
+    },
+    {
+      "frame": 982,
+      "time_s": 32.75578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00982.png",
+      "sha256": "7a7a771538d9349c5d9b86868cb465107ee32b2d227093d4231be4c1751a4fd1"
+    },
+    {
+      "frame": 983,
+      "time_s": 32.7891337890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00983.png",
+      "sha256": "1b47bf84107aea9f6f476fb230d3d45c77d792dc601632fd7eb73713a456ea11"
+    },
+    {
+      "frame": 984,
+      "time_s": 32.822486572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00984.png",
+      "sha256": "9777e16d495db385dbe7f441e2f66fc0f005b271c026f8ee723a8e087970c73b"
+    },
+    {
+      "frame": 985,
+      "time_s": 32.85583911132812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00985.png",
+      "sha256": "b7b872d917d9e93dc33e5d04e0b296d439cbbb5da1f4c6db8794d50b4c8dc60e"
+    },
+    {
+      "frame": 986,
+      "time_s": 32.88919165039062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00986.png",
+      "sha256": "7a2fe66ab48e3dc25fdfe742e11ad29fff58ece48971a415a920ea1413bfba9a"
+    },
+    {
+      "frame": 987,
+      "time_s": 32.92254418945313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00987.png",
+      "sha256": "990a8bad92ee6930c0c6563b8a67cbc8a7ad19b5afc0f53714303a997b4bbb40"
+    },
+    {
+      "frame": 988,
+      "time_s": 32.955896728515626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00988.png",
+      "sha256": "eb6389ab004406867f06bbaf59b90b4d1aca5f1547feb598e303d6d69ae1b6bd"
+    },
+    {
+      "frame": 989,
+      "time_s": 32.989249267578124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00989.png",
+      "sha256": "3ce0a0548d50bc1e962f3b22f9f493fa294b480bf2882f78a8d141b5262b6477"
+    },
+    {
+      "frame": 990,
+      "time_s": 33.0226015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00990.png",
+      "sha256": "efdd70d3466f4ff13cd7a5c80ffef4b28e78a253a63e6cec530121eeb65c6a6d"
+    },
+    {
+      "frame": 991,
+      "time_s": 33.0559541015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00991.png",
+      "sha256": "89b6a0810b139e45740296fb70c927c0f0399e8f42c00628caa7b52e577c87de"
+    },
+    {
+      "frame": 992,
+      "time_s": 33.089306396484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00992.png",
+      "sha256": "197fade8f22f7a0623f31d58284f0335cf1658d08a90b52e46049b22ad3842de"
+    },
+    {
+      "frame": 993,
+      "time_s": 33.12265893554687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00993.png",
+      "sha256": "a71f97782a648622185a8c45404c497704eb9490004bb2ff49a11d9e9e048019"
+    },
+    {
+      "frame": 994,
+      "time_s": 33.15601123046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00994.png",
+      "sha256": "caca287ad5d56e1ab7b2a5b61df994811bbfb7db5eb0e008e5ae385dffc4e743"
+    },
+    {
+      "frame": 995,
+      "time_s": 33.189363525390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00995.png",
+      "sha256": "4b6541330953968969af8c09cea5760e6314b9b2eefb4f2442b8e18132715023"
+    },
+    {
+      "frame": 996,
+      "time_s": 33.2227158203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00996.png",
+      "sha256": "b708a25b8f0148b4a188a1e55f8588a9636bbe1b2fe634e54023ba78fbb8dcc7"
+    },
+    {
+      "frame": 997,
+      "time_s": 33.25606811523438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00997.png",
+      "sha256": "627285ad24ca91023cc8e533e9b3bad2934b30bcc34310b31640b7cebefd4ed5"
+    },
+    {
+      "frame": 998,
+      "time_s": 33.289420166015624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00998.png",
+      "sha256": "d83815a19c4cb0331292dd7e4a7d370b06875c9088d55fd901e53dba1afb3c05"
+    },
+    {
+      "frame": 999,
+      "time_s": 33.3227724609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_00999.png",
+      "sha256": "3752fbeef98bd8d3ecc79760f08cf22dd8712deac0d96a4e4eef163655ff9562"
+    },
+    {
+      "frame": 1000,
+      "time_s": 33.35612451171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01000.png",
+      "sha256": "ddb7452e1cf0f3b65ef9d6d56a229ca2813b2d03d0373c0f0a4fd2841a872af3"
+    },
+    {
+      "frame": 1001,
+      "time_s": 33.38947680664062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01001.png",
+      "sha256": "d596a6c095de3827488b399bfbb2aa0178b62c6eaff03f2c9a163ca8e3a5bafc"
+    },
+    {
+      "frame": 1002,
+      "time_s": 33.42282885742188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01002.png",
+      "sha256": "0d896248a6cbaae6b01fd3e31f7af1fc3dd3c26ad88b1716a064a45817703464"
+    },
+    {
+      "frame": 1003,
+      "time_s": 33.45618090820312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01003.png",
+      "sha256": "a2fcfe14c6b4aa02a4ea7400ebb05aa8e397a534bd0010b7304f1ad592c99de9"
+    },
+    {
+      "frame": 1004,
+      "time_s": 33.48953295898438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01004.png",
+      "sha256": "906538725e38f8d50510f0a61234c41579661126dea0a26c297ac3b57e51b028"
+    },
+    {
+      "frame": 1005,
+      "time_s": 33.52288500976562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01005.png",
+      "sha256": "f184b9b58a1fece3106885460371e32ea7452810abdf1fff11435076499ae92a"
+    },
+    {
+      "frame": 1006,
+      "time_s": 33.55623681640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01006.png",
+      "sha256": "bfdafa67cb4d28f213f152d90fc7f1517cec99f2b549f8ba4659225386df0a36"
+    },
+    {
+      "frame": 1007,
+      "time_s": 33.5895888671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01007.png",
+      "sha256": "1dc32a0b4f4fa8376579e21afbcd84f56ae288686fdeb51f501dafdc154624d9"
+    },
+    {
+      "frame": 1008,
+      "time_s": 33.6229423828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01008.png",
+      "sha256": "79376529f582a2d7f57af9fec24913153dd9c1cca5da425e62ca6fb9e0fffbcb"
+    },
+    {
+      "frame": 1009,
+      "time_s": 33.656312255859376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01009.png",
+      "sha256": "ab6e7bd940f7cf870109bfbcc641a72af0f35a0bdd9e62e6665f3d708ea07bbe"
+    },
+    {
+      "frame": 1010,
+      "time_s": 33.6896826171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01010.png",
+      "sha256": "1fc9772a7299491ef8789d60c80a754fe8067f6fc8b764a480a2c0677b78f514"
+    },
+    {
+      "frame": 1011,
+      "time_s": 33.72305322265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01011.png",
+      "sha256": "7819bfeb4074034fec530a459ff02e787296868b554bc7b5afe69ca390181d78"
+    },
+    {
+      "frame": 1012,
+      "time_s": 33.756423828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01012.png",
+      "sha256": "60b75f3f183b430531a72cc0cf698e1dedc391a094d75a6c1326dc9189442e67"
+    },
+    {
+      "frame": 1013,
+      "time_s": 33.78979467773438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01013.png",
+      "sha256": "5bc7e6800bb03c0a3c011ba929af0989bda860cce272beaa653c4acb9a8eb452"
+    },
+    {
+      "frame": 1014,
+      "time_s": 33.823165771484376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01014.png",
+      "sha256": "93ea541d7b0f738125713c70184b51013fe3f6b40ca013216bb864c488f4cf44"
+    },
+    {
+      "frame": 1015,
+      "time_s": 33.856536865234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01015.png",
+      "sha256": "52a82008818f2c020edd57d3a628d7587a5bd768f9fbd43100f7cf423cb52e2d"
+    },
+    {
+      "frame": 1016,
+      "time_s": 33.889908203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01016.png",
+      "sha256": "8cdf8bf1284952b6afe000169a426bae6d90c5578b61bbc2e014b20f45e49e20"
+    },
+    {
+      "frame": 1017,
+      "time_s": 33.92327978515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01017.png",
+      "sha256": "bdaed9a942ff89986e8ba890c889967ed7408d12584a2e59c4534fb487165c84"
+    },
+    {
+      "frame": 1018,
+      "time_s": 33.95665161132813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01018.png",
+      "sha256": "9dd8be2a6a18753f773f7e7d6ab951b3de23060e7517f23720b73795fb470942"
+    },
+    {
+      "frame": 1019,
+      "time_s": 33.99002368164062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01019.png",
+      "sha256": "c19fa9c64708d33d2bcb1c7b358fcbe8e66a9770d4931714000483c32bd62387"
+    },
+    {
+      "frame": 1020,
+      "time_s": 34.023395751953124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01020.png",
+      "sha256": "e862b0a5e7d2fa419df59adb29882f4a96bedcf0ea0df44b3fe5ad256a0f47d8"
+    },
+    {
+      "frame": 1021,
+      "time_s": 34.05676831054687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01021.png",
+      "sha256": "80ce2cc40aabbc7447ffe6c9e180c98d8c61f39ec49b18ae96ee95c48f08cfd0"
+    },
+    {
+      "frame": 1022,
+      "time_s": 34.090140869140626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01022.png",
+      "sha256": "8da70242e03e881d6e6e0058d78154045cb6b8dcca36e158b306702b77887762"
+    },
+    {
+      "frame": 1023,
+      "time_s": 34.12351342773437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01023.png",
+      "sha256": "7a8d91b8e768a110834b9453c26731f87471ada8aa9ff835b285f11ea4641b62"
+    },
+    {
+      "frame": 1024,
+      "time_s": 34.15688647460937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01024.png",
+      "sha256": "6b1565155bfcf7f5e9b4bbdbc0b136a4560ba87af980d20a566408ef75e0562c"
+    },
+    {
+      "frame": 1025,
+      "time_s": 34.19025952148438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01025.png",
+      "sha256": "073a32fa493c5941a7694a1bab9f6421b4ad55acb4da6cb3d5a187539ec9f100"
+    },
+    {
+      "frame": 1026,
+      "time_s": 34.2236328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01026.png",
+      "sha256": "360c405d07e2baf1f793b98e6c5fe66406769a1ec639ecdf474182089986867a"
+    },
+    {
+      "frame": 1027,
+      "time_s": 34.25700634765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01027.png",
+      "sha256": "13d199294a8a133a5920eb9e9307c5e3901daae8790be9b75629fa437f4bbb50"
+    },
+    {
+      "frame": 1028,
+      "time_s": 34.290380126953124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01028.png",
+      "sha256": "6074028dfe0abb4999d156fb0c6d257ea9e1defa7ed7f676df14d8d584df7f45"
+    },
+    {
+      "frame": 1029,
+      "time_s": 34.32375390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01029.png",
+      "sha256": "a90288262d727ba3af65c36b3d38647d5d6e799a4bd4f5cb5d772c1ef954d5d2"
+    },
+    {
+      "frame": 1030,
+      "time_s": 34.3571279296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01030.png",
+      "sha256": "02246b977bd21c55039140dca4d3f0cce4f6017c63079e7bf1af40e03042eed6"
+    },
+    {
+      "frame": 1031,
+      "time_s": 34.390502197265626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01031.png",
+      "sha256": "ad92223ead893367b3059c32118f784378c080fa31ae62b0b0e2a7c7e5187faf"
+    },
+    {
+      "frame": 1032,
+      "time_s": 34.42387670898437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01032.png",
+      "sha256": "bff34bf9c0babca9418d2e6c2749499b48abdb3653813bea3dd71378984d5f68"
+    },
+    {
+      "frame": 1033,
+      "time_s": 34.45725122070313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01033.png",
+      "sha256": "2ca2d86c5b7b4d3de6b6d1f8543fcbe52ffbc9ca57687d3e79dcd6dbe97291ed"
+    },
+    {
+      "frame": 1034,
+      "time_s": 34.49062622070313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01034.png",
+      "sha256": "6341f5ef8d7d4dd7e859df04784b2374e5490d406309c57d3262c7a98f3c60df"
+    },
+    {
+      "frame": 1035,
+      "time_s": 34.52400122070313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01035.png",
+      "sha256": "4806eaa0ad7edb078d3ff8b6454da168a219a5a1830845e5040ab775c77adaf1"
+    },
+    {
+      "frame": 1036,
+      "time_s": 34.55737646484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01036.png",
+      "sha256": "73e895145878f6259ab6e94b50dae10e357e51ddaaeff89ac9f45d9c3837a6bf"
+    },
+    {
+      "frame": 1037,
+      "time_s": 34.59075170898438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01037.png",
+      "sha256": "b216bb355c4b91bbf533eebe452676fc487ad5686339be798778752a862e8e74"
+    },
+    {
+      "frame": 1038,
+      "time_s": 34.624126953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01038.png",
+      "sha256": "7c5bf67d479af55491e62e2d009b4dcb55fd659526340506964ff46fd853b8d7"
+    },
+    {
+      "frame": 1039,
+      "time_s": 34.65748315429688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01039.png",
+      "sha256": "3c8e80c22d8a01425f3307a400635a811115ad8029d2aefbc0a7bd8fc3de3c4e"
+    },
+    {
+      "frame": 1040,
+      "time_s": 34.69083935546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01040.png",
+      "sha256": "0ce1a5f023ca2995c0219c53ce94cbf666f086c3813e8a5eda3805a2a541f27e"
+    },
+    {
+      "frame": 1041,
+      "time_s": 34.72419580078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01041.png",
+      "sha256": "f4008b109577dd2176f5d86c548f7945061aba25411bcff0105a0e2f3c267acc"
+    },
+    {
+      "frame": 1042,
+      "time_s": 34.75755200195312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01042.png",
+      "sha256": "4e03fc9e62356106a87427b6c9d5d29184995f960d60d76fc0a4fa65852d727f"
+    },
+    {
+      "frame": 1043,
+      "time_s": 34.79090844726562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01043.png",
+      "sha256": "3e95fea64a4a9a761e64cf324b5c3070b35b59c5fb843d5f079346b7571b3c32"
+    },
+    {
+      "frame": 1044,
+      "time_s": 34.8242646484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01044.png",
+      "sha256": "768ef57c983f1987bb4a9f8468edda5c066ab4dbefc1dab2a66ff6afde19d0d2"
+    },
+    {
+      "frame": 1045,
+      "time_s": 34.85762109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01045.png",
+      "sha256": "37cff064463417bd623484d6a9401ea3b21ac54dab4bb815269ddcffd785944b"
+    },
+    {
+      "frame": 1046,
+      "time_s": 34.890977294921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01046.png",
+      "sha256": "4a6f3bb442fccc6397be227f4e7f33b26ae0133e14b20930854b56f0802f6ecc"
+    },
+    {
+      "frame": 1047,
+      "time_s": 34.924333740234374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01047.png",
+      "sha256": "0066a6d6c29d8061ba071c8bac98f8c977f2bf12b6065c2a717d3d41d0ccbb47"
+    },
+    {
+      "frame": 1048,
+      "time_s": 34.95769018554687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01048.png",
+      "sha256": "1c4f521beea3390ae4493782158a20b993da574c7776e9f02949f9a391f0d56a"
+    },
+    {
+      "frame": 1049,
+      "time_s": 34.99104638671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01049.png",
+      "sha256": "c20464adba48e68a0f66887613ea6511a16fcc13e2d96a359baf166cfa15c7e7"
+    },
+    {
+      "frame": 1050,
+      "time_s": 35.02440283203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01050.png",
+      "sha256": "03a25f6e6f89ffde8865cd334a886c8de4549782b06627cd3080758096b7914c"
+    },
+    {
+      "frame": 1051,
+      "time_s": 35.057759033203126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01051.png",
+      "sha256": "384d890664f43692c3b6a1ea08c8cf5130d8bcee406806bbff428de4060ff4f2"
+    },
+    {
+      "frame": 1052,
+      "time_s": 35.091115478515626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01052.png",
+      "sha256": "93a468c5cfa0984b39e44bd97419636f04066e413b82be51c0441bb0944c15bb"
+    },
+    {
+      "frame": 1053,
+      "time_s": 35.1244716796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01053.png",
+      "sha256": "0ff7303977000d9dfe7e4cb727ed529599b9406c6d3587ea103af4d132a7ed78"
+    },
+    {
+      "frame": 1054,
+      "time_s": 35.157828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01054.png",
+      "sha256": "7c61f3a2572d16a49d6a232621305902ef6b5b4b3afb049ce7418b30490c9ddf"
+    },
+    {
+      "frame": 1055,
+      "time_s": 35.19118432617187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01055.png",
+      "sha256": "46f01d09681ffbc8ed2f651c6c9b0772ec36e021b45278ae355b7b1a4287062a"
+    },
+    {
+      "frame": 1056,
+      "time_s": 35.22454077148438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01056.png",
+      "sha256": "f517b0d90311cd3f2e5f396a56faa73b918b79b696619b6b1f8f1bd306e2a7cc"
+    },
+    {
+      "frame": 1057,
+      "time_s": 35.25789697265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01057.png",
+      "sha256": "e9b15c2ca6537bd8d1213b8a2da49af642e46da11455d71711969f24139c1c94"
+    },
+    {
+      "frame": 1058,
+      "time_s": 35.29125341796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01058.png",
+      "sha256": "3ab70c5d7073ce9261a79a81e91cc86f8bb5d04c19626ebc24d13e090eac5456"
+    },
+    {
+      "frame": 1059,
+      "time_s": 35.324609619140624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01059.png",
+      "sha256": "7b8c6d7f3540bc0f9f228b707200cf9767575afe7e63d6310f0c3586fe303a3f"
+    },
+    {
+      "frame": 1060,
+      "time_s": 35.35796606445312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01060.png",
+      "sha256": "470389520acb514b125bc5b88b7951d36ce68f96d131a0ca8eb0f2801aaeb59c"
+    },
+    {
+      "frame": 1061,
+      "time_s": 35.391322265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01061.png",
+      "sha256": "906857a86d0cf74d3e9f66e41127fd47c032909453e15ded041171791fe8195e"
+    },
+    {
+      "frame": 1062,
+      "time_s": 35.4246787109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01062.png",
+      "sha256": "fccbfa833bb90e4e94ae5c228523aa39b7fc752517fe84c2026b5a438b934ae8"
+    },
+    {
+      "frame": 1063,
+      "time_s": 35.45803515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01063.png",
+      "sha256": "eb4a9d9d5dfcbffd520a185a08d063227256765bfadb95a9e7285e0de5cf7aeb"
+    },
+    {
+      "frame": 1064,
+      "time_s": 35.491391357421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01064.png",
+      "sha256": "a926824d9ac7ca243a2cc7231899794f65ec6c67c5bc50f7c2eaa3c32be29246"
+    },
+    {
+      "frame": 1065,
+      "time_s": 35.524747802734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01065.png",
+      "sha256": "b62c01f7e7783d8bdd381299e00cac3e0bd790e14dcf839ba7be3ad0d9daba9f"
+    },
+    {
+      "frame": 1066,
+      "time_s": 35.55810400390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01066.png",
+      "sha256": "57623d34360d3e25090ed9a6e2522992b46944764bad602830033b17bb83ca1d"
+    },
+    {
+      "frame": 1067,
+      "time_s": 35.59146044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01067.png",
+      "sha256": "9a5a1efa770ed0fdaa1d819712e7c369308adaeb6c6156d8abafe2ac634dbb03"
+    },
+    {
+      "frame": 1068,
+      "time_s": 35.62481665039063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01068.png",
+      "sha256": "df0f7399a373663adcb161425557f9d970ed2fd772d0d1d14c1ded67af79adcd"
+    },
+    {
+      "frame": 1069,
+      "time_s": 35.65817309570313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01069.png",
+      "sha256": "4b351214b536acd8c3db48840ef93146b7d971b57b54111f0f1fff9c7aa10503"
+    },
+    {
+      "frame": 1070,
+      "time_s": 35.691529296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01070.png",
+      "sha256": "34ffc8c8b9e2212caf42fc30df5bcefe9f65606b976cce17fcb4f79a63608105"
+    },
+    {
+      "frame": 1071,
+      "time_s": 35.72488549804687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01071.png",
+      "sha256": "61532799e58340e34dcf29fd8fc153b8033bf52dc5d9e5519fdbfa291dbb8319"
+    },
+    {
+      "frame": 1072,
+      "time_s": 35.75824169921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01072.png",
+      "sha256": "c0efef28580bbc3533d5fb43acaf3c12df89ecfcc1bfecc23564379615572a92"
+    },
+    {
+      "frame": 1073,
+      "time_s": 35.79159790039063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01073.png",
+      "sha256": "f9a9b742fe53be853f9a62df73323da0a98d85fb3b4d25aac99ac020c2872851"
+    },
+    {
+      "frame": 1074,
+      "time_s": 35.8249541015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01074.png",
+      "sha256": "df0d3bd03bf91d8ef8bdcd371b17cb348b846ed8f6d04f39a0777bbd767f071e"
+    },
+    {
+      "frame": 1075,
+      "time_s": 35.858310302734374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01075.png",
+      "sha256": "4f6cd66aa68fa87ec265db06916b95d89b088fad1b0a91adff47e22a5d53693a"
+    },
+    {
+      "frame": 1076,
+      "time_s": 35.89166650390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01076.png",
+      "sha256": "907359cb85ac0f3e0c0688ed955e04de5872804375911b7925c470a779166fbe"
+    },
+    {
+      "frame": 1077,
+      "time_s": 35.92502294921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01077.png",
+      "sha256": "abcf2dbceb3654d6d655c5871633e469a967054337e9241400f3b153f8e6f54a"
+    },
+    {
+      "frame": 1078,
+      "time_s": 35.95837915039063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01078.png",
+      "sha256": "2c63b40c52fb0386a09ca2f735fcb4af195016ad75ffc0f27eb275802388de0d"
+    },
+    {
+      "frame": 1079,
+      "time_s": 35.9917353515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01079.png",
+      "sha256": "2c39ecf5ec85787f1be19e81254181b365fbbd1c8e2a1b7eda5e644aece859df"
+    },
+    {
+      "frame": 1080,
+      "time_s": 36.025091552734374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01080.png",
+      "sha256": "9770b074d4847befe620c5a2d6b24bca9b48d7d3486d5b1662d1c5322588f278"
+    },
+    {
+      "frame": 1081,
+      "time_s": 36.05844775390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01081.png",
+      "sha256": "1ce1bfb4ed93efe48744fbced4ba6bb7b79fcb7a509bbbc5734bdec2a5818558"
+    },
+    {
+      "frame": 1082,
+      "time_s": 36.09180395507813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01082.png",
+      "sha256": "48b1c7e2ec385279a45572e1c4168931ab57d5a2edf6351155d5d348cef79c8f"
+    },
+    {
+      "frame": 1083,
+      "time_s": 36.12516015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01083.png",
+      "sha256": "73dae1850604f5756b13ae67d1d7b9e97cd48b1a44cc759dd832d2be3afcee57"
+    },
+    {
+      "frame": 1084,
+      "time_s": 36.158516357421874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01084.png",
+      "sha256": "ce8e99d528855a2ae123d234ad908aabb38f6289aafd306378fabf45e6882304"
+    },
+    {
+      "frame": 1085,
+      "time_s": 36.19187255859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01085.png",
+      "sha256": "c309aa4c6cd23f9418dc06ac942b378578d2591da5a481eb4fcaeb46556a28f3"
+    },
+    {
+      "frame": 1086,
+      "time_s": 36.22522875976563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01086.png",
+      "sha256": "565a8c86f433b8977944db553e204162365b1503dbef870f1ae4db4792a2ab3d"
+    },
+    {
+      "frame": 1087,
+      "time_s": 36.25858520507813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01087.png",
+      "sha256": "6048819942a36abe2255ae00147e22d03857862aca7513fe45968571bbffabe2"
+    },
+    {
+      "frame": 1088,
+      "time_s": 36.29194140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01088.png",
+      "sha256": "93738d387888bdcc901c196eba721993955093d293e7cef6e533d2bb656c5c24"
+    },
+    {
+      "frame": 1089,
+      "time_s": 36.325297607421874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01089.png",
+      "sha256": "e20de9a9576789bf98a35acb2c91e3b6925e4a581ea05c58f2dc138216fbd1a6"
+    },
+    {
+      "frame": 1090,
+      "time_s": 36.35865380859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01090.png",
+      "sha256": "a7ee72a9aa01a2a590b772e80f5d536f0d09f657af60c2683e67bc84b4e30084"
+    },
+    {
+      "frame": 1091,
+      "time_s": 36.39201000976563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01091.png",
+      "sha256": "bb8afed460fb449d034683cb581c6997960d1b6c908768954d2dffb4482ba9a8"
+    },
+    {
+      "frame": 1092,
+      "time_s": 36.4253662109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01092.png",
+      "sha256": "5569a6e449a9194d930fd4c0d569cbc84f2f25c0ebd29968b9cd73acf08261a4"
+    },
+    {
+      "frame": 1093,
+      "time_s": 36.458722412109374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01093.png",
+      "sha256": "9b42ba61c32d21ec643c61480728ffd65e56b9582a84b126b0974d0de44eb115"
+    },
+    {
+      "frame": 1094,
+      "time_s": 36.49207861328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01094.png",
+      "sha256": "5a73bc6065e42246509d8a2e20cdcb025e21086f21c70a0a988c53c6081d4f3f"
+    },
+    {
+      "frame": 1095,
+      "time_s": 36.52543481445313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01095.png",
+      "sha256": "48a87c8fae7af9e38774ea9505fc50083b9b51f8615e028c08c881f922baeb1d"
+    },
+    {
+      "frame": 1096,
+      "time_s": 36.55879125976563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01096.png",
+      "sha256": "4b3007b7724cbae8ddbecbb5644da4f3cf1d7ff69a91f0c3bca1c05563a8f289"
+    },
+    {
+      "frame": 1097,
+      "time_s": 36.5921474609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01097.png",
+      "sha256": "1fe240282ac03e2fd24b7134021aa970626ae22f135939c9181ae5f78d7a4ac6"
+    },
+    {
+      "frame": 1098,
+      "time_s": 36.625503662109374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01098.png",
+      "sha256": "54e8196cd76c50a4b5c2deedd6da549de0bf495cf29c92415269db9b24100fa8"
+    },
+    {
+      "frame": 1099,
+      "time_s": 36.65885986328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01099.png",
+      "sha256": "a958cd0750be7693132395210aba84d77ab82430df1f26e093ae972579cb6764"
+    },
+    {
+      "frame": 1100,
+      "time_s": 36.69221606445313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01100.png",
+      "sha256": "2761f7e95279189430534686b2676fd16a3faa110c8af867459d4f8b79116a9c"
+    },
+    {
+      "frame": 1101,
+      "time_s": 36.725572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01101.png",
+      "sha256": "ca87c1047edb1e6a6b98ba668decee9e861e410457ad08e1d86dc582f0e918e9"
+    },
+    {
+      "frame": 1102,
+      "time_s": 36.7589287109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01102.png",
+      "sha256": "8c02bd51c883d94848746df3093707cda121beee976203d9ec5e1d0f804adc4e"
+    },
+    {
+      "frame": 1103,
+      "time_s": 36.79228515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01103.png",
+      "sha256": "7bd12b49adb3db38c811f07ece36a7bfba74151d4d720f33fca21da560b91652"
+    },
+    {
+      "frame": 1104,
+      "time_s": 36.82564135742187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01104.png",
+      "sha256": "064299f44d0e18e420a92a8fa66e8ed61ff593f69b9889aef9da6fab6a1b342e"
+    },
+    {
+      "frame": 1105,
+      "time_s": 36.85899780273437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01105.png",
+      "sha256": "4439ca0ba8397c476083f93aaba40a9352b074c487053a9b853064f10cfbb30d"
+    },
+    {
+      "frame": 1106,
+      "time_s": 36.89235424804688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01106.png",
+      "sha256": "7294c18e6181edb75b6da31a1a8eb85750f9ccefcfecd9be57b49d2d6f25f408"
+    },
+    {
+      "frame": 1107,
+      "time_s": 36.92571069335938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01107.png",
+      "sha256": "fd96af92980971f92a2adf9e879964a94f26dcc24e0ba995a4db32f4be23c742"
+    },
+    {
+      "frame": 1108,
+      "time_s": 36.95906689453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01108.png",
+      "sha256": "2e96fb1a4f7c0420e26b2391d19beb173d4c26c15864713b57bf4670f169fe26"
+    },
+    {
+      "frame": 1109,
+      "time_s": 36.99242333984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01109.png",
+      "sha256": "dc1019f0e7beb05ce6b929109278ba4e954d1a7e70270b050a91ec290f5181b5"
+    },
+    {
+      "frame": 1110,
+      "time_s": 37.02577978515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01110.png",
+      "sha256": "3f9c240dc124fe77c595b1cd76f5438e8656e6d608b428fa12b354500bc612ca"
+    },
+    {
+      "frame": 1111,
+      "time_s": 37.05913623046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01111.png",
+      "sha256": "6efa8814e3df24e06d5c1d0b736844cccffdef547c71c7075c7410a57d1f053b"
+    },
+    {
+      "frame": 1112,
+      "time_s": 37.09249243164062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01112.png",
+      "sha256": "c2897236fa98c949937c5a2d93bc12a9c5362cccd7393f24049411159e5c0f5b"
+    },
+    {
+      "frame": 1113,
+      "time_s": 37.12584887695313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01113.png",
+      "sha256": "85196cc1ce3c0643cc5d130d56bad0dd38f1cb8b335243c27c5b00a459bf882a"
+    },
+    {
+      "frame": 1114,
+      "time_s": 37.15920532226563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01114.png",
+      "sha256": "fcdcf2506c84ba94b4e97984242fe229a7e8c96811ee724ee32a3210ca469a97"
+    },
+    {
+      "frame": 1115,
+      "time_s": 37.19256176757813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01115.png",
+      "sha256": "5b49e416c89ec8a92ec9cab5a08e3d889054c0d10365cc0ea6f0fefb4a926fdc"
+    },
+    {
+      "frame": 1116,
+      "time_s": 37.225918212890626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01116.png",
+      "sha256": "f736752a4139c11c3cce77d340f391869f1807fce62ec33bb926adbb8d391aaa"
+    },
+    {
+      "frame": 1117,
+      "time_s": 37.2592744140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01117.png",
+      "sha256": "d163ebfbff84fb37149350c68152960146ae8cdaefbad03615301bbfae21fa98"
+    },
+    {
+      "frame": 1118,
+      "time_s": 37.292630859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01118.png",
+      "sha256": "2668d7c4034bebdd2d71c16de4aff12627eed51226fb1ef32d04df48c5906ce1"
+    },
+    {
+      "frame": 1119,
+      "time_s": 37.3259873046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01119.png",
+      "sha256": "1c494dca826c6a6912b4e835034684ac05bb407ce994fe73f82ea02c88207aae"
+    },
+    {
+      "frame": 1120,
+      "time_s": 37.35934375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01120.png",
+      "sha256": "b41d44d03bccdd691ea3bc7a3c6d5cf3aa06d87f68600e9b2054b95cb5083354"
+    },
+    {
+      "frame": 1121,
+      "time_s": 37.3927001953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01121.png",
+      "sha256": "b97f5870509c3a3c6a6c8c0a5502888f13b95a09bbc98aee338f94466c53662d"
+    },
+    {
+      "frame": 1122,
+      "time_s": 37.42605639648438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01122.png",
+      "sha256": "fb030c4e0edc16d5e2d148cfcb1d4110bcaaff314c7cad55a93aa492eb39f0f8"
+    },
+    {
+      "frame": 1123,
+      "time_s": 37.459412841796876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01123.png",
+      "sha256": "e5bbdf3e3a48db48120720e26ca938a981a26fad831e7183d488adb27bb8f72e"
+    },
+    {
+      "frame": 1124,
+      "time_s": 37.492769287109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01124.png",
+      "sha256": "f73d3f28439d2028c2aa6c516448f673f63005aa93c26a072d2b27967ea8e4ee"
+    },
+    {
+      "frame": 1125,
+      "time_s": 37.526125732421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01125.png",
+      "sha256": "44c46110f1eec84fc4aa04cef4bc127d63109022b15a0e2680bc8622ecd9043e"
+    },
+    {
+      "frame": 1126,
+      "time_s": 37.559482177734374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01126.png",
+      "sha256": "332c3c0faea57f5c8a269a9f20059e4895bdac9ec2b8f89665fb3056412b2861"
+    },
+    {
+      "frame": 1127,
+      "time_s": 37.59283862304687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01127.png",
+      "sha256": "22d481e4f23ea3005fb0c336d0a3d868d676ad4bbfd06ecda1d7c0f2e8ede7c6"
+    },
+    {
+      "frame": 1128,
+      "time_s": 37.62619482421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01128.png",
+      "sha256": "1fb7052ad7564466d18d9bb206048a294f39bf28eed293b0e28a95ba86e336b0"
+    },
+    {
+      "frame": 1129,
+      "time_s": 37.65955126953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01129.png",
+      "sha256": "0f1ffea97c7498078742c94030b4eb73f899b7f53909c60afe1cd59457c8b641"
+    },
+    {
+      "frame": 1130,
+      "time_s": 37.69290771484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01130.png",
+      "sha256": "2c37af188bf2a82d7cc6e89c8c2065b48f16cb71528493f3f8b9617a47a7e42b"
+    },
+    {
+      "frame": 1131,
+      "time_s": 37.72626416015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01131.png",
+      "sha256": "f2d723147452e35ea09d67b5ec36d436cba530921cd8107d3552b6e6ec90e054"
+    },
+    {
+      "frame": 1132,
+      "time_s": 37.759620361328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01132.png",
+      "sha256": "fa9bcdb6c20832cad6e60ccbab577969b449aa533acc65744bb4503ed0ecc393"
+    },
+    {
+      "frame": 1133,
+      "time_s": 37.7929765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01133.png",
+      "sha256": "b4c002153ff570f8183dd2856fad1d475fb5544ac0937dd93c027135fc622da3"
+    },
+    {
+      "frame": 1134,
+      "time_s": 37.82633251953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01134.png",
+      "sha256": "6f27a0cb07345e3a0c131beaac99deb8c09cc0fa84aadc1bea7baeffe3a92d57"
+    },
+    {
+      "frame": 1135,
+      "time_s": 37.859688720703126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01135.png",
+      "sha256": "49e3b656ae031f4de561fd32c9d86beed88982df650509ee7a1f1cb1d7e0783b"
+    },
+    {
+      "frame": 1136,
+      "time_s": 37.893044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01136.png",
+      "sha256": "36229a03273d02f15dd5378de30c28f6d10da0e2c59fc1031c03081381693b9d"
+    },
+    {
+      "frame": 1137,
+      "time_s": 37.92640087890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01137.png",
+      "sha256": "9c7ea43e6931822bc659c32f808daa27336eff68845e639456471de561e1632c"
+    },
+    {
+      "frame": 1138,
+      "time_s": 37.95975708007813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01138.png",
+      "sha256": "2249597384642b97cc0669a7428865bc44ad7c80a9b6dc923197b97681240fff"
+    },
+    {
+      "frame": 1139,
+      "time_s": 37.993113037109374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01139.png",
+      "sha256": "7a16e099a9cd9ce3a23598b9b268176c4ce0fdb70bc6befff7e15d30275f408d"
+    },
+    {
+      "frame": 1140,
+      "time_s": 38.02646923828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01140.png",
+      "sha256": "29b0bffedc284ba84be71346257bd78401108608c675965d5e43d65ad57c6352"
+    },
+    {
+      "frame": 1141,
+      "time_s": 38.0598251953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01141.png",
+      "sha256": "2361f1133b6d1cd6ae84c24c18b16a2cf10b765d337e65b979d54fa102fe3561"
+    },
+    {
+      "frame": 1142,
+      "time_s": 38.093181396484376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01142.png",
+      "sha256": "0ed52de27bcec4c312585555c548addc99f0cf2ac75563946cb1fa4d0a24b160"
+    },
+    {
+      "frame": 1143,
+      "time_s": 38.12653735351562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01143.png",
+      "sha256": "bce206808acca737d7b3eb8d3a6e37b26c64bf96e17dda8818abbe1ecfe67534"
+    },
+    {
+      "frame": 1144,
+      "time_s": 38.1598935546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01144.png",
+      "sha256": "5f73aec6ae4fda7b85689a18254b2cd89bbf01c3634fc02fbe0ecc35a618d828"
+    },
+    {
+      "frame": 1145,
+      "time_s": 38.19324975585938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01145.png",
+      "sha256": "bbac918131f7c94ca5e809917a4845268c4f4c455d2654cf3f7ebbb6726cc421"
+    },
+    {
+      "frame": 1146,
+      "time_s": 38.226605712890624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01146.png",
+      "sha256": "551ff4fbb4894ff4b79b6b2c286dede094b1127d3f441f9fe55be20f7a115cc3"
+    },
+    {
+      "frame": 1147,
+      "time_s": 38.2599619140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01147.png",
+      "sha256": "30a9906a7e0784180a31347b799d8ee6b21304ff3fb65e5e474a1f147ac3b116"
+    },
+    {
+      "frame": 1148,
+      "time_s": 38.29331787109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01148.png",
+      "sha256": "4b270e83ff7c7e27cf9c21d520474941a1df7a968d5f6c6879946af45d9b68ad"
+    },
+    {
+      "frame": 1149,
+      "time_s": 38.326674072265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01149.png",
+      "sha256": "b0101fca8b7237ab905b4e96864cfd834bd2f383eb859a947977d2227def1944"
+    },
+    {
+      "frame": 1150,
+      "time_s": 38.36003002929687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01150.png",
+      "sha256": "c89ea69574e777f04a30078557f0052e6872598aae07735b5815fb037bb756c5"
+    },
+    {
+      "frame": 1151,
+      "time_s": 38.39338623046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01151.png",
+      "sha256": "07bb50f64c219d8716c7cc9ce64c24240c500192d484e24095f88a6169806980"
+    },
+    {
+      "frame": 1152,
+      "time_s": 38.4267421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01152.png",
+      "sha256": "dfe871444dc9632b1ac3ab07c91cafd1ef03e511a1e1a8b3151824294b50345e"
+    },
+    {
+      "frame": 1153,
+      "time_s": 38.460098388671874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01153.png",
+      "sha256": "5debbb19394acb7c904ab4342f89c4a225ceef91404eceff43f598454e9cf5d1"
+    },
+    {
+      "frame": 1154,
+      "time_s": 38.49345434570313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01154.png",
+      "sha256": "0928fd52af1a5005602a5868a680e4ae434741c08befcfca979536795f371a79"
+    },
+    {
+      "frame": 1155,
+      "time_s": 38.526810546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01155.png",
+      "sha256": "e1036b86ba16b8e4b4014e22f7ca64a097f34d3cf1694b1df57f168c3786117a"
+    },
+    {
+      "frame": 1156,
+      "time_s": 38.56016650390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01156.png",
+      "sha256": "4bed26666350f33361a13ca0a3a6e97a44f2f9ae08cdd392dbc0f88db028fb4c"
+    },
+    {
+      "frame": 1157,
+      "time_s": 38.59352270507812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01157.png",
+      "sha256": "11f732dd396f5057daa88980e1f2888f572cf944abf08f90bc27609387ab3560"
+    },
+    {
+      "frame": 1158,
+      "time_s": 38.62687866210938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01158.png",
+      "sha256": "c7a339e70da9b9e5ded4cbab26306e26c4abdea06dabaf0f8425658814e809be"
+    },
+    {
+      "frame": 1159,
+      "time_s": 38.66023486328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01159.png",
+      "sha256": "25e9a587940ccd2d25bd679e6aea6a61d6edae6f0a218705d4abc0e9d41b328b"
+    },
+    {
+      "frame": 1160,
+      "time_s": 38.6935908203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01160.png",
+      "sha256": "84a52b76c79b91d7f228112524f99ff6b0cecce2d2975b97304d363958ec44f6"
+    },
+    {
+      "frame": 1161,
+      "time_s": 38.72694677734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01161.png",
+      "sha256": "0eb29a2d880dcd4dbf3b20c7f0e8eac0356cee129c847c9d9a5d5992e3895fd6"
+    },
+    {
+      "frame": 1162,
+      "time_s": 38.760302978515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01162.png",
+      "sha256": "d14563da765eec786468855b8a0a2770314eb260e04d2d5ecee8d8d69574067e"
+    },
+    {
+      "frame": 1163,
+      "time_s": 38.7936591796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01163.png",
+      "sha256": "50383d0d49b2447d5225691a0b94f664ac24eb1c4014d9e6bd34b16d44c8b171"
+    },
+    {
+      "frame": 1164,
+      "time_s": 38.827015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01164.png",
+      "sha256": "19df4c5582005692ea50d90bbb873208225a5e9afa98a8d25616ed2ea18b3f80"
+    },
+    {
+      "frame": 1165,
+      "time_s": 38.8603720703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01165.png",
+      "sha256": "d262b93d50185abc60d9859182e1612443d9ac0efe8d40d01eb730d609e3b0a8"
+    },
+    {
+      "frame": 1166,
+      "time_s": 38.893728515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01166.png",
+      "sha256": "d272cb78a26a533271e0a0a469e214cc6916f1c94885d25226ab7b3d5e267f3c"
+    },
+    {
+      "frame": 1167,
+      "time_s": 38.92708471679688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01167.png",
+      "sha256": "8f29877e477423586df4f1114c51e62aac2013f93f1e1e62efec95104d8bf1a1"
+    },
+    {
+      "frame": 1168,
+      "time_s": 38.960441162109376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01168.png",
+      "sha256": "9b4303a57d674f68248837442347ec03f2a2acfc4d22bc16843d0877125e06f9"
+    },
+    {
+      "frame": 1169,
+      "time_s": 38.993797607421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01169.png",
+      "sha256": "98bf27995f16f1fb47938fdd130af92239b55d40642717d93a0d0e1dc714b970"
+    },
+    {
+      "frame": 1170,
+      "time_s": 39.027154052734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01170.png",
+      "sha256": "a0c3ad3a0221098556de3689a641726ebaa7e45818349037522ba6f56f69993b"
+    },
+    {
+      "frame": 1171,
+      "time_s": 39.060510498046874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01171.png",
+      "sha256": "7fe8afe8d6ebd3c46cb0f51f3ce5c25fb30fd71d95008f1212f13236f0c31432"
+    },
+    {
+      "frame": 1172,
+      "time_s": 39.09386694335937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01172.png",
+      "sha256": "ecfd2c14582590ba973e943c762b638cc3a46385c737b010ae4d5153bd01270d"
+    },
+    {
+      "frame": 1173,
+      "time_s": 39.12722314453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01173.png",
+      "sha256": "a2a394c32a8e47194917e21e6a153db0bfef7d4b3938fac003e86ba7803b271b"
+    },
+    {
+      "frame": 1174,
+      "time_s": 39.16057958984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01174.png",
+      "sha256": "fd451853cfe587c918ac5a3d3ff53e3202a1f67a0033c0d271d7b0e722f4148d"
+    },
+    {
+      "frame": 1175,
+      "time_s": 39.19393603515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01175.png",
+      "sha256": "513b5e674179b3c88b49256ea49832f0d57199c5a8dbc12cff0726b895b6c2ec"
+    },
+    {
+      "frame": 1176,
+      "time_s": 39.22729248046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01176.png",
+      "sha256": "3e4e2844c5d86f95049c5940f94dea73c446516ebc4718f342ab0c8c44328eee"
+    },
+    {
+      "frame": 1177,
+      "time_s": 39.26064892578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01177.png",
+      "sha256": "ad8901f305d3ed9a9185edf87a6a60193e911f85865bd8ac8fab18a9b53072e5"
+    },
+    {
+      "frame": 1178,
+      "time_s": 39.29400537109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01178.png",
+      "sha256": "0eb6b73f3a540060c60dd75586f41acf6207df75ff451d8e5941773f08b2540b"
+    },
+    {
+      "frame": 1179,
+      "time_s": 39.32736181640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01179.png",
+      "sha256": "71608b974a82695b2b161fa4f2ced0775439709b8c2e47f4f273f56d6f71e8d5"
+    },
+    {
+      "frame": 1180,
+      "time_s": 39.36071826171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01180.png",
+      "sha256": "37a362a5591e3523d697f11de4ef76847eca5c7ec787c1d461d021132c4281c1"
+    },
+    {
+      "frame": 1181,
+      "time_s": 39.39407470703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01181.png",
+      "sha256": "349f017eb45ee1a5d933a2514a5193c3bb2be8c5574beb2da2c5cbbfb8130c86"
+    },
+    {
+      "frame": 1182,
+      "time_s": 39.42743090820313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01182.png",
+      "sha256": "6cfbef229a5cbac686d7054b6492859b2aa52912543e598b9e3063a5b6bbe4ee"
+    },
+    {
+      "frame": 1183,
+      "time_s": 39.46078735351563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01183.png",
+      "sha256": "e77fe54becbf82f40d320255215d09dcc91a1979a1be2068bfa216f3784f2551"
+    },
+    {
+      "frame": 1184,
+      "time_s": 39.49414379882813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01184.png",
+      "sha256": "2beb21d1172288c3f4cc502a923934a50f2630a9fea6fadb54c10d4e84f78948"
+    },
+    {
+      "frame": 1185,
+      "time_s": 39.527500244140626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01185.png",
+      "sha256": "56b7f9867785893a1ae469bf916cb85cc72f255c40cee79c33e9299d74464109"
+    },
+    {
+      "frame": 1186,
+      "time_s": 39.560856689453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01186.png",
+      "sha256": "cdf215ea381826247b8cdf9877d99f22218406fddec844ee33b5ec9aebc260c4"
+    },
+    {
+      "frame": 1187,
+      "time_s": 39.594213134765624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01187.png",
+      "sha256": "890391f2e336fdb1e67a68bb244d4c6c230b73add41fff671e53aa3d960c9e12"
+    },
+    {
+      "frame": 1188,
+      "time_s": 39.627569580078124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01188.png",
+      "sha256": "d2536df7d282714107782933ea36398057f89f62c034a173e75bd09c92aa99b2"
+    },
+    {
+      "frame": 1189,
+      "time_s": 39.66092602539062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01189.png",
+      "sha256": "8a9d5e2386157a32f08932a361295742fcba2ba9ba942ee6397738780ca4ea6c"
+    },
+    {
+      "frame": 1190,
+      "time_s": 39.69428247070312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01190.png",
+      "sha256": "344513f1649e94a967decae817506cc9b77045bad3d4152a1e564d9ae4937669"
+    },
+    {
+      "frame": 1191,
+      "time_s": 39.72763891601563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01191.png",
+      "sha256": "ef489d76c34bb308b4b45435d628a7c057393e4f6047c4f4f9a8dd2f06cc616c"
+    },
+    {
+      "frame": 1192,
+      "time_s": 39.76099536132813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01192.png",
+      "sha256": "9b0c4c9e0c645d6cbc1a51f9d1b2358af12dfaf93889944382f5169903204f49"
+    },
+    {
+      "frame": 1193,
+      "time_s": 39.79435180664063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01193.png",
+      "sha256": "86a77c42b135c487caaf6b881f74bf1e491766ecbb0e97f03aeda5d630fdf714"
+    },
+    {
+      "frame": 1194,
+      "time_s": 39.8277080078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01194.png",
+      "sha256": "795892105213749f4f9bf278c3c02790add64f3802650746265b21e2166a972b"
+    },
+    {
+      "frame": 1195,
+      "time_s": 39.861064208984374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01195.png",
+      "sha256": "fee21f4e550074632f52de5775457c1e6ef74a0efe9fdf8cf2046f4462891143"
+    },
+    {
+      "frame": 1196,
+      "time_s": 39.89442041015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01196.png",
+      "sha256": "2bdce3b1858381902b1e3f2dbe1bed42459d2b60da25e0c894aefb1a72dd1977"
+    },
+    {
+      "frame": 1197,
+      "time_s": 39.9277763671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01197.png",
+      "sha256": "ed4b30cc7e39aa826d2f6ff27a05a57f4e9a6242aaafc2b2262f5abdd20d03ae"
+    },
+    {
+      "frame": 1198,
+      "time_s": 39.961132568359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01198.png",
+      "sha256": "1c4725885334485aab3022a335a074f6fc46ec3bec9231e37a59a79bd7e83bf5"
+    },
+    {
+      "frame": 1199,
+      "time_s": 39.99448876953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01199.png",
+      "sha256": "463438f7b22f69946e9e1d12d4a9e14f652ff9aed46a0716b6dd83a3e1df9406"
+    },
+    {
+      "frame": 1200,
+      "time_s": 40.0278447265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01200.png",
+      "sha256": "7d6b842a073d748682dffbe75be9fed110ad2fa6e87404178195366ba6a09d19"
+    },
+    {
+      "frame": 1201,
+      "time_s": 40.061200927734376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01201.png",
+      "sha256": "342f00026118ce720652f07bc1860518c15071a4262e80ec6057c0ea142ccd3d"
+    },
+    {
+      "frame": 1202,
+      "time_s": 40.09455712890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01202.png",
+      "sha256": "1b1ca603ec8b575888fc84777410670d17c96c487c9f53f7a5993b803b85d8fc"
+    },
+    {
+      "frame": 1203,
+      "time_s": 40.1279130859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01203.png",
+      "sha256": "a97d49ea7b6dc8bbed3f0ab939e171da035508e6c89ee7e7012d7244e4b42e66"
+    },
+    {
+      "frame": 1204,
+      "time_s": 40.16126928710938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01204.png",
+      "sha256": "bb05b0a2d58a64ffb5ef4bfeeb3c33149b89e35a9cd8666b6743ec0684f65560"
+    },
+    {
+      "frame": 1205,
+      "time_s": 40.19462548828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01205.png",
+      "sha256": "a601c26c860d59f4b83ad48b4cfbabd993a42468ac417b3d901a91ed2d08dc70"
+    },
+    {
+      "frame": 1206,
+      "time_s": 40.2279814453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01206.png",
+      "sha256": "bde6925dcf3d4138ba9f5191a53f19288f27d2a1ece50712f6dfe1b9eb6cff0f"
+    },
+    {
+      "frame": 1207,
+      "time_s": 40.26133764648438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01207.png",
+      "sha256": "0a29ccdbab337baeeb86720c7288ee8ca3e99710ad45559c50d0538b1952130a"
+    },
+    {
+      "frame": 1208,
+      "time_s": 40.29469384765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01208.png",
+      "sha256": "ad55103fda567c8fd66da4433cfb780589bb37be74bb1fb11984afc6dd4c68e7"
+    },
+    {
+      "frame": 1209,
+      "time_s": 40.3280498046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01209.png",
+      "sha256": "81a9e2491bed157f0ae18707338c07ec9a5b1e816484a9244388972afa68cb29"
+    },
+    {
+      "frame": 1210,
+      "time_s": 40.36140600585937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01210.png",
+      "sha256": "8f77198b4221361dcf19c5f682a5cdb93e33b48fe2ae06883cde0747a0dd28cb"
+    },
+    {
+      "frame": 1211,
+      "time_s": 40.39476196289063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01211.png",
+      "sha256": "d9e6dd6343001f2e6ce6ab0769126029db75661550eeb4e55c399b0f7948cf81"
+    },
+    {
+      "frame": 1212,
+      "time_s": 40.4281181640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01212.png",
+      "sha256": "485f322439a09233f8394273f90f10cf0744e581f07cffc7411e7ad965945231"
+    },
+    {
+      "frame": 1213,
+      "time_s": 40.46147436523437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01213.png",
+      "sha256": "33541848d0498fefa8a350dbaa2399c6eccbf5cab7c35c3121e76067043e07d6"
+    },
+    {
+      "frame": 1214,
+      "time_s": 40.49483032226563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01214.png",
+      "sha256": "b0656cccc3dc74965a0e97e46ffc500e695de136c53f05969b7fe98f89915cfb"
+    },
+    {
+      "frame": 1215,
+      "time_s": 40.5281865234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01215.png",
+      "sha256": "f8444c8ac96bb2babb4467f60db7d369bbddb556fd1a9071a43d4af7374fb523"
+    },
+    {
+      "frame": 1216,
+      "time_s": 40.56154248046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01216.png",
+      "sha256": "28627af81f714c5e6e71462102c18a890ec658009878b933fab9ce17b83c2665"
+    },
+    {
+      "frame": 1217,
+      "time_s": 40.59489868164062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01217.png",
+      "sha256": "da068472012264330168713b763141637fa0675b0e4f0f5705ad2b5ed7ed4e40"
+    },
+    {
+      "frame": 1218,
+      "time_s": 40.628254638671876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01218.png",
+      "sha256": "da5ef90526e4f172643c76c0198f3fb35671aed2651b1a22c2f434c1aa46815c"
+    },
+    {
+      "frame": 1219,
+      "time_s": 40.66161083984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01219.png",
+      "sha256": "354988c8a5b23de47e77542ab136a89598e4bb248879b2f47c84c074f1677d92"
+    },
+    {
+      "frame": 1220,
+      "time_s": 40.69496704101562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01220.png",
+      "sha256": "d04cf7c277bfdf440e0b6d92626c0118e20d9d6e724fed1f8a481859d561a989"
+    },
+    {
+      "frame": 1221,
+      "time_s": 40.72832299804688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01221.png",
+      "sha256": "859e41dcdd44e3b4b3b64eaf1dc83019db0f32bb6ce6c8b02085e0182d3824a8"
+    },
+    {
+      "frame": 1222,
+      "time_s": 40.76167919921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01222.png",
+      "sha256": "81ac68e7574d19b7d8466a44070ae462df662dd7c605fdc43c93d1062c56af04"
+    },
+    {
+      "frame": 1223,
+      "time_s": 40.79503515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01223.png",
+      "sha256": "f9ad660d0544f092c7746e1ed1423399a2f9f157c80a85ca74b48512af80e510"
+    },
+    {
+      "frame": 1224,
+      "time_s": 40.82839135742187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01224.png",
+      "sha256": "a85cf2071d55e8cab7a46982d07d966138add78a1cb528030a8053908efc4693"
+    },
+    {
+      "frame": 1225,
+      "time_s": 40.86174755859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01225.png",
+      "sha256": "50f733b6893b0a1a3e6a2674ef9e91f28e77c0b89f8d07d36ddb266c0c6bc8f0"
+    },
+    {
+      "frame": 1226,
+      "time_s": 40.895103515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01226.png",
+      "sha256": "00cf2aa384d1da70165f6da9932c1d96a2697f5e29ae59f375c1c85fe9dc63d7"
+    },
+    {
+      "frame": 1227,
+      "time_s": 40.92845947265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01227.png",
+      "sha256": "bfffb86601bc295b578ca57f36a8b7d8a4554c077709b95e5606ad0c078f5a25"
+    },
+    {
+      "frame": 1228,
+      "time_s": 40.9618154296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01228.png",
+      "sha256": "693c80c14111ed043fda579717ae095d9874d8729a2cf6e37067e51d99443e47"
+    },
+    {
+      "frame": 1229,
+      "time_s": 40.99517138671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01229.png",
+      "sha256": "27dfe05a70f34a4d8a35d67d611273a8199f5306491d2447e4b71924b4a7b941"
+    },
+    {
+      "frame": 1230,
+      "time_s": 41.02852734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01230.png",
+      "sha256": "2813b7013e57e4862532f9f660b6f8943a8a15c8088812fdf5cbb7eeccdd3f8d"
+    },
+    {
+      "frame": 1231,
+      "time_s": 41.061883544921876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01231.png",
+      "sha256": "11eee4e3d8f20c7955a26a5bc8199621baf8aeaea724101087a20145d58dffca"
+    },
+    {
+      "frame": 1232,
+      "time_s": 41.095239501953124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01232.png",
+      "sha256": "be20328c296a500627014eb604da8ba51b2227b0fc133c552caec9dca4997659"
+    },
+    {
+      "frame": 1233,
+      "time_s": 41.12859545898438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01233.png",
+      "sha256": "d4b55505b02b17461e97ec561a14feafabdc0d1db5b16f46d5203acdb0c31605"
+    },
+    {
+      "frame": 1234,
+      "time_s": 41.161951416015626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01234.png",
+      "sha256": "135808c572ca3c8153daee30303aef38562c36cd188fccd1294e51d7296a03b0"
+    },
+    {
+      "frame": 1235,
+      "time_s": 41.19530737304687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01235.png",
+      "sha256": "0a70ad0e64ea1a629604edac3d08d5fd7425b55141c322f7a10bcc4b97816927"
+    },
+    {
+      "frame": 1236,
+      "time_s": 41.22866333007813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01236.png",
+      "sha256": "f62a60b624e1a93ccf5819c8bf7822fe3e9022c33091cf65dbbb53b4720b11a6"
+    },
+    {
+      "frame": 1237,
+      "time_s": 41.262019287109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01237.png",
+      "sha256": "9b7672e74705b370b279f64c70bd379c2ffbd7cff48f2db21d607fc090f59dbd"
+    },
+    {
+      "frame": 1238,
+      "time_s": 41.29537524414062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01238.png",
+      "sha256": "ce17d27a08b9dae374c92a74ed0ccbdb2968c6f219bfdd1b0921b2d390bfbceb"
+    },
+    {
+      "frame": 1239,
+      "time_s": 41.32873120117188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01239.png",
+      "sha256": "125eb70c684b266ff1dddf878f423390c7ae7b5e5f16cd00aebb21d7ada678ed"
+    },
+    {
+      "frame": 1240,
+      "time_s": 41.362087158203124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01240.png",
+      "sha256": "9b9a4443264af4b2e453d269ac53088d2621c3f3c0a0b171fb60729ccdf21222"
+    },
+    {
+      "frame": 1241,
+      "time_s": 41.39544311523437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01241.png",
+      "sha256": "2eac41d7d999dd79a18dafed9637d4a3803406de29de44c46db685ebff721d9f"
+    },
+    {
+      "frame": 1242,
+      "time_s": 41.428799072265626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01242.png",
+      "sha256": "a87284bd3d24ef61152480e601a244afd4c82d5b7d43ea8b8bfaa8e984794e21"
+    },
+    {
+      "frame": 1243,
+      "time_s": 41.46215502929687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01243.png",
+      "sha256": "dbbda5e02f1636ab454ad5847117323a2813e9461a95397fb4ab248573d92116"
+    },
+    {
+      "frame": 1244,
+      "time_s": 41.49551098632813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01244.png",
+      "sha256": "2e03d45c9217d912897e34104faeff0b4b1a9af9318488c317fc8a1f4e130e1b"
+    },
+    {
+      "frame": 1245,
+      "time_s": 41.528866943359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01245.png",
+      "sha256": "cd63755e93b3998a55a8d3d039749eb9996bc75d13ef3d2376c8dfe754d3a8e1"
+    },
+    {
+      "frame": 1246,
+      "time_s": 41.56222290039062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01246.png",
+      "sha256": "00298dd7595318c525e7cd1a59cac27fa038f901feeba9483e1c51a2f1a13d78"
+    },
+    {
+      "frame": 1247,
+      "time_s": 41.59557885742188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01247.png",
+      "sha256": "26d98075c84b08256cb43327fd57cfb1ce8211c4371be5c62ce26a875e52fe77"
+    },
+    {
+      "frame": 1248,
+      "time_s": 41.628934814453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01248.png",
+      "sha256": "562eb9dbeb0355e081af3b5206dc2aa09fb8779ef2be935cf7b308597f163882"
+    },
+    {
+      "frame": 1249,
+      "time_s": 41.66229077148437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01249.png",
+      "sha256": "d3855073fc739c0649ce86edf935a2fdc175cbf530e74aafe116a2c32fd82c49"
+    },
+    {
+      "frame": 1250,
+      "time_s": 41.69564672851563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01250.png",
+      "sha256": "5bd9d4ecc1d633c84e9c789a98c2955ee0d11011fe5118f08f46e81ed9588d51"
+    },
+    {
+      "frame": 1251,
+      "time_s": 41.729002685546874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01251.png",
+      "sha256": "35526ebc26e67a39e9e314a1dce4e8f8f6cf028ca8e65c8be8945a7a4e3fddfe"
+    },
+    {
+      "frame": 1252,
+      "time_s": 41.76235864257813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01252.png",
+      "sha256": "5a9ad50fedb84b416771795689d1ef8c8fa8ba046cac715c66b99714671f13b5"
+    },
+    {
+      "frame": 1253,
+      "time_s": 41.79571435546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01253.png",
+      "sha256": "2d58e0e03a67aea4386380391f549d1e7820d8b9aafc41ad2d0111b63e0f7313"
+    },
+    {
+      "frame": 1254,
+      "time_s": 41.8290703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01254.png",
+      "sha256": "291addbf9f446ac109d78816bceabc9a4773c23405fad1fa07f0e39d87eaba90"
+    },
+    {
+      "frame": 1255,
+      "time_s": 41.86242626953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01255.png",
+      "sha256": "5df3db3eb384cd69481341e02d894e428f5be1e9ce8243f03dc7614d1e8a4c7d"
+    },
+    {
+      "frame": 1256,
+      "time_s": 41.895782470703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01256.png",
+      "sha256": "686aea768be16f4f1a3857401aeb180eac2af0bced9f575837079f6b5ceb3ff9"
+    },
+    {
+      "frame": 1257,
+      "time_s": 41.929138671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01257.png",
+      "sha256": "bc04032118feefe46ec43ed3c4049c143d800bbf0e21eb722cf255b89704e2d9"
+    },
+    {
+      "frame": 1258,
+      "time_s": 41.9624951171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01258.png",
+      "sha256": "c773d7e621913e1e282a18091e6fd14bd0176356b18e6e5ba71b3a9850106915"
+    },
+    {
+      "frame": 1259,
+      "time_s": 41.99585131835938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01259.png",
+      "sha256": "3b6b0623e92e2453a9ee4b2ff19ef22ad9855a96defad1ed6e978675dfdc9c3e"
+    },
+    {
+      "frame": 1260,
+      "time_s": 42.02920751953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01260.png",
+      "sha256": "c48ee843d453caec999852ca087ba5922078f06ab4e71764ba5ac887ffdf2904"
+    },
+    {
+      "frame": 1261,
+      "time_s": 42.062563720703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01261.png",
+      "sha256": "1c5aaa4e6e51f37e5780005a7d11306b59ba7e8ecc7397d6f9e1420d734bd3d0"
+    },
+    {
+      "frame": 1262,
+      "time_s": 42.095920166015624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01262.png",
+      "sha256": "cf522472f9ff15689dd5692260961020b8c9ad8b0764b4a062e05cb3c65e4bfd"
+    },
+    {
+      "frame": 1263,
+      "time_s": 42.1292763671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01263.png",
+      "sha256": "b90da2b98e1480e3d0ad165a56263e245b08e92e55bc1e2c204065415c17328e"
+    },
+    {
+      "frame": 1264,
+      "time_s": 42.16263256835938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01264.png",
+      "sha256": "466980c6d783ee35349bb8a99ed8b122eefc6faaecc4511109c303cebfd9ad48"
+    },
+    {
+      "frame": 1265,
+      "time_s": 42.19598876953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01265.png",
+      "sha256": "6c1f7baf05514debb4a0b65fc5fdf5dc8b156c813da42b999cbfe128d92bc983"
+    },
+    {
+      "frame": 1266,
+      "time_s": 42.22934521484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01266.png",
+      "sha256": "96d359730f738888b13c2d11507f87a0a95265635238143a12876ddcc482b946"
+    },
+    {
+      "frame": 1267,
+      "time_s": 42.262701416015624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01267.png",
+      "sha256": "3e4297c183dcaa8f40455a89844017c65d7649e42094748c6f24391ba2fd42c6"
+    },
+    {
+      "frame": 1268,
+      "time_s": 42.2960576171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01268.png",
+      "sha256": "24d99f1f9ddbe3fdc76cc00aef92e63039cc9f69c8f9413bb39e3b7cd1251491"
+    },
+    {
+      "frame": 1269,
+      "time_s": 42.3294140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01269.png",
+      "sha256": "c48307e4d83ee5823ee7b4afba8690742095e3a17cc384b4a9fbd1e28a74e888"
+    },
+    {
+      "frame": 1270,
+      "time_s": 42.36277026367188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01270.png",
+      "sha256": "55f9cd7dfb6801a7e0affb22706400891d887c1098b93b6eb9892b64f5053ce6"
+    },
+    {
+      "frame": 1271,
+      "time_s": 42.39612646484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01271.png",
+      "sha256": "556a4190123211bddc47805073afe51ff42cfc0f27ee6a99ac7acfab5389e1ea"
+    },
+    {
+      "frame": 1272,
+      "time_s": 42.42948266601562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01272.png",
+      "sha256": "712c8274ee348614f14b4ddb272a332b49448169cfe135b3cd016458e1fef41d"
+    },
+    {
+      "frame": 1273,
+      "time_s": 42.46283911132812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01273.png",
+      "sha256": "8c411bcfbb02ba2522e4d36d29d7890b1871e36b5aa3c877f3ba569c067f9073"
+    },
+    {
+      "frame": 1274,
+      "time_s": 42.4961953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01274.png",
+      "sha256": "adbc745a875b49ed887f8f62421ec21243afb61612fae3ca5603a99d74c804dd"
+    },
+    {
+      "frame": 1275,
+      "time_s": 42.529551513671876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01275.png",
+      "sha256": "eaf922beb38e222144fe6ad1127683d5292290f9fb4cc11f63742948e4d95c5c"
+    },
+    {
+      "frame": 1276,
+      "time_s": 42.56290771484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01276.png",
+      "sha256": "6d6c99e0e21045af4761d03e7afde94243a34b3ca0ee56385f3d7d36bf99d49f"
+    },
+    {
+      "frame": 1277,
+      "time_s": 42.59626416015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01277.png",
+      "sha256": "d965ca51f8ad487b39ab708493cf5103619875352b8221bc3d9078773a3ac93f"
+    },
+    {
+      "frame": 1278,
+      "time_s": 42.62962036132812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01278.png",
+      "sha256": "373585127a069c15ab05f1571e9295b139ac2b40ba765c7ba607aeee883a7ed1"
+    },
+    {
+      "frame": 1279,
+      "time_s": 42.6629765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01279.png",
+      "sha256": "db8d7d7b019d07ffdad7d275b6d884107da594c28d5803f8b95308635553c5da"
+    },
+    {
+      "frame": 1280,
+      "time_s": 42.6963330078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01280.png",
+      "sha256": "d7ca75941de27030aa3f8174227e598dad8c9c9e9f26bf13330cc9283b02237a"
+    },
+    {
+      "frame": 1281,
+      "time_s": 42.729689208984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01281.png",
+      "sha256": "fbbff6cfbc5083d0d57574b73129bebf6f4bd186c7c8b2757ac3cbbbb5edf80f"
+    },
+    {
+      "frame": 1282,
+      "time_s": 42.76304541015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01282.png",
+      "sha256": "22acbf7dc56b407cecc94fd1f22c75a777283853076e466b2e3f5a65484d5e71"
+    },
+    {
+      "frame": 1283,
+      "time_s": 42.79640161132812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01283.png",
+      "sha256": "dc54a280d2489bcce7b5be4f0ca7022457c8e543c19cc2740c8dcd6deb85c3b3"
+    },
+    {
+      "frame": 1284,
+      "time_s": 42.82975805664063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01284.png",
+      "sha256": "5b05247ba3b7de48afd5536c49229adc091d20384f9d50fc66b5f2a81392cfe6"
+    },
+    {
+      "frame": 1285,
+      "time_s": 42.8631142578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01285.png",
+      "sha256": "9391338b4f9532882eab32c93f61d724214ef9715e8a2b932d98b8c85da2df79"
+    },
+    {
+      "frame": 1286,
+      "time_s": 42.896470458984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01286.png",
+      "sha256": "bd2c9394f3dcf48fdef54398a30939d9e7b1a67b0e2f180f69ae7ea2a7e8d475"
+    },
+    {
+      "frame": 1287,
+      "time_s": 42.92982666015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01287.png",
+      "sha256": "9b2159b1561e6d82a4508c76e625ba5db41ef99e652beb10f9d0c2d45a96db0e"
+    },
+    {
+      "frame": 1288,
+      "time_s": 42.96318310546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01288.png",
+      "sha256": "5919dc10910e3ed54b475b6abfb2ea3a6fd3c60bd33ef2d1c149a2a9e9fdf0e8"
+    },
+    {
+      "frame": 1289,
+      "time_s": 42.99653930664063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01289.png",
+      "sha256": "ea7c4a47e337482de2161820a5038c91d0785705478a3b59741c6f4c5325fa6e"
+    },
+    {
+      "frame": 1290,
+      "time_s": 43.0298955078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01290.png",
+      "sha256": "be5e9c14a8865eaa65d495c149ffc3e5f0fcae94ee19bba9542b3fa587ba906e"
+    },
+    {
+      "frame": 1291,
+      "time_s": 43.063251708984374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01291.png",
+      "sha256": "266c62443f4c3b4508b26f1d8bcbae9e72f189b9f44f0584c3925c212f392e8a"
+    },
+    {
+      "frame": 1292,
+      "time_s": 43.096608154296874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01292.png",
+      "sha256": "94ca29519350d7ed856a46acfdf4ffc88906f24c5915c488c7c3d9534be33776"
+    },
+    {
+      "frame": 1293,
+      "time_s": 43.12996435546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01293.png",
+      "sha256": "7044748851090761703bd814803b78fb7c1b98f89e9f2fe13b23be1d45a9f245"
+    },
+    {
+      "frame": 1294,
+      "time_s": 43.16332055664063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01294.png",
+      "sha256": "6d105291a1b08fae30226152627df9b4048039f6a494128ff189777048b399a0"
+    },
+    {
+      "frame": 1295,
+      "time_s": 43.1966767578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01295.png",
+      "sha256": "965e3a5ef51cb413a3d853739ae086e72a51f7fef4a2cb942edb41766c4e90a4"
+    },
+    {
+      "frame": 1296,
+      "time_s": 43.230033203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01296.png",
+      "sha256": "b17aca45f01486406ce9fa15890633acce78fd0a8846d261cbadc2eabea1b1dc"
+    },
+    {
+      "frame": 1297,
+      "time_s": 43.26338940429687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01297.png",
+      "sha256": "1c5c81a51269a79e707b43c2e45d711da527fffcfeac79ec513d2053df4420a7"
+    },
+    {
+      "frame": 1298,
+      "time_s": 43.29674560546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01298.png",
+      "sha256": "10dbec55e9b27a5b25becc5c24023b6558f2ae66239f6fe31912f90261fd0c44"
+    },
+    {
+      "frame": 1299,
+      "time_s": 43.33010205078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01299.png",
+      "sha256": "b29dd1272da606cb35a598962eb1af51ac71ea99330a746ac52d6b5c81bbda31"
+    },
+    {
+      "frame": 1300,
+      "time_s": 43.363458251953126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01300.png",
+      "sha256": "53ca340f29fdf061188b45c43f4cff541fa220970b513438e4d12d164ea868c7"
+    },
+    {
+      "frame": 1301,
+      "time_s": 43.396814453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01301.png",
+      "sha256": "4f15698d1067d2bb1a042bbe4e33f47639f123293eb916ebbfa33ecdb766885e"
+    },
+    {
+      "frame": 1302,
+      "time_s": 43.43017065429687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01302.png",
+      "sha256": "76e20bf23cc8704a057729137d3504475b554db1fbb23f3163b8e22d04199c7d"
+    },
+    {
+      "frame": 1303,
+      "time_s": 43.46352709960937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01303.png",
+      "sha256": "c89022692b13196cdb809b5be21be5c22142b5eec031dd68cc5d79dec82812e5"
+    },
+    {
+      "frame": 1304,
+      "time_s": 43.49688330078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01304.png",
+      "sha256": "07feb1a093941a6b0367b529b8f67f2b9b8d36c14c263055d0a85f1ea42cf937"
+    },
+    {
+      "frame": 1305,
+      "time_s": 43.530239501953126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01305.png",
+      "sha256": "c4909734fd555d85e404257e7d06f98f98b429befd6d978d6c86468998542683"
+    },
+    {
+      "frame": 1306,
+      "time_s": 43.563595947265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01306.png",
+      "sha256": "82377fb486d683fc856721c4c805063b0a34ffc75ce84e066f8f6d7409f07180"
+    },
+    {
+      "frame": 1307,
+      "time_s": 43.5969521484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01307.png",
+      "sha256": "39eff350c2d17c0f001efcc97030eb7a10fbda6d4bca20ce915950ba5912c3d0"
+    },
+    {
+      "frame": 1308,
+      "time_s": 43.63030834960937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01308.png",
+      "sha256": "1ee9ff2e28d0d33a19d66bcde3741488cc48ba5c5780f4d96db0563ba25cf6ce"
+    },
+    {
+      "frame": 1309,
+      "time_s": 43.66366455078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01309.png",
+      "sha256": "4951d685dcfa628f28c9a1da05f807bd839c869affdef0493f04f22ab3055129"
+    },
+    {
+      "frame": 1310,
+      "time_s": 43.69702099609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01310.png",
+      "sha256": "3c6318cf6e1b65306ed8e4ab3df2048ca537f9bec5b24c63847e83414e1e12bf"
+    },
+    {
+      "frame": 1311,
+      "time_s": 43.730377197265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01311.png",
+      "sha256": "6096d855924a33fa97ceb04c0059e112c1d499ae83cc5e5c6dcb1a89176ec0dc"
+    },
+    {
+      "frame": 1312,
+      "time_s": 43.7637333984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01312.png",
+      "sha256": "925ccfda67d9294cd3ed23357ba8d68c5f43662621224d4e81ee767dce5578dc"
+    },
+    {
+      "frame": 1313,
+      "time_s": 43.79708984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01313.png",
+      "sha256": "8e1079454779fe7ca55faeb0d5da6c2e7ca297af13c209508ddc1cd0ff0d595e"
+    },
+    {
+      "frame": 1314,
+      "time_s": 43.83044604492188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01314.png",
+      "sha256": "cae00ef9be038985598f101f54f110b3db0e4b71bf72b6cd27949b04b42ad1d6"
+    },
+    {
+      "frame": 1315,
+      "time_s": 43.86380224609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01315.png",
+      "sha256": "f8d555f04073f50f7402211fc29bcee411bbdc8614f3032c1b55900c3b6c0a6a"
+    },
+    {
+      "frame": 1316,
+      "time_s": 43.89715869140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01316.png",
+      "sha256": "ce6e08a104defa4431219f87c455142a9a06e4f9af18220be72b299db792d9e0"
+    },
+    {
+      "frame": 1317,
+      "time_s": 43.930514892578124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01317.png",
+      "sha256": "232df4a9d44ef441e2d683de59074e7b6c40765b0e383013be219ff030d97ed7"
+    },
+    {
+      "frame": 1318,
+      "time_s": 43.96387109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01318.png",
+      "sha256": "335e68fc7354ed3acb60300cb9489bbd0b81187de42eaa0e1f25311c93066417"
+    },
+    {
+      "frame": 1319,
+      "time_s": 43.99722729492188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01319.png",
+      "sha256": "33c75ac233792cad1978fe55389b9f11d0bdfab508d8001352ce47de66b26eb6"
+    },
+    {
+      "frame": 1320,
+      "time_s": 44.03058374023438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01320.png",
+      "sha256": "f54366283892b85ac6fa2cb38ddd4e68534d2c4872dfd8b46d899d734c52c332"
+    },
+    {
+      "frame": 1321,
+      "time_s": 44.063940185546876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01321.png",
+      "sha256": "944ef572f80e6e9c5e24d52a23cd692d6a0d8d8acd4dbbc5c696225366b0ff8a"
+    },
+    {
+      "frame": 1322,
+      "time_s": 44.09729638671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01322.png",
+      "sha256": "719950d39dff5e51d08e9f76ef46ea72d8136aa303b80741165506794d79e8f4"
+    },
+    {
+      "frame": 1323,
+      "time_s": 44.13065283203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01323.png",
+      "sha256": "629bb3b245fbc5d7237c4aa761e330edf6d3e69c392fa71c55c928cc3ce79ab0"
+    },
+    {
+      "frame": 1324,
+      "time_s": 44.16400927734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01324.png",
+      "sha256": "461ba01b68ad8b2a73fc47740b3b654da893cbc8c9e02dac0280bd9801f56cf0"
+    },
+    {
+      "frame": 1325,
+      "time_s": 44.19736572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01325.png",
+      "sha256": "aa48116cb8d1546e6cc45b8c4a3a19c8c19dd6d1e0bfbaecf4d0b091ec94b78e"
+    },
+    {
+      "frame": 1326,
+      "time_s": 44.23072192382813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01326.png",
+      "sha256": "aff525bb06a08f7f5fc6defeeb6fcdc7cc53c4237a32a9c81ad67cfea93c9c58"
+    },
+    {
+      "frame": 1327,
+      "time_s": 44.26407836914063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01327.png",
+      "sha256": "76f51f1841c0439b43d03ea0e306a1843a152d1db748dfeeaa47adc6e430dd16"
+    },
+    {
+      "frame": 1328,
+      "time_s": 44.297434814453126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01328.png",
+      "sha256": "1e335d43d9d05c5c686fed04f55c02765c94885646b2bd425145ecc66cf819c9"
+    },
+    {
+      "frame": 1329,
+      "time_s": 44.330791015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01329.png",
+      "sha256": "7dbb849e6f19a816fde16cf59f99d08055bb6461c7fb9176c7b8f81e8463baab"
+    },
+    {
+      "frame": 1330,
+      "time_s": 44.3641474609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01330.png",
+      "sha256": "fc953460057bbe14bb142167065d466b6f34082633f6f253036e5e053f90fe62"
+    },
+    {
+      "frame": 1331,
+      "time_s": 44.39750390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01331.png",
+      "sha256": "710f2f2dc576c1c625be8d80ebddb6e36a09b4bb42a803f490175305cd3e1e43"
+    },
+    {
+      "frame": 1332,
+      "time_s": 44.4308603515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01332.png",
+      "sha256": "5aa0c731d83fb162b72385628dc5f345513e4eadf41dcdb15ade33e8b63c6ea4"
+    },
+    {
+      "frame": 1333,
+      "time_s": 44.464216796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01333.png",
+      "sha256": "bcb51d3e1fc4e03168c0c372748f8ef5308da62d0039075728fa6243fd98a387"
+    },
+    {
+      "frame": 1334,
+      "time_s": 44.49757299804688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01334.png",
+      "sha256": "8650bdd214efbe991123ff7d9d4aa265007ddef547437095360fef207b251123"
+    },
+    {
+      "frame": 1335,
+      "time_s": 44.530929443359376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01335.png",
+      "sha256": "a57a67ae619487376b10b392fe0482cc343bbaa7d57469457e42fdd182f6e594"
+    },
+    {
+      "frame": 1336,
+      "time_s": 44.564285888671876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01336.png",
+      "sha256": "8a86e84101233681ef4e335581d35fba18ba90bd791ade5c228c32f42006962a"
+    },
+    {
+      "frame": 1337,
+      "time_s": 44.597642333984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01337.png",
+      "sha256": "cf8e653295476b7d1423cc1f77d0a023992cd8e122316c40dd5099af674a61d8"
+    },
+    {
+      "frame": 1338,
+      "time_s": 44.63099853515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01338.png",
+      "sha256": "9665b3f8ece782dd193c6234e997073d2b88430270a24725218de79b4a8eedb8"
+    },
+    {
+      "frame": 1339,
+      "time_s": 44.66435498046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01339.png",
+      "sha256": "1fe2f0ede2c9792e1ef550e27a305828be6a643ccf2d9843ab931c4a75dc5a31"
+    },
+    {
+      "frame": 1340,
+      "time_s": 44.69771142578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01340.png",
+      "sha256": "efb6beac45adc0f9213f5439dc69f9c59c3fe845279a1e2a1db245771a9e677c"
+    },
+    {
+      "frame": 1341,
+      "time_s": 44.73106787109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01341.png",
+      "sha256": "6204ab5c1c6c879a311f368f447555935f5b64f9a710c452adcc931d6657bc4c"
+    },
+    {
+      "frame": 1342,
+      "time_s": 44.76442431640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01342.png",
+      "sha256": "c9544c7f46f7d6d6fea8099b5fd64bc28faa297c2739ced1b835ffca2a25bc24"
+    },
+    {
+      "frame": 1343,
+      "time_s": 44.797780517578126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01343.png",
+      "sha256": "fe6ef2906e9e7310e851857d992a2751d0e733b42d420ac29950fad8ff31aaff"
+    },
+    {
+      "frame": 1344,
+      "time_s": 44.831136962890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01344.png",
+      "sha256": "af9e8d3769cb0d9657ca9feefc3c27de36c5d431c2091304810778452f711e92"
+    },
+    {
+      "frame": 1345,
+      "time_s": 44.864493408203124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01345.png",
+      "sha256": "cdfc43e9b4c84ab3b175e4696b671d0e77b57346f167421ab2da9b376325aba8"
+    },
+    {
+      "frame": 1346,
+      "time_s": 44.89784985351562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01346.png",
+      "sha256": "e1172e42f4b234a1721de7cde7c7f9f2d28ef1d60bcfab716974e60cdcebf4a7"
+    },
+    {
+      "frame": 1347,
+      "time_s": 44.93120629882812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01347.png",
+      "sha256": "e52895053183cd0f50fe16f4e96954345bfc7d239a60489108d68f298406d820"
+    },
+    {
+      "frame": 1348,
+      "time_s": 44.9645625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01348.png",
+      "sha256": "f60f3b7dab3783cf4baeeaab35061541d41ab4e63783da8946b8a8b1a18f5dc4"
+    },
+    {
+      "frame": 1349,
+      "time_s": 44.9979189453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01349.png",
+      "sha256": "fdf98c409e73c728bdbfd8990c7e09e4cd34d70e917fcc923f8ec5b271605868"
+    },
+    {
+      "frame": 1350,
+      "time_s": 45.031275146484376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01350.png",
+      "sha256": "db5d6d650edbcdb95a67a5008d0a526ff078975163cd414b9e38e212d0d9f012"
+    },
+    {
+      "frame": 1351,
+      "time_s": 45.06463134765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01351.png",
+      "sha256": "394014fdb2796a873350c09773304170bdc9b93b062f2497988e0f7723bb8445"
+    },
+    {
+      "frame": 1352,
+      "time_s": 45.09798779296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01352.png",
+      "sha256": "e2d3b0a356c63c98836830dde74384ac8ecdbbb9ad40bcbcc284ab49e340e6c9"
+    },
+    {
+      "frame": 1353,
+      "time_s": 45.13134399414062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01353.png",
+      "sha256": "3aa0ba25a923784a7f548f043e2e70cd56ca7d1a702d876e01467546cc943f0d"
+    },
+    {
+      "frame": 1354,
+      "time_s": 45.1647001953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01354.png",
+      "sha256": "faffe83170002876ccbccfc1a04513606e98bc5888ff5df7fdc1a0157adae6d7"
+    },
+    {
+      "frame": 1355,
+      "time_s": 45.198056396484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01355.png",
+      "sha256": "cc67938512b824700e4e4f0c28f9cebf84fcab9bb007fb60e3ff50b648c8c54b"
+    },
+    {
+      "frame": 1356,
+      "time_s": 45.231412841796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01356.png",
+      "sha256": "95d0db3d7d081e040b034997a756fff658fc5354841562a5cc31bb7838426d6d"
+    },
+    {
+      "frame": 1357,
+      "time_s": 45.26476904296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01357.png",
+      "sha256": "75b7f125e762ceb1269cc29e15021df0c43fa6109e9be44f5508af2eab59febe"
+    },
+    {
+      "frame": 1358,
+      "time_s": 45.29812524414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01358.png",
+      "sha256": "9dc0280edc1826e1203572e3a2d3d8434b4377f694779e79bf433b38adb736ed"
+    },
+    {
+      "frame": 1359,
+      "time_s": 45.3314814453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01359.png",
+      "sha256": "d52b0c356a52e3f9f37b5823c1ebeb20f7920f46ad7e58ea7c94b6bd77924a14"
+    },
+    {
+      "frame": 1360,
+      "time_s": 45.364837646484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01360.png",
+      "sha256": "057d1551023974312e58bf8676cb7b559d583667cc83fde548eac94463eb2102"
+    },
+    {
+      "frame": 1361,
+      "time_s": 45.398194091796874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01361.png",
+      "sha256": "c0ea688874067f59d032664a5243d0941947f0dccfb61426ccf386f8bd91629f"
+    },
+    {
+      "frame": 1362,
+      "time_s": 45.43155029296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01362.png",
+      "sha256": "89eade3864f2d47c49fffe867b21f109ae9f7ee83a8244fc906d8478ef88ad28"
+    },
+    {
+      "frame": 1363,
+      "time_s": 45.46490649414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01363.png",
+      "sha256": "d8eb59221ec3fce8ae40081690b56eeb914bd11d481eddab229da9ebbb3cfb87"
+    },
+    {
+      "frame": 1364,
+      "time_s": 45.4982626953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01364.png",
+      "sha256": "3f3a5cbe1b099099e6c8cd50a60a8bca723a3aebb5f9c6b82a27fc2219678e6c"
+    },
+    {
+      "frame": 1365,
+      "time_s": 45.531618896484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01365.png",
+      "sha256": "6a7e156be8f9d7c6407a7d9a88d9291332caabb794fcaa724221965c9e76067c"
+    },
+    {
+      "frame": 1366,
+      "time_s": 45.564975341796874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01366.png",
+      "sha256": "e8bb270ca340b575de9f3da17b7a386a572144f6b8c142c0b49d3d0a8dddfd13"
+    },
+    {
+      "frame": 1367,
+      "time_s": 45.59833154296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01367.png",
+      "sha256": "be915739300026094255c0392065433f43ea7726cf7d3d34572d527ef3f2fa18"
+    },
+    {
+      "frame": 1368,
+      "time_s": 45.63168774414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01368.png",
+      "sha256": "5a3f04567f688ac9a07f802955f5044720bd2eabd3403dda8d7d1a42ba6afd89"
+    },
+    {
+      "frame": 1369,
+      "time_s": 45.6650439453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01369.png",
+      "sha256": "7be12f0613de02584797ededb235f530420cd93e19f3bb6e3a5f61b80710786e"
+    },
+    {
+      "frame": 1370,
+      "time_s": 45.698400390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01370.png",
+      "sha256": "a78f92b79708cea13df6bf1b24641aaf81fdc1b7c985243cb20e62a8e98435a1"
+    },
+    {
+      "frame": 1371,
+      "time_s": 45.731756591796874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01371.png",
+      "sha256": "36f38a3b1e0f50db5131cd88cb79ab4a1df7895c01c669bf5ec676291af8b3c0"
+    },
+    {
+      "frame": 1372,
+      "time_s": 45.76511279296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01372.png",
+      "sha256": "744b8bff771b12f6131f477325678ab977026cd2e6e8af1510776cd308a739e8"
+    },
+    {
+      "frame": 1373,
+      "time_s": 45.79846899414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01373.png",
+      "sha256": "44796e4c644cebca2f14ea4fc7964bdd52520b8d411aa7bea2f1bd5982927b33"
+    },
+    {
+      "frame": 1374,
+      "time_s": 45.8318251953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01374.png",
+      "sha256": "f511f52cb48b14ecc6e7c3aa81658bf61833c8aae62a3e065e4d52a4db11a921"
+    },
+    {
+      "frame": 1375,
+      "time_s": 45.865181640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01375.png",
+      "sha256": "f4d68655164160f263e89b1a7cceb8fada0fd66164871c17a87aa332e9fd11c2"
+    },
+    {
+      "frame": 1376,
+      "time_s": 45.89853784179687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01376.png",
+      "sha256": "b4466b6f817ab1592f7f2f918e4de5eb2c6e585bcf800d7210cd7854370803f1"
+    },
+    {
+      "frame": 1377,
+      "time_s": 45.93189404296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01377.png",
+      "sha256": "0e3bd5ceea348d00cccf25aec94dd02ec02f57f0539e3883754e4949745414a7"
+    },
+    {
+      "frame": 1378,
+      "time_s": 45.96525024414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01378.png",
+      "sha256": "16c5b07be8a234b986790edb17c7e7931c72e93713145d46eabe498347274671"
+    },
+    {
+      "frame": 1379,
+      "time_s": 45.998606689453126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01379.png",
+      "sha256": "fd431a69d01bc42ace064467ad0122c7761e5a2ec26c5adc97b0f8f0d1351304"
+    },
+    {
+      "frame": 1380,
+      "time_s": 46.031962890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01380.png",
+      "sha256": "2d99acfbbab5e58577efbdeca1a4aedf64dfda2b812ed7b384442a642d7738a3"
+    },
+    {
+      "frame": 1381,
+      "time_s": 46.06531909179687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01381.png",
+      "sha256": "83c8cc5a353c70e5317a5e213e6a3b630d672d2d28adedfdad1e2bcbdd5bb95b"
+    },
+    {
+      "frame": 1382,
+      "time_s": 46.09867553710937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01382.png",
+      "sha256": "c9d3de5d4223c5fa4ec2b0d72329c63ad9fad22170aee8785612890a217580eb"
+    },
+    {
+      "frame": 1383,
+      "time_s": 46.13203198242188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01383.png",
+      "sha256": "46fb90821e581746bfcce21b308dd833f7051169d052ddebc4881cd863417780"
+    },
+    {
+      "frame": 1384,
+      "time_s": 46.16538842773438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01384.png",
+      "sha256": "ceb2467c6f99caa609aa89ff4539cb343a5426ff694b3fd5692a8775cba70d16"
+    },
+    {
+      "frame": 1385,
+      "time_s": 46.19874487304688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01385.png",
+      "sha256": "9bb1cb9147a75ed161ac2e0a909db1a1aac76ffad940afae7f675bf3769d7505"
+    },
+    {
+      "frame": 1386,
+      "time_s": 46.232101318359376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01386.png",
+      "sha256": "9ca93fa8d9b22d1996d3ea66815d3333b70579e2b6031a489ca43996e7365338"
+    },
+    {
+      "frame": 1387,
+      "time_s": 46.265457763671876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01387.png",
+      "sha256": "50131a340856b09d37cebc4e467ad3efdbcc17c06fc8bbc1f27813041a4e0e69"
+    },
+    {
+      "frame": 1388,
+      "time_s": 46.298814208984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01388.png",
+      "sha256": "2cdfb69e8bc4d17e62820b088aee95fb5a64cb9082947151278eccb210064d0c"
+    },
+    {
+      "frame": 1389,
+      "time_s": 46.332170654296874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01389.png",
+      "sha256": "1d99e4598710dbd7bd22e87cf2e6638bd394ecc09d99375eaa6dea37dd22f8a8"
+    },
+    {
+      "frame": 1390,
+      "time_s": 46.36552709960937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01390.png",
+      "sha256": "61b4f39f74279a9b2e4f7848545ad3fe6db4d1b732a775ef530c3be74a30ca9f"
+    },
+    {
+      "frame": 1391,
+      "time_s": 46.39888354492187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01391.png",
+      "sha256": "5fa783f8c43233cd322b06b23f269869f64554b2b83f8b98ce430712dc0a8ca0"
+    },
+    {
+      "frame": 1392,
+      "time_s": 46.43223999023437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01392.png",
+      "sha256": "1eccabe33f6828c70beb8104402230ba08b260aaff8640fdd6bcf039c09cd7f5"
+    },
+    {
+      "frame": 1393,
+      "time_s": 46.46559643554688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01393.png",
+      "sha256": "d160537bed1a318bb3a697bf4cb2181f7ed6cdd1d731a1f74d2b3b7d0a5026bb"
+    },
+    {
+      "frame": 1394,
+      "time_s": 46.49895288085938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01394.png",
+      "sha256": "8dfdc6f4e04dd6c64a178ee0e8a06f02ba7d0f83eb0482ab30ac5e55a58c559d"
+    },
+    {
+      "frame": 1395,
+      "time_s": 46.53230932617188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01395.png",
+      "sha256": "e73a3aeebb3968a5563e324981264860dbb4f1c4bce00416dd3f5beaf24b2bf9"
+    },
+    {
+      "frame": 1396,
+      "time_s": 46.565665771484376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01396.png",
+      "sha256": "e6b006b750b60a06c863c98661817914387451f84bff3bd5a992236e629135d8"
+    },
+    {
+      "frame": 1397,
+      "time_s": 46.599022216796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01397.png",
+      "sha256": "19d9ac9ecb1a8509d0cdf15347b2ada4ec4522339c96399492493733948414da"
+    },
+    {
+      "frame": 1398,
+      "time_s": 46.632378662109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01398.png",
+      "sha256": "95b522f01f77b8d3dded61d2cf16ea7b54a4204783fef859fafda5fc21888b44"
+    },
+    {
+      "frame": 1399,
+      "time_s": 46.665735107421874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01399.png",
+      "sha256": "67257564ad097d46a902da66bee36c74fe91956b31a1ec381b2c4483d19df5a2"
+    },
+    {
+      "frame": 1400,
+      "time_s": 46.699091796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01400.png",
+      "sha256": "754ed8dd3e708ebf359bea8f744e2ae4c19a7568e533df686cebcd52ff3c6e09"
+    },
+    {
+      "frame": 1401,
+      "time_s": 46.7324482421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01401.png",
+      "sha256": "fe05491b759221089dd99b711c4c4317c29a5853871bcbfdb698438e24682ff9"
+    },
+    {
+      "frame": 1402,
+      "time_s": 46.7658046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01402.png",
+      "sha256": "0ecfdb468f6db91b9c4381c0264e63ba1e3adec0fe15f206baaee917781e1eb8"
+    },
+    {
+      "frame": 1403,
+      "time_s": 46.7991611328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01403.png",
+      "sha256": "9f5858a39892cc59f24fb4f98f018ef1e457a0bef5753141f2fa1a071b9b70dc"
+    },
+    {
+      "frame": 1404,
+      "time_s": 46.832517578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01404.png",
+      "sha256": "19aa2b375fa6718a4bb8ade7455e490d01f0b188cdd43d39c17f7adaf1a01dfa"
+    },
+    {
+      "frame": 1405,
+      "time_s": 46.8658740234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01405.png",
+      "sha256": "eeebe7d04133f161c970dfe04d358dd2cfa5710425c6bdfcc4759ca6e0b35383"
+    },
+    {
+      "frame": 1406,
+      "time_s": 46.89923046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01406.png",
+      "sha256": "4a960f6b2218c2114aba74d43cd2d742387998995ef85d1537609c8fd90b5bd4"
+    },
+    {
+      "frame": 1407,
+      "time_s": 46.93258715820313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01407.png",
+      "sha256": "dc00a399e28be4d40f76e56f39f2d8fa2658996d9105fb848c1e22139a5a91eb"
+    },
+    {
+      "frame": 1408,
+      "time_s": 46.965943603515626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01408.png",
+      "sha256": "59e4fe34f14899751023f51eacdb6b5b2efb40afeb91f4a135bcd453a5c42817"
+    },
+    {
+      "frame": 1409,
+      "time_s": 46.999300048828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01409.png",
+      "sha256": "ef4f6154ff37667be86967fae29b3b95c83905ada4c33ce3ca065053292ffa3b"
+    },
+    {
+      "frame": 1410,
+      "time_s": 47.032656494140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01410.png",
+      "sha256": "c8622bac1e810c99f4bbffccc429984b48b3aab3171e637099d9b198fc06543f"
+    },
+    {
+      "frame": 1411,
+      "time_s": 47.06601318359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01411.png",
+      "sha256": "3658f0bef998cde17191c343d9945ca7de8a1e5b3f1e0e226ba1445c51b42e11"
+    },
+    {
+      "frame": 1412,
+      "time_s": 47.09936938476562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01412.png",
+      "sha256": "30ed68e6509c0cf5f96125382fe58ae76b32c9207bc5ee6871c0cc93fb1bda75"
+    },
+    {
+      "frame": 1413,
+      "time_s": 47.132756103515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01413.png",
+      "sha256": "19ec227d204c64656014736a5bb0bb3fb4b6a0e03d8c27f03cd63fa80835ed21"
+    },
+    {
+      "frame": 1414,
+      "time_s": 47.16614282226563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01414.png",
+      "sha256": "ae3196d1a6cc67c10840218a1709745e6da7d5fc1992bf214872f99b599342c3"
+    },
+    {
+      "frame": 1415,
+      "time_s": 47.19952978515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01415.png",
+      "sha256": "8b72c452f018fa8505ef5782225784c35bee4b746edcdf35dc21ab2dd7f39a2b"
+    },
+    {
+      "frame": 1416,
+      "time_s": 47.2329169921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01416.png",
+      "sha256": "a50bab644fa8b76020c9ab5871d7bc05fefdc07d7c0427378e3531fb3fa71dcb"
+    },
+    {
+      "frame": 1417,
+      "time_s": 47.266304443359374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01417.png",
+      "sha256": "9e1b129dea2623c04378820dc8833d4971bfb965db3723d34872ca32016576ef"
+    },
+    {
+      "frame": 1418,
+      "time_s": 47.29969213867187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01418.png",
+      "sha256": "bc522ee37170049d14caee866566d4604b480423fa704d977ef748cb4e77c244"
+    },
+    {
+      "frame": 1419,
+      "time_s": 47.33307983398438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01419.png",
+      "sha256": "f8f63e57b01827bb96c5df0a699141d91010e673b677b9092ca01da8d841e520"
+    },
+    {
+      "frame": 1420,
+      "time_s": 47.3664677734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01420.png",
+      "sha256": "0e951a07e8899e044f060a01e09ec6b99263e8b91e5d858c2f1f3a2dea781667"
+    },
+    {
+      "frame": 1421,
+      "time_s": 47.39985595703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01421.png",
+      "sha256": "8118e316c27c561c62cf109aa64b5cdbacd988903697109d8501e7c1d2e37c82"
+    },
+    {
+      "frame": 1422,
+      "time_s": 47.43324438476562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01422.png",
+      "sha256": "96829f1d91b9cb08ba020e0c3a8349e66b57a62bf4afba9477f03d4aa098a902"
+    },
+    {
+      "frame": 1423,
+      "time_s": 47.4666328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01423.png",
+      "sha256": "5bcc38ef6b5b460c00bce26f6eb62d7822ede2905139417368247d0d81e4fcb1"
+    },
+    {
+      "frame": 1424,
+      "time_s": 47.500021484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01424.png",
+      "sha256": "24190d348123c610bf9d2ba0be74f4d526682b23fc66ee5c4a51ede19bacf3d4"
+    },
+    {
+      "frame": 1425,
+      "time_s": 47.53341040039062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01425.png",
+      "sha256": "6b0afa29a1a72bc6dacca2ccf1c97045ac65c80b6649c0ad915b8d503c5a14f6"
+    },
+    {
+      "frame": 1426,
+      "time_s": 47.566799560546876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01426.png",
+      "sha256": "7194a77018bd613b80b1e1595f42e54d153e179a48a26b0325b35ab2d3ae5d1f"
+    },
+    {
+      "frame": 1427,
+      "time_s": 47.60018896484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01427.png",
+      "sha256": "fff0b14fdb30f816f080176a96a60084c0357beb0a10f9cd8a9c12c01e455752"
+    },
+    {
+      "frame": 1428,
+      "time_s": 47.63357836914062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01428.png",
+      "sha256": "2193f53f7d44bcef4a980a87258c636c10a3c9a92f6e8e01434829fee93cd034"
+    },
+    {
+      "frame": 1429,
+      "time_s": 47.66696801757813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01429.png",
+      "sha256": "6927ec9dc4adf6b3055b65499bb0530f05dbadec19baa3e66f0d622d0602e2c9"
+    },
+    {
+      "frame": 1430,
+      "time_s": 47.70035791015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01430.png",
+      "sha256": "74c87f96aa930a8215adc7b6f5c2bbf203059a98d34b90574cd00893ec1cbf0a"
+    },
+    {
+      "frame": 1431,
+      "time_s": 47.733748046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01431.png",
+      "sha256": "617bef501e43e7e69625d2ef098a106fb72e9ddbc64f01057d7b9eb048fcac26"
+    },
+    {
+      "frame": 1432,
+      "time_s": 47.76713818359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01432.png",
+      "sha256": "0ad4d1a532fc52aa7e01800bc8cf55326cad4f62c32a404e64f36f803ece3dbb"
+    },
+    {
+      "frame": 1433,
+      "time_s": 47.800528564453124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01433.png",
+      "sha256": "9c4517a7478d562074a112d287b4c1e1f17bd48fbd7e78064ed3caf50fa70c1b"
+    },
+    {
+      "frame": 1434,
+      "time_s": 47.83391918945313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01434.png",
+      "sha256": "bbc51aa4590bb58c26bb13623c4a77bc8c23f6fe9e57a2751608689904532a78"
+    },
+    {
+      "frame": 1435,
+      "time_s": 47.86731005859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01435.png",
+      "sha256": "0e4c09822216f8ef89176e924f1752a5652d234430c54089cf9843129da5a464"
+    },
+    {
+      "frame": 1436,
+      "time_s": 47.900701171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01436.png",
+      "sha256": "9c0fd20cdcc1815ebe704aa0aa8404b41659b2ff6a3b64342d9d2e36ffd5fd7c"
+    },
+    {
+      "frame": 1437,
+      "time_s": 47.93409228515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01437.png",
+      "sha256": "53ef11ca837ac51e5dd0b8cc207b05b7bd62fae71c36363113d83f34606ac23a"
+    },
+    {
+      "frame": 1438,
+      "time_s": 47.967483642578124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01438.png",
+      "sha256": "b01d90e7388728fc7e8fe0e7d26b44efdf46b21fb16f2afa552b0291ce87032e"
+    },
+    {
+      "frame": 1439,
+      "time_s": 48.00087524414062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01439.png",
+      "sha256": "1df8f0edebe0fa0e776521cbd3ac377282402f11d71b1a983682caee4d350c68"
+    },
+    {
+      "frame": 1440,
+      "time_s": 48.03426708984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01440.png",
+      "sha256": "aabe9a3a33f36de73369d553ab01ec5c942d7b4ac111ad85556b10a28fa51fe4"
+    },
+    {
+      "frame": 1441,
+      "time_s": 48.06765893554687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01441.png",
+      "sha256": "9b01be3dabb1547afc7c4d61419384be09f3b5f1564f2bcdcceb621153261605"
+    },
+    {
+      "frame": 1442,
+      "time_s": 48.10105029296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01442.png",
+      "sha256": "c3d7748d0df62ef0e4a1ce2a278ce3f17179984a958f3d18a0862be48dbda758"
+    },
+    {
+      "frame": 1443,
+      "time_s": 48.134409423828124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01443.png",
+      "sha256": "7ed1b55d46346331c687f505288334bc742ab4c0fc2ea0949d09dba69bfb7e58"
+    },
+    {
+      "frame": 1444,
+      "time_s": 48.1677685546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01444.png",
+      "sha256": "f2f97a747d6c4443540ed0ff517a3d86a16370b6c1c770606f5bb910439b1c23"
+    },
+    {
+      "frame": 1445,
+      "time_s": 48.20112158203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01445.png",
+      "sha256": "2348db9de65254f87e926e7c547c607bcb1134dec7b030aa28f6df1aec87037e"
+    },
+    {
+      "frame": 1446,
+      "time_s": 48.23447485351563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01446.png",
+      "sha256": "52c797547b5da61d499189f984d4387b4584ca288fffe18932a40ea5e8758943"
+    },
+    {
+      "frame": 1447,
+      "time_s": 48.26782788085937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01447.png",
+      "sha256": "eae7503bfe35e67417454e9fb669881c085098298f8708f84159ebcdc5f4a467"
+    },
+    {
+      "frame": 1448,
+      "time_s": 48.30118090820312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01448.png",
+      "sha256": "abf7ee4c43c73c43c73c93a59c496a1a8124274998c605f49253cfb7313c5e6a"
+    },
+    {
+      "frame": 1449,
+      "time_s": 48.33453393554687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01449.png",
+      "sha256": "fdb3ea4b902f8ad899327b4f5890836c796befa1f597fbe8f25914416cc16361"
+    },
+    {
+      "frame": 1450,
+      "time_s": 48.36788696289062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01450.png",
+      "sha256": "24d54c47318f1fcc607b6671711ec72f11422b22455803e6e134094625bc5584"
+    },
+    {
+      "frame": 1451,
+      "time_s": 48.40123999023437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01451.png",
+      "sha256": "40fdbea4d204cc1880970f98a9717dc51fa33cbf8fa7fb6603e849fcd7c9279e"
+    },
+    {
+      "frame": 1452,
+      "time_s": 48.43459301757812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01452.png",
+      "sha256": "5a5c6bbfb4b8d6dabc9ad3c6b901cde00c16864f9a9a52cc9fff25d2e40f58d4"
+    },
+    {
+      "frame": 1453,
+      "time_s": 48.467946044921874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01453.png",
+      "sha256": "c53903e0f13c2e328bdfdf5cc9b5b094a191c1975241c00b72eb7ed661dd1838"
+    },
+    {
+      "frame": 1454,
+      "time_s": 48.501298828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01454.png",
+      "sha256": "71fd47d6828bbca0952034abcefa1671bcc1f88b4e48c01223ac9486bb0d4046"
+    },
+    {
+      "frame": 1455,
+      "time_s": 48.53465185546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01455.png",
+      "sha256": "8dffa7fb0c7cbd9ed6b4f189b8b14eafb39cc895628a06b41523555604cf2c3c"
+    },
+    {
+      "frame": 1456,
+      "time_s": 48.56800463867187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01456.png",
+      "sha256": "98677b535bd1ef73cdb13296b879d0613be804484b6b09bb6f972c274530101c"
+    },
+    {
+      "frame": 1457,
+      "time_s": 48.601357421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01457.png",
+      "sha256": "b6e87ce134f11286c0609b66341a6059da255e828e56e68a7eff8ac5ab9b526e"
+    },
+    {
+      "frame": 1458,
+      "time_s": 48.63471044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01458.png",
+      "sha256": "df7ca3f4122a940eac0564bfcd94e890b1f1f010a7a76596f898ca58567fca9b"
+    },
+    {
+      "frame": 1459,
+      "time_s": 48.66806323242187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01459.png",
+      "sha256": "0c78c0e4762fdd9a044bec147cd8b426c509795aa3f19e715f8402a05feeedd7"
+    },
+    {
+      "frame": 1460,
+      "time_s": 48.701416015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01460.png",
+      "sha256": "78befbbaae5c4f215fa931658a35105e2e54357118509db6faf6822338754b30"
+    },
+    {
+      "frame": 1461,
+      "time_s": 48.73476879882813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01461.png",
+      "sha256": "79cc0ee45a8795f5a38948b70f5f9437cf0a4ae52c25d4566dfcc8cf945d038b"
+    },
+    {
+      "frame": 1462,
+      "time_s": 48.768121337890626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01462.png",
+      "sha256": "897b9dac9b253e2b6631091d7cd1d3d6409280e77087be5cb312832e3d71be6f"
+    },
+    {
+      "frame": 1463,
+      "time_s": 48.80147412109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01463.png",
+      "sha256": "171d107af15c18d4c00ac804f004eba3a5625d6f5427828ad424a4af8288825a"
+    },
+    {
+      "frame": 1464,
+      "time_s": 48.834826904296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01464.png",
+      "sha256": "661bff2268265a07267a11ab2175a94275de146c8b9e5d23382f69a18bc924dc"
+    },
+    {
+      "frame": 1465,
+      "time_s": 48.868179443359374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01465.png",
+      "sha256": "227705039539788396a66f857cb39e65108896196f87d95c13bdf8294984fd99"
+    },
+    {
+      "frame": 1466,
+      "time_s": 48.9015322265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01466.png",
+      "sha256": "6001f80e837c0823fad72fc2cf229051fc5404cc573e55dc0d1f3bcc62186962"
+    },
+    {
+      "frame": 1467,
+      "time_s": 48.934884765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01467.png",
+      "sha256": "4a1a0d5fe6b0b423139ad3343cca0309219d376f1fe3172a63a13747f6622be9"
+    },
+    {
+      "frame": 1468,
+      "time_s": 48.9682373046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01468.png",
+      "sha256": "56fe9fb3e3a6796a3e9358fc4683a4339f28be0b6be629cbd56e9b8d7ee2047f"
+    },
+    {
+      "frame": 1469,
+      "time_s": 49.00158984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01469.png",
+      "sha256": "d3d464bb2ef61f8ac8336206a1ade817c95d2a464c7b7dd95b6ac779f64580a5"
+    },
+    {
+      "frame": 1470,
+      "time_s": 49.0349423828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01470.png",
+      "sha256": "6e0ad92ecf84f8bfe8868e02dbc9bc3242dde653d0b320ebb131fb758ee2d65b"
+    },
+    {
+      "frame": 1471,
+      "time_s": 49.068294921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01471.png",
+      "sha256": "08d527a348f509c3cda69f424b29b657eb5f62863c48fa9e8e8481ccf077f95d"
+    },
+    {
+      "frame": 1472,
+      "time_s": 49.1016474609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01472.png",
+      "sha256": "7342aafdf98c31be9869be5fa486f73eb1ca91672252012551162c5ad56c0cac"
+    },
+    {
+      "frame": 1473,
+      "time_s": 49.135,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01473.png",
+      "sha256": "a097ab2fdca44d1eaf9671ab199bb4265f7c571d110553a3ace19feda09b4f85"
+    },
+    {
+      "frame": 1474,
+      "time_s": 49.1683525390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01474.png",
+      "sha256": "1140d3a121463513a42e29f7087fd292aca7d2e72d61ba585fd5e6471d328601"
+    },
+    {
+      "frame": 1475,
+      "time_s": 49.201711181640626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01475.png",
+      "sha256": "8c82ab7d1a0a81537742e580632a9d4b426f15cd8ac90caf9f7c03e48f676a24"
+    },
+    {
+      "frame": 1476,
+      "time_s": 49.235064208984376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01476.png",
+      "sha256": "d003984e53f9e305122633e6cb4a22d94fe1ac91d8bb49d01d4529c87ea5c1f8"
+    },
+    {
+      "frame": 1477,
+      "time_s": 49.2684169921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01477.png",
+      "sha256": "889c0bff65690db8e11b56343696b42bc669f70f37d04503c20a219a71db3888"
+    },
+    {
+      "frame": 1478,
+      "time_s": 49.301769775390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01478.png",
+      "sha256": "9fd8b0b6efc26eb83d6677f48ed13295fc7c0d3ecdf746c964cb03ef1ac5274c"
+    },
+    {
+      "frame": 1479,
+      "time_s": 49.33512255859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01479.png",
+      "sha256": "ddec8523b442c8ae23dbddb2c184252680db65d998297a8870a22353d611ae15"
+    },
+    {
+      "frame": 1480,
+      "time_s": 49.368475341796874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01480.png",
+      "sha256": "f6d85e5d8a2e11ff69492043f4d646c23fd9cbd7e1d4ddc2cfb5639dba74637e"
+    },
+    {
+      "frame": 1481,
+      "time_s": 49.401828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01481.png",
+      "sha256": "30785cde6b9a7de6230146769692401cbe27bdb433b500656aa760b1f42d9a70"
+    },
+    {
+      "frame": 1482,
+      "time_s": 49.43518090820312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01482.png",
+      "sha256": "b9b4b66bd0e4f5dc9e0ed5a5caafc68db6ce42debe9be3b709b15ffe6f64c1b8"
+    },
+    {
+      "frame": 1483,
+      "time_s": 49.46853344726563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01483.png",
+      "sha256": "03fa0704e131efca49b6f2282551c22298beaee61f5b2f1861e8c8b3025a95dc"
+    },
+    {
+      "frame": 1484,
+      "time_s": 49.50188623046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01484.png",
+      "sha256": "06918d2409d7e30a787e93763bb07fcf1996ac9829a4eb80830c634eee25c8d9"
+    },
+    {
+      "frame": 1485,
+      "time_s": 49.53523876953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01485.png",
+      "sha256": "11a4097852b411d1797d8db1af1a9e8747170cb81f34dd2a9e5e28f1d134f1e7"
+    },
+    {
+      "frame": 1486,
+      "time_s": 49.56859130859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01486.png",
+      "sha256": "07b80d040544703407e13b13530c67bf4f42ee9dde7a2f2752f2574665c892fb"
+    },
+    {
+      "frame": 1487,
+      "time_s": 49.60194384765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01487.png",
+      "sha256": "83e8ad02dd3836f616c5b371764e4da6a7039f143f6f65b1735b596c5c329901"
+    },
+    {
+      "frame": 1488,
+      "time_s": 49.63529638671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01488.png",
+      "sha256": "d50f0c266610d8bd14976f0448cb78c2ddbcd2b03120b03d4dc344521549e337"
+    },
+    {
+      "frame": 1489,
+      "time_s": 49.66864892578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01489.png",
+      "sha256": "821746d44ff7cc8158aa1a492b787fd850c8fa1c6993bc22a40c7d0349cccf7d"
+    },
+    {
+      "frame": 1490,
+      "time_s": 49.70200146484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01490.png",
+      "sha256": "6200a74d0f2804d5d3ba2700bf33095128e18d7abe7bd8fff099c1e354689879"
+    },
+    {
+      "frame": 1491,
+      "time_s": 49.73535400390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01491.png",
+      "sha256": "e71a3d8777401fc1f27fbea9fde434462154de4d2bba39df54bdd9e259fdf64c"
+    },
+    {
+      "frame": 1492,
+      "time_s": 49.76870629882813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01492.png",
+      "sha256": "8f31ef09069aa402109551561addc94f7829a8c53d3e461db5d52609ba4dd701"
+    },
+    {
+      "frame": 1493,
+      "time_s": 49.80205883789063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01493.png",
+      "sha256": "4acc6367e7c72bafcd64aec2a65ed45c6428f4c78b58837a64f729d0b06f53df"
+    },
+    {
+      "frame": 1494,
+      "time_s": 49.8354111328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01494.png",
+      "sha256": "4bf6f5220cf988361382fb35055beb5e6b1622915af33fd378c5747524dc431e"
+    },
+    {
+      "frame": 1495,
+      "time_s": 49.86876342773437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01495.png",
+      "sha256": "8bf05d23187390fff393ce2dd9f9dcc1e55ca2425a32c8d87b02b33d2942592e"
+    },
+    {
+      "frame": 1496,
+      "time_s": 49.90211572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01496.png",
+      "sha256": "314b17c3c1ef3f79ac6005e8cffdef53250017e5ad0afbaed27ce9b88fd9b40d"
+    },
+    {
+      "frame": 1497,
+      "time_s": 49.935468017578124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01497.png",
+      "sha256": "2608d0121a03ce96937e4312cf792702913ccbcbab873d9e1e3f0ba4724798f7"
+    },
+    {
+      "frame": 1498,
+      "time_s": 49.9688203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01498.png",
+      "sha256": "2790d4e834a1b34356f8be8dd492324e809a8d71064c8ff8885d92c3a190bbf5"
+    },
+    {
+      "frame": 1499,
+      "time_s": 50.002172607421876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01499.png",
+      "sha256": "babb832586b34611fa385f03e416ff9391e0a8fa089daa2d47828cebce3867f4"
+    },
+    {
+      "frame": 1500,
+      "time_s": 50.03552465820312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01500.png",
+      "sha256": "d7414e65dc4e69ca3e337866cbd7d09f1c3d88e0537ce379f09607188cda86aa"
+    },
+    {
+      "frame": 1501,
+      "time_s": 50.068876953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01501.png",
+      "sha256": "b1c8e92133cab827633788d061ecbb99b552c0f209664ada309efab371f3abb4"
+    },
+    {
+      "frame": 1502,
+      "time_s": 50.10222900390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01502.png",
+      "sha256": "785cbc57a35d20bae6b5e17e7ecaf151f1f7380968cd46c2db68acb5cc8f9915"
+    },
+    {
+      "frame": 1503,
+      "time_s": 50.1355810546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01503.png",
+      "sha256": "a0438f07e65f90f51ead0a3dd9e90c77e5d2c36a90e9dadfbcb3a67936e74b0e"
+    },
+    {
+      "frame": 1504,
+      "time_s": 50.16893310546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01504.png",
+      "sha256": "951949b99df9bfdeed655f56e0d43a5db83e5fe3321e7ea3224db20fb7c44443"
+    },
+    {
+      "frame": 1505,
+      "time_s": 50.20228540039062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01505.png",
+      "sha256": "520768ac512819e0d4f8eed641d5e59c2060405bd7a609f630947b89034b2f3f"
+    },
+    {
+      "frame": 1506,
+      "time_s": 50.23564379882812,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01506.png",
+      "sha256": "7035eed40a39094836d513f1e38c40daf2ce94cc4c3abef503bb3725df883726"
+    },
+    {
+      "frame": 1507,
+      "time_s": 50.2689970703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01507.png",
+      "sha256": "f70e68a80705ec8a001653a0422eb240450bcc207a58bf0f609ef5c5306b7f31"
+    },
+    {
+      "frame": 1508,
+      "time_s": 50.3023505859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01508.png",
+      "sha256": "5de5fa0968cfdd49f6e06d5e7d38b80ee932f999d77e29b7422dd44709ecc73f"
+    },
+    {
+      "frame": 1509,
+      "time_s": 50.335703857421876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01509.png",
+      "sha256": "05f89eb4da317ca81ea5000132f316bc32ab25dc0cce816f9dd5fe7aa6830c81"
+    },
+    {
+      "frame": 1510,
+      "time_s": 50.36905737304688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01510.png",
+      "sha256": "5cf7a00a8c99ecd3460234f38489a9dc126bb162247b6577ffa3b1368e367b61"
+    },
+    {
+      "frame": 1511,
+      "time_s": 50.40241064453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01511.png",
+      "sha256": "5e31ac9d6fad36252b997b131d25f55c16c47bbf894e94523a54140ae42dcf8f"
+    },
+    {
+      "frame": 1512,
+      "time_s": 50.435763916015624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01512.png",
+      "sha256": "b8b35e616bc26b2bad9afd6eddd4cbe5ce8d3e28ab7140dc34de4d312e0ba3e5"
+    },
+    {
+      "frame": 1513,
+      "time_s": 50.4691171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01513.png",
+      "sha256": "db7b3935a7f258900308204accd7e5970ccccf049f7939b143d77f77a0ee186c"
+    },
+    {
+      "frame": 1514,
+      "time_s": 50.50247045898438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01514.png",
+      "sha256": "7b78a36b5c3cd2856b5ae42ca8f82e18b246fa4c503cc0eebd7036a8feffef37"
+    },
+    {
+      "frame": 1515,
+      "time_s": 50.53582373046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01515.png",
+      "sha256": "21409aeaaf282ea21f817dcea4267ebbdec31d6fcd1c2920b7b6a0982b432f0e"
+    },
+    {
+      "frame": 1516,
+      "time_s": 50.56917700195312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01516.png",
+      "sha256": "c18bd19223d3d11be0f2d3192aded909700794e2003ef813ec876a2a065758dc"
+    },
+    {
+      "frame": 1517,
+      "time_s": 50.6025302734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01517.png",
+      "sha256": "fc35cf338e757b4f51ead8e7250f9f3eb7259230288724cb34db023829b11c18"
+    },
+    {
+      "frame": 1518,
+      "time_s": 50.63588330078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01518.png",
+      "sha256": "c2ab3edd001474c14c7a2539d6d9c768e7229bfcf53dd6d3fc27042679c40095"
+    },
+    {
+      "frame": 1519,
+      "time_s": 50.669236572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01519.png",
+      "sha256": "1056f18bf587cb902b7e0493e437063037baa26d4075968ef4f26a8bec28f9ac"
+    },
+    {
+      "frame": 1520,
+      "time_s": 50.702589599609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01520.png",
+      "sha256": "a5c18379d7c17f11305a4d50699886db67a4d958a6fc388d45319b5be4a83471"
+    },
+    {
+      "frame": 1521,
+      "time_s": 50.735942626953126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01521.png",
+      "sha256": "bd6246e79c6f73fe2e80a607cdb390f54eb2991ab36e7c39a57b0aaef304b205"
+    },
+    {
+      "frame": 1522,
+      "time_s": 50.7692958984375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01522.png",
+      "sha256": "bd726007ca415034bacb876777b9bb74974eee6bf68e3f03c90b30f4ec8c0ed0"
+    },
+    {
+      "frame": 1523,
+      "time_s": 50.80264892578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01523.png",
+      "sha256": "b2896d72b5df4b5f4850e56fad3c3066b8adcc3bd7413b0afba717cf34a1046c"
+    },
+    {
+      "frame": 1524,
+      "time_s": 50.836001953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01524.png",
+      "sha256": "3aca041b1301c08241318e0e94dbd484f6df2b895563f1f7b0d02dad63762bb3"
+    },
+    {
+      "frame": 1525,
+      "time_s": 50.86935498046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01525.png",
+      "sha256": "678ec1a45ce515313dd8ec8f127eead48cececa6b6433f22ade74634ebd92172"
+    },
+    {
+      "frame": 1526,
+      "time_s": 50.90270776367188,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01526.png",
+      "sha256": "1df21802081b6376f85bb59b2922cc4531dc82eac1e682afae733c59c13d7b61"
+    },
+    {
+      "frame": 1527,
+      "time_s": 50.93606079101563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01527.png",
+      "sha256": "cf3bdfe8a5545c6795b28d63d7d3fc30f019360b415b1e0a2e64b49f483335b3"
+    },
+    {
+      "frame": 1528,
+      "time_s": 50.96941381835938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01528.png",
+      "sha256": "91a63ac8fc8ed811837aa49c4d6922f79096c5d8c2e4dd0eff877d9a2103dcc7"
+    },
+    {
+      "frame": 1529,
+      "time_s": 51.0027666015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01529.png",
+      "sha256": "1c1dd0d8ee41d63d0b8985b2361411d97f01b364ac8546c18f969bc036813ce0"
+    },
+    {
+      "frame": 1530,
+      "time_s": 51.03611962890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01530.png",
+      "sha256": "03b223e03af152adff335f97ae465d202a388cbeecb68545bd091883fe1e0692"
+    },
+    {
+      "frame": 1531,
+      "time_s": 51.06947241210938,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01531.png",
+      "sha256": "e8b6f2551f69cf26e3005eb16bfd5feab1568ec3675983a17c444b35765bc9f5"
+    },
+    {
+      "frame": 1532,
+      "time_s": 51.1028251953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01532.png",
+      "sha256": "0c51f271c62d4a143837f89f8e3c37abd4ee71736f699b23292fff6073338d13"
+    },
+    {
+      "frame": 1533,
+      "time_s": 51.136177978515626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01533.png",
+      "sha256": "b0950681624d6c7de696096d34d0fca5f29c70b8f6f89aabf4757c91c63d62ce"
+    },
+    {
+      "frame": 1534,
+      "time_s": 51.16953076171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01534.png",
+      "sha256": "6f33fb34c0bab6057e041ae0eba3aaf3a07c111a320c11133ed6103c50b1e7a6"
+    },
+    {
+      "frame": 1535,
+      "time_s": 51.202883544921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01535.png",
+      "sha256": "2aefd5d39d1c94fc3c183eb01b16a2b9ce3b4a2c24ab82468e001c2339d091f7"
+    },
+    {
+      "frame": 1536,
+      "time_s": 51.236236572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01536.png",
+      "sha256": "e9ecbe29be5615e8c3d269f63e1c778304e0d1782294cfedc349328b82dc6494"
+    },
+    {
+      "frame": 1537,
+      "time_s": 51.26959448242187,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01537.png",
+      "sha256": "1c60fd562c48c275e7541c370a6128b593c1bc69d29771183319b8b5137038d2"
+    },
+    {
+      "frame": 1538,
+      "time_s": 51.302947998046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01538.png",
+      "sha256": "1111b2874a5bf5f41b2ada90689d7e344ae6cc785481a67999d2824a845d3721"
+    },
+    {
+      "frame": 1539,
+      "time_s": 51.33630126953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01539.png",
+      "sha256": "e0e694aa6e4ea79149f2acc0e06d336f7482a5e09a52c87ede7ce6d5f1f1eda8"
+    },
+    {
+      "frame": 1540,
+      "time_s": 51.36965478515625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01540.png",
+      "sha256": "6f1fbba84b1024291a53fd8d0368bf30f1e7075b0f9e4637fcd49be4615d946c"
+    },
+    {
+      "frame": 1541,
+      "time_s": 51.40300830078125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01541.png",
+      "sha256": "fc7520bae1a181932c36b160b6093745dee862e63357e3838a44f85eaadc5cf9"
+    },
+    {
+      "frame": 1542,
+      "time_s": 51.436361572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01542.png",
+      "sha256": "d988bce0d966033da978c17562c357f3e4d2c23fed8ca657ba97fefc3cc861c9"
+    },
+    {
+      "frame": 1543,
+      "time_s": 51.46971484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01543.png",
+      "sha256": "cc5e297b3f19759a976a72c89aea1be9d51276f7579f9ab4d2437c8e7dd860f4"
+    },
+    {
+      "frame": 1544,
+      "time_s": 51.503068359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01544.png",
+      "sha256": "355fbee417bccdcd80b4dccf940f8c8dc4bced7a6336aa7686866d6fbc32a1bf"
+    },
+    {
+      "frame": 1545,
+      "time_s": 51.53642163085937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01545.png",
+      "sha256": "6520d7d3408352aa8754103c16e2f62c4d03ab0d234487d0fc221d9a82d085fc"
+    },
+    {
+      "frame": 1546,
+      "time_s": 51.56977490234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01546.png",
+      "sha256": "14dabbf9de8e141423829843f6cf479b4afdcc65cca6a36fc81b0cf8b64b61e6"
+    },
+    {
+      "frame": 1547,
+      "time_s": 51.603128173828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01547.png",
+      "sha256": "4ed9d39cc143d27311f646ca92e72c15046bbfe2fa9a72f6ad791786a6505dde"
+    },
+    {
+      "frame": 1548,
+      "time_s": 51.6364814453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01548.png",
+      "sha256": "3b9d3006cdd3703fc7c810d6baf14397395cfc0cb63f4a802df9675923f0a2f2"
+    },
+    {
+      "frame": 1549,
+      "time_s": 51.66983471679688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01549.png",
+      "sha256": "3b6a883245ab2b0297463ae72c7c5faba8e3737231eb96ce2e2ac3abf5426014"
+    },
+    {
+      "frame": 1550,
+      "time_s": 51.70318774414063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01550.png",
+      "sha256": "fdf6c4c4b5ed972f6330f14ca07c377e82d2dab2abdbe91d1401b1f79700df46"
+    },
+    {
+      "frame": 1551,
+      "time_s": 51.736541015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01551.png",
+      "sha256": "a8b509b7cae9d40bf05bc2ff5ce5f181d16f28ad370fe4890e1904f6b581eb78"
+    },
+    {
+      "frame": 1552,
+      "time_s": 51.76989428710937,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01552.png",
+      "sha256": "9d4cd042dc040029df5fdbb92038b49b05304991f2d1b762a8e9055fddf7bcdb"
+    },
+    {
+      "frame": 1553,
+      "time_s": 51.803247314453124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01553.png",
+      "sha256": "345da9303ff1334c1c904c1025865e33e3de19a3ab03f82d5519a74a1bf8b881"
+    },
+    {
+      "frame": 1554,
+      "time_s": 51.836600341796874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01554.png",
+      "sha256": "78c32a912e4ebd36de1420235ccc157d6fc68423c7d996f435d038c5c5348b8a"
+    },
+    {
+      "frame": 1555,
+      "time_s": 51.86995361328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01555.png",
+      "sha256": "ee99b4948764249e0d42639f522a8fbe9daade69542488ecc5d5d5c88601db26"
+    },
+    {
+      "frame": 1556,
+      "time_s": 51.903306640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01556.png",
+      "sha256": "63169f4835962c292d1826e2ad713e12dbbe063e407d1d31f0f5ab21eacddc24"
+    },
+    {
+      "frame": 1557,
+      "time_s": 51.93665966796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01557.png",
+      "sha256": "7c558fb027a434dd2dfc09559b032552ad88b37beda0c588c2c019bac471db04"
+    },
+    {
+      "frame": 1558,
+      "time_s": 51.9700126953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01558.png",
+      "sha256": "d6478489dcd7cfca7044f0682e79f833e8c0c9b1f97744feb427ee504454e067"
+    },
+    {
+      "frame": 1559,
+      "time_s": 52.00336572265625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01559.png",
+      "sha256": "9a0bc49e6cf7f82583836b257408137847df751767fba1f46ec491cf2941ff11"
+    },
+    {
+      "frame": 1560,
+      "time_s": 52.03671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01560.png",
+      "sha256": "09ff48dcb0c28c0790f40fd9f377e342a5c2bae4f21c795d6a6f8e6a9867f48e"
+    },
+    {
+      "frame": 1561,
+      "time_s": 52.07007153320313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01561.png",
+      "sha256": "858778cee87e424f6132286271a38f208e46d6da302a6e0ccd8140b9d0c32835"
+    },
+    {
+      "frame": 1562,
+      "time_s": 52.10342456054688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01562.png",
+      "sha256": "656c43ee8eb58d5ad848d21c2b049516c2b5f0d1fcb589495f06aec8e2ac0dcb"
+    },
+    {
+      "frame": 1563,
+      "time_s": 52.13677734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01563.png",
+      "sha256": "83a14527336a1d2dae4a9d5d09482c845c166c0acf93d81d19b264588e1c44ca"
+    },
+    {
+      "frame": 1564,
+      "time_s": 52.17013037109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01564.png",
+      "sha256": "95f95ef3bad0908a99eb711e246d49e3fd942c113a4aca9440de31858d2995f6"
+    },
+    {
+      "frame": 1565,
+      "time_s": 52.203483154296876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01565.png",
+      "sha256": "610c3357521469b236253796baecb5f92dd5c06e6edc5d257186a2f4034f8f0a"
+    },
+    {
+      "frame": 1566,
+      "time_s": 52.2368359375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01566.png",
+      "sha256": "5e9659dcd12dac0719f094334f04840a7093069e7fcdb5242507738c772f25ce"
+    },
+    {
+      "frame": 1567,
+      "time_s": 52.27018896484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01567.png",
+      "sha256": "66be5fd79db42e6c120175fe7a59b7c3a5408caaa0e9f4b3f3ace0f49d9032a3"
+    },
+    {
+      "frame": 1568,
+      "time_s": 52.30354638671875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01568.png",
+      "sha256": "167080b207dcd8412fe3bff3231ec89aec479d03069d7232aee9677a82fb6f33"
+    },
+    {
+      "frame": 1569,
+      "time_s": 52.33689965820312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01569.png",
+      "sha256": "99d0edb9a4b924bd658f4c1970a0cc350a31960e93615a2ae586af252d63b0a4"
+    },
+    {
+      "frame": 1570,
+      "time_s": 52.3702529296875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01570.png",
+      "sha256": "28a9ef6d9c775e2477cc422cff5bd3a34bde6a06b3c69c8492be33ae1634691c"
+    },
+    {
+      "frame": 1571,
+      "time_s": 52.40360595703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01571.png",
+      "sha256": "76fee2b64aad96a7e3c625547fad55b72b6e05040da531a425087b9fcb1ed2ce"
+    },
+    {
+      "frame": 1572,
+      "time_s": 52.436959228515626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01572.png",
+      "sha256": "e09313fe0823e2547f3332ed380d38753b87f920c3e1ab55d2775f5834439183"
+    },
+    {
+      "frame": 1573,
+      "time_s": 52.470312255859376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01573.png",
+      "sha256": "9ae0c8a08727fd8b2d09ef154a58adc7924ad9a034359c3c0092390f6039ab36"
+    },
+    {
+      "frame": 1574,
+      "time_s": 52.50366528320313,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01574.png",
+      "sha256": "3c246d70a8ac42d8073fba1e64d6f29b7f126c2343d889c5da5036f656c87e85"
+    },
+    {
+      "frame": 1575,
+      "time_s": 52.53701831054688,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01575.png",
+      "sha256": "7e67330daa979c46d1c643b95ed18a63cef7d5bd7126f373f429eeb85044ea96"
+    },
+    {
+      "frame": 1576,
+      "time_s": 52.57037133789063,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01576.png",
+      "sha256": "e02c3dabceee84c324fe99ce5f6136fe58aaea0ae6d0d339d365acd7c7ab5b5a"
+    },
+    {
+      "frame": 1577,
+      "time_s": 52.60372436523438,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01577.png",
+      "sha256": "36a85d0005ad16c2ede7c640dd0286803d8b6fece01643a613ccd2542c1b8ed0"
+    },
+    {
+      "frame": 1578,
+      "time_s": 52.63707739257813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01578.png",
+      "sha256": "8aee5d2bcb08b58e4d6a78333178fd5e962951b12e99d6ce735c977e95608c6c"
+    },
+    {
+      "frame": 1579,
+      "time_s": 52.67043017578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01579.png",
+      "sha256": "4811130092c4dc5aeb198612b7c12e4830a48ae92cced2e9dc41563e4bddc545"
+    },
+    {
+      "frame": 1580,
+      "time_s": 52.703783203125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01580.png",
+      "sha256": "39f7b2208edf60149a8a4e7bbaa6a8f7bdec3a9bf636ce7e39c1e2d95b123410"
+    },
+    {
+      "frame": 1581,
+      "time_s": 52.73713598632813,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01581.png",
+      "sha256": "cef6b6a814d2c1962a566036c70b9135f5e57ca3f407f74020380ffc194396c2"
+    },
+    {
+      "frame": 1582,
+      "time_s": 52.77048876953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01582.png",
+      "sha256": "81ecc329006c9a7e8175b970bc8242e665e233cbbe2f6452a5cfbe4f978c198b"
+    },
+    {
+      "frame": 1583,
+      "time_s": 52.803841796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01583.png",
+      "sha256": "8f97b7d3f6c26e24b45477c8be32344e9b98f6a0a33a38746e60961699038a49"
+    },
+    {
+      "frame": 1584,
+      "time_s": 52.837194580078126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01584.png",
+      "sha256": "1827bd338ed3f1f10808e84ed549853db2d555f11349fff96a168904c00efd89"
+    },
+    {
+      "frame": 1585,
+      "time_s": 52.87054736328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01585.png",
+      "sha256": "52078c9d5212b6c6cf607113c278e009cf4dc4e9f96342e3a31a0486e36fd6e7"
+    },
+    {
+      "frame": 1586,
+      "time_s": 52.903900146484375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01586.png",
+      "sha256": "d2485314b10332ec74d3a07a4b5e7a5039500471fb09d7340df1d750b99eb04c"
+    },
+    {
+      "frame": 1587,
+      "time_s": 52.93725268554687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01587.png",
+      "sha256": "dcf746070755fa4b5a0238283bfd4221f5f65a07a4b34a3ec334b97b5a91464e"
+    },
+    {
+      "frame": 1588,
+      "time_s": 52.97060546875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01588.png",
+      "sha256": "9613ca80330affb6d20eaeb42a2b6b49135c97a5c32906cfa4d8e5f2beed2109"
+    },
+    {
+      "frame": 1589,
+      "time_s": 53.00395825195312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01589.png",
+      "sha256": "efb70939b422e7d6b44291e8666a5b2babd9ce7f002235abc615bd8de6d8a7af"
+    },
+    {
+      "frame": 1590,
+      "time_s": 53.03731079101563,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01590.png",
+      "sha256": "d1ff888e912499476887ce3be0c8e748f98941b15f36c7970890958723fb759a"
+    },
+    {
+      "frame": 1591,
+      "time_s": 53.070663330078126,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01591.png",
+      "sha256": "75de3ed90df9d3fb613e9e9df91aa3f67d559b8ae121f04adecf01aa3fcdd02e"
+    },
+    {
+      "frame": 1592,
+      "time_s": 53.10401611328125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01592.png",
+      "sha256": "d73b2fb4f2b44c432996f1543b4a2927bcce24d0e985b3f5cd666415d6f4b775"
+    },
+    {
+      "frame": 1593,
+      "time_s": 53.13736865234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01593.png",
+      "sha256": "e160b80622ab87096d812f86778d41aeb2d70cac762d974da3aa5502f119675c"
+    },
+    {
+      "frame": 1594,
+      "time_s": 53.17072119140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01594.png",
+      "sha256": "7c3c86c97bf74d3ccc6388ce76931d11ec6db9953b41cfad77b3bbb170b44eae"
+    },
+    {
+      "frame": 1595,
+      "time_s": 53.20407373046875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01595.png",
+      "sha256": "6946d71464204bc9c4d498bb0decf9058168e76c6ac4681c7ce52540ba95e332"
+    },
+    {
+      "frame": 1596,
+      "time_s": 53.23742626953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01596.png",
+      "sha256": "5c448811093074eb5a6e6e312665be27a7b5849e9cb06243ab0cbeb6e0c02ae9"
+    },
+    {
+      "frame": 1597,
+      "time_s": 53.270778564453124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01597.png",
+      "sha256": "43c13ee1c6743c405ae7962fe8de67197f60ea02abc71d20a0ec341d3a1fa203"
+    },
+    {
+      "frame": 1598,
+      "time_s": 53.30413110351562,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01598.png",
+      "sha256": "056c8fe4656e48f633ce6400cbdc4df6359fc1ddef01d1f9bf16d7c982ca539c"
+    },
+    {
+      "frame": 1599,
+      "time_s": 53.337488525390626,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01599.png",
+      "sha256": "eb4b43f6b67223f95b8a284c1401f39ec8f9ca7db358661712009ebec7329b75"
+    },
+    {
+      "frame": 1600,
+      "time_s": 53.370841552734376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01600.png",
+      "sha256": "c6f40e294227d2053ed29a1d34a776e3231aaea7976b81373580c290aa2d7862"
+    },
+    {
+      "frame": 1601,
+      "time_s": 53.40419482421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01601.png",
+      "sha256": "b1130a3d08cddd914032200cba8898cc6208575676d8b67076ff65ebdda03620"
+    },
+    {
+      "frame": 1602,
+      "time_s": 53.43754809570312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01602.png",
+      "sha256": "780c5625e412fc6748a0584b68ad83ecd0839dffb6aa8871485867b54ca15010"
+    },
+    {
+      "frame": 1603,
+      "time_s": 53.47090112304687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01603.png",
+      "sha256": "9f749aacb8e21d946d3ae6881f5d1da52736b5356af3742f304ab7f88aad1c22"
+    },
+    {
+      "frame": 1604,
+      "time_s": 53.50425439453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01604.png",
+      "sha256": "e690c20018f04c23717bf3feffdc349265d1717bf067bda3ea74b0b5c618763a"
+    },
+    {
+      "frame": 1605,
+      "time_s": 53.537607421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01605.png",
+      "sha256": "ca1cc932f08fd8e43173484de25d44f5e7a8704fb02c8549f3d0556a33a863c4"
+    },
+    {
+      "frame": 1606,
+      "time_s": 53.57096044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01606.png",
+      "sha256": "a4adcb4ae95beb35733da97900b73a460f1e1db1cc7f15c93a5aff4b80b47313"
+    },
+    {
+      "frame": 1607,
+      "time_s": 53.6043134765625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01607.png",
+      "sha256": "f1d846fa0afaf418e77d94c5b1ccde81e2fdc1c7803349b3455060cd16f1e9c2"
+    },
+    {
+      "frame": 1608,
+      "time_s": 53.63766650390625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01608.png",
+      "sha256": "a51fd0865959ac1f1521b8efdbd428b5604c49d277dfabd42f29d139966ba954"
+    },
+    {
+      "frame": 1609,
+      "time_s": 53.67101953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01609.png",
+      "sha256": "9ce7b484fc9db240a11c807e01fe8012c1b2ddbe1d37cbf813f042c3cc3fcf6f"
+    },
+    {
+      "frame": 1610,
+      "time_s": 53.70437255859375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01610.png",
+      "sha256": "6b2abafdcc3095069ca705431259901a217f783587d97afec433ac8f85a95c25"
+    },
+    {
+      "frame": 1611,
+      "time_s": 53.737725341796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01611.png",
+      "sha256": "0ceb838fa8f1df05d7d4dd44a4433684e4eade04d5bd3ec610d1cf7439e3f66c"
+    },
+    {
+      "frame": 1612,
+      "time_s": 53.771078369140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01612.png",
+      "sha256": "1af84a82cf0cfd1e8efc5f1a79af194285e377269a7342030f0b1ea7ad4b1f52"
+    },
+    {
+      "frame": 1613,
+      "time_s": 53.80443115234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01613.png",
+      "sha256": "16315980b6a7b8acb64a0633689e3a9cf508e79cbf94f81a82bcebc18d3564cb"
+    },
+    {
+      "frame": 1614,
+      "time_s": 53.8377841796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01614.png",
+      "sha256": "61169fd7666c0eec00cb1fce43caa7dd9b13ff07ae5276a578e088532102c954"
+    },
+    {
+      "frame": 1615,
+      "time_s": 53.871136962890624,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01615.png",
+      "sha256": "700dfab67d220d8ea65a21b78ef7b51465ac71045e9696bede64d21db3d68226"
+    },
+    {
+      "frame": 1616,
+      "time_s": 53.90448974609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01616.png",
+      "sha256": "4b131b2770917b1d17c13d91bf274d9dc6ea6828632ebfc9ef507849c6016648"
+    },
+    {
+      "frame": 1617,
+      "time_s": 53.93784252929687,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01617.png",
+      "sha256": "985f9f683fcad62f3976de5c0f6c70e94b679e7a24e70e1df546c3b611275ff4"
+    },
+    {
+      "frame": 1618,
+      "time_s": 53.9711953125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01618.png",
+      "sha256": "f0ceccb57dc10129fefdcabbd11123bdc0d0bf6216e04e474142cd30db935795"
+    },
+    {
+      "frame": 1619,
+      "time_s": 54.00454809570312,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01619.png",
+      "sha256": "aa3631a7fa9d375beb1cab508b696a29833a3109f63e900b106d050b28081790"
+    },
+    {
+      "frame": 1620,
+      "time_s": 54.03790087890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01620.png",
+      "sha256": "4fb4156756bc061163d982558c60c96d64fc71757f9d8c8b5726401b337b09a7"
+    },
+    {
+      "frame": 1621,
+      "time_s": 54.07125341796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01621.png",
+      "sha256": "a40b9165692426b2a3fd2edcb06394d2f66197721ba6148cf417bff2c0b75b53"
+    },
+    {
+      "frame": 1622,
+      "time_s": 54.104606201171876,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01622.png",
+      "sha256": "aadd5fd32ffe43d8f08482f006337b35b57cfdedebb31ebaeedf4e6e14e77239"
+    },
+    {
+      "frame": 1623,
+      "time_s": 54.137958740234374,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01623.png",
+      "sha256": "07b57ae57755d4f8c8741cbf3ef3fdf933272d832a865a9450b307d705391eb5"
+    },
+    {
+      "frame": 1624,
+      "time_s": 54.1713115234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01624.png",
+      "sha256": "e2629547d9cc55acf1ba6c32787dbdef6d23d2f5d1e17c22b4b1d276a5ccf537"
+    },
+    {
+      "frame": 1625,
+      "time_s": 54.2046640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01625.png",
+      "sha256": "b8911e7ed7279565d6293f639e7540e57058cf0582c9bbf6fe8b76bd96aab014"
+    },
+    {
+      "frame": 1626,
+      "time_s": 54.2380166015625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01626.png",
+      "sha256": "4cca848e5e23004efcea9899a6a94d8a63d24dde37251a71ec10c13cc0f03781"
+    },
+    {
+      "frame": 1627,
+      "time_s": 54.271369140625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01627.png",
+      "sha256": "7e15e24cafe279496710822b962773a5dc51a9e9996550b2d9154c30bf5fe600"
+    },
+    {
+      "frame": 1628,
+      "time_s": 54.3047216796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01628.png",
+      "sha256": "eccee80346abab406eb68f0fae1d8f8a4aa3741aea1c9e5469bfb1a6be36fe71"
+    },
+    {
+      "frame": 1629,
+      "time_s": 54.33807421875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01629.png",
+      "sha256": "a752d3586e981b01911cef1256a1a3a05d590b6800cd5a3242aa5997f1ddbb68"
+    },
+    {
+      "frame": 1630,
+      "time_s": 54.37143115234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01630.png",
+      "sha256": "405e0adddbe8f2c643b1f26d29a0c5b9e111315f4d11f4d06129d6734126f55f"
+    },
+    {
+      "frame": 1631,
+      "time_s": 54.4047841796875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01631.png",
+      "sha256": "14af07d182d42646b39c63b2d03fb310e1bdcd22d8a6a7a2b940eb5b7dec136a"
+    },
+    {
+      "frame": 1632,
+      "time_s": 54.43813720703125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01632.png",
+      "sha256": "0b686ff33ad4348a435b98b963c7c17ff61aac9d0d4f48f963f901b66702848c"
+    },
+    {
+      "frame": 1633,
+      "time_s": 54.471489990234375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01633.png",
+      "sha256": "dc58881093e23bfe2457869a6cfe7bb151f1e4a44cc8edb6560208ebac63cd9e"
+    },
+    {
+      "frame": 1634,
+      "time_s": 54.504843017578125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01634.png",
+      "sha256": "65eacd31a1712cf7f0bdb7d79f4764b378f9b3b04840902d170f35d886910d31"
+    },
+    {
+      "frame": 1635,
+      "time_s": 54.538196044921875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01635.png",
+      "sha256": "c585a1520c74c5128ceb91064139a96846cd6c74659a2595414f8414e508c535"
+    },
+    {
+      "frame": 1636,
+      "time_s": 54.571548828125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01636.png",
+      "sha256": "01c5362d68bb5d88315c5475abbb383a7b60007d9c78f818a60996fa19b2a408"
+    },
+    {
+      "frame": 1637,
+      "time_s": 54.604901611328124,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01637.png",
+      "sha256": "4ae505e67ebdf6b69259321dc050fb8b3ce60061fbef7e5f6e229d66f153b9d6"
+    },
+    {
+      "frame": 1638,
+      "time_s": 54.63825439453125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01638.png",
+      "sha256": "c4d2c148c1ab405500ef5c2913f72a0ce8d3e56c67a0599508d69b319ed24ba4"
+    },
+    {
+      "frame": 1639,
+      "time_s": 54.67160717773437,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01639.png",
+      "sha256": "dde3ca6f4620cd4bd8fab0bf55b43875c66f2d0ed6582b8c76cff5b8de8c528b"
+    },
+    {
+      "frame": 1640,
+      "time_s": 54.7049599609375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01640.png",
+      "sha256": "36e351a6d65765a5e794e384805409b2c8aa3030350cd03992eeb427b80c7dcb"
+    },
+    {
+      "frame": 1641,
+      "time_s": 54.73831274414062,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01641.png",
+      "sha256": "1aec743e2eb18e376a6063c37cc4c9905cba6c16f71f1aa497c9d19591fc634f"
+    },
+    {
+      "frame": 1642,
+      "time_s": 54.77166552734375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01642.png",
+      "sha256": "2e5fac23bba643e6da7e9e5c25697649e9f6afcff613b09eea48b0b3e9b23d2d"
+    },
+    {
+      "frame": 1643,
+      "time_s": 54.80501806640625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01643.png",
+      "sha256": "19b3f274375e577ee4fce740204249e8f08041289a2e705a6964579c93850458"
+    },
+    {
+      "frame": 1644,
+      "time_s": 54.838370849609376,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01644.png",
+      "sha256": "191890b496be5c2daf5feb55ce3209f981331ba818f23353787460b02ca0acb7"
+    },
+    {
+      "frame": 1645,
+      "time_s": 54.871723388671874,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01645.png",
+      "sha256": "7466c7c57435e3dd076985ab736cc6b57dc1c0417bb663f9d48daa445ebee70c"
+    },
+    {
+      "frame": 1646,
+      "time_s": 54.905076171875,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01646.png",
+      "sha256": "7923efe0ba660472e5659bf5604232f870d3f1dc116dcbf847db1c81074cee31"
+    },
+    {
+      "frame": 1647,
+      "time_s": 54.9384287109375,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01647.png",
+      "sha256": "cb043016d05bad58c0c97363a2218e42368ffd6bf2b5ff1115448c5cda0e0d19"
+    },
+    {
+      "frame": 1648,
+      "time_s": 54.97178125,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01648.png",
+      "sha256": "322341337f8a708a67dd630f3902d2333282045b53d5b4f15cd210468e74c7cd"
+    },
+    {
+      "frame": 1649,
+      "time_s": 55.0051337890625,
+      "path": "/tmp/defense_axes_rgb_r5/frame_01649.png",
+      "sha256": "2029aa7c7cc163ec0e1d98074b95b635d4b07f4b6863aef03a3e0bf0710e1c50"
+    }
+  ],
+  "policy": "Original aligned-source color frames are decoded without tracking, estimation, recoloring or image editing."
+}

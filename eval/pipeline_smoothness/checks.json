@@ -1,0 +1,80 @@
+{
+  "16": {
+    "replay_raw_vs_film_raw_max_abs_m": 4.999999999866223e-07,
+    "replay_vs_film_missing_mismatch": 0,
+    "film_angles_resolved_by_live_solver_max_abs_deg_all_frames": {
+      "sh_y": 4.970956979377661e-11,
+      "sh_z": 4.999378688808065e-11,
+      "sh_twist": 4.96100938107702e-10,
+      "el_y": 4.979483492206782e-11,
+      "el_z": 0.0
+    },
+    "live_angles_recomputed_from_logged_filtered_max_abs_deg": 4.890800749990376e-05,
+    "dump_rows": 899,
+    "dump_rows_aligned": 899,
+    "dump_duplicate_frames": 0,
+    "bag_frames": 899,
+    "dropped_frames_paced_dump": 0,
+    "dump_vs_gpu_replay_max_abs_deg_right_arm": 4.844054046770907e-07,
+    "paced_replay_vs_gpu_replay_max_abs_deg_right_arm": 0.0,
+    "gpu_vs_cpu_raw_landmark_max_abs_m": 0.03892469399999998,
+    "window": [
+      180,
+      540
+    ],
+    "window_gated_frames": {
+      "left_hip": 0,
+      "right_hip": 0,
+      "right_shoulder": 0,
+      "right_elbow": 0,
+      "right_wrist": 0
+    },
+    "window_causal_hampel_rejected_frames": {
+      "left_hip": 2,
+      "right_hip": 0,
+      "right_shoulder": 0,
+      "right_elbow": 0,
+      "right_wrist": 7
+    },
+    "window_film_frames_with_repaired_points": 20
+  },
+  "14": {
+    "replay_raw_vs_film_raw_max_abs_m": 5.000000000143778e-07,
+    "replay_vs_film_missing_mismatch": 0,
+    "film_angles_resolved_by_live_solver_max_abs_deg_all_frames": {
+      "sh_y": 4.970956979377661e-11,
+      "sh_z": 4.9965365178650245e-11,
+      "sh_twist": 4.996536517865025e-10,
+      "el_y": 4.9965365178650245e-11,
+      "el_z": 0.0
+    },
+    "live_angles_recomputed_from_logged_filtered_max_abs_deg": 0.0001319286945715703,
+    "dump_rows": 1050,
+    "dump_rows_aligned": 1050,
+    "dump_duplicate_frames": 0,
+    "bag_frames": 1050,
+    "dropped_frames_paced_dump": 0,
+    "dump_vs_gpu_replay_max_abs_deg_right_arm": 4.87852645392195e-07,
+    "paced_replay_vs_gpu_replay_max_abs_deg_right_arm": 0.0,
+    "gpu_vs_cpu_raw_landmark_max_abs_m": 0.17399991000000004,
+    "window": [
+      3,
+      109
+    ],
+    "window_gated_frames": {
+      "left_hip": 0,
+      "right_hip": 0,
+      "right_shoulder": 0,
+      "right_elbow": 0,
+      "right_wrist": 2
+    },
+    "window_causal_hampel_rejected_frames": {
+      "left_hip": 9,
+      "right_hip": 4,
+      "right_shoulder": 7,
+      "right_elbow": 22,
+      "right_wrist": 26
+    },
+    "window_film_frames_with_repaired_points": 40
+  }
+}

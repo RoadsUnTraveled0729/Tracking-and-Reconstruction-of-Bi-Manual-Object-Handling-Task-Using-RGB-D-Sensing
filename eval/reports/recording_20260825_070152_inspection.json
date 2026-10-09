@@ -1,0 +1,1171 @@
+{
+ "stem": "recording_20260825_070152",
+ "frames": 1499,
+ "duration_s": 49.97,
+ "fps": 29.98,
+ "resolution": "640x480",
+ "frames_with_pose": 1454,
+ "phases": {
+  "entry": [
+   0,
+   44
+  ],
+  "approach": [
+   45,
+   223
+  ],
+  "manipulation": [
+   224,
+   1314
+  ],
+  "retreat": [
+   1315,
+   1498
+  ],
+  "person_present": [
+   45,
+   1498
+  ]
+ },
+ "phase_stats": {
+  "entry": {
+   "range": [
+    0,
+    44
+   ],
+   "seconds": 1.5,
+   "markers": {
+    "m0_wall": {
+     "frames": 45,
+     "detected": 45,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m1_object": {
+     "frames": 45,
+     "detected": 45,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m2_desk": {
+     "frames": 45,
+     "detected": 45,
+     "coverage_pct": 100.0,
+     "gaps": []
+    }
+   },
+   "landmarks": {
+    "left_shoulder": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "right_shoulder": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "left_elbow": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "right_elbow": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "left_wrist": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "right_wrist": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "left_hip": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    },
+    "right_hip": {
+     "pose_frames": 0,
+     "pct_ok": null,
+     "pct_low_vis": null,
+     "pct_no_depth": null,
+     "vis_median": null,
+     "vis_p10": null
+    }
+   }
+  },
+  "approach": {
+   "range": [
+    45,
+    223
+   ],
+   "seconds": 5.97,
+   "markers": {
+    "m0_wall": {
+     "frames": 179,
+     "detected": 127,
+     "coverage_pct": 70.95,
+     "gaps": [
+      [
+       47,
+       98
+      ]
+     ]
+    },
+    "m1_object": {
+     "frames": 179,
+     "detected": 179,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m2_desk": {
+     "frames": 179,
+     "detected": 179,
+     "coverage_pct": 100.0,
+     "gaps": []
+    }
+   },
+   "landmarks": {
+    "left_shoulder": {
+     "pose_frames": 179,
+     "pct_ok": 98.88,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 1.12,
+     "vis_median": 0.999,
+     "vis_p10": 0.997
+    },
+    "right_shoulder": {
+     "pose_frames": 179,
+     "pct_ok": 94.97,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 5.03,
+     "vis_median": 0.999,
+     "vis_p10": 0.994
+    },
+    "left_elbow": {
+     "pose_frames": 179,
+     "pct_ok": 76.54,
+     "pct_low_vis": 23.46,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.786,
+     "vis_p10": 0.381
+    },
+    "right_elbow": {
+     "pose_frames": 179,
+     "pct_ok": 92.74,
+     "pct_low_vis": 6.15,
+     "pct_no_depth": 1.12,
+     "vis_median": 0.81,
+     "vis_p10": 0.667
+    },
+    "left_wrist": {
+     "pose_frames": 179,
+     "pct_ok": 72.63,
+     "pct_low_vis": 27.37,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.709,
+     "vis_p10": 0.284
+    },
+    "right_wrist": {
+     "pose_frames": 179,
+     "pct_ok": 89.94,
+     "pct_low_vis": 9.5,
+     "pct_no_depth": 0.56,
+     "vis_median": 0.921,
+     "vis_p10": 0.552
+    },
+    "left_hip": {
+     "pose_frames": 179,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.998,
+     "vis_p10": 0.997
+    },
+    "right_hip": {
+     "pose_frames": 179,
+     "pct_ok": 97.21,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 2.79,
+     "vis_median": 0.998,
+     "vis_p10": 0.996
+    }
+   }
+  },
+  "manipulation": {
+   "range": [
+    224,
+    1314
+   ],
+   "seconds": 36.39,
+   "markers": {
+    "m0_wall": {
+     "frames": 1091,
+     "detected": 1091,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m1_object": {
+     "frames": 1091,
+     "detected": 1087,
+     "coverage_pct": 99.63,
+     "gaps": [
+      [
+       588,
+       588
+      ],
+      [
+       773,
+       773
+      ],
+      [
+       1300,
+       1300
+      ],
+      [
+       1304,
+       1304
+      ]
+     ]
+    },
+    "m2_desk": {
+     "frames": 1091,
+     "detected": 1091,
+     "coverage_pct": 100.0,
+     "gaps": []
+    }
+   },
+   "landmarks": {
+    "left_shoulder": {
+     "pose_frames": 1091,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.999,
+     "vis_p10": 0.995
+    },
+    "right_shoulder": {
+     "pose_frames": 1091,
+     "pct_ok": 98.08,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 1.92,
+     "vis_median": 0.999,
+     "vis_p10": 0.998
+    },
+    "left_elbow": {
+     "pose_frames": 1091,
+     "pct_ok": 70.39,
+     "pct_low_vis": 29.61,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.653,
+     "vis_p10": 0.208
+    },
+    "right_elbow": {
+     "pose_frames": 1091,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.798,
+     "vis_p10": 0.704
+    },
+    "left_wrist": {
+     "pose_frames": 1091,
+     "pct_ok": 55.18,
+     "pct_low_vis": 44.45,
+     "pct_no_depth": 0.37,
+     "vis_median": 0.53,
+     "vis_p10": 0.097
+    },
+    "right_wrist": {
+     "pose_frames": 1091,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.937,
+     "vis_p10": 0.863
+    },
+    "left_hip": {
+     "pose_frames": 1091,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.998,
+     "vis_p10": 0.998
+    },
+    "right_hip": {
+     "pose_frames": 1091,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.999,
+     "vis_p10": 0.999
+    }
+   }
+  },
+  "retreat": {
+   "range": [
+    1315,
+    1498
+   ],
+   "seconds": 6.14,
+   "markers": {
+    "m0_wall": {
+     "frames": 184,
+     "detected": 184,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m1_object": {
+     "frames": 184,
+     "detected": 184,
+     "coverage_pct": 100.0,
+     "gaps": []
+    },
+    "m2_desk": {
+     "frames": 184,
+     "detected": 184,
+     "coverage_pct": 100.0,
+     "gaps": []
+    }
+   },
+   "landmarks": {
+    "left_shoulder": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.999,
+     "vis_p10": 0.997
+    },
+    "right_shoulder": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.998,
+     "vis_p10": 0.998
+    },
+    "left_elbow": {
+     "pose_frames": 184,
+     "pct_ok": 97.28,
+     "pct_low_vis": 2.72,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.643,
+     "vis_p10": 0.51
+    },
+    "right_elbow": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.825,
+     "vis_p10": 0.681
+    },
+    "left_wrist": {
+     "pose_frames": 184,
+     "pct_ok": 41.3,
+     "pct_low_vis": 58.7,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.476,
+     "vis_p10": 0.38
+    },
+    "right_wrist": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.924,
+     "vis_p10": 0.624
+    },
+    "left_hip": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.999,
+     "vis_p10": 0.998
+    },
+    "right_hip": {
+     "pose_frames": 184,
+     "pct_ok": 100.0,
+     "pct_low_vis": 0.0,
+     "pct_no_depth": 0.0,
+     "vis_median": 0.999,
+     "vis_p10": 0.999
+    }
+   }
+  }
+ },
+ "global": {
+  "markers": {
+   "m0_wall": {
+    "frames": 1499,
+    "detected": 1447,
+    "coverage_pct": 96.53,
+    "gaps": [
+     [
+      47,
+      98
+     ]
+    ]
+   },
+   "m1_object": {
+    "frames": 1499,
+    "detected": 1495,
+    "coverage_pct": 99.73,
+    "gaps": [
+     [
+      588,
+      588
+     ],
+     [
+      773,
+      773
+     ],
+     [
+      1300,
+      1300
+     ],
+     [
+      1304,
+      1304
+     ]
+    ]
+   },
+   "m2_desk": {
+    "frames": 1499,
+    "detected": 1499,
+    "coverage_pct": 100.0,
+    "gaps": []
+   }
+  },
+  "landmarks": {
+   "left_shoulder": {
+    "pose_frames": 1454,
+    "pct_ok": 99.86,
+    "pct_low_vis": 0.0,
+    "pct_no_depth": 0.14,
+    "vis_median": 0.999,
+    "vis_p10": 0.996
+   },
+   "right_shoulder": {
+    "pose_frames": 1454,
+    "pct_ok": 97.94,
+    "pct_low_vis": 0.0,
+    "pct_no_depth": 2.06,
+    "vis_median": 0.999,
+    "vis_p10": 0.998
+   },
+   "left_elbow": {
+    "pose_frames": 1454,
+    "pct_ok": 74.55,
+    "pct_low_vis": 25.45,
+    "pct_no_depth": 0.0,
+    "vis_median": 0.659,
+    "vis_p10": 0.239
+   },
+   "right_elbow": {
+    "pose_frames": 1454,
+    "pct_ok": 99.11,
+    "pct_low_vis": 0.76,
+    "pct_no_depth": 0.14,
+    "vis_median": 0.8,
+    "vis_p10": 0.693
+   },
+   "left_wrist": {
+    "pose_frames": 1454,
+    "pct_ok": 55.57,
+    "pct_low_vis": 44.15,
+    "pct_no_depth": 0.28,
+    "vis_median": 0.53,
+    "vis_p10": 0.12
+   },
+   "right_wrist": {
+    "pose_frames": 1454,
+    "pct_ok": 98.76,
+    "pct_low_vis": 1.17,
+    "pct_no_depth": 0.07,
+    "vis_median": 0.934,
+    "vis_p10": 0.784
+   },
+   "left_hip": {
+    "pose_frames": 1454,
+    "pct_ok": 100.0,
+    "pct_low_vis": 0.0,
+    "pct_no_depth": 0.0,
+    "vis_median": 0.998,
+    "vis_p10": 0.998
+   },
+   "right_hip": {
+    "pose_frames": 1454,
+    "pct_ok": 99.66,
+    "pct_low_vis": 0.0,
+    "pct_no_depth": 0.34,
+    "vis_median": 0.999,
+    "vis_p10": 0.999
+   }
+  }
+ },
+ "events": [
+  {
+   "entity": "pose",
+   "kind": "landmark-no-pose",
+   "start": 0,
+   "stop": 44,
+   "frames": 45,
+   "seconds": 1.5,
+   "phases": [
+    "entry"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 45,
+   "stop": 51,
+   "frames": 7,
+   "seconds": 0.23,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_elbow",
+   "kind": "landmark-blocked",
+   "start": 45,
+   "stop": 57,
+   "frames": 13,
+   "seconds": 0.43,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_wrist",
+   "kind": "landmark-blocked",
+   "start": 45,
+   "stop": 61,
+   "frames": 17,
+   "seconds": 0.57,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_hip",
+   "kind": "landmark-blocked",
+   "start": 45,
+   "stop": 49,
+   "frames": 5,
+   "seconds": 0.17,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "marker_wall",
+   "kind": "marker-not-detected",
+   "start": 47,
+   "stop": 98,
+   "frames": 52,
+   "seconds": 1.73,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_shoulder",
+   "kind": "landmark-blocked",
+   "start": 53,
+   "stop": 53,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_shoulder",
+   "kind": "landmark-blocked",
+   "start": 55,
+   "stop": 55,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_wrist",
+   "kind": "landmark-blocked",
+   "start": 101,
+   "stop": 101,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 133,
+   "stop": 134,
+   "frames": 2,
+   "seconds": 0.07,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 175,
+   "stop": 381,
+   "frames": 207,
+   "seconds": 6.9,
+   "phases": [
+    "approach",
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 181,
+   "stop": 182,
+   "frames": 2,
+   "seconds": 0.07,
+   "phases": [
+    "approach"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 184,
+   "stop": 305,
+   "frames": 122,
+   "seconds": 4.07,
+   "phases": [
+    "approach",
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 307,
+   "stop": 307,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 311,
+   "stop": 331,
+   "frames": 21,
+   "seconds": 0.7,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 333,
+   "stop": 333,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 383,
+   "stop": 384,
+   "frames": 2,
+   "seconds": 0.07,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 393,
+   "stop": 394,
+   "frames": 2,
+   "seconds": 0.07,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 480,
+   "stop": 480,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 491,
+   "stop": 493,
+   "frames": 3,
+   "seconds": 0.1,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 495,
+   "stop": 495,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 498,
+   "stop": 500,
+   "frames": 3,
+   "seconds": 0.1,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 499,
+   "stop": 509,
+   "frames": 11,
+   "seconds": 0.37,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 509,
+   "stop": 509,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 513,
+   "stop": 514,
+   "frames": 2,
+   "seconds": 0.07,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 517,
+   "stop": 517,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 519,
+   "stop": 519,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 545,
+   "stop": 573,
+   "frames": 29,
+   "seconds": 0.97,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "marker_object",
+   "kind": "marker-not-detected",
+   "start": 588,
+   "stop": 588,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "marker_object",
+   "kind": "marker-not-detected",
+   "start": 773,
+   "stop": 773,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 833,
+   "stop": 1096,
+   "frames": 264,
+   "seconds": 8.81,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 856,
+   "stop": 856,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 859,
+   "stop": 886,
+   "frames": 28,
+   "seconds": 0.93,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "right_shoulder",
+   "kind": "landmark-blocked",
+   "start": 905,
+   "stop": 905,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 905,
+   "stop": 1093,
+   "frames": 189,
+   "seconds": 6.3,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 1278,
+   "stop": 1307,
+   "frames": 30,
+   "seconds": 1.0,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "marker_object",
+   "kind": "marker-not-detected",
+   "start": 1300,
+   "stop": 1300,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "marker_object",
+   "kind": "marker-not-detected",
+   "start": 1304,
+   "stop": 1304,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 1315,
+   "stop": 1331,
+   "frames": 17,
+   "seconds": 0.57,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 1333,
+   "stop": 1333,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 1364,
+   "stop": 1364,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 1375,
+   "stop": 1463,
+   "frames": 89,
+   "seconds": 2.97,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 1427,
+   "stop": 1430,
+   "frames": 4,
+   "seconds": 0.13,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  },
+  {
+   "entity": "left_elbow",
+   "kind": "landmark-blocked",
+   "start": 1435,
+   "stop": 1435,
+   "frames": 1,
+   "seconds": 0.03,
+   "phases": [
+    "retreat"
+   ],
+   "cause": "out-of-scene"
+  }
+ ],
+ "event_summary": {
+  "total": 44,
+  "out_of_scene": 7,
+  "unclassified": 37,
+  "longest_in_scene": {
+   "entity": "left_wrist",
+   "kind": "landmark-blocked",
+   "start": 833,
+   "stop": 1096,
+   "frames": 264,
+   "seconds": 8.81,
+   "phases": [
+    "manipulation"
+   ],
+   "cause": "uncls"
+  }
+ },
+ "wrist_live": {
+  "entry": {
+   "left_wrist": 0.0,
+   "right_wrist": 0.0
+  },
+  "approach": {
+   "left_wrist": 72.63,
+   "right_wrist": 89.94
+  },
+  "manipulation": {
+   "left_wrist": 55.18,
+   "right_wrist": 100.0
+  },
+  "retreat": {
+   "left_wrist": 41.3,
+   "right_wrist": 100.0
+  }
+ },
+ "anchor_check": {
+  "ok": true,
+  "gaps": [],
+  "verdict": "PASS: desk anchor detected in every frame"
+ },
+ "candidate_frames_total": 583,
+ "representative_shortlist": [
+  {
+   "frame": 1225,
+   "time_s": 40.86,
+   "min_landmark_vis": 0.793,
+   "max_marker_reproj_px": 0.353
+  },
+  {
+   "frame": 1226,
+   "time_s": 40.89,
+   "min_landmark_vis": 0.792,
+   "max_marker_reproj_px": 0.351
+  },
+  {
+   "frame": 1224,
+   "time_s": 40.83,
+   "min_landmark_vis": 0.792,
+   "max_marker_reproj_px": 0.36
+  },
+  {
+   "frame": 1228,
+   "time_s": 40.96,
+   "min_landmark_vis": 0.79,
+   "max_marker_reproj_px": 0.374
+  },
+  {
+   "frame": 1223,
+   "time_s": 40.79,
+   "min_landmark_vis": 0.785,
+   "max_marker_reproj_px": 0.354
+  },
+  {
+   "frame": 1227,
+   "time_s": 40.93,
+   "min_landmark_vis": 0.785,
+   "max_marker_reproj_px": 0.362
+  },
+  {
+   "frame": 1229,
+   "time_s": 40.99,
+   "min_landmark_vis": 0.781,
+   "max_marker_reproj_px": 0.348
+  },
+  {
+   "frame": 1222,
+   "time_s": 40.76,
+   "min_landmark_vis": 0.775,
+   "max_marker_reproj_px": 0.356
+  },
+  {
+   "frame": 1230,
+   "time_s": 41.03,
+   "min_landmark_vis": 0.774,
+   "max_marker_reproj_px": 0.356
+  },
+  {
+   "frame": 1221,
+   "time_s": 40.73,
+   "min_landmark_vis": 0.774,
+   "max_marker_reproj_px": 0.353
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+Run: python v2/integration/run_v2.py --source bag --no-merge --dump --profile   (2026-08-06)
+
+Broker:   published 899 frames in 35.0 s (25.7 fps sustained, bag pacing)
+          align+publish ms: p50 2.39  p95 2.57  p99 2.79  max 5.99
+Person:   consumed 899 (0 skipped), total p50 8.69  p95 22.48  p99 27.78 ms
+          30 fps budget 33.3 ms -> p99 headroom 5.6 ms
+          all-joints-live 866/899 (96.3%)
+Object:   consumed 899 (0 skipped), live on 863
+          total p50 12.50  p95 13.29  p99 13.74 ms
+
+Parity against the pinned v1 dumps (realtime/dataset/rt_*_dump.csv):
+  person all-live: v1 866 == v2 866; angle agreement on the 866
+    both-live frames: median 0.000 deg, p95 0.000 deg, max 0.000 deg
+  object: live flags identical on all 899 frames (863 live),
+    max pose component diff 0 across ux/uy/uz/ex/ey/ez
+
+PASS: v2 pipelines running off the broker ring reproduce the frozen v1
+real-time pipelines exactly on the pinned recording.

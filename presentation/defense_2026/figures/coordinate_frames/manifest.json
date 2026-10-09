@@ -1,0 +1,2413 @@
+{
+  "status": "PASS",
+  "generator": "presentation/defense_2026/make_coordinate_figures.py",
+  "generator_sha256": "97793876fe3a8d5cf62a477d6c68665434841be6158b4aa0d577a5913dcc9737",
+  "source_pdf": "writing/v9/Thesis_V9.pdf",
+  "source_pdf_sha256": "cab52bddd93b9ef40b9c42f718b9a17ba6af6f2a7a08124a8ce366ee30d9c929",
+  "axis_renderer": "presentation/defense_2026/anim/coordinate_axes.py",
+  "axis_renderer_sha256": "51f20372c946b2db57b4be108bd3c1ad546c8a56942f64b3ee550e9af04e5400",
+  "axis_colors": {
+    "X": "#FF4040",
+    "Y": "#40E070",
+    "Z": "#408CFF"
+  },
+  "assets": [
+    {
+      "key": "camera_frames",
+      "path": "presentation/defense_2026/figures/coordinate_frames/camera_frames.png",
+      "sha256": "302401837930e206216fecbec21d97ad0f718ce2c1ff48ebaa7e36da2f399bfa",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 3.1, Eq. 3.1, pp. 21-22",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.32,
+          "origin_px": [
+            365.0,
+            315.0
+          ],
+          "endpoints_px": [
+            [
+              532.7623386703856,
+              355.17657752965346
+            ],
+            [
+              365.0,
+              507.44904873695407
+            ],
+            [
+              482.4684541646942,
+              257.6219008833054
+            ]
+          ],
+          "determinant": -1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              531.4048493703834,
+              335.2042702486129,
+              564.4048493703834,
+              370.2042702486129
+            ],
+            [
+              351.0,
+              497.44904873695407,
+              382.0,
+              532.4490487369541
+            ],
+            [
+              480.14944819166595,
+              228.91625643750876,
+              513.1494481916659,
+              263.91625643750876
+            ]
+          ],
+          "frame": "Camera",
+          "role": "frame origin"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.32,
+          "origin_px": [
+            365.0,
+            965.0
+          ],
+          "endpoints_px": [
+            [
+              532.7623386703856,
+              1005.1765775296535
+            ],
+            [
+              365.0,
+              772.5509512630459
+            ],
+            [
+              482.4684541646942,
+              907.6219008833053
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              531.4048493703834,
+              985.2042702486129,
+              564.4048493703834,
+              1020.2042702486129
+            ],
+            [
+              351.0,
+              736.5509512630459,
+              382.0,
+              771.5509512630459
+            ],
+            [
+              480.14944819166595,
+              878.9162564375087,
+              513.1494481916659,
+              913.9162564375087
+            ]
+          ],
+          "frame": "Camera-prime",
+          "role": "frame origin"
+        }
+      ],
+      "reference_coordinates": "Camera-prime for both displayed bases",
+      "explanation": "Separate views of the same optical origin; F reverses only Y and has determinant -1."
+    },
+    {
+      "key": "tpose_reference",
+      "path": "presentation/defense_2026/figures/coordinate_frames/tpose_reference.png",
+      "sha256": "3ad952b7a2668a3d8dc0813c099762c282b4f74f715fb0cd3aaecc4b23acaa92",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "thesis figure copy above an illustrative schematic; not experimental output",
+      "source": "Thesis V9 Sections 3.2.2-3.3.3, Figure 3.5, pp. 27-30",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "length_m": 0.15,
+          "origin_px": [
+            600.0,
+            1090.0
+          ],
+          "endpoints_px": [
+            [
+              510.0,
+              1090.0
+            ],
+            [
+              600.0,
+              1000.0
+            ],
+            [
+              600.0,
+              1090.0
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              496.0,
+              1045.0,
+              523.0,
+              1074.0
+            ],
+            [
+              603.0,
+              971.0,
+              629.0,
+              1000.0
+            ],
+            [
+              618.0,
+              1043.0,
+              645.0,
+              1072.0
+            ]
+          ],
+          "frame": "L24",
+          "role": "root origin",
+          "z_symbol": "ring around the origin: Z toward the viewer"
+        },
+        {
+          "origin_m": [
+            -0.075,
+            0.5,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "length_m": 0.1,
+          "origin_px": [
+            555.0,
+            790.0
+          ],
+          "endpoints_px": [
+            [
+              495.0,
+              790.0
+            ],
+            [
+              555.0,
+              730.0
+            ],
+            [
+              555.0,
+              790.0
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              481.0,
+              745.0,
+              508.0,
+              774.0
+            ],
+            [
+              544.0,
+              697.0,
+              570.0,
+              726.0
+            ],
+            [
+              573.0,
+              743.0,
+              600.0,
+              772.0
+            ]
+          ],
+          "frame": "L12",
+          "role": "frame origin",
+          "z_symbol": "ring around the origin: Z toward the viewer"
+        },
+        {
+          "origin_m": [
+            -0.355,
+            0.5,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "length_m": 0.1,
+          "origin_px": [
+            387.0,
+            790.0
+          ],
+          "endpoints_px": [
+            [
+              327.0,
+              790.0
+            ],
+            [
+              387.0,
+              730.0
+            ],
+            [
+              387.0,
+              790.0
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              313.0,
+              745.0,
+              340.0,
+              774.0
+            ],
+            [
+              376.0,
+              697.0,
+              402.0,
+              726.0
+            ],
+            [
+              405.0,
+              743.0,
+              432.0,
+              772.0
+            ]
+          ],
+          "frame": "L14",
+          "role": "frame origin",
+          "z_symbol": "ring around the origin: Z toward the viewer"
+        }
+      ],
+      "thesis_figure": {
+        "source": "writing/v9/figures/ch3_fig_tpose_a.png",
+        "source_sha256": "e1bb552e4ad63a797bfff415ef75881c6dc998169a0792773d950fd1362f03a2",
+        "copy": "presentation/defense_2026/figures/coordinate_frames/thesis_fig3_5_reference_pose.png",
+        "sha256": "e1bb552e4ad63a797bfff415ef75881c6dc998169a0792773d950fd1362f03a2",
+        "thesis_builder": "writing/v9/scripts/build_ch3.py (IMG FIGC / \"ch3_fig_tpose_a.png\")",
+        "caption": "Figure 3.5. The reference configuration: the subject in the T-pose with a frame at each landmark. All frames share the root orientation, right arm along +x, left arm along -x.",
+        "native_px": [
+          828,
+          822
+        ],
+        "displayed_px": [
+          524,
+          520
+        ],
+        "displayed_at_px": [
+          458,
+          70
+        ],
+        "fit": "uniform scale into the box, Lanczos resampling, no crop",
+        "box_px": [
+          40,
+          70,
+          1400,
+          590
+        ]
+      },
+      "schematic": true,
+      "note": "illustrative schematic, not a measurement",
+      "schematic_constants": {
+        "landmarks_root_m": {
+          "11": [
+            -0.275,
+            0.5,
+            0.0
+          ],
+          "12": [
+            0.075,
+            0.5,
+            0.0
+          ],
+          "13": [
+            -0.555,
+            0.5,
+            0.0
+          ],
+          "14": [
+            0.355,
+            0.5,
+            0.0
+          ],
+          "15": [
+            -0.815,
+            0.5,
+            0.0
+          ],
+          "16": [
+            0.615,
+            0.5,
+            0.0
+          ],
+          "23": [
+            -0.2,
+            0.0,
+            0.0
+          ],
+          "24": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "landmarks_camera_prime_m": {
+          "11": [
+            0.275,
+            0.5,
+            0.0
+          ],
+          "12": [
+            -0.075,
+            0.5,
+            0.0
+          ],
+          "13": [
+            0.555,
+            0.5,
+            0.0
+          ],
+          "14": [
+            -0.355,
+            0.5,
+            0.0
+          ],
+          "15": [
+            0.815,
+            0.5,
+            0.0
+          ],
+          "16": [
+            -0.615,
+            0.5,
+            0.0
+          ],
+          "23": [
+            0.2,
+            0.0,
+            0.0
+          ],
+          "24": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "landmarks_px": {
+          "11": [
+            765.0,
+            790.0
+          ],
+          "12": [
+            555.0,
+            790.0
+          ],
+          "13": [
+            933.0,
+            790.0
+          ],
+          "14": [
+            387.0,
+            790.0
+          ],
+          "15": [
+            1089.0,
+            790.0
+          ],
+          "16": [
+            231.0,
+            790.0
+          ],
+          "23": [
+            720.0,
+            1090.0
+          ],
+          "24": [
+            600.0,
+            1090.0
+          ]
+        },
+        "projection": "orthographic front view of Camera-prime (view rows = identity)",
+        "px_per_m": 600.0,
+        "l24_origin_px": [
+          600.0,
+          1090.0
+        ],
+        "torso_edges": [
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            24
+          ],
+          [
+            24,
+            23
+          ],
+          [
+            23,
+            11
+          ]
+        ],
+        "right_arm_edges": [
+          [
+            12,
+            14
+          ],
+          [
+            14,
+            16
+          ]
+        ],
+        "left_arm_edges": [
+          [
+            11,
+            13
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "colours": {
+          "right_arm": "#FFFFFF",
+          "left_arm": "#656565",
+          "torso": "#656565",
+          "landmarks": "#FFFFFF"
+        },
+        "triad_lengths_m": {
+          "24": 0.15,
+          "12": 0.1,
+          "14": 0.1
+        },
+        "z_ring_px": 17,
+        "frame_label_offsets_px": {
+          "24": {
+            "Y": [
+              16.0,
+              -14.0
+            ]
+          }
+        },
+        "label_edge_gap_px": 4,
+        "text": [
+          "Root (0, 180, 0) deg",
+          "All arm coordinates zero",
+          "Right arm +X, left arm -X",
+          "Schematic, not measured"
+        ],
+        "torso_shape": "trapezoid, shoulders wider than hips, centred on one vertical axis",
+        "widths_m": {
+          "shoulder": 0.35,
+          "hip": 0.2
+        },
+        "widths_px": {
+          "shoulder": 210.0,
+          "hip": 120.0
+        },
+        "widths_source": "DECISIONS.md D-107: shoulder = median of the four committed eval/reports/recording_*_offset_fit.json shoulder_width values; hip = median of the same recordings' MediaPipe hip-to-hip medians (v1/mediapipe/output, not committed)",
+        "proportions": "torso widths per D-107; torso height 0.50 m, upper arm 0.28 m and forearm 0.26 m editorial, no data source (D-106)"
+      },
+      "label_bounds": [
+        [
+          10.0,
+          774.0,
+          211.0,
+          812.0
+        ],
+        [
+          350.0,
+          827.0,
+          423.0,
+          856.0
+        ],
+        [
+          468.0,
+          826.0,
+          541.0,
+          856.0
+        ],
+        [
+          779.0,
+          827.0,
+          852.0,
+          856.0
+        ],
+        [
+          896.0,
+          826.0,
+          969.0,
+          856.0
+        ],
+        [
+          1052.0,
+          827.0,
+          1125.0,
+          856.0
+        ],
+        [
+          563.0,
+          1126.0,
+          636.0,
+          1156.0
+        ],
+        [
+          683.0,
+          1126.0,
+          756.0,
+          1156.0
+        ],
+        [
+          840,
+          906,
+          1181,
+          939
+        ],
+        [
+          840,
+          950,
+          1254,
+          976
+        ],
+        [
+          840,
+          994,
+          1270,
+          1027
+        ],
+        [
+          840,
+          1038,
+          1276,
+          1068
+        ]
+      ],
+      "canonical_root_matrix": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "root_euler_degrees": [
+        0,
+        180,
+        0
+      ],
+      "arm_coordinates": "all zero",
+      "wrist_orientation": "not drawn; unobserved"
+    },
+    {
+      "key": "scene_mapping",
+      "path": "presentation/defense_2026/figures/coordinate_frames/scene_mapping.png",
+      "sha256": "f8b4786df65c501c219f46f7bca06843efecaab759fc84b34bc77066c76bb97b",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Sections 6.2, 6.4, Eqs. 6.1 and 6.6, pp. 72, 78",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.3420201433256687,
+              0.9396926207859084
+            ],
+            [
+              0.0,
+              0.9396926207859084,
+              -0.3420201433256687
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            340.0,
+            236.0
+          ],
+          "endpoints_px": [
+            [
+              485.553030598086,
+              218.43330621557362
+            ],
+            [
+              276.2207193280833,
+              147.543202968576
+            ],
+            [
+              363.2137597274874,
+              103.11220398988607
+            ]
+          ],
+          "determinant": -1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              484.45937410820005,
+              193.87564861554168,
+              517.4593741082001,
+              228.87564861554168
+            ],
+            [
+              254.61766338456738,
+              113.99836819890004,
+              285.6176633845674,
+              148.99836819890004
+            ],
+            [
+              351.4508137416471,
+              67.30612772360794,
+              384.4508137416471,
+              102.30612772360794
+            ]
+          ],
+          "frame": "World",
+          "role": "frame origin"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9396926207859084,
+              0.3420201433256687
+            ],
+            [
+              0.0,
+              -0.3420201433256687,
+              0.9396926207859084
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            340.0,
+            636.0
+          ],
+          "endpoints_px": [
+            [
+              485.553030598086,
+              618.4333062155737
+            ],
+            [
+              363.2137597274874,
+              503.1122039898861
+            ],
+            [
+              276.2207193280833,
+              547.543202968576
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              484.45937410820005,
+              593.8756486155418,
+              517.4593741082001,
+              628.8756486155418
+            ],
+            [
+              351.4508137416471,
+              467.306127723608,
+              382.4508137416471,
+              502.306127723608
+            ],
+            [
+              254.61766338456738,
+              513.9983681989,
+              287.6176633845674,
+              548.9983681989
+            ]
+          ],
+          "frame": "Unity",
+          "role": "frame origin"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            340.0,
+            1036.0
+          ],
+          "endpoints_px": [
+            [
+              485.553030598086,
+              1018.4333062155737
+            ],
+            [
+              340.0,
+              880.8723122979757
+            ],
+            [
+              272.12750716444367,
+              998.3281036088254
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              484.45937410820005,
+              993.8756486155418,
+              517.4593741082001,
+              1028.8756486155416
+            ],
+            [
+              326.0,
+              844.8723122979757,
+              357.0,
+              879.8723122979757
+            ],
+            [
+              246.76097199054846,
+              969.0192306396966,
+              279.76097199054846,
+              1004.0192306396966
+            ]
+          ],
+          "frame": "Scene",
+          "role": "frame origin"
+        }
+      ],
+      "reference_coordinates": "Scene directions in three separated explanatory views",
+      "translation_explanation": "World and Unity share the desk-marker origin; Scene is on the floor directly below it.",
+      "illustrative_gravity_degrees": -20,
+      "numeric_geometry": "The chosen tilt illustrates the transformation; it is not a calibrated recording value."
+    },
+    {
+      "key": "object_frames",
+      "path": "presentation/defense_2026/figures/coordinate_frames/object_frames.png",
+      "sha256": "00a015082696fee58130498ed0e6f77bd61b753fe16e975acb8e39d50cdf0846",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Sections 2.2, 4.1, Eq. 4.1",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            842.2888091066352,
+            354.18252465025955
+          ],
+          "endpoints_px": [
+            [
+              1007.5824316387329,
+              370.77894783907664
+            ],
+            [
+              842.2888091066352,
+              519.4761471823572
+            ],
+            [
+              788.5816554842694,
+              405.2610630744755
+            ]
+          ],
+          "determinant": -1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              1006.5173944820815,
+              349.0776919405809,
+              1039.5173944820815,
+              384.0776919405809
+            ],
+            [
+              828.2888091066352,
+              509.4761471823572,
+              859.2888091066352,
+              544.4761471823572
+            ],
+            [
+              765.1616339633925,
+              391.220035925546,
+              798.1616339633925,
+              426.220035925546
+            ]
+          ],
+          "frame": "Camera",
+          "role": "frame origin"
+        },
+        {
+          "origin_m": [
+            -0.55,
+            -0.2,
+            0.8
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -0.9063077870366499,
+              0.42261826174069944
+            ],
+            [
+              0.0,
+              0.42261826174069944,
+              0.9063077870366499
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            233.75601233142424,
+            648.6985359772726
+          ],
+          "endpoints_px": [
+            [
+              399.04963486352193,
+              665.2949591660897
+            ],
+            [
+              211.05838842449919,
+              820.092156346707
+            ],
+            [
+              185.08080078390037,
+              625.1353096702519
+            ]
+          ],
+          "determinant": -0.9999999999999999,
+          "held": false,
+          "label_bounds": [
+            [
+              397.9845977068705,
+              643.593703267594,
+              430.9845977068705,
+              678.593703267594
+            ],
+            [
+              195.3517015408184,
+              809.9796394167666,
+              226.3517015408184,
+              844.9796394167666
+            ],
+            [
+              159.37973961891956,
+              596.4709325982891,
+              192.37973961891956,
+              631.4709325982891
+            ]
+          ],
+          "frame": "World",
+          "role": "frame origin"
+        },
+        {
+          "origin_m": [
+            0.5,
+            -0.1,
+            0.9
+          ],
+          "basis_columns": [
+            [
+              0.9063077870366499,
+              0.0,
+              -0.42261826174069944
+            ],
+            [
+              -0.109381654946615,
+              -0.9659258262890683,
+              -0.23456971600980447
+            ],
+            [
+              0.40821789367673483,
+              -0.25881904510252074,
+              0.875426098065593
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            998.2450500426332,
+            675.9927902384987
+          ],
+          "endpoints_px": [
+            [
+              1126.127726163875,
+              729.9655211637807
+            ],
+            [
+              1012.1454842583485,
+              822.4340706229406
+            ],
+            [
+              881.3723026774577,
+              752.4672024025186
+            ]
+          ],
+          "determinant": -0.9999999999999999,
+          "held": false,
+          "label_bounds": [
+            [
+              1124.1047146014264,
+              712.0203948483313,
+              1157.1047146014264,
+              747.0203948483313
+            ],
+            [
+              999.3739426307594,
+              812.3758977747477,
+              1030.3739426307593,
+              847.3758977747477
+            ],
+            [
+              856.4941546269603,
+              736.5852003648293,
+              889.4941546269603,
+              771.5852003648293
+            ]
+          ],
+          "frame": "Object",
+          "role": "frame origin"
+        }
+      ],
+      "reference_coordinates": "Illustrative Camera-prime display coordinates; Camera, World and Object are right-handed frames. Positions and marker orientations are not fitted data."
+    },
+    {
+      "key": "grasp_offset",
+      "path": "presentation/defense_2026/figures/coordinate_frames/grasp_offset.png",
+      "sha256": "83d2178134b8117bef068c29bf9798289d67fa991cde3a4b4080e11e3dde8304",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory figure drawn on one recorded frame; values measured on that frame and illustrative, not a thesis result",
+      "source": "Thesis V9 Section 5.3, Eq. 5.2; Section 6.2, Eq. 6.1",
+      "frames": [
+        {
+          "origin_m": [
+            -0.107907,
+            0.142544,
+            1.017659
+          ],
+          "basis_columns": [
+            [
+              0.998559,
+              0.051488,
+              0.015155
+            ],
+            [
+              0.007439,
+              0.146868,
+              -0.989128
+            ],
+            [
+              0.053154,
+              -0.987815,
+              -0.146274
+            ]
+          ],
+          "length_m": 0.045,
+          "origin_px": [
+            368.74280678342524,
+            583.5171064260198
+          ],
+          "endpoints_px": [
+            [
+              438.523157054415,
+              583.5166685471515
+            ],
+            [
+              364.8640918413126,
+              604.2728713451636
+            ],
+            [
+              368.7179125792548,
+              515.6711021156805
+            ]
+          ],
+          "determinant": -1.0000002090976066,
+          "held": false,
+          "label_bounds": [
+            [
+              437.523157054159,
+              560.5165869708158,
+              470.523157054159,
+              595.5165869708158
+            ],
+            [
+              348.47606789518164,
+              594.0516561713005,
+              379.47606789518164,
+              629.0516561713005
+            ],
+            [
+              354.71314259116605,
+              479.6711029907877,
+              387.71314259116605,
+              514.6711029907876
+            ]
+          ],
+          "frame": "MappedMarker",
+          "role": "cube marker origin o_k; measured pose"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.07,
+          "origin_px": [
+            1042.095707698892,
+            641.2421986847953
+          ],
+          "endpoints_px": [
+            [
+              1189.91006407866,
+              662.8340420089382
+            ],
+            [
+              969.9073010948192,
+              685.4540683485167
+            ],
+            [
+              1042.095707698892,
+              484.2729249949939
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              1188.7735502919684,
+              641.7130636799216,
+              1221.7735502919684,
+              676.7130636799216
+            ],
+            [
+              944.8212522951384,
+              669.2437312275625,
+              975.8212522951384,
+              704.2437312275625
+            ],
+            [
+              1028.095707698892,
+              448.2729249949939,
+              1061.095707698892,
+              483.2729249949939
+            ]
+          ],
+          "frame": "MappedMarker",
+          "role": "same cube marker origin; object-local basis"
+        }
+      ],
+      "recording": "recording_20260909_000024",
+      "source_frame": 630,
+      "source_time_s": 21.014543,
+      "source_tables": {
+        "landmarks": {
+          "path": "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.csv",
+          "sha256": "53e897c553efad6dfd74e9f1c430a4c29e8340538be0ca5ad531f8c50ba14505"
+        },
+        "landmarks_meta": {
+          "path": "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.meta.json",
+          "sha256": "0b90b2a5af5e00a1ee78bab929b1479eca0a3c8158952043bf1d69c67d291c6d"
+        },
+        "marker_poses": {
+          "path": "eval/output/recording_20260909_000024_aruco_raw_scaled.csv",
+          "sha256": "d12376d741d29ddd9a74db578c0270932f1439e680bb4898a7979f30b7cb6db8"
+        },
+        "failure_mask": {
+          "path": "eval/output/recovery_r7/failure_mask.csv",
+          "sha256": "b7d4038bd8e7df145ec82ff9e0348ba7aabba98e47e9957c65c4ac113f6bca00"
+        },
+        "rgb_provenance": {
+          "path": "presentation/defense_2026/media/provenance/axes_r7_rgb.json",
+          "sha256": "cd95631dc234a1846573387c01cce99d383022cdd96cd9d4dd9164be6e374540"
+        },
+        "matched_evidence": {
+          "path": "presentation/defense_2026/media/provenance/matched_evidence.json",
+          "sha256": "758b2c733c1cfb2a92d083056c1f9bff15fa08a794afe2a8b57719f4b409190b"
+        },
+        "calibration": {
+          "path": "eval/output/scene_calibration_r7c.json",
+          "sha256": "5516a93781e05f109ede67883932310b9bfc4727f7c9479ec34ae2c0210d96cc"
+        }
+      },
+      "source_rgb": {
+        "delivered_source": "presentation/defense_2026/figures/coordinate_frames/grasp_source_r7_f00630.png",
+        "sha256": "e3014c1e71245e5f6fabfeb3a50c338753b5365c968ac543707d1c5c955ea369",
+        "bag_decode_record": {
+          "frame": 630,
+          "time_s": 21.014542724609374,
+          "path": "/tmp/defense_axes_rgb_r7/frame_00630.png",
+          "sha256": "e3014c1e71245e5f6fabfeb3a50c338753b5365c968ac543707d1c5c955ea369"
+        },
+        "crop_px": [
+          125,
+          145,
+          395,
+          400
+        ],
+        "panel_box_px": [
+          20,
+          96,
+          720,
+          757
+        ],
+        "colour_adjustments": "none"
+      },
+      "intrinsics": {
+        "width": 640,
+        "height": 480,
+        "fx": 607.561279296875,
+        "fy": 607.0150756835938,
+        "ppx": 323.93756103515625,
+        "ppy": 248.0174102783203,
+        "model": "distortion.inverse_brown_conrady",
+        "coeffs": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "reference_coordinates": "left: Camera (recorded image); right: MappedMarker",
+      "marker_face": "MappedMarker X/Z plane; positive Y normal toward the camera",
+      "mapped_swap_S": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "cube_marker_size_m": 0.045,
+      "cube_size_m": 0.07,
+      "marker_reprojection_px": 0.0777,
+      "marker_origin_camera_m": [
+        -0.107907,
+        0.142544,
+        1.017659
+      ],
+      "wrist_camera_m": [
+        -0.13496,
+        0.009103,
+        1.109
+      ],
+      "marker_rotation_camera": [
+        [
+          0.998559,
+          0.015155,
+          0.051488
+        ],
+        [
+          0.007439,
+          -0.989128,
+          0.146868
+        ],
+        [
+          0.053154,
+          -0.146274,
+          -0.987815
+        ]
+      ],
+      "displacement_camera_m": [
+        -0.027052999999999994,
+        -0.133441,
+        0.0913409999999999
+      ],
+      "offset_mappedmarker_m": [
+        -0.023151544712,
+        -0.11121912756699989,
+        0.11821942779900001
+      ],
+      "offset_mappedmarker_printed_cm": [
+        -2.3,
+        -11.1,
+        11.8
+      ],
+      "offset_formula": "h_k = (R_cam_marker S)^T (p_wr - o_k); invariant to the rigid change from Camera to Scene",
+      "pipeline_offset_mappedmarker_m": [
+        -0.0250669343019023,
+        -0.10973379590883328,
+        0.12244538058373476
+      ],
+      "pipeline_offset_source": "media/provenance/matched_evidence.json grasp record, frozen filtered Scene inputs",
+      "pipeline_difference_cm": 0.48717147242696285,
+      "label_bounds": {
+        "left": [
+          [
+            44,
+            128,
+            448,
+            166
+          ],
+          [
+            44,
+            176,
+            247,
+            215
+          ],
+          [
+            20,
+            798,
+            673,
+            836
+          ],
+          [
+            20,
+            858,
+            528,
+            897
+          ]
+        ],
+        "right": [
+          [
+            777.904292301108,
+            228.7578013152047,
+            1120.904292301108,
+            267.7578013152047
+          ],
+          [
+            790,
+            797,
+            1005,
+            829
+          ],
+          [
+            789,
+            854,
+            1028,
+            885
+          ],
+          [
+            790,
+            909,
+            1051,
+            941
+          ]
+        ]
+      },
+      "geometry": "Measured on one frame and illustrative. Raw per-frame inputs (VIDEO-1 tables); the thesis estimate is the clean-sample mean, not this single observation."
+    },
+    {
+      "key": "wrist_target",
+      "path": "presentation/defense_2026/figures/coordinate_frames/wrist_target.png",
+      "sha256": "65034fb1a2bb37d754594fcd97b03d9b7bd083fc02cf3cc7ca9599ec675bd2b3",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 5.4, Eq. 5.7 and p. 58; Sections 6.2, 6.4",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.24,
+          "origin_px": [
+            330.0,
+            320.0
+          ],
+          "endpoints_px": [
+            [
+              473.5591534666054,
+              306.081823264755
+            ],
+            [
+              330.0,
+              165.06142004376517
+            ],
+            [
+              263.0572673402732,
+              290.15237367039185
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              472.49848433425217,
+              281.8273446090724,
+              505.49848433425217,
+              316.8273446090724
+            ],
+            [
+              316.0,
+              129.06142004376517,
+              347.0,
+              164.06142004376517
+            ],
+            [
+              237.1839988598728,
+              261.8584624893906,
+              270.18399885987276,
+              296.8584624893906
+            ]
+          ],
+          "frame": "Scene",
+          "role": "basis legend; actual origin is outside the local construction"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.9396926207859084,
+              -0.144543958452599,
+              -0.30997551921944466
+            ],
+            [
+              0.0,
+              0.9063077870366499,
+              -0.42261826174069944
+            ],
+            [
+              0.3420201433256687,
+              0.39713126196710286,
+              0.8516507396391465
+            ]
+          ],
+          "length_m": 0.24,
+          "origin_px": [
+            330.0,
+            970.0
+          ],
+          "endpoints_px": [
+            [
+              442.00571413994913,
+              946.7127025919126
+            ],
+            [
+              282.664339785149,
+              819.7363213220192
+            ],
+            [
+              228.48834908236313,
+              1014.3744143576882
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              440.73353008900824,
+              921.0664408575265,
+              473.73353008900824,
+              956.0664408575265
+            ],
+            [
+              264.7583390461593,
+              784.3370004443658,
+              295.7583390461593,
+              819.3370004443658
+            ],
+            [
+              202.57671285483934,
+              996.5814214042691,
+              235.57671285483934,
+              1031.5814214042691
+            ]
+          ],
+          "frame": "Camera-prime",
+          "role": "basis legend; actual origin is outside the local construction"
+        }
+      ],
+      "reference_coordinates": "Separate explanatory views; no measured calibration rotation is implied.",
+      "point_transform": "Undo floor translation, G, S and calibrated camera relation, then apply F.",
+      "target_status": "inferred constraint, not a new wrist observation"
+    },
+    {
+      "key": "elbow_constraints",
+      "path": "presentation/defense_2026/figures/coordinate_frames/elbow_constraints.png",
+      "sha256": "9f74c226308a52d8da69ba59d261c8d19c79a8f007e237032de644729c3c8f65",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 5.5, Eqs. 5.8-5.12",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            245.0,
+            1010.0
+          ],
+          "endpoints_px": [
+            [
+              338.7122251795896,
+              1000.9145235200484
+            ],
+            [
+              245.0,
+              908.8595380841246
+            ],
+            [
+              201.30127173601167,
+              990.5161328126169
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              337.6515560472364,
+              976.6600448643658,
+              370.6515560472364,
+              1011.6600448643658
+            ],
+            [
+              231.0,
+              872.8595380841246,
+              262.0,
+              907.8595380841246
+            ],
+            [
+              175.42800325561126,
+              962.2222216316156,
+              208.42800325561126,
+              997.2222216316156
+            ]
+          ],
+          "frame": "Camera-prime",
+          "role": "basis legend; optical origin outside this close-up"
+        }
+      ],
+      "reference_coordinates": "Camera-prime; legend does not relocate its optical origin",
+      "geometry": "Illustrative lengths and reachable target, not recording measurements.",
+      "endpoint_distance": 0.58,
+      "upper_arm": 0.38,
+      "forearm": 0.34,
+      "length_residuals": [
+        0.0,
+        -5.551115123125783e-17
+      ],
+      "selected_by_prior": false
+    },
+    {
+      "key": "elbow_prior",
+      "path": "presentation/defense_2026/figures/coordinate_frames/elbow_prior.png",
+      "sha256": "6e0299d2838615e51357c72afe0d38344c1d2a66c6118f332dec2a7159c35eac",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 5.5, Eqs. 5.8-5.12",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            245.0,
+            1010.0
+          ],
+          "endpoints_px": [
+            [
+              338.7122251795896,
+              1000.9145235200484
+            ],
+            [
+              245.0,
+              908.8595380841246
+            ],
+            [
+              201.30127173601167,
+              990.5161328126169
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              337.6515560472364,
+              976.6600448643658,
+              370.6515560472364,
+              1011.6600448643658
+            ],
+            [
+              231.0,
+              872.8595380841246,
+              262.0,
+              907.8595380841246
+            ],
+            [
+              175.42800325561126,
+              962.2222216316156,
+              208.42800325561126,
+              997.2222216316156
+            ]
+          ],
+          "frame": "Camera-prime",
+          "role": "basis legend; optical origin outside this close-up"
+        }
+      ],
+      "reference_coordinates": "Camera-prime; legend does not relocate its optical origin",
+      "geometry": "Illustrative lengths and reachable target, not recording measurements.",
+      "endpoint_distance": 0.58,
+      "upper_arm": 0.38,
+      "forearm": 0.34,
+      "length_residuals": [
+        0.0,
+        -5.551115123125783e-17
+      ],
+      "selected_by_prior": true
+    },
+    {
+      "key": "rig_frames",
+      "path": "presentation/defense_2026/figures/coordinate_frames/rig_frames.png",
+      "sha256": "6fc325af58a41e378f66c29c900f5cbebae4763c492ec2316e730992fcc468dc",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 6.3, Eqs. 6.4-6.5, p. 75",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "length_m": 0.18,
+          "origin_px": [
+            330.0,
+            275.0
+          ],
+          "endpoints_px": [
+            [
+              449.0888432166158,
+              263.45423975371716
+            ],
+            [
+              330.0,
+              146.47140526357794
+            ],
+            [
+              274.46796040727213,
+              250.24003724930236
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              448.0281740842626,
+              239.19976109803457,
+              481.0281740842626,
+              274.19976109803457
+            ],
+            [
+              316.0,
+              110.47140526357794,
+              347.0,
+              145.47140526357794
+            ],
+            [
+              248.59469192687175,
+              221.9461260683011,
+              281.59469192687175,
+              256.9461260683011
+            ]
+          ],
+          "frame": "Scene anchor",
+          "role": "illustrative orientation factor; origins are not equated"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.9063077870366499,
+              -0.109381654946615,
+              -0.40821789367673483
+            ],
+            [
+              0.0,
+              0.9659258262890683,
+              -0.25881904510252074
+            ],
+            [
+              0.42261826174069944,
+              0.23456971600980447,
+              0.875426098065593
+            ]
+          ],
+          "length_m": 0.18,
+          "origin_px": [
+            330.0,
+            675.0
+          ],
+          "endpoints_px": [
+            [
+              414.4622919128112,
+              654.0719751630714
+            ],
+            [
+              303.9477304865772,
+              546.3058678599594
+            ],
+            [
+              232.77160652342837,
+              691.3033165075911
+            ]
+          ],
+          "determinant": 0.9999999999999999,
+          "held": false,
+          "label_bounds": [
+            [
+              413.0807095831026,
+              627.9453898854756,
+              446.0807095831026,
+              662.9453898854756
+            ],
+            [
+              287.36838840735936,
+              510.5643218612049,
+              318.36838840735936,
+              545.5643218612049
+            ],
+            [
+              205.9505998270475,
+              670.4531507550058,
+              238.9505998270475,
+              705.4531507550058
+            ]
+          ],
+          "frame": "Segment chain",
+          "role": "illustrative orientation factor; origins are not equated"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.9396926207859084,
+              -0.19617469496901108,
+              -0.2801664995932355
+            ],
+            [
+              0.0,
+              0.8191520442889918,
+              -0.573576436351046
+            ],
+            [
+              0.3420201433256687,
+              0.5389855446957562,
+              0.7697511313200572
+            ]
+          ],
+          "length_m": 0.18,
+          "origin_px": [
+            330.0,
+            1075.0
+          ],
+          "endpoints_px": [
+            [
+              422.91383104791237,
+              1055.682128286473
+            ],
+            [
+              276.70681589981524,
+              958.635262856737
+            ],
+            [
+              253.8894453543806,
+              1132.8966992326766
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              421.6416469969715,
+              1030.0358665520869,
+              454.6416469969715,
+              1065.0358665520869
+            ],
+            [
+              257.29371732635894,
+              923.8158566180952,
+              288.29371732635894,
+              958.8158566180952
+            ],
+            [
+              229.54278766424258,
+              1117.767320214728,
+              262.5427876642426,
+              1152.767320214728
+            ]
+          ],
+          "frame": "Bone rest axes",
+          "role": "illustrative orientation factor; origins are not equated"
+        }
+      ],
+      "geometry": "Separate illustrative orientation factors; no measured rig bone rest rotation claimed.",
+      "factor_order": "Scene anchor on left; kinematic segment rotation; captured bone rest rotation on right"
+    },
+    {
+      "key": "anchor_factorization",
+      "path": "presentation/defense_2026/figures/coordinate_frames/anchor_factorization.png",
+      "sha256": "949088aa48e005d285ea93d90280c55a36e72a35dc44a5519efdf97f1b524ea2",
+      "dimensions_px": [
+        1440,
+        1200
+      ],
+      "classification": "explanatory static diagram; not experimental output",
+      "source": "Thesis V9 Section 6.2, Eqs. 6.1-6.3; Section 6.3, Eq. 6.5",
+      "frames": [
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.8660254037844387,
+              -0.2113091308703497,
+              -0.4531538935183249
+            ],
+            [
+              0.0,
+              0.9063077870366499,
+              -0.42261826174069944
+            ],
+            [
+              0.49999999999999994,
+              0.36599815077066683,
+              0.7848855672213958
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            300.0,
+            275.0
+          ],
+          "endpoints_px": [
+            [
+              379.497694078255,
+              251.39485568209815
+            ],
+            [
+              252.0182582300567,
+              145.14546772833813
+            ],
+            [
+              197.10282271625397,
+              317.3149809197518
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              377.9599208543022,
+              224.69446329988085,
+              410.9599208543022,
+              259.69446329988085
+            ],
+            [
+              233.51246545454822,
+              109.95129569969365,
+              264.5124654545482,
+              144.95129569969365
+            ],
+            [
+              171.0797689156487,
+              299.25928848580713,
+              204.0797689156487,
+              334.25928848580713
+            ]
+          ],
+          "frame": "Object in World (RH)",
+          "role": "separate explanatory basis relation"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.8660254037844387,
+              -0.4531538935183249,
+              -0.2113091308703497
+            ],
+            [
+              0.49999999999999994,
+              0.7848855672213958,
+              0.36599815077066683
+            ],
+            [
+              0.0,
+              -0.42261826174069944,
+              0.9063077870366499
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            1080.0,
+            275.0
+          ],
+          "endpoints_px": [
+            [
+              1188.7851396168855,
+              196.66756347044898
+            ],
+            [
+              1047.8322279730842,
+              185.14815113116413
+            ],
+            [
+              1000.3696801377822,
+              204.28483442573486
+            ]
+          ],
+          "determinant": 0.9999999999999999,
+          "held": false,
+          "label_bounds": [
+            [
+              1185.3347578987555,
+              166.07114628161355,
+              1218.3347578987555,
+              201.07114628161355
+            ],
+            [
+              1029.450454161066,
+              149.90886772647443,
+              1060.450454161066,
+              184.90886772647443
+            ],
+            [
+              976.6492782997493,
+              172.65269748826879,
+              1009.6492782997493,
+              207.65269748826879
+            ]
+          ],
+          "frame": "MappedMarker in Unity (LH)",
+          "role": "separate explanatory basis relation"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.8660254037844387,
+              -0.2113091308703497,
+              -0.4531538935183249
+            ],
+            [
+              0.0,
+              0.9063077870366499,
+              -0.42261826174069944
+            ],
+            [
+              0.49999999999999994,
+              0.36599815077066683,
+              0.7848855672213958
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            300.0,
+            875.0
+          ],
+          "endpoints_px": [
+            [
+              379.497694078255,
+              851.3948556820982
+            ],
+            [
+              252.0182582300567,
+              745.1454677283382
+            ],
+            [
+              197.10282271625397,
+              917.3149809197517
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              377.9599208543022,
+              824.6944632998809,
+              410.9599208543022,
+              859.6944632998809
+            ],
+            [
+              233.51246545454822,
+              709.9512956996937,
+              264.5124654545482,
+              744.9512956996937
+            ],
+            [
+              171.0797689156487,
+              899.259288485807,
+              204.0797689156487,
+              934.259288485807
+            ]
+          ],
+          "frame": "Segment in Camera-prime (LH)",
+          "role": "separate explanatory basis relation"
+        },
+        {
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "basis_columns": [
+            [
+              0.9659258262890683,
+              -0.10938165494661499,
+              -0.23456971600980445
+            ],
+            [
+              -0.1484525055496845,
+              0.5082597117962722,
+              -0.8483123946759183
+            ],
+            [
+              0.2120121498966546,
+              0.8542293128463281,
+              0.4747032013482619
+            ]
+          ],
+          "length_m": 0.22,
+          "origin_px": [
+            1080.0,
+            875.0
+          ],
+          "endpoints_px": [
+            [
+              1188.9154686046388,
+              877.8254052836907
+            ],
+            [
+              1016.2237154797245,
+              785.1170581457227
+            ],
+            [
+              1022.7290105601377,
+              980.4657946853077
+            ]
+          ],
+          "determinant": 1.0,
+          "held": false,
+          "label_bounds": [
+            [
+              1187.9110966403302,
+              855.1625283442378,
+              1220.9110966403302,
+              890.1625283442378
+            ],
+            [
+              994.7009151752937,
+              751.5148189680934,
+              1025.7009151752936,
+              786.5148189680934
+            ],
+            [
+              1002.5252995742958,
+              968.890065778211,
+              1035.5252995742958,
+              1003.890065778211
+            ]
+          ],
+          "frame": "Segment in Scene (LH)",
+          "role": "separate explanatory basis relation"
+        }
+      ],
+      "geometry": "Separate coordinate views of exact products using an illustrative nontrivial R and arbitrary proper anchor A; neither matrix is a recording calibration.",
+      "illustrative_rotation_R": [
+        [
+          0.8660254037844387,
+          -0.2113091308703497,
+          -0.4531538935183249
+        ],
+        [
+          0.0,
+          0.9063077870366499,
+          -0.42261826174069944
+        ],
+        [
+          0.49999999999999994,
+          0.36599815077066683,
+          0.7848855672213958
+        ]
+      ],
+      "axis_swap_S": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "object_product_S_R_S": [
+        [
+          0.8660254037844387,
+          -0.4531538935183249,
+          -0.2113091308703497
+        ],
+        [
+          0.49999999999999994,
+          0.7848855672213958,
+          0.36599815077066683
+        ],
+        [
+          0.0,
+          -0.42261826174069944,
+          0.9063077870366499
+        ]
+      ],
+      "illustrative_proper_anchor_A": [
+        [
+          0.9659258262890683,
+          0.0,
+          0.25881904510252074
+        ],
+        [
+          0.1484525055496845,
+          0.8191520442889918,
+          -0.5540322932223234
+        ],
+        [
+          -0.21201214989665462,
+          0.573576436351046,
+          0.7912401152362238
+        ]
+      ],
+      "body_product_A_R": [
+        [
+          0.9659258262890683,
+          -0.10938165494661499,
+          -0.23456971600980445
+        ],
+        [
+          -0.1484525055496845,
+          0.5082597117962722,
+          -0.8483123946759183
+        ],
+        [
+          0.2120121498966546,
+          0.8542293128463281,
+          0.4747032013482619
+        ]
+      ],
+      "handedness": {
+        "World": "right",
+        "Object": "right",
+        "Unity": "left",
+        "MappedMarker": "left",
+        "Camera-prime": "left",
+        "Scene": "left",
+        "body_segment": "left"
+      }
+    }
+  ],
+  "scope": "Static instructional geometry; grasp_offset is drawn on one recorded R7 frame with values measured on that frame, illustrative only. Recorded data and numerical results are unchanged."
+}

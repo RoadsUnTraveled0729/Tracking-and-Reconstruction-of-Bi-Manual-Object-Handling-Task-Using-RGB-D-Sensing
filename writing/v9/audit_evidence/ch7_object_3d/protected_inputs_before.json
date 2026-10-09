@@ -1,0 +1,32 @@
+{
+  "baseline": "b52235513477f5d44a4b790d52858b12a934b4b9",
+  "sha256": {
+    "writing/v9/audit_evidence/ch7_restructured/object.json": "9b6835fca5dde6e892f8a1ad09a420dd239f32c27044a6179a1968f2fa1bd9fd",
+    "writing/v9/audit_evidence/ch7_restructured/human.json": "1b03df1ee415f80dc1fd6c360caec32685d47fd00e8aea7b0fa4ae526a97d8d1",
+    "writing/v9/figures/ch7_fig_frames_strip.png": "11194beb4bfa89b03a194e0590d35ee445955fc18a023230166dd86d8d9bbd13",
+    "writing/v9/figures/ch7_fig_failures_both.png": "10d2b53c9e86e49a2a99df816919266fe9bf63e475a5e2c0b798490dd4dc3930",
+    "writing/v9/figures/ch7_fig_label_f1462.png": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+    "writing/v9/figures/ch7_fig_label_f1890.png": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+    "writing/v9/figures/ch7_fig_unity_pairs.png": "7b677217bbe05505b4c500028e2fa80db294fcba826f110cdf557067fed68309",
+    "writing/v9/figures/ch7_unity_trajectories_r6b.png": "39207e339960c9dcc0fed9086b6b4f7638e497fe84a26fb29814fd8d6157721f",
+    "writing/v9/figures/ch7_fig_protocol.png": "f88e4cef0b5dee64e11b9d0089c7cbbead8ab906b360ed9f9bdf01c3fd514afc",
+    "writing/v9/figures/ch7_fig_handover_trails.png": "7ab7773253f7bd6e03ea3b418f6db9a5274a7a563359a1440982a0258683f799",
+    "writing/v9/figures/ch7_unity_trajectories_r7.png": "cf9d118a0b39934bd53287aa796d06d2164f23855c6f62617fe722550ca56b18",
+    "writing/v9/figures/ch7_fig_combined.png": "d959cce867bef4d592a0b34cecaa6aaf4936d152142645afcd950e67402b5c10",
+    "writing/v9/figures/ch7_fig_rail_traj.png": "a435ce5074549efd58ae619e5b63095e37e7c448177f020550b796a10e61975d",
+    "writing/v9/figures/ch7_fig_stations.png": "45f100bab57ab0b30a81b56f797f9d44cad1b5d7863a7ea9956da7d292633130",
+    "writing/v9/figures/ch7_video_context_r6b.png": "efe60c84e89ee537f86ecf07e0e65017131fdf6e043176cdde846d32d784696f",
+    "writing/v9/figures/ch7_fig_handover_traj.png": "28014b80bf4a4fc8ca8637e26ab9f8f2fe10c8bfd79a61af2631f44e8c270949",
+    "writing/v9/figures/ch7_fig_wrist_traj.png": "862e4321fbeb4672d0d46b0c50aac266e88ef4bc07c40af45630cdac6cb52a9e",
+    "writing/v9/figures/ch7_visual_examples_r7.png": "464ae838dd361d51cf0ff05134cdbf23afdc54604ffe660aafb0e3b2ca4fea4a",
+    "writing/v9/figures/ch7_valid_joints_r7.png": "7e08895ff10f1edbc99ca62c08cd8a1a8fd5179746cf232bea20f4e16891a042",
+    "writing/v9/figures/ch7_fig_handover_frames.png": "513d676a9d9a8fce93031c5b663aed01343af1bf806faa667f94b76371cf3bc2",
+    "writing/v9/figures/ch7_natural_proxy_left.png": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+    "writing/v9/figures/ch7_visual_examples_r6b.png": "3b768707e432a825015b83f17701d281f2bdee847a65a97a5232bba02567ab3d",
+    "writing/v9/figures/ch7_video_context_r7.png": "decf421602f17da2e5e48b1625c2b35469371a04e9e1370bf44802c980358fce",
+    "writing/v9/figures/ch7_natural_proxy_right.png": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+    "writing/v9/figures/ch7_failure_context.png": "0c144808da4e1f88992d27e103f17889fe5a0e1d03b828415623f409eb6aaa78",
+    "writing/v9/figures/ch7_valid_joints_r6b.png": "213f0ab561e73b561e0ce76f42096db46b53aaf4c0bfe7d174b94d6865f9e657",
+    "writing/v9/figures/ch7_fig_unity_trails.png": "35bdb54381a38f3d7bd3708ac4cf653f91745e15e54b54c0c60f7dd43152fd19"
+  }
+}

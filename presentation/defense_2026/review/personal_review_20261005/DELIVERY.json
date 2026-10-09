@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-05",
+  "baseline_commit": "20b61a00ca3b02f0d9d526d644953e449534a971",
+  "files": {
+    "Thesis_Defence_2026_RESTRUCTURED_FIXED.pptx": {
+      "sha256": "da94af7c11b30defdc5de453b0014c5f2b396bc99740293e188770d766a0a749",
+      "bytes": 102708312
+    },
+    "Thesis_Defence_2026_Outline_and_QA_Index.docx": {
+      "sha256": "a266ffe5ab3e014eac12ec17792cec96e08f4c7cbfae0e91ce9522ffdd9add4b",
+      "bytes": 209782
+    },
+    "Thesis_Defence_2026_Speaker_Script.docx": {
+      "sha256": "413ab0367b25d203814040c3bdfdedc0cd83ff2b8787209fed93a50fdd1daf3d",
+      "bytes": 54114
+    }
+  },
+  "slides": {
+    "total": 77,
+    "shown": 46,
+    "hidden": 31,
+    "qa_first_pages": [
+      47,
+      48
+    ],
+    "reference_pages": [
+      42,
+      43,
+      44
+    ]
+  },
+  "script": {
+    "spoken_words": 2540,
+    "planned_seconds": 1560,
+    "reserve_to_27min_seconds": 60,
+    "timed_rehearsal": false
+  },
+  "guide": {
+    "language": "English",
+    "pages": 2,
+    "paper": "Letter landscape",
+    "visual_review": "Both final rendered pages inspected.",
+    "language_correction": "The author requested all deliverables in English; only the guide changed after ef3f6bc."
+  },
+  "checks": {
+    "preservation": {
+      "pass": 1585,
+      "fail": 0,
+      "scope": "Pre-consolidation review; final bibliography-only delta is verified in reference_consolidation_audit.json."
+    },
+    "unity_log": {
+      "pass": 5,
+      "fail": 0
+    },
+    "rig_sizing": {
+      "pass": 12,
+      "fail": 0
+    },
+    "official_layout_font_chart_table": "PASS",
+    "official_package_helper": "Retained compatibility finding: 24 unchanged empty media-action r:id values. Full helper did not pass."
+  },
+  "native_review": "VISUAL_REVIEW.json",
+  "p23_provenance": "p23_animation_provenance.json",
+  "p38_provenance": "delivery_manifest.json",
+  "manual_compaction_invoked": false,
+  "final_reference_check": "reference_consolidation_audit.json"
+}

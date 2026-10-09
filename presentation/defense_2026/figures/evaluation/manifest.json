@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "created": "2026-09-29",
+  "purpose": "Thesis Chapter 7 figures shown on defence pages 27-28 (DECISIONS.md D-251); byte-identical copies of writing/v9/figures, which is never edited.",
+  "assets": [
+    {
+      "key": "video_context_r6b",
+      "path": "presentation/defense_2026/figures/evaluation/ch7_video_context_r6b.png",
+      "source": "writing/v9/figures/ch7_video_context_r6b.png",
+      "source_sha256": "efe60c84e89ee537f86ecf07e0e65017131fdf6e043176cdde846d32d784696f",
+      "sha256": "efe60c84e89ee537f86ecf07e0e65017131fdf6e043176cdde846d32d784696f",
+      "pixel_size": [
+        2596,
+        594
+      ],
+      "thesis_figure": "Figure 7.1 (upper part: video frames)",
+      "page": 27,
+      "copy": "byte-identical; any crop is applied by the builder (a:srcRect) from talk_content.json"
+    },
+    {
+      "key": "object_waypoints_r6b",
+      "path": "presentation/defense_2026/figures/evaluation/ch7_object_waypoints_r6b.png",
+      "source": "writing/v9/figures/ch7_object_waypoints_r6b.png",
+      "source_sha256": "85c2cce666c7c15a42828f1698b3df9b82f1dd9b64500469621778755ba07d08",
+      "sha256": "85c2cce666c7c15a42828f1698b3df9b82f1dd9b64500469621778755ba07d08",
+      "pixel_size": [
+        2244,
+        1584
+      ],
+      "thesis_figure": "Figure 7.1 (lower part: marker-centre samples and waypoints)",
+      "page": 27,
+      "copy": "byte-identical; any crop is applied by the builder (a:srcRect) from talk_content.json"
+    },
+    {
+      "key": "visual_examples_r7",
+      "path": "presentation/defense_2026/figures/evaluation/ch7_visual_examples_r7.png",
+      "source": "writing/v9/figures/ch7_visual_examples_r7.png",
+      "source_sha256": "464ae838dd361d51cf0ff05134cdbf23afdc54604ffe660aafb0e3b2ca4fea4a",
+      "sha256": "464ae838dd361d51cf0ff05134cdbf23afdc54604ffe660aafb0e3b2ca4fea4a",
+      "pixel_size": [
+        1360,
+        1620
+      ],
+      "thesis_figure": "Figure 7.6",
+      "page": 28,
+      "copy": "byte-identical; any crop is applied by the builder (a:srcRect) from talk_content.json"
+    }
+  ]
+}

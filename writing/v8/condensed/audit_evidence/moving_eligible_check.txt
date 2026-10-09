@@ -1,0 +1,7 @@
+865-895 hold: all n=31 median/p95/max=[2.039, 10.714, 15.393], eligible-only n=29 median/p95/max=[2.029, 5.413, 9.131]
+865-895 masked: all n=31 median/p95/max=[2.988, 3.256, 3.276], eligible-only n=29 median/p95/max=[3.014, 3.257, 3.276]
+865-895 recovery: all n=31 median/p95/max=[1.671, 2.173, 2.798], eligible-only n=29 median/p95/max=[1.656, 2.069, 2.212]
+870-902 hold: all n=33 median/p95/max=[2.167, 20.997, 21.385], eligible-only n=24 median/p95/max=[2.077, 5.421, 8.585]
+870-902 masked: all n=33 median/p95/max=[2.318, 2.718, 4.791], eligible-only n=24 median/p95/max=[2.301, 2.536, 2.55]
+870-902 recovery: all n=33 median/p95/max=[1.647, 2.392, 2.995], eligible-only n=24 median/p95/max=[1.721, 2.061, 2.199]
+NOTE: post hoc eligibility filtering of existing masks, not new eligible-only window design. Uses current local CSV inputs; all-frame values reproduce pinned Table7.6.

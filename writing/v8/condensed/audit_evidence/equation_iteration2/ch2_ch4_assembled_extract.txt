@@ -1,0 +1,591 @@
+BODY 85: Chapter 2: Experimental Setup and Measurements
+
+BODY 86: 2.1 The Recording Setup
+
+BODY 87: 2.2 Coordinate Frames and Scene Calibration
+
+BODY 88: 2.2.1 The Frames
+
+BODY 89: 2.2.2 Scene Calibration
+
+BODY 90: 2.3 Pose Landmarks from MediaPipe
+
+BODY 91: 2.4 Object Pose from ArUco Markers
+
+BODY 92: 2.5 Measurement Filtering
+
+BODY 93: 2.6 Hip Depth Preparation
+
+BODY 94: Chapter 3: Kinematic Modeling
+
+BODY 95: 3.1 Coordinate Systems and Transformations
+
+BODY 96: 3.2 Torso Reference Frame
+
+BODY 97: 3.2.1 Landmark Selection
+
+BODY 98: 3.2.2 Derivation of the Torso Frame
+
+BODY 99: 3.3 The Arm Model
+
+BODY 100: 3.3.1 Kinematic Schematic and Solved Angles
+
+BODY 101: 3.3.2 Definition of Shoulder, Elbow, and Wrist
+
+BODY 102: 3.3.3 Establishing Local Arm Frames
+
+BODY 103: 3.4 Joint Angle Computation
+
+BODY 104: 3.4.1 Torso Pose
+
+BODY 105: 3.4.2 Shoulder Orientation
+
+BODY 106: 3.4.3 Elbow Flexion and Extension
+
+BODY 107: 3.4.4 The Wrist as a Tracked Point
+
+BODY 108: 3.5 Worked Example
+
+BODY 109: Chapter 4: Object Tracking and Scene Reconstruction
+
+BODY 110: 4.1 World Anchoring and Camera Placement Invariance
+
+BODY 111: 4.2 Filtering and Cleaning the Object Track
+
+BODY 112: 4.3 Worked Example
+
+BODY 352: Chapter 2: Experimental Setup and Measurements
+
+BODY 353: Chapter 1 asked what can be reconstructed of a person and a manipulated object from one consumer-grade RGB-D viewpoint. Answering it starts from what the sensor delivers, and this chapter builds that measurement layer. The camera supplies aligned colour and depth, the intrinsics turn pixels into metric points, and a static calibration puts every observation in one calibrated metric scene, its world frame on the desk marker and its vertical from the wall marker. Section 2.1 describes the recording setup, Section 2.2 the coordinate frames and the scene calibration, Sections 2.3 and 2.4 the landmark and the marker observations, Section 2.5 the filtering of the landmark signals, and Section 2.6 the preparation of the hip depth. A landmark is a measured point with a depth and a visibility score and not a joint angle; Chapter 3 builds the kinematic state from those points.
+
+BODY 354: 2.1 The Recording Setup
+
+BODY 355: The recording took place in a controlled lab to limit lighting and background interference. The subject moves a cube along the desk and a wooden rail, with one hand in the rail recording of this chapter and with a handover between the hands in the handover recording of Chapter 7. Chapter 7 compares the reconstructed separations between the endpoints of that route with physical references measured on the setup with a tape, and it draws the reconstructed trajectories. The physical route is not registered into the calibrated world frame, so no physical path is drawn. Figure 2.1 shows the setup from three viewpoints, and Table 2.1 lists its objects.
+
+BODY 356: The task runs in five phases, and the later chapters refer to them by these names. The hand acquires the cube at its initial position in the object acquisition, and the carry translates the cube from that position toward the rail. The lift raises the cube from the desk level to the rail level, the slide translates it along the rail, and in the release the hand leaves the cube at the far end. The handover recording has the same physical phases, and its slide additionally contains a right-hand segment, a handover interval and a left-hand segment.
+
+BODY 357: 
+
+BODY 358: Figure 2.1. The recording setup. (a) The working area drawn on grid paper, with the rail, the cube at its start position, and the desk marker. (b) The scene from behind the RGB-D camera. (c) A colour frame of the recording.
+
+BODY 359: ObjectRoleArUco IDDictionaryPrinted size (mm)Physical dimensionsWall markerStatic; gravity reference05 by 5150-Desk markerStatic; world origin25 by 545-Object markerDynamic; tracked cube15 by 545Cube: 70 mm per sideWooden railReference object---387 by 88 by 38 mm, lying flat
+
+BODY 360: Table 2.1. The objects in the scene. All markers are from the OpenCV 5 by 5 dictionary, and the size is the side of the printed black square. The translation a planar marker solver returns scales with the size it is given, so the size is stated once here, and every object-derived distance in this thesis rests on it.
+
+BODY 361: Figure 2.2 labels the parts of the scene in one colour frame from the sensor. The camera is an Intel RealSense D435 on a fixed support at the edge of the desk, about 1.3 metres from the subject. The subject stays within 2 metres of it for the whole experiment, because the depth error of the sensor grows with the square of the distance [37], [38], [40].
+
+BODY 362: 
+
+BODY 363: Figure 2.2. The experimental setup seen from the RGB-D camera, with the subject, the rail, the carried cube, and the three ArUco markers labelled.
+
+BODY 364: The recording is saved as a bag file, the format of the Intel RealSense software. Each frame holds a colour image and a depth image aligned to it, and a shared frame index says which person and object measurements belong to the same moment. Appendix A describes the recording and the file layout.
+
+BODY 365: Figure 2.3 follows the recording through parallel landmark and marker pipelines. Pipeline A combines landmark detection, depth, filtering and the body solve of Chapters 3 and 5. Pipeline B measures the scene and object poses of Sections 2.2 and 2.4 and Chapter 4; these also support recovery in Chapter 5. Chapter 6 pairs the two outputs at a common render time for Unity. Appendix B lists the workstation.
+
+BODY 366: 
+
+BODY 367: Figure 2.3. Overall data flow. Pipeline A (top) tracks the person, Pipeline B (bottom) the scene and object, and each block names the chapter that develops it.
+
+BODY 368: 2.2 Coordinate Frames and Scene Calibration
+
+BODY 369: Each position and orientation is expressed in a coordinate frame, an origin with three perpendicular axes. The transformations between them follow standard robotics notation [41]. Every frame of this thesis carries a name, and a name in braces is the label that frame takes in the superscript and subscript slots of a transformation. Table 2.2 gives the origin, the axes, the handedness and the parent of each frame, and then the transformations between them.
+
+BODY 370: 2.2.1 The Frames
+
+BODY 371: The raw camera frame {Camera} belongs to the RGB-D camera, and it is the frame of the colour camera to which each depth image is aligned. Its origin is at the colour camera lens, the x axis points to the right of the image, the y axis points down, and the z axis points forward into the scene [10], which makes it right-handed. The depth of a point is its z coordinate in that frame. Every raw measurement of both pipelines starts out there, and Figure 2.4(a) draws it on the sensor, where it carries the letter C.
+
+BODY 372: 
+
+BODY 373: Figure 2.4. (a) The sensor frame, drawn as C, on a front photograph of the D435 sensor (product photograph: Intel). (b) The coordinate system of the finished Unity scene, left-handed with y up and its origin on the drawn floor. The axes are drawn at that origin, where the avatar rig spawns in the T-pose, the reference configuration of the model. Section 6.4 builds this system from the display axes of Section 6.2.
+
+BODY 374: Every printed marker carries a frame of its own. Its origin is at the centre of the printed square, its x and y axes lie in the printed plane and its z axis points out of the printed face, so each marker of Table 2.1 defines one right-handed frame. The world frame is the desk marker's, and it is fixed to the desk. Every object pose ends up in it, and Chapter 6 brings the reconstructed body into it as well. The wall marker's frame is fixed on a plumb wall behind the working area and is never used as an origin. The up axis in the plane of that marker gives the direction of gravity, on the assumptions Section 2.2.2 states, and the calibration uses it for that purpose only. The object frame rides the marker on the cube, and its pose is measured on every frame where the marker is detected.
+
+BODY 375: The y-up camera frame {Camera'} has the same optical origin as the raw camera frame {Camera} and differs only by flipping the y axis upward, which makes it left-handed. It is not person-centred; it is the coordinate convention used for body kinematics. Chapter 3 builds the body model in it as a chain of frames, each named after the landmark at its origin, so that the name also gives the side. The root frame sits at the right hip landmark L24 and carries the orientation of the torso. A shoulder frame sits at each shoulder landmark, L12 on the right and L11 on the left, and inherits the orientation of the root. An elbow frame sits at each elbow landmark, L14 on the right and L13 on the left, and carries the basis of the root turned by the solved shoulder rotation.
+
+BODY 376: The reconstruction of Chapter 6 is drawn in the Unity frame, the display axes of that chapter. It shares the desk marker origin of the world frame and exchanges the second and third coordinates, so its y axis points up and it is left-handed. Chapter 6 converts every pose into it before it draws anything. Those display axes are not levelled and stay anchored on the desk marker. The coordinate system of the finished scene in Figure 2.4(b) is the same axes turned upright by the calibrated gravity direction and dropped so that the drawn floor is at zero height. Section 6.4 builds both steps.
+
+BODY 377: The pose of a frame B seen in a frame A is written BAT, a 4 by 4 matrix that holds a rotation and a translation, and Chapter 3 gives its form in equation (3.2). The same matrix carries a point of B into A, so that  AP1 = BAT  BP1. A pair of them composes when the subscript of the first matches the superscript of the second, and the shared name drops out of the product. Figure 2.5 draws the frames of the scene on a colour frame and on a top view, with an arrow for each transformation. Table 2.2 lists them and says which are fixed by the calibration and which are measured on every frame.
+
+BODY 378: 
+
+BODY 379: Figure 2.5. The scene and its coordinate frames. (a) The colour frame used in the worked examples, with {Wall}, {World} on the desk marker, and {Object} on the cube projected through the colour intrinsics. The raw camera frame {Camera} is the viewpoint of the image itself, and each arrow is one transformation of Table 2.2. Arrows point from the reference frame to the described frame; the labelled transform maps coordinates in the opposite direction. (b) The same frames in a top view, with the cleaned object track of Chapter 4 in grey.
+
+BODY 380: FrameOriginAxes and handednessParent frameAlso called{Camera}the colour camera lensx to the image right, y down, z forward into the scene; right-handednone; every measurement starts herethe raw camera frame; drawn as C in Figure 2.4(a){Camera'}the colour camera lens, shared with {Camera}x right, y up, z forward; left-handed{Camera}, through the flip Fy-up camera frame for body kinematics{World}the desk marker centrex and y in the printed plane, z out of the printed face; right-handed{Camera}, fixed by the calibrationthe world frame{Wall}the wall marker centrethe same marker convention; right-handed{Camera}, fixed by the calibrationthe wall marker frame{Object}the object marker centrethe same marker convention; right-handed{Camera}, measured on every framethe object frame{Unity}the desk marker centrethe axes of {World} with the second and third coordinates exchanged, y up; left-handed{World}, through the swap Sthe display axes of Chapter 6; U{L24}landmark L24, the right hipx to the right along the hip line, y up the trunk, z out of the chest; left-handed{Camera'}the root frame, the torso frame{L12}, {L11}landmark L12, the right shoulder, and landmark L11, the leftthe orientation of {L24}; left-handed{L24}the shoulder frames{L14}, {L13}landmark L14, the right elbow, and landmark L13, the leftthe basis of {L24} turned by the solved shoulder rotation; left-handed{L12}, {L11}the elbow framesTransformationCarries a point fromIntoFixed or measuredDerived inWorldCameraT{World}{Camera}fixed by the calibrationSection 2.2.2, Chapter 4WallCameraT{Wall}{Camera}fixed by the calibrationSection 2.2.2ObjectCameraT{Object}{Camera}measured on every frameSection 2.4ObjectWorldT = CameraWorldT ObjectCameraT{Object}{World}computed on every frameChapter 4CameraWorldT = WorldCameraT\u22121{Camera}{World}fixed by the calibrationChapter 4F{Camera}{Camera'}fixed, the y flip; reverses handednessChapter 3, equation (3.1)L24Camera'T{L24}{Camera'}measured on every frameChapter 3L12L24T, L11L24T{L12}, {L11}{L24}measured on every frameChapter 3L14L12T, L13L11T{L14}, {L13}{L12}, {L11}measured on every frameChapter 3S{World}{Unity}fixed, the second and third coordinates exchanged; reverses handednessChapter 6, equation (6.1)
+
+BODY 381: Table 2.2. The coordinate frames of the thesis and the transformations between them. A transformation written with two frame names carries a point from the frame in the subscript into the frame in the superscript, and two of them compose when the inner names match. The flip F and the swap S are not transformations of that kind, because each reverses handedness, so neither carries frame names and neither composes in that way.
+
+BODY 382: Table 2.2 has two entries that reverse handedness, and they are declared here once. The flip F takes the right-handed sensor frame to the left-handed y-up camera frame, and as a matrix it is diag1, \u22121, 1. The swap S takes the right-handed world frame to the left-handed Unity frame by exchanging the second and third coordinates, so it is 100001010. Each has determinant \u22121, so neither is a rotation, and each is its own inverse, so applying either one twice returns the original coordinates. Neither carries frame names in the superscript and subscript slots, and the composition rule above never applies through one of them. Where an orientation crosses one of them, Chapter 6 prints the change of basis as a conjugation, with the map on both sides of the rotation, rather than as a multiplication on one side.
+
+BODY 383: 2.2.2 Scene Calibration
+
+BODY 384: The desk and wall markers are assumed fixed. Their poses are calibrated at the start and held constant throughout the recording.
+
+BODY 385: Calibration averages the first ten detections of each static marker. Translation uses the arithmetic mean. The element-wise rotation mean generally loses orthonormality, so it is projected onto the nearest proper rotation [42], giving the chordal mean. Writing M for that element-wise mean, taken over the rotation blocks of BAT across the window, its singular value decomposition is M = U \u03a3 VT, with the singular values in the middle factor. The projection is
+
+BODY 386: BAR = U diag1, 1, detUVT VT(2.1)
+
+BODY 387: where the determinant factor excludes reflections and the result is orthonormal. The calibration runs it on WorldCameraM for the desk marker and on WallCameraM for the wall marker, which gives WorldCameraR and WallCameraR. Chapter 4 uses the same projection to smooth the object rotations ObjectWorldR.
+
+BODY 388: Freezing the anchor prevents later desk-marker noise from rotating the reconstructed scene. An anchor orientation error displaces each point in proportion to its distance from the anchor. The frozen calibration can still be biased, but it adds no per-frame anchor wobble.
+
+BODY 389: Calibration also measures the geometry of the scene around the markers, on two physical assumptions. The wall carrying the wall marker is plumb, and the marker is mounted with its printed up axis vertical, so the up axis in the plane of the calibrated wall marker is the direction of gravity. A plumb wall alone fixes only the normal of the marker plane, and the marker could still be turned within that plane. The upright mounting was not measured, so an error in how the marker hangs enters every gravity-referenced height and tilt of this thesis. Taking gravity from the wall marker is needed because the axes of the world frame are not lined up with gravity, since the desk marker card sits on a small stand that tilts it toward the camera. A coarser estimate of the same direction comes from a plane fitted to the depth pixels in a ring around that card, after the deprojection of Section 2.3 has turned those pixels into metric points. The plane only has to fix the sign of the gravity direction and settle the two-solution ambiguity of the planar pose estimation that Section 2.4 describes. It is also the tabletop, so every later height reading has a measured surface to refer to.
+
+BODY 390: The remaining calibrated quantities follow from those pieces, and Table 2.3 lists the whole set with the measurement each one comes from.
+
+BODY 391: QuantityHow it is obtainedWorld anchor posemean translation and chordal-mean rotation over the calibration windowWall marker pose in the worldthe calibrated wall pose carried through the inverse anchor, WallWorldT = CameraWorldT WallCameraT, where the shared name drops outCamera pose in the worldthe inverse of the anchor, CameraWorldT of Table 2.2Gravity direction  Worldgup axis in the plane of the calibrated wall marker, signed by the depth planeTabletop planeplane fitted to the depth pixels in a ring around the desk marker cardWorld origin height above the tabletopthe origin's offset along gravity from the fitted planeObject cube edgetwice the marker centre height above the tabletop while the cube rests, or the measured edgeSensor field of viewthe colour intrinsics of the recording
+
+BODY 392: Table 2.3. The frozen scene description produced by the static calibration.
+
+BODY 393: The pipeline hands this description to the reconstruction once, before any per-frame streaming begins, and Chapter 6 builds the Unity scene from it.
+
+BODY 394: 2.3 Pose Landmarks from MediaPipe
+
+BODY 395: Pipeline A starts with MediaPipe Pose. It is an open-source detector from the MediaPipe framework [27], and it runs in real time on ordinary hardware. For each colour frame, it first locates the person and then regresses 33 body landmarks from the face to the feet. Landmark indices are fixed. The pipeline can therefore select the eight required upper-body points directly: shoulders L11 and L12, elbows L13 and L14, wrists L15 and L16, and hips L23 and L24. Every result includes image coordinates, an appearance-derived depth estimate, and a visibility score between 0 and 1. Appendix C gives the detector architecture, the steps that extract the landmarks, and a numerical example.
+
+BODY 396: Because MediaPipe estimates depth from 2D appearance rather than physical sensor measurements, the pipeline discards those values and uses the depth readings from the aligned RealSense stream instead. It then uses the camera intrinsics to project each landmark pixel into metric 3D coordinates (Appendix D). The pipeline treats landmarks with visibility scores below 0.50 as missing data, so the system does not report coordinates for occluded points. Figure 2.6 illustrates the full detector output on a sample recording frame.
+
+BODY 397: 
+
+BODY 398: Figure 2.6. MediaPipe Pose output on a mid-task frame of the recording. The eight numbered landmarks (shoulders, elbows, wrists, hips) are the ones this system uses. The leg landmarks below the desk edge are guesses for body parts the desk hides, and the visibility gate removes them.
+
+BODY 399: 2.4 Object Pose from ArUco Markers
+
+BODY 400: Pipeline B gets its measurements from ArUco fiducial markers [28], which have a black square border around a unique binary ID grid. Once supplied with the marker's physical side length, it solves the planar Perspective-n-Point problem [43] to resolve both position and orientation in a single pass. The result is the pose of the marker in the sensor frame. For the object marker that pose is ObjectCameraT of Table 2.2, and it is measured on every frame.
+
+BODY 401: The wall marker (ID 0, 150 mm) is mounted on a plumb wall. It is printed larger only because it sits farthest from the sensor. The wall marker's printed up axis is assumed vertical and defines the gravity reference. Appendix E covers corner detection, planar ambiguity, and rotation matrix conversion.
+
+BODY 402: 2.5 Measurement Filtering
+
+BODY 403: The raw 3D landmark trajectories carry three kinds of error:
+
+BODY 404: Case A, spikes: an isolated sample jumps far off the local trajectory for one frame, from a depth speckle or a momentary false detection.
+
+BODY 405: Case B, gaps: a few consecutive samples are missing, because the visibility gate of Section 2.3 blocked them or the depth sample was invalid.
+
+BODY 406: Case C, jitter: every sample carries small broadband noise from detection and depth measurement.
+
+BODY 407: A single smoothing filter cannot solve all three kinds of errors. If a filter is strong enough to remove a sharp spike, it also distorts fast motion. No smoothing filter can fill in missing data gaps either. The pipeline therefore handles each case in a separate stage.
+
+BODY 408: A rolling Hampel test handles case A. The Hampel identifier [44] spots outliers by checking how far a point drifts from the local median. It works well on time-series data because a sudden spike will not pull the median off track the way it pulls a mean [45]. The test looks across a 7-frame window with a threshold set to three robust standard deviations. That value is the window's median absolute deviation multiplied by about 1.48 (Appendix F). A baseline floor of 2 centimetres prevents small sensor noise from triggering the test when the subject is standing still. The pipeline discards any spike the test flags and marks it as missing data, which then passes into case B. Figure 2.7 shows the test flagging a wrist spike that jumped 2.9 centimetres off track in a single frame.
+
+BODY 409: 
+
+BODY 410: Figure 2.7. Despiking on the right wrist of the recording: per-axis raw and filtered trajectories, with the sample the Hampel test flagged marked.
+
+BODY 411: Linear interpolation handles case B. The interpolation fills interior gaps no longer than 5 frames, a sixth of a second, along a straight line between the two valid endpoints. Longer gaps remain missing, and the pose recovery of Chapter 5 handles them. Figure 2.8 shows bridged wrist dropouts from the recording.
+
+BODY 412: 
+
+BODY 413: Figure 2.8. Gap bridging on the right wrist of the recording: the short gaps filled by interpolation, with the replaced samples marked.
+
+BODY 414: A zero-phase Butterworth low-pass filter then handles case C. The filter follows the design procedure of [46]. The Butterworth family has a flat passband, so it passes the motion without ripple [47]. A fourth-order filter with a 3 Hz cutoff runs forward and backward over the recording [48]. The two passes cancel the phase delay. The forward and backward low-pass filter reduces jitter but also attenuates motion near its cutoff. The backward pass needs the whole recording, so the filter can only run offline. The real-time alternative is the One Euro filter [49]. It is a causal low-pass filter that adapts its cutoff to how fast the signal is changing. Chapter 8 compares the causal filter with the offline one on the same recording (Section 8.3). Appendix F compares the candidate smoothers side by side. Figure 2.9 shows the raw jitter against the filtered track.
+
+BODY 415: 
+
+BODY 416: Figure 2.9. Smoothing on the right-wrist depth of the recording: the raw and filtered tracks over an eight-second span, with the shaded window enlarged below.
+
+BODY 417: Every repaired sample keeps a flag, which separates measured data from filled-in data for later stages. Chapter 3 solves the joint angles from these filtered landmarks.
+
+BODY 418: 2.6 Hip Depth Preparation
+
+BODY 419: A visible landmark can take the depth of the desk or rail in front of the body. Before solving the body angles, the pipeline checks hip and shoulder widths against calibrated values, then compares the directions of the two pair lines. It next rejects a remaining torso depth more than 10 centimetres from its remembered value. A final check rejects a hip more than 15 centimetres nearer the camera than the input shoulder midpoint. These checks run in that order, so the remembered-depth repair takes priority over the last check.
+
+BODY 420: Depth memory starts empty. The first sample that survives the checks seeds it; later accepted samples update it with 70 percent previous depth and 30 percent new depth. A repaired sample does not update it, and the memory does not expire. A single rejected point is placed on its retained camera ray at the remembered depth, or at the shoulder-midpoint depth for the last check. Rebuilding a whole pair also restores its calibrated width, so its final endpoints can leave their original rays.
+
+BODY 421: Appendix G gives the branching, fallbacks and output states. The preparation assumes usable landmark pixels and, for the shoulder-depth check, limited trunk lean. It does not establish anatomical hip depth. Chapter 5 uses the prepared torso for arm recovery. The plain, direction-memory and object-assisted solves of Chapter 7 all rest on it, and the hold-last method, which keeps the last accepted joint angles, does not. The causal path's angle solve includes this preparation, but its pelvis translation still uses the original hip midpoint.
+
+BODY 422: The chapter has established the measurement layer: aligned colour and depth from one camera, the intrinsics and the frames, and the static calibration that fixes the world frame and the direction of gravity. In that scene it observes the body as landmarks and the object as marker poses, it filters the landmark signals, and it prepares the hip depth. It leaves three things unresolved. The landmarks are metric points and not a kinematic state, the object pose is a per-frame observation and not yet a track, and nothing so far links the body to the object. Chapter 3 takes the first of them, Chapter 4 the second and Chapter 5 the third.
+
+BODY 423: Chapter 3: Kinematic Modeling
+
+BODY 424: Chapter 2 ends with eight body landmarks per frame, each lifted to a metric 3D position in the sensor frame of one calibrated scene, behind a visibility gate and after the filtering and the hip depth preparation of that chapter. Appendix C lists the landmark set and Appendix D covers the lifting. What it hands on are points, and points carry no orientation: nothing in them says how far the forearm is bent or how the upper arm is turned about its own length. This chapter converts them into an upper-body kinematic state, a root (torso) pose with four angles for each arm, the two shoulder swing angles, the shoulder twist and the elbow flexion, and the wrist as a point. The frames of that state form a chain rooted at the pelvis and running out through each shoulder and elbow, and Chapter 6 maps the state onto the Unity avatar. The model is closed form: every angle comes from the landmark geometry of the current frame, with no optimization and no temporal state.
+
+BODY 425: Section 3.1 fixes the coordinate conventions, Section 3.2 the torso reference frame, Section 3.3 the arm model, Section 3.4 the joint angles, and Section 3.5 runs the whole solve on one measured frame. Figure 3.1 draws the information flow, each box naming the section that builds its contents.
+
+BODY 426: 
+
+BODY 427: Figure 3.1. The information flow of this chapter. Landmarks enter from Chapter 2 on the left, after the recovery of Chapter 5 has replaced any that failed, and the thirteen-angle pose of one frame leaves on the right. The section numbers locate each construction.
+
+BODY 428: 3.1 Coordinate Systems and Transformations
+
+BODY 429: Chapter 2 reports every measurement in the sensor frame of Section 2.2. This chapter attaches a coordinate frame to each body segment, so the relation between two frames holds the orientation of one relative to the other. Unity uses a left-handed frame with y upward, so body kinematics uses the matching axis convention of {Camera'}.
+
+BODY 430: The y-up camera frame {Camera'} retains the optical origin of {Camera}; it is not person-centred. The Unity world is anchored at the desk marker of Section 2.2. The difference does no harm, because every joint angle is defined relative to its parent frame and Chapter 6 places the person in the world through the calibrated camera pose. The measured root frame rides the torso and is not the frame of the finished Unity scene that Figure 2.4(b) shows.
+
+BODY 431: The conversion has to change the handedness itself rather than relabel the axes, and it is one matrix multiplication applied to every measured point. If p is a landmark position in the sensor frame, its position q in the y-up camera frame that all the kinematic math uses is
+
+BODY 432:  Camera'q = F  Camerap,        F = diag1, \u22121, 1(3.1)
+
+BODY 433: Flipping one axis turns a right-handed frame into a left-handed one; the determinant of F is -1, the sign of a reflection. After the flip y points up, as in Unity, and both frames keep the same origin at the optical centre. The flip applies to points only, never to rotation matrices, so every rotation in the pipeline comes out proper. Figure 3.2 draws the two frames with the right wrist of Section 3.5, which reads (-0.20, 0.11, 1.06) in the sensor frame and (-0.20, -0.11, 1.06) in the y-up camera frame. Every landmark position in this chapter is a y-up camera-frame value unless stated otherwise.
+
+BODY 434: 
+
+BODY 435: Figure 3.2. The raw camera frame {Camera} and y-up camera frame {Camera'} drawn from the same optical origin, each axis labelled with the frame it belongs to. Only the y axis differs: {Camera} reads y downward and {Camera'} upward. The wrist landmark of the worked-example frame is shown in both frames.
+
+BODY 436: The left-handed choice is one of convenience and changes no physical result: the angles drive the Unity animation system, and converting points is cheaper than converting rotations. The object track keeps the right-handed world frame instead, and Chapter 6 converts it for Unity with the axis swap of equation (6.1).
+
+BODY 437: A rigid body transformation relates two coordinate frames [41]. Each rotation and each transformation carries both of them. The reference frame is written as a left superscript and the described frame as a left subscript, so BAR is the orientation of a child frame B with respect to a parent frame A. The frame labels are Camera for the raw camera frame of Section 2.2, Camera' for the y-up camera frame, and the landmark names L24, L12 and L14 for the three chain frames built in this chapter. The rotation part is the 3 by 3 matrix BAR whose columns are the axis directions of B in the coordinates of A, BAR =  AXB AYB AZB. Those columns are perpendicular unit vectors, so the transpose of BAR is its inverse; the kinematic transformations in this chapter use this transpose directly. The translation part is the 3-vector  APBORG, the position of the origin of B expressed in A. The two combine into the 4 by 4 homogeneous transformation matrix BAT:
+
+BODY 438: BAT = BAR APBORG01,         AP1 = BAT  BP1(3.2)
+
+BODY 439: The bottom row is the constant (0, 0, 0, 1). Appending a 1 to a point turns the rotation and the shift into one matrix multiplication, so one matrix holds the complete pose of one frame with respect to another. Running the rotation the other way expresses a measured segment direction in the coordinates of the child frame B:
+
+BODY 440:  Bv = ABR  Av,        ABR = BART(3.3)
+
+BODY 441: Throughout,  AP is a measured landmark point carrying the frame it is expressed in, and v a segment vector formed from two points. Equation (3.3) is the rotation part acting alone, so it applies to directions, and to points only when the two frames share one origin. The chain frames sit at different places on the body, so mapping a landmark between them needs the full transformation of equation (3.2), whose inverse is
+
+BODY 442:  BP = BART  AP \u2212  APBORGABT = BAT\u22121 = BART\u2212BART  APBORG01(3.4)
+
+BODY 443: The offset is removed first, and the transposed rotation then describes the point along the axes of the child frame B. Figure 3.3(a) draws the chain on the worked-example frame of Section 3.5.
+
+BODY 444: 
+
+BODY 445: Figure 3.3. The worked-example frame of the rail recording, front view. (a) The chain of frames, the root at the right hip L24, the shoulder at L12 and the elbow at L14. Root and shoulder share their orientation; the elbow x axis follows the upper arm. (b) The four arm segments; the subject's right arm is on the left of the image.
+
+BODY 446: Each neighbouring pair of frames in Figure 3.3(a) is related by its own homogeneous transformation:
+
+BODY 447: L24Camera'T = L24Camera'R Camera'PL24ORG01L12L24T = I L24PL12ORG01L14L12T = L14L12R L12PL14ORG01(3.5)
+
+BODY 448: A frame that exists once per arm takes its label from its landmark, L12 and L14 on the subject's right and L11 and L13 on the left, so the side needs no further subscript. The root transformation L24Camera'T is the pose of the root (torso) frame at the right hip landmark with respect to the y-up camera frame, built in Section 3.2. The shoulder transformation L12L24T is the pose of the right shoulder frame with respect to the root, with the 3 by 3 identity I for its rotation block, and L11L24T is its left counterpart. The elbow transformation L14L12T is the pose of the right elbow frame with respect to the shoulder frame, with the solved shoulder rotation L14L12R for its rotation block, and L13L11T is its left counterpart. Section 3.3.3 places both origins, and the left arm follows from the mirror construction of Section 3.4.2. Chaining the three describes the right elbow frame directly in the y-up camera frame, with the two shared frame labels cancelling,
+
+BODY 449: L14Camera'T = L24Camera'T L12L24T L14L12T(3.6)
+
+BODY 450: Every landmark is converted to the y-up camera frame by equation (3.1), and the inverse transformations of equation (3.4) carry it into the frame where its joint is solved. The shoulder landmark goes into the root frame by Camera'L24T, the elbow landmark into the shoulder frame by Camera'L12T for the angles of Section 3.4.2, and the wrist into the elbow frame by Camera'L14T, where the flexion of Section 3.4.3 is read. Section 3.5 prints all three as numbers.
+
+BODY 451: 3.2 Torso Reference Frame
+
+BODY 452: 3.2.1 Landmark Selection
+
+BODY 453: The right hip L24, the left hip L23, and the right shoulder L12, three MediaPipe landmarks [50], define the torso root. Left and right always refer to the subject, who faces the sensor, so the right side appears on the left of the image.
+
+BODY 454: These points move more slowly than the hands and forearms, and the object rarely hides them. They form a broad triangle across the trunk, so a small position error changes the angles only a little.
+
+BODY 455: With three torso points the model cannot separate the pelvis from the upper trunk, so the torso is one rigid plate with no twist between shoulders and hips, and a forward lean pitches the root frame with it. Section 9.5 lists the simplification among the limitations.
+
+BODY 456: 3.2.2 Derivation of the Torso Frame
+
+BODY 457: The flip F of equation (3.1) converts the three positions to the y-up camera frame, where the whole construction happens. Let  Camera'P23,  Camera'P24, and  Camera'P12 be their y-up camera-frame positions. Figure 3.4(a) shows the two input vectors on the worked-example frame, and Figure 3.4(b) the finished frame projected back onto it.
+
+BODY 458: 
+
+BODY 459: Figure 3.4. The torso frame on the image of the worked-example frame. (a) The two input vectors, the hip line from L23 to L24 in red and the spine-side vector s from L24 to L12 in yellow. (b) The finished root frame L24, drawn at its origin on the right hip landmark, x toward the subject's right, y up the trunk and z out of the chest.
+
+BODY 460: The x axis points along the hip line toward the subject's right, and the hat marks a unit vector.
+
+BODY 461:  Camera'XL24 =  Camera'P24 \u2212  Camera'P23 Camera'P24 \u2212  Camera'P23(3.7)
+
+BODY 462: Subtracting the left hip from the right hip needs no sign correction. The axis is kept as measured, because the hip line is the one direction the three points define without ambiguity.
+
+BODY 463: The second input is the spine-side vector from the right hip up to the right shoulder.
+
+BODY 464:  Camera's =  Camera'P12 \u2212  Camera'P24(3.8)
+
+BODY 465: This vector is not used as an axis, because it is generally not perpendicular to the hip line: in the worked-example frame the angle between them is 83.8 degrees. It only selects the torso plane, the one plane through the hip line that also contains  Camera's.
+
+BODY 466: The z axis is the normalized cross product of the two inputs, perpendicular to both:
+
+BODY 467:  Camera'ZL24 =  Camera'XL24 \xd7  Camera's Camera'XL24 \xd7  Camera's(3.9)
+
+BODY 468: The order of the factors sets the sign: with  Camera'XL24 to the subject's right and  Camera's up the trunk, the product points forward, out of the chest toward the camera. The cross product also discards the part of  Camera's parallel to  Camera'XL24, so the imperfect angle between the inputs does no harm.
+
+BODY 469: The y axis closes the frame with a second cross product.
+
+BODY 470:  Camera'YL24 =  Camera'ZL24 \xd7  Camera'XL24(3.10)
+
+BODY 471: The vectors  Camera'ZL24 and  Camera'XL24 are unit vectors at right angles, so their product needs no normalization. The construction gives an orthonormal frame in every measured pose in which the two hips are distinct and the shoulder does not lie on the hip line.
+
+BODY 472: The three axes assemble into the root rotation matrix, its columns in the y-up camera-frame order right, up, forward.
+
+BODY 473: L24Camera'R =  Camera'XL24 Camera'YL24 Camera'ZL24(3.11)
+
+BODY 474: The right hip is the origin of the root frame,  Camera'PL24ORG =  Camera'P24, so the three axes fill in the first transformation of equation (3.5), the pose of the root frame with respect to the y-up camera frame.
+
+BODY 475: L24Camera'T = L24Camera'R Camera'P2401(3.12)
+
+BODY 476: Figure 3.5 shows the reference configuration that fixes the meaning of the finished matrix: the subject upright, facing the sensor, arms straight out to the sides, the T-pose that is the zero of every arm angle in Section 3.3. Such a subject has the right side toward the camera's left and the chest toward the negative z of the y-up camera frame, which gives L24Camera'R the columns (-1, 0, 0), (0, 1, 0), (0, 0, -1). These decode in the convention of Section 3.4 to the Euler angles (0, 180, 0), an avatar upright and turned to face the viewer. A proper rotation matrix alone does not pin down the construction: the same axes with the forward direction in the up column are still a proper rotation, but that reference pose decodes to (90, 0, 0), a rig lying flat on its back.
+
+BODY 477: 
+
+BODY 478: Figure 3.5. The reference configuration, the subject in the T-pose with a frame drawn at each of the eight landmarks at its zero configuration. The shoulder frames share the orientation of the root frame at the right hip, the elbow frames have x along each upper arm and the wrists x along each forearm.
+
+BODY 479: 3.3 The Arm Model
+
+BODY 480: 3.3.1 Kinematic Schematic and Solved Angles
+
+BODY 481: A human arm is described in [41] with seven rotational degrees of freedom, three at the shoulder, one at the elbow and three at the wrist. This model solves the first four: the two shoulder swing angles, the shoulder twist and the elbow flexion. The three wrist rotations cannot be observed from the eight body landmarks, so the chain ends at the wrist as a tracked point.
+
+BODY 482: The model stops there. Section 3.4.4 gives the reason no algebra over these landmarks reaches that orientation, and fingers, contact points and grip force lie outside the landmark set. The torso is the single rigid plate of Section 3.2.1, and the legs are not tracked. The segment lengths that turn the state back into positions, in the recovery of Chapter 5 and the avatar of Chapter 6, are effective lengths: medians of a segment over the landmark track rather than anatomical bone lengths. Section 6.3 sets them against the subject's own measurement.
+
+BODY 483: Figure 3.6 places those four joints on the body as a manipulator diagram, each rotation a revolute-joint cylinder about its axis. The shoulder at L12 is a cluster of three revolute joints with one shared centre, a single hinge sits at the elbow L14, and the chain ends at the wrist L16 with no joint drawn.
+
+BODY 484: 
+
+BODY 485: Figure 3.6. The kinematic schematic of the modelled right arm, a serial chain of revolute-joint cylinders in the PUMA style. The dash-dot line through each cylinder is its rotation axis, and every solved angle is labelled. The swing pair is the azimuth about y and the elevation about z.
+
+BODY 486: The labels stay the same from here on: the azimuth ty turns the arm about the torso's y axis, the elevation tz raises it about the z axis, the twist tt rolls the upper arm about its own length. The flexion ey bends the forearm relative to the upper arm.
+
+BODY 487: 3.3.2 Definition of Shoulder, Elbow, and Wrist
+
+BODY 488: Each arm is a chain of two rigid segments, the upper arm from the shoulder to the elbow and the forearm from the elbow to the wrist, the four segments drawn in Figure 3.3(b). The right arm uses L12, L14 and L16, the left arm L11, L13 and L15.
+
+BODY 489: 3.3.3 Establishing Local Arm Frames
+
+BODY 490: Every joint rotation is measured relative to its parent frame, the shoulder relative to the torso and the elbow relative to the rotated upper arm, so an elbow angle describes how far the forearm bends, not how the arm sits in the room.
+
+BODY 491: The parent frame of the shoulder is the frame L12, the root orientation L24Camera'R moved up the trunk to the shoulder landmark L12. No separate orientation is derived there, because a second basis built from the shoulder line and the upper arm would add a shoulder-girdle degree of freedom the data cannot support. With the shoulder angles at zero, the right upper arm points along +x. This fills in the second transformation of equation (3.5):
+
+BODY 492: L12L24T = IL24Camera'RT Camera'P12 \u2212  Camera'P2401(3.13)
+
+BODY 493: The rotation block is the identity, L12L24R = I, and the origin  L24PL12ORG = L24Camera'RT Camera'P12 \u2212  Camera'P24 is the measured shoulder landmark expressed with respect to the torso, by the mapping of equation (3.4) applied to  Camera'P12.
+
+BODY 494: The parent of the elbow is the upper arm itself, so the elbow frame L14 is the root orientation composed with the solved shoulder rotation, with its origin at the elbow landmark L14. This follows the PUMA robot model, where each new frame is the previous one turned by the joint rotation [41]. At rest the forearm continues the arm axis along the local +x, so a straight arm is the zero of elbow flexion. The third transformation of equation (3.5) is then
+
+BODY 495: L14L12T = L14L12RL24Camera'RT Camera'P14 \u2212  Camera'P1201(3.14)
+
+BODY 496: with the solved shoulder rotation L14L12R of Section 3.4.2 in the rotation block and the elbow landmark in the coordinates of the shoulder frame,  L12PL14ORG, as its origin. That frame shares the orientation of the root, so the same L24Camera'RT maps it.
+
+BODY 497: Expressing a measured segment in its parent frame takes two steps. The segment is formed as a vector between two landmarks, for the right upper arm  Camera'v =  Camera'P14 \u2212  Camera'P12, and pulled into the parent frame by equation (3.3) as  L24v = L24Camera'RT  Camera'v, which describes the arm in the directions of the body itself. Section 3.4 works backwards from it to the angles.
+
+BODY 498: 3.4 Joint Angle Computation
+
+BODY 499: The root orientation is encoded by three Euler angles in the Unity convention (Chapter 6), applied about the parent-frame axes in the order z, then x, then y. The arm angles are joint coordinates; Section 3.4.2 defines their separate composition. As a matrix product on column vectors the rotation applied first sits nearest the vector, so the convention reads
+
+BODY 500: R = Ryy Rxx Rzz(3.15)
+
+BODY 501: where Rx, Ry, Rz are the elementary rotations about the coordinate axes. Multiplied out, with c for cosine and s for sine, the product is the matrix this section reads its angles from:
+
+BODY 502: R = cycz + sysxsz\u2212cysz + sysxczsycxcxszcxcz\u2212sx\u2212sycz + cysxszsysz + cysxczcycx(3.16)
+
+BODY 503: Write mij for the entry of a measured numerical matrix m in row i and column j. The entry m23 is \u2212sx, which isolates the x angle. The third column is sycx, \u2212sx, cycx, whose first and third entries share cx, which cancels in the two-argument arctangent and leaves the y angle. The first two entries of the second row leave the z angle in the same way:
+
+BODY 504: x=asin\u2212m23, y=atan2m13,m33, z=atan2m21,m22(3.17)
+
+BODY 505: The two-argument arctangent uses the signs of both arguments, so it returns the angle in the correct quadrant, and the arcsine restricts x to -90 to +90 degrees. At either end of that range (m23 = 1) the y and z rotations turn about the same effective axis and only their combined angle is defined, the configuration called gimbal lock. The z angle is set to zero there by convention, so the pose stays unambiguous and only the split between the two angles is a choice. The y formula of equation (3.17) is unusable at those two poses, since the entries m13 and m33 both vanish there, so the locked branch reads y from the first row instead:
+
+BODY 506: x = +90\xb0:   y=atan2m12,m11,   z = 0x = \u221290\xb0:   y=atan2\u2212m12,m11,   z = 0
+
+BODY 507: 3.4.1 Torso Pose
+
+BODY 508: The torso is not a joint, so it needs no solving. Its pose is the pair L24Camera'R,  Camera'PL24ORG, and equation (3.17) applied to L24Camera'R gives its three angles, as Section 3.5 shows on measured data.
+
+BODY 509: 3.4.2 Shoulder Orientation
+
+BODY 510: A shoulder pose must describe both the direction of the upper arm and its roll about its own axis, the three angles labelled at the shoulder of Figure 3.6. They separate into swing and twist [51], with the twist innermost in the three-factor rotation:
+
+BODY 511: L14L12R = Ryty Rztz Rxtt(3.18)
+
+BODY 512: where ty and tz are the swing angles and tt the twist about the arm axis +x of the rest configuration. A rotation about x leaves the x axis fixed, so with the twist innermost the first column of L14L12R, the upper arm direction  L12a of the elbow frame described in the shoulder frame, is free of the twist factor,
+
+BODY 513:  L12a =  L12XL14 = L14L12R  L14XL14 = Ryty Rztz  L14XL14 = cycz,  sz,  \u2212sycz(3.19)
+
+BODY 514: so the upper-arm direction depends on the swing alone. That has two consequences. The twist is invisible in the shoulder-to-elbow vector and has to be measured from a second segment, the forearm. The joint order is also not an Euler order, so the rig cannot take the three angles as Euler angles, and Chapter 6 rebuilds the rotation from them as three factors in this order. Figure 3.7 shows both halves of the decomposition.
+
+BODY 515: 
+
+BODY 516: Figure 3.7. The swing-twist decomposition. (a) The swing aims the rest direction +x of the arm into the observed direction \xe2, drawn here for the worked-example frame. (b) The twist rolls about the arm axis, measured in the plane perpendicular to that axis after the swing has been undone.
+
+BODY 517: The swing angles come straight from the components of  L12a. Its y component is sz, so
+
+BODY 518: tz = asinay(3.20)
+
+BODY 519: the elevation of the arm, positive upward and restricted to -90 to +90 degrees. The x and z components share the factor cz, which cancels in the two-argument arctangent:
+
+BODY 520: ty = atan2\u2212az, ax(3.21)
+
+BODY 521: the azimuth of the arm, positive when sweeping backward. The one degenerate configuration is the arm pointing straight up or straight down (tz = \xb190\xb0), where the x and z components both vanish and the azimuth is undefined. The convention ty = 0 is applied there, and any axial rotation folds into the twist.
+
+BODY 522: A rotation about the arm axis is only visible in the plane perpendicular to it, so the procedure undoes the swing first, which makes that plane the y-z plane of the shoulder frame. The matrix product below is a rotation operator, given by its axes and its angles: it acts on the forearm vector and turns it. It is not a frame-relative rotation, so it carries no pair of frame labels, and the vector it acts on and the vector it produces are both described in the shoulder frame L12:
+
+BODY 523:  L12f\u2032 = Rz\u2212tz Ry\u2212ty  L12f(3.22)
+
+BODY 524: where  L12f is the forearm vector in the parent frame of Section 3.3.3. At zero twist the perpendicular component of the forearm points along the +z axis of that frame, and under a twist tt it rotates to \u2212sin tt, cos tt in the (y, z) plane, so the twist reads
+
+BODY 525: tt = atan2\u2212f\u2032y, f\u2032z(3.23)
+
+BODY 526: The two components the arctangent reads are components of the operated vector  L12f\u2032 in the shoulder frame L12. The twist is positive for internal rotation, where the forearm rotates downward from forward.
+
+BODY 527: The left arm needs no new derivation. Both left segment vectors are expressed in the root basis and their x components flipped with M = diag\u22121, 1, 1, the sagittal mirror, and the same right-arm solver runs on the result, so a mirror-symmetric pose gives identical angle values on both sides with the same anatomical meaning.
+
+BODY 528: 3.4.3 Elbow Flexion and Extension
+
+BODY 529: The elbow is solved in the elbow frame L14 of Section 3.3.3, at the landmark L14. Its orientation in the y-up camera frame is L14Camera'R = L24Camera'R L12L24R L14L12R, where the middle factor is the identity of equation (3.13) and the last is the solved shoulder rotation of equation (3.18). The forearm direction there is  L14g = L14Camera'RT  Camera'P16 \u2212  Camera'P14, normalized, and its swing is read from the components of  L14g as at the shoulder, an elevation and an azimuth:
+
+BODY 530: ez = asingy,      ey = atan2\u2212gz, gx(3.24)
+
+BODY 531: Here ey = 0 is a straight arm and ey = \u221290 is a right angle bend, the hinge angle labelled in Figure 3.6.
+
+BODY 532: A single fact makes the extraction easier: the angle ez is always zero. The shoulder twist aligns the perpendicular component of the forearm with local +z, so the flexion plane is already the x-z plane of the elbow frame by the time the elbow is solved. The out-of-plane freedom of the elbow is the shoulder twist, solved one joint earlier. That closes the dimension count: two measured segment directions give four observable degrees of freedom and the model extracts four independent angles. The angle ez stays in the streamed set for generality, but holds no independent information.
+
+BODY 533: The elbow also shows the one case where a three-landmark arm breaks down. When the arm is straight the forearm is parallel to the upper arm, its perpendicular component vanishes, and no algebra can recover a roll about an axis from two collinear segments. The solver detects this by a threshold on the perpendicular fraction of the forearm, applies tt = 0 so that the elbow frame stays defined, and flags the twist as unobservable; later stages then hold the last valid value. A nearly straight elbow leaves the flexion well conditioned but makes the twist sensitive to noise, a limitation Sections 9.3 and 9.5 discuss.
+
+BODY 534: 3.4.4 The Wrist as a Tracked Point
+
+BODY 535: The wrist L16 is not a solved joint. It enters as a tracked 3D point, as Figure 3.6 draws it, and does two jobs for the solver: it defines the forearm direction the elbow flexion is read from, and it supplies the second segment that makes the shoulder twist observable.
+
+BODY 536: A full three-degree-of-freedom wrist orientation would need a landmark beyond the wrist. Forearm pronation, the roll of the forearm about its own axis, does not move the wrist point at all, so no algebra over these landmarks can observe it. The tracked wrist position is still kept and transmitted, and when the landmark is lost during a grip it is the point the recovery of Chapter 5 rebuilds with an additional geometric constraint from the object pose. A hand model such as [52] would attach at the same point.
+
+BODY 537: 3.5 Worked Example
+
+BODY 538: Frame 533 of the rail recording, drawn in Figures 3.3 and 3.4, is taken while the cube slides along the rail in the task of Chapter 2. All eight landmarks are measured on it, none flagged by the despiking stage or filled by the gap-bridging stage of Section 2.5, and no failure detector of Chapter 5 fires on it. Values are computed from the unrounded positions and printed rounded to two decimals. A step recomputed by hand from the printed inputs can therefore differ by several degrees where the arguments are small. The two-argument arctangent of the printed 0.06 and 0.03 gives 63.4 degrees, while the unrounded values give the 59.9 degrees printed below.
+
+BODY 539: Table 3.1 lists the eight landmark positions in both frames, after the filtering of Section 2.5 and before the hip depth preparation of Section 2.6. The same frame runs through the worked examples of Appendix C, Appendix D and Appendix E.
+
+BODY 540: LandmarkCamera (m)Camera' (m)L11 left shoulder(0.22, -0.34, 1.36)(0.22, 0.34, 1.36)L12 right shoulder(-0.16, -0.33, 1.31)(-0.16, 0.33, 1.31)L13 left elbow(0.28, -0.03, 1.38)(0.28, 0.03, 1.38)L14 right elbow(-0.20, -0.04, 1.19)(-0.20, 0.04, 1.19)L15 left wrist(0.24, 0.20, 1.25)(0.24, -0.20, 1.25)L16 right wrist(-0.20, 0.11, 1.06)(-0.20, -0.11, 1.06)L23 left hip(0.12, 0.18, 0.99)(0.12, -0.18, 0.99)L24 right hip(-0.06, 0.19, 0.99)(-0.06, -0.19, 0.99)
+
+BODY 541: Table 3.1. The eight landmarks of the worked-example frame in the sensor frame and in the y-up camera frame, printed to two decimals. Each column carries the frame its entries are expressed in, the left superscript of the position symbols used from here on. The conversion flips only the sign of y, and the hips read negative in the y-up camera frame because they sit below the camera height.
+
+BODY 542: The torso construction of Section 3.2 needs three of these points, in the y-up camera frame:
+
+BODY 543:  Camera'P23 = (0.12, \u22120.18, 0.99) Camera'P24 = (\u22120.06, \u22120.19, 0.99) Camera'P12 = (\u22120.16, 0.33, 1.31)
+
+BODY 544: Equations (3.7) and (3.8) give the hip line, 0.18 m long, and the spine-side vector, 0.63 m long, and the cross products of equations (3.9) and (3.10) close the frame:
+
+BODY 545:  Camera'XL24 = (\u22121.00, \u22120.05, \u22120.04) Camera'ZL24 = (0.01, 0.53, \u22120.85) Camera'YL24 = (\u22120.06, 0.85, 0.53)
+
+BODY 546: The x component of  Camera'XL24 is close to -1, because the subject's right side points toward the camera's left, and  Camera'ZL24 is tipped upward by the hip-to-shoulder depth difference. Equation (3.11) assembles the columns:
+
+BODY 547: L24Camera'R = \u22121.00\u22120.060.01\u22120.050.850.53\u22120.040.53\u22120.85
+
+BODY 548: Appending the origin  Camera'PL24ORG =  Camera'P24 gives the root pose of equation (3.12) as numbers:
+
+BODY 549: L24Camera'T = \u22121.00\u22120.060.01\u22120.06\u22120.050.850.53\u22120.19\u22120.040.53\u22120.850.990001
+
+BODY 550: The shoulder transformation of equation (3.13) needs the shoulder landmark in the torso's own coordinates, which equation (3.4) gives as (0.07, 0.63, 0.00). The forward offset is exactly zero, since the spine-side vector lies in the torso plane by construction:
+
+BODY 551: L12L24T = 1000.070100.630010.000001
+
+BODY 552: an identity rotation with a pure origin shift. Equation (3.17) decodes the root matrix:
+
+BODY 553: x = asin\u22120.53 = \u221232.1\xb0y = atan20.01, \u22120.85 = 179.5\xb0z = atan2\u22120.05, 0.85 = \u22123.3\xb0
+
+BODY 554: Compared with the reference configuration (0, 180, 0), the subject faces almost straight at the sensor and the hip line is almost level. The frame is pitched by 32.1 degrees because the hips sit nearer the camera than the shoulders. The two hip landmarks fall on the pixels where the pelvis meets the rail, so the depth sampled there is the depth of the rail, 0.99 metres against 1.31 and 1.36 metres at the shoulders. Chapter 5 describes this kind of failure. The pipeline replaces the hip depth with the preparation of Section 2.6 before it solves, and the numbers of this section are taken before that replacement, so the pitch stands as the raw landmarks give it. The arm angles below are read against the pitched frame, and these three values are the torso pose of Section 3.4.1.
+
+BODY 555: The y-up camera-frame upper arm vector of the right arm is
+
+BODY 556:  Camera'v =  Camera'P14 \u2212  Camera'P12 = (\u22120.04, \u22120.29, \u22120.12)
+
+BODY 557: with length 0.32 m. Equation (3.3) pulls it into the parent frame, and normalizing gives the local arm direction:
+
+BODY 558:  L24v = L24Camera'RT  Camera'v = (0.05, \u22120.31, \u22120.05) L12a = (0.17, \u22120.97, \u22120.16)
+
+BODY 559: The vector reads anatomically: the upper arm points slightly outward, since +x is the subject's right and this is the right arm, strongly downward and slightly behind the pitched torso plane. Figure 3.3(b) shows that pose, the right arm reaching down to the cube. The same two steps on the forearm give
+
+BODY 560:  L12f = L24Camera'RT  Camera'P16 \u2212  Camera'P14 = (0.01, \u22120.20, 0.03)
+
+BODY 561: with length 0.20 m. Equations (3.20) and (3.21) read the two swing angles of the right arm (Figure 3.6):
+
+BODY 562: tz = asin\u22120.97 = \u221276.6\xb0ty = atan20.16, 0.17 = 43.0\xb0
+
+BODY 563: The arm points 76.6 degrees below horizontal. Equation (3.22) undoes this swing on the forearm vector and gives
+
+BODY 564:  L12f\u2032 = Rz76.6\xb0 Ry\u221243.0\xb0  L12f = (0.19, \u22120.06, 0.03)
+
+BODY 565: Its perpendicular part points mostly along negative y. Equation (3.23) gives the twist:
+
+BODY 566: tt = atan20.06, 0.03 = 59.9\xb0
+
+BODY 567: The forearm turns inward across the front of the body, an internal rotation. In the elbow frame the forearm direction is
+
+BODY 568:  L14g = (0.94, 0.00, 0.34)
+
+BODY 569: Its y component is zero, which is the ez = 0 property of Section 3.4.3 on the measured frame. The flexion of equation (3.24) is
+
+BODY 570: ey = atan2\u22120.34, 0.94 = \u221219.8\xb0
+
+BODY 571: The solved shoulder rotation and the local upper-arm vector  L24v complete the last transformation of equation (3.5) as numbers, the elbow pose of equation (3.14):
+
+BODY 572: L14L12T = 0.170.95\u22120.270.05\u22120.970.12\u22120.20\u22120.31\u22120.160.300.94\u22120.050001
+
+BODY 573: Its rotation block is the composed swing and twist, its first column is exactly  L12a and its last column is the elbow position in the shoulder frame. A pair of checks closes the numeric chain. Composing the three matrices as in equation (3.6) and applying the product to the origin,  Camera'PL14ORG = L14Camera'T 0, 0, 0, 1T, lands on (-0.20, 0.04, 1.19), the measured elbow position of Table 3.1, to machine precision. Carrying the measured wrist through the inverse chain into the elbow frame by three applications of equation (3.4),  L14P16 = L14Camera'T\u22121  Camera'P16, gives (0.19, 0.00, 0.07), whose length is the forearm length 0.20 and whose zero second component is the ez = 0 property again. Dividing by the length reproduces the  L14g used for the flexion.
+
+BODY 574: The left arm runs through the same mirrored solver and gives a shoulder azimuth of 76.1 degrees, an elevation of -53.5 degrees, a twist of 108.9 degrees and an elbow flexion of -37.3 degrees, the arm hanging at the side in Figure 3.3(b). The pose of this frame is now thirteen numbers: the three root Euler angles, then swing, twist and flexion for each arm.
+
+BODY 575: The same equations run on every frame and on both arms. The chapter has established the conversion the rest of the thesis uses: metric landmarks in, a root pose with four angles for each arm out, and the wrist still a point. Appendix H records the verification of that mathematics against synthetic exact references. The solve needs every landmark of its chain measured on the frame, so a missing or misplaced landmark leaves that arm without a state, and Chapter 5 treats those frames with an additional geometric constraint from a second observation of the scene. That observation is the carried object, which Chapter 4 tracks independently in the same metric scene, and Chapter 6 carries the finished state into the reconstruction.
+
+BODY 576: Chapter 4: Object Tracking and Scene Reconstruction
+
+BODY 577: Chapter 2 left the marker branch at its raw product, the pose of each detected marker relative to the camera on every colour frame, and the calibration of Section 2.2.2 fixed the static part of that scene. Chapter 3 turned the landmark branch into the kinematic state of the upper body and left the object observed on its own. This chapter builds that second observation into an independent branch, which describes the carried object in the same calibrated metric scene. Section 4.1 carries each per-frame marker pose into the world frame attached to the desk, so that where the camera stands never enters the result. Section 4.2 turns those poses into a track with a signal filter and one cleaning rule, and Section 4.3 runs both steps on the rail recording. Appendix E covers how a detection becomes a pose.
+
+BODY 578: 4.1 World Anchoring and Camera Placement Invariance
+
+BODY 579: The static calibration of Section 2.2.2 fixed the world frame at the desk marker and the scene quantities of Table 2.3. Every pose the detector returns is expressed relative to the camera, which is the wrong frame for a reconstruction. The same cube on the same spot of the desk gives a different camera-relative pose from another corner of the room, and the reconstruction would place it differently each time. The object must instead be expressed relative to the desk marker's own frame, the world frame W. Figure 2.5 draws the three frames of the chain: the camera frame C, the world frame W at the desk marker, and the object frame O, which moves with the cube.
+
+BODY 580: Figure 4.1 shows the object marker as the camera sees it at four moments of the task. On each frame the outline and the axes drawn on the cube are the pose the detector returns for its marker in the camera frame. The axes on the desk marker are the world frame W. The chain of this section carries each such pose into the world frame.
+
+BODY 581: 
+
+BODY 582: Figure 4.1. The object marker as the camera sees it at four moments of the task. (a) The cube grasped on the desk, frame 95. (b) The lift onto the rail, frame 505. (c) The slide along the rail, frame 700. (d) The far end of the rail, frame 898. The yellow outline and the axes on the cube are the object frame O from the pose the detector returns on that frame. The desk-marker axes show the per-frame detected estimate of {World}; the reconstruction uses the frozen calibrated anchor. Each panel repeats the cube at a larger scale in its upper right corner. The figure omits the wall marker.
+
+BODY 583: The marker branch writes each pose as the 4 by 4 homogeneous transformation of Chapter 3. The calibrated anchor WorldCameraT maps a point of the world frame into camera coordinates, and the per-frame object pose ObjectCameraT maps a point of the object frame into camera coordinates. Both are available on any frame on which the cube is seen. The chain must deliver ObjectWorldT, the object as seen from the world, and only one path connects the two frames, from the object into the camera and from the camera into the world:
+
+BODY 584: ObjectWorldT = CameraWorldT ObjectCameraT(4.1)
+
+BODY 585: The first factor is the inverse of the calibrated anchor, CameraWorldT = WorldCameraT\u22121, which reverses the direction of that transformation. Section 3.1 derives the inverse: because a rotation matrix is orthonormal, inverting a rigid body transformation between any two frames costs a transpose and one matrix-vector product,
+
+BODY 586: BAT = BAR APBORG0T1,     ABT = BART\u2212BART  APBORG0T1(4.2)
+
+BODY 587: Applied to the anchor, the inverse has a direct physical reading: its translation column is the camera's own position in the world frame, so the camera pose in the reconstructed scene, CameraWorldT, comes out of the anchoring, and nothing measures it separately. Chapter 6 places the sensor in the Unity scene at that pose.
+
+BODY 588: The chain makes the reconstruction independent of where the camera is set up. Both measured transformations change when the camera moves. The camera frame enters equation (4.1) twice, as the described frame of the inverted anchor and as the reference frame of the object pose. Those two labels are adjacent in the product and cancel, and the remainder depends only on where the cube is relative to the desk. They cancel only if the anchor and the object pose are measured from the same camera position. On a recording the anchor is the frozen one of Section 2.2.2, so the reconstruction is invariant to a camera placed differently before the calibration window and not to one moved after it. The camera stands on a fixed support at the desk edge for the whole session. The world frame and the Unity frame are defined in Section 2.2.1, and Chapter 6 converts between them before anything is drawn.
+
+BODY 589: 4.2 Filtering and Cleaning the Object Track
+
+BODY 590: The track that Section 4.1 delivers holds one entry per frame in the world frame, with a flag saying whether the marker was seen, but it is not yet fit to drive a reconstruction. It passes a signal filter, the Pipeline B counterpart of the landmark filtering of Section 2.5, and then a single cleaning step against marker failure.
+
+BODY 591: The filter runs the three stages of Section 2.5 over the track, with rotation added to each and with its own parameters, among them a bridging limit of eight frames rather than five. A spiked pose solution is wrong as a whole, so the despike test on position drops its rotation along with its position. A short run of missing samples is bridged, along a straight line in time for position and along the shortest turn between the endpoint rotations for rotation. A run at either end of the recording holds the first or the last valid pose instead of inventing one, and an interior run longer than the bridging limit holds the valid pose before it. Jitter is smoothed with a Savitzky-Golay filter on position [53] and, on rotation, with a rolling chordal mean, which is equation (2.1) applied to the world-frame object rotations over a short window. The detection flag passes through every stage unchanged. A row the marker was never seen on stays marked as not detected, and a despiked sample keeps its incoming flag while carrying the bridged pose. The raw track is kept unmodified in its own output. Figure 4.2 shows the track before and after the filter.
+
+BODY 592: 
+
+BODY 593: Figure 4.2. The object marker origin in the world frame before and after the signal filter, one panel per world axis. The grey line is the track as detected, the blue line the filtered track, and the orange dots the eleven bridged rows. The marker is seen on 899 of the 900 frames, so no row is held.
+
+BODY 594: On the recording the hand never covers the marker, and the one undetected frame is bridged. The held case, which the recording does not show, has a physical cause: a hand closing over the marker leaves the detector with nothing for longer than the bridging limit, so the track stays where the cube was last seen. Section 9.1 shows such a loss on the loop recording.
+
+BODY 595: Holding leaves two cases for the end of the branch, and neither marks the detection flag. A detected row beside a held run is smoothed together with that run, so its pose can drift from the detection on its own frame while it still carries the detected flag. A partly covered marker, which the recording does not show either, may decode into a pose that is not right.
+
+BODY 596: The response is a single cleaning step at the end of the marker branch. No later stage carries marker logic of its own: the recovery of Chapter 5, the streaming of Chapter 6, and the evaluation of Chapter 7 read the same cleaned track. Section 8.2 gives the order the rule takes when the pipeline runs live.
+
+BODY 597: The rule is physical, carries no tuning to a particular recording, and walks the track forward. It keeps a sample only if the marker was detected, the pose is finite, and the step from the last kept sample is no larger than the task's slow movement can produce in the time between the two:
+
+BODY 598:  UnityPObjectORGi \u2212  UnityPObjectORGlast \u2264 vmax ti \u2212 tlastangleMappedMarker(i)MappedMarker(last)R \u2264 wmax ti \u2212 tlast(4.3)
+
+BODY 599: Equation (4.3) is written in the Unity frame of Section 2.2.1, because the rule reads the Unity copy of each row rather than the world-frame copy. That frame exchanges two coordinates of the world frame, which changes no distance and no relative angle, so the rule bounds the same two quantities in either frame. In that frame the object's own axes are the mapped marker axes, which Chapter 6 obtains by applying that exchange to both sides of the object rotation. The rule forms the second bound from the two orientations that copy carries, MappedMarker(last)UnityRT MappedMarker(i)UnityR, in which the reference frame cancels and leaves the relative rotation between the two samples. The two bounds are rates rather than fixed steps: vmax bounds the linear step and wmax the angular step, each an allowance per unit of elapsed time between the candidate and the last kept sample. A real occlusion, during which the cube does travel, does not make the rule refuse the marker when it is detected again. Measuring against the last kept sample rather than the previous row keeps one bad pose from dragging the track behind it. Both bounds carry a margin of about two over the largest step the clean parts of the recording show, so the rule is a guard.
+
+BODY 600: A sample that fails the test has its pose columns blanked and its detection flag cleared, and so does every row the marker was never detected on. A later stage reads filtered poses on the kept rows and blanks elsewhere, and on a blanked row it holds the last kept pose and flags it as held.
+
+BODY 601: 4.3 Worked Example
+
+BODY 602: The transformation chain runs on the scene image of Figure 2.5, frame 533, the worked-example frame of Chapter 3, where the subject holds the cube against the rail and its marker is cleanly detected. The cleaning step runs on frame 786, the one frame of the recording on which the marker is not detected.
+
+BODY 603: Vectors and matrices are printed to two decimals and every distance is computed at full precision. Averaging the ten desk rotations of the calibration window element by element gives
+
+BODY 604: WorldCameraM = 1.000.00\u22120.02\u22120.02\u22120.48\u22120.88\u22120.010.88\u22120.48
+
+BODY 605: which is not a rotation matrix, since its determinant is not exactly one and its columns are only nearly perpendicular. Equation (2.1) projects it back onto the nearest rotation, and at the precision printed here no entry changes, because the ten input rotations disagree so little. With the mean of the ten translations, the projected rotation forms the frozen anchor WorldCameraT. That anchor puts the calibrated desk marker 55.3 cm in front of the camera and 18.7 cm below it.
+
+BODY 606: The same calibration gives the scene description of Table 2.3. Gravity, taken from the wall marker, is the unit direction  Worldg = (\u22120.02, 0.53, 0.85), at 32.0 degrees to the world z axis, which is the tilt of the desk marker card on its stand. The world origin sits 3.8 mm below the fitted tabletop plane.
+
+BODY 607: Transposing the anchor rotation gives CameraWorldR, and applying it to the negated translation gives the inverse anchor of equation (4.2),
+
+BODY 608:  WorldPCameraORG = \u2212CameraWorldR  CameraPWorldORG = (\u22120.01, \u22120.39, 0.43) m
+
+BODY 609: which is the camera's own position in the world frame, 58.4 cm from the world origin and 15.4 cm above the fitted tabletop plane.
+
+BODY 610: The chain of equation (4.1) runs on the scene image. The object marker is detected there, and its origin in the camera frame is
+
+BODY 611:  CameraPObjectORG = (\u22120.21, 0.16, 1.02) m
+
+BODY 612: The cube is therefore 106 cm from the camera, on the rail in front of the subject. Multiplying the inverse anchor by that object transformation splits into one product per block, the transposed anchor rotation applied to the object rotation and to the object translation, plus the camera position:
+
+BODY 613: ObjectWorldR = CameraWorldR ObjectCameraR WorldPObjectORG = CameraWorldR  CameraPObjectORG +  WorldPCameraORG
+
+BODY 614: Adding the camera position to the first product gives the world translation, with the rotation product beside it:
+
+BODY 615:  WorldPObjectORG = (\u22120.24, 0.43, \u22120.19) mObjectWorldR = 1.000.010.070.050.52\u22120.85\u22120.050.860.52
+
+BODY 616: Projected onto  Worldg, the marker centre is 6.3 cm above the fitted tabletop plane. The cube is held against the rail at that instant, and the rail height measured with a tape puts the cube centre 7.3 cm above the tabletop. The difference is within what the coarse fitted plane resolves that far from the desk marker.
+
+BODY 617: For the cleaning step, the object marker is seen on frames 785 and 787, at world x 3.0 cm and 3.4 cm, and the detector returns nothing on frame 786 between them. The gap is one frame, inside the bridging limit of eight, so the filter bridges it, and the bridged position sits 1.0 mm from the mean of the two detections beside it.
+
+BODY 618: The rule then walks the filtered track. Frame 786 is 3.3 mm and 1.2 degrees from the last kept sample, frame 785, well inside the allowance. The marker was never seen on it, so the row is blanked. Frame 787, two frame intervals later, is 4.9 mm from frame 785 and is kept, and the rule rejects no detected sample anywhere in the recording.
+
+BODY 619: The chapter ends with two products. The frozen scene description places the desk, the gravity direction, the tabletop, the camera and the object's size in one frame fixed to the desk. The cleaned object track gives, for every frame, either a measured pose of the cube in the world frame or a marked gap, and the marker identity names the object. The track describes the object alone and says nothing about the arm that carries it. It can serve as an additional geometric constraint on the arm only once a grip ties the two branches together, which is the work of Chapter 5. Chapter 6 streams the position and the orientation into the reconstruction, and Section 7.2 evaluates the object track against the physically measured route, with the line fitted to its own slide samples describing the spread of the reconstruction rather than its accuracy. No second measurement chain checks the streamed orientation, and the branch returns nothing while a hand crosses the printed square, which Section 9.1 takes up.

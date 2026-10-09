@@ -1,0 +1,10 @@
+--- /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/extract_landmarks_to_csv.py
++++ /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/sources/extract_landmarks_logged.py
+@@ -244,6 +244,7 @@
+ 
+             color = np.asanyarray(color_frame.get_data())
+             rgb = color if color_format == rs.format.rgb8 else cv2.cvtColor(color, cv2.COLOR_BGR2RGB)
++            _bank_record_input(frame_count, frames, color_frame, depth_frame, rgb, rel_s)
+             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=np.ascontiguousarray(rgb))
+ 
+             # VIDEO mode requires strictly increasing integer-ms timestamps.

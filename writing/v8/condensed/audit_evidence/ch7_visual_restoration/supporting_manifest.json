@@ -1,0 +1,169 @@
+{
+  "scope": "Chapter 7 supporting visual restoration only",
+  "claims": [
+    "All panels come from committed recorded-video, Unity, or diagnostic images.",
+    "No measurement, plotted value, overlay, or captured scene content was fabricated or retouched.",
+    "Both manual-label figures are byte-for-byte copies of their source figures."
+  ],
+  "figures": [
+    {
+      "file": "ch7_video_context_r6b.png",
+      "output_path": "writing/v8/condensed/figures/ch7_video_context_r6b.png",
+      "section": "7.2.1 Single-Hand Rail Task",
+      "placement": "Immediately before the current rail object-trajectory figure; root may combine the strip above that plot.",
+      "caption": "Single-hand rail recording: video strip for object acquisition, lift, rail slide and far-end placement. Frames 95, 505, 700 and 898 provide task context; the trajectory panels below show the evaluated waypoints.",
+      "pixel_size": [
+        2596,
+        594
+      ],
+      "sha256": "efe60c84e89ee537f86ecf07e0e65017131fdf6e043176cdde846d32d784696f",
+      "sources": [
+        {
+          "path": "writing/v8/condensed/figures/src/r6b_frame00095.png",
+          "sha256": "d95c364f5185f5b642641a30da7ae46fd12aad0807c93b937238a275be754ac0"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r6b_frame00505.png",
+          "sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r6b_frame00700.png",
+          "sha256": "7588e17b916e6f9ea80cff0d86ec737225a97b068aed418a69999f08f526cca6"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r6b_frame00898.png",
+          "sha256": "0e271c2df6405094c2a81c375df247346d7c8cc1bcd68646affed965b834cfef"
+        }
+      ],
+      "presentation": {
+        "nominal_label_font_px": 50,
+        "label_font_pt_at_6_1_in_width": 8.46,
+        "height_in_at_6_1_in_width": 1.396,
+        "title_lines": 2,
+        "source_frame_pixels_resized_or_cropped": false
+      }
+    },
+    {
+      "file": "ch7_video_context_r7.png",
+      "output_path": "writing/v8/condensed/figures/ch7_video_context_r7.png",
+      "section": "7.2.2 Handover Task",
+      "placement": "Immediately before the current handover object-trajectory figure; root may combine the strip above that plot.",
+      "caption": "Handover recording: video strip for the right-hand slide, two-hand transfer, left-hand slide and far-end placement. Frames 700, 950, 1042 and 1200 provide task context; the trajectory panels below show the evaluated waypoints.",
+      "pixel_size": [
+        2596,
+        594
+      ],
+      "sha256": "decf421602f17da2e5e48b1625c2b35469371a04e9e1370bf44802c980358fce",
+      "sources": [
+        {
+          "path": "writing/v8/condensed/figures/src/r7_frame00700.png",
+          "sha256": "b11e56d2c3cec3c2b4a8ab9af729fa891ccca81f82c9451f6637464927c1cd71"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r7_frame00950.png",
+          "sha256": "e8b2fa2e2c72bee20511b2fd406c5332871707b397bf771d5eea5f7cb38e8a9f"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r7_frame01042.png",
+          "sha256": "843912c5c73203e5855c09739616d22ddb8191d1e9a66c3a1787fb41b716fdef"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/r7_frame01200.png",
+          "sha256": "717878ca0be4d5da2d49c6ae92e02229afa47d97cd851e89d3718d769a725c63"
+        }
+      ],
+      "presentation": {
+        "nominal_label_font_px": 50,
+        "label_font_pt_at_6_1_in_width": 8.46,
+        "height_in_at_6_1_in_width": 1.396,
+        "title_lines": 2,
+        "source_frame_pixels_resized_or_cropped": false
+      }
+    },
+    {
+      "file": "ch7_failure_context.png",
+      "output_path": "writing/v8/condensed/figures/ch7_failure_context.png",
+      "section": "7.4.2 Natural Occlusion",
+      "placement": "After the natural-occlusion recording and manual-proxy protocol are introduced, before Table 7.8.",
+      "caption": "Loop recording: retained natural-failure frames for the left and right arms, including no MediaPipe left-wrist observation at frame 1462. The wrist proxy remains visible for manual labelling; these real-video samples are separate from the synthetic removal of Section 7.4.1.",
+      "pixel_size": [
+        2596,
+        594
+      ],
+      "sha256": "0c144808da4e1f88992d27e103f17889fe5a0e1d03b828415623f409eb6aaa78",
+      "sources": [
+        {
+          "path": "eval/labels/frames_r5/f01427.png",
+          "sha256": "fff0b14fdb30f816f080176a96a60084c0357beb0a10f9cd8a9c12c01e455752"
+        },
+        {
+          "path": "eval/labels/frames_r5/f01462.png",
+          "sha256": "897b9dac9b253e2b6631091d7cd1d3d6409280e77087be5cb312832e3d71be6f"
+        },
+        {
+          "path": "eval/labels/frames_r5/f01777.png",
+          "sha256": "3990a9b28fa55306362527d3e3662da13060087e8247513ea8f7a383fa2112c2"
+        },
+        {
+          "path": "eval/labels/frames_r5/f01890.png",
+          "sha256": "bb0b9c7fa6f6d01b23279cca203f4fc274cbcada729358a0348c228ca6f74639"
+        }
+      ],
+      "presentation": {
+        "nominal_label_font_px": 50,
+        "label_font_pt_at_6_1_in_width": 8.46,
+        "height_in_at_6_1_in_width": 1.396,
+        "title_lines": 2,
+        "source_frame_pixels_resized_or_cropped": false
+      },
+      "sample_evidence": {
+        "path": "eval/reports/r5_recovery_labeled.json",
+        "sha256": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820"
+      }
+    },
+    {
+      "file": "ch7_natural_proxy_left.png",
+      "output_path": "writing/v8/condensed/figures/ch7_natural_proxy_left.png",
+      "section": "7.4.2 Natural Occlusion",
+      "placement": "After Table 7.9 as the first qualitative natural-occlusion example.",
+      "caption": "Natural-occlusion example, loop frame 1462, left wrist. The square is the manual wrist proxy, the blue chain is the reconstructed arm, and the cross is the object-derived wrist estimate. With no MediaPipe wrist observation, the plain-solve and object-assisted wrist-to-proxy distances are 14.0 and 13.7 centimetres. This frame is an example, not a population statistic.",
+      "pixel_size": [
+        1296,
+        964
+      ],
+      "sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "sources": [
+        {
+          "path": "writing/v8/condensed/figures/ch7_fig_label_f1462.png",
+          "sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c"
+        }
+      ],
+      "sample_evidence": {
+        "path": "eval/reports/r5_recovery_labeled.json",
+        "sha256": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820"
+      }
+    },
+    {
+      "file": "ch7_natural_proxy_right.png",
+      "output_path": "writing/v8/condensed/figures/ch7_natural_proxy_right.png",
+      "section": "7.4.2 Natural Occlusion",
+      "placement": "Immediately after the frame-1462 example.",
+      "caption": "Natural-occlusion example, loop frame 1890, right wrist. The symbols follow the preceding figure. The object-assisted reconstructed wrist is 5.0 centimetres from the manual proxy, against 14.0 centimetres for the plain solve; the object-derived wrist estimate itself is shown by the cross. This frame is a favourable example, not a population statistic.",
+      "pixel_size": [
+        1736,
+        1076
+      ],
+      "sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "sources": [
+        {
+          "path": "writing/v8/condensed/figures/ch7_fig_label_f1890.png",
+          "sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113"
+        }
+      ],
+      "sample_evidence": {
+        "path": "eval/reports/r5_recovery_labeled.json",
+        "sha256": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820"
+      }
+    }
+  ]
+}

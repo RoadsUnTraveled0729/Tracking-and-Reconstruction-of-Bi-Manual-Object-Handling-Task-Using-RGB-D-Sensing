@@ -1,0 +1,98 @@
+{
+  "schema": "figure-3.4-video-source-v1",
+  "recording": {
+    "stem": "recording_20260909_000024",
+    "bag_path": "Video/recording_20260909_000024.bag",
+    "frame_index": 1400,
+    "time_s": 46.699725,
+    "frame_index_convention": "Zero-based counter over aligned frames with a valid colour frame; incremented after each accepted colour frame",
+    "frame_index_implementation": "writing/v9/scripts/make_ch7_handover_frames.py"
+  },
+  "sources": {
+    "rgb_frame": {
+      "path": "writing/v9/figures/src/r7_frame01400.png",
+      "sha256": "11ee86700ab6d468e1be7bd2bf594a47e4ed5c8a44d71af22796b23d0c4e3c80"
+    },
+    "filtered_landmarks_csv": {
+      "path": "v1/mediapipe/output/recording_20260909_000024_landmarks_filtered.csv",
+      "sha256": "3c3885d94daf8c6150727a280542bf60cdc69cb4a168344ad33894dda4420218",
+      "selected_frame_value": 1400,
+      "physical_csv_line": 1402
+    },
+    "colour_intrinsics_metadata": {
+      "path": "v1/aruco/output/recording_20260909_000024_aruco_raw.meta.json",
+      "sha256": "152b8c32cdfaa41dc3e9ecd0cfe24bdbdb09badd69770f3619a6a1952e1df21b"
+    }
+  },
+  "intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 607.561279296875,
+    "fy": 607.0150756835938,
+    "ppx": 323.93756103515625,
+    "ppy": 248.0174102783203,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [0.0, 0.0, 0.0, 0.0, 0.0]
+  },
+  "selected_filtered_row": {
+    "frame": 1400,
+    "time_s": 46.699725,
+    "has_pose": 1,
+    "landmarks": {
+      "L12": {
+        "name": "right_shoulder",
+        "camera_xyz_m": [-0.121944, -0.373411, 1.37357],
+        "visibility": 0.9996,
+        "source_code": 0,
+        "projected_pixel_xy": [270, 83]
+      },
+      "L23": {
+        "name": "left_hip",
+        "camera_xyz_m": [0.143803, 0.136887, 1.293412],
+        "visibility": 0.9982,
+        "source_code": 0,
+        "projected_pixel_xy": [391, 312]
+      },
+      "L24": {
+        "name": "right_hip",
+        "camera_xyz_m": [-0.061824, 0.129301, 1.289851],
+        "visibility": 0.9987,
+        "source_code": 0,
+        "projected_pixel_xy": [295, 309]
+      }
+    }
+  },
+  "plotted_geometry": {
+    "camera_to_camera_prime_diagonal": [1.0, -1.0, 1.0],
+    "input_vectors_camera_prime_m": {
+      "p24_minus_p23": [-0.205627, 0.007586, -0.003561],
+      "p12_minus_p24": [-0.06012, 0.502712, 0.083719]
+    },
+    "unit_axes_camera_prime": {
+      "x": [-0.9991705691929084, 0.03686144299093705, -0.01730340080289005],
+      "y": [0.03344567823977459, 0.9852793961202267, 0.16764813803929604],
+      "z": [0.02322843657677001, 0.1669303615331474, -0.9856950309972207]
+    },
+    "axis_projection_length_m": 0.3,
+    "axis_origin": {
+      "landmark": "L24",
+      "camera_xyz_m": [-0.061824, 0.129301, 1.289851],
+      "pixel_xy": [295, 309]
+    },
+    "axis_endpoints": {
+      "x": {
+        "camera_xyz_m": [-0.3615751707578725, 0.11824256710271888, 1.2846599797591332],
+        "pixel_xy": [153, 304]
+      },
+      "y": {
+        "camera_xyz_m": [-0.05179029652806762, -0.166282818836068, 1.3401454414117888],
+        "pixel_xy": [300, 173]
+      },
+      "z": {
+        "camera_xyz_m": [-0.05485546902696899, 0.0792218915400558, 0.9941424907008338],
+        "pixel_xy": [290, 296]
+      }
+    },
+    "orientation_note": "The participant faces the camera, so anatomical right is on the viewer's left"
+  }
+}

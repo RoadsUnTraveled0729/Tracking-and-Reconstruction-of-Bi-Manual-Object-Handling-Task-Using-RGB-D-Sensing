@@ -1,0 +1,104 @@
+== Fixed matrices
+  F =
+    full   : [[ 1.  0.  0.]
+              [ 0. -1.  0.]
+              [ 0.  0.  1.]]
+    2 dec  : [[ 1.  0.  0.]
+              [ 0. -1.  0.]
+              [ 0.  0.  1.]] 
+  S =
+    full   : [[1. 0. 0.]
+              [0. 0. 1.]
+              [0. 1. 0.]]
+    2 dec  : [[1. 0. 0.]
+              [0. 0. 1.]
+              [0. 1. 0.]] 
+== Calibrated camera pose in the world (blocks of T_WC, Table 2.2)
+  R_cam = R^T =
+    full   : [[ 0.999705 -0.021908 -0.010493]
+              [-0.001401 -0.483249  0.875482]
+              [-0.02425  -0.875209 -0.483137]]
+    2 dec  : [[ 1.   -0.02 -0.01]
+              [ 0.   -0.48  0.88]
+              [-0.02 -0.88 -0.48]] 
+  t_cam = -R^T t =
+    full   : [-0.013549 -0.393115  0.431492]
+    2 dec  : [-0.01 -0.39  0.43] m
+== Person path, equation (6.2), frame 548
+  q (y-up camera frame Camera') =
+    full   : [ 0.030224 -0.179074  0.991679]
+    2 dec  : [ 0.03 -0.18  0.99] m
+  A = S R_cam F =
+    full   : [[ 0.999705  0.021908 -0.010493]
+              [-0.02425   0.875209 -0.483137]
+              [-0.001401  0.483249  0.875482]]
+    2 dec  : [[ 1.    0.02 -0.01]
+              [-0.02  0.88 -0.48]
+              [ 0.    0.48  0.88]] 
+  det A = 1.0
+  S t_cam =
+    full   : [-0.013549  0.431492 -0.393115]
+    2 dec  : [-0.01  0.43 -0.39] m
+  A q =
+    full   : [ 0.015887 -0.636577  0.781618]
+    2 dec  : [ 0.02 -0.64  0.78] m
+  p_U = A q + S t_cam =
+    full   : [ 0.002338 -0.205084  0.388503]
+    2 dec  : [ 0.   -0.21  0.39] m
+  raw camera point F q      : [0.030224 0.179074 0.991679] -> [ 3.  17.9 99.2] cm
+  world point R_cam F q + t : [ 0.002338  0.388503 -0.205084] -> [  0.2  38.9 -20.5] cm
+  display point S p_w       : [ 0.002338 -0.205084  0.388503] -> [  0.2 -20.5  38.9] cm
+  |p_U - S p_w| = 0.0
+  from rounded operands     : [ 0.01 -0.2   0.39]  true rounded: [ 0.   -0.21  0.39]  same: False
+== Levelling, Section 6.4
+  gravity up (display axes) =
+    full   : [-0.021236  0.847708  0.530038]
+    2 dec  : [-0.02  0.85  0.53] 
+  angle to the screen's vertical: 32.04 deg
+  L (levelling rotation) =
+    full   : [[ 0.999756  0.021236  0.006092]
+              [-0.021236  0.847708  0.530038]
+              [ 0.006092 -0.530038  0.847952]]
+    2 dec  : [[ 1.    0.02  0.01]
+              [-0.02  0.85  0.53]
+              [ 0.01 -0.53  0.85]] 
+  L g = [-0.  1.  0.]
+  origin above tabletop: -0.003785060702663684 m; plane height along g: 0.003785 m; floor 0.72 m below the plane at -0.716215 m
+  raise so the floor sits at zero height: 0.716215 m
+  drawn desk top height: 0.72 m
+  L p_U =
+    full   : [0.000349 0.03202  0.438149]
+    2 dec  : [0.   0.03 0.44] m
+  scene point L p_U + (0, raise, 0) =
+    full   : [0.000349 0.748235 0.438149]
+    2 dec  : [0.   0.75 0.44] m
+  scene point in cm: [ 0.  74.8 43.8]
+  above the drawn desk top by: 2.8 cm
+  from rounded operands     : [0.   0.75 0.44]  true rounded: [0.   0.75 0.44]  same: True
+  camera in display axes (S t_cam) cm: [ -1.4  43.1 -39.3] ; in the scene cm: [ -0.7  87.4 -56.2]
+== Object's inverse path through the link, frame 548
+  p_U (object record, display axes) =
+    full   : [-0.233985 -0.188405  0.428127]
+    2 dec  : [-0.23 -0.19  0.43] m
+  p_W = S p_U =
+    full   : [-0.233985  0.428127 -0.188405]
+    2 dec  : [-0.23  0.43 -0.19] m
+  R (anchor T_cam_desk rotation) =
+    full   : [[ 0.999705 -0.001401 -0.02425 ]
+              [-0.021908 -0.483249 -0.875209]
+              [-0.010493  0.875482 -0.483137]]
+    2 dec  : [[ 1.    0.   -0.02]
+              [-0.02 -0.48 -0.88]
+              [-0.01  0.88 -0.48]] 
+  t (anchor translation) =
+    full   : [0.023458 0.187377 0.552492]
+    2 dec  : [0.02 0.19 0.55] m
+  p_C = R p_W + t =
+    full   : [-0.206489  0.150504  1.02079 ]
+    2 dec  : [-0.21  0.15  1.02] m
+  in cm: [-20.6  15.1 102.1]
+  from rounded operands     : [-0.21  0.16  1.02]  true rounded: [-0.21  0.15  1.02]  same: False
+== Timing offsets around the render time
+  frame 547 time_s: 18.2465947265625  frame 548 time_s: 18.279952392578124
+  render time tau: 18.250815
+  547 before tau by: 4.2 ms; 548 after tau by: 29.1 ms

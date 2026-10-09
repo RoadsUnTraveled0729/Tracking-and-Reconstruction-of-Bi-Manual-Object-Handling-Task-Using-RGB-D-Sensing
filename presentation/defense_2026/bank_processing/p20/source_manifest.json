@@ -1,0 +1,107 @@
+{
+  "page": 20,
+  "source_bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_shoulder_arms_out_test_right_shoulder.bag",
+  "source_files": {
+    "bag": {
+      "path": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_shoulder_arms_out_test_right_shoulder.bag",
+      "sha256": "27ffb9d2079b6490cfce0137f3a72112f1e6d277fc9fff30f6461797ded6bf7d"
+    },
+    "extractor": {
+      "path": "v1/mediapipe/extract_landmarks_to_csv.py",
+      "sha256": "3c7936e078a25c9c4907e58f1c218775a13be7d319cfaa7a01d01baa7d93bee2"
+    },
+    "filter": {
+      "path": "v1/mediapipe/filter_landmarks.py",
+      "sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec"
+    },
+    "logging_adapter": {
+      "path": "presentation/defense_2026/bank_processing/extract_logged.py",
+      "sha256": "0bad04b01dfef2825ef00c8d019b88dee362b7d699437cd7a5f4c06a895521c5"
+    },
+    "model": {
+      "path": "v1/mediapipe/models/pose_landmarker_heavy.task",
+      "sha256": "64437af838a65d18e5ba7a0d39b465540069bc8aae8308de3e318aad31fcbc7b"
+    },
+    "tracking_checker": {
+      "path": "eval/inspect/check_tracking_precondition.py",
+      "sha256": "43ba5543cd95ff6f6e16833eae6bb157688f9a5e1a3fbdea55b6e96a87584b29"
+    }
+  },
+  "commands": {
+    "extract": [
+      "/home/luo/anaconda3/bin/python",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/extract_logged.py",
+      "--page",
+      "20",
+      "--bag",
+      "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_shoulder_arms_out_test_right_shoulder.bag",
+      "--out",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_raw.csv",
+      "--model",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/models/pose_landmarker_heavy.task"
+    ],
+    "filter": [
+      "/home/luo/anaconda3/bin/python",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/filter_landmarks.py",
+      "--csv",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_raw.csv",
+      "--out",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_filtered.csv",
+      "--hampel-window",
+      "7",
+      "--hampel-k",
+      "3",
+      "--hampel-floor",
+      ".02",
+      "--max-gap",
+      "5",
+      "--edge-fill",
+      "0",
+      "--smooth",
+      "butter",
+      "--cutoff-hz",
+      "3",
+      "--butter-order",
+      "4"
+    ],
+    "tracking_precondition_full": [
+      "/home/luo/anaconda3/bin/python",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/eval/inspect/check_tracking_precondition.py",
+      "--stem",
+      "ENSC498_right_shoulder_arms_out_test_right_shoulder",
+      "--csv",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_raw.csv",
+      "--json-out",
+      "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/tracking_precondition_full.json"
+    ]
+  },
+  "tracking_precondition_full_exit_code": 1,
+  "tracking_precondition_full": {
+    "path": "presentation/defense_2026/bank_processing/p20/tracking_precondition_full.json",
+    "sha256": "4d5b0cf9ee445a66ecfecb7e3ceceee4e888850f631f36143893212e92e36d46"
+  },
+  "inference_frame_map": {
+    "path": "presentation/defense_2026/bank_processing/p20/inference_frame_map.json",
+    "sha256": "929c1348cba220f9c076f08a3c3415f17faf00754c036f3d656f7ba4b8010ad5"
+  },
+  "outputs": {
+    "raw": {
+      "path": "presentation/defense_2026/bank_processing/p20/landmarks_raw.csv",
+      "sha256": "99a876e80c0871fc5c0f5c69cb81d5475017007d4f96f95dc635bee59c31dc84"
+    },
+    "filtered": {
+      "path": "presentation/defense_2026/bank_processing/p20/landmarks_filtered.csv",
+      "sha256": "c94514eb65af241e1fed140652df46e8203a620b4c9beae8518ef9c060da2b91"
+    },
+    "raw_meta": {
+      "path": "presentation/defense_2026/bank_processing/p20/landmarks_raw.meta.json",
+      "sha256": "dc405c56d75c801a8a87d81e9b3e39613cb1d5a796b61d9e59ec63ea8c6a767f"
+    },
+    "filtered_meta": {
+      "path": "presentation/defense_2026/bank_processing/p20/landmarks_filtered.meta.json",
+      "sha256": "812d2a1f5181c877b969599fd1f8931599996b4b56c15abf2bd1769d6f055777"
+    }
+  },
+  "legacy_pose_json_used": false,
+  "qualification": "New offline thesis-method processing; not a new accuracy experiment."
+}

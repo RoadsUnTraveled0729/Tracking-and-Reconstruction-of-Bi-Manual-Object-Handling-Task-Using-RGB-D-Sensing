@@ -1,0 +1,37 @@
+== 1. twist conditioning vs elbow flexion ==
+  ey= 90 deg: twist err from 1deg transverse noise =   1.00 deg  (amplification  1.00, 1/|sin ey| =  1.00)
+  ey= 45 deg: twist err from 1deg transverse noise =   1.41 deg  (amplification  1.41, 1/|sin ey| =  1.41)
+  ey= 30 deg: twist err from 1deg transverse noise =   2.00 deg  (amplification  2.00, 1/|sin ey| =  2.00)
+  ey= 14 deg: twist err from 1deg transverse noise =   4.13 deg  (amplification  4.13, 1/|sin ey| =  4.13)
+  ey= 10 deg: twist err from 1deg transverse noise =   5.74 deg  (amplification  5.74, 1/|sin ey| =  5.76)
+  ey=  5 deg: twist err from 1deg transverse noise =  11.32 deg  (amplification 11.32, 1/|sin ey| = 11.47)
+  measured 65 deg twist jump at ey=-14 => implied forearm direction noise 15.7 deg
+       5 mm endpoint jitter on 0.23 m forearm =  1.25 deg direction noise
+      10 mm endpoint jitter on 0.23 m forearm =  2.49 deg direction noise
+      20 mm endpoint jitter on 0.23 m forearm =  4.98 deg direction noise
+      54 mm endpoint jitter on 0.23 m forearm = 13.45 deg direction noise
+
+== 2. Euler extraction conditioning near x=+-90 ==
+  x=  0.0: d(y,z)/d(eps) ~      0.0,      0.6   (1/cos x =      1.0)
+  x= 45.0: d(y,z)/d(eps) ~      0.6,      0.9   (1/cos x =      1.4)
+  x= 80.0: d(y,z)/d(eps) ~      3.4,      3.5   (1/cos x =      5.8)
+  x= 89.0: d(y,z)/d(eps) ~     34.5,     34.5   (1/cos x =     57.3)
+  x= 89.9: d(y,z)/d(eps) ~    344.8,    344.8   (1/cos x =    573.0)
+
+== 3. lever arm ==
+  0.7 deg at 2.8 m = 34 mm
+
+== 4. lobe separation consistency ==
+  measured wall separation ~23 deg => tilt ~11.5 deg about the viewing ray; plumb wall viewed 3 m away slightly off-axis is consistent with a ~10-12 deg effective tilt
+
+== 5. angle noise from position noise ==
+  forearm L=0.23 m, sigma=5 mm -> 1.25 deg
+  forearm L=0.23 m, sigma=10 mm -> 2.49 deg
+  upper arm L=0.28 m, sigma=5 mm -> 1.02 deg
+  upper arm L=0.28 m, sigma=10 mm -> 2.05 deg
+  shoulder width L=0.32 m, sigma=5 mm -> 0.90 deg
+  shoulder width L=0.32 m, sigma=10 mm -> 1.79 deg
+
+== 6. arccos conditioning ==
+  true 5.73e-02 deg: arccos 5.73e-02, atan2 5.73e-02
+  true 5.73e-05 deg: arccos 5.73e-05, atan2 5.73e-05

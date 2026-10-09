@@ -1,0 +1,761 @@
+{
+  "passes": 2,
+  "indexes": [
+    {
+      "kind": "contents",
+      "rows": [
+        {
+          "text": "Approval\tii",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Abstract\tiii",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Acknowledgements\tv",
+          "style": "Contents 1"
+        },
+        {
+          "text": "List of Figures\tix",
+          "style": "Contents 1"
+        },
+        {
+          "text": "List of Tables\txii",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Glossary\txiv",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Chapter 1: Introduction\t1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "1.1 Motivation\t1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "1.2 Problem Statement and Literature Review\t2",
+          "style": "Contents 2"
+        },
+        {
+          "text": "1.2.1 Hand and Object Tracking Approaches\t2",
+          "style": "Contents 3"
+        },
+        {
+          "text": "1.2.2 Bimanual Manipulation in Motion Analysis\t3",
+          "style": "Contents 3"
+        },
+        {
+          "text": "1.2.3 Graphical Reconstruction in Robotics and VR\t3",
+          "style": "Contents 3"
+        },
+        {
+          "text": "1.2.4 Gap Analysis and Motivation for This Work\t4",
+          "style": "Contents 3"
+        },
+        {
+          "text": "1.3 Research Objectives\t5",
+          "style": "Contents 2"
+        },
+        {
+          "text": "1.4 Organization of the Thesis\t6",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 2: Experimental Setup and Measurements\t7",
+          "style": "Contents 1"
+        },
+        {
+          "text": "2.1 The Recording Setup\t7",
+          "style": "Contents 2"
+        },
+        {
+          "text": "2.2 Coordinate Frames and Scene Calibration\t10",
+          "style": "Contents 2"
+        },
+        {
+          "text": "2.2.1 The Frames\t10",
+          "style": "Contents 3"
+        },
+        {
+          "text": "2.2.2 Scene Calibration\t13",
+          "style": "Contents 3"
+        },
+        {
+          "text": "2.3 Pose Landmarks From MediaPipe\t14",
+          "style": "Contents 2"
+        },
+        {
+          "text": "2.4 Object Pose From ArUco Markers\t15",
+          "style": "Contents 2"
+        },
+        {
+          "text": "2.5 Measurement Filtering\t16",
+          "style": "Contents 2"
+        },
+        {
+          "text": "2.6 Hip Depth Preparation\t19",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 3: Kinematic Modelling\t21",
+          "style": "Contents 1"
+        },
+        {
+          "text": "3.1 Coordinate Systems and Transformations\t21",
+          "style": "Contents 2"
+        },
+        {
+          "text": "3.2 Torso Reference Frame\t25",
+          "style": "Contents 2"
+        },
+        {
+          "text": "3.2.1 Landmark Selection\t25",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.2.2 Derivation of the Torso Frame\t25",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.3 The Arm Model\t28",
+          "style": "Contents 2"
+        },
+        {
+          "text": "3.3.1 Kinematic Schematic and Solved Angles\t28",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.3.2 Definition of Shoulder, Elbow, and Wrist\t29",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.3.3 Establishing Local Arm Frames\t30",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.4 Joint Angle Computation\t31",
+          "style": "Contents 2"
+        },
+        {
+          "text": "3.4.1 Torso Pose\t32",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.4.2 Shoulder Orientation\t32",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.4.3 Elbow Flexion and Extension\t34",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.4.4 The Wrist as a Tracked Point\t35",
+          "style": "Contents 3"
+        },
+        {
+          "text": "3.5 Worked Example\t35",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 4: Object Tracking and Scene Reconstruction\t40",
+          "style": "Contents 1"
+        },
+        {
+          "text": "4.1 World Anchoring and Camera Placement Invariance\t40",
+          "style": "Contents 2"
+        },
+        {
+          "text": "4.2 Filtering and Cleaning the Object Track\t42",
+          "style": "Contents 2"
+        },
+        {
+          "text": "4.3 Worked Example\t45",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 5: Pose Recovery During Tracking Failure\t48",
+          "style": "Contents 1"
+        },
+        {
+          "text": "5.1 Assumptions and Parameters\t49",
+          "style": "Contents 2"
+        },
+        {
+          "text": "5.2 Landmark Tracking Failures\t50",
+          "style": "Contents 2"
+        },
+        {
+          "text": "5.3 Grip Episodes and the Hand-Object Offset\t52",
+          "style": "Contents 2"
+        },
+        {
+          "text": "5.4 Wrist Recovery From the Object Pose\t57",
+          "style": "Contents 2"
+        },
+        {
+          "text": "5.5 Elbow Recovery by Two-Link Inverse Kinematics\t58",
+          "style": "Contents 2"
+        },
+        {
+          "text": "5.6 Worked Example: Frames 549 and 560\t61",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 6: System Integration and Graphical Reconstruction\t66",
+          "style": "Contents 1"
+        },
+        {
+          "text": "6.1 Communication Architecture\t66",
+          "style": "Contents 2"
+        },
+        {
+          "text": "6.1.1 The Frame Buffer: Capture Process to the Branches\t67",
+          "style": "Contents 3"
+        },
+        {
+          "text": "6.1.2 The Records: Branches to the Merger and Unity\t68",
+          "style": "Contents 3"
+        },
+        {
+          "text": "6.2 Coordinate System Conversion\t71",
+          "style": "Contents 2"
+        },
+        {
+          "text": "6.3 Avatar Reconstruction in Unity\t74",
+          "style": "Contents 2"
+        },
+        {
+          "text": "6.4 Scene Reconstruction in Unity\t78",
+          "style": "Contents 2"
+        },
+        {
+          "text": "6.5 Worked Example\t80",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 7: Experimental Evaluation\t85",
+          "style": "Contents 1"
+        },
+        {
+          "text": "7.1 Evaluation Method\t85",
+          "style": "Contents 2"
+        },
+        {
+          "text": "7.2 Object Reconstruction Accuracy\t86",
+          "style": "Contents 2"
+        },
+        {
+          "text": "7.2.1 Single-Hand Rail Task\t87",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.2.2 Handover Task\t90",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.3 Human Reconstruction Accuracy under Valid Landmark Measurements\t92",
+          "style": "Contents 2"
+        },
+        {
+          "text": "7.3.1 Single-Hand Rail Task\t94",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.3.2 Handover Task\t95",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.3.3 Human-Object Spatial Check\t97",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.4 Reconstruction During Landmark Failure\t100",
+          "style": "Contents 2"
+        },
+        {
+          "text": "7.4.1 Synthetic Landmark Removal\t100",
+          "style": "Contents 3"
+        },
+        {
+          "text": "7.4.2 Natural Occlusion\t102",
+          "style": "Contents 3"
+        },
+        {
+          "text": "Chapter 8: Real-Time Feasibility\t107",
+          "style": "Contents 1"
+        },
+        {
+          "text": "8.1 From Offline to Causal Processing\t107",
+          "style": "Contents 2"
+        },
+        {
+          "text": "8.2 Causal and Real-Time Architecture\t108",
+          "style": "Contents 2"
+        },
+        {
+          "text": "8.3 Offline-Causal Comparison\t111",
+          "style": "Contents 2"
+        },
+        {
+          "text": "8.4 Runtime, Buffering, and Delay\t114",
+          "style": "Contents 2"
+        },
+        {
+          "text": "8.5 Feasibility and Remaining Validation Gap\t114",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Chapter 9: Discussion\t116",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Chapter 10: Conclusions and Future Work\t121",
+          "style": "Contents 1"
+        },
+        {
+          "text": "10.1 Conclusions\t121",
+          "style": "Contents 2"
+        },
+        {
+          "text": "10.2 Future Work\t122",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix A: RGB-D Data Acquisition\tA1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "A.1 Acquisition Procedure\tA1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "A.2 Structure of the Recorded Bag File\tA1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "A.3 Replay and Visual Inspection\tA2",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix B: Hardware and Software Platform\tB1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Appendix C: Pose Landmark Detection\tC1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "C.1 MediaPipe BlazePose Overview\tC1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "C.2 Landmark Coordinate Extraction\tC1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "C.3 Worked Example\tC4",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix D: Depth Sensing and Deprojection\tD1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "D.1 RGB Camera Calibration\tD1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "D.2 Depth-to-RGB Alignment\tD2",
+          "style": "Contents 2"
+        },
+        {
+          "text": "D.3 Pixel-to-Camera Mapping\tD3",
+          "style": "Contents 2"
+        },
+        {
+          "text": "D.4 Worked Example\tD4",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix E: Fiducial Marker Detection and Pose Recovery\tE1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "E.1 Detection and Sub-Pixel Corners\tE1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "E.2 Planar Pose Recovery and the Two-Solution Ambiguity\tE3",
+          "style": "Contents 2"
+        },
+        {
+          "text": "E.3 From the Rodrigues Form to a Rotation Matrix\tE5",
+          "style": "Contents 2"
+        },
+        {
+          "text": "E.4 Worked Example: Frame 533 Detections\tE5",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix F: Characteristics of the Candidate Filters\tF1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Appendix G: Hip Depth Preparation\tG1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "G.1 Inputs and Initial State\tG1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "G.2 Rejection Order\tG1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "G.3 Memory Updates and Replacement\tG2",
+          "style": "Contents 2"
+        },
+        {
+          "text": "G.4 Output States and Scope\tG3",
+          "style": "Contents 2"
+        },
+        {
+          "text": "Appendix H: Kinematic Solver Verification\tH1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "H.1 Synthetic Datasets\tH1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "H.2 Measured Input\tH1",
+          "style": "Contents 2"
+        },
+        {
+          "text": "H.3 Scope of the Checks\tH2",
+          "style": "Contents 2"
+        },
+        {
+          "text": "References\tR1",
+          "style": "Contents 1"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "rows": [
+        {
+          "text": "Figure 2.1. The recording setup. (a) The working area on grid paper, with the rail, cube and desk marker. (b) The view from behind the camera. (c) A colour frame.\t7",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.2. The experimental setup seen from the RGB-D camera, with the subject, the rail, the carried cube, and the three ArUco markers labelled.\t9",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.3. Overall data flow. Pipeline A (top) tracks the person, Pipeline B (bottom) the scene and object, and each block names the chapter that develops it.\t10",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.4. (a) The sensor frame C on a D435 photograph (Intel [45]; axes added). (b) The coordinate system of the Unity scene, left-handed, y up, origin on the floor.\t11",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.5. The scene frames. (a) A colour frame carrying {Wall}, {World} and {Object}, with an arrow for each transformation. (b) A top view of {Scene} and the object track.\t12",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.6. MediaPipe Pose output on a mid-task frame. The eight numbered upper-body landmarks are the ones this system uses. The visibility gate removes the leg landmarks the desk hides.\t15",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.7. Despiking on the right wrist of the recording: per-axis raw and filtered trajectories, with a mark on the sample flagged by the Hampel test.\t17",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.8. Gap bridging on the right wrist of the recording: the short gaps filled by interpolation, with the replaced samples marked.\t18",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 2.9. Smoothing on the right-wrist depth of the recording: the raw and filtered tracks over an eight-second span, with the shaded window enlarged below.\t19",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.1. The chapter's information flow. Landmarks enter from Chapter 2 on the left, the stored thirteen-angle pose leaves on the right, and the section numbers locate each construction.\t21",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.2. The raw camera frame {Camera} and y-up camera frame {Camera'} drawn from one optical centre. Only the y axis differs: {Camera} reads y downward and {Camera'} upward.\t22",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.3. The worked-example frame, front view. (a) The chain of frames, the root at right hip L24, shoulder at L12, elbow at L14. (b) The four arm segments.\t24",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.4. Torso-frame construction. (a) The measured shoulder L12 and hips L23 and L24 define the hip vector and the spine-side vector s. (b) The derived axes at L24.\t26",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.5. The reference configuration: the subject in the T-pose with a frame at each landmark. All frames share the root orientation, right arm along +x, left arm along -x.\t28",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.6. The kinematic schematic of the right arm, a chain of revolute-joint cylinders in the Programmable Universal Machine for Assembly (PUMA) style. Each dash-dot line is a rotation axis.\t29",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 3.7. The swing-twist decomposition. (a) The swing aims the rest direction +x of the arm into the observed direction \u00e2. (b) The twist rolls about the arm axis.\t33",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 4.1. The object marker: (a) on the desk, frame 95; (b) lifted, frame 505; (c) sliding, frame 700; (d) the rail end, frame 898. The wall marker is omitted.\t41",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 4.2. The object marker origin in the world frame, one panel per axis: grey detected, blue filtered, orange the eleven bridged rows, ten despiked and one undetected.\t43",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.1. Information flow of the recovery layer in the Scene formulation of Section 5.3. Inputs from Chapters 2 to 4, the detectors, the three rebuild cases and the solve.\t49",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.2. The six failure detectors, one panel each: acquisition, segment-length and line-angle in the upper row, width-ratio, landmark-step and grip-plausibility in the lower. Red marks the firing condition.\t51",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.3. The hand-object offset. (a) A clean frame, with the wrist and marker origin measured, equation (5.2). (b) The offset carried by the later object pose, equation (5.1).\t54",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.4. The holding state of one hand: the five conditions of the instantaneous test, and the rules for entering, staying in and leaving the state.\t56",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.5. The elbow reconstruction. Spheres of radius L1 and L2 meet in the circle of equation (5.11). The direction memory, in orange, selects the point in the inset.\t60",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 5.6. (a) Frame 549, the last clean frame of the right arm. (b) Frame 560, solved from that state, with the elbow and wrist rebuilt.\t62",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 6.1. The integration architecture: the capture process, the two branches, the link from the landmark branch to the object record, and the merger that feeds the display.\t66",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 6.2. The frame buffer: the header, the eight slots, the byte layout of one slot, and the write and read steps. Frame 533 of the rail recording, traced in Section 6.5, sits in slot 5, since frame n goes to slot n modulo 8.\t68",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 6.3. The combined record as a memory block: 112 bytes with their offsets, the merger's write protocol on the left and the receiver's read protocol on the right.\t69",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 6.4. The four frames of the coordinate conversion before gravity alignment, with the path of each branch to the display. Section 6.4 completes the mapping to the scene frame.\t72",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 6.5. The reconstruction from the virtual sensor: (a) frame 114, the hand at the cube; (b) frame 700, sliding it along the rail. Section 2.1 defines the task phases.\t80",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.1. Rail recording: video frames, accepted marker-centre samples and the four reconstructed waypoints in {Scene}. The x-y view expands the height scale; the others use equal metric scale.\t89",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.2. Handover recording: video frames, accepted marker-centre samples, the four reconstructed waypoints and handover position H in {Scene}, with this recording's floor translation and scale conventions of Figure 7.1.\t91",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.3. Single-hand rail task in Unity: marker-centre and model-wrist trajectories for carry, lift and slide. Wrist colours give the recorded state; avatar and cube show each interval's end.\t95",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.4. Handover task in Unity: marker-centre and both model-wrist trajectories for the right-hand, transfer and left-hand intervals. Wrist colours give the state; avatar and cube show each interval's end.\t96",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.5. Rail recording: object acquisition, lift and slide, with recorded video on the left and the saved Unity sensor view on the right.\t98",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.6. Handover recording: right-hand slide, transfer and left-hand slide, using the paired views of Figure 7.5. This visualization was captured on 9 September 2026 with a torso-length override. The visualization supplies qualitative examples; Table 7.4 uses a separate capture.\t99",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.7. Loop recording: four natural-failure frames, with the affected arm named above each view. The bracelet or watch stays visible for manual wrist labelling.\t103",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.8. Loop frame 1462, left wrist: the square marks the manual wrist label, the blue chain is the reconstructed arm, and the cross is the object-derived wrist estimate.\t104",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 7.9. Loop frame 1890, right wrist, with the symbols of Figure 7.8. The cross marks the object-derived estimate, not the final reconstructed wrist.\t105",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 8.1. The offline pass (above) and the causal structure (below), each causal stage under the offline stage it replaces. The legend names the lane and role of each box.\t108",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 8.2. The two paths: the right elbow flexion above, the right shoulder twist below. The grey band marks frames the offline pass rebuilt, the striped band the causal path.\t112",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 8.3. The offline chain (blue) and the causal chain (orange) drawn on the colour image at frames 18, 548 and 595, one moment from each window of Figure 8.2.\t113",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 9.1. Object marker loss on the loop recording. (a) Both markers are detected, their corners outlined. (b) A finger crosses the printed square and no object pose is returned.\t117",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure 9.2. Landmark tracking failure on the loop recording. (a) The right elbow and wrist landmarks sit correctly. (b) The elbow landmark has moved onto the hand.\t118",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure A.1. Structure of the recorded session file: the one-time description topics on the left, the per-frame image and metadata messages on the right.\tA2",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure A.2. (a) The recorded colour frame of the worked-example moment. (b) The same moment as a metric point cloud with the colour stream mapped onto it. (c) The same cloud coloured by distance.\tA3",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure C.1. The eight upper-body landmarks on the worked-example frame, drawn at the pixels the extractor sampled, with the segments between them.\tC2",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure C.2. The same eight landmarks as metric position vectors from the sensor origin, with the camera axes drawn at the origin.\tC3",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure D.1. (a) The pinhole geometry the intrinsics describe: a scene point, the ray to the camera centre, and the pixel where it crosses the image plane. (b) Depth-to-colour alignment: the depth image is reprojected into the colour camera's geometry so that both buffers share one pixel grid.\tD3",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure E.1. Marker detection on the worked-example frame. (a) The full frame with the three detected markers outlined and the recovered axes at each centre. (b) to (d) Each marker enlarged, with its four refined corners numbered in detection order.\tE2",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure E.2. (a) A nearly face-on plane admits two pose readings, tilted toward the camera or away from it, that are mirror images about the camera ray. (b) Both readings the solver returns for the wall marker, reprojected over the detection they come from, with the corner where they separate most magnified in the inset.\tE4",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Figure F.1. (a) The four candidates on one constructed test signal, not recorded data: a profile that holds still, moves and holds again, with broadband noise and one single-frame spike added. (b) The amplitude gain of the two linear candidates against frequency, including both passes of the Butterworth filter, with the 3 hertz cutoff marked and the band of deliberate upper-body motion shaded.\tF2",
+          "style": "Contents 1"
+        }
+      ]
+    },
+    {
+      "kind": "list",
+      "rows": [
+        {
+          "text": "Table 1.1. Summary of the reviewed literature: each approach family, its representative work, its sensing arrangement, and its limitation for single-sensor bimanual capture.\t4",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 2.1. The objects in the scene. All markers are from the OpenCV 5 by 5 dictionary, and the size is the side of the printed black square. The translation a planar marker solver returns scales with the size it is given, so every object-derived distance in this thesis rests on it.\t8",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 3.1. The eight landmarks of the worked-example frame in the sensor frame and in the y-up camera frame, printed to two decimals. Each column carries the frame its entries are expressed in, the left superscript of the position symbols used from here on. The conversion flips only the sign of y, and the hips read negative in the y-up camera frame because they sit below the camera height.\t36",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 6.1. The shared memory blocks. Every block is fixed size and begins with its four-character code. The records carry the sequence counter in their header, the frame buffer in each slot.\t70",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 6.2. Frame 533 of the rail recording through the causal structure and the receiver. Positions in centimetres; clock times on the session clock, durations in milliseconds.\t84",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.1. Rail recording: reconstructed marker-centre segment lengths against the physical reference, with absolute and relative error.\t88",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.2. Handover recording: reconstructed marker-centre segment lengths against the physical reference, using the columns of Table 7.1.\t91",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.3. Single-hand task: rendered joint error relative to accepted measured 3D landmarks on the captured subset of valid-landmark frames.\t94",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.4. Handover task: rendered joint error relative to accepted measured 3D landmarks, reported separately for each arm on its captured subset of valid-landmark frames.\t96",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.5. Synthetic removal windows selected using valid unmasked wrist motion before method errors were calculated.\t100",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.6. Synthetic elbow reconstruction error relative to the valid unmasked model reconstruction.\t101",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.7. Synthetic wrist reconstruction error relative to the valid unmasked model reconstruction.\t102",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.8. Clean-frame distance between the manual wrist label and an accepted filtered wrist measurement.\t103",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 7.9. Reconstructed wrist distance to the same manual wrist label on retained natural-occlusion frames, separately for each arm.\t105",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 8.1. The parts of the offline pass of Chapters 2 to 5 that the causal structure keeps; the replacements of this section are the adapted rows.\t110",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table 9.1. The six principal limitations of the system, their causes, and the evidence for each on the recordings.\t120",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table A.1. Contents of the recording's session file.\tA2",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table B.1. The workstation and the software versions behind every result in this thesis.\tB1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table C.1. The eight MediaPipe landmarks used in this work, with the model's indices.\tC1",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table C.2. The right-arm landmarks of the worked-example frame, from the visibility score through the sampled pixel and depth to the back-projected position. These are raw extractor positions, before the filtering of Section 2.5; the filtered values are in Table 3.1.\tC4",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table D.1. Factory colour-camera intrinsics, read from the calibration topic of the recording.\tD2",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table E.1. The three marker detections of the worked-example frame, in the order of the panels of Figure E.1. The marker origin and the range come from the corner geometry alone and carry the printed-size scaling. The depth sample comes from the stereo depth stream and does not enter the pose recovery. The range is the length of that position vector, and the depth sample is the coordinate along the optical axis, so the two columns are different quantities.\tE6",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table F.1. The four candidate smoothers, with the parameters used in Figure F.1(a). The Butterworth, Savitzky-Golay and rolling median smoothers need the whole recording or a window around each sample; only the One Euro filter runs on the samples already received.\tF3",
+          "style": "Contents 1"
+        },
+        {
+          "text": "Table H.1. The six synthetic datasets. On each, the decoded angles agree with the injected ones over every frame and every angle, to the precision of the arithmetic.\tH1",
+          "style": "Contents 1"
+        }
+      ]
+    }
+  ],
+  "cached_reopen_check": "PASS: identical substantive text by page and line; leader-dot counts, extraction whitespace and part-label letters ignored"
+}

@@ -1,0 +1,698 @@
+{
+  "status": "PASS",
+  "passed": 79,
+  "failed": 0,
+  "baseline_commit": "e69dfa62eda80bc0ba5d0c4607a3a183a69f71fb",
+  "recordings": {
+    "r6b": {
+      "stem": "recording_20260831_065553",
+      "frames": 900,
+      "finite_object_poses": 899,
+      "floor_translation_m": [
+        0.0,
+        0.7162149392973363,
+        0.0
+      ],
+      "per_hand": {
+        "left": {
+          "finite_wrist_object_samples": 124
+        },
+        "right": {
+          "finite_wrist_object_samples": 795
+        }
+      },
+      "T_Scene_CameraPrime": [
+        [
+          0.998937434134301,
+          0.04343191741658924,
+          -0.015416589593540489,
+          -0.0067772936901030175
+        ],
+        [
+          -0.04252939104473036,
+          0.9975965417051177,
+          0.054702750162608026,
+          0.8739161889216313
+        ],
+        [
+          0.017755381790926724,
+          -0.05398896672012517,
+          0.9983836626717959,
+          -0.5621320698618015
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_CameraPrime_Scene": [
+        [
+          0.998937434134303,
+          -0.042529391044729935,
+          0.01775538179092584,
+          0.05391808522545393
+        ],
+        [
+          0.043431917416589846,
+          0.9975965417051187,
+          -0.05398896672012568,
+          -0.9018703465605642
+        ],
+        [
+          -0.015416589593541417,
+          0.05470275016260766,
+          0.9983836626717971,
+          0.5133133731128905
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "r5": {
+      "stem": "recording_20260825_222315",
+      "frames": 2099,
+      "finite_object_poses": 2058,
+      "floor_translation_m": [
+        0.0,
+        0.7267734658035722,
+        0.0
+      ],
+      "per_hand": {
+        "left": {
+          "finite_wrist_object_samples": 1790
+        },
+        "right": {
+          "finite_wrist_object_samples": 1976
+        }
+      },
+      "T_Scene_CameraPrime": [
+        [
+          0.9968745931904281,
+          0.016328555262011945,
+          -0.0772943965270051,
+          0.01135939483669
+        ],
+        [
+          -0.015492777811717961,
+          0.9998149866226874,
+          0.011400278959450191,
+          0.8709892374702083
+        ],
+        [
+          0.07746624611464796,
+          -0.010167143538475216,
+          0.9969431327338454,
+          -0.5776772651808715
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "T_CameraPrime_Scene": [
+        [
+          0.996874593190428,
+          -0.015492777811718008,
+          0.07746624611464795,
+          0.04692063982514698
+        ],
+        [
+          0.016328555262011907,
+          0.9998149866226863,
+          -0.010167143538475582,
+          -0.8768869029901218
+        ],
+        [
+          -0.07729439652700504,
+          0.011400278959449808,
+          0.9969431327338446,
+          0.566859879749513
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "worked_example": {
+    "frame": 560,
+    "time_s": 18.680244,
+    "object_before_floor_m": [
+      -0.2245135269286159,
+      0.07641608350743863,
+      0.44576376183855254
+    ],
+    "object_Scene_m": [
+      -0.2245135269286159,
+      0.7926310228047749,
+      0.44576376183855254
+    ],
+    "wrist_before_floor_m": [
+      -0.2122313195222252,
+      0.13171719480586302,
+      0.4819418430634276
+    ],
+    "wrist_Scene_m": [
+      -0.2122313195222252,
+      0.8479321341031993,
+      0.4819418430634276
+    ],
+    "wrist_CameraPrime_m": [
+      -0.18559270042706885,
+      -0.09121333724746217,
+      1.0441323384240158
+    ],
+    "offset_MappedMarker_m": [
+      0.011270449141327533,
+      -0.040850036231651864,
+      0.05217442483394959
+    ],
+    "offset_Scene_m": [
+      0.012282207406390678,
+      0.0553011112984244,
+      0.03617808122487503
+    ],
+    "R_Scene_MappedMarker": [
+      [
+        0.9987385183875447,
+        0.028065126281751937,
+        0.04163797036169534
+      ],
+      [
+        -0.038837328245130955,
+        -0.09386230925827178,
+        0.9948273864522853
+      ],
+      [
+        0.03182819228030482,
+        -0.9951895375191069,
+        -0.09265392915939445
+      ]
+    ],
+    "finite_predictions": 681,
+    "accepted_predictions": 681
+  },
+  "checks": [
+    {
+      "label": "S changes handedness",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "F changes handedness",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: object and landmark frame identifiers agree",
+      "status": "PASS",
+      "frames": 900
+    },
+    {
+      "label": "r6b: G is proper",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: G is orthogonal",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: Camera' to Scene rotation is proper",
+      "status": "PASS",
+      "max_absolute_difference": 2.1094237467877974e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: full transforms are inverses",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: finite object poses available",
+      "status": "PASS",
+      "count": 899
+    },
+    {
+      "label": "r6b: direct World-to-Scene origins match stored display chain",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "label": "r6b: Scene/MappedMarker orientation matches conjugation chain",
+      "status": "PASS",
+      "max_absolute_difference": 6.843285642599284e-07,
+      "tolerance": 2e-06
+    },
+    {
+      "label": "r6b: every finite object y changes by d",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: every finite object x/z is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: object path step distances survive gravity alignment and floor placement",
+      "status": "PASS",
+      "max_absolute_difference": 8.375461782450522e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: inverse Scene mapping preserves all finite object Camera' points",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left wrist-minus-marker displacement is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left offset observations are unchanged (5.2)",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left wrist-marker distances are unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left offset mean is unchanged (5.3)",
+      "status": "PASS",
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left offset component scatter is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: left inverse Scene mapping returns Camera' measurements",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right wrist-minus-marker displacement is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right offset observations are unchanged (5.2)",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right wrist-marker distances are unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 1.0408340855860843e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right offset mean is unchanged (5.3)",
+      "status": "PASS",
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right offset component scatter is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 1.3877787807814457e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r6b: right inverse Scene mapping returns Camera' measurements",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: object and landmark frame identifiers agree",
+      "status": "PASS",
+      "frames": 2099
+    },
+    {
+      "label": "r5: G is proper",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: G is orthogonal",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: Camera' to Scene rotation is proper",
+      "status": "PASS",
+      "max_absolute_difference": 8.881784197001252e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: full transforms are inverses",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: finite object poses available",
+      "status": "PASS",
+      "count": 2058
+    },
+    {
+      "label": "r5: direct World-to-Scene origins match stored display chain",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 2e-06
+    },
+    {
+      "label": "r5: Scene/MappedMarker orientation matches conjugation chain",
+      "status": "PASS",
+      "max_absolute_difference": 6.896608567008577e-07,
+      "tolerance": 2e-06
+    },
+    {
+      "label": "r5: every finite object y changes by d",
+      "status": "PASS",
+      "max_absolute_difference": 1.1102230246251565e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: every finite object x/z is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: object path step distances survive gravity alignment and floor placement",
+      "status": "PASS",
+      "max_absolute_difference": 2.1250362580715887e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: inverse Scene mapping preserves all finite object Camera' points",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left wrist-minus-marker displacement is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left offset observations are unchanged (5.2)",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left wrist-marker distances are unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left offset mean is unchanged (5.3)",
+      "status": "PASS",
+      "max_absolute_difference": 5.551115123125783e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left offset component scatter is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: left inverse Scene mapping returns Camera' measurements",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right wrist-minus-marker displacement is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right offset observations are unchanged (5.2)",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right wrist-marker distances are unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right offset mean is unchanged (5.3)",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right offset component scatter is unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "r5: right inverse Scene mapping returns Camera' measurements",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: estimator finite mask is unchanged (5.4)",
+      "status": "PASS",
+      "finite_estimates": 682
+    },
+    {
+      "label": "rail: all recursive/fallback offsets are unchanged (5.4)",
+      "status": "PASS",
+      "max_absolute_difference": 2.7755575615628914e-17,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: every finite reconstructed Camera' wrist is unchanged (5.7)",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: every accepted solver wrist matches the frozen pipeline",
+      "status": "PASS",
+      "max_absolute_difference": 4.440892098500626e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: worked wrist homogeneous inverse matches the solver input",
+      "status": "PASS",
+      "max_absolute_difference": 1.8041124150158794e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: printed Scene object from full precision",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: printed Scene wrist from full precision",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: printed inverse last column from full precision",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "rail: printed Camera' wrist stays unchanged",
+      "status": "PASS",
+      "max_absolute_difference": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "label": "Chapter 5 numbered equation identifiers are unchanged",
+      "status": "PASS"
+    },
+    {
+      "label": "(5.1): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": true,
+      "expected_change": true
+    },
+    {
+      "label": "(5.2): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": true,
+      "expected_change": true
+    },
+    {
+      "label": "(5.3): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.4): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.5): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.6): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.7): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": true,
+      "expected_change": true
+    },
+    {
+      "label": "(5.8): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.9): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.10): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.11): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "(5.12): change stays within D-082 scope",
+      "status": "PASS",
+      "changed": false,
+      "expected_change": false
+    },
+    {
+      "label": "Chapter 5 unnumbered display count is unchanged",
+      "status": "PASS",
+      "before": 15,
+      "after": 15
+    },
+    {
+      "label": "Chapter 5 printed prose and OMML omit the removed frame",
+      "status": "PASS"
+    },
+    {
+      "label": "scripts/build_ch5.py: active source omits the removed frame",
+      "status": "PASS"
+    },
+    {
+      "label": "scripts/make_ch5_flow_final_fig.py: active source omits the removed frame",
+      "status": "PASS"
+    },
+    {
+      "label": "scripts/make_ch5_offset_final_fig.py: active source omits the removed frame",
+      "status": "PASS"
+    },
+    {
+      "label": "ch5_fig_flow.png: DOCX embeds the regenerated asset",
+      "status": "PASS"
+    },
+    {
+      "label": "ch5_fig_offset.png: DOCX embeds the regenerated asset",
+      "status": "PASS"
+    }
+  ],
+  "source_sha256": {
+    "Unity/Assets/Scripts/ArucoSceneReceiver.cs": "e59fe58b990a342e1e380284e732a15768b2872039f2c6adbcce08a5d27a7d16",
+    "eval/output/scene_calibration_r6bc.json": "b889d84be75fed40b6add38f0b247fc34f362392a5e705949c69587ae235f5c6",
+    "eval/output/recording_20260831_065553_scaled_object_world_filtered_clean.csv": "a96561ddc789b14be74a2acdf768b44c8d6faeeef8134f033d25fc69adbf7d4a",
+    "v1/mediapipe/output/recording_20260831_065553_landmarks_filtered.csv": "7c52c0725b78cf5a1a532b3ef2377c9e3a778f6beef6c1b3ca60a6c3c051652c",
+    "eval/output/scene_calibration_r5c.json": "48d4a24948cd4491e28cfdd95d3180ae91333916601e3607e423b6d75a72807e",
+    "eval/output/recording_20260825_222315_scaled_object_world_filtered_clean.csv": "4268b0e8f92429f6a04f685713e3f432fa09eee040d5a8b766687bf38dd93ebe",
+    "v1/mediapipe/output/recording_20260825_222315_landmarks_filtered.csv": "f71349e29abbf31416a46cce02f8ba2dcb69978677674e9454e1e197a30b1dab",
+    "writing/v9/Chapter_5_Pose_Recovery.docx": "b8e706227ec8c9755cd02b00c063c53f64862ec211d2f187d5b912ec78010bf2",
+    "writing/v9/scripts/build_ch5.py": "830214fdf0158c21aeb443eda971e9713524cc59d05aa9ae07c616a0f25891be",
+    "writing/v9/scripts/make_ch5_flow_final_fig.py": "be6e63b1ebd2724891b5442293ec79bf13e72f280219c27e6e83cd4767bc40b9",
+    "writing/v9/scripts/make_ch5_offset_final_fig.py": "98d618a0a15cae4d42832371495ab7cde2b58a60b42415a23773dd03df77e0cc",
+    "writing/v9/figures/ch5_fig_flow.png": "e05e5f869ac5fbb6aca49230941dc58def8988070bea20baa445527532ba1937",
+    "writing/v9/figures/ch5_fig_offset.png": "f827df6a28c081a8e9990af0bc4cfa89c18205090a3cd9247e31a6335c3807b4",
+    "eval/offset/carry.py": "716ce318a6ab762c21447cc2722feb15d98d2f968882707a8f8420b038c9a33c",
+    "eval/offset/fit_offset.py": "4daef5a80aeb6020c2feed835532ff8fa13e13b09962afa3067523616725589c",
+    "eval/common/paths.py": "1271913fdb926ead2cb3d801308bba1a0e7c9876fe417fdb707d2e99c237b0ef",
+    "eval/failure/recovery_core.py": "879c56426a6f8e1d673aab6543d59c9bd220b14ecdd5130cf38f0833f9db114b",
+    "eval/failure/grip_state.py": "78cd645cd5f54d45c527978914bf977f08bfcde92efab302e2ca570ca7d0a454",
+    "v1/aruco/frames.py": "16ba17f85a556b8494ffa81da6a59f90d336656b6facc7b1b1a29517dc114a68",
+    "v1/kinematics/occlusion_ext.py": "08643af578d5e515d8c4c3c077e1c3eb3238e949ef4c84dc916ff4252d169c26",
+    "writing/v8/scripts/ch5_worked_example.py": "a642958118ab1065da0cd593726b1841183060b9e0dbe1394ea596a70df7751d",
+    "eval/unity_check/check_unity_log.py": "d93811a74a347421ef29bcc9419e9b2100ebfb606d6c609865b137e0ab56a44c",
+    "eval/output/recovery_r6b/failure_mask.csv": "b8fe75b4a40cb67e799a0c14794651f0fe91a566aedd8dd0694cabd16a53b659",
+    "eval/reports/recording_20260831_065553_offset_fit.json": "3dfc6b7570c79b78882642912713ca7fe38126c3c065f874301bfd1b694d49cb",
+    "eval/reports/recording_20260831_065553_inspection.json": "a547138e98828c2aae2f93537d513ccadf0ca9e40c22f7904edc98ac7015da72",
+    "eval/reports/recording_20260825_222315_offset_fit.json": "d5b9a2cb26187aba539ee0e1ee502c188f79d72492ae1235a69f7fcbaace8ade",
+    "writing/v9/audit_evidence/remove_intermediate_frame/ch5_invariance.py": "dd87e035135b9da6f6cc697235a174560cfbc4940a00ffa7a0aef61f93d80d8c"
+  },
+  "limitations": [
+    "Arithmetic and representation invariance, not physical accuracy.",
+    "No experimental files, masks, or source implementations are changed.",
+    "Word/PDF layout is an integration check outside this diagnostic.",
+    "Deferred correctness-audit findings remain outside D-082."
+  ]
+}

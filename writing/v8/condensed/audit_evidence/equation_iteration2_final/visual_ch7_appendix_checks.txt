@@ -1,0 +1,3 @@
+PASS: ordered math, tables and captions match the reviewed parts.
+PDF_SHA256 4e1e00cd0dd6c6c93a2b20d9f9abd6a2996c646e6aae3d38a35ee9ef2c727f9d
+PAGES 189 REVIEW_RASTERS 30

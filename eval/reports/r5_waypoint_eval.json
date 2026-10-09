@@ -1,0 +1,595 @@
+{
+ "stem": "recording_20260825_222315",
+ "frame": "desk_marker_world",
+ "units": "m",
+ "constants": {
+  "SMOOTH_WIN": 5,
+  "SPEED_WIN": 5,
+  "V_STATION_m_s": 0.04,
+  "MIN_DUR_S": 0.3,
+  "MERGE_RADIUS_m": 0.06,
+  "MIN_STATION_DWELL_S": 0.5,
+  "APPROACH_WIN": 15
+ },
+ "loop_span_frames": [
+  858,
+  1930
+ ],
+ "loop_span_s": [
+  28.62,
+  64.38
+ ],
+ "frames_total": 2099,
+ "frames_carried": 1136,
+ "frames_loop": 1073,
+ "frames_used": 1032,
+ "stations_detected": 7,
+ "stations_expected": 7,
+ "waypoints_total": 8,
+ "station_count_verdict": "PASS",
+ "stations": [
+  {
+   "index": 1,
+   "id": "W1_start",
+   "description": "start point (parked rest position on the desk)",
+   "source": "rest_position",
+   "runs": [
+    [
+     0,
+     655
+    ]
+   ],
+   "frame_first": 0,
+   "frame_last": 655,
+   "t_first_s": 0.0,
+   "dwell_total_s": null,
+   "dwell_frames": null,
+   "xyz": [
+    -0.2554,
+    -0.1075,
+    0.1921
+   ],
+   "leveled_xyz": [
+    -0.2565,
+    0.0153,
+    0.2183
+   ],
+   "height_above_table_m": 0.0221,
+   "dwell_std_mm": null,
+   "dwell_std_norm_mm": null,
+   "approach_speed_cm_s": null
+  },
+  {
+   "index": 2,
+   "id": "W2_back_end",
+   "description": "end of the back move, on the desk",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     903,
+     955
+    ]
+   ],
+   "frame_first": 903,
+   "frame_last": 955,
+   "t_first_s": 30.12,
+   "dwell_total_s": 1.73,
+   "dwell_frames": 53,
+   "xyz": [
+    -0.1628,
+    -0.2399,
+    0.4297
+   ],
+   "leveled_xyz": [
+    -0.1654,
+    0.0254,
+    0.4906
+   ],
+   "height_above_table_m": 0.0322,
+   "dwell_std_mm": [
+    0.3,
+    0.7,
+    1.3
+   ],
+   "dwell_std_norm_mm": 1.5,
+   "approach_speed_cm_s": 6.46
+  },
+  {
+   "index": 3,
+   "id": "W3_desk_handover",
+   "description": "desk, two-hand handover",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     984,
+     994
+    ],
+    [
+     1025,
+     1059
+    ]
+   ],
+   "frame_first": 984,
+   "frame_last": 1059,
+   "t_first_s": 32.82,
+   "dwell_total_s": 1.47,
+   "dwell_frames": 46,
+   "xyz": [
+    -0.0771,
+    -0.2264,
+    0.4115
+   ],
+   "leveled_xyz": [
+    -0.0799,
+    0.0253,
+    0.4686
+   ],
+   "height_above_table_m": 0.0321,
+   "dwell_std_mm": [
+    12.6,
+    2.3,
+    4.1
+   ],
+   "dwell_std_norm_mm": 13.4,
+   "approach_speed_cm_s": 5.84
+  },
+  {
+   "index": 4,
+   "id": "W4_left_end",
+   "description": "end of the left move, on the desk",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     1195,
+     1234
+    ]
+   ],
+   "frame_first": 1195,
+   "frame_last": 1234,
+   "t_first_s": 39.86,
+   "dwell_total_s": 1.3,
+   "dwell_frames": 40,
+   "xyz": [
+    0.1651,
+    -0.235,
+    0.4393
+   ],
+   "leveled_xyz": [
+    0.1625,
+    0.0271,
+    0.4983
+   ],
+   "height_above_table_m": 0.0338,
+   "dwell_std_mm": [
+    0.9,
+    2.0,
+    4.4
+   ],
+   "dwell_std_norm_mm": 4.9,
+   "approach_speed_cm_s": 5.4
+  },
+  {
+   "index": 5,
+   "id": "W5_forward_end",
+   "description": "end of the forward push, on the desk (lift starts here)",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     1274,
+     1306
+    ],
+    [
+     1313,
+     1336
+    ]
+   ],
+   "frame_first": 1274,
+   "frame_last": 1336,
+   "t_first_s": 42.5,
+   "dwell_total_s": 1.83,
+   "dwell_frames": 57,
+   "xyz": [
+    0.1779,
+    -0.1952,
+    0.3662
+   ],
+   "leveled_xyz": [
+    0.1758,
+    0.0223,
+    0.4152
+   ],
+   "height_above_table_m": 0.029,
+   "dwell_std_mm": [
+    1.0,
+    4.9,
+    4.3
+   ],
+   "dwell_std_norm_mm": 6.6,
+   "approach_speed_cm_s": 5.76
+  },
+  {
+   "index": 6,
+   "id": "W6_lift_top",
+   "description": "top of the lift, on the wire",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     1475,
+     1632
+    ]
+   ],
+   "frame_first": 1475,
+   "frame_last": 1632,
+   "t_first_s": 49.2,
+   "dwell_total_s": 5.24,
+   "dwell_frames": 158,
+   "xyz": [
+    0.1314,
+    0.0468,
+    0.5583
+   ],
+   "leveled_xyz": [
+    0.136,
+    0.3301,
+    0.4513
+   ],
+   "height_above_table_m": 0.3369,
+   "dwell_std_mm": [
+    4.8,
+    6.2,
+    11.5
+   ],
+   "dwell_std_norm_mm": 13.9,
+   "approach_speed_cm_s": 5.54
+  },
+  {
+   "index": 7,
+   "id": "W7_wire_handover",
+   "description": "on the wire, second handover",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     1713,
+     1754
+    ]
+   ],
+   "frame_first": 1713,
+   "frame_last": 1754,
+   "t_first_s": 57.14,
+   "dwell_total_s": 1.37,
+   "dwell_frames": 42,
+   "xyz": [
+    -0.069,
+    0.0454,
+    0.5619
+   ],
+   "leveled_xyz": [
+    -0.0643,
+    0.3354,
+    0.4538
+   ],
+   "height_above_table_m": 0.3422,
+   "dwell_std_mm": [
+    9.1,
+    2.0,
+    2.5
+   ],
+   "dwell_std_norm_mm": 9.7,
+   "approach_speed_cm_s": 4.4
+  },
+  {
+   "index": 8,
+   "id": "W8_wire_left",
+   "description": "wire, left end, before the descent",
+   "source": "detected_dwell",
+   "runs": [
+    [
+     1790,
+     1814
+    ]
+   ],
+   "frame_first": 1790,
+   "frame_last": 1814,
+   "t_first_s": 59.71,
+   "dwell_total_s": 0.8,
+   "dwell_frames": 25,
+   "xyz": [
+    -0.1776,
+    0.038,
+    0.5393
+   ],
+   "leveled_xyz": [
+    -0.1732,
+    0.3197,
+    0.4378
+   ],
+   "height_above_table_m": 0.3264,
+   "dwell_std_mm": [
+    4.2,
+    1.2,
+    2.3
+   ],
+   "dwell_std_norm_mm": 4.9,
+   "approach_speed_cm_s": 7.81
+  }
+ ],
+ "clusters_rejected_below_min_dwell": [],
+ "threshold_sweep": [
+  {
+   "v_cm_s": 1.5,
+   "n_stations": 3
+  },
+  {
+   "v_cm_s": 1.75,
+   "n_stations": 4
+  },
+  {
+   "v_cm_s": 2.0,
+   "n_stations": 5
+  },
+  {
+   "v_cm_s": 2.25,
+   "n_stations": 5
+  },
+  {
+   "v_cm_s": 2.5,
+   "n_stations": 5
+  },
+  {
+   "v_cm_s": 2.75,
+   "n_stations": 6
+  },
+  {
+   "v_cm_s": 3.0,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 3.25,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 3.5,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 3.75,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 4.0,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 4.25,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 4.5,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 4.75,
+   "n_stations": 7
+  },
+  {
+   "v_cm_s": 5.0,
+   "n_stations": 8
+  },
+  {
+   "v_cm_s": 5.25,
+   "n_stations": 8
+  },
+  {
+   "v_cm_s": 5.5,
+   "n_stations": 8
+  },
+  {
+   "v_cm_s": 5.75,
+   "n_stations": 8
+  },
+  {
+   "v_cm_s": 6.0,
+   "n_stations": 8
+  },
+  {
+   "v_cm_s": 6.25,
+   "n_stations": 9
+  },
+  {
+   "v_cm_s": 6.5,
+   "n_stations": 9
+  },
+  {
+   "v_cm_s": 6.75,
+   "n_stations": 10
+  },
+  {
+   "v_cm_s": 7.0,
+   "n_stations": 10
+  }
+ ],
+ "plateau_stability": {
+  "per_threshold": [
+   {
+    "v_cm_s": 3.0,
+    "max_shift_mm": 6.8
+   },
+   {
+    "v_cm_s": 3.25,
+    "max_shift_mm": 1.1
+   },
+   {
+    "v_cm_s": 3.5,
+    "max_shift_mm": 1.2
+   },
+   {
+    "v_cm_s": 3.75,
+    "max_shift_mm": 0.6
+   },
+   {
+    "v_cm_s": 4.0,
+    "max_shift_mm": 0.1
+   },
+   {
+    "v_cm_s": 4.25,
+    "max_shift_mm": 2.7
+   },
+   {
+    "v_cm_s": 4.5,
+    "max_shift_mm": 2.9
+   },
+   {
+    "v_cm_s": 4.75,
+    "max_shift_mm": 2.9
+   }
+  ],
+  "max_shift_over_plateau_mm": 6.8
+ },
+ "point_to_path_cm": {
+  "n_frames": 1032,
+  "median_cm": 0.79,
+  "p95_cm": 9.32,
+  "max_cm": 13.11,
+  "mean_cm": 1.66
+ },
+ "per_segment_cm": [
+  {
+   "index": 0,
+   "from": "W1_start",
+   "to": "W2_back_end",
+   "length_cm": 28.7,
+   "n_frames": 136,
+   "median_cm": 0.66,
+   "p95_cm": 11.74,
+   "max_cm": 13.11
+  },
+  {
+   "index": 1,
+   "from": "W2_back_end",
+   "to": "W3_desk_handover",
+   "length_cm": 8.9,
+   "n_frames": 76,
+   "median_cm": 0.75,
+   "p95_cm": 1.93,
+   "max_cm": 2.27
+  },
+  {
+   "index": 2,
+   "from": "W3_desk_handover",
+   "to": "W4_left_end",
+   "length_cm": 24.4,
+   "n_frames": 147,
+   "median_cm": 0.45,
+   "p95_cm": 1.92,
+   "max_cm": 2.59
+  },
+  {
+   "index": 3,
+   "from": "W4_left_end",
+   "to": "W5_forward_end",
+   "length_cm": 8.4,
+   "n_frames": 96,
+   "median_cm": 0.22,
+   "p95_cm": 0.38,
+   "max_cm": 1.13
+  },
+  {
+   "index": 4,
+   "from": "W5_forward_end",
+   "to": "W6_lift_top",
+   "length_cm": 31.2,
+   "n_frames": 264,
+   "median_cm": 1.22,
+   "p95_cm": 2.12,
+   "max_cm": 2.41
+  },
+  {
+   "index": 5,
+   "from": "W6_lift_top",
+   "to": "W7_wire_handover",
+   "length_cm": 20.0,
+   "n_frames": 158,
+   "median_cm": 1.09,
+   "p95_cm": 2.22,
+   "max_cm": 2.35
+  },
+  {
+   "index": 6,
+   "from": "W7_wire_handover",
+   "to": "W8_wire_left",
+   "length_cm": 11.1,
+   "n_frames": 72,
+   "median_cm": 0.36,
+   "p95_cm": 0.6,
+   "max_cm": 0.7
+  },
+  {
+   "index": 7,
+   "from": "W8_wire_left",
+   "to": "W1_start",
+   "length_cm": 38.4,
+   "n_frames": 83,
+   "median_cm": 5.95,
+   "p95_cm": 12.33,
+   "max_cm": 13.07
+  }
+ ],
+ "designed_vs_measured": [
+  {
+   "step": "W1_start -> W2_back_end",
+   "move": "back",
+   "kind": "horizontal",
+   "nominal_cm": 30.0,
+   "measured_cm": 28.7,
+   "delta_cm": -1.3
+  },
+  {
+   "step": "W2_back_end -> W4_left_end",
+   "move": "left",
+   "kind": "horizontal",
+   "nominal_cm": 45.0,
+   "measured_cm": 32.8,
+   "delta_cm": -12.2
+  },
+  {
+   "step": "W4_left_end -> W5_forward_end",
+   "move": "forward",
+   "kind": "horizontal",
+   "nominal_cm": 15.0,
+   "measured_cm": 8.4,
+   "delta_cm": -6.6
+  },
+  {
+   "step": "W5_forward_end -> W6_lift_top",
+   "move": "up",
+   "kind": "vertical",
+   "nominal_cm": 30.0,
+   "measured_cm": 30.8,
+   "delta_cm": 0.8
+  }
+ ],
+ "loop_closure": {
+  "start_frame": 858,
+  "stop_frame": 1930,
+  "start_xyz": [
+   -0.2152,
+   -0.2362,
+   0.4231
+  ],
+  "stop_xyz": [
+   -0.2429,
+   -0.2015,
+   0.4382
+  ],
+  "closure_xyz_mm": [
+   -27.7,
+   34.7,
+   15.1
+  ],
+  "closure_mm": 46.9
+ },
+ "outputs": {
+  "path_file": "/home/luo/Desktop/New_SandBox/eval/gt/labeled_path_r5.json",
+  "figure": "/home/luo/Desktop/New_SandBox/eval/reports/r5_waypoints.png"
+ }
+}

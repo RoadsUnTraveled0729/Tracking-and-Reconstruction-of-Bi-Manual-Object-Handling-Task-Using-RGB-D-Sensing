@@ -1,0 +1,106 @@
+{
+ "stem": "recording_20260825_070152",
+ "thresholds": [
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7
+ ],
+ "sides": {
+  "left": [
+   {
+    "threshold": 0.3,
+    "kept_cells": 1202,
+    "kept_fraction": 0.802,
+    "miss_offset": 4,
+    "miss_offset_rate": 0.0252,
+    "miss_segment": 0,
+    "miss_segment_rate": 0.0
+   },
+   {
+    "threshold": 0.4,
+    "kept_cells": 986,
+    "kept_fraction": 0.658,
+    "miss_offset": 4,
+    "miss_offset_rate": 0.0252,
+    "miss_segment": 0,
+    "miss_segment_rate": 0.0
+   },
+   {
+    "threshold": 0.5,
+    "kept_cells": 808,
+    "kept_fraction": 0.539,
+    "miss_offset": 4,
+    "miss_offset_rate": 0.0252,
+    "miss_segment": 0,
+    "miss_segment_rate": 0.0
+   },
+   {
+    "threshold": 0.6,
+    "kept_cells": 487,
+    "kept_fraction": 0.325,
+    "miss_offset": 4,
+    "miss_offset_rate": 0.0548,
+    "miss_segment": 0,
+    "miss_segment_rate": 0.0
+   },
+   {
+    "threshold": 0.7,
+    "kept_cells": 289,
+    "kept_fraction": 0.193,
+    "miss_offset": 4,
+    "miss_offset_rate": 0.2667,
+    "miss_segment": 0,
+    "miss_segment_rate": 0.0
+   }
+  ],
+  "right": [
+   {
+    "threshold": 0.3,
+    "kept_cells": 1441,
+    "kept_fraction": 0.961,
+    "miss_offset": 0,
+    "miss_offset_rate": 0.0,
+    "miss_segment": 167,
+    "miss_segment_rate": 0.1531
+   },
+   {
+    "threshold": 0.4,
+    "kept_cells": 1438,
+    "kept_fraction": 0.959,
+    "miss_offset": 0,
+    "miss_offset_rate": 0.0,
+    "miss_segment": 167,
+    "miss_segment_rate": 0.1531
+   },
+   {
+    "threshold": 0.5,
+    "kept_cells": 1436,
+    "kept_fraction": 0.958,
+    "miss_offset": 0,
+    "miss_offset_rate": 0.0,
+    "miss_segment": 167,
+    "miss_segment_rate": 0.1531
+   },
+   {
+    "threshold": 0.6,
+    "kept_cells": 1425,
+    "kept_fraction": 0.951,
+    "miss_offset": 0,
+    "miss_offset_rate": 0.0,
+    "miss_segment": 167,
+    "miss_segment_rate": 0.1532
+   },
+   {
+    "threshold": 0.7,
+    "kept_cells": 1331,
+    "kept_fraction": 0.888,
+    "miss_offset": 0,
+    "miss_offset_rate": 0.0,
+    "miss_segment": 148,
+    "miss_segment_rate": 0.1415
+   }
+  ]
+ }
+}

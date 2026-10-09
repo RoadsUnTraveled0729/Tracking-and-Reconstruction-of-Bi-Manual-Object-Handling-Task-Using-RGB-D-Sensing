@@ -1,0 +1,7 @@
+source=/tmp/defense_axes_capture/r5_rig_sizing
+stem=recording_20260825_222315
+requested_upper_arm_R=0.2560
+requested_forearm_R=0.2520
+requested_upper_arm_L=0.2620
+requested_forearm_L=0.2470
+requested_torso=0.4828

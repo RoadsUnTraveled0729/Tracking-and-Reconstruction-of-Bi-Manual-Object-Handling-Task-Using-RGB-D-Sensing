@@ -1,0 +1,896 @@
+{
+  "purpose": "Slide 34 row labels by wrist travel, case wording, caption and three-case figure (D-392).",
+  "generator": "presentation/defense_2026/anim/patch_slide34_wording.py",
+  "generator_sha256": "f290f8d110a1033e36e7de3a319c7a17ed33871a643c4d0dea9653d6c2918ef4",
+  "helpers": "presentation/defense_2026/anim/patch_results_pictures.py",
+  "pptx": "presentation/defense_2026/Thesis_Defence_2026.pptx",
+  "old": {
+    "sha256": "a27dc653d3860e8076622e1923894c49a2c03e148551f06d1739eebdb15f2a80",
+    "bytes": 103088322,
+    "entries": 497
+  },
+  "new": {
+    "sha256": "0800111c3300c454c636f58450e7b74e42b392e14888c70d17756142ee1cc7cd",
+    "bytes": 102961028,
+    "entries": 497
+  },
+  "zip_entry_comparison": {
+    "changed_crc": [
+      "ppt/media/p34_masked_comparison.png",
+      "ppt/slides/slide34.xml"
+    ],
+    "added": [],
+    "removed": [],
+    "unchanged_entries": 495
+  },
+  "picture_part": {
+    "part": "ppt/media/p34_masked_comparison.png",
+    "old_sha256": "2181352bca9c8998eefbb7b559f996b3e45441157eed71c7dee38505afcea00a",
+    "new_sha256": "32c8809559d9879e8c413e5ac18a035e9c3f5c971a0f075b52754b8efa1f6589",
+    "provenance": "presentation/defense_2026/media/provenance/p34_masked_comparison.json"
+  },
+  "case_letters": {
+    "source": "slides 19, 21-24 titles",
+    "found": {
+      "A": "missing wrist: elbow + direction memory",
+      "B": "grasping wrist: tracked object + stored offset",
+      "C": "missing elbow: two lengths + direction memory",
+      "hold last": "no letter (slide 24, no support)"
+    },
+    "decision": "column headers keep the method names; tile 1003 says cases"
+  },
+  "travel_source": "writing/v9/Chapter_7_Evaluation.docx Table 7.5 (0.6, 2.8, 5.1 cm)",
+  "edits": {
+    "texts": {
+      "11": {
+        "old": "Motion / joint",
+        "new": "Window / joint"
+      },
+      "17": {
+        "old": "Lower, wrist",
+        "new": "Wrist travel 0.6 cm, wrist"
+      },
+      "23": {
+        "old": "Intermediate, wrist",
+        "new": "Wrist travel 2.8 cm, wrist"
+      },
+      "29": {
+        "old": "Higher, wrist",
+        "new": "Wrist travel 5.1 cm, wrist"
+      },
+      "35": {
+        "old": "Lower, elbow",
+        "new": "Wrist travel 0.6 cm, elbow"
+      },
+      "41": {
+        "old": "Intermediate, elbow",
+        "new": "Wrist travel 2.8 cm, elbow"
+      },
+      "47": {
+        "old": "Higher, elbow",
+        "new": "Wrist travel 5.1 cm, elbow"
+      },
+      "1002": {
+        "old": "45-frame windows",
+        "new": "45-frame windows, slow motion"
+      },
+      "1003": {
+        "old": "Three recovery methods",
+        "new": "Three recovery cases"
+      },
+      "52": {
+        "old": "Right arm \u00b7 45 frames per window \u00b7 reference: unmasked reconstruction \u00b7 values in cm \u00b7 spoken: intermediate window 445-489",
+        "new": "Right arm \u00b7 one slow recording \u00b7 45 frames per window \u00b7 reference: unmasked reconstruction \u00b7 cm \u00b7 spoken: wrist travel 2.8 cm"
+      }
+    },
+    "columns_in": [
+      3.04,
+      1.02,
+      1.91,
+      1.66
+    ],
+    "column_edges_emu": [
+      457200,
+      3236976,
+      4169664,
+      5916168,
+      7434072
+    ],
+    "grid_right_emu": 7434072,
+    "grid_width_in": 7.63,
+    "cell_inset_in": 0.1,
+    "fit_spare_in": 0.05,
+    "cell_sz": "1400",
+    "text_fit": {
+      "11": {
+        "text": "Window / joint",
+        "bold": false,
+        "text_in": 1.382,
+        "cell_in": 2.94,
+        "slack_in": 1.558
+      },
+      "13": {
+        "text": "Hold-last",
+        "bold": false,
+        "text_in": 0.864,
+        "cell_in": 0.92,
+        "slack_in": 0.056
+      },
+      "14": {
+        "text": "Direction memory",
+        "bold": false,
+        "text_in": 1.753,
+        "cell_in": 1.81,
+        "slack_in": 0.057
+      },
+      "15": {
+        "text": "Object-assisted",
+        "bold": false,
+        "text_in": 1.5,
+        "cell_in": 1.56,
+        "slack_in": 0.06
+      },
+      "17": {
+        "text": "Wrist travel 0.6 cm, wrist",
+        "bold": false,
+        "text_in": 2.444,
+        "cell_in": 2.94,
+        "slack_in": 0.496
+      },
+      "19": {
+        "text": "0.7",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 0.92,
+        "slack_in": 0.611
+      },
+      "20": {
+        "text": "0.4",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.81,
+        "slack_in": 1.501
+      },
+      "21": {
+        "text": "1.2",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.56,
+        "slack_in": 1.251
+      },
+      "23": {
+        "text": "Wrist travel 2.8 cm, wrist",
+        "bold": true,
+        "text_in": 2.785,
+        "cell_in": 2.94,
+        "slack_in": 0.155
+      },
+      "25": {
+        "text": "1.2",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 0.92,
+        "slack_in": 0.576
+      },
+      "26": {
+        "text": "1.9",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 1.81,
+        "slack_in": 1.466
+      },
+      "27": {
+        "text": "1.2",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 1.56,
+        "slack_in": 1.216
+      },
+      "29": {
+        "text": "Wrist travel 5.1 cm, wrist",
+        "bold": false,
+        "text_in": 2.444,
+        "cell_in": 2.94,
+        "slack_in": 0.496
+      },
+      "31": {
+        "text": "1.5",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 0.92,
+        "slack_in": 0.611
+      },
+      "32": {
+        "text": "2.5",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.81,
+        "slack_in": 1.501
+      },
+      "33": {
+        "text": "1.9",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.56,
+        "slack_in": 1.251
+      },
+      "35": {
+        "text": "Wrist travel 0.6 cm, elbow",
+        "bold": false,
+        "text_in": 2.549,
+        "cell_in": 2.94,
+        "slack_in": 0.391
+      },
+      "37": {
+        "text": "0.4",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 0.92,
+        "slack_in": 0.611
+      },
+      "38": {
+        "text": "0.3",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.81,
+        "slack_in": 1.501
+      },
+      "39": {
+        "text": "0.7",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.56,
+        "slack_in": 1.251
+      },
+      "41": {
+        "text": "Wrist travel 2.8 cm, elbow",
+        "bold": true,
+        "text_in": 2.886,
+        "cell_in": 2.94,
+        "slack_in": 0.054
+      },
+      "43": {
+        "text": "0.7",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 0.92,
+        "slack_in": 0.576
+      },
+      "44": {
+        "text": "1.7",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 1.81,
+        "slack_in": 1.466
+      },
+      "45": {
+        "text": "1.6",
+        "bold": true,
+        "text_in": 0.344,
+        "cell_in": 1.56,
+        "slack_in": 1.216
+      },
+      "47": {
+        "text": "Wrist travel 5.1 cm, elbow",
+        "bold": false,
+        "text_in": 2.549,
+        "cell_in": 2.94,
+        "slack_in": 0.391
+      },
+      "49": {
+        "text": "0.6",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 0.92,
+        "slack_in": 0.611
+      },
+      "50": {
+        "text": "0.6",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.81,
+        "slack_in": 1.501
+      },
+      "51": {
+        "text": "2.2",
+        "bold": false,
+        "text_in": 0.309,
+        "cell_in": 1.56,
+        "slack_in": 1.251
+      }
+    },
+    "measured_wraps": {
+      "1002": {
+        "text_in": 4.863,
+        "box_in": 4.01,
+        "pt": 22
+      },
+      "1003": {
+        "text_in": 3.268,
+        "box_in": 4.01,
+        "pt": 22
+      },
+      "52": {
+        "text_in": 14.133,
+        "old_text_in": 14.141,
+        "box_in": 12.33,
+        "pt": 16
+      }
+    },
+    "picture_1005": {
+      "old": [
+        7132320,
+        2148840,
+        4572000,
+        3520440
+      ],
+      "new": [
+        7525512,
+        2148840,
+        4206240,
+        3238805
+      ],
+      "png_px": [
+        1500,
+        1155
+      ],
+      "descr": "Controlled removal, window 445-489, frame 489: the three recovery cases side by side (hold last, direction memory, object-assisted), white reference chain, removed elbow and wrist ringed in red, each case's recovered chain and its window wrist median"
+    },
+    "geometry": {
+      "9": {
+        "old": [
+          457200,
+          2148840,
+          6492240,
+          503199
+        ],
+        "new": [
+          457200,
+          2148840,
+          6976872,
+          503199
+        ]
+      },
+      "10": {
+        "old": [
+          457200,
+          2652039,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          2652039,
+          6976872,
+          0
+        ]
+      },
+      "16": {
+        "old": [
+          457200,
+          3155239,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          3155239,
+          6976872,
+          0
+        ]
+      },
+      "22": {
+        "old": [
+          457200,
+          3658438,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          3658438,
+          6976872,
+          0
+        ]
+      },
+      "28": {
+        "old": [
+          457200,
+          4161637,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          4161637,
+          6976872,
+          0
+        ]
+      },
+      "34": {
+        "old": [
+          457200,
+          4664837,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          4664837,
+          6976872,
+          0
+        ]
+      },
+      "40": {
+        "old": [
+          457200,
+          5168036,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          5168036,
+          6976872,
+          0
+        ]
+      },
+      "46": {
+        "old": [
+          457200,
+          5671235,
+          6492240,
+          0
+        ],
+        "new": [
+          457200,
+          5671235,
+          6976872,
+          0
+        ]
+      },
+      "11": {
+        "old": [
+          548640,
+          2220726,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          2220726,
+          2688336,
+          388182
+        ]
+      },
+      "13": {
+        "old": [
+          2788920,
+          2220726,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          2220726,
+          841248,
+          388182
+        ]
+      },
+      "14": {
+        "old": [
+          3749040,
+          2220726,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          2220726,
+          1655064,
+          388182
+        ]
+      },
+      "15": {
+        "old": [
+          5532120,
+          2220726,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          2220726,
+          1426464,
+          388182
+        ]
+      },
+      "17": {
+        "old": [
+          548640,
+          2723925,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          2723925,
+          2688336,
+          388182
+        ]
+      },
+      "19": {
+        "old": [
+          2788920,
+          2723925,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          2723925,
+          841248,
+          388182
+        ]
+      },
+      "20": {
+        "old": [
+          3749040,
+          2723925,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          2723925,
+          1655064,
+          388182
+        ]
+      },
+      "21": {
+        "old": [
+          5532120,
+          2723925,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          2723925,
+          1426464,
+          388182
+        ]
+      },
+      "23": {
+        "old": [
+          548640,
+          3227124,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          3227124,
+          2688336,
+          388182
+        ]
+      },
+      "25": {
+        "old": [
+          2788920,
+          3227124,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          3227124,
+          841248,
+          388182
+        ]
+      },
+      "26": {
+        "old": [
+          3749040,
+          3227124,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          3227124,
+          1655064,
+          388182
+        ]
+      },
+      "27": {
+        "old": [
+          5532120,
+          3227124,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          3227124,
+          1426464,
+          388182
+        ]
+      },
+      "29": {
+        "old": [
+          548640,
+          3730324,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          3730324,
+          2688336,
+          388182
+        ]
+      },
+      "31": {
+        "old": [
+          2788920,
+          3730324,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          3730324,
+          841248,
+          388182
+        ]
+      },
+      "32": {
+        "old": [
+          3749040,
+          3730324,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          3730324,
+          1655064,
+          388182
+        ]
+      },
+      "33": {
+        "old": [
+          5532120,
+          3730324,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          3730324,
+          1426464,
+          388182
+        ]
+      },
+      "35": {
+        "old": [
+          548640,
+          4233523,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          4233523,
+          2688336,
+          388182
+        ]
+      },
+      "37": {
+        "old": [
+          2788920,
+          4233523,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          4233523,
+          841248,
+          388182
+        ]
+      },
+      "38": {
+        "old": [
+          3749040,
+          4233523,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          4233523,
+          1655064,
+          388182
+        ]
+      },
+      "39": {
+        "old": [
+          5532120,
+          4233523,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          4233523,
+          1426464,
+          388182
+        ]
+      },
+      "41": {
+        "old": [
+          548640,
+          4736722,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          4736722,
+          2688336,
+          388182
+        ]
+      },
+      "43": {
+        "old": [
+          2788920,
+          4736722,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          4736722,
+          841248,
+          388182
+        ]
+      },
+      "44": {
+        "old": [
+          3749040,
+          4736722,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          4736722,
+          1655064,
+          388182
+        ]
+      },
+      "45": {
+        "old": [
+          5532120,
+          4736722,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          4736722,
+          1426464,
+          388182
+        ]
+      },
+      "47": {
+        "old": [
+          548640,
+          5239922,
+          2148840,
+          388182
+        ],
+        "new": [
+          548640,
+          5239922,
+          2688336,
+          388182
+        ]
+      },
+      "49": {
+        "old": [
+          2788920,
+          5239922,
+          868680,
+          388182
+        ],
+        "new": [
+          3328416,
+          5239922,
+          841248,
+          388182
+        ]
+      },
+      "50": {
+        "old": [
+          3749040,
+          5239922,
+          1691640,
+          388182
+        ],
+        "new": [
+          4261104,
+          5239922,
+          1655064,
+          388182
+        ]
+      },
+      "51": {
+        "old": [
+          5532120,
+          5239922,
+          1417320,
+          388182
+        ],
+        "new": [
+          6007608,
+          5239922,
+          1426464,
+          388182
+        ]
+      },
+      "52": {
+        "unchanged": [
+          457200,
+          5742432,
+          11274552,
+          402336
+        ]
+      },
+      "53": {
+        "unchanged": [
+          457200,
+          6291072,
+          11274552,
+          0
+        ]
+      },
+      "2": {
+        "unchanged": [
+          457200,
+          475488,
+          11247120,
+          493776
+        ]
+      },
+      "54": {
+        "unchanged": [
+          457200,
+          6391656,
+          10698480,
+          201168
+        ]
+      },
+      "55": {
+        "unchanged": [
+          11237976,
+          6611112,
+          457200,
+          182880
+        ]
+      },
+      "1004": {
+        "unchanged": [
+          8191500,
+          1343025,
+          3667125,
+          704850
+        ]
+      }
+    }
+  },
+  "powerpoint_view": "not verified (author check)",
+  "generator_note": "generator_sha256 updated after the run: the MIDDOT literal was rewritten as the escape \\u00b7 for the ASCII rule; same string value; run-time generator sha256 119052ac8f3df68566f16e7c26209962915bb1d8ad90a0ed12b0ae1d240a2bbc"
+}

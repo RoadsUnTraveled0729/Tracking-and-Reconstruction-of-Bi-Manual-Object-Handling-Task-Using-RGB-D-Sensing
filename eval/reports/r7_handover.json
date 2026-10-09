@@ -1,0 +1,528 @@
+{
+ "stem": "recording_20260909_000024",
+ "alias": "r7",
+ "frame": "gravity-levelled desk world (x along the rail, y up, z away from the camera); centimetres in the statistics",
+ "rail_line": {
+  "n_slide_frames": 1072,
+  "first": 426,
+  "last": 1498,
+  "extent_cm": 42.4,
+  "perp_all_cm": {
+   "n": 1072,
+   "median": 0.26,
+   "p95": 1.65,
+   "max": 3.44
+  },
+  "desk_level_m": 0.03367086531674789,
+  "rail_level_m": 0.07797728801568027,
+  "rail_above_desk_cm": 4.43
+ },
+ "hip_depth_minus_shoulder_mid_on_replaced_frames": {
+  "left_hip": {
+   "min_m": -0.273,
+   "median_m": -0.067
+  },
+  "right_hip": {
+   "min_m": -0.349,
+   "median_m": -0.221
+  }
+ },
+ "wrist_substituted_frames_whole_take": {
+  "left": 0,
+  "right": 10
+ },
+ "handover_boundary_wrists_measured": true,
+ "hand_over": {
+  "left_hand_arrives_frame": 864,
+  "right_hand_leaves_frame": 1022,
+  "duration_s": 5.27,
+  "both_at_cube_frames": 159,
+  "both_at_cube_runs": [
+   [
+    864,
+    1022
+   ]
+  ],
+  "along_rail_at_arrival_cm": 29.4,
+  "along_rail_at_release_cm": 34.5,
+  "rail_extent_cm": 42.4,
+  "cube_travel_during_cm": 5.3,
+  "cube_still_frames_during": 113
+ },
+ "parts": {
+  "right": {
+   "frames": [
+    426,
+    863
+   ],
+   "n": 438,
+   "n_marker": 437,
+   "time_s": [
+    14.21,
+    28.79
+   ],
+   "along_rail_cm": [
+    0.0,
+    29.7
+   ],
+   "travel_cm": 29.7,
+   "perp_cm": {
+    "n": 437,
+    "median": 0.71,
+    "p95": 2.1,
+    "max": 3.44
+   },
+   "vertical_cm": {
+    "n": 437,
+    "median": 0.21,
+    "p95": 1.75,
+    "max": 3.42
+   },
+   "speed_median_cm_s": 5.8,
+   "undetected_frames": 1,
+   "bridged_frames": 7,
+   "fail_frames": {
+    "arm_L": 0,
+    "arm_R": 0,
+    "torso": 163
+   },
+   "root_constrained_frames": 220,
+   "left_arm_states": {
+    "swing": {
+     "measured": 434,
+     "held": 0,
+     "constrained": 4
+    },
+    "twist": {
+     "measured": 136,
+     "held": 300,
+     "constrained": 2
+    },
+    "elbow": {
+     "measured": 438,
+     "held": 0,
+     "constrained": 0
+    }
+   },
+   "left_fk_wrist_to_line_cm": {
+    "n": 438,
+    "median": 29.06,
+    "p95": 31.58,
+    "max": 32.51
+   },
+   "left_fk_wrist_to_marker_cm": {
+    "n": 437,
+    "median": 56.89,
+    "p95": 64.33,
+    "max": 64.72
+   },
+   "left_fk_wrist_to_marker_at_cube_cm": {
+    "n": 0
+   },
+   "left_wrist_at_cube_frames": 0,
+   "left_wrist_substituted_frames": 0,
+   "right_arm_states": {
+    "swing": {
+     "measured": 431,
+     "held": 0,
+     "constrained": 7
+    },
+    "twist": {
+     "measured": 427,
+     "held": 6,
+     "constrained": 5
+    },
+    "elbow": {
+     "measured": 438,
+     "held": 0,
+     "constrained": 0
+    }
+   },
+   "right_fk_wrist_to_line_cm": {
+    "n": 438,
+    "median": 15.75,
+    "p95": 17.01,
+    "max": 28.03
+   },
+   "right_fk_wrist_to_marker_cm": {
+    "n": 437,
+    "median": 15.77,
+    "p95": 17.69,
+    "max": 33.93
+   },
+   "right_fk_wrist_to_marker_at_cube_cm": {
+    "n": 437,
+    "median": 15.77,
+    "p95": 17.69,
+    "max": 33.93
+   },
+   "right_wrist_at_cube_frames": 437,
+   "right_wrist_substituted_frames": 3
+  },
+  "handover": {
+   "frames": [
+    864,
+    1022
+   ],
+   "n": 159,
+   "n_marker": 159,
+   "time_s": [
+    28.82,
+    34.09
+   ],
+   "along_rail_cm": [
+    29.2,
+    34.5
+   ],
+   "travel_cm": 5.3,
+   "perp_cm": {
+    "n": 159,
+    "median": 0.28,
+    "p95": 1.35,
+    "max": 1.66
+   },
+   "vertical_cm": {
+    "n": 159,
+    "median": 0.12,
+    "p95": 0.15,
+    "max": 0.18
+   },
+   "speed_median_cm_s": 0.7,
+   "undetected_frames": 0,
+   "bridged_frames": 3,
+   "fail_frames": {
+    "arm_L": 0,
+    "arm_R": 0,
+    "torso": 131
+   },
+   "root_constrained_frames": 159,
+   "left_arm_states": {
+    "swing": {
+     "measured": 159,
+     "held": 0,
+     "constrained": 0
+    },
+    "twist": {
+     "measured": 159,
+     "held": 0,
+     "constrained": 0
+    },
+    "elbow": {
+     "measured": 159,
+     "held": 0,
+     "constrained": 0
+    }
+   },
+   "left_fk_wrist_to_line_cm": {
+    "n": 159,
+    "median": 12.66,
+    "p95": 13.11,
+    "max": 13.15
+   },
+   "left_fk_wrist_to_marker_cm": {
+    "n": 159,
+    "median": 15.85,
+    "p95": 24.21,
+    "max": 26.08
+   },
+   "left_fk_wrist_to_marker_at_cube_cm": {
+    "n": 159,
+    "median": 15.85,
+    "p95": 24.21,
+    "max": 26.08
+   },
+   "left_wrist_at_cube_frames": 159,
+   "left_wrist_substituted_frames": 0,
+   "right_arm_states": {
+    "swing": {
+     "measured": 156,
+     "held": 0,
+     "constrained": 3
+    },
+    "twist": {
+     "measured": 157,
+     "held": 0,
+     "constrained": 2
+    },
+    "elbow": {
+     "measured": 159,
+     "held": 0,
+     "constrained": 0
+    }
+   },
+   "right_fk_wrist_to_line_cm": {
+    "n": 159,
+    "median": 16.34,
+    "p95": 17.47,
+    "max": 17.58
+   },
+   "right_fk_wrist_to_marker_cm": {
+    "n": 159,
+    "median": 17.91,
+    "p95": 22.86,
+    "max": 23.88
+   },
+   "right_fk_wrist_to_marker_at_cube_cm": {
+    "n": 159,
+    "median": 17.91,
+    "p95": 22.86,
+    "max": 23.88
+   },
+   "right_wrist_at_cube_frames": 159,
+   "right_wrist_substituted_frames": 0
+  },
+  "left": {
+   "frames": [
+    1023,
+    1498
+   ],
+   "n": 476,
+   "n_marker": 476,
+   "time_s": [
+    34.12,
+    49.97
+   ],
+   "along_rail_cm": [
+    34.6,
+    42.4
+   ],
+   "travel_cm": 7.8,
+   "perp_cm": {
+    "n": 476,
+    "median": 0.1,
+    "p95": 1.15,
+    "max": 2.37
+   },
+   "vertical_cm": {
+    "n": 476,
+    "median": 0.05,
+    "p95": 0.16,
+    "max": 0.27
+   },
+   "speed_median_cm_s": 1.0,
+   "undetected_frames": 0,
+   "bridged_frames": 2,
+   "fail_frames": {
+    "arm_L": 63,
+    "arm_R": 0,
+    "torso": 32
+   },
+   "root_constrained_frames": 38,
+   "left_arm_states": {
+    "swing": {
+     "measured": 410,
+     "held": 18,
+     "constrained": 48
+    },
+    "twist": {
+     "measured": 126,
+     "held": 301,
+     "constrained": 49
+    },
+    "elbow": {
+     "measured": 412,
+     "held": 19,
+     "constrained": 45
+    }
+   },
+   "left_fk_wrist_to_line_cm": {
+    "n": 476,
+    "median": 31.43,
+    "p95": 32.88,
+    "max": 34.22
+   },
+   "left_fk_wrist_to_marker_cm": {
+    "n": 476,
+    "median": 34.06,
+    "p95": 35.56,
+    "max": 38.37
+   },
+   "left_fk_wrist_to_marker_at_cube_cm": {
+    "n": 58,
+    "median": 14.08,
+    "p95": 15.24,
+    "max": 17.67
+   },
+   "left_wrist_at_cube_frames": 58,
+   "left_wrist_substituted_frames": 0,
+   "right_arm_states": {
+    "swing": {
+     "measured": 472,
+     "held": 0,
+     "constrained": 4
+    },
+    "twist": {
+     "measured": 473,
+     "held": 0,
+     "constrained": 3
+    },
+    "elbow": {
+     "measured": 476,
+     "held": 0,
+     "constrained": 0
+    }
+   },
+   "right_fk_wrist_to_line_cm": {
+    "n": 476,
+    "median": 31.72,
+    "p95": 32.97,
+    "max": 33.44
+   },
+   "right_fk_wrist_to_marker_cm": {
+    "n": 476,
+    "median": 51.75,
+    "p95": 52.51,
+    "max": 52.96
+   },
+   "right_fk_wrist_to_marker_at_cube_cm": {
+    "n": 0
+   },
+   "right_wrist_at_cube_frames": 0,
+   "right_wrist_substituted_frames": 0
+  }
+ },
+ "grip_episodes": {
+  "left": [
+   {
+    "start": 864,
+    "stop": 1080,
+    "n_clean": 217,
+    "source": "episode",
+    "mu_cm": [
+     7.63,
+     -5.89,
+     12.4
+    ],
+    "sd_cm": [
+     3.42,
+     1.91,
+     1.56
+    ]
+   }
+  ],
+  "right": [
+   {
+    "start": 290,
+    "stop": 1063,
+    "n_clean": 723,
+    "source": "episode",
+    "mu_cm": [
+     -3.79,
+     -5.35,
+     13.64
+    ],
+    "sd_cm": [
+     4.82,
+     4.32,
+     0.89
+    ]
+   }
+  ]
+ },
+ "hand_at_cube_frames_whole_take": {
+  "right": 573,
+  "left": 58,
+  "both": 159,
+  "none": 709
+ },
+ "fk_vs_measured_wrist_cm": {
+  "left": {
+   "n": 1499,
+   "median": 1.17,
+   "p95": 4.92,
+   "max": 36.18
+  },
+  "right": {
+   "n": 1489,
+   "median": 0.96,
+   "p95": 2.52,
+   "max": 23.07
+  }
+ },
+ "failure_windows": {
+  "arm_L": [
+   [
+    1156,
+    1218
+   ]
+  ],
+  "arm_R": [],
+  "torso": [
+   [
+    651,
+    758
+   ],
+   [
+    809,
+    965
+   ],
+   [
+    994,
+    1054
+   ]
+  ]
+ },
+ "torso_replaced_runs": [
+  [
+   644,
+   1060
+  ]
+ ],
+ "object_track": {
+  "undetected_frames": [
+   741
+  ],
+  "bridged_runs": [
+   [
+    436,
+    436
+   ],
+   [
+    668,
+    668
+   ],
+   [
+    674,
+    675
+   ],
+   [
+    680,
+    680
+   ],
+   [
+    741,
+    741
+   ],
+   [
+    757,
+    757
+   ],
+   [
+    989,
+    989
+   ],
+   [
+    1012,
+    1012
+   ],
+   [
+    1015,
+    1015
+   ],
+   [
+    1026,
+    1026
+   ],
+   [
+    1077,
+    1077
+   ]
+  ]
+ },
+ "lengths_m": {
+  "upper_arm_R": 0.241,
+  "forearm_R": 0.233,
+  "upper_arm_L": 0.252,
+  "forearm_L": 0.223
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "verification": "Independent final DOCX XML scan, without assembly_citations imports",
+  "citation_occurrences": 132,
+  "bibliography_entries": 57,
+  "contiguous": true,
+  "all_entries_cited": true,
+  "first_appearance_order_contiguous": true,
+  "craig_entry": [
+    [
+      41,
+      "J. J. Craig, Introduction to Robotics: Mechanics and Control, 4th ed. New York, NY, USA: Pearson, 2018."
+    ]
+  ],
+  "docx_sha256": "00eb9037ca34c93838d1afa26c2ed196209cf7cdc2dc152b3595fe14999c6906"
+}

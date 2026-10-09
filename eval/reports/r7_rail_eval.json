@@ -1,0 +1,41 @@
+{
+ "stem": "recording_20260909_000024",
+ "scenario": "no-occlusion rail (2026-08-31 setup)",
+ "frame": "gravity-levelled desk world (y up), from /home/luo/Desktop/New_SandBox/eval/output/scene_calibration_r7c.json",
+ "gravity_up_unity": [
+  -0.0212,
+  0.8477,
+  0.53
+ ],
+ "frames_total": 1499,
+ "frames_valid": 1498,
+ "desk_height_m": 0.0337,
+ "rail_height_m": 0.078,
+ "parked_frames": 137,
+ "lift": {
+  "n": 289,
+  "travel_cm": 23.6,
+  "tilt_from_vertical_deg": 88.2,
+  "resid_median_cm": 0.21
+ },
+ "rail": {
+  "n": 1072,
+  "span_s": [
+   14.21,
+   49.97
+  ],
+  "travel_cm": 42.4,
+  "tilt_from_horizontal_deg": 0.09,
+  "pca_sigma_cm": [
+   14.62,
+   0.66,
+   0.48
+  ],
+  "perp_median_cm": 0.26,
+  "perp_p95_cm": 1.65,
+  "perp_max_cm": 3.44,
+  "vertical_median_cm": 0.11,
+  "horizontal_median_cm": 0.2,
+  "direction_flips_moving": 6
+ }
+}

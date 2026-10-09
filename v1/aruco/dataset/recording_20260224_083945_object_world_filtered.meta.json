@@ -1,0 +1,27 @@
+{
+  "source_csv": "output/recording_20260224_083945_object_world.csv",
+  "output_csv": "output/recording_20260224_083945_object_world_filtered.csv",
+  "params": {
+    "hampel_window": 7,
+    "hampel_k": 3.0,
+    "hampel_floor": 0.02,
+    "max_gap": 8,
+    "smooth_window": 9,
+    "smooth_polyorder": 2,
+    "rot_window": 5
+  },
+  "frames": 899,
+  "detected": 877,
+  "despiked": 0,
+  "bridged": 10,
+  "held_boundary": 12,
+  "smooth_dev_pos_mm": {
+    "median": 1.22,
+    "max": 11.6
+  },
+  "smooth_dev_rot_deg": {
+    "median": 0.925,
+    "max": 9.631
+  },
+  "export_time": "2026-07-23 20:25:14"
+}

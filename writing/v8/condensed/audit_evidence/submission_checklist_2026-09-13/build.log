@@ -1,0 +1,26 @@
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_1_Introduction.docx | items: 34
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_2_Experimental_Setup.docx | items: 71
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_3_Kinematic_Modeling.docx | items: 153
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_4_Object_Tracking.docx | items: 46
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_5_Pose_Recovery.docx | items: 117
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_6_System_Integration.docx | items: 99
+PASS: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_7_Evaluation.docx
+PASS: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/CH7_RESTRUCTURED.txt
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_8_Real_Time_Feasibility.docx | items: 36
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_9_Discussion.docx | items: 54
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_10_Conclusions_Future_Work.docx | items: 16
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Appendices.docx | items: 150
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Thesis_V8_Condensed_TOC.docx | entries: 118
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/FrontMatter_V8_Condensed.docx
+abstract words: 333 | figures listed: 50 | tables listed: 27 | toc entries: 118
+Traceback (most recent call last):
+  File "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/scripts/build_thesis.py", line 665, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/scripts/build_thesis.py", line 520, in main
+    citation_result = citations.verify_assembly(check, citation_plan)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/scripts/assembly_citations.py", line 132, in verify_assembly
+    assert all_citations == final_occurrences, "Extra/missing citations outside source parts"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Extra/missing citations outside source parts

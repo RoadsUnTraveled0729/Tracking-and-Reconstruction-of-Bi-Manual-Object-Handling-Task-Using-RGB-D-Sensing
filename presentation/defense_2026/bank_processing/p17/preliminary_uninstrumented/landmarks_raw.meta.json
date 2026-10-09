@@ -1,0 +1,89 @@
+{
+  "source_bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_arm_raise_cube_untouched_test_20260121_180042.bag",
+  "output_csv": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p17/landmarks_raw.csv",
+  "model": "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/models/pose_landmarker_heavy.task",
+  "delegate": "cpu",
+  "landmark_indices": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    23,
+    24
+  ],
+  "landmark_names": {
+    "11": "left_shoulder",
+    "12": "right_shoulder",
+    "13": "left_elbow",
+    "14": "right_elbow",
+    "15": "left_wrist",
+    "16": "right_wrist",
+    "23": "left_hip",
+    "24": "right_hip"
+  },
+  "frames_total": 1050,
+  "frames_with_pose": 1050,
+  "min_vis": 0.5,
+  "depth_window": 5,
+  "blocked_landmarks": {
+    "left_shoulder": {
+      "low_vis": 0,
+      "no_depth": 7
+    },
+    "right_shoulder": {
+      "low_vis": 0,
+      "no_depth": 0
+    },
+    "left_elbow": {
+      "low_vis": 0,
+      "no_depth": 0
+    },
+    "right_elbow": {
+      "low_vis": 1,
+      "no_depth": 9
+    },
+    "left_wrist": {
+      "low_vis": 0,
+      "no_depth": 0
+    },
+    "right_wrist": {
+      "low_vis": 3,
+      "no_depth": 43
+    },
+    "left_hip": {
+      "low_vis": 0,
+      "no_depth": 0
+    },
+    "right_hip": {
+      "low_vis": 0,
+      "no_depth": 1
+    }
+  },
+  "src_legend": {
+    "0": "ok",
+    "1": "low_vis (blocked)",
+    "2": "no_depth"
+  },
+  "color_intrinsics": {
+    "width": 640,
+    "height": 480,
+    "fx": 607.561279296875,
+    "fy": 607.0150756835938,
+    "ppx": 323.93756103515625,
+    "ppy": 248.0174102783203,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "coordinate_frame": "camera (color): X right, Y down, Z forward, meters",
+  "smoothing": "none (base variant, raw output)",
+  "export_time": "2026-09-23 16:33:29",
+  "elapsed_s": 43.8
+}

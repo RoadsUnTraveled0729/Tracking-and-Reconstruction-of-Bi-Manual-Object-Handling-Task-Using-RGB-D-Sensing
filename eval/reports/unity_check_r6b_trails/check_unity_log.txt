@@ -1,0 +1,30 @@
+stem recording_20260831_065553
+streamed 900 frames | Unity applied 899 distinct person frames, 899 object frames | 899 PNGs
+
+--- 1. the receiver applied the frame it reported ---
+[PASS] logged pelvis == streamed pelvis for the same frame (float32) - max 5.52e-07 m over 899 frames
+[PASS] logged object pose == streamed object pose (float32) - pos 0.00000 mm, euler 8.00e-06 deg over 899 frames
+[PASS] Unity applied > 99% of the streamed frames - 899/900 (99.9%)
+[PASS] every PNG frame number is a frame Unity actually applied - 899 PNGs, 0 orphans
+
+--- 2. rig placement reproduces the calibrated anchor ---
+[PASS] hip bone lands on the mapped pelvis point - max 0.0007 mm over 899 frames
+
+--- 3. rendered pose vs measurement, reprojected into the video ---
+E-014 failure mask over these frames: arm_R 119, arm_L 837, torso 279 of 899
+  right hand / clean         median   41.1 px, p95   50.1 px  (n=524)
+  right hand / arm_only      median   85.3 px, p95   93.0 px  (n=4)
+  right hand / torso_only    median   37.4 px, p95   55.3 px  (n=256)
+  right hand / arm_and_torso median   21.8 px, p95   22.3 px  (n=11)
+  left  hand / clean         median   37.9 px, p95   50.9 px  (n=14)
+  left  hand / arm_only      median   38.9 px, p95   40.2 px  (n=57)
+  left  hand / torso_only    median   33.6 px, p95   41.3 px  (n=43)
+  left  hand / arm_and_torso median   38.2 px, p95   41.0 px  (n=10)
+
+  right hand: standing offset (+38.9, +9.9) px; after removing it, clean-frame disagreement median 7.1 px, p95 18.4 px
+  left  hand: standing offset (+13.9, -32.3) px; after removing it, clean-frame disagreement median 20.3 px, p95 35.5 px
+[PASS] right hand follows the measured wrist on clean frames (de-biased median < 40 px in a 640x480 image) - median 7.1 px
+[PASS] left hand follows the measured wrist on clean frames (de-biased median < 40 px in a 640x480 image) - median 20.3 px
+[FAIL] left hand disagreement is concentrated on torso-failure frames - 33.6 px vs 37.9 px clean
+
+=== 7 passed, 1 failed ===

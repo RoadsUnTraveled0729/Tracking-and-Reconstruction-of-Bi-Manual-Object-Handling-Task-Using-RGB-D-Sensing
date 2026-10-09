@@ -1,0 +1,12 @@
+{
+  "sourceSha256": "1d646c2b326b8afd64af456cf57c1b9fff6b1f20d5f1e45ce880fed2f16bb5c6",
+  "finalSha256": "da94af7c11b30defdc5de453b0014c5f2b396bc99740293e188770d766a0a749",
+  "official_helper_passed": false,
+  "known_helper_exception": "24 unchanged valid empty media-action relationship IDs; helper unmodified",
+  "preservation_audit": "delivery_audit.json",
+  "rendered_slide_count": 78,
+  "finalPath": "/Users/luolanqing/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/Thesis_Defence_2026_RESTRUCTURED_FIXED.pptx",
+  "pre_consolidation_finalSha256": "84689f24990ee7a4bff2f0a5adc545b0854cb42bcd4c5c848a96ae7ffb61974d",
+  "final_reference_check": "reference_consolidation_audit.json",
+  "final_slide_count": 77
+}

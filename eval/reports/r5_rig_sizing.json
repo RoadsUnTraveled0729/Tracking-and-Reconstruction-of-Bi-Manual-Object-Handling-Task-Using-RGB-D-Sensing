@@ -1,0 +1,51 @@
+{
+ "stem": "recording_20260825_222315",
+ "alias": "r5",
+ "generated_utc": "2026-09-14T19:03:19Z",
+ "rule": {
+  "arms": "eval/reports/<stem>_offset_fit.json segment_lengths_m: median landmark-to-landmark distance over the recording (eval/offset/carry.py seg_lengths), reused at 3 dp",
+  "torso": "E-031/E-035: median over frames with fail_torso == 0 of the distance from the recovery pelvis (angles_recovery.csv pel_x/y/z, y negated into the landmark camera frame) to the measured mid-shoulder of the filtered landmarks"
+ },
+ "segment_lengths_m": {
+  "upper_arm_R": 0.256,
+  "forearm_R": 0.252,
+  "upper_arm_L": 0.262,
+  "forearm_L": 0.247,
+  "torso": 0.4828
+ },
+ "torso_detail": {
+  "value_m": 0.4828,
+  "n_frames": 1410,
+  "mask": "fail_torso==0",
+  "landmarks": "filtered",
+  "pelvis": "recovery pelvis, y negated"
+ },
+ "used_by_capture": false,
+ "capture_note": "The existing loop capture used torsoM 0.479 m, the offset-fit report's torso_hip_to_midshoulder (raw hip midpoint to mid-shoulder over all frames), a different pelvis definition from this rule; its arm lengths are the receiver's built-in constants, which are this recording's offset-fit values.",
+ "sources": [
+  {
+   "path": "eval/reports/recording_20260825_222315_offset_fit.json",
+   "sha256": "d5b9a2cb26187aba539ee0e1ee502c188f79d72492ae1235a69f7fcbaace8ade"
+  },
+  {
+   "path": "eval/output/recovery_r5/angles_recovery.csv",
+   "sha256": "5d55004cff735d4abf9b3c5e467e4011af85fcc8a98a5ea68a9a1bf8cee36af9"
+  },
+  {
+   "path": "eval/output/recovery_r5/failure_mask.csv",
+   "sha256": "aeb6e8a025f26ae9a71be8b08fc68f5b1f10ecfcc1b679bb378e03833b67b363"
+  },
+  {
+   "path": "v1/mediapipe/output/recording_20260825_222315_landmarks_filtered.csv",
+   "sha256": "f71349e29abbf31416a46cce02f8ba2dcb69978677674e9454e1e197a30b1dab"
+  },
+  {
+   "path": "eval/failure/recovery_core.py",
+   "sha256": "879c56426a6f8e1d673aab6543d59c9bd220b14ecdd5130cf38f0833f9db114b"
+  },
+  {
+   "path": "eval/unity_check/make_rig_sizing.py",
+   "sha256": "159510100e51d8016dbb0abac59efa038e7e4413faa31147937a64017e0553d9"
+  }
+ ]
+}

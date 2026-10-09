@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "contract_sha256": "1792c5ce3e23df3d08afebee0de8aefde5225bc0d4ec9b63783520bedc02eba2",
+  "asset_count": 20,
+  "checks": [
+    {
+      "page": 6,
+      "name": "p06-Accepted_Body_Landmarks",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 7,
+      "name": "p07-Hampel_Spike_Removal",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 8,
+      "name": "p08-Short_Gap_Interpolation",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 9,
+      "name": "p09-Offline_Butterworth_Smoothing",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 21,
+      "name": "p21-Holding_Input_And_Torso_Rejection",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 23,
+      "name": "p23-Grasp_Offset_During_Wrist_Depth_Loss",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 25,
+      "name": "p25-Archived_Wrist_Loss_Context",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 27,
+      "name": "p27-Elbow_Endpoint_Constraint_Circle",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 30,
+      "name": "p30-Controlled_Held_Joint_Fallback",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 31,
+      "name": "p31-Single_Frame_Data_Flow",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 32,
+      "name": "p32-Shared_Image_Private_Copies",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 34,
+      "name": "p34-Temporal_Stream_Combination",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 36,
+      "name": "p36-Python_Unity_Read_Write_Validation",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 38,
+      "name": "p38-Integrated_Recorded_Reconstruction",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 44,
+      "name": "p44-Archived_Handover_Reconstruction",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 46,
+      "name": "p46-Causal_One_Euro_Filtering",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 61,
+      "name": "p61-Derived_Memory_Records",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 64,
+      "name": "p64-Savitzky_Golay_Filtering",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 65,
+      "name": "p65-Median_Filtering",
+      "all_declared_hashes_match": true
+    },
+    {
+      "page": 66,
+      "name": "p66-Single_Frame_Overview",
+      "all_declared_hashes_match": true
+    }
+  ],
+  "scope": "Independent current file identity and page naming; per-asset decode and camera/source audits are recorded separately."
+}

@@ -1,0 +1,243 @@
+{
+  "stage": "First final assembly, before Figure 5.5 residual-label correction",
+  "status": "ONE_CORRECTION_REQUIRED",
+  "artifact_sha256": {
+    "writing/v8/Thesis_V8_Condensed.docx": "8f7f27eb7c7655180bd2b9201082de89d2f1039f62e5968548e24185f2f14577",
+    "writing/v8/Thesis_V8_Condensed.pdf": "7f285378a027d6c99f1bd8d96e7aca25591630a48342c9ff6b2388630434f5f3",
+    "writing/v8/condensed/Chapter_5_Pose_Recovery.docx": "2057026a13668d485c1db78f1f2dfabb01299ea7e55ab618b9dcee3e187ec750",
+    "writing/v8/condensed/Chapter_6_System_Integration.docx": "ac26fdb988f7fa806b144da03499b8d50fd44df9c02671726d2c7fcc50e91788"
+  },
+  "raster_pages": [
+    {
+      "pdf_page": 72,
+      "printed_page": 52,
+      "png_sha256": "d1c15750475c286d8306c2cbc7e85c690e46c61bbb8e19b42114be02fa1696af",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_072.png"
+    },
+    {
+      "pdf_page": 73,
+      "printed_page": 53,
+      "png_sha256": "0ac10662f569d8a5ee1324c6ab4399a27a4b37bdb1bd7c25d388a47fb227263b",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_073.png"
+    },
+    {
+      "pdf_page": 74,
+      "printed_page": 54,
+      "png_sha256": "6d1a98a1430f831bed854750546b9f0017fa81d60c4f54bb7e249300981857f5",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_074.png"
+    },
+    {
+      "pdf_page": 75,
+      "printed_page": 55,
+      "png_sha256": "125262555e68387378e630b67cc709c6a5388ffc2f80d50f922246ba459b25b4",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_075.png"
+    },
+    {
+      "pdf_page": 76,
+      "printed_page": 56,
+      "png_sha256": "3e540cab4efd1ad86435934991c0099becac5165ce6ab0086a7385f80a45a09d",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_076.png"
+    },
+    {
+      "pdf_page": 77,
+      "printed_page": 57,
+      "png_sha256": "1c9218e178cdd98d2f4249d86f6a2da06693b90b176778aae05e585811e76911",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_077.png"
+    },
+    {
+      "pdf_page": 78,
+      "printed_page": 58,
+      "png_sha256": "716cdeba7069ff742dab86b6f5210ffa01f0709d3f9797296d5bca3072ebaf84",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_078.png"
+    },
+    {
+      "pdf_page": 79,
+      "printed_page": 59,
+      "png_sha256": "c16d5bcfaa15c1ac92ea133b607f64816cef1e87fd70b11f3d57364be000c0fe",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_079.png"
+    },
+    {
+      "pdf_page": 80,
+      "printed_page": 60,
+      "png_sha256": "8306ba814040274c7ea2d23e6e843eefa7bc39a5f5e602d9b9c6d39ec19a9602",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_080.png"
+    },
+    {
+      "pdf_page": 81,
+      "printed_page": 61,
+      "png_sha256": "117486fbce2a83189c36b0790eaf509ae3b7ee946035e6e297c325659018fda4",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_081.png"
+    },
+    {
+      "pdf_page": 82,
+      "printed_page": 62,
+      "png_sha256": "0f9600393883f69c0c139977fe030c065fd0a5cd3e7e3326143d879e27aacc39",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_082.png"
+    },
+    {
+      "pdf_page": 83,
+      "printed_page": 63,
+      "png_sha256": "14c6bcbc5f3655665cdfc5bceeee901f5829e43711fd7a1ee2a7c59fe878389e",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_083.png"
+    },
+    {
+      "pdf_page": 84,
+      "printed_page": 64,
+      "png_sha256": "4fd96b345e057d20525fd5b60d6933ebdbcc8447b705d30811bfc1a2d62e1baa",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_084.png"
+    },
+    {
+      "pdf_page": 85,
+      "printed_page": 65,
+      "png_sha256": "219a6df8a2c22aacd6d29f7c975cf5e65f9f3da7d1a8750b174b7497c169b842",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_085.png"
+    },
+    {
+      "pdf_page": 86,
+      "printed_page": 66,
+      "png_sha256": "e8f17bb38289ce0980c3b03ddb4e0fa574259acab07e9916988f06d726727900",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_086.png"
+    },
+    {
+      "pdf_page": 87,
+      "printed_page": 67,
+      "png_sha256": "2bd474b1a218aab89b3e3d6c7f441b7a672f651f9c82ff2ae4c53bb9da0b5a98",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_087.png"
+    },
+    {
+      "pdf_page": 88,
+      "printed_page": 68,
+      "png_sha256": "9ed28bd0ee1044f6a01f6d8fd713de8f10ea7c37b6e0dea58f7b91214f3531d4",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_088.png"
+    },
+    {
+      "pdf_page": 89,
+      "printed_page": 69,
+      "png_sha256": "2369304df195d5b6e86dbd0efb46469db4fa596eb04e55d7971675e17595f76f",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_089.png"
+    },
+    {
+      "pdf_page": 90,
+      "printed_page": 70,
+      "png_sha256": "692ea0e44c9b4c952ce8740b987a578ed584ecf0129e0a15b6f91e389946f811",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_090.png"
+    },
+    {
+      "pdf_page": 91,
+      "printed_page": 71,
+      "png_sha256": "03292835f40792ad3d4db3ac8a31a76b5e140c224179f0b34c067d75dd46aad2",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_091.png"
+    },
+    {
+      "pdf_page": 92,
+      "printed_page": 72,
+      "png_sha256": "dd5515e73872e9886067a77cabd421a9293b3589251712ea746dc8144dd08da8",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_092.png"
+    },
+    {
+      "pdf_page": 100,
+      "printed_page": 80,
+      "png_sha256": "18cbb01b9fc70f3dc6ec0d1ae90b5fc9f073fb7b78b328d5a51619059312f5b6",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_100.png"
+    },
+    {
+      "pdf_page": 101,
+      "printed_page": 81,
+      "png_sha256": "b0371f020d2e18da8e3bd51b1ddbe9059d14a93f35af130368a092b6fbc119a4",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_101.png"
+    },
+    {
+      "pdf_page": 102,
+      "printed_page": 82,
+      "png_sha256": "c1a913e7a00adb6c7e6a3d67813a208e3e84b45a279253174c85f04494941193",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_102.png"
+    },
+    {
+      "pdf_page": 103,
+      "printed_page": 83,
+      "png_sha256": "d17b0883458427019cf5d10de409a68c0239507ec5113c3f4ca5b230f2073bf6",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_103.png"
+    },
+    {
+      "pdf_page": 104,
+      "printed_page": 84,
+      "png_sha256": "03fc1aaa042450083c0693db94a9e3549513d4799bded878e6c809f076903e5c",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_104.png"
+    },
+    {
+      "pdf_page": 105,
+      "printed_page": 85,
+      "png_sha256": "5d4528c56be69bdca42f78825d1019cd344e850dc30ec1a6e3d5364fbe2eeb55",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_105.png"
+    },
+    {
+      "pdf_page": 106,
+      "printed_page": 86,
+      "png_sha256": "e03b8cc52a2089339fd181d9fe4b6f21260addde61a076ee808f55b99495f407",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_106.png"
+    },
+    {
+      "pdf_page": 107,
+      "printed_page": 87,
+      "png_sha256": "414fed6b250a4d2a11b1077acc82132fe2e5dd23f1c18473c8ea02670e81018e",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_107.png"
+    },
+    {
+      "pdf_page": 108,
+      "printed_page": 88,
+      "png_sha256": "efd6f4c440c803c0b6f5b57f871cdb7a7397a9372b0f12a13003e62b94cba605",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_108.png"
+    },
+    {
+      "pdf_page": 109,
+      "printed_page": 89,
+      "png_sha256": "81bdb07d52c36865227b73911d9c24b76372991bd61688c39b5c5b17a536c4f5",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_109.png"
+    },
+    {
+      "pdf_page": 110,
+      "printed_page": 90,
+      "png_sha256": "98d2bf574d3b92e5f235d21a29e41a268a857fa6af17cca4d75bd0fe6e5a74c4",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_110.png"
+    },
+    {
+      "pdf_page": 111,
+      "printed_page": 91,
+      "png_sha256": "739f144c45357af626e59dfb683995b35fd8d4d73cbfac85f31f8fdfdfa9f609",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_111.png"
+    },
+    {
+      "pdf_page": 112,
+      "printed_page": 92,
+      "png_sha256": "2751e6e3e5be72712f9e5e408d8d71e0f478fa09a88e977f1f40900b1bbd2fdc",
+      "temporary_png": "/tmp/final_ch5_ch6_raster/page_112.png"
+    }
+  ],
+  "finding": {
+    "id": "VISUAL-CH5-01",
+    "pdf_page": 88,
+    "printed_page": 68,
+    "location": "Figure 5.5 inset explanatory label",
+    "observed": "the direction memory is projected onto the circle, so the elbow moves as little as possible from where it was last measured",
+    "disposition": "Residual unsupported last-measured-position claim. Must refer to the position predicted by the remembered direction at the current shoulder, consistent with corrected equation 5.12 prose and CH5-4."
+  },
+  "supplementary_layout_observation": {
+    "id": "VISUAL-CH5-02",
+    "pdf_pages": [
+      75,
+      76
+    ],
+    "location": "Figure 5.2 caption",
+    "observed": "Two caption lines below the figure, then two caption lines at the top of the next page; no text lost.",
+    "disposition": "Parent explicitly classified this split multi-line caption as nonblocking pagination with no missing text; no redesign requested."
+  },
+  "other_pagination_observation": {
+    "pdf_pages": [
+      111,
+      112
+    ],
+    "location": "Table 6.2 first row",
+    "observed": "First row begins on page 111 and continues on page 112; every cell line is visible.",
+    "disposition": "Parent explicitly classified this as nonblocking pagination with no missing text."
+  }
+}

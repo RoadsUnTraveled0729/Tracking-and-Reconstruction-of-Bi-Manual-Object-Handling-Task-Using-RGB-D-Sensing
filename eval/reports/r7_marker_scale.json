@@ -1,0 +1,39 @@
+{
+ "stem": "recording_20260909_000024",
+ "reference": "depth-median z (metric)",
+ "markers": {
+  "0": {
+   "declared_mm": 150.0,
+   "assumed_black_square_mm": 150.0,
+   "scale_applied": 1.0,
+   "scale_source": "eval/common/marker_size.py (USER ASSUMPTION 45 mm, E-009)",
+   "diag_ratio_median": 0.9524,
+   "diag_ratio_p5": 0.9472,
+   "diag_ratio_p95": 0.9591,
+   "diag_depth_implied_mm": 157.5,
+   "n": 1499
+  },
+  "1": {
+   "declared_mm": 50.0,
+   "assumed_black_square_mm": 45.0,
+   "scale_applied": 0.9,
+   "scale_source": "eval/common/marker_size.py (USER ASSUMPTION 45 mm, E-009)",
+   "diag_ratio_median": 1.1464,
+   "diag_ratio_p5": 1.133,
+   "diag_ratio_p95": 1.1626,
+   "diag_depth_implied_mm": 43.6,
+   "n": 1498
+  },
+  "2": {
+   "declared_mm": 50.0,
+   "assumed_black_square_mm": 45.0,
+   "scale_applied": 0.9,
+   "scale_source": "eval/common/marker_size.py (USER ASSUMPTION 45 mm, E-009)",
+   "diag_ratio_median": 1.1416,
+   "diag_ratio_p5": 1.1409,
+   "diag_ratio_p95": 1.1437,
+   "diag_depth_implied_mm": 43.8,
+   "n": 1499
+  }
+ }
+}

@@ -1,0 +1,300 @@
+{
+  "source": "writing/v8/Thesis_V8_Condensed.docx",
+  "sha256": "00eb9037ca34c93838d1afa26c2ed196209cf7cdc2dc152b3595fe14999c6906",
+  "matches": [
+    {
+      "part": "word/document.xml",
+      "paragraph": 217,
+      "section": "Appendix H: Kinematic Solver Verification",
+      "text": "Figure 7.2. Handover recording: accepted marker-centre samples with the four waypoint positions marked, drawn in the levelled frame and using the panels and conventions of Figure 7.1."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 218,
+      "section": "Appendix H: Kinematic Solver Verification",
+      "text": "Figure 7.3. Single-hand task: measured and rendered elbow and wrist trajectories in the Unity scene frame of Section 6.4, which shares the axes of the levelled frame of Figures 7.1 and 7.2 and differs from it only by the floor-drop translation."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 529,
+      "section": "2.2 Coordinate Frames and Scene Calibration",
+      "text": "The reconstruction of Chapter 6 is drawn in the Unity frame, the display axes of that chapter. It shares the desk marker origin of the world frame and exchanges the second and third coordinates, so its y axis points up and it is left-handed. Chapter 6 converts every pose into it before it draws anything. Those display axes are not levelled and stay anchored on the desk marker. The coordinate system of the finished scene in Figure 2.4(b) is the same axes turned upright by the calibrated gravity direction and dropped so that the drawn floor is at zero height. Section 6.4 builds both steps."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 959,
+      "section": "5.1 Assumptions and Parameters",
+      "text": "The recovery needs parameters of three kinds, each stated where its rule is defined. The calibrated constants are the upper-arm and forearm lengths, taken from the clean frames at the start of the recording or from an earlier calibration. They also include the fixed mapping derived from the scene calibration, swap and levelling, which carries a point of {Levelled} into {Camera'} (Section 5.3). The design values were fixed before the recording. They are the detector thresholds and the mask cleaning of Section 5.2, the gains, radii, entry and exit runs and memory horizon of Section 5.3, the offset bound of Section 5.4, and the reach guard, twist hold and rate limit of Section 5.5. The states are estimated on clean frames of the recording and carried forward: the hand-object offset per grip episode, the holding state of each hand, and the direction memories of the two arms. No parameter is fitted on a flagged frame."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 977,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "y-up camera frame {Camera'}; the wrist also in {Levelled} in equations (5.1) and (5.2)"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 979,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "\u200bLevelledo"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 981,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "{Levelled}"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 983,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "MappedMarkerLevelledR"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 985,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "reference frame {Levelled}"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1015,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "\u200bLevelledw, \u200bCamera'w"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1017,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "{Levelled}, then {Camera'}"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1045,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "The object pose is measured on every frame as an origin \u200bLevelledo and an orientation MappedMarkerLevelledR. Chapter 4 supplies the pose in {World}; the recovery reads its cleaned display-coordinate track and then levels it. The swap S of Section 2.2.1 exchanges axes 2 and 3 of both {World} and {Object}. The latter becomes {MappedMarker}, with the same marker-centre origin and axes x, z, y of {Object}. It is left-handed, with the marker normal on its positive second axis. The levelling rotation of Section 6.4 turns only the reference axes from {Unity} to {Levelled}. The chain is"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1046,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "\u200bLevelledo = UnityLevelledR S \u200bWorldPObjectORGMappedMarkerLevelledR = UnityLevelledR S ObjectWorldR S"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1048,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "The wrist follows the same calibration into {Levelled}. Undoing F of equation (3.1) first returns y-up camera-frame coordinates to {Camera}. The fixed mapping is"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1049,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "Camera'LevelledR = UnityLevelledR S CameraWorldR F-1\u200bLevelledPCamera'ORG = UnityLevelledR S \u200bWorldPCameraORG"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1050,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "Camera'LevelledT = Camera'LevelledR\u200bLevelledPCamera'ORG01,        LevelledCamera'T = Camera'LevelledT-1"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1051,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "Here the inverse flip equals F, and the calibrated sensor pose is the inverse anchor of Chapter 4. Both {Camera'} and {Levelled} are left-handed, so the paired handedness changes give a proper rotation block. Writing \u200bMappedMarkerh for the position of the wrist in the mapped marker axes, the wrist of a holding hand satisfies"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1052,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "\u200bLevelledpwr = \u200bLevelledo + MappedMarkerLevelledR \u200bMappedMarkerh"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1055,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "The layer reads the offset off directly on a frame where both the wrist and the object are measured, the wrist carried into {Levelled} by Camera'LevelledT, the inverse of the fixed transformation LevelledCamera'T of the scene calibration. The displacement from the origin to the wrist is pulled into the mapped marker axes by the transpose, the operation of equation (3.3),"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1056,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "\u200bMappedMarkerhk = MappedMarkerLevelledRkT \u200bLevelledpwr,k \u2212 \u200bLevelledok"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1058,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "where k is the frame index. Figure 5.3 draws the two equations. Panel (a) shows a clean frame, where the displacement \u200bLevelledpwr \u2212 \u200bLevelledo is measured in the levelled axes and read in the mapped marker axes as \u200bMappedMarkerhk. Panel (b) shows a later frame, where the object has moved and turned and the wrist is hidden. The same offset carried along the new mapped marker axes by equation (5.1) gives the wrist."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1060,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "Figure 5.3. The hand-object offset. (a) On a clean frame the displacement from the object origin to the measured wrist, taken in the levelled frame {Levelled}, is read in the mapped marker axes {MappedMarker}, equation (5.2). (b) On a later frame the object has moved and turned and the wrist is hidden; the same offset, carried by the measured object pose, places the wrist, equation (5.1)."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1061,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "Each clean frame contributes one observation \u200bMappedMarkerhk of the same constant. Fitting a single \u200bMappedMarkerh to N clean frames by least squares means minimising the total squared distance between the measured wrists and the wrists that equation (5.1) predicts. Substituting equation (5.2) into that sum, and using the fact that MappedMarkerLevelledR is orthonormal and leaves lengths unchanged, gives three equal forms of the same objective:"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1062,
+      "section": "5.3 Grip Episodes and the Hand-Object Offset",
+      "text": "k\u200bLevelledpwr,k \u2212 \u200bLevelledok \u2212 MappedMarkerLevelledRk \u200bMappedMarkerh2kMappedMarkerLevelledRk\u200bMappedMarkerhk \u2212 \u200bMappedMarkerh2k\u200bMappedMarkerhk \u2212 \u200bMappedMarkerh2"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1085,
+      "section": "5.4 Wrist Recovery from the Object Pose",
+      "text": "\u200bLevelledw = \u200bLevelledo + MappedMarkerLevelledR \u200bMappedMarkerh"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1087,
+      "section": "5.4 Wrist Recovery from the Object Pose",
+      "text": "The estimate \u200bLevelledw is a function of a same-frame measurement, and only the offset is carried from the past, on the short memory of Section 5.3. A wrist placed from its last direction stays near where the arm was when tracking failed and drifts the longer the window lasts, while the object-derived wrist follows the cube through the whole window and does not age. Case B therefore takes priority over Case A whenever the hand holds the cube and the marker is measured."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1090,
+      "section": "5.4 Wrist Recovery from the Object Pose",
+      "text": "The frames need one conversion step. The wrist estimate of equation (5.7) is formed in the levelled frame {Levelled}, which Section 6.4 establishes, while the solve works in the y-up camera frame {Camera'} of Chapter 3. The fixed rigid body transformation LevelledCamera'T of the scene calibration (Section 2.2.2) therefore carries the estimate into the y-up camera frame before the solve. It changes no length and no angle."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1119,
+      "section": "5.6 Worked Example",
+      "text": "\u200bCamera'psh = (\u22120.16, 0.34, 1.32)L1 = 31.7 cm,        L2 = 20.5 cm\u200bLevelledo = (\u22120.22, 0.08, 0.45)MappedMarkerLevelledR = 1.000.030.04\u22120.04\u22120.090.990.03\u22121.00\u22120.09"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1122,
+      "section": "5.6 Worked Example",
+      "text": "The offset is inside the bound of Section 5.4. Equation (5.7) turns it into the levelled axes and adds it to the object origin:"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1123,
+      "section": "5.6 Worked Example",
+      "text": "MappedMarkerLevelledR \u200bMappedMarkerh = (0.01, 0.06, 0.04)\u200bLevelledw = \u200bLevelledo + MappedMarkerLevelledR \u200bMappedMarkerh = (\u22120.21, 0.13, 0.48)"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1125,
+      "section": "5.6 Worked Example",
+      "text": "The inverse mapping derived in Section 5.3 gives the fixed transformation LevelledCamera'T from the levelled frame {Levelled} to the y-up camera frame {Camera'}. For this recording it is"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1126,
+      "section": "5.6 Worked Example",
+      "text": "LevelledCamera'T = 1.00\u22120.040.020.020.041.00\u22120.05\u22120.19\u22120.020.051.000.550001"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1127,
+      "section": "5.6 Worked Example",
+      "text": "Its rotation block is close to the identity, since the two sets of axes are nearly parallel here, and its last column is \u200bCamera'PLevelledORG, the desk origin in the y-up camera frame. Applied to \u200bLevelledw, it gives the wrist estimate the solve receives:"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1128,
+      "section": "5.6 Worked Example",
+      "text": "\u200bCamera'w1 = LevelledCamera'T \u200bLevelledw1"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1226,
+      "section": "6.3 Avatar Reconstruction in Unity",
+      "text": "The leading factor includes the gravity levelling of Section 6.4. Since {Scene} and {Levelled} share their axes, LevelledSceneR is the identity, and"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1227,
+      "section": "6.3 Avatar Reconstruction in Unity",
+      "text": "Camera'SceneR = LevelledSceneR UnityLevelledR Camera'UnityR"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1237,
+      "section": "6.4 Scene Reconstruction in Unity",
+      "text": "That rotation defines the levelled frame. The levelled frame keeps the origin and the handedness of the Unity frame of equation (6.1), whose axes this chapter calls the display axes, and its upward axis is the calibrated gravity direction. Written with both of its frames the rotation is UnityLevelledR, which is proper, so the levelling turns the reconstruction without changing the handedness of the frame."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1238,
+      "section": "6.4 Scene Reconstruction in Unity",
+      "text": "The receiver then raises the whole reconstruction so that the drawn floor sits at zero height. That raise defines the scene frame, the coordinate system Unity itself draws in. The scene frame carries the axes of the levelled frame exactly, because the raise turns nothing, and its origin sits on the drawn floor, a vertical distance d below the origin of the levelled frame. Taking that distance as the one parameter of the relation, the two frames are related by"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1239,
+      "section": "6.4 Scene Reconstruction in Unity",
+      "text": "LevelledSceneT = I30d001"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1260,
+      "section": "6.5 Worked Example: Frame 548",
+      "text": "UnityLevelledR = 1.000.020.01\u22120.020.850.530.01\u22120.530.85 LevelledP = UnityLevelledR  UnityP = (0.00, 0.03, 0.44) m SceneP1 = LevelledSceneT  LevelledP1 SceneP = (0.00, 0.75, 0.44) m"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1307,
+      "section": "7.2 Object Reconstruction Accuracy",
+      "text": "For reconstructed samples p_i, i = 1, ..., n, within one segment and expressed in the levelled frame of Section 6.4, orthogonal least-squares line fitting uses the sample mean c and covariance C:"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1317,
+      "section": "7.2 Object Reconstruction Accuracy",
+      "text": "The measured point is the ArUco marker centre on the cube face, at both physically measured endpoints and in the reconstruction. The physical separations are tape measurements made by the author between marker-centre positions, at a resolution of 1 millimetre, and the physical setup is the same in both recordings. The physical route is not registered into the world frame of the desk-marker calibration, nor into the levelled frame derived from it, so no physical path or physical waypoint coordinate is drawn or reported."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1344,
+      "section": "7.2 Object Reconstruction Accuracy",
+      "text": "Figure 7.1. Rail recording: accepted marker-centre samples with the four waypoint positions marked. The upper panel views the trajectory from above at equal scale on both axes. The lower panel is the elevation, whose vertical axis is scaled independently so that the lift between W2 and W3 remains visible. The samples are drawn in the levelled frame of Section 6.4. The physical route is not registered into that frame and is not drawn."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1374,
+      "section": "7.2 Object Reconstruction Accuracy",
+      "text": "Figure 7.2. Handover recording: accepted marker-centre samples with the four waypoint positions marked, drawn in the levelled frame and using the panels and conventions of Figure 7.1."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1378,
+      "section": "7.2 Object Reconstruction Accuracy",
+      "text": "Segment lengths are invariant under the levelling rotation that carries the display axes of equation (6.1) into the levelled frame, because that rotation is proper and preserves distance, so the choice between the two frames cannot change Tables 7.1 and 7.2. The fitted-line scatter components, the line tilt and the axis-dominance checks used to confirm that each waypoint sits in its intended task phase are properties of the levelled frame and are not invariant."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1381,
+      "section": "7.3 Human Reconstruction Accuracy under Valid Landmark Measurements",
+      "text": "The corresponding Unity joints are the forearm bone head for the elbow and the hand bone head for the wrist. Their saved world positions include display filtering and rig mapping. The calibrated camera mapping, gravity levelling and recording-specific floor translation carry the measured landmarks into {Scene}, where the logged rig joints are expressed. The {Levelled} coordinates used elsewhere share these axes but omit the floor translation. Frame identifiers match exactly, and timestamp and pelvis correspondence checks verify the saved capture. For joint k at frame t, positional error is"
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1410,
+      "section": "7.3 Human Reconstruction Accuracy under Valid Landmark Measurements",
+      "text": "Figure 7.3. Single-hand task: measured and rendered elbow and wrist trajectories in the Unity scene frame of Section 6.4, which shares the axes of the levelled frame of Figures 7.1 and 7.2 and differs from it only by the floor-drop translation. Only the frames used in Table 7.3 are shown. Separate points preserve gaps in the saved capture. The plot axes labelled Unity x, Unity y and Unity z carry scene components, and the vertical plot axis is scene y."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1451,
+      "section": "7.3 Human Reconstruction Accuracy under Valid Landmark Measurements",
+      "text": "Reconstruction places the wrist a median of 15.77 centimetres from the marker centre while the right hand holds the cube alone, and 14.08 centimetres while the left hand holds it alone. Both reconstructed positions are expressed in the levelled frame, and their separation is a distance, so it does not depend on that choice. Both medians sit within about two centimetres of the physical reference, so the reconstructed human-object separation is of the correct magnitude."
+    },
+    {
+      "part": "word/document.xml",
+      "paragraph": 1835,
+      "section": "9.7 Scope of the Evaluation",
+      "text": "Every levelled height and tilt of the thesis rests on it (Section 2.2.2)"
+    }
+  ]
+}

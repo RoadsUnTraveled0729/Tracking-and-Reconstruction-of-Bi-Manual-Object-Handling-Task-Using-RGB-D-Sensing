@@ -1,0 +1,36 @@
+{
+  "page": 14,
+  "extraction_page": 13,
+  "source_bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_arms_outstretched_pose_test_arm_test.bag",
+  "bound_files": {
+    "inference_frame_map": {
+      "path": "presentation/defense_2026/bank_processing/p13/inference_frame_map.json",
+      "sha256": "b297202d33e5c35f053afee349efbf2fd21bc15533ae2f4a5337018dfbf402bd"
+    },
+    "source_manifest": {
+      "path": "presentation/defense_2026/bank_processing/p13/source_manifest.json",
+      "sha256": "5ef5d079228fd027df9edc3e9c44397c8f253865fa36da96a1e645c00fbdfe21"
+    },
+    "raw_csv": {
+      "path": "presentation/defense_2026/bank_processing/p13/landmarks_raw.csv",
+      "sha256": "427e4d224915f4ba11294e77459548cc571c8e5aa82c072a011138c13d96709e"
+    },
+    "raw_meta": {
+      "path": "presentation/defense_2026/bank_processing/p13/landmarks_raw.meta.json",
+      "sha256": "17f853a5d363ab7afbcc0ac393d88aca94408310c52ff82b31e31348a24d53de"
+    },
+    "filtered_csv": {
+      "path": "presentation/defense_2026/bank_processing/p13/landmarks_filtered.csv",
+      "sha256": "efd1f34d7af0d0e4848c59ec838038b8a89b795f14282550da856f3d641a5839"
+    },
+    "filtered_meta": {
+      "path": "presentation/defense_2026/bank_processing/p13/landmarks_filtered.meta.json",
+      "sha256": "d1fd688e7f6f3253f85a908b2337248a601e92286fdf9dc865b6dc06dee4b8cb"
+    },
+    "tracking_precondition_full": {
+      "path": "presentation/defense_2026/bank_processing/p13/tracking_precondition_full.json",
+      "sha256": "5aee0198bcb01aaeea6faf67f3d085ec2e5738452470c96089dadb4528b5723d"
+    }
+  },
+  "note": "This page reuses an existing exact-inference extraction by reference; MediaPipe was not re-run and the referenced files are not rewritten."
+}

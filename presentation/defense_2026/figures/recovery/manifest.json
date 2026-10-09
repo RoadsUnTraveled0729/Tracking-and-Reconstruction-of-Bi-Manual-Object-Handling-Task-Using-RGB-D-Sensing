@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "created": "2026-09-29",
+  "purpose": "Defence page 30 recovery examples (DECISIONS.md D-253): thesis Figures 7.8-7.9 regenerated with the photograph faded and larger panel text.",
+  "generator": "eval/failure/make_label_compare_fig.py",
+  "generator_sha256": "bfcbb55ab32e34c5a4d3232182836364726bfc47b7f0f67d774777cdc3274bd9",
+  "fade": 0.5,
+  "inputs": [
+    {
+      "path": "eval/labels/frames_r5/labels.json",
+      "sha256": "e95f134ce45bb3d4d7eef5b8dc8ce941d2fe5f534d695a0f1365bad11bc2659c"
+    },
+    {
+      "path": "eval/labels/frames_r5/meta.json",
+      "sha256": "8fff9a16d815d8dd04bd01a3192e6d31a377b9bcc9881cdebff69b574450ff55"
+    },
+    {
+      "path": "eval/output/recovery_r5/angles_plain.csv",
+      "sha256": "0340f10c234601f07092c811b3eb9236c3a91da016bd0ccc28e80a688bd8cc5a"
+    },
+    {
+      "path": "eval/output/recovery_r5/angles_recovery.csv",
+      "sha256": "5d55004cff735d4abf9b3c5e467e4011af85fcc8a98a5ea68a9a1bf8cee36af9"
+    },
+    {
+      "path": "eval/output/recovery_r5/failure_mask.csv",
+      "sha256": "aeb6e8a025f26ae9a71be8b08fc68f5b1f10ecfcc1b679bb378e03833b67b363"
+    },
+    {
+      "path": "eval/reports/r5_recovery_labeled.json",
+      "sha256": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820"
+    },
+    {
+      "path": "eval/reports/recording_20260825_222315_inspection.json",
+      "sha256": "ddc130d9d4be5efa2aed955cc1b661c2a45826a9ec0a9a9ca3e5e88f62dccd88"
+    },
+    {
+      "path": "eval/reports/recording_20260825_222315_offset_fit.json",
+      "sha256": "d5b9a2cb26187aba539ee0e1ee502c188f79d72492ae1235a69f7fcbaace8ade"
+    },
+    {
+      "path": "eval/output/scene_calibration_r5c.json",
+      "sha256": "48d4a24948cd4491e28cfdd95d3180ae91333916601e3607e423b6d75a72807e"
+    }
+  ],
+  "inputs_not_hashed": "the landmark and object track files read by recovery_core.load_tracks (same generator run, same recording stem)",
+  "outputs": [
+    {
+      "frame": 1890,
+      "side": "right",
+      "thesis_figure": "Figure 7.9",
+      "thesis_file": "writing/v9/figures/ch7_natural_proxy_right.png",
+      "thesis_file_sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "thesis_reproduction": "the same command without --fade, --titles, --bottom, --strip-ink and --text-scale, with --legend tr, reproduces thesis_file byte for byte",
+      "command": "/home/luo/anaconda3/bin/python -B eval/failure/make_label_compare_fig.py --stem recording_20260825_222315 --frames 1890 --crop 130 0 560 480 --legend none --text-scale 3.8 --fade 0.5 --titles 'Plain solve' Recovery --bottom '{d:.1f} cm' --strip-ink dark --out presentation/defense_2026/figures/recovery",
+      "stdout": "[1890 right] plain_fk 14.03 cm | recovery_fk 5.01 cm | recovered 15.20 cm | measured 1.12 cm   (report: plain_fk 14.03, recovery_fk 5.01, recovered 15.20)\n[+] wrote presentation/defense_2026/figures/recovery/r5_label_compare_f1890.png (1736x1394)",
+      "frame_image": "eval/labels/frames_r5/f01890.png",
+      "frame_image_sha256": "bb0b9c7fa6f6d01b23279cca203f4fc274cbcada729358a0348c228ca6f74639",
+      "path": "presentation/defense_2026/figures/recovery/r5_label_compare_f1890.png",
+      "sha256": "696404c767de3f4d08516f92b41c86458af305c25d657e214daeece906f8a91e",
+      "pixel_size": [
+        1736,
+        1394
+      ]
+    },
+    {
+      "frame": 1462,
+      "side": "left",
+      "thesis_figure": "Figure 7.8",
+      "thesis_file": "writing/v9/figures/ch7_natural_proxy_left.png",
+      "thesis_file_sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "thesis_reproduction": "the same command without --fade, --titles, --bottom, --strip-ink and --text-scale, with --legend tl, reproduces thesis_file byte for byte",
+      "command": "/home/luo/anaconda3/bin/python -B eval/failure/make_label_compare_fig.py --stem recording_20260825_222315 --frames 1462 --crop 150 0 470 440 --legend none --text-scale 4.4 --fade 0.5 --titles 'Plain solve' Recovery --bottom '{d:.1f} cm' --strip-ink dark --out presentation/defense_2026/figures/recovery",
+      "stdout": "[1462 left] plain_fk 14.02 cm | recovery_fk 13.65 cm | recovered 13.65 cm | measured n/a   (report: plain_fk 14.02, recovery_fk 13.65, recovered 13.65)\n[+] wrote presentation/defense_2026/figures/recovery/r5_label_compare_f1462.png (1296x1252)",
+      "frame_image": "eval/labels/frames_r5/f01462.png",
+      "frame_image_sha256": "897b9dac9b253e2b6631091d7cd1d3d6409280e77087be5cb312832e3d71be6f",
+      "path": "presentation/defense_2026/figures/recovery/r5_label_compare_f1462.png",
+      "sha256": "85ebda818af6438435e8fe00405f741b8550d97cf6a6d50588649cc50dc2d11a",
+      "pixel_size": [
+        1296,
+        1252
+      ]
+    }
+  ]
+}

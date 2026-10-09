@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "exporter_sha256": "fce74eec1baa29c2eeca9afbf8f2881ec18910cd779eb4064e0d08430f385e4f",
+  "pdf_sha256": "20c358ec0ec232fa4a6d3af1c6a449c7447f50347d3354677edf8557ebb9a17d",
+  "actual_boundary_check": {
+    "authored_whitespace_boundaries": 19628,
+    "missing_authored_boundaries": 0,
+    "additional_extraction_linewrap_boundaries": 34,
+    "unjustified_same_line_boundaries": 0
+  },
+  "probes": {
+    "lost_word_gap": {
+      "status": "PASS",
+      "rejected": "PDF word boundaries differ: missing authored gaps [6338]; added same-line gaps []"
+    },
+    "same_line_split": {
+      "status": "PASS",
+      "rejected": "PDF word boundaries differ: missing authored gaps []; added same-line gaps [1222]"
+    },
+    "changed_character": {
+      "status": "PASS",
+      "rejected": "Whole PDF text differs at normalized character 1064: expected 'sred,greenandbluecolourplusdepth.Thecolourimagetellsthedetectorwhereabodylandmarkappears.Thealignedd', got 'tred,greenandbluecolourplusde"
+    }
+  }
+}

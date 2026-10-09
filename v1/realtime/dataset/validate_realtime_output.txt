@@ -1,0 +1,20 @@
+[PASS] person dump covers the recording — 899 frames, strictly increasing
+[PASS] object dump covers the recording — 899 frames
+
+  causal-vs-offline angle difference (deg, after warm-up):
+    root xyz    median   0.24  p95   1.08  max    2.89
+    R shoulder  median   0.38  p95   1.72  max    4.13
+    R elbow     median   0.00  p95   0.96  max    2.24
+    L shoulder  median   0.64  p95   3.24  max   15.27
+    L elbow     median   0.00  p95   2.18  max    9.97
+[PASS] causal person angles track the offline solve — worst joint-group median 0.64 deg (<5), p95 3.24 deg (<20)
+[PASS] causal lag is a few frames — cross-correlation peak at 3 frames (100 ms, r=0.998)
+[PASS] person joints live after warm-up — 97.3% of frames all-13-joints live
+[PASS] pelvis matches offline — median 2.4 mm, p95 7.4 mm
+[PASS] object live coverage close to offline detections — rt live 863 vs offline detected 877
+[PASS] object position matches offline filter — median 6.2 mm, p95 13.9 mm (causal vs zero-phase smoothing)
+[PASS] person per-frame compute fits the 30 fps budget — p99 30.4 ms (budget 33.3)
+[PASS] object per-frame compute fits the 30 fps budget — p99 13.7 ms (budget 33.3)
+[PASS] PSI1 shm region well-formed
+
+ALL PASS

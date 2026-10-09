@@ -1,0 +1,43 @@
+{
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "percentile": "numpy.percentile, linear interpolation",
+  "sources": [
+    {
+      "path": "eval/common/paths.py",
+      "sha256": "1271913fdb926ead2cb3d801308bba1a0e7c9876fe417fdb707d2e99c237b0ef"
+    },
+    {
+      "path": "eval/gt/eval_rail_scenario.py",
+      "sha256": "f7cdabf62223422800818e7b4e13782cf58587f6ce389044a0254776e800887b"
+    },
+    {
+      "path": "eval/offset/carry.py",
+      "sha256": "716ce318a6ab762c21447cc2722feb15d98d2f968882707a8f8420b038c9a33c"
+    },
+    {
+      "path": "eval/output/recording_20260831_065553_scaled_object_world_filtered_clean.csv",
+      "sha256": "a96561ddc789b14be74a2acdf768b44c8d6faeeef8134f033d25fc69adbf7d4a"
+    },
+    {
+      "path": "eval/output/recording_20260909_000024_scaled_object_world_filtered_clean.csv",
+      "sha256": "7f00506a2b9f01fd21b4852c7edac8817b79260b230dcda5f65af316b48ecabd"
+    },
+    {
+      "path": "eval/output/scene_calibration_r6bc.json",
+      "sha256": "b889d84be75fed40b6add38f0b247fc34f362392a5e705949c69587ae235f5c6"
+    },
+    {
+      "path": "eval/output/scene_calibration_r7c.json",
+      "sha256": "5516a93781e05f109ede67883932310b9bfc4727f7c9479ec34ae2c0210d96cc"
+    },
+    {
+      "path": "v1/kinematics/root_frame.py",
+      "sha256": "8cd5782ab0e95701ab2c02aee5b7b1960e33c49987a49181bb114ad06e5d0875"
+    },
+    {
+      "path": "writing/v8/condensed/scripts/evaluate_ch7_object.py",
+      "sha256": "56214e1682fd24c1d18251d656f487b114e04254fd2cf5dcda54841959463f60"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Classic axis color contract",
+      "passed": true
+    },
+    {
+      "name": "Sensor-facing T-pose root differs from identity by a half-turn about Y",
+      "passed": true
+    },
+    {
+      "name": "Camera to Camera-prime flips Y only and reverses handedness",
+      "passed": true
+    },
+    {
+      "name": "Camera-prime point above optical origin projects above principal point",
+      "passed": true
+    },
+    {
+      "name": "Camera-prime positive depth retains forward optical depth",
+      "passed": true
+    },
+    {
+      "name": "Invalid or behind-camera point is rejected [1, 1, -1]",
+      "passed": true
+    },
+    {
+      "name": "Invalid or behind-camera point is rejected [nan, 0, 1]",
+      "passed": true
+    },
+    {
+      "name": "Invalid or behind-camera point is rejected [0, 0, 0]",
+      "passed": true
+    },
+    {
+      "name": "Order test uses noncommuting rotations",
+      "passed": true
+    },
+    {
+      "name": "Measured root agrees with saved Euler orientation to recorded precision",
+      "passed": true,
+      "max_abs_error": 1.0942800335103642e-06
+    },
+    {
+      "name": "Arm basis uses independently composed noncommuting Y-Z-X rotations",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "name": "Root origins are actual right hips, not midpoints",
+      "passed": true,
+      "max_abs_error_m": 0.0,
+      "min_origin_to_midpoint_m": 0.10783369716025688
+    },
+    {
+      "name": "Frame/time joins retain exact filtered source timestamp",
+      "passed": true,
+      "max_error_s": 0.0
+    },
+    {
+      "name": "All moving-lesson states are measured and interval is exact100-249",
+      "passed": true
+    },
+    {
+      "name": "Playback mapping preserves every source frame twice with two-second holds",
+      "passed": true
+    },
+    {
+      "name": "No wrist-orientation matrix is introduced",
+      "passed": true
+    }
+  ],
+  "source_manifest_sha256": "67c385e80bd67b01fa40b81cc91c34ecc84691be4f2a1652f0534a012f695d71",
+  "shared_renderer_sha256": "51f20372c946b2db57b4be108bd3c1ad546c8a56942f64b3ee550e9af04e5400",
+  "scope": "Numeric source joins, explicit basis semantics and projection; no anatomical accuracy claim. Failure-state lessons and fresh Unity captures have separate provenance."
+}

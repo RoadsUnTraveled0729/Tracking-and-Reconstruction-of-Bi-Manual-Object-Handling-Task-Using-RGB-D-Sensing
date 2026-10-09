@@ -1,0 +1,99 @@
+{
+ "stem": "recording_20260825_070152",
+ "per_hand": {
+  "left": {
+   "held_frames": 158,
+   "median_cm": 13.4,
+   "p95_cm": 17.3,
+   "drift_theilsen_cm_per_min": -20.96,
+   "drift_ci_cm_per_min": [
+    -24.49,
+    -18.3
+   ],
+   "first_half_median_cm": 13.9,
+   "second_half_median_cm": 12.9,
+   "episodes": [
+    {
+     "frames": [
+      674,
+      832
+     ],
+     "n": 158,
+     "median_cm": 13.4,
+     "std_cm": 1.87,
+     "slope_cm_per_min": -21.0
+    }
+   ],
+   "grip_vector_mu_cm": [
+    1.6,
+    -2.3,
+    13.3
+   ],
+   "grip_vector_std_cm": [
+    3.2,
+    1.2,
+    1.4
+   ]
+  },
+  "right": {
+   "held_frames": 494,
+   "median_cm": 14.6,
+   "p95_cm": 17.9,
+   "drift_theilsen_cm_per_min": 4.44,
+   "drift_ci_cm_per_min": [
+    3.52,
+    5.33
+   ],
+   "first_half_median_cm": 14.5,
+   "second_half_median_cm": 16.9,
+   "episodes": [
+    {
+     "frames": [
+      254,
+      388
+     ],
+     "n": 134,
+     "median_cm": 14.3,
+     "std_cm": 0.64,
+     "slope_cm_per_min": 20.8
+    },
+    {
+     "frames": [
+      478,
+      713
+     ],
+     "n": 235,
+     "median_cm": 14.6,
+     "std_cm": 1.54,
+     "slope_cm_per_min": 13.8
+    },
+    {
+     "frames": [
+      1028,
+      1112
+     ],
+     "n": 85,
+     "median_cm": 17.0,
+     "std_cm": 2.04,
+     "slope_cm_per_min": -112.0
+    }
+   ],
+   "grip_vector_mu_cm": [
+    -3.6,
+    -2.0,
+    7.8
+   ],
+   "grip_vector_std_cm": [
+    6.8,
+    3.9,
+    9.1
+   ]
+  }
+ },
+ "manipulation_window": [
+  224,
+  1314
+ ],
+ "error_budget_cm": "PENDING SURVEY",
+ "consistency_near_path": "PENDING SURVEY"
+}

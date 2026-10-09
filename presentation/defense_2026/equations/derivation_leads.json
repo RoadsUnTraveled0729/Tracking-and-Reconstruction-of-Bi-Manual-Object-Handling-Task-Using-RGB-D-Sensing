@@ -1,0 +1,443 @@
+{
+  "_about": {
+    "verified": "2026-09-30",
+    "source": "writing/v9/zh/src/Chapter_3..7 exports (frozen V9); each lead is the last sentence of the paragraph immediately before the equation row. 'line' is the 1-based file line of that paragraph (equal to the export's own paragraph number). 'source_text' is the exact export text; 'text' strips only the markup named in 'note'. 'compiled_pdf_check' compares letters and digits with pdftotext output of writing/v9/Thesis_V9.pdf PDF pages 35-135.",
+    "numbering": "Compiled numbering. Chapter 4 of the export is stale: its (4.2) inverse-anchor display is unnumbered inline in the compiled PDF and its (4.3) is compiled Eq. 4.2; there is no compiled Eq. 4.3."
+  },
+  "eq_3_1": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 9,
+    "text": "If p is a landmark position in the sensor frame, its position q in the y-up camera frame is",
+    "source_text": "If p is a landmark position in the sensor frame, its position q in the y-up camera frame is",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_2": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 15,
+    "text": "The translation part is the 3-vector APBORG, the position of the origin of B expressed in A, and the two combine into the 4 by 4 homogeneous transformation matrix BAT:",
+    "source_text": "The translation part is the 3-vector [ APBORG], the position of the origin of B expressed in A, and the two combine into the 4 by 4 homogeneous transformation matrix [BAT]:",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "DIFFERS from the compiled PDF text in: The translation part is the 3-vector | , the position of the origin of B expressed in A, and the two combine into the 4 by 4 homogeneous transformation matrix",
+    "compiled_text": "With the origin of B expressed in A as the translation part APBORG, the two combine into the 4 by 4 homogeneous transformation matrix BAT:",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text; the export sentence differs from the compiled thesis; compiled_text is transcribed from the compiled PDF, PDF page 37, with inline math flattened in the export style, and is the wording to quote on a slide."
+  },
+  "eq_3_3": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 17,
+    "text": "Running the rotation the other way expresses a measured segment direction in the coordinates of the child frame B:",
+    "source_text": "Running the rotation the other way expresses a measured segment direction in the coordinates of the child frame B:",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_4": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 19,
+    "text": "The chain frames sit at different places, so a landmark moves between them by the full transformation of equation (3.2), whose inverse is",
+    "source_text": "The chain frames sit at different places, so a landmark moves between them by the full transformation of equation (3.2), whose inverse is",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_5": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 24,
+    "text": "Each neighbouring pair in Figure 3.3(a) is related by its own homogeneous transformation:",
+    "source_text": "Each neighbouring pair in Figure 3.3(a) is related by its own homogeneous transformation:",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_6": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 26,
+    "text": "Chaining the three describes the right elbow frame directly in the y-up camera frame, the two shared frame labels cancelling,",
+    "source_text": "Chaining the three describes the right elbow frame directly in the y-up camera frame, the two shared frame labels cancelling,",
+    "family": "Camera' and the chain (3.1-3.6)",
+    "compiled_pdf_check": "DIFFERS from the compiled PDF text in: Chaining the three describes the right elbow frame directly in the y-up camera frame, the two shared frame labels cancelling,",
+    "compiled_text": "Chaining the three describes the right elbow frame directly in the y-up camera frame,",
+    "note": "the export sentence differs from the compiled thesis; compiled_text is transcribed from the compiled PDF, PDF page 38, with inline math flattened in the export style, and is the wording to quote on a slide."
+  },
+  "eq_3_7": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 38,
+    "text": "The x axis points along the hip line toward the subject's right, and the hat marks a unit vector.",
+    "source_text": "The x axis points along the hip line toward the subject's right, and the hat marks a unit vector.",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_8": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 40,
+    "text": "The second input is the spine-side vector from the right hip up to the right shoulder.",
+    "source_text": "The second input is the spine-side vector from the right hip up to the right shoulder.",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_9": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 43,
+    "text": "The z axis is the normalized cross product of the two inputs:",
+    "source_text": "The z axis is the normalized cross product of the two inputs:",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_10": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 46,
+    "text": "The y axis closes the frame with a second cross product.",
+    "source_text": "The y axis closes the frame with a second cross product.",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_11": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 49,
+    "text": "The three axes assemble into the root rotation matrix, its columns in the y-up camera-frame order right, up, forward.",
+    "source_text": "The three axes assemble into the root rotation matrix, its columns in the y-up camera-frame order right, up, forward.",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_12": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 51,
+    "text": "The right hip is the origin of the root frame, Camera'PL24ORG =  Camera'P24, so the three axes fill in the first transformation of equation (3.5).",
+    "source_text": "The right hip is the origin of the root frame, [ Camera'PL24ORG =  Camera'P24], so the three axes fill in the first transformation of equation (3.5).",
+    "family": "Torso and root frame (3.7-3.12)",
+    "compiled_pdf_check": "prose outside inline math matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_3_13": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 68,
+    "text": "This fills in the second transformation of equation (3.5):",
+    "source_text": "This fills in the second transformation of equation (3.5):",
+    "family": "Shoulder and elbow frames (3.13-3.14)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_14": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 71,
+    "text": "The third transformation of equation (3.5) is then",
+    "source_text": "The third transformation of equation (3.5) is then",
+    "family": "Shoulder and elbow frames (3.13-3.14)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_15": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 76,
+    "text": "In the matrix product the rotation applied first sits nearest the column vector, so the convention reads",
+    "source_text": "In the matrix product the rotation applied first sits nearest the column vector, so the convention reads",
+    "family": "Root Euler angles (3.15-3.17)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_16": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 78,
+    "text": "Multiplied out, with c for cosine and s for sine, the product is the matrix this section reads its angles from:",
+    "source_text": "Multiplied out, with c for cosine and s for sine, the product is the matrix this section reads its angles from:",
+    "family": "Root Euler angles (3.15-3.17)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_3_17": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 80,
+    "text": "In the third column the shared factor cx cancels in the two-argument arctangent and leaves the y angle, and the second row leaves the z angle in the same way:",
+    "source_text": "In the third column the shared factor [cx] cancels in the two-argument arctangent and leaves the y angle, and the second row leaves the z angle in the same way:",
+    "family": "Root Euler angles (3.15-3.17)",
+    "compiled_pdf_check": "DIFFERS from the compiled PDF text in: In the third column the shared factor | cancels in the two-argument arctangent and leaves the y angle, and the second row leaves the z angle in the same way:",
+    "compiled_text": "The three angles follow from its entries:",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text; the export sentence differs from the compiled thesis; compiled_text is transcribed from the compiled PDF, PDF page 45, with inline math flattened in the export style, and is the wording to quote on a slide."
+  },
+  "eq_3_18": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 87,
+    "text": "They separate into swing and twist [44], with the twist innermost:",
+    "source_text": "They separate into swing and twist [44], with the twist innermost:",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "prose outside inline math matches the compiled PDF text",
+    "compiled_text": "They separate into swing and twist [52], with the twist innermost:",
+    "note": "the export sentence differs from the compiled thesis; compiled_text is transcribed from the compiled PDF, PDF page 46, with inline math flattened in the export style, and is the wording to quote on a slide."
+  },
+  "eq_3_19": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 89,
+    "text": "This column is the upper arm direction L12a of the elbow frame described in the shoulder frame,",
+    "source_text": "This column is the upper arm direction [ L12a] of the elbow frame described in the shoulder frame,",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_3_20": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 94,
+    "text": "Its y component is sz, so",
+    "source_text": "Its y component is [sz], so",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_3_21": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 96,
+    "text": "The x and z components share the factor cz, which cancels in the two-argument arctangent:",
+    "source_text": "The x and z components share the factor [cz], which cancels in the two-argument arctangent:",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_3_22": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 99,
+    "text": "Its input and output are described in the shoulder frame L12:",
+    "source_text": "Its input and output are described in the shoulder frame L12:",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "omission_spans": [
+      "L12"
+    ],
+    "note": "omission_spans lists inline-math symbols that the export prints without bracket markup; a slide shows each as the omission mark (D-292)."
+  },
+  "eq_3_23": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 101,
+    "text": "Under a twist tt, its unit direction in the (y, z) plane is \u2212sin tt, cos tt, so the twist reads",
+    "source_text": "Under a twist [tt], its unit direction in the (y, z) plane is [\u2212sin tt, cos tt], so the twist reads",
+    "family": "Shoulder swing and twist (3.18-3.23)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_3_24": {
+    "file": "writing/v9/zh/src/Chapter_3_Kinematic_Modeling.txt",
+    "line": 106,
+    "text": "The unit forearm direction there is L14g = L14Camera'RT  Camera'P16 \u2212  Camera'P14 Camera'P16 \u2212  Camera'P14, and its swing is read from the components of L14g as at the shoulder:",
+    "source_text": "The unit forearm direction there is [ L14g = L14Camera'RT  Camera'P16 \u2212  Camera'P14 Camera'P16 \u2212  Camera'P14], and its swing is read from the components of [ L14g] as at the shoulder:",
+    "family": "Elbow coordinates (3.24)",
+    "compiled_pdf_check": "prose matches the compiled PDF, PDF page 48, by manual comparison; pdftotext interleaves the inline math, which defeats the automatic match",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_4_1": {
+    "file": "writing/v9/zh/src/Chapter_4_Object_Tracking.txt",
+    "line": 8,
+    "text": "The chain must deliver ObjectWorldT, the object as seen from the world, and only one path connects the two frames:",
+    "source_text": "The chain must deliver [ObjectWorldT], the object as seen from the world, and only one path connects the two frames:",
+    "family": "Object pose in World and track cleaning (4.1-4.2)",
+    "compiled_pdf_check": "prose matches the compiled PDF, PDF page 55, by manual comparison; pdftotext interleaves the inline math, which defeats the automatic match",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_4_2": {
+    "file": "writing/v9/zh/src/Chapter_4_Object_Tracking.txt",
+    "line": 24,
+    "text": "It keeps a sample only if the marker was detected, the pose is finite, and the step from the last kept sample is no larger than the task's slow movement can produce in the time between the two:",
+    "source_text": "It keeps a sample only if the marker was detected, the pose is finite, and the step from the last kept sample is no larger than the task's slow movement can produce in the time between the two:",
+    "family": "Object pose in World and track cleaning (4.1-4.2)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "the zh/src export numbers this equation (4.3); the compiled PDF numbers it (4.2) on PDF page 58."
+  },
+  "eq_5_1": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 32,
+    "text": "Writing MappedMarkerh for the position of the wrist in the mapped marker axes, the wrist of a holding hand satisfies",
+    "source_text": "Writing [\u200bMappedMarkerh] for the position of the wrist in the mapped marker axes, the wrist of a holding hand satisfies",
+    "family": "Grasp offset (5.1-5.4)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "zero-width spaces (U+200B) of the export removed; square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_5_2": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 35,
+    "text": "The displacement from the origin to the wrist is pulled into the mapped marker axes by the transpose, the operation of equation (3.3),",
+    "source_text": "The displacement from the origin to the wrist is pulled into the mapped marker axes by the transpose, the operation of equation (3.3),",
+    "family": "Grasp offset (5.1-5.4)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_3": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 42,
+    "text": "The rotation therefore drops out and the fit reduces to the mean of the observations,",
+    "source_text": "The rotation therefore drops out and the fit reduces to the mean of the observations,",
+    "family": "Grasp offset (5.1-5.4)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_4": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 44,
+    "text": "On each frame that contributes a clean observation, the estimate moves towards that observation by a small gain c,",
+    "source_text": "On each frame that contributes a clean observation, the estimate moves towards that observation by a small gain [c],",
+    "family": "Grasp offset (5.1-5.4)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_5_5": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 54,
+    "text": "Writing u for the memory of the upper arm and umeas for the direction measured on the current frame, the update on a frame where both ends are measured is",
+    "source_text": "Writing [u] for the memory of the upper arm and [umeas] for the direction measured on the current frame, the update on a frame where both ends are measured is",
+    "family": "Direction memory and wrist target (5.5-5.7)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_5_6": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 57,
+    "text": "A missing wrist whose elbow is measured is placed at the calibrated forearm length from the elbow, along the remembered forearm direction:",
+    "source_text": "A missing wrist whose elbow is measured is placed at the calibrated forearm length from the elbow, along the remembered forearm direction:",
+    "family": "Direction memory and wrist target (5.5-5.7)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_7": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 61,
+    "text": "On a failure frame of a holding hand, the lost wrist is replaced by the point that equation (5.1) predicts from the current object pose and the current offset:",
+    "source_text": "On a failure frame of a holding hand, the lost wrist is replaced by the point that equation (5.1) predicts from the current object pose and the current offset:",
+    "family": "Direction memory and wrist target (5.5-5.7)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_8": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 68,
+    "text": "The elbow is any point that satisfies both",
+    "source_text": "The elbow is any point that satisfies both",
+    "family": "Elbow circle and prior (5.8-5.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_9": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 71,
+    "text": "The law of cosines fixes its angle j at the shoulder, between the upper arm and the shoulder-to-wrist line:",
+    "source_text": "The law of cosines fixes its angle [j] at the shoulder, between the upper arm and the shoulder-to-wrist line:",
+    "family": "Elbow circle and prior (5.8-5.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_5_10": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 73,
+    "text": "Neither changes when the triangle turns about that line, so the foot is the centre pc of the circle and the perpendicular is its radius rc:",
+    "source_text": "Neither changes when the triangle turns about that line, so the foot is the centre [pc] of the circle and the perpendicular is its radius [rc]:",
+    "family": "Elbow circle and prior (5.8-5.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_5_11": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 75,
+    "text": "Every point of the circle is then",
+    "source_text": "Every point of the circle is then",
+    "family": "Elbow circle and prior (5.8-5.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_5_12": {
+    "file": "writing/v9/zh/src/Chapter_5_Pose_Recovery.txt",
+    "line": 78,
+    "text": "That point follows by removing from the memory its component along the shoulder-to-wrist line, which leaves the perpendicular part u\u22a5, and scaling that part to the radius:",
+    "source_text": "That point follows by removing from the memory its component along the shoulder-to-wrist line, which leaves the perpendicular part [u\u22a5], and scaling that part to the radius:",
+    "family": "Elbow circle and prior (5.8-5.12)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "note": "square brackets that delimit inline math removed; the export flattens inline math (frame labels run together), so take those symbols from the compiled PDF, not from this text."
+  },
+  "eq_6_1": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 37,
+    "text": "The swap S exchanges the second and third world coordinates into the display frame {Unity}; its second axis follows the desk marker normal until gravity alignment is applied,",
+    "source_text": "The swap S exchanges the second and third world coordinates into the display frame {Unity}; its second axis follows the desk marker normal until gravity alignment is applied,",
+    "family": "Mapping into Scene (6.1-6.3)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_6_2": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 40,
+    "text": "Collecting the three linear maps into one matrix, and the whole map into one homogeneous transformation,",
+    "source_text": "Collecting the three linear maps into one matrix, and the whole map into one homogeneous transformation,",
+    "family": "Mapping into Scene (6.1-6.3)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_6_3": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 43,
+    "text": "That pair is a rotation of minus ninety degrees about the x axis,",
+    "source_text": "That pair is a rotation of minus ninety degrees about the x axis,",
+    "family": "Mapping into Scene (6.1-6.3)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_6_4": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 50,
+    "text": "The spine bone takes the root rotation alone, and the chain composition adds one factor per joint,",
+    "source_text": "The spine bone takes the root rotation alone, and the chain composition adds one factor per joint,",
+    "family": "Rig chain and rest axes (6.4-6.5)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_6_5": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 53,
+    "text": "That rotation, taken one bone at a time, is",
+    "source_text": "That rotation, taken one bone at a time, is",
+    "family": "Rig chain and rest axes (6.4-6.5)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_6_6": {
+    "file": "writing/v9/zh/src/Chapter_6_System_Integration.txt",
+    "line": 74,
+    "text": "The full transformation from {Unity} to {Scene}, and its application to a world point after the swap, are",
+    "source_text": "The full transformation from {Unity} to {Scene}, and its application to a world point after the swap, are",
+    "family": "Gravity and floor (6.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_7_1": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 9,
+    "text": "Reconstructed length, absolute error, and relative error are defined by",
+    "source_text": "Reconstructed length, absolute error, and relative error are defined by",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_7_2": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 12,
+    "text": "For reconstructed samples p_i, i = 1, ..., n, within one segment and expressed in {Scene} of Section 6.4, orthogonal least-squares line fitting uses the sample mean c and covariance C:",
+    "source_text": "For reconstructed samples p_i, i = 1, ..., n, within one segment and expressed in {Scene} of Section 6.4, orthogonal least-squares line fitting uses the sample mean c and covariance C:",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "omission_spans": [
+      "p_i",
+      "c",
+      "C"
+    ],
+    "note": "omission_spans lists inline-math symbols that the export prints without bracket markup; a slide shows each as the omission mark (D-292)."
+  },
+  "eq_7_3": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 14,
+    "text": "This direction and the line through c minimize the squared perpendicular distances:",
+    "source_text": "This direction and the line through c minimize the squared perpendicular distances:",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_7_4": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 16,
+    "text": "The perpendicular distance of sample p_i is",
+    "source_text": "The perpendicular distance of sample p_i is",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text",
+    "omission_spans": [
+      "p_i"
+    ],
+    "note": "omission_spans lists inline-math symbols that the export prints without bracket markup; a slide shows each as the omission mark (D-292)."
+  },
+  "eq_7_5": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 53,
+    "text": "For joint k at frame t, positional error is",
+    "source_text": "For joint k at frame t, positional error is",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  },
+  "eq_7_6": {
+    "file": "writing/v9/zh/src/Chapter_7_Evaluation.txt",
+    "line": 101,
+    "text": "For method m, the deviation from the unmasked reference is",
+    "source_text": "For method m, the deviation from the unmasked reference is",
+    "family": "Evaluation measures (7.1-7.6)",
+    "compiled_pdf_check": "full sentence matches the compiled PDF text"
+  }
+}

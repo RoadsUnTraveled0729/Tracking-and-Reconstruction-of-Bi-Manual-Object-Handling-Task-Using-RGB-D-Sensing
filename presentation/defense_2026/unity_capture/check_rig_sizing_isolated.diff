@@ -1,0 +1,11 @@
+--- eval/unity_check/check_rig_sizing.py
++++ presentation/defense_2026/unity_capture/check_rig_sizing_isolated.py
+@@ -31,7 +31,7 @@
+ ROWS = {"upper_arm_R": "upper_arm_R", "upper_arm_L": "upper_arm_L",
+         "forearm_R": "forearm_R", "forearm_L": "forearm_L",
+         "torso": "torso_hip_to_midshoulder"}
+-SIZING_FLAG = "/tmp/r5_rig_sizing"   # IntegratedSceneReceiver.SizingOverridePath
++SIZING_FLAG = "/tmp/defense_axes_capture/r5_rig_sizing"   # IntegratedSceneReceiver.SizingOverridePath
+ 
+ npass = nfail = 0
+ 

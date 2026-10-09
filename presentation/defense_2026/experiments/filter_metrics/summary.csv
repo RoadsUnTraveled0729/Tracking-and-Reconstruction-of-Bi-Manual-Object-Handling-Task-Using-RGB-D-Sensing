@@ -1,0 +1,10 @@
+candidate,label,mode,shake_mm,fast_deviation_mm,lag_frames,lag_frames_subframe,lag_ms,lag_ms_subframe,xcorr_peak
+despiked_raw,Despiked raw,reference,6.383,0.0,0,0.0,,,1.0
+savgol_9_2,Savitzky-Golay 9/2,offline,3.2942,5.6361,0,0.0009,,,0.999151
+median_9,Median 9,offline,3.5106,7.4879,0,0.0489,,,0.998531
+butter_3hz_filtfilt,Butterworth 3 Hz filtfilt,offline,2.8566,6.5267,0,-0.0124,,,0.998892
+butter_2hz_filtfilt,Butterworth 2 Hz filtfilt,offline,2.5408,7.7329,0,-0.0277,,,0.998386
+butter_3hz_forward,Butterworth 3 Hz forward,causal,2.8844,20.4994,4,4.2654,133.43,142.28,0.998761
+oneeuro_0p05hz,One Euro 0.05 Hz,causal,2.0764,23.7745,6,5.5998,200.14,186.79,0.995362
+oneeuro_1hz,One Euro 1 Hz,causal,2.4795,14.6775,3,2.5599,100.07,85.39,0.998072
+ema_0p3,EMA alpha 0.3,causal,2.8633,11.6798,2,1.6454,66.71,54.89,0.998598

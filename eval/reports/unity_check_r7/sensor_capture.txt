@@ -1,0 +1,13 @@
+Sensor-view capture of the r7 recovery stream (run_unity_capture.py), launched 2026-09-09 00:48:56, finished 2026-09-09 00:50:32
+[run] torsoM override 0.5170 m (/tmp/r5_torso_m)
+[run] sender: /home/luo/anaconda3/bin/python3 /home/luo/Desktop/New_SandBox/eval/unity_check/send_scene_r5.py --stem recording_20260909_000024 --loop --dump-csv eval/output/unity_check_r7/integrated_stream.csv --angles-csv eval/output/recovery_r7/angles_recovery.csv
+[run] streaming 1499 frames; shm ready
+[run] editor launching (log /tmp/r5_unity_editor.log)
+[run] coverage reached: 1498/1499
+[run] stopping play mode
+[run] DONE: 1498 PNGs in /tmp/r5_frames for 1499 streamed frames (99.9%)
+EXIT 0
+--- receiver lines (editor log) ---
+[IntegratedSceneReceiver] torsoM override 0.576 -> 0.517 m (/tmp/r5_torso_m)
+[IntegratedSceneReceiver] torso 0.535 -> 0.517 m (x0.965)
+(from ~/.config/unity3d/Editor.log of the capture; the check ran with check_unity_log.py, 7 PASS 1 FAIL, see check_unity_log.txt)

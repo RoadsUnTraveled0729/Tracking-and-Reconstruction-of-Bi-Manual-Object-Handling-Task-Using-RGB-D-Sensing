@@ -1,0 +1,83 @@
+{
+  "scope": "Synchronized recorded-camera and calculated right-wrist traces; no new validation experiment",
+  "replaces_for_current_deck": "Separate unsynchronized camera/context and staged filter panels; originals retained",
+  "dimensions": [
+    1440,
+    1200
+  ],
+  "camera_native_dimensions": [
+    640,
+    480
+  ],
+  "fps": 30,
+  "speed": 0.5,
+  "initial_shared_hold_seconds": 3,
+  "event_shared_hold_seconds": 4,
+  "final_shared_hold_seconds": 5,
+  "specs": {
+    "filter_hampel_sync": {
+      "method": "hampel",
+      "axis": 2,
+      "first": 450,
+      "last": 549,
+      "event": 537
+    },
+    "filter_gap_sync": {
+      "method": "gap",
+      "axis": 0,
+      "first": 650,
+      "last": 749,
+      "event": 685
+    },
+    "filter_butterworth_sync": {
+      "method": "butter",
+      "axis": 2,
+      "first": 25,
+      "last": 179,
+      "event": null
+    },
+    "filter_one_euro_sync": {
+      "method": "oneeuro",
+      "axis": 2,
+      "first": 25,
+      "last": 179,
+      "event": null
+    },
+    "filter_savgol_sync": {
+      "method": "savgol",
+      "axis": 2,
+      "first": 25,
+      "last": 179,
+      "event": null
+    },
+    "filter_median_sync": {
+      "method": "median",
+      "axis": 2,
+      "first": 25,
+      "last": 179,
+      "event": null
+    }
+  },
+  "parameters": {
+    "hampel_window": 7,
+    "hampel_k": 3.0,
+    "hampel_floor": 0.02,
+    "max_gap": 5,
+    "edge_fill": 0,
+    "butter_order": 4,
+    "cutoff_hz": 3.0,
+    "smooth_window": 9,
+    "smooth_polyorder": 2,
+    "oneeuro_mincutoff": 0.05,
+    "oneeuro_beta": 1.0,
+    "fs": "derive from median recorded time_s differences"
+  },
+  "parameters_source": "FILTER_DEMO_BRIEF.json and preserved saved filter metadata",
+  "timing_status": "Editorial: 30fps quantization, 0.5x progression, and shared holds are not processing latency",
+  "clock": "Camera and curve use the same audited source frame and bag-relative timestamp",
+  "offline_scope": "Retrospective output appears at its sample time; this is not online availability",
+  "gap_scope": "Window 650-749 also contains single missing samples 674 and 678; the four-frame focus is 681-684",
+  "camera_overlay": "No new inferred wrist marker; original camera pixels are unchanged",
+  "source_audit": "presentation/defense_2026/media/provenance/recorded_context_source.json",
+  "source_audit_sha256": "6fc5c543a3461ee20253850f64df144686abb4a5d9fd70ed815b3db9c5350c9c"
+}

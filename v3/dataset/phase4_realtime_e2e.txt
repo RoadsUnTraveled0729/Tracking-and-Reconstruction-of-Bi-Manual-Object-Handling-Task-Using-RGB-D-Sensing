@@ -1,0 +1,11 @@
+bag: /home/luo/Desktop/New_SandBox/Video/recording_20260224_083945.bag
+strategy s2_quat_prediction, device cuda, paced playback; frames 883, person found 883, wall 30.7 s (28.7 fps sustained)
+per-stage latency ms (excluding 60 warmup frames):
+    stage     p50     p95     p99      max
+   detect    3.04    8.76    9.74    10.33
+    depth    0.11    0.12    0.14     0.20
+   filter    0.29    0.31    0.35     0.43
+ strategy    0.47    0.51    0.54     0.72
+  publish    0.02    0.02    0.02     0.02
+    total    3.95    9.65   10.65    11.25
+budget check: total p99 10.65 ms vs 33.3 ms -> PASS

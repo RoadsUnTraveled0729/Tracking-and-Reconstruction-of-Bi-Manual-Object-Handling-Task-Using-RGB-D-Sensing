@@ -1,0 +1,18 @@
+{
+  "_comment": "Grading and ranking parameters. The ranking rule is frozen (V3_DECISIONS.md D-003); changing it after Phase 4 starts requires a new decision entry and full re-grading.",
+  "latency": {
+    "warmup_frames": 60,
+    "percentiles": [50, 95, 99],
+    "budget_ms": 33.3
+  },
+  "sweep": {
+    "det_freq_values": [5, 15, 30]
+  },
+  "ranking": {
+    "hard_gates": ["latency_p99", "teleport_zero", "honesty_false_measured"],
+    "tie_break_scenario": "wrist_long",
+    "clean_metrics": ["second_diff_rms", "rms_vs_oracle_lag0", "best_lag"],
+    "clean_max_lag_frames": 10,
+    "_clean_note": "D-026: clean-window metrics from bench/grade_clean.py (lower is better; best_lag ranked as |lag|) RANK strategies and smoothers; they never disqualify. The three hard_gates above are unchanged and still come from grade.py on the S-type scenarios. clean_max_lag_frames 10 = MAX_LAG of eval/pipeline_smoothness/compare_film_vs_live.py (its DECISIONS.md PS-004); measured live lags there are 1-4 frames."
+  }
+}

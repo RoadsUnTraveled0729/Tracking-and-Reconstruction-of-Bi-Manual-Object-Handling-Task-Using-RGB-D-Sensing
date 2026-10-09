@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "slide": 33,
+  "kind": "fk_overlay_still",
+  "purpose": "Slide 33: the Python forward-kinematics skeleton drawn over the RGB frame (author request 2026-10-06, D-390).",
+  "asset": "presentation/defense_2026/media/p33_fk_overlay.png",
+  "dimensions": [
+    640,
+    480
+  ],
+  "sha256": {
+    "png": "8f34fb029a641aea0090da529e305eca07557f54fb035afb57b08c1f9c7835c4",
+    "source_mp4": "c7e634a5ec88f26029d2708947bfd1323e43f826d2107a03310a5b2ed69e7ad3"
+  },
+  "bytes": {
+    "png": 406404,
+    "source_mp4": 4658481
+  },
+  "recording": {
+    "stem": "recording_20260909_000024",
+    "alias": "r7 (handover)",
+    "bag": "Video/recording_20260909_000024.bag",
+    "archive_bag": "recordings/R7_rail_handover_two_hand_accepted_20260909_000024.bag",
+    "bag_bytes": 1382582283
+  },
+  "source_mp4": {
+    "path": "/tmp/claude-1000/-home-luo-Desktop-bimanual-tracking/fc6343b5-459a-44f8-8dc3-43f61ffff6eb/scratchpad/p3334/v1_overlay_r7/v1_overlay_baseline.mp4",
+    "kept_in_repo": false,
+    "frames": 1499,
+    "fps": 30,
+    "codec": "libx264 CRF 22 yuv420p (check_v1_overlay.py)",
+    "command": "/home/luo/anaconda3/bin/python -B eval/inspect/check_v1_overlay.py --stem recording_20260909_000024 --solver baseline --out /tmp/claude-1000/-home-luo-Desktop-bimanual-tracking/fc6343b5-459a-44f8-8dc3-43f61ffff6eb/scratchpad/p3334/v1_overlay_r7",
+    "cwd": "/home/luo/Desktop/bimanual-tracking",
+    "stdout_tail": [
+      "[solve] baseline done",
+      "[len] upper R 0.241 L 0.252  fore R 0.233 L 0.223 m",
+      "[fk] right wrist FK-vs-measured: median 0.9 cm, p95 1.9 cm (1492 frames)",
+      "[fk] left wrist FK-vs-measured: median 0.9 cm, p95 4.0 cm (1499 frames)",
+      "[plot] /tmp/claude-1000/-home-luo-Desktop-bimanual-tracking/fc6343b5-459a-44f8-8dc3-43f61ffff6eb/scratchpad/p3334/v1_overlay_r7/v1_check_plots.png",
+      "[video] /tmp/claude-1000/-home-luo-Desktop-bimanual-tracking/fc6343b5-459a-44f8-8dc3-43f61ffff6eb/scratchpad/p3334/v1_overlay_r7/v1_overlay_baseline.mp4 (1499 frames)"
+    ]
+  },
+  "frame": {
+    "index": 630,
+    "burned_in_label": "f630",
+    "time_s": 21.014543,
+    "decode": "OpenCV sequential read of frames 0..index; PNG pixels equal the decoded frame"
+  },
+  "why_this_frame": {
+    "statement": "Right hand holds the cube and nothing is occluded: inside the right-hand-alone interval, included for the right wrist in the spatial check, all landmarks measured, short root arrow clear of both arms (contact sheet of frames 600-780 viewed).",
+    "right_hand_alone_interval": [
+      426,
+      863
+    ],
+    "interval_source": "writing/v9/audit_evidence/ch7_restructured/spatial_check.json intervals.right.frames",
+    "pairs_row": {
+      "source": "writing/v9/audit_evidence/ch7_restructured/spatial_check_pairs.csv",
+      "side": "right",
+      "part": "right",
+      "included": 1,
+      "hold_distance_cm": 14.56,
+      "hold_radius_cm": 25.0
+    },
+    "landmark_src_codes": {
+      "left_shoulder_src": 0,
+      "right_shoulder_src": 0,
+      "left_elbow_src": 0,
+      "right_elbow_src": 0,
+      "left_wrist_src": 0,
+      "right_wrist_src": 0,
+      "left_hip_src": 0,
+      "right_hip_src": 0
+    }
+  },
+  "legend": {
+    "green": "measured MediaPipe landmarks (filtered, sensor frame)",
+    "red": "FK right arm (baseline ChainFallbackSolver angles)",
+    "blue": "FK left arm",
+    "magenta": "root forward arrow from the pelvis midpoint"
+  },
+  "not_used": {
+    "path": "eval/output/v1_check/v1_overlay_recovery.mp4",
+    "sha256": "0bd8c07b4ce310ed4a492a1e2dfecef68668fc6c0949334ff08bce3f51fd0b39",
+    "why": "R7 as well (1499 frames; frame 450 matches writing/v9/figures/src/r7_frame00450.png), but rendered with --recovery: object-derived wrist cross and failure banner not covered by the slide label"
+  },
+  "inputs": {
+    "eval/inspect/check_v1_overlay.py": "46e1b9f6ac1731c694bca162928222ca202dba243af261b32cbdf9212914cc07",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_filtered.csv": "3c3885d94daf8c6150727a280542bf60cdc69cb4a168344ad33894dda4420218",
+    "writing/v9/audit_evidence/ch7_restructured/spatial_check_pairs.csv": "2a61272b22bd4e64414811946bf79272d98e7a1949164645a6a5d44b01ed0563",
+    "writing/v9/audit_evidence/ch7_restructured/spatial_check.json": "a2d875b1a9fd0f30d90b3514f079a499209e3c0cab6fa21d212221313c4fd23f"
+  },
+  "generator": "presentation/defense_2026/anim/fk_overlay_still.py",
+  "generator_sha256": "7911c3f3b7358df9c33aea1c774ce3916a1d269bcc3f5f7735e7d7b4680e5a50"
+}

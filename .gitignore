@@ -1,0 +1,13 @@
+# Local runtime inputs and generated caches are not release source.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+Video/*.bag
+recordings/
+models/
+Unity/Library/
+Unity/Temp/
+Unity/Logs/
+Unity/obj/
+Unity/UserSettings/
+.git/

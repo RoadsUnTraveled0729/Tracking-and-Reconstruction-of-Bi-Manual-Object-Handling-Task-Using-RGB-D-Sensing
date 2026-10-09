@@ -1,0 +1,47 @@
+{
+  "baseline_directory": "equation_iteration2",
+  "final_directory": "equation_iteration2_final",
+  "baseline_assembled_docx_sha256": "00eb9037ca34c93838d1afa26c2ed196209cf7cdc2dc152b3595fe14999c6906",
+  "final_assembled_docx_sha256": "d99335e683b9cf2cebcfdf424be495a9b1d9f9a52a4fbd30c6815036c4996b14",
+  "numbered_equation_math_unchanged": true,
+  "numbered_equation_count": 28,
+  "unnumbered_display_math_unchanged": true,
+  "unnumbered_display_count": 21,
+  "worked_value_groups_unchanged": {
+    "ch3_frame533": true,
+    "ch4_frame533": true,
+    "ch4_gap": true,
+    "tabletop_model_vs_depth_fit": true
+  },
+  "frozen_implementation_and_data_hashes_unchanged": {
+    "v1/kinematics/root_frame.py": true,
+    "v1/kinematics/shoulder.py": true,
+    "v1/aruco/frames.py": true,
+    "v1/aruco/calibrate_scene.py": true,
+    "v1/mediapipe/filter_landmarks.py": true,
+    "v1/kinematics/occlusion_ext.py": true,
+    "v1/aruco/filter_object_track.py": true,
+    "eval/common/clean_object_track.py": true,
+    "Unity/Assets/Scripts/IntegratedSceneReceiver.cs": true,
+    "v1/mediapipe/output/recording_20260831_065553_landmarks_filtered.csv": true,
+    "eval/output/recording_20260831_065553_aruco_raw_scaled.csv": true,
+    "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json": true,
+    "eval/output/scene_calibration_r6bc.json": true,
+    "eval/output/recording_20260831_065553_scaled_object_world.csv": true,
+    "eval/output/recording_20260831_065553_scaled_object_world_filtered.csv": true,
+    "eval/output/recording_20260831_065553_scaled_object_world_filtered_clean.csv": true,
+    "eval/output/recording_20260831_065553_scaled_object_world_filtered.meta.json": true
+  },
+  "baseline_evidence_current_hashes": {
+    "ch2_ch4_assembled_extract.txt": "a7dfdb590f6578d3c44fd46f8b8899108a4d8a3b6db224bcc8e97a0397396050",
+    "ch2_ch4_input_hashes.json": "4149d4ad064a76af4f38931036cddf6e5b873d03d441ca32c1706b422b3d3f04",
+    "ch2_ch4_math_inventory.json": "5d0e74e5a8d2d43a1d9daa4562d1713a12afd0c9523bd7d949354f1964589bb4",
+    "ch2_ch4_report.md": "1265b7056b82733b12af43ce9d6b2717a30d03e4d798f23e9c55ba8816fde2f0",
+    "ch2_ch4_results.json": "05a391687a5444d4dcb9b4520351ee83f7f278495e701ad53b748c8a3d420177",
+    "ch2_ch4_verify.py": "cfef87f6b414478d07f8a94fe27b60862f84b35afb114a05b3ea392bd4ec4708"
+  },
+  "final_checks_passed": 80,
+  "final_checks_total": 80,
+  "interpretation": "Numbered/display equations and pinned experimental values are unchanged. Corrections are to surrounding definitions, two inline homogeneous relations, one inline unit-vector definition, stored-state enumeration, table/model semantics and captions. Removing a false alternative reference-pose example is not a changed experiment.",
+  "final_pdf_sha256": "4e1e00cd0dd6c6c93a2b20d9f9abd6a2996c646e6aae3d38a35ee9ef2c727f9d"
+}

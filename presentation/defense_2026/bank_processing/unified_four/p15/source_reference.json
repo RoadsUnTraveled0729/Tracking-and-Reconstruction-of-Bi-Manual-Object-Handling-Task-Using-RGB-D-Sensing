@@ -1,0 +1,36 @@
+{
+  "page": 15,
+  "extraction_page": 18,
+  "source_bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_arm_landmark_test_right_arm_test.bag",
+  "bound_files": {
+    "inference_frame_map": {
+      "path": "presentation/defense_2026/bank_processing/p18/inference_frame_map.json",
+      "sha256": "778ab9d7cc67964c3e6c44860d8a2da26868d8f430cb7820dcf29877840d8653"
+    },
+    "source_manifest": {
+      "path": "presentation/defense_2026/bank_processing/p18/source_manifest.json",
+      "sha256": "e8bf713238bf573114be658c43a09ba43e50b4e366f8ea385cd9def4a907391a"
+    },
+    "raw_csv": {
+      "path": "presentation/defense_2026/bank_processing/p18/landmarks_raw.csv",
+      "sha256": "3b3a26a9857f6a20cca8b3351775fd7ee7e0d3c9604009dc275ec3323e0c1c64"
+    },
+    "raw_meta": {
+      "path": "presentation/defense_2026/bank_processing/p18/landmarks_raw.meta.json",
+      "sha256": "a0a02f774bd41719326eb4cd99f8994ed1a9924b72421285717d9995f61eaa6b"
+    },
+    "filtered_csv": {
+      "path": "presentation/defense_2026/bank_processing/p18/landmarks_filtered.csv",
+      "sha256": "7bf86e0c1ea9e4e9663503808a6e1a8ebd17b840e579af0f6d9fb4db9039cc44"
+    },
+    "filtered_meta": {
+      "path": "presentation/defense_2026/bank_processing/p18/landmarks_filtered.meta.json",
+      "sha256": "369c62e34c8c3771676e9c8ff57225b29dd07ec4f357e62f6e7de0145e0357a8"
+    },
+    "tracking_precondition_full": {
+      "path": "presentation/defense_2026/bank_processing/p18/tracking_precondition_full.json",
+      "sha256": "a51875ed66a9ee35b73c474c9eef407f2bedb9d55d8e14ed790127775d2e8136"
+    }
+  },
+  "note": "This page reuses an existing exact-inference extraction by reference; MediaPipe was not re-run and the referenced files are not rewritten."
+}

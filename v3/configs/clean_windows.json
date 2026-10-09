@@ -1,0 +1,38 @@
+{
+  "_comment": "Clean-window set for V3 smoothness and accuracy scoring (D-025, UNCERTAIN: chosen for availability, not for coverage). Windows are the source windows of the four unified defence films, presentation/defense_2026/DECISIONS.md D-088. start and stop are 0-based colour-frame indices in playback order, stop INCLUSIVE (D-088: 180042 3-109 is 107 source frames). bag sha256 values match eval/recordings_archive/index.json. Bags are read-only. bag paths are repository-relative and resolve against the repository root (bench/paths.py repo_path; eval/recordings_archive/DECISIONS.md RA-002).",
+  "stop_inclusive": true,
+  "windows": [
+    {
+      "name": "right_elbow",
+      "bag": "recordings/ENSC498_right_elbow_bend_test_right_elbow.bag",
+      "sha256": "5e3e29709a3294887d45ebcbae92064f71e7fe4102f8f1445724ec03c5c7f517",
+      "start": 180,
+      "stop": 540,
+      "source": "defence page 16 (presentation/defense_2026/DECISIONS.md D-088)"
+    },
+    {
+      "name": "180042",
+      "bag": "recordings/ENSC498_right_arm_raise_cube_untouched_test_20260121_180042.bag",
+      "sha256": "fe20810a831ce1c2ac19257dc3220c416c51751b2f7fcfcd5a0a8aa26af506f9",
+      "start": 3,
+      "stop": 109,
+      "source": "defence page 14 (presentation/defense_2026/DECISIONS.md D-088; D-089 allows two raw-rejected wrist frames 25 and 53)"
+    },
+    {
+      "name": "right_arm_test",
+      "bag": "recordings/ENSC498_right_arm_landmark_test_right_arm_test.bag",
+      "sha256": "332cb978bd75df3b1a162ee13652d24bfff7210ce36659b729d3492c1f5c81f0",
+      "start": 505,
+      "stop": 725,
+      "source": "defence page 15 (presentation/defense_2026/DECISIONS.md D-088)"
+    },
+    {
+      "name": "arms_outstretched",
+      "bag": "recordings/ENSC498_arms_outstretched_pose_test_arm_test.bag",
+      "sha256": "5cb9e14cdc94a3cc78393295df9f93151b3ddbe5d4a32841e991682ca24a5b6e",
+      "start": 780,
+      "stop": 885,
+      "source": "defence page 13 (presentation/defense_2026/DECISIONS.md D-088)"
+    }
+  ]
+}

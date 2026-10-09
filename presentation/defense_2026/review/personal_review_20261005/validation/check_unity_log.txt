@@ -1,0 +1,13 @@
+stem recording_20260831_065553
+streamed 897 frames | Unity applied 897 distinct person frames, 897 object frames | 897 PNGs
+
+--- 1. the receiver applied the frame it reported ---
+[PASS] logged pelvis == streamed pelvis for the same frame (float32) - max 0.00e+00 m over 897 frames
+[PASS] logged object pose == streamed object pose (float32) - pos 0.00000 mm, euler 8.00e-06 deg over 897 frames
+[PASS] Unity applied > 99% of the streamed frames - 897/897 (100.0%)
+[PASS] every PNG frame number is a frame Unity actually applied - 897 PNGs, 0 orphans
+
+--- 2. rig placement reproduces the calibrated anchor ---
+[PASS] hip bone lands on the mapped pelvis point - max 0.0007 mm over 897 frames
+
+=== 5 passed, 0 failed ===

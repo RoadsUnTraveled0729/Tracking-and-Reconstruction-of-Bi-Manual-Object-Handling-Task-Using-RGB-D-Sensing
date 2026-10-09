@@ -1,0 +1,26 @@
+{
+  "Chapter_7_Evaluation": {
+    "current_sha256": "eb4855f227a775f6861c5f04a7d96b6afd52e7581be2c17dfceb69934cad0498",
+    "baseline_sha256": "427497a96ca3718aa0366368f16fc8984755475ba4a690acb564759297eb87f4",
+    "unchanged_canonical_math_objects": 6,
+    "tables": 15,
+    "changed_cells": [],
+    "status": "PASS"
+  },
+  "Appendices": {
+    "current_sha256": "d21f8271b8371615d4476cd54796a005078e0170af281fcbee7597c42a43ee84",
+    "baseline_sha256": "8c66f0ed1e59d32a14f1ed5388bb6263e9a4a20c57bee7ae1a0223f32d62c6eb",
+    "unchanged_canonical_math_objects": 12,
+    "tables": 12,
+    "changed_cells": [
+      {
+        "table_index": 11,
+        "row_index": 6,
+        "cell_index": 1,
+        "before": "torso and both arms, twelve angles nonzero",
+        "after": "torso and both arms, eleven angles nonzero"
+      }
+    ],
+    "status": "PASS"
+  }
+}

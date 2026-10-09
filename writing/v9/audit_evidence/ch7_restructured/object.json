@@ -1,0 +1,2469 @@
+{
+  "decision": "D-035",
+  "detection_rule": {
+    "decision": "D-035",
+    "physical_reference_cm": {
+      "W1_W2": 25.5,
+      "W2_W3": 3.5,
+      "W3_W4": 37.5
+    },
+    "physical_resolution_mm": 1.0,
+    "physical_reference_note": "Tape measurement supplied by the author; the same three separations apply to both recordings because the physical setup is identical. Never called ground truth.",
+    "waypoint_definitions": {
+      "W1": "marker-centre position before the first translation begins",
+      "W2": "marker-centre position at the end of the first translation, the last sample before the vertical rise begins",
+      "W3": "marker-centre position at the end of the vertical rise, the last sample before the leftward translation begins",
+      "W4": "final marker-centre position after the leftward translation"
+    },
+    "sample_acceptance": "detected = 1, filled = 0, finite unity_p*; no exclusion depends on the size of any error",
+    "local_motion_only": "Boundaries come from the recording own marker-centre motion. The stored waypoint reports and the fitted rail line are not used to place any waypoint, and no parameter was adjusted to improve agreement with the physical lengths.",
+    "estimator": {
+      "velocity": "centred difference over 7 accepted samples each side, per axis, metres per second",
+      "coarse_bracket": "half of the transition peak axis velocity",
+      "coarse_onset": "last sample at or below 5% of that peak",
+      "local_level": "median of the axis coordinate over the 15 samples ending at the coarse onset",
+      "boundary": "last sample at or below the local level plus 5 mm",
+      "W1": "last sample of the opening run that stays within 5 mm of the first accepted sample for 5 consecutive samples; the position is the mean of that opening run",
+      "W4": "first sample after the last lateral half-peak at which the lateral velocity falls to 5% of its peak; the position is the mean of that sample to the end of the track",
+      "W2_W3": "single transition samples, as the waypoint definitions require; no dwell is assumed at either"
+    },
+    "parameters": {
+      "half_window_samples": 7,
+      "onset_fraction": 0.05,
+      "departure_band_m": 0.005,
+      "sustain_samples": 5,
+      "level_samples": 15
+    },
+    "equations": "7.1 for the lengths and errors, 7.2 to 7.4 for the fitted line scatter, as written in CH7_RESTRUCTURED.txt",
+    "frame_note": "Segment lengths are invariant under the levelling rotation and under the stored permutation, so a rigid-frame ambiguity cannot change them; this is verified numerically in rigid_invariance. The scatter components, the line tilt and the axis-dominance phase checks are frame dependent."
+  },
+  "recordings": {
+    "r6b": {
+      "stem": "recording_20260831_065553",
+      "alias": "r6b",
+      "track": "eval/output/recording_20260831_065553_scaled_object_world_filtered_clean.csv",
+      "calibration": "eval/output/scene_calibration_r6bc.json",
+      "frame": "gravity-levelled desk world (x, y up, z away from the camera), metres; LeveledWorld rotation of eval/offset/carry.py, the same transform eval/gt/eval_rail_scenario.py applies",
+      "gravity_up_unity": [
+        -0.02123587887991239,
+        0.8477078842659145,
+        0.5300380933495296
+      ],
+      "measured_point": "ArUco object marker centre (the unity_p* marker pose translation), not the cube centre and not an edge",
+      "samples": {
+        "frames_total": 900,
+        "accepted": 889,
+        "not_detected": 1,
+        "filled": 11,
+        "non_finite_position": 1,
+        "excluded_frames": [
+          676,
+          704,
+          707,
+          726,
+          754,
+          779,
+          786,
+          808,
+          809,
+          840,
+          852
+        ]
+      },
+      "waypoints": {
+        "W1": {
+          "first_frame": 0,
+          "last_frame": 92,
+          "n_samples": 93,
+          "estimator": "mean of accepted samples",
+          "position_m": [
+            -0.21376584183420194,
+            0.03410063656420159,
+            0.21416637169668576
+          ],
+          "spread_mm": [
+            0.8713162779082073,
+            0.49277353448466676,
+            3.059721259782294
+          ]
+        },
+        "W2": {
+          "first_frame": 493,
+          "last_frame": 493,
+          "n_samples": 1,
+          "estimator": "single transition sample",
+          "position_m": [
+            -0.2435072582392474,
+            0.04051718436514118,
+            0.455900526819092
+          ],
+          "spread_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "W3": {
+          "first_frame": 617,
+          "last_frame": 617,
+          "n_samples": 1,
+          "estimator": "single transition sample",
+          "position_m": [
+            -0.2265500458493432,
+            0.07638677483358838,
+            0.4486199858646326
+          ],
+          "spread_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "W4": {
+          "first_frame": 875,
+          "last_frame": 899,
+          "n_samples": 25,
+          "estimator": "mean of accepted samples",
+          "position_m": [
+            0.158207906482566,
+            0.06834368770492144,
+            0.47751006960224984
+          ],
+          "spread_mm": [
+            2.357655927391317,
+            4.7002209232611945,
+            38.06424114989476
+          ]
+        }
+      },
+      "segments": [
+        {
+          "segment": "W1 to W2",
+          "physical_cm": 25.5,
+          "reconstructed_cm": 24.364138746978846,
+          "absolute_error_cm": 1.1358612530211545,
+          "relative_error_pct": 4.454357854984919,
+          "delta_m": [
+            -0.029741416405045462,
+            0.006416547800939587,
+            0.24173415512240623
+          ],
+          "dominant_axis": "z",
+          "dominant_fraction": 0.8698848880876092
+        },
+        {
+          "segment": "W2 to W3",
+          "physical_cm": 3.5,
+          "reconstructed_cm": 4.033832977454569,
+          "absolute_error_cm": 0.5338329774545691,
+          "relative_error_pct": 15.25237078441626,
+          "delta_m": [
+            0.01695721238990419,
+            0.035869590468447204,
+            -0.007280540954459402
+          ],
+          "dominant_axis": "y",
+          "dominant_fraction": 0.5967588682699742
+        },
+        {
+          "segment": "W3 to W4",
+          "physical_cm": 37.5,
+          "reconstructed_cm": 38.592487620205254,
+          "absolute_error_cm": 1.0924876202052545,
+          "relative_error_pct": 2.913300320547345,
+          "delta_m": [
+            0.38475795233190924,
+            -0.008043087128666943,
+            0.028890083737617256
+          ],
+          "dominant_axis": "x",
+          "dominant_fraction": 0.9124165323040823
+        }
+      ],
+      "phase_confirmation": {
+        "W1": {
+          "rule": "Last accepted sample of the opening run that stays within 5 mm of the first accepted sample for 5 consecutive samples.",
+          "evidence": {
+            "first_frame_of_track": 0,
+            "boundary_frame": 92,
+            "opening_run_spread_mm": [
+              0.8713162779082073,
+              0.49277353448466676,
+              3.059721259782294
+            ],
+            "height_above_final_level_cm": -3.424305114071985
+          },
+          "passes": true
+        },
+        "W2": {
+          "rule": "Last accepted sample whose levelled height is within 5 mm of the local pre-rise level, searched back from the half-peak of the vertical velocity.",
+          "evidence": {
+            "pre_rise_level_m": 0.038703122198018386,
+            "vertical_velocity_peak_m_s": 0.027834387156120573,
+            "half_peak_frame": 493,
+            "coarse_onset_frame": 484,
+            "boundary_frame": 493,
+            "boundary_at_half_peak": true,
+            "height_above_pre_rise_level_mm": 1.814062167122793,
+            "rise_completed_frame": 556,
+            "height_change_W2_to_W3_cm": 3.5869590468447203,
+            "height_change_W1_to_W2_cm": 0.6416547800939587,
+            "height_change_W3_to_W4_cm": -0.8043087128666943
+          },
+          "passes": true
+        },
+        "W3": {
+          "rule": "Last accepted sample whose lateral coordinate is within 5 mm of the local pre-slide level, searched back from the half-peak of the lateral velocity after the rise completes.",
+          "evidence": {
+            "pre_slide_level_m": -0.23132203219573577,
+            "lateral_velocity_peak_m_s": 0.07065010888493035,
+            "half_peak_frame": 617,
+            "coarse_onset_frame": 605,
+            "boundary_frame": 617,
+            "boundary_at_half_peak": true,
+            "lateral_beyond_pre_slide_level_mm": 4.771986346392559,
+            "rise_completed_before_W3": true
+          },
+          "passes": true
+        },
+        "W4": {
+          "rule": "First accepted sample after the last lateral half-peak at which the lateral velocity falls to 5% of its peak; the position is the mean of that sample to the end of the track.",
+          "evidence": {
+            "last_half_peak_frame": 863,
+            "interval": [
+              875,
+              899
+            ],
+            "n_samples": 25,
+            "interval_spread_mm": [
+              2.357655927391317,
+              4.7002209232611945,
+              38.06424114989476
+            ],
+            "lateral_travel_W3_to_W4_cm": 38.47579523319092
+          },
+          "passes": true
+        },
+        "segment_axis_dominance": {
+          "W1 to W2": {
+            "dominant_axis": "z",
+            "fraction": 0.8698848880876092,
+            "expected": "z"
+          },
+          "W2 to W3": {
+            "dominant_axis": "y",
+            "fraction": 0.5967588682699742,
+            "expected": "y"
+          },
+          "W3 to W4": {
+            "dominant_axis": "x",
+            "fraction": 0.9124165323040823,
+            "expected": "x"
+          }
+        },
+        "expected_pattern": "depth for W1 to W2, vertical for W2 to W3, lateral for W3 to W4"
+      },
+      "rigid_invariance": {
+        "W1 to W2": {
+          "levelled_cm": 24.364138746978846,
+          "stored_frame_cm": 24.364138746978842,
+          "difference_cm": 3.552713678800501e-15
+        },
+        "W2 to W3": {
+          "levelled_cm": 4.033832977454569,
+          "stored_frame_cm": 4.033832977454569,
+          "difference_cm": 0.0
+        },
+        "W3 to W4": {
+          "levelled_cm": 38.592487620205254,
+          "stored_frame_cm": 38.592487620205254,
+          "difference_cm": 0.0
+        }
+      },
+      "scatter": {
+        "rail_W3_to_W4": {
+          "span_frames": [
+            617,
+            875
+          ],
+          "n": 248,
+          "median": 0.8295487793906087,
+          "p95": 2.1199521513106863,
+          "maximum": 2.920990941510981,
+          "pca_sigma_cm": [
+            11.585222808384787,
+            1.092164453151158,
+            0.04004695990531857
+          ],
+          "direction": [
+            0.9977140179704806,
+            -0.0220886850066193,
+            0.06386570550677163
+          ],
+          "tilt_from_horizontal_deg": 1.265691364018437,
+          "centroid_m": [
+            -0.029106991737229863,
+            0.07161300969342689,
+            0.47120162798207443
+          ],
+          "vertical_component_median_cm": 0.07113661882154311,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        },
+        "depth_push_W1_to_W2": {
+          "span_frames": [
+            92,
+            493
+          ],
+          "n": 402,
+          "median": 0.2559927852157611,
+          "p95": 0.42103701469576094,
+          "maximum": 0.5421182910018305,
+          "pca_sigma_cm": [
+            8.296652076086437,
+            0.21754535094179084,
+            0.17314623542162796
+          ],
+          "direction": [
+            0.10931360863182903,
+            -0.026620951696992447,
+            -0.9936507736114502
+          ],
+          "tilt_from_horizontal_deg": 1.5254483895904751,
+          "centroid_m": [
+            -0.23286473393641,
+            0.03534395822087603,
+            0.34288279211809936
+          ],
+          "vertical_component_median_cm": 0.1436443850429324,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        },
+        "rise_W2_to_W3": {
+          "span_frames": [
+            493,
+            617
+          ],
+          "n": 125,
+          "median": 0.5831450388855755,
+          "p95": 1.4289411496241489,
+          "maximum": 1.9470765637562089,
+          "pca_sigma_cm": [
+            1.2361233118351376,
+            0.7431206227383287,
+            0.2338114947976849
+          ],
+          "direction": [
+            0.5262198273327393,
+            0.8466379092937572,
+            0.07935328517836156
+          ],
+          "tilt_from_horizontal_deg": 57.847851291123945,
+          "centroid_m": [
+            -0.2351367562988682,
+            0.06789643584082365,
+            0.46179757147649175
+          ],
+          "vertical_component_median_cm": 0.06561302084859988,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        }
+      },
+      "sensitivity": {
+        "segments": [
+          "W1 to W2",
+          "W2 to W3",
+          "W3 to W4"
+        ],
+        "exclusion": "A variant is excluded from a summary only when its own segment axis pattern is no longer depth, vertical, lateral, that is when the perturbed detector no longer identifies the three task phases. No variant is excluded because of the size of its error.",
+        "summary": {
+          "parameters": {
+            "n_variants": 36,
+            "n_excluded": 0,
+            "minimum_cm": [
+              23.94858578586127,
+              3.7605248157670736,
+              38.412371811006835
+            ],
+            "maximum_cm": [
+              24.592204462682645,
+              4.245030012850318,
+              38.86803805143213
+            ],
+            "spread_cm": [
+              0.6436186768213759,
+              0.48450519708324435,
+              0.4556662404252947
+            ],
+            "median_cm": [
+              24.380590316921694,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          },
+          "boundary shift 2 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              24.283509612489823,
+              3.9331223487199063,
+              38.43393012334929
+            ],
+            "maximum_cm": [
+              24.590353265518655,
+              4.241432609390369,
+              38.62497996056128
+            ],
+            "spread_cm": [
+              0.30684365302883165,
+              0.30831026067046263,
+              0.19104983721198465
+            ],
+            "median_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          },
+          "boundary shift 5 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              24.31672082916147,
+              3.7605248157670736,
+              37.7800767141055
+            ],
+            "maximum_cm": [
+              25.152121044981296,
+              4.704557852763639,
+              38.84819573434648
+            ],
+            "spread_cm": [
+              0.8354002158198277,
+              0.944033036996565,
+              1.0681190202409852
+            ],
+            "median_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          },
+          "boundary shift 10 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.63736640915068,
+              3.8307499017816347,
+              36.86464376618464
+            ],
+            "maximum_cm": [
+              25.380741669543905,
+              4.884775815736072,
+              38.94850530225384
+            ],
+            "spread_cm": [
+              2.7433752603932255,
+              1.0540259139544372,
+              2.0838615360692003
+            ],
+            "median_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          },
+          "local mean at W2 and W3": {
+            "n_variants": 3,
+            "n_excluded": 0,
+            "minimum_cm": [
+              24.252030161721947,
+              4.052701875365759,
+              38.10066411568349
+            ],
+            "maximum_cm": [
+              24.643943853395456,
+              4.105748014159875,
+              38.53102762604479
+            ],
+            "spread_cm": [
+              0.3919136916735084,
+              0.053046138794115905,
+              0.43036351036129616
+            ],
+            "median_cm": [
+              24.486912607345765,
+              4.065394265213726,
+              38.377843840878796
+            ]
+          },
+          "combined": {
+            "reported_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "n_variants": 63,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.63736640915068,
+              3.7605248157670736,
+              36.86464376618464
+            ],
+            "maximum_cm": [
+              25.380741669543905,
+              4.884775815736072,
+              38.94850530225384
+            ],
+            "spread_cm": [
+              2.7433752603932255,
+              1.1242509999689982,
+              2.0838615360692003
+            ],
+            "median_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          },
+          "rule_plus_few_frames": {
+            "reported_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "n_variants": 52,
+            "n_excluded": 0,
+            "minimum_cm": [
+              23.94858578586127,
+              3.7605248157670736,
+              37.7800767141055
+            ],
+            "maximum_cm": [
+              25.152121044981296,
+              4.704557852763639,
+              38.86803805143213
+            ],
+            "spread_cm": [
+              1.2035352591200272,
+              0.944033036996565,
+              1.0879613373266324
+            ],
+            "median_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ]
+          }
+        },
+        "variants": [
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=2mm",
+            "lengths_cm": [
+              24.592204462682645,
+              3.8757770498314232,
+              38.855072044087095
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=5mm",
+            "lengths_cm": [
+              24.590353265518655,
+              4.241432609390369,
+              38.60292330038029
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=10mm",
+            "lengths_cm": [
+              24.46968181861527,
+              4.245030012850318,
+              38.44396017532491
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=20mm",
+            "lengths_cm": [
+              24.174047574998447,
+              4.245030012850318,
+              38.44396017532491
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=2mm",
+            "lengths_cm": [
+              24.592204462682645,
+              3.8757770498314232,
+              38.86173530758771
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=5mm",
+            "lengths_cm": [
+              24.590353265518655,
+              4.241432609390369,
+              38.612914184706746
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=10mm",
+            "lengths_cm": [
+              24.46968181861527,
+              4.245030012850318,
+              38.45357264205916
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=20mm",
+            "lengths_cm": [
+              24.174047574998447,
+              4.245030012850318,
+              38.45357264205916
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=2mm",
+            "lengths_cm": [
+              24.592204462682645,
+              3.8757770498314232,
+              38.86803805143213
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=5mm",
+            "lengths_cm": [
+              24.590353265518655,
+              4.241432609390369,
+              38.622301857037826
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=10mm",
+            "lengths_cm": [
+              24.46968181861527,
+              4.245030012850318,
+              38.462610185018896
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=20mm",
+            "lengths_cm": [
+              24.174047574998447,
+              4.245030012850318,
+              38.462610185018896
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=2mm",
+            "lengths_cm": [
+              24.36598778896957,
+              3.7605248157670736,
+              38.84819573434648
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=5mm",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=10mm",
+            "lengths_cm": [
+              24.24370540413967,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=20mm",
+            "lengths_cm": [
+              23.94858578586127,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=2mm",
+            "lengths_cm": [
+              24.36598778896957,
+              3.7605248157670736,
+              38.84819573434648
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=5mm",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=10mm",
+            "lengths_cm": [
+              24.24370540413967,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=20mm",
+            "lengths_cm": [
+              23.94858578586127,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=2mm",
+            "lengths_cm": [
+              24.36598778896957,
+              3.7605248157670736,
+              38.855072044087095
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=5mm",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.60292330038029
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=10mm",
+            "lengths_cm": [
+              24.24370540413967,
+              4.033832977454569,
+              38.60292330038029
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=20mm",
+            "lengths_cm": [
+              23.94858578586127,
+              4.033832977454569,
+              38.60292330038029
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=2mm",
+            "lengths_cm": [
+              24.42730993988876,
+              3.808760282559142,
+              38.83368490141323
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=5mm",
+            "lengths_cm": [
+              24.515613495682107,
+              3.981489286686584,
+              38.59001862031376
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=10mm",
+            "lengths_cm": [
+              24.39519284487382,
+              4.065279504535944,
+              38.412371811006835
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=20mm",
+            "lengths_cm": [
+              24.100069970499447,
+              4.065279504535944,
+              38.412371811006835
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=2mm",
+            "lengths_cm": [
+              24.42730993988876,
+              3.808760282559142,
+              38.8411145285394
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=5mm",
+            "lengths_cm": [
+              24.515613495682107,
+              4.053452471659194,
+              38.58158905434406
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=10mm",
+            "lengths_cm": [
+              24.39519284487382,
+              4.065279504535944,
+              38.42346757026597
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=20mm",
+            "lengths_cm": [
+              24.100069970499447,
+              4.065279504535944,
+              38.42346757026597
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=2mm",
+            "lengths_cm": [
+              24.42730993988876,
+              3.808760282559142,
+              38.84819573434648
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=5mm",
+            "lengths_cm": [
+              24.515613495682107,
+              4.053452471659194,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=10mm",
+            "lengths_cm": [
+              24.39519284487382,
+              4.065279504535944,
+              38.43393012334929
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=20mm",
+            "lengths_cm": [
+              24.100069970499447,
+              4.065279504535944,
+              38.43393012334929
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W1 -10 frames",
+            "lengths_cm": [
+              24.361335737869556,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W2 -10 frames",
+            "lengths_cm": [
+              22.63736640915068,
+              4.182315007265715,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W3 -10 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              3.8307499017816347,
+              38.94850530225384
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W4 -10 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.686624976655274
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W1 -5 frames",
+            "lengths_cm": [
+              24.362909879329276,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W2 -5 frames",
+            "lengths_cm": [
+              25.152121044981296,
+              4.704557852763639,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W3 -5 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              3.7605248157670736,
+              38.84819573434648
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W4 -5 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.67279837152248
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W1 -2 frames",
+            "lengths_cm": [
+              24.365183937222405,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W2 -2 frames",
+            "lengths_cm": [
+              24.590353265518655,
+              4.241432609390369,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W3 -2 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              3.9669890307385534,
+              38.611761875435
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W4 -2 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.62497996056128
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W1 +2 frames",
+            "lengths_cm": [
+              24.350251282381695,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W2 +2 frames",
+            "lengths_cm": [
+              24.283509612489823,
+              3.9331223487199063,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W3 +2 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.049393082919956,
+              38.43393012334929
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W4 +2 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.5700192590903
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W1 +5 frames",
+            "lengths_cm": [
+              24.31672082916147,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W2 +5 frames",
+            "lengths_cm": [
+              24.70301726703596,
+              4.0525075570564955,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W3 +5 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.322076807508168,
+              37.7800767141055
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W4 +5 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.52700915511383
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W1 +10 frames",
+            "lengths_cm": [
+              24.27847523432816,
+              4.033832977454569,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W2 +10 frames",
+            "lengths_cm": [
+              25.380741669543905,
+              4.022036978944875,
+              38.592487620205254
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W3 +10 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.884775815736072,
+              36.86464376618464
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W4 +10 frames",
+            "lengths_cm": [
+              24.364138746978846,
+              4.033832977454569,
+              38.490804639726036
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 3 frames",
+            "lengths_cm": [
+              24.486912607345765,
+              4.065394265213726,
+              38.53102762604479
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 7 frames",
+            "lengths_cm": [
+              24.643943853395456,
+              4.105748014159875,
+              38.377843840878796
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 15 frames",
+            "lengths_cm": [
+              24.252030161721947,
+              4.052701875365759,
+              38.10066411568349
+            ],
+            "phase_ok": true
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "item": "detector-selection band",
+          "text": "Reported lengths carry the detector-selection band below: the spread over the detection parameters and over boundary shifts of two and five accepted samples, with variants that no longer reproduce the depth, vertical, lateral phase pattern excluded.",
+          "segments": {
+            "W1 to W2": {
+              "reported_cm": 24.364138746978846,
+              "minimum_cm": 23.94858578586127,
+              "maximum_cm": 25.152121044981296
+            },
+            "W2 to W3": {
+              "reported_cm": 4.033832977454569,
+              "minimum_cm": 3.7605248157670736,
+              "maximum_cm": 4.704557852763639
+            },
+            "W3 to W4": {
+              "reported_cm": 38.592487620205254,
+              "minimum_cm": 37.7800767141055,
+              "maximum_cm": 38.86803805143213
+            }
+          }
+        },
+        {
+          "item": "single-sample transition waypoints",
+          "text": "W2 and W3 are single accepted samples, as the waypoint definitions require. Each therefore carries the instantaneous depth error of that one sample rather than an averaged value.",
+          "local_depth_spread_mm": {
+            "W2": 8.563063178163743,
+            "W3": 22.408834419801515
+          }
+        },
+        {
+          "item": "W1 and W4 averaging intervals",
+          "text": "W1 and W4 are means over the opening and closing intervals. The largest single-sample step inside the W4 interval is given below; a large value means the closing interval is not a single settled cluster.",
+          "W1_spread_mm": [
+            0.8713162779082073,
+            0.49277353448466676,
+            3.059721259782294
+          ],
+          "W4_spread_mm": [
+            2.357655927391317,
+            4.7002209232611945,
+            38.06424114989476
+          ],
+          "W4_largest_step_mm": 8.96843564954333,
+          "W4_largest_step_between_frames": [
+            882,
+            883
+          ]
+        },
+        {
+          "item": "boundary resolved only to the velocity half-peak",
+          "text": "Where the flag is true the departure band does not separate the boundary from the half-peak of that axis velocity, so the reported sample is the latest the search allows and the true boundary lies at or before it.",
+          "W2": true,
+          "W3": true
+        },
+        {
+          "item": "frame dependence",
+          "text": "Segment lengths are invariant under the levelling rotation and the stored axis permutation, verified in rigid_invariance. The fitted-line scatter components, the line tilt and the axis dominance used for the phase checks are properties of the levelled frame and are not invariant."
+        },
+        {
+          "item": "scatter is not accuracy",
+          "text": "The fitted-line distances describe how the reconstructed samples lie about a line fitted to those same samples. They are a within-recording comparison and are reported separately from the physical length errors."
+        }
+      ]
+    },
+    "r7": {
+      "stem": "recording_20260909_000024",
+      "alias": "r7",
+      "track": "eval/output/recording_20260909_000024_scaled_object_world_filtered_clean.csv",
+      "calibration": "eval/output/scene_calibration_r7c.json",
+      "frame": "gravity-levelled desk world (x, y up, z away from the camera), metres; LeveledWorld rotation of eval/offset/carry.py, the same transform eval/gt/eval_rail_scenario.py applies",
+      "gravity_up_unity": [
+        -0.02123587887991239,
+        0.8477078842659145,
+        0.5300380933495296
+      ],
+      "measured_point": "ArUco object marker centre (the unity_p* marker pose translation), not the cube centre and not an edge",
+      "samples": {
+        "frames_total": 1499,
+        "accepted": 1487,
+        "not_detected": 1,
+        "filled": 12,
+        "non_finite_position": 1,
+        "excluded_frames": [
+          436,
+          668,
+          674,
+          675,
+          680,
+          741,
+          757,
+          989,
+          1012,
+          1015,
+          1026,
+          1077
+        ]
+      },
+      "waypoints": {
+        "W1": {
+          "first_frame": 0,
+          "last_frame": 138,
+          "n_samples": 139,
+          "estimator": "mean of accepted samples",
+          "position_m": [
+            -0.23921287632937646,
+            0.03313358953003698,
+            0.23608989436431005
+          ],
+          "spread_mm": [
+            1.7262786582953882,
+            0.3931770890402142,
+            3.7947014015841662
+          ]
+        },
+        "W2": {
+          "first_frame": 430,
+          "last_frame": 430,
+          "n_samples": 1,
+          "estimator": "single transition sample",
+          "position_m": [
+            -0.2528051181290501,
+            0.044135691212607686,
+            0.4622094857398995
+          ],
+          "spread_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "W3": {
+          "first_frame": 534,
+          "last_frame": 534,
+          "n_samples": 1,
+          "estimator": "single transition sample",
+          "position_m": [
+            -0.23809613189788406,
+            0.08479286724407951,
+            0.46664080294782767
+          ],
+          "spread_mm": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "W4": {
+          "first_frame": 1083,
+          "last_frame": 1498,
+          "n_samples": 416,
+          "estimator": "mean of accepted samples",
+          "position_m": [
+            0.16431053136120236,
+            0.07760583307212915,
+            0.49299049521307686
+          ],
+          "spread_mm": [
+            4.857695727539635,
+            2.379705653197589,
+            25.10686956852154
+          ]
+        }
+      },
+      "segments": [
+        {
+          "segment": "W1 to W2",
+          "physical_cm": 25.5,
+          "reconstructed_cm": 22.67947637897268,
+          "absolute_error_cm": 2.82052362102732,
+          "relative_error_pct": 11.060876945205177,
+          "delta_m": [
+            -0.013592241799673638,
+            0.011002101682570709,
+            0.22611959137558946
+          ],
+          "dominant_axis": "z",
+          "dominant_fraction": 0.9019027662096627
+        },
+        {
+          "segment": "W2 to W3",
+          "physical_cm": 3.5,
+          "reconstructed_cm": 4.346259093749474,
+          "absolute_error_cm": 0.8462590937494738,
+          "relative_error_pct": 24.178831249984967,
+          "delta_m": [
+            0.014708986231166038,
+            0.04065717603147183,
+            0.004431317207928165
+          ],
+          "dominant_axis": "y",
+          "dominant_fraction": 0.6799145447507434
+        },
+        {
+          "segment": "W3 to W4",
+          "physical_cm": 37.5,
+          "reconstructed_cm": 40.333247126653944,
+          "absolute_error_cm": 2.8332471266539443,
+          "relative_error_pct": 7.555325671077185,
+          "delta_m": [
+            0.4024066632590864,
+            -0.0071870341719503655,
+            0.02634969226524919
+          ],
+          "dominant_axis": "x",
+          "dominant_fraction": 0.9230709141832292
+        }
+      ],
+      "phase_confirmation": {
+        "W1": {
+          "rule": "Last accepted sample of the opening run that stays within 5 mm of the first accepted sample for 5 consecutive samples.",
+          "evidence": {
+            "first_frame_of_track": 0,
+            "boundary_frame": 138,
+            "opening_run_spread_mm": [
+              1.7262786582953882,
+              0.3931770890402142,
+              3.7947014015841662
+            ],
+            "height_above_final_level_cm": -4.447224354209217
+          },
+          "passes": true
+        },
+        "W2": {
+          "rule": "Last accepted sample whose levelled height is within 5 mm of the local pre-rise level, searched back from the half-peak of the vertical velocity.",
+          "evidence": {
+            "pre_rise_level_m": 0.04217065150762453,
+            "vertical_velocity_peak_m_s": 0.02997360354976177,
+            "half_peak_frame": 430,
+            "coarse_onset_frame": 418,
+            "boundary_frame": 430,
+            "boundary_at_half_peak": true,
+            "height_above_pre_rise_level_mm": 1.965039704983157,
+            "rise_completed_frame": 482,
+            "height_change_W2_to_W3_cm": 4.065717603147183,
+            "height_change_W1_to_W2_cm": 1.1002101682570709,
+            "height_change_W3_to_W4_cm": -0.7187034171950366
+          },
+          "passes": true
+        },
+        "W3": {
+          "rule": "Last accepted sample whose lateral coordinate is within 5 mm of the local pre-slide level, searched back from the half-peak of the lateral velocity after the rise completes.",
+          "evidence": {
+            "pre_slide_level_m": -0.24193754036042164,
+            "lateral_velocity_peak_m_s": 0.08537179710415049,
+            "half_peak_frame": 584,
+            "coarse_onset_frame": 526,
+            "boundary_frame": 534,
+            "boundary_at_half_peak": false,
+            "lateral_beyond_pre_slide_level_mm": 3.841408462537582,
+            "rise_completed_before_W3": true
+          },
+          "passes": true
+        },
+        "W4": {
+          "rule": "First accepted sample after the last lateral half-peak at which the lateral velocity falls to 5% of its peak; the position is the mean of that sample to the end of the track.",
+          "evidence": {
+            "last_half_peak_frame": 1048,
+            "interval": [
+              1083,
+              1498
+            ],
+            "n_samples": 416,
+            "interval_spread_mm": [
+              4.857695727539635,
+              2.379705653197589,
+              25.10686956852154
+            ],
+            "lateral_travel_W3_to_W4_cm": 40.24066632590864
+          },
+          "passes": true
+        },
+        "segment_axis_dominance": {
+          "W1 to W2": {
+            "dominant_axis": "z",
+            "fraction": 0.9019027662096627,
+            "expected": "z"
+          },
+          "W2 to W3": {
+            "dominant_axis": "y",
+            "fraction": 0.6799145447507434,
+            "expected": "y"
+          },
+          "W3 to W4": {
+            "dominant_axis": "x",
+            "fraction": 0.9230709141832292,
+            "expected": "x"
+          }
+        },
+        "expected_pattern": "depth for W1 to W2, vertical for W2 to W3, lateral for W3 to W4"
+      },
+      "rigid_invariance": {
+        "W1 to W2": {
+          "levelled_cm": 22.67947637897268,
+          "stored_frame_cm": 22.679476378972684,
+          "difference_cm": 3.552713678800501e-15
+        },
+        "W2 to W3": {
+          "levelled_cm": 4.346259093749474,
+          "stored_frame_cm": 4.346259093749473,
+          "difference_cm": 8.881784197001252e-16
+        },
+        "W3 to W4": {
+          "levelled_cm": 40.333247126653944,
+          "stored_frame_cm": 40.33324712665393,
+          "difference_cm": 1.4210854715202004e-14
+        }
+      },
+      "scatter": {
+        "rail_W3_to_W4": {
+          "span_frames": [
+            534,
+            1083
+          ],
+          "n": 539,
+          "median": 0.3894996771657142,
+          "p95": 1.4445040268931562,
+          "maximum": 2.8231836193324797,
+          "pca_sigma_cm": [
+            10.475989287274125,
+            0.7673949881320055,
+            0.08229559547222096
+          ],
+          "direction": [
+            0.996292801942642,
+            -0.010025355773083494,
+            0.085440886224935
+          ],
+          "tilt_from_horizontal_deg": 0.574420196469881,
+          "centroid_m": [
+            -0.013535374353226309,
+            0.07908156515211928,
+            0.48384232348185147
+          ],
+          "vertical_component_median_cm": 0.06627962323419918,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        },
+        "depth_push_W1_to_W2": {
+          "span_frames": [
+            138,
+            430
+          ],
+          "n": 293,
+          "median": 0.21587557264083684,
+          "p95": 0.3178119749438654,
+          "maximum": 0.3723602185386244,
+          "pca_sigma_cm": [
+            8.247101047943135,
+            0.17106475930319803,
+            0.13316185315064055
+          ],
+          "direction": [
+            0.048366266215352754,
+            -0.03129122051356655,
+            -0.9983394031145708
+          ],
+          "tilt_from_horizontal_deg": 1.7931475763588742,
+          "centroid_m": [
+            -0.245379182799277,
+            0.03893115286469616,
+            0.35617821197679955
+          ],
+          "vertical_component_median_cm": 0.13759258045887798,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        },
+        "rise_W2_to_W3": {
+          "span_frames": [
+            430,
+            534
+          ],
+          "n": 104,
+          "median": 0.5052434515768747,
+          "p95": 1.2966124830590742,
+          "maximum": 1.6591255132145883,
+          "pca_sigma_cm": [
+            1.321022829762473,
+            0.6430106857817366,
+            0.27531424723089176
+          ],
+          "direction": [
+            0.26578462701613936,
+            0.9435123614962272,
+            0.19784578778863168
+          ],
+          "tilt_from_horizontal_deg": 70.6500341466971,
+          "centroid_m": [
+            -0.24766416004380137,
+            0.07490037890613331,
+            0.4691934117891447
+          ],
+          "vertical_component_median_cm": 0.0704275886740169,
+          "note": "Descriptive scatter about the trajectory own fitted line; not a physical accuracy measure. The component split and the tilt depend on the levelled frame, the distances d_i do not."
+        }
+      },
+      "sensitivity": {
+        "segments": [
+          "W1 to W2",
+          "W2 to W3",
+          "W3 to W4"
+        ],
+        "exclusion": "A variant is excluded from a summary only when its own segment axis pattern is no longer depth, vertical, lateral, that is when the perturbed detector no longer identifies the three task phases. No variant is excluded because of the size of its error.",
+        "summary": {
+          "parameters": {
+            "n_variants": 30,
+            "n_excluded": 6,
+            "minimum_cm": [
+              22.422450371336186,
+              4.346259093749474,
+              38.77844066566193
+            ],
+            "maximum_cm": [
+              23.04788107998716,
+              4.758915687422924,
+              40.602500624809714
+            ],
+            "spread_cm": [
+              0.625430708650974,
+              0.4126565936734501,
+              1.8240599591477817
+            ],
+            "median_cm": [
+              22.67518043328041,
+              4.500998469228802,
+              39.72212877794448
+            ]
+          },
+          "boundary shift 2 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.67518043328041,
+              4.282672204360261,
+              40.09952484707015
+            ],
+            "maximum_cm": [
+              22.943578169010017,
+              4.492098993788987,
+              40.59459412939209
+            ],
+            "spread_cm": [
+              0.26839773572960723,
+              0.2094267894287256,
+              0.4950692823219427
+            ],
+            "median_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ]
+          },
+          "boundary shift 5 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.673605431254376,
+              4.310356238178,
+              39.98865740956366
+            ],
+            "maximum_cm": [
+              24.003448401343555,
+              4.455854024763378,
+              40.54289407015756
+            ],
+            "spread_cm": [
+              1.329842970089178,
+              0.14549778658537882,
+              0.5542366605939009
+            ],
+            "median_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ]
+          },
+          "boundary shift 10 frames": {
+            "n_variants": 8,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.43275757162728,
+              3.34903402640224,
+              39.966006644745775
+            ],
+            "maximum_cm": [
+              22.73176002754806,
+              4.428790788691652,
+              40.9018556776489
+            ],
+            "spread_cm": [
+              0.29900245592077823,
+              1.0797567622894118,
+              0.9358490329031284
+            ],
+            "median_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ]
+          },
+          "local mean at W2 and W3": {
+            "n_variants": 3,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.740128485207673,
+              3.9640751354653934,
+              40.28543077714543
+            ],
+            "maximum_cm": [
+              23.007073871246334,
+              4.321320381195867,
+              40.32553075085649
+            ],
+            "spread_cm": [
+              0.26694538603866036,
+              0.35724524573047356,
+              0.04009997371105811
+            ],
+            "median_cm": [
+              22.800817953028254,
+              4.2544749993493785,
+              40.31113127884815
+            ]
+          },
+          "combined": {
+            "reported_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "n_variants": 57,
+            "n_excluded": 6,
+            "minimum_cm": [
+              22.422450371336186,
+              3.34903402640224,
+              38.77844066566193
+            ],
+            "maximum_cm": [
+              24.003448401343555,
+              4.758915687422924,
+              40.9018556776489
+            ],
+            "spread_cm": [
+              1.5809980300073683,
+              1.409881661020684,
+              2.123415011986971
+            ],
+            "median_cm": [
+              22.67947637897268,
+              4.378777991631913,
+              40.330676705293136
+            ]
+          },
+          "rule_plus_few_frames": {
+            "reported_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "n_variants": 46,
+            "n_excluded": 0,
+            "minimum_cm": [
+              22.422450371336186,
+              4.282672204360261,
+              38.77844066566193
+            ],
+            "maximum_cm": [
+              24.003448401343555,
+              4.758915687422924,
+              40.602500624809714
+            ],
+            "spread_cm": [
+              1.5809980300073683,
+              0.47624348306266295,
+              1.8240599591477817
+            ],
+            "median_cm": [
+              22.67947637897268,
+              4.440392606464453,
+              40.32943045388908
+            ]
+          }
+        },
+        "variants": [
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              4.354062649985643,
+              40.01351055089434
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=5mm",
+            "lengths_cm": [
+              22.943578169010017,
+              4.424931188165528,
+              39.71433627988449
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=10mm",
+            "lengths_cm": [
+              23.04788107998716,
+              4.569319009436741,
+              39.26644496360804
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.02 band=20mm",
+            "lengths_cm": [
+              22.978517813806867,
+              5.041462781772761,
+              38.28170809906085
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              4.50126293055627,
+              39.86016711866455
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=5mm",
+            "lengths_cm": [
+              22.943578169010017,
+              4.4700814634635,
+              39.533187860661826
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=10mm",
+            "lengths_cm": [
+              23.04788107998716,
+              4.654418280515834,
+              39.09936576679182
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.05 band=20mm",
+            "lengths_cm": [
+              22.978517813806867,
+              5.2010836130560305,
+              38.05267006804367
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              5.863605155533583,
+              37.159959977284196
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=5mm",
+            "lengths_cm": [
+              22.943578169010017,
+              6.152930093865846,
+              36.86037316065932
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=10mm",
+            "lengths_cm": [
+              23.04788107998716,
+              6.514475534530768,
+              36.41027046652693
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=5 frac=0.10 band=20mm",
+            "lengths_cm": [
+              22.978517813806867,
+              6.514475534530768,
+              36.41027046652693
+            ],
+            "phase_ok": false
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              4.490801984055855,
+              40.602500624809714
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=5mm",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.342849993447466
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=10mm",
+            "lengths_cm": [
+              22.783640157397716,
+              4.500998469228802,
+              39.721681252103416
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.02 band=20mm",
+            "lengths_cm": [
+              22.714340345226876,
+              4.758915687422924,
+              38.7910643687828
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              4.490801984055855,
+              40.59459412939209
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=5mm",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=10mm",
+            "lengths_cm": [
+              22.783640157397716,
+              4.500998469228802,
+              39.71297021482327
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.05 band=20mm",
+            "lengths_cm": [
+              22.714340345226876,
+              4.758915687422924,
+              38.78108944005042
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=2mm",
+            "lengths_cm": [
+              22.67518043328041,
+              4.490801984055855,
+              40.59240445731008
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=5mm",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.330676705293136
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=10mm",
+            "lengths_cm": [
+              22.783640157397716,
+              4.500998469228802,
+              39.710602306687335
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=7 frac=0.10 band=20mm",
+            "lengths_cm": [
+              22.714340345226876,
+              4.758915687422924,
+              38.77844066566193
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=2mm",
+            "lengths_cm": [
+              22.422450371336186,
+              4.422089549070666,
+              40.460954986208385
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=5mm",
+            "lengths_cm": [
+              22.426739504115588,
+              4.352977872675212,
+              40.24734951468743
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=10mm",
+            "lengths_cm": [
+              22.530765058128043,
+              4.528902018149656,
+              39.72257630378553
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.02 band=20mm",
+            "lengths_cm": [
+              22.46151238562886,
+              4.724312691810314,
+              38.7922249377058
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=2mm",
+            "lengths_cm": [
+              22.422450371336186,
+              4.422089549070666,
+              40.456053986103015
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=5mm",
+            "lengths_cm": [
+              22.426739504115588,
+              4.352977872675212,
+              40.24138778212819
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=10mm",
+            "lengths_cm": [
+              22.530765058128043,
+              4.528902018149656,
+              39.71769383377451
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.05 band=20mm",
+            "lengths_cm": [
+              22.46151238562886,
+              4.724312691810314,
+              38.78640699958126
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=2mm",
+            "lengths_cm": [
+              22.422450371336186,
+              4.566021937091412,
+              40.593904579195396
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=5mm",
+            "lengths_cm": [
+              22.426739504115588,
+              4.352212827976134,
+              40.33243573239319
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=10mm",
+            "lengths_cm": [
+              22.530765058128043,
+              4.528902018149656,
+              39.71222354422924
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "parameters",
+            "label": "h=10 frac=0.10 band=20mm",
+            "lengths_cm": [
+              22.46151238562886,
+              4.724312691810314,
+              38.7802527909669
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W1 -10 frames",
+            "lengths_cm": [
+              22.67418774340928,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W2 -10 frames",
+            "lengths_cm": [
+              22.43275757162728,
+              4.428790788691652,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W3 -10 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.422679668481543,
+              40.9018556776489
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W4 -10 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.32212166366121
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W1 -5 frames",
+            "lengths_cm": [
+              22.673605431254376,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W2 -5 frames",
+            "lengths_cm": [
+              22.835321935595598,
+              4.37349372241461,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W3 -5 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.310356238178,
+              40.54289407015756
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W4 -5 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.328184202485026
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W1 -2 frames",
+            "lengths_cm": [
+              22.67518043328041,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W2 -2 frames",
+            "lengths_cm": [
+              22.778260455396413,
+              4.357393754298547,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W3 -2 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.490801984055855,
+              40.59459412939209
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W4 -2 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.331427925131045
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W1 +2 frames",
+            "lengths_cm": [
+              22.687098891624363,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W2 +2 frames",
+            "lengths_cm": [
+              22.943578169010017,
+              4.282672204360261,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W3 +2 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.492098993788987,
+              40.09952484707015
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 2 frames",
+            "label": "W4 +2 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.334734804523244
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W1 +5 frames",
+            "lengths_cm": [
+              22.703291788186256,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W2 +5 frames",
+            "lengths_cm": [
+              24.003448401343555,
+              4.320859701494596,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W3 +5 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.455854024763378,
+              39.98865740956366
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 5 frames",
+            "label": "W4 +5 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.33679394455266
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W1 +10 frames",
+            "lengths_cm": [
+              22.73176002754806,
+              4.346259093749474,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W2 +10 frames",
+            "lengths_cm": [
+              22.537937633235913,
+              3.34903402640224,
+              40.333247126653944
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W3 +10 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.378777991631913,
+              39.966006644745775
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "boundary shift 10 frames",
+            "label": "W4 +10 frames",
+            "lengths_cm": [
+              22.67947637897268,
+              4.346259093749474,
+              40.34068069268181
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 3 frames",
+            "lengths_cm": [
+              22.800817953028254,
+              4.321320381195867,
+              40.32553075085649
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 7 frames",
+            "lengths_cm": [
+              23.007073871246334,
+              4.2544749993493785,
+              40.28543077714543
+            ],
+            "phase_ok": true
+          },
+          {
+            "kind": "local mean at W2 and W3",
+            "label": "plus or minus 15 frames",
+            "lengths_cm": [
+              22.740128485207673,
+              3.9640751354653934,
+              40.31113127884815
+            ],
+            "phase_ok": true
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "item": "detector-selection band",
+          "text": "Reported lengths carry the detector-selection band below: the spread over the detection parameters and over boundary shifts of two and five accepted samples, with variants that no longer reproduce the depth, vertical, lateral phase pattern excluded.",
+          "segments": {
+            "W1 to W2": {
+              "reported_cm": 22.67947637897268,
+              "minimum_cm": 22.422450371336186,
+              "maximum_cm": 24.003448401343555
+            },
+            "W2 to W3": {
+              "reported_cm": 4.346259093749474,
+              "minimum_cm": 4.282672204360261,
+              "maximum_cm": 4.758915687422924
+            },
+            "W3 to W4": {
+              "reported_cm": 40.333247126653944,
+              "minimum_cm": 38.77844066566193,
+              "maximum_cm": 40.602500624809714
+            }
+          }
+        },
+        {
+          "item": "single-sample transition waypoints",
+          "text": "W2 and W3 are single accepted samples, as the waypoint definitions require. Each therefore carries the instantaneous depth error of that one sample rather than an averaged value.",
+          "local_depth_spread_mm": {
+            "W2": 15.405393127991552,
+            "W3": 25.693637896696764
+          }
+        },
+        {
+          "item": "W1 and W4 averaging intervals",
+          "text": "W1 and W4 are means over the opening and closing intervals. The largest single-sample step inside the W4 interval is given below; a large value means the closing interval is not a single settled cluster.",
+          "W1_spread_mm": [
+            1.7262786582953882,
+            0.3931770890402142,
+            3.7947014015841662
+          ],
+          "W4_spread_mm": [
+            4.857695727539635,
+            2.379705653197589,
+            25.10686956852154
+          ],
+          "W4_largest_step_mm": 4.1333203360010895,
+          "W4_largest_step_between_frames": [
+            1110,
+            1111
+          ]
+        },
+        {
+          "item": "boundary resolved only to the velocity half-peak",
+          "text": "Where the flag is true the departure band does not separate the boundary from the half-peak of that axis velocity, so the reported sample is the latest the search allows and the true boundary lies at or before it.",
+          "W2": true,
+          "W3": false
+        },
+        {
+          "item": "frame dependence",
+          "text": "Segment lengths are invariant under the levelling rotation and the stored axis permutation, verified in rigid_invariance. The fitted-line scatter components, the line tilt and the axis dominance used for the phase checks are properties of the levelled frame and are not invariant."
+        },
+        {
+          "item": "scatter is not accuracy",
+          "text": "The fitted-line distances describe how the reconstructed samples lie about a line fitted to those same samples. They are a within-recording comparison and are reported separately from the physical length errors."
+        }
+      ]
+    }
+  }
+}

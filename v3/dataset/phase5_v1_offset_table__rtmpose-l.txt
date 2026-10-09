@@ -1,0 +1,20 @@
+v1: /home/luo/Desktop/bimanual-tracking/v1/kinematics/dataset/real_20260224/recording_20260224_083945_landmarks_raw.csv
+v3: v3/output/extraction_recording_20260224_083945__rtmpose-l.csv
+common frames: 898 (v1 899, v3 898); no smoothing on either side; vendored ChainFallbackSolver both sides
+
+      angle    group    n   offset    cstd  p95dev
+     root_x     root  898     0.28    1.43    2.12
+     root_y     root  898    -7.06    4.76    8.18
+     root_z     root  898    -2.36    3.00    4.51
+  r_swing_y  R_swing  898     8.18    8.44   14.40
+  r_swing_z  R_swing  898     0.95    2.42    3.63
+    r_twist  R_twist  898     2.42    5.92   11.05
+  r_elbow_y  R_elbow  898     1.18    3.02    5.77
+  r_elbow_z  R_elbow  898    -0.00    0.00    0.00
+  l_swing_y  L_swing  898    -9.66    6.02    8.12
+  l_swing_z  L_swing  898    -1.32    4.00    7.24
+    l_twist  L_twist  896    -0.90    5.66   10.88
+  l_elbow_y  L_elbow  896     0.80    3.12    6.48
+  l_elbow_z  L_elbow  896    -0.00    0.00    0.00
+
+NOTE: 'offset' is the definitional bias to subtract before quoting any V3-vs-v1 angle comparison; large cstd means the two detectors disagree beyond a constant shift for that angle. v1's calibrated grip offset is never reused (plan risk).

@@ -1,0 +1,19 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790297609.232653 1717883 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1790297609.292232 1717939 gl_context.cc:357] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 575.57.08), renderer: NVIDIA GeForce RTX 3080/PCIe/SSE2
+INFO: Created TensorFlow Lite delegate for GPU.
+W0000 00:00:1790297609.672214 1717954 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+/home/luo/anaconda3/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+[info] MediaPipe heavy on gpu, bag: /home/luo/Desktop/ENSC498/recordings/ENSC498_right_arm_raise_cube_untouched_test_20260121_180042.bag
+[done] 1050 frames in 40.0 s (26.2 fps sustained)
+
+=== per-stage profile (ms) ===
+  align+get    p50    1.46  p95    1.58  p99    1.66  max    5.14
+  mediapipe    p50    9.37  p95   22.22  p99   23.74  max   29.57
+  deproj+filt  p50    0.50  p95    0.59  p99    0.65  max    0.73
+  solve        p50    0.20  p95    0.23  p99    0.25  max    0.32
+  shm-write    p50    0.01  p95    0.01  p99    0.01  max    0.03
+  total        p50   11.51  p95   24.28  p99   25.80  max   35.32
+  30 fps budget 33.3 ms -> p99 headroom 7.5 ms
+[csv] eval/pipeline_smoothness/data/p14_180042_live_paced_dump.csv

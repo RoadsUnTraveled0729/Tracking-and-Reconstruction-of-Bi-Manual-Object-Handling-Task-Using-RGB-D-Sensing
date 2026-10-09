@@ -1,0 +1,154 @@
+{
+ "output": "overlay_object_world.png",
+ "thesis_source": "Thesis V9 Section 4.1, Eq. 4.1 (Object in World through Camera); Section 2.2",
+ "panels": [
+  {
+   "id": "rgb",
+   "photo": "presentation/defense_2026/figures/coordinate_frames/r6b_frame00505.png",
+   "photo_source": "writing/v9/figures/src/r6b_frame00505.png",
+   "crop_px": [
+    0,
+    0,
+    640,
+    480
+   ],
+   "box_px": [
+    0,
+    0,
+    1440,
+    1080
+   ],
+   "camera": {
+    "type": "recording_intrinsics",
+    "meta": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json"
+   }
+  }
+ ],
+ "frames": [
+  {
+   "name": "World",
+   "panel": "rgb",
+   "mode": "projected",
+   "thesis_source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+   "pose": {
+    "type": "calibration_world",
+    "calibration": "eval/output/scene_calibration_r6bc.json"
+   },
+   "length_m": 0.09,
+   "name_label": {
+    "text": "World",
+    "offset": [
+     -190,
+     -20
+    ],
+    "anchor": "mm"
+   },
+   "axis_label_offsets": {
+    "Y": [
+     -48,
+     10
+    ],
+    "Z": [
+     48,
+     -10
+    ]
+   }
+  },
+  {
+   "name": "Object",
+   "panel": "rgb",
+   "mode": "projected",
+   "thesis_source": "Object = cube marker (id 1) frame, frame 505 detection of the pinned chain",
+   "pose": {
+    "type": "aruco_row",
+    "csv": "eval/output/recording_20260831_065553_aruco_raw_scaled.csv",
+    "frame": 505,
+    "marker": 1
+   },
+   "length_m": 0.09,
+   "name_label": {
+    "text": "Object",
+    "offset": [
+     -200,
+     -70
+    ],
+    "anchor": "mm"
+   }
+  },
+  {
+   "name": "Wall",
+   "panel": "rgb",
+   "mode": "projected",
+   "thesis_source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+   "pose": {
+    "type": "calibration_marker",
+    "calibration": "eval/output/scene_calibration_r6bc.json",
+    "key": "T_cam_wall"
+   },
+   "length_m": 0.3,
+   "name_label": {
+    "text": "Wall",
+    "offset": [
+     0,
+     95
+    ],
+    "anchor": "mm"
+   }
+  },
+  {
+   "name": "Camera",
+   "panel": "rgb",
+   "mode": "illustrative",
+   "thesis_source": "Eq. 3.1 / Eq. 4.1: x right, y down, z into the scene",
+   "anchor_canvas_px": [
+    1100,
+    110
+   ],
+   "anchor_note": "legend at the upper-right image corner, clear of the wall marker at the upper left; the optical origin has no visible point in the image; directions are the image axes by definition",
+   "axes_canvas": {
+    "X": [
+     1,
+     0
+    ],
+    "Y": [
+     0,
+     1
+    ]
+   },
+   "length_px": 230,
+   "z_symbol": "into",
+   "axis_label_offsets": {
+    "X": [
+     42,
+     0
+    ],
+    "Y": [
+     0,
+     42
+    ],
+    "Z": [
+     -58,
+     -58
+    ]
+   },
+   "name_label": {
+    "text": "Camera",
+    "offset": [
+     30,
+     130
+    ],
+    "anchor": "lm"
+   }
+  }
+ ],
+ "texts": [
+  {
+   "text": "Z: normal to each marker face",
+   "xy": [
+    40,
+    1140
+   ],
+   "anchor": "lm"
+  }
+ ]
+}

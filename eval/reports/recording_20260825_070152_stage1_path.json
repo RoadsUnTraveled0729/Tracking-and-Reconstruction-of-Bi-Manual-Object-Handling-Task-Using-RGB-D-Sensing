@@ -1,0 +1,46 @@
+{
+ "stem": "recording_20260825_070152",
+ "path_file": "/home/luo/Desktop/New_SandBox/eval/gt/labeled_path.json",
+ "survey_complete": false,
+ "dwell_params": {
+  "v_thresh_mps": 0.02,
+  "min_dur_s": 0.5,
+  "smooth_win": 5
+ },
+ "dwells": [
+  {
+   "start": 648,
+   "stop": 742,
+   "frames": 95,
+   "duration_s": 3.14,
+   "mean_xyz": [
+    0.1525,
+    -0.2815,
+    0.5024
+   ],
+   "std_xyz_mm": [
+    0.2,
+    0.3,
+    0.7
+   ]
+  },
+  {
+   "start": 840,
+   "stop": 861,
+   "frames": 22,
+   "duration_s": 0.7,
+   "mean_xyz": [
+    0.1679,
+    -0.2071,
+    0.3735
+   ],
+   "std_xyz_mm": [
+    0.2,
+    0.7,
+    1.1
+   ]
+  }
+ ],
+ "point_to_path_cm": "PENDING SURVEY",
+ "closure_wall_mm": "PENDING SURVEY"
+}

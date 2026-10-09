@@ -1,0 +1,999 @@
+{
+  "status": "PASS",
+  "numerical": {
+    "status": "PASS",
+    "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+    "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+    "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+    "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+    "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+    "valid_runs_half_open": [
+      [
+        0,
+        11
+      ],
+      [
+        25,
+        550
+      ],
+      [
+        640,
+        646
+      ],
+      [
+        647,
+        674
+      ],
+      [
+        675,
+        678
+      ],
+      [
+        679,
+        681
+      ],
+      [
+        685,
+        900
+      ]
+    ],
+    "hampel_flagged_source_frames": [
+      36,
+      537,
+      760
+    ],
+    "hampel_frame_36_depth_m": 1.133,
+    "hampel_frame_36_local_depth_median_m": 1.101,
+    "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+    "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+    "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+    "gap_source_frames": [
+      681,
+      682,
+      683,
+      684
+    ],
+    "gap_valid_endpoints": [
+      680,
+      685
+    ],
+    "gap_interpolation_max_error_m": 0.0,
+    "butterworth_backward_vs_frozen_max_error_m": 0.0,
+    "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+    "median_window_vs_frozen_error_m": 0.0,
+    "one_euro_prefix_invariance_max_error_m": 0.0,
+    "one_euro_parameters": {
+      "min_cutoff_hz": 0.05,
+      "beta": 1.0
+    },
+    "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+    "parameters": {
+      "hampel_window": 7,
+      "hampel_k": 3.0,
+      "hampel_floor": 0.02,
+      "max_gap": 5,
+      "edge_fill": 0,
+      "butter_order": 4,
+      "cutoff_hz": 3.0,
+      "smooth_window": 9,
+      "smooth_polyorder": 2,
+      "oneeuro_mincutoff": 0.05,
+      "oneeuro_beta": 1.0,
+      "fs": "derive from median recorded time_s differences"
+    }
+  },
+  "assets": [
+    {
+      "name": "filter_hampel",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_hampel",
+        "axis": "z",
+        "frames_inclusive": [
+          28,
+          46
+        ],
+        "focus_frame": 36,
+        "stages": [
+          "Recorded depth samples",
+          "Highlight centred seven-frame window",
+          "Flag the spike using the implemented two-rolling-median scale",
+          "Remove flagged sample; leave a gap"
+        ],
+        "qualification": "The test flags a sample; it does not itself replace it by the median."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 16,
+      "min_font_px": 84,
+      "checked_frames": 1459,
+      "gif_decoded_frames": 4,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "ba3d9d077a556ff6404d7a4390962c7152d1245dd08a41180d31461a16ad614d",
+        "mp4": "b57e48ff52104d7f1bc87794f43b0826bf71e526a836798f9d84cf6b4c0bd3f3",
+        "png": "c8d561d1ef2c5a148fd883c4a1f1338c21aa0b812150886494fa1c92e190baaa"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    },
+    {
+      "name": "filter_gap",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_gap",
+        "axis": "x",
+        "frames_inclusive": [
+          679,
+          692
+        ],
+        "missing_frames_inclusive": [
+          681,
+          684
+        ],
+        "stages": [
+          "Recorded four-frame gap",
+          "Select valid endpoints",
+          "Interpolate only the missing samples",
+          "Keep replacements visibly flagged"
+        ],
+        "qualification": "Interior gap only; this is modelled input, not a new sensor observation."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 16,
+      "min_font_px": 84,
+      "checked_frames": 1463,
+      "gif_decoded_frames": 8,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "ea52a64f6e2157a2ed5a32ae62adf2d286d31843c3d2308bded0d85f4a622029",
+        "mp4": "2a481ae215afe2d9afea8a3dda9f56d2df9d414a8194f5a99c2e26fa7a6752f0",
+        "png": "c70fd432d42c3409bd43c33518c7217192f7c2652dc2500f5bae7adb218ced20"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    },
+    {
+      "name": "filter_butterworth",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_butterworth",
+        "axis": "z",
+        "frames_inclusive": [
+          28,
+          110
+        ],
+        "method": "butter",
+        "stages": [
+          "Recorded input",
+          "Forward pass",
+          "Backward pass",
+          "Show the resulting smooth trace"
+        ],
+        "qualification": "Full contiguous valid run is used before cropping; the backward pass needs future samples. The passing cursor is explanatory, not a recording of runtime."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 16,
+      "min_font_px": 84,
+      "checked_frames": 1547,
+      "gif_decoded_frames": 92,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "21cee00b91181bfe7dee7c52cb69f5ef4c990b66a7f6069c1582b8a6224dcf57",
+        "mp4": "6cd350754f5ca1270351c085a00e3ecad16d34e9b75b545a9172ff5649a6eb05",
+        "png": "66af34837d1394cfcfed591ae440805c19a5d1dca6d5c9f92f8daa27772da79b"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    },
+    {
+      "name": "filter_one_euro",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_one_euro",
+        "axis": "z",
+        "frames_inclusive": [
+          28,
+          180
+        ],
+        "method": "oneeuro",
+        "stages": [
+          "First received sample",
+          "Reveal received samples and causal output",
+          "Retain only received history",
+          "Hold final input/output comparison"
+        ],
+        "qualification": "Use Appendix-F minimum 0.05 Hz and beta 1.0, not the unrelated V2 CLI default of 1.0 Hz. No zero-lag claim."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 17,
+      "min_font_px": 84,
+      "checked_frames": 1610,
+      "gif_decoded_frames": 155,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "56da41e6fcd531be89bbdd04e41450e046730efc16262923fc0129859c900828",
+        "mp4": "fe9be9537f87f9c31f149f29c41ac99d34649e693c50e74c55b11845aa37747a",
+        "png": "96a13638fc0d6fb95f40978fa0a622b5d157876929b0e5c0d2587a4ff7dfad34"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    },
+    {
+      "name": "filter_savgol",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_savgol",
+        "axis": "z",
+        "frames_inclusive": [
+          28,
+          56
+        ],
+        "method": "savgol",
+        "stages": [
+          "Recorded input",
+          "Highlight a nine-sample window",
+          "Show the quadratic fit and centre output",
+          "Show the resulting curve"
+        ],
+        "qualification": "Isolated candidate demonstration on raw recorded depth, not the complete despike-gap-smooth chain."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 16,
+      "min_font_px": 84,
+      "checked_frames": 1459,
+      "gif_decoded_frames": 4,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "73a4ab1d61083839f58b4a590ebbcfd470497cc981e424bfd2f0665da92986b9",
+        "mp4": "adb29ae7c8f000054cd453f4a3eda98bbfb62039fb3f4ba1ce53c37c42ec54fc",
+        "png": "b3ac9886009b1d528fb07501bcb0cd24f8214c290316c2c7dea54d11026ab52c"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    },
+    {
+      "name": "filter_median",
+      "dimensions": [
+        1440,
+        1080
+      ],
+      "editorial_duration_seconds": 36,
+      "editorial_gif_fps": 10,
+      "mp4_fps": 30,
+      "timing_scope": "Teaching holds and movement; not measured system timing",
+      "loop_transition": "Final held teaching stage restarts at stage one",
+      "sources": [
+        "presentation/defense_2026/media/provenance/filter_demo_raw_r6b.csv",
+        "presentation/defense_2026/media/provenance/filter_demo_saved_parameters_r6b.json",
+        "v1/mediapipe/filter_landmarks.py"
+      ],
+      "status": "PASS",
+      "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+      "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+      "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+      "display": {
+        "name": "filter_median",
+        "axis": "z",
+        "frames_inclusive": [
+          28,
+          56
+        ],
+        "method": "median",
+        "stages": [
+          "Recorded input",
+          "Highlight a nine-sample window",
+          "Select its median value",
+          "Show the resulting curve"
+        ],
+        "qualification": "Isolated candidate demonstration; a high isolated sample is rejected rather than averaged."
+      },
+      "render_dimensions_override": "1440x1080 panel; supersedes initial1920wide brief",
+      "trace_scope": "Saved input with isolated source-function replay; not independent accuracy",
+      "numerical_checks": {
+        "status": "PASS",
+        "scope": "Numerical replay of frozen operations, not an accuracy experiment",
+        "source_csv_sha256": "71b128a397557add905eacafe9363db9f1a99d55b0297fcc87b7ed55c5249b2b",
+        "implementation_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+        "saved_metadata_sha256": "f21a26fd2a4364d4bbdadd34573e7e6116a53cd0868b83111ac2c2371b8636be",
+        "sampling_rate_hz_from_median_time_difference": 29.978715112271413,
+        "valid_runs_half_open": [
+          [
+            0,
+            11
+          ],
+          [
+            25,
+            550
+          ],
+          [
+            640,
+            646
+          ],
+          [
+            647,
+            674
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            679,
+            681
+          ],
+          [
+            685,
+            900
+          ]
+        ],
+        "hampel_flagged_source_frames": [
+          36,
+          537,
+          760
+        ],
+        "hampel_frame_36_depth_m": 1.133,
+        "hampel_frame_36_local_depth_median_m": 1.101,
+        "hampel_frame_36_depth_residual_m": 0.03200000000000003,
+        "hampel_frame_36_depth_threshold_m": 0.026686800000000024,
+        "hampel_scale": "Exact two rolling-median implementation, not a substituted MAD formula",
+        "gap_source_frames": [
+          681,
+          682,
+          683,
+          684
+        ],
+        "gap_valid_endpoints": [
+          680,
+          685
+        ],
+        "gap_interpolation_max_error_m": 0.0,
+        "butterworth_backward_vs_frozen_max_error_m": 0.0,
+        "savgol_quadratic_center_vs_frozen_error_m": 1.5543122344752192e-15,
+        "median_window_vs_frozen_error_m": 0.0,
+        "one_euro_prefix_invariance_max_error_m": 0.0,
+        "one_euro_parameters": {
+          "min_cutoff_hz": 0.05,
+          "beta": 1.0
+        },
+        "display_window_history": "Smoother window beginning at frame28 has prior valid-run samples25-27",
+        "parameters": {
+          "hampel_window": 7,
+          "hampel_k": 3.0,
+          "hampel_floor": 0.02,
+          "max_gap": 5,
+          "edge_fill": 0,
+          "butter_order": 4,
+          "cutoff_hz": 3.0,
+          "smooth_window": 9,
+          "smooth_polyorder": 2,
+          "oneeuro_mincutoff": 0.05,
+          "oneeuro_beta": 1.0,
+          "fs": "derive from median recorded time_s differences"
+        }
+      },
+      "max_visible_words": 16,
+      "min_font_px": 84,
+      "checked_frames": 1459,
+      "gif_decoded_frames": 4,
+      "gif_duration_ms": 36000,
+      "gif_loop": 0,
+      "gif_quantized_source_comparison": "PASS: every stored frame",
+      "mp4_full_decode": "PASS",
+      "mp4_probe": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "width": 1440,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "36.000000"
+        }
+      },
+      "sha256": {
+        "gif": "972feb268ef433632572c5636cef3b2318649f513b1ab731a12dab1a753d31d4",
+        "mp4": "76a3cb8262133ac10c8638ad3d82807b598c4f19a311cb87ac37319dabcc5945",
+        "png": "b3ac9886009b1d528fb07501bcb0cd24f8214c290316c2c7dea54d11026ab52c"
+      },
+      "generator_sha256": "d42ed829e9c8d567c953730d25b89d1b2011bba3a5eda4bda61592c2302dfaff",
+      "metadata_revision": "Pairing provenance corrected after encoding; numerical inputs and Plot renderer are unchanged."
+    }
+  ],
+  "filter_generator_sha256": "259db4920e8c4d9e0814bdc2f767f914d04fac040da1160e068423868a22be91",
+  "timing": "All36second editorial loops; final8seconds held; not pipeline latency",
+  "pairing": "Camera clips use wider contiguous context from the same recording; exact plot crops are listed separately, and playback is not synchronized."
+}

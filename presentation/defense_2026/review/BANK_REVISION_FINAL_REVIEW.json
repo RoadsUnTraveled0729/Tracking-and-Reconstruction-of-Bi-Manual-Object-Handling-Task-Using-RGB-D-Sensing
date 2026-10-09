@@ -1,0 +1,138 @@
+{
+  "status": "COMPLETE_WITH_SOURCE_LIMITATIONS",
+  "package_status": "PASS",
+  "source_validation_status": "PARTIAL",
+  "main_pages": 53,
+  "qa_pages": 25,
+  "total_pages": 78,
+  "package_checks": {
+    "passed": 1842,
+    "failed": 0
+  },
+  "artifacts": {
+    "Thesis_Defence_2026.pptx": "0d63cc81198b275fa75e776ca4d1d4db7b4a401883f67330a496616366618d16",
+    "Thesis_Defence_2026.pdf": "1197b56ff62f276a391044088da9160b8cd27fb1b21507d15469092bc9628c7c",
+    "DEFENSE_SCRIPT.md": "4c50c5658541e95e5044f82ec5438a898a051fbdbbca732ef105e77b34415d08",
+    "DEFENSE_SCRIPT.docx": "496151f3f04d757c9e0937844a0627078c36686f8982233f665cca3495814ec3",
+    "DEFENSE_SCRIPT.pdf": "3c4da50d5f544d703e2e2415dda7405f091114b0a02b372101027c1c6512ca53",
+    "SPEAKER_NOTES.md": "265be86caf592042604e071b02e92c2f7b101119b0ad63d193754369678e235f",
+    "talk_content.json": "dc3646e423972da91fc705f6c8eb66380b7dc37ea5f4c9b927bd2595d39be177",
+    "backup_content.json": "8e6d1cbbf24cc4c7a373b36ec32e6905d52db5cf2feb389761015402ff2222cc",
+    "committee_materials/bank_revision/media_contract.json": "349dbcbb8aacd623b1770b67d294ea86616e21f47a4f828572eefc71af223197"
+  },
+  "reports": {
+    "review/ARTIFACT_CHECK.json": "cd1dfc8e2c4de2bf515406cf70bd1e91de130b6f51f15024d2057a581bdd580e",
+    "review/BUILD_LAYOUT_CHECK.json": "800adc60b7cda11badff7fe5169920b2be64d3f7d39f8b45bd1a1f36904e1c5f",
+    "review/RENDER_CHECK.json": "b5f846e7070eea97713372ed48c51cd73f84c152a2c56244e65d7e60e0b2a53c",
+    "review/SCRIPT_EXPORT_CHECK.json": "dec7e67571027083848dc685471498b18d5caff36c2cce667d803bed49572a70",
+    "review/BANK_REVISION_INDEPENDENT_REVIEW.json": "a4006602bfdbc982d00ea25b82c91c5c06015fbd53eb005d8ed8fee0932b2613",
+    "review/BANK_REVISION_P41_CODE_REVIEW.json": "7c1f0e0c54e6e291f11b8463c561b17243ecb4c65cf08acd7be23ab59155e775",
+    "bank_processing/BANK_SOURCE_CHECK.json": "2d0ac61daa6e820686e725949b3afb595c9f3ec9c22305e32cac8bfe10efd8a0",
+    "committee_materials/bank_revision/review/BANK_MEDIA_CHECK.json": "e36924ca5a62585582fd73f9dc45cc80cc1fdcd972b98dc8611bbeeb02292a82",
+    "committee_materials/bank_revision/provenance/SOURCE_PRESERVATION_CHECK.json": "72ee199217558819269a153b55302c93e0968e2ad37f856e96c351428036b1cc"
+  },
+  "integration_source_review": {
+    "reviewer": "Independent axes_plan_audit agent",
+    "status": "ACCEPT",
+    "files": {
+      "anim/bank_revision_build.py": "2abd4ad3cc4d479de3ce69a3dc76c070340b4df279bb434ccf57d3c1cc4cb06c",
+      "build_deck.py": "331265d422be2d50b6bab708d665eb6494006cd58b12178324c0443bb8adfbe9",
+      "validate_deck.py": "c85b2bfcf9bfa7dbf75e1a4e2e95e7e00cb6ca7ef393b78a3c1f6d1922a8a74b"
+    },
+    "retained_contract_rows_identical": 23,
+    "preserved_media_report_files": 99,
+    "ordered_page_ids": 78,
+    "active_contract_links": 28,
+    "correct_replacement_media_links": 5,
+    "all_equation_selections_unchanged": true,
+    "equation_catalog_and_white_manifest_unchanged": true
+  },
+  "content_review": {
+    "reviewer": "Independent main_talk agent",
+    "status": "PASS",
+    "pages": [
+      17,
+      18,
+      19,
+      20,
+      41
+    ],
+    "narration_matches_json_markdown_and_pptx": true,
+    "packaged_replacement_movie_hashes_match": true,
+    "six_changed_page_equation_images_preserved": true,
+    "one_movie_timing_node_per_changed_page": true,
+    "qa_and_media_guides_consistent": true
+  },
+  "root_visual_review": {
+    "status": "ACCEPT",
+    "full_pdf_pages": [
+      17,
+      18,
+      19,
+      20,
+      41,
+      1
+    ],
+    "additional_scope": "Changed-page contact sheet and archived imperfect-evidence overview pages 73-78",
+    "no_visible_clipping_or_overlap": true,
+    "exact_equations_legible": true,
+    "black_layout_consistent": true,
+    "source_and_model_labels_match_accepted_media": true,
+    "pdf_page_count": 78,
+    "script_pdf_pages": 25
+  },
+  "preservation": {
+    "prior_commit": "01d023a",
+    "baseline": "review/BANK_REVISION_BASELINE.json",
+    "selected_white_equations": 32,
+    "static_figure_manifest_sha256": "8b168b556e6ef03bc00e3d85927bee808773a6220c69b135799b83b915eafe8e"
+  },
+  "limits": [
+    {
+      "pages": [
+        27,
+        47
+      ],
+      "scope": "Required historical Unity outcome checker",
+      "status": "FAIL",
+      "passed": 7,
+      "failed": 1,
+      "report": "presentation/defense_2026/unity_capture/r7/check_unity_log.json",
+      "report_sha256": "c5dd5da002a6a95c22f2098d80409626453b537be2f5e38fb17783f3e25b9c9d",
+      "qualification": "Retained failed error-concentration assertion; source/frame/rig application checks are distinct. D-058 and D-066 retain the interpretation without waiving the failure."
+    },
+    {
+      "pages": [
+        41
+      ],
+      "scope": "Required historical Unity outcome checker",
+      "status": "FAIL",
+      "passed": 7,
+      "failed": 1,
+      "report": "presentation/defense_2026/unity_capture/r5_archived/check_unity_log.json",
+      "report_sha256": "6ea98199674352cb5de6caeeaf84dd6aa76b2961e7469dd741fa3201aa13b990",
+      "qualification": "Retained failed error-concentration assertion; source/frame/rig application checks are distinct. D-058 and D-066 retain the interpretation without waiving the failure."
+    },
+    {
+      "pages": [
+        20
+      ],
+      "scope": "Full recording tracking precondition",
+      "status": "FAIL",
+      "report": "presentation/defense_2026/bank_processing/p20/tracking_precondition_full.json",
+      "report_sha256": "4d5b0cf9ee445a66ecfecb7e3ceceee4e888850f631f36143893212e92e36d46",
+      "selected_interval_status": "PASS",
+      "selected_interval": [
+        28,
+        208
+      ],
+      "selected_report": "presentation/defense_2026/bank_processing/p20/tracking_precondition_selected.json",
+      "selected_report_sha256": "eaffc942c15104894ef5ca4e128a47f79249094078b915813ae9f6c131a7c42a",
+      "qualification": "The selected interval passes its own checker. This does not change the full recording failure."
+    },
+    "Desktop PowerPoint playback and projected readability require host rehearsal.",
+    "The 55:35 editorial draft remains expanded; the user deferred the final 20-minute cut.",
+    "Pages 34, 36 and 38 remain explicitly pending execution recordings.",
+    "Independent source arithmetic and render application do not establish anatomical accuracy or exact historical pixels."
+  ]
+}

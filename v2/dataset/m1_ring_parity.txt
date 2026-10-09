@@ -1,0 +1,16 @@
+Run: python v2/broker/check_ring_parity.py   (2026-08-06)
+
+[info] source: bag /home/luo/Desktop/New_SandBox/Video/recording_20260224_083945.bag (recorded pacing)
+[info] ring /dev/shm/rt_frames_parity: 8 slots x 1536032 B, color format format.bgr8, depth scale 0.001000 m/unit
+[info] timestamp domain: timestamp_domain.global_time
+[done] published 899 frames in 35.0 s (25.7 fps sustained)
+[stage] align+publish ms: p50 2.39  p95 2.56  p99 2.94  max 5.96
+[jitter] inter-frame hw delta ms: p50 33.36  p95 33.36  p99 33.36  max 33.36  (nominal 33.33)
+[PASS] no lapped publications (lapped=0)
+[PASS] frame count ring 899 == direct 899
+[PASS] hw timestamps strictly increasing across the ring
+[PASS] frame 0 color+depth sha256 identical
+[PASS] frame 100 color+depth sha256 identical
+[PASS] frame 500 color+depth sha256 identical
+[PASS] frame 898 color+depth sha256 identical
+[info] 899 frames, hw span 30.0 s

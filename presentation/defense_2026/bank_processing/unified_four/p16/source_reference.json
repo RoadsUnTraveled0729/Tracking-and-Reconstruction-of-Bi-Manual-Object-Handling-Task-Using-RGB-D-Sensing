@@ -1,0 +1,36 @@
+{
+  "page": 16,
+  "extraction_page": 19,
+  "source_bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_elbow_bend_test_right_elbow.bag",
+  "bound_files": {
+    "inference_frame_map": {
+      "path": "presentation/defense_2026/bank_processing/p19/inference_frame_map.json",
+      "sha256": "dba9ef002d4c7945945ddc975d115de6009761fc854e9aac13b50bb54a20b16b"
+    },
+    "source_manifest": {
+      "path": "presentation/defense_2026/bank_processing/p19/source_manifest.json",
+      "sha256": "50dbc5adb4634e20de27d8c199368388f141a74cc19784519baa5cabec0b08cb"
+    },
+    "raw_csv": {
+      "path": "presentation/defense_2026/bank_processing/p19/landmarks_raw.csv",
+      "sha256": "58c8201c3b884337bf80603c0cb03f41868952f0018a5c8db805cbf24bf34b2e"
+    },
+    "raw_meta": {
+      "path": "presentation/defense_2026/bank_processing/p19/landmarks_raw.meta.json",
+      "sha256": "bef9fd9467435c8779d9dd65a406668ff0b60a9e05b53835ff3334b04f56669b"
+    },
+    "filtered_csv": {
+      "path": "presentation/defense_2026/bank_processing/p19/landmarks_filtered.csv",
+      "sha256": "4ed5ddfe03561b95c7f6fffeea939ca42d8b9f565f13baea9e6f04d8aade9092"
+    },
+    "filtered_meta": {
+      "path": "presentation/defense_2026/bank_processing/p19/landmarks_filtered.meta.json",
+      "sha256": "df65527355b548a6cf9c122960286996f0898bf400f9e727a834907f6b26839a"
+    },
+    "tracking_precondition_full": {
+      "path": "presentation/defense_2026/bank_processing/p19/tracking_precondition_full.json",
+      "sha256": "b511a2fe90f73b972e4e5c94faf1e712e8144268f68c8f124583ca6257ce6d1f"
+    }
+  },
+  "note": "This page reuses an existing exact-inference extraction by reference; MediaPipe was not re-run and the referenced files are not rewritten."
+}

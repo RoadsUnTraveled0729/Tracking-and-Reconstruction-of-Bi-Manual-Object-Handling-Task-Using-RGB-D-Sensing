@@ -1,0 +1,87 @@
+{
+ "output": "overlay_static_markers.png",
+ "thesis_source": "Thesis V9 Section 2.2.2, Eq. 2.1 (static marker calibration: desk marker = World, wall marker = gravity reference)",
+ "panels": [
+  {
+   "id": "rgb",
+   "photo": "presentation/defense_2026/media/matched/r6b_frame_533.jpg",
+   "crop_px": [
+    0,
+    0,
+    640,
+    480
+   ],
+   "box_px": [
+    0,
+    0,
+    1440,
+    1080
+   ],
+   "camera": {
+    "type": "recording_intrinsics",
+    "meta": "eval/output/recording_20260831_065553_aruco_raw_scaled.meta.json"
+   }
+  }
+ ],
+ "frames": [
+  {
+   "name": "World",
+   "panel": "rgb",
+   "mode": "projected",
+   "thesis_source": "World = desk marker (id 2) frame, calibrated pose T_cam_desk",
+   "pose": {
+    "type": "calibration_world",
+    "calibration": "eval/output/scene_calibration_r6bc.json"
+   },
+   "length_m": 0.09,
+   "name_label": {
+    "text": "World",
+    "offset": [
+     -190,
+     -20
+    ],
+    "anchor": "mm"
+   },
+   "axis_label_offsets": {
+    "Y": [
+     -48,
+     10
+    ],
+    "Z": [
+     48,
+     -10
+    ]
+   }
+  },
+  {
+   "name": "Wall",
+   "panel": "rgb",
+   "mode": "projected",
+   "thesis_source": "Wall = wall marker (id 0, 150 mm, plumb wall) frame, calibrated pose T_cam_wall (thesis WallCameraR, Section 2.2.2); its in-plane up axis Y is the gravity reference",
+   "pose": {
+    "type": "calibration_marker",
+    "calibration": "eval/output/scene_calibration_r6bc.json",
+    "key": "T_cam_wall"
+   },
+   "length_m": 0.3,
+   "name_label": {
+    "text": "Wall",
+    "offset": [
+     0,
+     95
+    ],
+    "anchor": "mm"
+   }
+  }
+ ],
+ "texts": [
+  {
+   "text": "Z: normal to each marker face",
+   "xy": [
+    40,
+    1140
+   ],
+   "anchor": "lm"
+  }
+ ]
+}

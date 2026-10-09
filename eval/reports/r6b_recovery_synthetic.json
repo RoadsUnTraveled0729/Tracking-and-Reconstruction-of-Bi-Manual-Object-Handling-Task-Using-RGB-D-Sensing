@@ -1,0 +1,2361 @@
+{
+ "stem": "recording_20260831_065553",
+ "frames": 900,
+ "fps": 30.0,
+ "constants": {
+  "WIN": 45,
+  "GUARD": 15,
+  "MAX_WINDOWS": 8,
+  "POST": 10,
+  "clean_condition": "evaluated side + torso (E-025)"
+ },
+ "detector_failure_frames": {
+  "left": 838,
+  "right": 119,
+  "torso": 280
+ },
+ "grip_episodes": {
+  "left": [],
+  "right": [
+   [
+    207,
+    888
+   ]
+  ]
+ },
+ "holding_frames": {
+  "left": 0,
+  "right": 682
+ },
+ "torso_failure_runs": [
+  [
+   632,
+   899
+  ]
+ ],
+ "persistence_max_center_dist_cm": {
+  "left": null,
+  "right": null
+ },
+ "selection": {
+  "left": {
+   "clean_frames": 0,
+   "runs": [],
+   "windows": [],
+   "shifted_starts": []
+  },
+  "right": {
+   "clean_frames": 342,
+   "runs": [
+    [
+     207,
+     536
+    ]
+   ],
+   "windows": [
+    [
+     212,
+     256
+    ],
+    [
+     272,
+     316
+    ],
+    [
+     332,
+     376
+    ],
+    [
+     392,
+     436
+    ],
+    [
+     452,
+     496
+    ]
+   ],
+   "shifted_starts": [
+    {
+     "run": [
+      207,
+      536
+     ],
+     "shifted_start": 212,
+     "reason": "grip not yet established"
+    }
+   ]
+  }
+ },
+ "windows": [
+  {
+   "side": "right",
+   "scenario": "S1_arm",
+   "start": 212,
+   "stop": 256,
+   "t_start_s": 7.07,
+   "t_stop_s": 8.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.64,
+     6.55
+    ],
+    "sd_cm": [
+     3.49,
+     3.22,
+     1.41
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 9.611,
+      "p95": 31.397,
+      "max": 31.698
+     },
+     "group_median_deg": {
+      "swing": 24.645,
+      "twist": null,
+      "elbow": 0.019
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.03,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.841,
+      "p95": 1.837,
+      "max": 2.176
+     },
+     "group_median_deg": {
+      "swing": 1.312,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 0.94,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.544,
+      "p95": 8.614,
+      "max": 12.773
+     },
+     "group_median_deg": {
+      "swing": 1.558,
+      "twist": null,
+      "elbow": 0.731
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 9.15,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.81,
+   "truth_arm_range_deg": 4.04,
+   "wrist_travel_cm": 4.4,
+   "window_mu_cm": [
+    0.89,
+    -4.06,
+    9.06
+   ],
+   "grip_drift_cm": 4.31,
+   "center_dist_median_cm": 9.14,
+   "reach": {
+    "reach_ratio_median": 0.991,
+    "reach_ratio_max": 0.997,
+    "elbow_bend_median_deg": 14.67,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.1
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.518,
+    "p95": 1.142,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S2_arm_shoulder",
+   "start": 212,
+   "stop": 256,
+   "t_start_s": 7.07,
+   "t_stop_s": 8.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.64,
+     6.55
+    ],
+    "sd_cm": [
+     3.49,
+     3.22,
+     1.41
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 9.611,
+      "p95": 31.397,
+      "max": 31.698
+     },
+     "group_median_deg": {
+      "swing": 24.645,
+      "twist": null,
+      "elbow": 0.019
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.03,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.709,
+      "p95": 1.837,
+      "max": 2.176
+     },
+     "group_median_deg": {
+      "swing": 1.074,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 1.344,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.706,
+      "p95": 11.121,
+      "max": 16.115
+     },
+     "group_median_deg": {
+      "swing": 1.76,
+      "twist": null,
+      "elbow": 0.488
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 1.531,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.81,
+   "truth_arm_range_deg": 4.04,
+   "wrist_travel_cm": 4.4,
+   "window_mu_cm": [
+    0.89,
+    -4.06,
+    9.06
+   ],
+   "grip_drift_cm": 4.31,
+   "center_dist_median_cm": 9.14,
+   "reach": {
+    "reach_ratio_median": 0.991,
+    "reach_ratio_max": 0.997,
+    "elbow_bend_median_deg": 14.67,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.1
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.518,
+    "p95": 1.142,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S3_arm_shoulder_torso",
+   "start": 212,
+   "stop": 256,
+   "t_start_s": 7.07,
+   "t_stop_s": 8.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.64,
+     6.55
+    ],
+    "sd_cm": [
+     3.49,
+     3.22,
+     1.41
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 9.611,
+      "p95": 31.397,
+      "max": 31.698
+     },
+     "group_median_deg": {
+      "swing": 24.645,
+      "twist": null,
+      "elbow": 0.019
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.03,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.56,
+      "p95": 2.954,
+      "max": 4.046
+     },
+     "group_median_deg": {
+      "swing": 0.803,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 4.291,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.822,
+      "p95": 11.121,
+      "max": 16.115
+     },
+     "group_median_deg": {
+      "swing": 1.873,
+      "twist": null,
+      "elbow": 0.488
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 4.291,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.81,
+   "truth_arm_range_deg": 4.04,
+   "wrist_travel_cm": 4.4,
+   "window_mu_cm": [
+    0.89,
+    -4.06,
+    9.06
+   ],
+   "grip_drift_cm": 4.31,
+   "center_dist_median_cm": 9.14,
+   "reach": {
+    "reach_ratio_median": 0.991,
+    "reach_ratio_max": 0.997,
+    "elbow_bend_median_deg": 14.67,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.1
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.518,
+    "p95": 1.142,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S1_arm",
+   "start": 272,
+   "stop": 316,
+   "t_start_s": 9.07,
+   "t_stop_s": 10.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.64,
+     -1.61,
+     6.61
+    ],
+    "sd_cm": [
+     3.49,
+     3.19,
+     1.49
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 8.817,
+      "p95": 46.101,
+      "max": 46.679
+     },
+     "group_median_deg": {
+      "swing": 31.138,
+      "twist": null,
+      "elbow": 0.004
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 10.341,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.184,
+      "p95": 2.809,
+      "max": 3.266
+     },
+     "group_median_deg": {
+      "swing": 0.304,
+      "twist": null,
+      "elbow": 0.018
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 1.498,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.475,
+      "p95": 12.223,
+      "max": 14.338
+     },
+     "group_median_deg": {
+      "swing": 0.475,
+      "twist": null,
+      "elbow": 0.332
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 11.823,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.03,
+   "truth_arm_range_deg": 3.43,
+   "wrist_travel_cm": 4.03,
+   "window_mu_cm": [
+    0.78,
+    -4.4,
+    8.35
+   ],
+   "grip_drift_cm": 4.08,
+   "center_dist_median_cm": 8.42,
+   "reach": {
+    "reach_ratio_median": 0.988,
+    "reach_ratio_max": 0.995,
+    "elbow_bend_median_deg": 13.81,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 51.9
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.993,
+    "p95": 1.879,
+    "max": 2.121
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S2_arm_shoulder",
+   "start": 272,
+   "stop": 316,
+   "t_start_s": 9.07,
+   "t_stop_s": 10.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.64,
+     -1.61,
+     6.61
+    ],
+    "sd_cm": [
+     3.49,
+     3.19,
+     1.49
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 8.817,
+      "p95": 46.101,
+      "max": 46.679
+     },
+     "group_median_deg": {
+      "swing": 31.138,
+      "twist": null,
+      "elbow": 0.004
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 10.341,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.43,
+      "p95": 2.809,
+      "max": 3.266
+     },
+     "group_median_deg": {
+      "swing": 0.756,
+      "twist": null,
+      "elbow": 0.018
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 2.194,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 3.732,
+      "p95": 25.807,
+      "max": 28.718
+     },
+     "group_median_deg": {
+      "swing": 4.751,
+      "twist": null,
+      "elbow": 0.158
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.03,
+   "truth_arm_range_deg": 3.43,
+   "wrist_travel_cm": 4.03,
+   "window_mu_cm": [
+    0.78,
+    -4.4,
+    8.35
+   ],
+   "grip_drift_cm": 4.08,
+   "center_dist_median_cm": 8.42,
+   "reach": {
+    "reach_ratio_median": 0.988,
+    "reach_ratio_max": 0.995,
+    "elbow_bend_median_deg": 13.81,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 51.9
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.993,
+    "p95": 1.879,
+    "max": 2.121
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S3_arm_shoulder_torso",
+   "start": 272,
+   "stop": 316,
+   "t_start_s": 9.07,
+   "t_stop_s": 10.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.64,
+     -1.61,
+     6.61
+    ],
+    "sd_cm": [
+     3.49,
+     3.19,
+     1.49
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 8.817,
+      "p95": 46.101,
+      "max": 46.679
+     },
+     "group_median_deg": {
+      "swing": 31.138,
+      "twist": null,
+      "elbow": 0.004
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 10.341,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.346,
+      "p95": 2.878,
+      "max": 3.266
+     },
+     "group_median_deg": {
+      "swing": 0.789,
+      "twist": null,
+      "elbow": 0.018
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 2.948,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 4.011,
+      "p95": 25.807,
+      "max": 28.718
+     },
+     "group_median_deg": {
+      "swing": 4.743,
+      "twist": null,
+      "elbow": 0.158
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.03,
+   "truth_arm_range_deg": 3.43,
+   "wrist_travel_cm": 4.03,
+   "window_mu_cm": [
+    0.78,
+    -4.4,
+    8.35
+   ],
+   "grip_drift_cm": 4.08,
+   "center_dist_median_cm": 8.42,
+   "reach": {
+    "reach_ratio_median": 0.988,
+    "reach_ratio_max": 0.995,
+    "elbow_bend_median_deg": 13.81,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 51.9
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.993,
+    "p95": 1.879,
+    "max": 2.121
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S1_arm",
+   "start": 332,
+   "stop": 376,
+   "t_start_s": 11.07,
+   "t_stop_s": 12.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.71,
+     6.65
+    ],
+    "sd_cm": [
+     3.47,
+     3.26,
+     1.53
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 6.325,
+      "p95": 57.397,
+      "max": 57.983
+     },
+     "group_median_deg": {
+      "swing": 34.351,
+      "twist": null,
+      "elbow": 0.0
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 51.352,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.751,
+      "p95": 5.869,
+      "max": 8.248
+     },
+     "group_median_deg": {
+      "swing": 1.489,
+      "twist": null,
+      "elbow": 0.137
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 8.46,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.919,
+      "p95": 11.961,
+      "max": 23.794
+     },
+     "group_median_deg": {
+      "swing": 1.919,
+      "twist": null,
+      "elbow": 0.977
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.79,
+   "truth_arm_range_deg": 5.96,
+   "wrist_travel_cm": 4.31,
+   "window_mu_cm": [
+    1.23,
+    -3.11,
+    7.86
+   ],
+   "grip_drift_cm": 3.45,
+   "center_dist_median_cm": 7.92,
+   "reach": {
+    "reach_ratio_median": 1.003,
+    "reach_ratio_max": 1.012,
+    "elbow_bend_median_deg": 14.42,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.8
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 1.214,
+    "p95": 2.092,
+    "max": 2.314
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S2_arm_shoulder",
+   "start": 332,
+   "stop": 376,
+   "t_start_s": 11.07,
+   "t_stop_s": 12.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.71,
+     6.65
+    ],
+    "sd_cm": [
+     3.47,
+     3.26,
+     1.53
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 6.325,
+      "p95": 57.397,
+      "max": 57.983
+     },
+     "group_median_deg": {
+      "swing": 34.351,
+      "twist": null,
+      "elbow": 0.0
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 51.352,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.937,
+      "p95": 6.535,
+      "max": 9.672
+     },
+     "group_median_deg": {
+      "swing": 2.425,
+      "twist": null,
+      "elbow": 0.137
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 9.884,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 5.947,
+      "p95": 28.254,
+      "max": 50.561
+     },
+     "group_median_deg": {
+      "swing": 6.08,
+      "twist": null,
+      "elbow": 1.364
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.79,
+   "truth_arm_range_deg": 5.96,
+   "wrist_travel_cm": 4.31,
+   "window_mu_cm": [
+    1.23,
+    -3.11,
+    7.86
+   ],
+   "grip_drift_cm": 3.45,
+   "center_dist_median_cm": 7.92,
+   "reach": {
+    "reach_ratio_median": 1.003,
+    "reach_ratio_max": 1.012,
+    "elbow_bend_median_deg": 14.42,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.8
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 1.214,
+    "p95": 2.092,
+    "max": 2.314
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S3_arm_shoulder_torso",
+   "start": 332,
+   "stop": 376,
+   "t_start_s": 11.07,
+   "t_stop_s": 12.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.71,
+     6.65
+    ],
+    "sd_cm": [
+     3.47,
+     3.26,
+     1.53
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 6.325,
+      "p95": 57.397,
+      "max": 57.983
+     },
+     "group_median_deg": {
+      "swing": 34.351,
+      "twist": null,
+      "elbow": 0.0
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 51.352,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.769,
+      "p95": 4.691,
+      "max": 5.992
+     },
+     "group_median_deg": {
+      "swing": 2.269,
+      "twist": null,
+      "elbow": 0.137
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 8.941,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 5.079,
+      "p95": 27.907,
+      "max": 42.885
+     },
+     "group_median_deg": {
+      "swing": 5.338,
+      "twist": null,
+      "elbow": 1.364
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 7.79,
+   "truth_arm_range_deg": 5.96,
+   "wrist_travel_cm": 4.31,
+   "window_mu_cm": [
+    1.23,
+    -3.11,
+    7.86
+   ],
+   "grip_drift_cm": 3.45,
+   "center_dist_median_cm": 7.92,
+   "reach": {
+    "reach_ratio_median": 1.003,
+    "reach_ratio_max": 1.012,
+    "elbow_bend_median_deg": 14.42,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.8
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 1.214,
+    "p95": 2.092,
+    "max": 2.314
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S1_arm",
+   "start": 392,
+   "stop": 436,
+   "t_start_s": 13.08,
+   "t_stop_s": 14.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.55,
+     6.76
+    ],
+    "sd_cm": [
+     3.49,
+     3.12,
+     1.56
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 5.085,
+      "p95": 89.186,
+      "max": 93.415
+     },
+     "group_median_deg": {
+      "swing": 47.589,
+      "twist": null,
+      "elbow": 0.067
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.61,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 2.101,
+      "p95": 7.171,
+      "max": 7.717
+     },
+     "group_median_deg": {
+      "swing": 2.497,
+      "twist": null,
+      "elbow": 0.045
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 4.86,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.938,
+      "p95": 7.468,
+      "max": 9.262
+     },
+     "group_median_deg": {
+      "swing": 3.117,
+      "twist": null,
+      "elbow": 0.01
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 4.86,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 12.64,
+   "truth_arm_range_deg": 5.99,
+   "wrist_travel_cm": 5.25,
+   "window_mu_cm": [
+    0.87,
+    -5.07,
+    6.57
+   ],
+   "grip_drift_cm": 4.33,
+   "center_dist_median_cm": 6.84,
+   "reach": {
+    "reach_ratio_median": 0.99,
+    "reach_ratio_max": 1.006,
+    "elbow_bend_median_deg": 17.02,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.3
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 2.549,
+    "p95": 3.734,
+    "max": 3.776
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S2_arm_shoulder",
+   "start": 392,
+   "stop": 436,
+   "t_start_s": 13.08,
+   "t_stop_s": 14.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.55,
+     6.76
+    ],
+    "sd_cm": [
+     3.49,
+     3.12,
+     1.56
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 5.085,
+      "p95": 89.186,
+      "max": 93.415
+     },
+     "group_median_deg": {
+      "swing": 47.589,
+      "twist": null,
+      "elbow": 0.067
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.61,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.85,
+      "p95": 6.441,
+      "max": 6.875
+     },
+     "group_median_deg": {
+      "swing": 2.638,
+      "twist": null,
+      "elbow": 0.045
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 5.618,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.55,
+      "p95": 6.526,
+      "max": 8.133
+     },
+     "group_median_deg": {
+      "swing": 2.665,
+      "twist": null,
+      "elbow": 0.044
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 5.618,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 12.64,
+   "truth_arm_range_deg": 5.99,
+   "wrist_travel_cm": 5.25,
+   "window_mu_cm": [
+    0.87,
+    -5.07,
+    6.57
+   ],
+   "grip_drift_cm": 4.33,
+   "center_dist_median_cm": 6.84,
+   "reach": {
+    "reach_ratio_median": 0.99,
+    "reach_ratio_max": 1.006,
+    "elbow_bend_median_deg": 17.02,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.3
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 2.549,
+    "p95": 3.734,
+    "max": 3.776
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S3_arm_shoulder_torso",
+   "start": 392,
+   "stop": 436,
+   "t_start_s": 13.08,
+   "t_stop_s": 14.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.65,
+     -1.55,
+     6.76
+    ],
+    "sd_cm": [
+     3.49,
+     3.12,
+     1.56
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 5.085,
+      "p95": 89.186,
+      "max": 93.415
+     },
+     "group_median_deg": {
+      "swing": 47.589,
+      "twist": null,
+      "elbow": 0.067
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 14.61,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 2.056,
+      "p95": 7.527,
+      "max": 7.802
+     },
+     "group_median_deg": {
+      "swing": 2.213,
+      "twist": null,
+      "elbow": 0.045
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 5.517,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 1.984,
+      "p95": 7.547,
+      "max": 7.802
+     },
+     "group_median_deg": {
+      "swing": 2.394,
+      "twist": null,
+      "elbow": 0.044
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 5.517,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 12.64,
+   "truth_arm_range_deg": 5.99,
+   "wrist_travel_cm": 5.25,
+   "window_mu_cm": [
+    0.87,
+    -5.07,
+    6.57
+   ],
+   "grip_drift_cm": 4.33,
+   "center_dist_median_cm": 6.84,
+   "reach": {
+    "reach_ratio_median": 0.99,
+    "reach_ratio_max": 1.006,
+    "elbow_bend_median_deg": 17.02,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.3
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 2.549,
+    "p95": 3.734,
+    "max": 3.776
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S1_arm",
+   "start": 452,
+   "stop": 496,
+   "t_start_s": 15.08,
+   "t_stop_s": 16.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.6,
+     6.75
+    ],
+    "sd_cm": [
+     3.47,
+     3.18,
+     1.57
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 3.118,
+      "p95": 96.653,
+      "max": 97.695
+     },
+     "group_median_deg": {
+      "swing": 48.466,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 8.581,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.492,
+      "p95": 3.04,
+      "max": 3.572
+     },
+     "group_median_deg": {
+      "swing": 0.766,
+      "twist": null,
+      "elbow": 0.037
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 1.993,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.551,
+      "p95": 5.352,
+      "max": 12.312
+     },
+     "group_median_deg": {
+      "swing": 0.766,
+      "twist": null,
+      "elbow": 0.014
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 12.034,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 11.52,
+   "truth_arm_range_deg": 5.18,
+   "wrist_travel_cm": 2.51,
+   "window_mu_cm": [
+    1.22,
+    -4.41,
+    6.63
+   ],
+   "grip_drift_cm": 4.04,
+   "center_dist_median_cm": 6.85,
+   "reach": {
+    "reach_ratio_median": 0.997,
+    "reach_ratio_max": 1.004,
+    "elbow_bend_median_deg": 17.39,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.6
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.926,
+    "p95": 1.995,
+    "max": 2.293
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S2_arm_shoulder",
+   "start": 452,
+   "stop": 496,
+   "t_start_s": 15.08,
+   "t_stop_s": 16.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.6,
+     6.75
+    ],
+    "sd_cm": [
+     3.47,
+     3.18,
+     1.57
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 3.118,
+      "p95": 96.653,
+      "max": 97.695
+     },
+     "group_median_deg": {
+      "swing": 48.466,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 8.581,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.563,
+      "p95": 3.482,
+      "max": 5.207
+     },
+     "group_median_deg": {
+      "swing": 0.828,
+      "twist": null,
+      "elbow": 0.037
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 3.851,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.548,
+      "p95": 11.733,
+      "max": 21.329
+     },
+     "group_median_deg": {
+      "swing": 0.828,
+      "twist": null,
+      "elbow": 0.012
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 11.52,
+   "truth_arm_range_deg": 5.18,
+   "wrist_travel_cm": 2.51,
+   "window_mu_cm": [
+    1.22,
+    -4.41,
+    6.63
+   ],
+   "grip_drift_cm": 4.04,
+   "center_dist_median_cm": 6.85,
+   "reach": {
+    "reach_ratio_median": 0.997,
+    "reach_ratio_max": 1.004,
+    "elbow_bend_median_deg": 17.39,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.6
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.926,
+    "p95": 1.995,
+    "max": 2.293
+   }
+  },
+  {
+   "side": "right",
+   "scenario": "S3_arm_shoulder_torso",
+   "start": 452,
+   "stop": 496,
+   "t_start_s": 15.08,
+   "t_stop_s": 16.54,
+   "episode": {
+    "start": 207,
+    "stop": 888,
+    "n_clean": 532,
+    "source": "episode",
+    "mu_cm": [
+     -1.68,
+     -1.6,
+     6.75
+    ],
+    "sd_cm": [
+     3.47,
+     3.18,
+     1.57
+    ]
+   },
+   "truth_live_frac": {
+    "swing": 1.0,
+    "twist": 0.0,
+    "elbow": 1.0,
+    "root": 0.0
+   },
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 3.118,
+      "p95": 96.653,
+      "max": 97.695
+     },
+     "group_median_deg": {
+      "swing": 48.466,
+      "twist": null,
+      "elbow": 0.03
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 8.581,
+     "live_violation_frames": 0
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.574,
+      "p95": 3.741,
+      "max": 5.219
+     },
+     "group_median_deg": {
+      "swing": 1.004,
+      "twist": null,
+      "elbow": 0.037
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 3.637,
+     "live_violation_frames": 0
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 180,
+      "median": 0.54,
+      "p95": 11.691,
+      "max": 22.45
+     },
+     "group_median_deg": {
+      "swing": 1.083,
+      "twist": null,
+      "elbow": 0.012
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": 15.0,
+     "live_violation_frames": 0
+    }
+   },
+   "truth_arm_travel_deg": 11.52,
+   "truth_arm_range_deg": 5.18,
+   "wrist_travel_cm": 2.51,
+   "window_mu_cm": [
+    1.22,
+    -4.41,
+    6.63
+   ],
+   "grip_drift_cm": 4.04,
+   "center_dist_median_cm": 6.85,
+   "reach": {
+    "reach_ratio_median": 0.997,
+    "reach_ratio_max": 1.004,
+    "elbow_bend_median_deg": 17.39,
+    "calibrated_reach_cm": 52.2,
+    "measured_arm_cm": 52.6
+   },
+   "obj_wrist_frames": 45,
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.926,
+    "p95": 1.995,
+    "max": 2.293
+   }
+  }
+ ],
+ "aggregate": {
+  "right|S1_arm": {
+   "n_windows": 5,
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 3.397,
+      "p95": 92.637,
+      "max": 97.695
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 14.03,
+      "p95": 44.004,
+      "max": 51.352
+     },
+     "window_median_worst_deg": 9.611
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 0.595,
+      "p95": 5.571,
+      "max": 8.248
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 1.993,
+      "p95": 7.74,
+      "max": 8.46
+     },
+     "window_median_worst_deg": 2.101
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 1.33,
+      "p95": 9.086,
+      "max": 23.794
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 11.823,
+      "p95": 14.407,
+      "max": 15.0
+     },
+     "window_median_worst_deg": 1.938
+    }
+   },
+   "worst_window_by_recovery": {
+    "window": [
+     392,
+     436
+    ],
+    "medians_deg": {
+     "hold": 5.085,
+     "masked": 2.101,
+     "recovery": 1.938
+    },
+    "obj_wrist_err_cm": 2.549
+   },
+   "obj_wrist_err_cm": {
+    "n": 225,
+    "median": 1.02,
+    "p95": 2.882,
+    "max": 3.776
+   }
+  },
+  "right|S2_arm_shoulder": {
+   "n_windows": 5,
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 3.397,
+      "p95": 92.637,
+      "max": 97.695
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 14.03,
+      "p95": 44.004,
+      "max": 51.352
+     },
+     "window_median_worst_deg": 9.611
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 0.778,
+      "p95": 5.285,
+      "max": 9.672
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 3.851,
+      "p95": 9.031,
+      "max": 9.884
+     },
+     "window_median_worst_deg": 1.85
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 1.822,
+      "p95": 20.51,
+      "max": 50.561
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 15.0,
+      "p95": 15.0,
+      "max": 15.0
+     },
+     "window_median_worst_deg": 5.947
+    }
+   },
+   "worst_window_by_recovery": {
+    "window": [
+     332,
+     376
+    ],
+    "medians_deg": {
+     "hold": 6.325,
+     "masked": 0.937,
+     "recovery": 5.947
+    },
+    "obj_wrist_err_cm": 1.214
+   },
+   "obj_wrist_err_cm": {
+    "n": 225,
+    "median": 1.02,
+    "p95": 2.882,
+    "max": 3.776
+   }
+  },
+  "right|S3_arm_shoulder_torso": {
+   "n_windows": 5,
+   "methods": {
+    "hold": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 3.397,
+      "p95": 92.637,
+      "max": 97.695
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 14.03,
+      "p95": 44.004,
+      "max": 51.352
+     },
+     "window_median_worst_deg": 9.611
+    },
+    "masked": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 0.719,
+      "p95": 5.099,
+      "max": 7.802
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 4.291,
+      "p95": 8.256,
+      "max": 8.941
+     },
+     "window_median_worst_deg": 2.056
+    },
+    "recovery": {
+     "angle_err_deg": {
+      "n": 900,
+      "median": 1.93,
+      "p95": 20.267,
+      "max": 42.885
+     },
+     "root_err_deg": {
+      "n": 0,
+      "median": null,
+      "p95": null,
+      "max": null
+     },
+     "reacq_max_step_deg": {
+      "n": 5,
+      "median": 15.0,
+      "p95": 15.0,
+      "max": 15.0
+     },
+     "window_median_worst_deg": 5.079
+    }
+   },
+   "worst_window_by_recovery": {
+    "window": [
+     332,
+     376
+    ],
+    "medians_deg": {
+     "hold": 6.325,
+     "masked": 0.769,
+     "recovery": 5.079
+    },
+    "obj_wrist_err_cm": 1.214
+   },
+   "obj_wrist_err_cm": {
+    "n": 225,
+    "median": 1.02,
+    "p95": 2.882,
+    "max": 3.776
+   }
+  }
+ },
+ "honesty_violations": [],
+ "duration_sweep": [
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 226,
+   "duration_frames": 15,
+   "duration_s": 0.5,
+   "methods": {
+    "hold": {
+     "n": 60,
+     "median": 11.223,
+     "p95": 31.584,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 60,
+     "median": 0.662,
+     "p95": 1.867,
+     "max": 2.084
+    },
+    "recovery": {
+     "n": 60,
+     "median": 1.769,
+     "p95": 9.843,
+     "max": 12.773
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 15,
+    "median": 0.542,
+    "p95": 1.182,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 241,
+   "duration_frames": 30,
+   "duration_s": 1.0,
+   "methods": {
+    "hold": {
+     "n": 120,
+     "median": 10.487,
+     "p95": 31.517,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 120,
+     "median": 1.044,
+     "p95": 1.932,
+     "max": 2.176
+    },
+    "recovery": {
+     "n": 120,
+     "median": 1.436,
+     "p95": 7.029,
+     "max": 12.773
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 30,
+    "median": 0.546,
+    "p95": 1.175,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 256,
+   "duration_frames": 45,
+   "duration_s": 1.5,
+   "methods": {
+    "hold": {
+     "n": 180,
+     "median": 9.611,
+     "p95": 31.397,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 180,
+     "median": 0.841,
+     "p95": 1.837,
+     "max": 2.176
+    },
+    "recovery": {
+     "n": 180,
+     "median": 1.544,
+     "p95": 8.614,
+     "max": 12.773
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 45,
+    "median": 0.518,
+    "p95": 1.142,
+    "max": 1.195
+   }
+  },
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 271,
+   "duration_frames": 60,
+   "duration_s": 2.0,
+   "methods": {
+    "hold": {
+     "n": 240,
+     "median": 9.199,
+     "p95": 31.236,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 240,
+     "median": 0.598,
+     "p95": 1.723,
+     "max": 2.176
+    },
+    "recovery": {
+     "n": 240,
+     "median": 1.615,
+     "p95": 8.927,
+     "max": 15.146
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 60,
+    "median": 0.555,
+    "p95": 1.199,
+    "max": 1.44
+   }
+  },
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 286,
+   "duration_frames": 75,
+   "duration_s": 2.5,
+   "methods": {
+    "hold": {
+     "n": 300,
+     "median": 8.462,
+     "p95": 31.084,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 300,
+     "median": 0.575,
+     "p95": 1.723,
+     "max": 2.176
+    },
+    "recovery": {
+     "n": 300,
+     "median": 1.87,
+     "p95": 10.741,
+     "max": 16.527
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 75,
+    "median": 0.676,
+    "p95": 1.466,
+    "max": 1.785
+   }
+  },
+  {
+   "side": "right",
+   "run": [
+    207,
+    536
+   ],
+   "start": 212,
+   "stop": 301,
+   "duration_frames": 90,
+   "duration_s": 3.0,
+   "methods": {
+    "hold": {
+     "n": 360,
+     "median": 8.246,
+     "p95": 30.95,
+     "max": 31.698
+    },
+    "masked": {
+     "n": 360,
+     "median": 0.544,
+     "p95": 2.338,
+     "max": 3.187
+    },
+    "recovery": {
+     "n": 360,
+     "median": 1.933,
+     "p95": 11.121,
+     "max": 16.527
+    }
+   },
+   "obj_wrist_err_cm": {
+    "n": 90,
+    "median": 0.822,
+    "p95": 1.92,
+    "max": 2.44
+   }
+  }
+ ]
+}

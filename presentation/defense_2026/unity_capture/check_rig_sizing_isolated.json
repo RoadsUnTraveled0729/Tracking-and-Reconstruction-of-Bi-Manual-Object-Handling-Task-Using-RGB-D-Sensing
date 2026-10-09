@@ -1,0 +1,7 @@
+{
+  "source": "eval/unity_check/check_rig_sizing.py",
+  "source_sha256": "5d64f70d35d88371d6c76257e892d9c58c5266da4ba4d5308399e1168b821253",
+  "copy": "presentation/defense_2026/unity_capture/check_rig_sizing_isolated.py",
+  "copy_sha256": "61aa3d6ed59dd2f0b422ce61df949b877d709f9459111078014257eeb75cafa3",
+  "only_change": "Private capture sizing side-channel path; all numeric tests unchanged."
+}

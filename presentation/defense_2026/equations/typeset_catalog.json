@@ -1,0 +1,631 @@
+{
+  "schema_version": 1,
+  "kind": "typeset filter equations (not cropped from the thesis)",
+  "generator": "presentation/defense_2026/equations/typeset_filters.py",
+  "renderer": {
+    "library": "matplotlib mathtext (no TeX)",
+    "matplotlib_version": "3.9.2",
+    "mathtext_fontset": "stix",
+    "text_font": "STIXGeneral (matplotlib bundled)",
+    "font_pt": 11.65,
+    "font_calibration": {
+      "reference": "presentation/defense_2026/equations/eq_5_4.png",
+      "reference_sha256": "31c69c1fef3606a982a2c1b5337399a98204e13fab2321b8b7258354cfe16cf1",
+      "reference_columns_px": [
+        670,
+        730
+      ],
+      "reference_digit_1_height_px": 66,
+      "probe_pt": 12.0,
+      "probe_digit_1_height_px": 68,
+      "alpha_threshold": 128
+    }
+  },
+  "render_dpi": 600,
+  "display_scale": 1.6,
+  "max_width_px": 1972,
+  "line_gap_px": 68,
+  "margin_px": 2,
+  "pinned_sources": {
+    "v1/mediapipe/filter_landmarks.py": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+    "v1/realtime/person/realtime_person.py": "0fae95a4bbef3390f24b5bd5c6e4698dc7af2094c1116201f62d28d8662a18e6"
+  },
+  "filter_source": "v1/mediapipe/filter_landmarks.py",
+  "filter_source_sha256": "7bdde9b75c352dffe2375244a2ac34f9820dd9622ccbaa661f52680dc92fb5ec",
+  "equations": {
+    "ts_hampel": {
+      "path": "presentation/defense_2026/equations/typeset/ts_hampel.png",
+      "title": "Hampel spike test",
+      "width_px": 1882,
+      "height_px": 412,
+      "display_in": [
+        5.019,
+        1.099
+      ],
+      "sha256": "9d3a5ec5c57db4b49dc8b0411553ce7fe46f35e7bd042814dab04c942a72eac1",
+      "mathtext": [
+        "$|x_i - m_i| > \\max(a_0,\\, k \\cdot 1.4826\\,\\mathrm{MAD}_i)$:  reject $x_i$",
+        "$m_i = \\mathrm{med}_{|j| \\leq 3}\\, x_{i+j},\\;\\; \\mathrm{MAD}_i = \\mathrm{med}_{|j| \\leq 3}\\, |x_{i+j} - m_{i+j}|$",
+        "$a_0 = 0.02$ m,  $k = 3$,  each axis"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "hampel_mask",
+        "lines": [
+          54,
+          62
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 57,
+          "contains": "df.rolling(window, center=True, min_periods=3)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 58,
+          "contains": "med = roll.median()"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 60,
+          "contains": "mad = (df - med).abs().rolling(window, center=True, min_periods=3).median()"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 61,
+          "contains": "thresh = np.maximum(abs_floor, k * 1.4826 * mad)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 62,
+          "contains": "(resid > thresh).any(axis=1)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 263,
+          "contains": "work[spikes] = np.nan"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "window",
+          "value": 7,
+          "unit": "frames",
+          "symbol": "|j| <= 3",
+          "source": "v1/mediapipe/filter_landmarks.py:202 (--hampel-window default 7), centred rolling window line 57"
+        },
+        {
+          "name": "k",
+          "value": 3.0,
+          "unit": "",
+          "symbol": "k",
+          "source": "v1/mediapipe/filter_landmarks.py:203 (--hampel-k default 3.0)"
+        },
+        {
+          "name": "abs_floor",
+          "value": 0.02,
+          "unit": "m",
+          "symbol": "a_0",
+          "source": "v1/mediapipe/filter_landmarks.py:204-205 (--hampel-floor default 0.02)"
+        },
+        {
+          "name": "MAD scale",
+          "value": 1.4826,
+          "unit": "",
+          "symbol": "1.4826",
+          "source": "v1/mediapipe/filter_landmarks.py:61"
+        }
+      ],
+      "notes": [
+        "MAD_i is the rolling median of each sample's own residual |x_{i+j} - m_{i+j}| (line 60), not of |x_{i+j} - m_i|.",
+        "A frame is flagged when the test holds on any of the three axes and the sample is finite (line 62); flagged samples become NaN (line 263), they are not replaced by the median.",
+        "Near segment ends the rolling medians use as few as 3 samples (min_periods=3, lines 57 and 60)."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_gap": {
+      "path": "presentation/defense_2026/equations/typeset/ts_gap.png",
+      "title": "Short-gap linear interpolation",
+      "width_px": 1321,
+      "height_px": 330,
+      "display_in": [
+        3.523,
+        0.88
+      ],
+      "sha256": "edb5fc230d4ebf8880c5c2b33830c516f30a90562f73772b2c72726d3b6bc020",
+      "mathtext": [
+        "$x(t) = x(t_a) + \\dfrac{t - t_a}{t_b - t_a}\\,\\left(x(t_b) - x(t_a)\\right)$",
+        "$t_a < t < t_b$,  interior gap $\\leq 5$ frames"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "fill_gaps",
+        "lines": [
+          71,
+          97
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 89,
+          "contains": "interior = start > valid_idx[0] and stop <= valid_idx[-1]"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 90,
+          "contains": "if interior and run <= max_gap:"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 92,
+          "contains": "np.interp(t[start:stop], t[~missing], pos[~missing, ax])"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "max_gap",
+          "value": 5,
+          "unit": "frames",
+          "symbol": "5",
+          "source": "v1/mediapipe/filter_landmarks.py:206-207 (--max-gap default 5)"
+        },
+        {
+          "name": "edge_fill",
+          "value": 0,
+          "unit": "frames",
+          "symbol": "",
+          "source": "v1/mediapipe/filter_landmarks.py:208-210 (--edge-fill default 0 = off); boundary runs are not filled"
+        }
+      ],
+      "notes": [
+        "t_a and t_b are the timestamps of the nearest valid samples before and after the gap; np.interp interpolates in time (t = time_s), per axis (line 92).",
+        "Longer runs and runs touching either end stay NaN with the default edge_fill 0."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_butter": {
+      "path": "presentation/defense_2026/equations/typeset/ts_butter.png",
+      "title": "Butterworth low-pass magnitude",
+      "width_px": 962,
+      "height_px": 358,
+      "display_in": [
+        2.565,
+        0.955
+      ],
+      "sha256": "974936c68e3c2883375b85f1127a5fd766c81890b7b9513b649cd7700ca10c8e",
+      "mathtext": [
+        "$|H(\\omega)|^2 = \\dfrac{1}{1 + (\\omega/\\omega_c)^{2n}}$",
+        "$n = 4,\\quad f_c = \\omega_c / 2\\pi = 3$ Hz"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "smooth_segment",
+        "lines": [
+          140,
+          145
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 141,
+          "contains": "b, a = butter(args.butter_order, args.cutoff_hz, fs=fs)"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "butter_order",
+          "value": 4,
+          "unit": "",
+          "symbol": "n",
+          "source": "v1/mediapipe/filter_landmarks.py:215 (--butter-order default 4)"
+        },
+        {
+          "name": "cutoff_hz",
+          "value": 3.0,
+          "unit": "Hz",
+          "symbol": "f_c",
+          "source": "v1/mediapipe/filter_landmarks.py:213-214 (--cutoff-hz default 3.0)"
+        }
+      ],
+      "notes": [
+        "This is the analog Butterworth prototype magnitude. scipy.signal.butter(4, 3.0, fs=fs) designs the digital filter by the bilinear transform with the cutoff pre-warped, so the digital response equals 1/2 in power at exactly f_c = 3 Hz; away from f_c it differs slightly from the analog curve.",
+        "fs is measured per recording from the timestamps (line 246); 29.98 Hz on R6b (presentation/defense_2026/experiments/filter_metrics/run_info.json sampling_rate_hz)."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_filtfilt": {
+      "path": "presentation/defense_2026/equations/typeset/ts_filtfilt.png",
+      "title": "Forward-backward (zero-phase) filtering",
+      "width_px": 1195,
+      "height_px": 264,
+      "display_in": [
+        3.187,
+        0.704
+      ],
+      "sha256": "9b50dd1f98e0c5fe3eeb80d6bca8a89ce00bef8564c35cbab7302d74edbdad54",
+      "mathtext": [
+        "$y = \\mathrm{rev}\\,\\left(H\\,\\mathrm{rev}\\,(H\\,x)\\right)$",
+        "zero phase,  magnitude $|H(\\omega)|^2$"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "smooth_segment",
+        "lines": [
+          140,
+          145
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 142,
+          "contains": "padlen = 3 * max(len(a), len(b))"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 145,
+          "contains": "out[:, ax] = filtfilt(b, a, seg[:, ax])"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "butter_order",
+          "value": 4,
+          "unit": "",
+          "symbol": "H",
+          "source": "v1/mediapipe/filter_landmarks.py:215"
+        },
+        {
+          "name": "cutoff_hz",
+          "value": 3.0,
+          "unit": "Hz",
+          "symbol": "H",
+          "source": "v1/mediapipe/filter_landmarks.py:213-214"
+        }
+      ],
+      "notes": [
+        "rev is time reversal. scipy.signal.filtfilt filters forward, reverses, filters again and reverses back, so the phase shifts cancel and the effective magnitude is |H|^2 (amplitude 1/2, -6 dB, at f_c).",
+        "filtfilt pads each segment by odd extension (default padlen 3*max(len(a), len(b)) = 15 samples); segments not longer than padlen are left unsmoothed (lines 142-143).",
+        "It needs the whole segment, including future samples, so it is an offline operation."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_savgol": {
+      "path": "presentation/defense_2026/equations/typeset/ts_savgol.png",
+      "title": "Savitzky-Golay smoothing",
+      "width_px": 1140,
+      "height_px": 412,
+      "display_in": [
+        3.04,
+        1.099
+      ],
+      "sha256": "33d04a3419a4a06b5dcaffbbbe900aa160b1fbdb033b5580c72910907a0f1050",
+      "mathtext": [
+        "$y_i = \\sum_{j=-4}^{4} c_j\\, x_{i+j}$",
+        "$c_j$:  least-squares quadratic fit"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "smooth_segment",
+        "lines": [
+          131,
+          134
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 134,
+          "contains": "savgol_filter(seg[:, ax], args.smooth_window, args.smooth_polyorder)"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "smooth_window",
+          "value": 9,
+          "unit": "samples",
+          "symbol": "j = -4..4",
+          "source": "v1/mediapipe/filter_landmarks.py:216-217 (--smooth-window default 9)"
+        },
+        {
+          "name": "smooth_polyorder",
+          "value": 2,
+          "unit": "",
+          "symbol": "quadratic",
+          "source": "v1/mediapipe/filter_landmarks.py:218 (--smooth-polyorder default 2)"
+        }
+      ],
+      "notes": [
+        "The fixed weights c_j evaluate, at the window centre, the least-squares quadratic through the 9 samples. scipy's default mode 'interp' fits the polynomial to the first and last 9 samples for the 4 edge samples at each segment end."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_median": {
+      "path": "presentation/defense_2026/equations/typeset/ts_median.png",
+      "title": "Rolling median",
+      "width_px": 936,
+      "height_px": 91,
+      "display_in": [
+        2.496,
+        0.243
+      ],
+      "sha256": "4043bc7a435d7f5ca377f2c683763646e4878a93e72b86d4b43224bc29e62f8c",
+      "mathtext": [
+        "$y_i = \\mathrm{med}\\,(x_{i-4},\\, \\ldots,\\, x_{i+4})$"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "smooth_segment",
+        "lines": [
+          135,
+          139
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 136,
+          "contains": "w = args.smooth_window if args.smooth_window % 2 else args.smooth_window + 1"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 139,
+          "contains": "out[:, ax] = medfilt(seg[:, ax], w)"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "smooth_window",
+          "value": 9,
+          "unit": "samples",
+          "symbol": "i-4..i+4",
+          "source": "v1/mediapipe/filter_landmarks.py:216-217 (--smooth-window default 9, odd so used as is, line 136)"
+        }
+      ],
+      "notes": [
+        "scipy.signal.medfilt pads each segment with zeros, so the first and last 4 outputs of a segment include zero-valued padding samples; the formula holds for interior samples."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_oneeuro_cutoff": {
+      "path": "presentation/defense_2026/equations/typeset/ts_oneeuro_cutoff.png",
+      "title": "One Euro adaptive cutoff",
+      "width_px": 1640,
+      "height_px": 308,
+      "display_in": [
+        4.373,
+        0.821
+      ],
+      "sha256": "396c1adeb7891613fa42f1504867f498bd9af9b75f1bf685ebb56f5c884fdb11",
+      "mathtext": [
+        "$d_i = f_s\\,(x_i - \\hat{x}_{i-1}),\\quad \\hat{d}_i = a_d\\, d_i + (1 - a_d)\\,\\hat{d}_{i-1}$",
+        "$f_c = f_{\\min} + \\beta\\, |\\hat{d}_i|$"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "OneEuro.__call__",
+        "lines": [
+          113,
+          123
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 117,
+          "contains": "dx = (x - self._x) * self.freq"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 118,
+          "contains": "a_d = self._alpha(self.d_cutoff, self.freq)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 119,
+          "contains": "self._dx = a_d * dx + (1 - a_d) * self._dx"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 120,
+          "contains": "cutoff = self.min_cutoff + self.beta * abs(self._dx)"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "d_cutoff",
+          "value": 1.0,
+          "unit": "Hz",
+          "symbol": "a_d = a(1 Hz)",
+          "source": "v1/mediapipe/filter_landmarks.py:104 (OneEuro d_cutoff default 1.0)"
+        },
+        {
+          "name": "min_cutoff",
+          "value": "0.05 offline / 1.0 live",
+          "unit": "Hz",
+          "symbol": "f_min",
+          "source": "v1/mediapipe/filter_landmarks.py:219-220 (offline default 0.05); v1/realtime/person/realtime_person.py:98-99 (CausalLandmarkFilter min_cutoff 1.0)"
+        },
+        {
+          "name": "beta",
+          "value": 1.0,
+          "unit": "s/m",
+          "symbol": "beta",
+          "source": "v1/mediapipe/filter_landmarks.py:221-222 (offline default 1.0); v1/realtime/person/realtime_person.py:98-99 (beta 1.0)"
+        }
+      ],
+      "notes": [
+        "The speed d_i is taken against the previous filtered value x_hat_{i-1}, not the previous raw sample (line 117: self._x holds the filtered output).",
+        "The first sample initialises x_hat = x and d_hat = 0 and is passed through unchanged (lines 114-116).",
+        "Units: positions are in metres, so |d_hat| is in m/s and beta = 1 converts it to Hz (unit s/m is implied by the code, not stated in it)."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_oneeuro_alpha": {
+      "path": "presentation/defense_2026/equations/typeset/ts_oneeuro_alpha.png",
+      "title": "One Euro smoothing factor and update",
+      "width_px": 1525,
+      "height_px": 188,
+      "display_in": [
+        4.067,
+        0.501
+      ],
+      "sha256": "04fb19856410a34cecd2bb97d642a63bec6b183e2f2e53cd9c34a92e090813f8",
+      "mathtext": [
+        "$a = \\dfrac{1}{1 + f_s / (2\\pi f_c)},\\quad \\hat{x}_i = a\\, x_i + (1 - a)\\,\\hat{x}_{i-1}$"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "OneEuro._alpha, OneEuro.__call__",
+        "lines": [
+          109,
+          122
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 110,
+          "contains": "tau = 1.0 / (2 * np.pi * cutoff)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 111,
+          "contains": "return 1.0 / (1.0 + tau * freq)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 121,
+          "contains": "a = self._alpha(cutoff, self.freq)"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 122,
+          "contains": "self._x = a * x + (1 - a) * self._x"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "freq",
+          "value": "measured per recording offline (29.98 Hz on R6b); 30 live",
+          "unit": "Hz",
+          "symbol": "f_s",
+          "source": "v1/mediapipe/filter_landmarks.py:246 (fs from median timestamp step), presentation/defense_2026/experiments/filter_metrics/run_info.json sampling_rate_hz 29.978715; v1/realtime/person/realtime_person.py:98 (freq=30.0)"
+        }
+      ],
+      "notes": [
+        "a = 1/(1 + tau f_s) with tau = 1/(2 pi f_c) (lines 110-111), rewritten with f_s/(2 pi f_c)."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    },
+    "ts_oneeuro_params": {
+      "path": "presentation/defense_2026/equations/typeset/ts_oneeuro_params.png",
+      "title": "One Euro settings",
+      "width_px": 1551,
+      "height_px": 251,
+      "display_in": [
+        4.136,
+        0.669
+      ],
+      "sha256": "ebf18488281ec5e2d13b1219dfb94e4f86c610949f26d1e86de8a58fae370ffe",
+      "mathtext": [
+        "$f_{\\min} = 0.05$ Hz offline,  $1$ Hz live;   $\\beta = 1$",
+        "$f_s \\approx 30$ Hz;   $a_d$ uses a $1$ Hz cutoff"
+      ],
+      "derived_from": {
+        "file": "v1/mediapipe/filter_landmarks.py",
+        "function": "OneEuro.__init__, main (argparse)",
+        "lines": [
+          104,
+          222
+        ]
+      },
+      "cited_lines": [
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 104,
+          "contains": "def __init__(self, freq, min_cutoff, beta, d_cutoff=1.0):"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 219,
+          "contains": "ap.add_argument(\"--oneeuro-mincutoff\", type=float, default=0.05,"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 221,
+          "contains": "ap.add_argument(\"--oneeuro-beta\", type=float, default=1.0,"
+        },
+        {
+          "file": "v1/mediapipe/filter_landmarks.py",
+          "line": 246,
+          "contains": "fs = 1.0 / float(np.median(np.diff(t))) if len(t) > 1 else 30.0"
+        },
+        {
+          "file": "v1/realtime/person/realtime_person.py",
+          "line": 98,
+          "contains": "def __init__(self, freq=30.0, window=11, k=3.0, abs_floor=0.035,"
+        },
+        {
+          "file": "v1/realtime/person/realtime_person.py",
+          "line": 99,
+          "contains": "min_cutoff=1.0, beta=1.0):"
+        }
+      ],
+      "parameters": [
+        {
+          "name": "min_cutoff offline",
+          "value": 0.05,
+          "unit": "Hz",
+          "symbol": "f_min",
+          "source": "v1/mediapipe/filter_landmarks.py:219-220"
+        },
+        {
+          "name": "min_cutoff live",
+          "value": 1.0,
+          "unit": "Hz",
+          "symbol": "f_min",
+          "source": "v1/realtime/person/realtime_person.py:99; eval/pipeline_smoothness/DECISIONS.md PS-006"
+        },
+        {
+          "name": "beta",
+          "value": 1.0,
+          "unit": "s/m",
+          "symbol": "beta",
+          "source": "v1/mediapipe/filter_landmarks.py:221-222; v1/realtime/person/realtime_person.py:99"
+        },
+        {
+          "name": "sampling rate",
+          "value": "29.98 offline (R6b), 30 live",
+          "unit": "Hz",
+          "symbol": "f_s",
+          "source": "v1/mediapipe/filter_landmarks.py:246; presentation/defense_2026/experiments/filter_metrics/run_info.json sampling_rate_hz; v1/realtime/person/realtime_person.py:98"
+        },
+        {
+          "name": "d_cutoff",
+          "value": 1.0,
+          "unit": "Hz",
+          "symbol": "a_d",
+          "source": "v1/mediapipe/filter_landmarks.py:104"
+        }
+      ],
+      "notes": [
+        "The offline setting (0.05 Hz) drives the One Euro demonstration film; the live setting (1 Hz) is the CausalLandmarkFilter default used by the real-time pipeline."
+      ],
+      "provenance": "typeset with matplotlib mathtext from the pinned implementation; not a thesis quotation",
+      "colour": "white RGB on transparent alpha; no recolor step needed"
+    }
+  }
+}

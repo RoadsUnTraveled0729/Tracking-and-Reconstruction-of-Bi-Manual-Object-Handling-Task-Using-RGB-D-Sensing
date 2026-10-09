@@ -1,0 +1,1072 @@
+{
+  "status": "PASS",
+  "scope": "Read-only scientific-source audit for the black-background chapter-ordered defense revision. No new experiment, detector, reconstruction or accuracy result was produced.",
+  "source_hashes": {
+    "writing/v9/Thesis_V9.pdf": "cab52bddd93b9ef40b9c42f718b9a17ba6af6f2a7a08124a8ce366ee30d9c929",
+    "presentation/defense_2026/equation_catalog.json": "19c33f8c2c92ee6ed7cf1c74482715d8e236b9d1be131893b736a9d6221cdaae",
+    "eval/reports/r5_recovery_labeled.json": "f5157ffd92f9a956ab72122c3d8b1f05c170501f8ca5d6b2d7b3f234c712f820",
+    "eval/reports/r7_failure_mask.md": "ef1df5688bffafdc5b9e6b11222634ddc3034469d1288f60c731f802641b2121",
+    "presentation/v9/anim/video1_overlay.py": "bd92ee379893136322e7d1e1112f78108a7e9735672688c1d60191dff45a0d52",
+    "v1/mediapipe/extract_landmarks_to_csv.py": "3c7936e078a25c9c4907e58f1c218775a13be7d319cfaa7a01d01baa7d93bee2",
+    "v2/common/shm_ring.py": "8b91db56d862e6370fe82cb896bf9f25b4d2dac2c982e1863c53f72482ea222c",
+    "eval/failure/recovery_core.py": "879c56426a6f8e1d673aab6543d59c9bd220b14ecdd5130cf38f0833f9db114b",
+    "eval/offset/fit_offset.py": "4daef5a80aeb6020c2feed835532ff8fa13e13b09962afa3067523616725589c",
+    "writing/v9/audit_evidence/remove_intermediate_frame/ch7_visual_examples_sources.json": "52454e04d91e7642da71e4f9254d5da3a4e5a78d12c319c4625fb9c9cd5c206e"
+  },
+  "chapter_order": [
+    {
+      "chapter": 1,
+      "title": "Introduction",
+      "first_printed_page": 1,
+      "last_content_page_used": 6,
+      "purpose": "Motivation, scope, research question"
+    },
+    {
+      "chapter": 2,
+      "title": "Experimental Setup and Measurements",
+      "first_printed_page": 7,
+      "last_content_page_used": 19,
+      "purpose": "RGB-D measurements, calibration, acquisition validity, filtering, hip depth"
+    },
+    {
+      "chapter": 3,
+      "title": "Kinematic Modelling",
+      "first_printed_page": 21,
+      "last_content_page_used": 35,
+      "purpose": "Torso basis, local arm frames, swing, twist, elbow coordinates"
+    },
+    {
+      "chapter": 4,
+      "title": "Object Tracking and Scene Reconstruction",
+      "first_printed_page": 40,
+      "last_content_page_used": 45,
+      "purpose": "Object pose in a fixed world and object-track cleaning"
+    },
+    {
+      "chapter": 5,
+      "title": "Pose Recovery During Tracking Failure",
+      "first_printed_page": 48,
+      "last_content_page_used": 61,
+      "purpose": "Failure masks, grip offset, wrist and elbow reconstruction"
+    },
+    {
+      "chapter": 6,
+      "title": "System Integration and Graphical Reconstruction",
+      "first_printed_page": 66,
+      "last_content_page_used": 80,
+      "purpose": "Frame ring, records, coordinate conversion, Unity rig"
+    },
+    {
+      "chapter": 7,
+      "title": "Experimental Evaluation",
+      "first_printed_page": 85,
+      "last_content_page_used": 105,
+      "purpose": "Reference-specific evaluation and imperfect examples"
+    },
+    {
+      "chapter": 8,
+      "title": "Real-Time Feasibility",
+      "first_printed_page": 107,
+      "last_content_page_used": 114,
+      "purpose": "Causal replacements, buffering, runtime, remaining live validation"
+    },
+    {
+      "chapter": 9,
+      "title": "Discussion",
+      "first_printed_page": 116,
+      "last_content_page_used": 120,
+      "purpose": "Interpretation, observability, modelling and evaluation limits"
+    },
+    {
+      "chapter": 10,
+      "title": "Conclusions and Future Work",
+      "first_printed_page": 121,
+      "last_content_page_used": 123,
+      "purpose": "Contributions and concrete further validation"
+    }
+  ],
+  "old_main_id_relocation": {
+    "6": "Chapter 4; Eq4.1 is not a Chapter2 formula.",
+    "8": "Chapter2 Section2.6 after filtering. Any manually repositioned hip points must be marked as anatomical annotations.",
+    "12-16": "Chapter3, expanded by derivations before angle results.",
+    "17-25": "Chapter5. Explain old23 as endpoint ambiguity.",
+    "28-35": "Chapter6 communication and reconstruction; excluding old26/27.",
+    "36-37": "Chapter7; add the natural-failure and imperfect-rendering examples here.",
+    "26-27": "Chapter8 after Chapter7, not before communication architecture.",
+    "38": "Chapter9 discussion, followed by a dedicated Chapter10 conclusions/future-work page.",
+    "39": "Question period; appendix follows."
+  },
+  "derivations": [
+    {
+      "name": "Torso construction: measured directions",
+      "chapter": 3,
+      "keys": [
+        "eq_3_7",
+        "eq_3_8",
+        "eq_3_9"
+      ],
+      "problem": "A torso basis must be derived from the landmarks.",
+      "steps": [
+        "Normalize the left-to-right hip vector.",
+        "Form the right hip-to-shoulder vector.",
+        "Cross the two to obtain the normalized forward axis."
+      ],
+      "keywords": [
+        "Hip axis",
+        "Spine-side vector",
+        "Torso plane"
+      ],
+      "caveat": "Four points outline the torso; three non-collinear points construct this basis. The spine-side vector is not generally perpendicular to the hip axis.",
+      "equations": [
+        {
+          "key": "eq_3_7",
+          "path": "presentation/defense_2026/equations/eq_3_7.png",
+          "printed_page": "26",
+          "pdf_page": 40,
+          "sha256": "e5699f5471710f8cd450f608a906195530a27f258eed66578f5ca353fac12f72"
+        },
+        {
+          "key": "eq_3_8",
+          "path": "presentation/defense_2026/equations/eq_3_8.png",
+          "printed_page": "26",
+          "pdf_page": 40,
+          "sha256": "748ac00d132eb1f5b15c696d3b8c3b6eaa50884a6dca709f29ff96f26abf6a2c"
+        },
+        {
+          "key": "eq_3_9",
+          "path": "presentation/defense_2026/equations/eq_3_9.png",
+          "printed_page": "26",
+          "pdf_page": 40,
+          "sha256": "34f7c98548f4c4f6522bf66434c0100ba0988a44e0fd9379747c01a49da65b2a"
+        }
+      ]
+    },
+    {
+      "name": "Torso construction: complete frame",
+      "chapter": 3,
+      "keys": [
+        "eq_3_10",
+        "eq_3_11",
+        "eq_3_12"
+      ],
+      "problem": "Two directions must become an orthonormal pose.",
+      "steps": [
+        "Cross the forward and right axes to obtain up.",
+        "Place right, up, forward in the columns of the rotation matrix.",
+        "Set the right hip as the root origin."
+      ],
+      "keywords": [
+        "Orthonormal axes",
+        "Rotation columns",
+        "Right-hip origin"
+      ],
+      "caveat": "Torso rigidity is a modelling assumption, not a measured result.",
+      "equations": [
+        {
+          "key": "eq_3_10",
+          "path": "presentation/defense_2026/equations/eq_3_10.png",
+          "printed_page": "27",
+          "pdf_page": 41,
+          "sha256": "7cdb86caf72432e67d165a92f9178851c3b1f1e625dedb51f82ad9f8df76832b"
+        },
+        {
+          "key": "eq_3_11",
+          "path": "presentation/defense_2026/equations/eq_3_11.png",
+          "printed_page": "27",
+          "pdf_page": 41,
+          "sha256": "854bcb23e0f20284b8799b62a03fd0ddf0eb39296ccaf55c1ec2f1af04c5a2e4"
+        },
+        {
+          "key": "eq_3_12",
+          "path": "presentation/defense_2026/equations/eq_3_12.png",
+          "printed_page": "27",
+          "pdf_page": 41,
+          "sha256": "dfef10d2f98aea01f5efeb2c6e3959b42f167f331156ebef79d4968f27d06cf8"
+        }
+      ]
+    },
+    {
+      "name": "Shoulder swing: derivation",
+      "chapter": 3,
+      "keys": [
+        "eq_3_18",
+        "eq_3_19"
+      ],
+      "problem": "An upper-arm direction does not determine axial roll.",
+      "steps": [
+        "Compose azimuth, elevation and innermost axial twist.",
+        "Apply the rotation to the rest upper-arm x axis.",
+        "The axial twist leaves that x axis unchanged, yielding the three direction components."
+      ],
+      "keywords": [
+        "Rotation order",
+        "Rest arm axis",
+        "Twist cancellation"
+      ],
+      "caveat": "Use the right-arm convention; mirror the left input vectors before applying the same solve.",
+      "equations": [
+        {
+          "key": "eq_3_18",
+          "path": "presentation/defense_2026/equations/eq_3_18.png",
+          "printed_page": "32",
+          "pdf_page": 46,
+          "sha256": "9a5bf90881c7939bb07ad82cbb76ed7ee36ea6d29964f14b306347d8b0eed6b2"
+        },
+        {
+          "key": "eq_3_19",
+          "path": "presentation/defense_2026/equations/eq_3_19.png",
+          "printed_page": "32",
+          "pdf_page": 46,
+          "sha256": "74ea3dec4e8bb8b3d39a65429a39c67d37bc0441e681ccf5dd4421ce815d719c"
+        }
+      ]
+    },
+    {
+      "name": "Shoulder swing: angle extraction",
+      "chapter": 3,
+      "keys": [
+        "eq_3_19",
+        "eq_3_20",
+        "eq_3_21"
+      ],
+      "problem": "The measured unit direction must be converted to joint coordinates.",
+      "steps": [
+        "Read sine of elevation from the y component.",
+        "Use x and z in a two-argument arctangent for azimuth."
+      ],
+      "keywords": [
+        "Vertical component",
+        "Horizontal projection",
+        "Elevation and azimuth"
+      ],
+      "caveat": "The azimuth is undefined when the arm is exactly vertical; the stated convention applies there.",
+      "equations": [
+        {
+          "key": "eq_3_19",
+          "path": "presentation/defense_2026/equations/eq_3_19.png",
+          "printed_page": "32",
+          "pdf_page": 46,
+          "sha256": "74ea3dec4e8bb8b3d39a65429a39c67d37bc0441e681ccf5dd4421ce815d719c"
+        },
+        {
+          "key": "eq_3_20",
+          "path": "presentation/defense_2026/equations/eq_3_20.png",
+          "printed_page": "33",
+          "pdf_page": 47,
+          "sha256": "843df500d59f8c8a617242cd3a3b4dc0754e7f90bc7519c743ea8c0d47f5e9de"
+        },
+        {
+          "key": "eq_3_21",
+          "path": "presentation/defense_2026/equations/eq_3_21.png",
+          "printed_page": "33",
+          "pdf_page": 47,
+          "sha256": "259bda562f37efa7fedeb8875b0be2dabd9b99be4069f2c2102d85101e2337ac"
+        }
+      ]
+    },
+    {
+      "name": "Shoulder twist: derivation",
+      "chapter": 3,
+      "keys": [
+        "eq_3_22",
+        "eq_3_23"
+      ],
+      "problem": "A second segment is needed to observe rotation about the upper arm.",
+      "steps": [
+        "Undo the solved swing on the forearm vector.",
+        "Read the remaining perpendicular y-z direction.",
+        "Extract twist with the printed sign convention."
+      ],
+      "keywords": [
+        "Inverse swing",
+        "Perpendicular forearm",
+        "Axial twist"
+      ],
+      "caveat": "Both f and f-prime in Eq.3.22 are expressed in L12. That equation is an operator, not a new frame-labelled coordinate transformation. Collinear segments leave twist unobservable.",
+      "equations": [
+        {
+          "key": "eq_3_22",
+          "path": "presentation/defense_2026/equations/eq_3_22.png",
+          "printed_page": "33",
+          "pdf_page": 47,
+          "sha256": "0b212f0d1b299f5b9496c07d0b3bef56e614e16ef245cfbe5b9c8439a7048f56"
+        },
+        {
+          "key": "eq_3_23",
+          "path": "presentation/defense_2026/equations/eq_3_23.png",
+          "printed_page": "34",
+          "pdf_page": 48,
+          "sha256": "9946382fd15e173dfbc456ee847d33f0354a289f245c83da0bf5f1db115b2e36"
+        }
+      ]
+    },
+    {
+      "name": "Elbow coordinate extraction",
+      "chapter": 3,
+      "keys": [
+        "eq_3_3",
+        "eq_3_24"
+      ],
+      "problem": "Elbow flexion must be read relative to the rotated upper arm.",
+      "steps": [
+        "Form the elbow-to-wrist segment.",
+        "Use the transpose of the elbow-frame orientation to express that direction locally, then normalize it.",
+        "Read the printed pair of elbow coordinates."
+      ],
+      "keywords": [
+        "Parent-frame direction",
+        "Normalized forearm",
+        "Elbow flexion"
+      ],
+      "caveat": "The exact unnumbered definition of g on printed p34 is not in the existing catalog. Explain its construction in prose or add an exact source crop; do not invent replacement notation. e_z is redundant in this ideal model, so four independent arm angles remain.",
+      "equations": [
+        {
+          "key": "eq_3_3",
+          "path": "presentation/defense_2026/equations/eq_3_3.png",
+          "printed_page": "23",
+          "pdf_page": 37,
+          "sha256": "2e79fb2bc8b618f544a36a5feeb5dfd8a19b889b5cd5584f404fc46af264032b"
+        },
+        {
+          "key": "eq_3_24",
+          "path": "presentation/defense_2026/equations/eq_3_24.png",
+          "printed_page": "34",
+          "pdf_page": 48,
+          "sha256": "3f6330a61e88538157d401bb3050a95072814c10cacb2c8d36fc95941da0cf1f"
+        }
+      ]
+    },
+    {
+      "name": "Root Euler representation, optional detailed derivation",
+      "chapter": 3,
+      "keys": [
+        "eq_3_15",
+        "eq_3_16",
+        "eq_3_17"
+      ],
+      "problem": "The torso matrix must be encoded in the stored Euler convention.",
+      "steps": [
+        "State z-then-x-then-y application order.",
+        "Expand the matrix product.",
+        "Read the three angles from the indicated entries."
+      ],
+      "keywords": [
+        "Rotation convention",
+        "Matrix entries",
+        "Euler extraction"
+      ],
+      "caveat": "Keep the full expanded matrix in Q&A if necessary for readability. Gimbal-lock conventions are a separate limiting case.",
+      "equations": [
+        {
+          "key": "eq_3_15",
+          "path": "presentation/defense_2026/equations/eq_3_15.png",
+          "printed_page": "31",
+          "pdf_page": 45,
+          "sha256": "304277b93d05558445e20cdc63560680ba0e2e4705fff768c17960e1b3e2ab7b"
+        },
+        {
+          "key": "eq_3_16",
+          "path": "presentation/defense_2026/equations/eq_3_16.png",
+          "printed_page": "31",
+          "pdf_page": 45,
+          "sha256": "8c2970b848f339e7c896c305639f7a56cf018b82173b9c98f672029980b80818"
+        },
+        {
+          "key": "eq_3_17",
+          "path": "presentation/defense_2026/equations/eq_3_17.png",
+          "printed_page": "31",
+          "pdf_page": 45,
+          "sha256": "98e83c47ca99f3c86753d75064d867ec704bbf305d866b6f86d88b3e5b01596c"
+        }
+      ]
+    },
+    {
+      "name": "Elbow recovery: why a circle",
+      "chapter": 5,
+      "keys": [
+        "eq_5_8",
+        "eq_5_9",
+        "eq_5_10"
+      ],
+      "problem": "Known endpoints and segment lengths do not uniquely determine an elbow.",
+      "steps": [
+        "Each fixed length defines a sphere.",
+        "Apply the law of cosines to the endpoint triangle.",
+        "Find the circle centre on the shoulder-wrist line and its perpendicular radius."
+      ],
+      "keywords": [
+        "Two fixed lengths",
+        "Two spheres",
+        "Feasible elbow circle"
+      ],
+      "caveat": "The circle is a family of possible elbow locations, not a measured trajectory or an accuracy contour.",
+      "equations": [
+        {
+          "key": "eq_5_8",
+          "path": "presentation/defense_2026/equations/eq_5_8.png",
+          "printed_page": "59",
+          "pdf_page": 73,
+          "sha256": "15166971e1aa367f42fb8dabe8c4c67270631d9e01c75f76e7b059cf0b4145c2"
+        },
+        {
+          "key": "eq_5_9",
+          "path": "presentation/defense_2026/equations/eq_5_9.png",
+          "printed_page": "59",
+          "pdf_page": 73,
+          "sha256": "73b0c1941afdbf6e26b06df236e39e7489f05b0ed80fe36193da5b804063fcbd"
+        },
+        {
+          "key": "eq_5_10",
+          "path": "presentation/defense_2026/equations/eq_5_10.png",
+          "printed_page": "59",
+          "pdf_page": 73,
+          "sha256": "9c5caa589138d8b44f818eb05193698c239df155a76eb4628cdb5fce4354ddec"
+        }
+      ]
+    },
+    {
+      "name": "Elbow recovery: selecting one point",
+      "chapter": 5,
+      "keys": [
+        "eq_5_11",
+        "eq_5_12"
+      ],
+      "problem": "A swivel degree of freedom remains after satisfying both lengths.",
+      "steps": [
+        "Parameterize the possible elbows around the circle.",
+        "Project the remembered upper-arm direction into the circle plane.",
+        "Normalize that perpendicular component and choose the corresponding elbow."
+      ],
+      "keywords": [
+        "Unobserved swivel",
+        "Direction memory",
+        "Selected elbow"
+      ],
+      "caveat": "All geometry is in Camera-prime. Transform the Scene wrist target with the full inverse rigid transform first. The ideal construction excludes unreachable, coincident-endpoint and guarded near-extension cases.",
+      "equations": [
+        {
+          "key": "eq_5_11",
+          "path": "presentation/defense_2026/equations/eq_5_11.png",
+          "printed_page": "59",
+          "pdf_page": 73,
+          "sha256": "b1f607dab4b29666ea73c344a936e79152fd35fea26d82aa083f642860a27c52"
+        },
+        {
+          "key": "eq_5_12",
+          "path": "presentation/defense_2026/equations/eq_5_12.png",
+          "printed_page": "60",
+          "pdf_page": 74,
+          "sha256": "86fa2efabad638a64df11f7bfb434266156672e2b41519366363e9235c10f96f"
+        }
+      ]
+    }
+  ],
+  "old_slide_18": {
+    "path": "presentation/defense_2026/media/grip_episode_context.mp4",
+    "source": "presentation/v9/videos/embed/VIDEO-1.mp4",
+    "source_definition": "presentation/v9/anim/video1_overlay.py",
+    "recording": "recording_20260909_000024",
+    "first_frame": 600,
+    "last_frame": 779,
+    "role": "Recorded RGB with saved input overlays; not a reconstruction or an instrumented holding-state recording.",
+    "torso_mask_frames": [
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      682,
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716,
+      717,
+      718,
+      719,
+      720,
+      721,
+      722,
+      723,
+      724,
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738,
+      739,
+      740,
+      741,
+      742,
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750,
+      751,
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758
+    ],
+    "right_wrist_missing_depth_frames": [
+      705,
+      706,
+      707
+    ],
+    "sample_frame_705": {
+      "raw": {
+        "left_shoulder_vis": 0.9998,
+        "left_shoulder_src": 0.0,
+        "right_shoulder_vis": 0.9998,
+        "right_shoulder_src": 0.0,
+        "left_elbow_vis": 0.9108,
+        "left_elbow_src": 0.0,
+        "right_elbow_vis": 0.9297,
+        "right_elbow_src": 0.0,
+        "left_wrist_vis": 0.8911,
+        "left_wrist_src": 0.0,
+        "right_wrist_vis": 0.9745,
+        "right_wrist_src": 2.0,
+        "left_hip_vis": 0.9981,
+        "left_hip_src": 0.0,
+        "right_hip_vis": 0.9984,
+        "right_hip_src": 0.0
+      },
+      "failure_mask": {
+        "time_s": 23.516353,
+        "d1_L": 0.0,
+        "d1_R": 1.0,
+        "d2_L": 0.0,
+        "d2_R": 0.0,
+        "d1_torso": 0.0,
+        "d3": 1.0,
+        "d4": 1.0,
+        "d5_L": 0.0,
+        "d5_R": 0.0,
+        "d5_torso": 0.0,
+        "fail_arm_L": 0.0,
+        "fail_arm_R": 0.0,
+        "fail_torso": 1.0
+      }
+    },
+    "caption": "Recorded input overlay. Torso rejection is not drawn; visible dots do not establish valid depth."
+  },
+  "natural_failure_cases": [
+    {
+      "frame": 1890,
+      "side": "right",
+      "stem": "recording_20260825_222315",
+      "figure": "writing/v9/figures/ch7_natural_proxy_right.png",
+      "figure_sha256": "07185cddc6358bab4462ef5488752f9d9367e7558098ea36096851329365a113",
+      "metrics_cm": {
+        "recovered_cm": 15.2,
+        "measured_cm": 1.12,
+        "hold_cm": 17.28,
+        "plain_fk_cm": 14.03,
+        "hold_fk_cm": 20.39,
+        "recovery_fk_cm": 5.01
+      },
+      "raw_gate": {
+        "right_elbow": {
+          "vis": 0.4447,
+          "src": 1.0
+        },
+        "right_wrist": {
+          "vis": 0.6502,
+          "src": 0.0
+        }
+      },
+      "filtered_flag": {
+        "right_elbow": 3.0,
+        "right_wrist": 0.0
+      },
+      "mask": {
+        "time_s": 63.043226,
+        "d1_L": 0.0,
+        "d1_R": 1.0,
+        "d2_L": 0.0,
+        "d2_R": 0.0,
+        "d1_torso": 0.0,
+        "d3": 0.0,
+        "d4": 0.0,
+        "d5_L": 0.0,
+        "d5_R": 0.0,
+        "d5_torso": 0.0,
+        "fail_arm_L": 0.0,
+        "fail_arm_R": 1.0,
+        "fail_torso": 0.0
+      },
+      "reference": "One manually selected visible watch or bracelet point, deprojected with aligned depth. Not an anatomical joint centre."
+    },
+    {
+      "frame": 1462,
+      "side": "left",
+      "stem": "recording_20260825_222315",
+      "figure": "writing/v9/figures/ch7_natural_proxy_left.png",
+      "figure_sha256": "cf5e4ac2cd6e1a9abe641f4bb4cd2fb5980f280771f26d9a221e4aee0c881b4c",
+      "metrics_cm": {
+        "recovered_cm": 13.65,
+        "measured_cm": null,
+        "hold_cm": 7.26,
+        "plain_fk_cm": 14.02,
+        "hold_fk_cm": 14.29,
+        "recovery_fk_cm": 13.65
+      },
+      "raw_gate": {
+        "left_elbow": {
+          "vis": 0.472,
+          "src": 1.0
+        },
+        "left_wrist": {
+          "vis": 0.4038,
+          "src": 1.0
+        }
+      },
+      "filtered_flag": {
+        "left_elbow": 3.0,
+        "left_wrist": 3.0
+      },
+      "mask": {
+        "time_s": 48.768122,
+        "d1_L": 1.0,
+        "d1_R": 0.0,
+        "d2_L": 0.0,
+        "d2_R": 0.0,
+        "d1_torso": 0.0,
+        "d3": 1.0,
+        "d4": 1.0,
+        "d5_L": 0.0,
+        "d5_R": 0.0,
+        "d5_torso": 0.0,
+        "fail_arm_L": 1.0,
+        "fail_arm_R": 0.0,
+        "fail_torso": 1.0
+      },
+      "reference": "One manually selected visible watch or bracelet point, deprojected with aligned depth. Not an anatomical joint centre."
+    }
+  ],
+  "natural_failure_medians": {
+    "left": {
+      "recovered": {
+        "n": 16,
+        "median": 13.22,
+        "p95": 16.91,
+        "max": 19.12
+      },
+      "measured": {
+        "n": 9,
+        "median": 5.5,
+        "p95": 16.89,
+        "max": 23.49
+      },
+      "hold": {
+        "n": 16,
+        "median": 6.63,
+        "p95": 7.26,
+        "max": 7.28
+      },
+      "plain_fk": {
+        "n": 16,
+        "median": 12.31,
+        "p95": 14.11,
+        "max": 14.24
+      },
+      "hold_fk": {
+        "n": 16,
+        "median": 12.66,
+        "p95": 14.27,
+        "max": 14.29
+      },
+      "recovery_fk": {
+        "n": 16,
+        "median": 13.14,
+        "p95": 15.21,
+        "max": 19.12
+      },
+      "n_labels": 16,
+      "n_mixed_surface": 0
+    },
+    "right": {
+      "recovered": {
+        "n": 4,
+        "median": 13.67,
+        "p95": 14.97,
+        "max": 15.2
+      },
+      "measured": {
+        "n": 4,
+        "median": 1.1,
+        "p95": 6.49,
+        "max": 7.44
+      },
+      "hold": {
+        "n": 4,
+        "median": 15.64,
+        "p95": 17.04,
+        "max": 17.28
+      },
+      "plain_fk": {
+        "n": 4,
+        "median": 11.38,
+        "p95": 13.64,
+        "max": 14.03
+      },
+      "hold_fk": {
+        "n": 4,
+        "median": 17.6,
+        "p95": 20.0,
+        "max": 20.39
+      },
+      "recovery_fk": {
+        "n": 4,
+        "median": 5.22,
+        "p95": 5.46,
+        "max": 5.46
+      },
+      "n_labels": 4,
+      "n_mixed_surface": 0
+    },
+    "all": {
+      "recovered": {
+        "n": 20,
+        "median": 13.35,
+        "p95": 16.33,
+        "max": 19.12
+      },
+      "measured": {
+        "n": 13,
+        "median": 5.33,
+        "p95": 13.86,
+        "max": 23.49
+      },
+      "hold": {
+        "n": 20,
+        "median": 6.74,
+        "p95": 15.74,
+        "max": 17.28
+      },
+      "plain_fk": {
+        "n": 20,
+        "median": 11.73,
+        "p95": 14.08,
+        "max": 14.24
+      },
+      "hold_fk": {
+        "n": 20,
+        "median": 12.77,
+        "p95": 17.94,
+        "max": 20.39
+      },
+      "recovery_fk": {
+        "n": 20,
+        "median": 12.66,
+        "p95": 14.16,
+        "max": 19.12
+      },
+      "n_labels": 20,
+      "n_mixed_surface": 0
+    }
+  },
+  "imperfect_capture_manifest": {
+    "decision": "D-080",
+    "selection_purpose": "Qualitative task illustrations only; existing experimental samples, frames, masks, statistics and interpretations are unchanged.",
+    "frame_pairing": "Recorded RGB frame indices are paired with saved Unity PNG filenames. EvalFrameDump names sensor-view PNGs from ArucoSceneReceiver.lastFrame after the receiver update. This is a frame-index pairing, not a new timing or anatomical-accuracy validation.",
+    "composition": "Three rows by two columns per recording. Recorded video on the left; saved calibrated Unity sensor view on the right. Complete 640 by 480 source images; no crop, warp, geometric shift, recolouring or new overlay inside the images.",
+    "capture_limits": "Saved captures retain their actual rig and display discrepancies. The handover sensor-capture report retains 7 PASS and 1 FAIL; the failed existing hypothesis concerns concentration of left-hand disagreement on torso-failure frames, not orphan PNG identifiers. No new rendering, experiment or capture validation is claimed.",
+    "shared_evidence": [
+      {
+        "path": "Unity/Assets/Scripts/EvalFrameDump.cs",
+        "sha256": "384ce84155cf7e19514aba83ba8baf1213f90c1586a0d0c0e3ebdaabfef2f186"
+      }
+    ],
+    "recordings": {
+      "r6b": {
+        "recording_stem": "recording_20260831_065553",
+        "figure": "ch7_visual_examples_r6b.png",
+        "figure_number": "7.5",
+        "capture_context": "Sensor-view capture of recovery_r6b re-run on 2026-09-14 under Decision E-038 with the per-recording avatar sizing of E-036, replacing the E-037 capture of the same day. The rig carried the replayed recording\u2019s own landmark geometry, as the capture recorded it in writing/v9/figures/src/r6b_unity_sensor/rig_sizing_used.txt for stem recording_20260831_065553: upper_arm_R 0.3170 m, forearm_R 0.2050 m, upper_arm_L 0.3100 m, forearm_L 0.2570 m, torso 0.5745 m. Logs, stream and stills are archived under writing/v9/figures/src/r6b_unity_sensor/ and writing/v9/figures/src/r6b_unity_f*.png. These images are qualitative examples; no identity with the trajectory-table capture is asserted.",
+        "evidence": [
+          {
+            "path": "writing/v9/scripts/make_ch7_unity_pairs.py",
+            "sha256": "dc37801998d9ad9c2a0e3393f6d3cb794ea924d3ce6b029a1e818718a5dcabdd"
+          },
+          {
+            "path": "writing/v9/scripts/make_ch7_frame_strip.py",
+            "sha256": "091fc780ac294ee1b9cfde1a3993fe0348791afcad0c66a9f4863c7217bf6975"
+          },
+          {
+            "path": "writing/v9/figures/ch7_frames_strip.json",
+            "sha256": "aaaff95e3577cbac01f3708d7427baac4fa7b3b8509cafaf741cf423d3741781"
+          }
+        ],
+        "rows": [
+          {
+            "frame": 95,
+            "phase": "Object acquisition",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r6b_frame00095.png",
+              "sha256": "d95c364f5185f5b642641a30da7ae46fd12aad0807c93b937238a275be754ac0"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/r6b_unity_f00095.png",
+              "sha256": "f976120e4229dc971f325182e1688fc9a0e6ebf50b71f6748be7e585d6a28149",
+              "original_path": "writing/v9/figures/src/r6b_unity_f00095.png",
+              "original_sha256": "f976120e4229dc971f325182e1688fc9a0e6ebf50b71f6748be7e585d6a28149"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame": 505,
+            "phase": "Lift",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r6b_frame00505.png",
+              "sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/r6b_unity_f00505.png",
+              "sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537",
+              "original_path": "writing/v9/figures/src/r6b_unity_f00505.png",
+              "original_sha256": "5046f780f843313b31dda45b709cc542fda15ca87a67d78d82e5a048c7a4e537"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame": 700,
+            "phase": "Slide",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r6b_frame00700.png",
+              "sha256": "7588e17b916e6f9ea80cff0d86ec737225a97b068aed418a69999f08f526cca6"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/r6b_unity_f00700.png",
+              "sha256": "a39d8a61f537935f764b45e01f42a6405ae23aa48c3fa8abc1b131384d6d7520",
+              "original_path": "writing/v9/figures/src/r6b_unity_f00700.png",
+              "original_sha256": "a39d8a61f537935f764b45e01f42a6405ae23aa48c3fa8abc1b131384d6d7520"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          }
+        ]
+      },
+      "r7": {
+        "recording_stem": "recording_20260909_000024",
+        "figure": "ch7_visual_examples_r7.png",
+        "figure_number": "7.6",
+        "capture_context": "Saved sensor-view capture documented by eval/reports/unity_check_r7/sensor_capture.txt, launched 2026-09-09 00:48:56 and finished 00:50:32, with a 0.517 m torso override. The later trajectory-table capture editor log starts 2026-09-09T07:52:16Z (00:52:16 local). No identity of these runs or of their complete rig configurations is asserted.",
+        "evidence": [
+          {
+            "path": "writing/v9/scripts/make_ch7_handover_frames.py",
+            "sha256": "d6cbd0310d08e1b27f0b7b0ccde09f9716a671ff7cf419f360f5d83b5b471dca"
+          },
+          {
+            "path": "eval/reports/unity_check_r7/sensor_capture.txt",
+            "sha256": "e2489effa51774388a86e1093f17e1368eab2e77cea8006d5f542902a5ba64e7"
+          },
+          {
+            "path": "eval/reports/unity_check_r7/check_unity_log.txt",
+            "sha256": "7d51e2b8339f69a48299ec52b03e53c71612abcdafdaa3932c1c4f81813a08b6"
+          },
+          {
+            "path": "writing/v9/figures/src/ch7_handover_trails/editor.log",
+            "sha256": "9959377c746cb5144fe320b4b07ed77dc1c3c42dc93ddf3b2b0f7a4d771dd015"
+          }
+        ],
+        "rows": [
+          {
+            "frame": 700,
+            "phase": "Right-hand slide",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r7_frame00700.png",
+              "sha256": "b11e56d2c3cec3c2b4a8ab9af729fa891ccca81f82c9451f6637464927c1cd71"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00700.png",
+              "sha256": "f91d60447179d44466c1a77e5bbdece1a5e58d69bf55edc170ded6ac98ab2d72",
+              "original_path": "eval/output/unity_check_r7/frames/f00700.png",
+              "original_sha256": "f91d60447179d44466c1a77e5bbdece1a5e58d69bf55edc170ded6ac98ab2d72"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame": 950,
+            "phase": "Transfer",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r7_frame00950.png",
+              "sha256": "e8b2fa2e2c72bee20511b2fd406c5332871707b397bf771d5eea5f7cb38e8a9f"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00950.png",
+              "sha256": "d4f46f476ca7cab707536f753ac1faf5c906cfde05542e7ce201e8110aaec972",
+              "original_path": "eval/output/unity_check_r7/frames/f00950.png",
+              "original_sha256": "d4f46f476ca7cab707536f753ac1faf5c906cfde05542e7ce201e8110aaec972"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          },
+          {
+            "frame": 1042,
+            "phase": "Left-hand slide",
+            "recorded_video": {
+              "path": "writing/v9/figures/src/r7_frame01042.png",
+              "sha256": "843912c5c73203e5855c09739616d22ddb8191d1e9a66c3a1787fb41b716fdef"
+            },
+            "unity": {
+              "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f01042.png",
+              "sha256": "769075f9267f99df386092a31f4f4874356a720a6480a3a779bbc56b8c1beb7e",
+              "original_path": "eval/output/unity_check_r7/frames/f01042.png",
+              "original_sha256": "769075f9267f99df386092a31f4f4874356a720a6480a3a779bbc56b8c1beb7e"
+            },
+            "size_pixels": [
+              640,
+              480
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "imperfect_image_source_checks": [
+    {
+      "path": "writing/v9/figures/src/r6b_frame00095.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r6b_unity_f00095.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r6b_frame00505.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r6b_unity_f00505.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r6b_frame00700.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r6b_unity_f00700.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r7_frame00700.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00700.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r7_frame00950.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f00950.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/r7_frame01042.png",
+      "matches_manifest": true
+    },
+    {
+      "path": "writing/v9/figures/src/ch7_visual_examples/r7_unity_f01042.png",
+      "matches_manifest": true
+    }
+  ],
+  "scope_cautions": [
+    "Right1890 wrist exists; elbow is rejected and the arm mask removes both inputs.",
+    "The 5.01cm result is a single-frame final model-wrist separation to a manual watch reference; the 5.22cm value is a four-frame median.",
+    "The object-derived estimate is 15.20cm from the label at1890; it is not the final model wrist.",
+    "The measured-distance field uses filtered landmark coordinates, not raw coordinates.",
+    "The old18 overlay intentionally omits torso-mask suppression and cannot demonstrate successful tracking of hidden hips.",
+    "Manual hip-dot relocation is an editorial anatomical annotation, not a corrected detector measurement.",
+    "Saved Unity captures preserve visible discrepancies and are not necessarily the Table7.4 numerical capture.",
+    "Image-ring animations illustrate copy and consistency logic, not measured scheduling or formal memory ordering."
+  ]
+}

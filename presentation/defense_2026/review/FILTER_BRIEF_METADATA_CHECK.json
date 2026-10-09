@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "Brief/render metadata consistency only; no media was regenerated",
+  "verified_at_utc": "2026-09-22T06:27:11.557164+00:00",
+  "old_brief_sha256": "eea7cea764b525ea4378c17dedd68adce03f636055b0fb53960475df52c65d93",
+  "brief_sha256": "b184d79f83b16451a53f547eafa98d5b8dacb8bfbf60cba9ee1befbdb454d91c",
+  "changes": {
+    "render.width": {
+      "before": 1920,
+      "after": 1440
+    },
+    "render.format_note": "Final 1440x1080 4:3 panel beside recorded context, under D-028; supersedes the initial full-slide width."
+  },
+  "source_parameters_unchanged": true,
+  "source_frame_windows_unchanged": true,
+  "all_non_render_brief_fields_unchanged": true,
+  "fresh_numerical_checks_equal_existing_report": true,
+  "all_media_hashes_unchanged": 53,
+  "filter_asset_reports_and_output_dimensions_verified": 6,
+  "recorded_context_reports_verified": 9,
+  "source_pixel_visual_review_preserved": true,
+  "changed_files": [
+    "FILTER_DEMO_BRIEF.json",
+    "media/provenance/recorded_context.json",
+    "review/RECORDED_CONTEXT_CHECK.json",
+    "review/REVISION_MEDIA_REVIEW.json"
+  ],
+  "current_hashes": {
+    "FILTER_DEMO_BRIEF.json": "b184d79f83b16451a53f547eafa98d5b8dacb8bfbf60cba9ee1befbdb454d91c",
+    "media/provenance/recorded_context.json": "8bb3211eefae7c5edb0e869fc3ee913f64d06b5e6f2bb250a86371489bb43000",
+    "review/RECORDED_CONTEXT_CHECK.json": "8bb3211eefae7c5edb0e869fc3ee913f64d06b5e6f2bb250a86371489bb43000",
+    "review/REVISION_MEDIA_REVIEW.json": "d2e9114c7e591f51cbc3ced4be6c51221058d51e754926bec67544f08b2bfd73"
+  }
+}

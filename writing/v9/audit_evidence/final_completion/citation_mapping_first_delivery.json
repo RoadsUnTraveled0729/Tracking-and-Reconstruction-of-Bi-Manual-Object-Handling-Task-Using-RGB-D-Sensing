@@ -1,0 +1,1154 @@
+{
+  "decision": "D-048 / D-069",
+  "verification": {
+    "status": "PASS",
+    "citation_occurrences": 132,
+    "cited_entries": 57,
+    "source_entries": 58,
+    "removed_uncited_source_numbers": [
+      50
+    ],
+    "source_paragraphs_verified": 1769,
+    "checks": [
+      "every source paragraph preserves text except citation numbers",
+      "every final citation resolves to the exact source reference text",
+      "global first-appearance order includes appendices",
+      "final bibliography is contiguous and contains no uncited entries"
+    ]
+  },
+  "assembled_file": "Thesis_V8_Condensed.docx",
+  "assembled_sha256": "00eb9037ca34c93838d1afa26c2ed196209cf7cdc2dc152b3595fe14999c6906",
+  "source_parts": [
+    {
+      "file": "Chapter_1_Introduction.docx",
+      "sha256": "3fcd9e0ea10be53eadec6629238521465aaae88f38dd48caea32af86cff37cc8"
+    },
+    {
+      "file": "Chapter_2_Experimental_Setup.docx",
+      "sha256": "46419c0a310c16a395b769dc1298b3e5e0913a092af50f0350d127d7da983daf"
+    },
+    {
+      "file": "Chapter_3_Kinematic_Modeling.docx",
+      "sha256": "8b4746a4df559c33f16f16d0cb67b97f72d2bde2616a2f1f00a6075df43f585e"
+    },
+    {
+      "file": "Chapter_4_Object_Tracking.docx",
+      "sha256": "462340cf0d98a2d683efa96bef8e0412bad67ec6b08acc92f88d27b4acdc2455"
+    },
+    {
+      "file": "Chapter_5_Pose_Recovery.docx",
+      "sha256": "0ec898d4b6b746c346534bca4fb4e04d6c44585d955c54faa2d5fec625b91194"
+    },
+    {
+      "file": "Chapter_6_System_Integration.docx",
+      "sha256": "041863612dce497fe535afa2e09c2f4795146393c44dd17079eaccc1b1f2cb08"
+    },
+    {
+      "file": "Chapter_7_Evaluation.docx",
+      "sha256": "427497a96ca3718aa0366368f16fc8984755475ba4a690acb564759297eb87f4"
+    },
+    {
+      "file": "Chapter_8_Real_Time_Feasibility.docx",
+      "sha256": "3542cdd715a42703538e46b4af60e62267ed0d55171d2f76884b49cc0b593fbc"
+    },
+    {
+      "file": "Chapter_9_Discussion.docx",
+      "sha256": "ee2bc482849e32d4c985d68ce27706aedeec5872679497f93ab1364924f5450d"
+    },
+    {
+      "file": "Chapter_10_Conclusions_Future_Work.docx",
+      "sha256": "128c6dff977371a980b2f07d13fefa71e11978fd827b7988dd10d4bb54b24d11"
+    },
+    {
+      "file": "Appendices.docx",
+      "sha256": "8c66f0ed1e59d32a14f1ed5388bb6263e9a4a20c57bee7ae1a0223f32d62c6eb"
+    }
+  ],
+  "source_to_final": [
+    {
+      "source_number": 1,
+      "final_number": 1,
+      "reference_text": "S. Sivakumar, K. Shaw, and D. Pathak, \"Robotic telekinesis: Learning a robotic hand imitator by watching humans on YouTube,\" arXiv:2202.10448, 2022."
+    },
+    {
+      "source_number": 2,
+      "final_number": 2,
+      "reference_text": "Y. Ye, P. Hebbar, A. Gupta, and S. Tulsiani, \"Diffusion-guided reconstruction of everyday hand-object interaction clips,\" in Proc. IEEE/CVF Int. Conf. Computer Vision (ICCV), 2023."
+    },
+    {
+      "source_number": 3,
+      "final_number": 3,
+      "reference_text": "G. Buckingham, \"Hand tracking for immersive virtual reality: Opportunities and challenges,\" Frontiers in Virtual Reality, vol. 2, p. 728461, 2021."
+    },
+    {
+      "source_number": 4,
+      "final_number": 4,
+      "reference_text": "M. Mangalam et al., \"Enhancing hand-object interactions in virtual reality for precision manual tasks,\" Virtual Reality, vol. 28, no. 4, 2024."
+    },
+    {
+      "source_number": 5,
+      "final_number": 5,
+      "reference_text": "R. J. Carey, L. T. Baxter, and P. R. Di Fabio, \"Tracking control in the nonparetic hand of subjects with stroke,\" Archives of Physical Medicine and Rehabilitation, vol. 79, no. 4, pp. 435-441, 1998."
+    },
+    {
+      "source_number": 6,
+      "final_number": 6,
+      "reference_text": "C. D. Hayden et al., \"Measurement of upper limb function in ALS: A structured review of current methods and future directions,\" Journal of Neurology, vol. 269, no. 8, pp. 4089-4101, 2022."
+    },
+    {
+      "source_number": 7,
+      "final_number": 7,
+      "reference_text": "J. S. Matthis and A. Cherian, \"FreeMoCap: A free, open source markerless motion capture system,\" ver. 0.0.54, Zenodo, 2022, doi: 10.5281/zenodo.7233714."
+    },
+    {
+      "source_number": 8,
+      "final_number": 8,
+      "reference_text": "X. Zhan et al., \"OakInk2: A dataset of bimanual hands-object manipulation in complex task completion,\" in Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2024."
+    },
+    {
+      "source_number": 9,
+      "final_number": 9,
+      "reference_text": "E. Theodoridou et al., \"Hand tracking and gesture recognition by multiple contactless sensors: A survey,\" IEEE Transactions on Human-Machine Systems, vol. 53, no. 1, pp. 35-43, 2023."
+    },
+    {
+      "source_number": 10,
+      "final_number": 10,
+      "reference_text": "L. Keselman, J. Iselin Woodfill, A. Grunnet-Jepsen, and A. Bhowmik, \"Intel RealSense stereoscopic depth cameras,\" in Proc. IEEE Conf. Computer Vision and Pattern Recognition Workshops (CVPRW), 2017."
+    },
+    {
+      "source_number": 11,
+      "final_number": 11,
+      "reference_text": "H. Meng et al., \"3D interacting hand pose estimation by hand de-occlusion and removal,\" in Proc. European Conf. Computer Vision (ECCV), 2022."
+    },
+    {
+      "source_number": 12,
+      "final_number": 12,
+      "reference_text": "R. Wang, W. Mao, and H. Li, \"Interacting hand-object pose estimation via dense mutual attention,\" in Proc. IEEE/CVF Winter Conf. Applications of Computer Vision (WACV), 2023."
+    },
+    {
+      "source_number": 13,
+      "final_number": 13,
+      "reference_text": "S. Dill et al., \"Accuracy evaluation of 3D pose reconstruction algorithms through stereo camera information fusion for physical exercises with MediaPipe Pose,\" Sensors, vol. 24, no. 23, art. 7772, 2024."
+    },
+    {
+      "source_number": 14,
+      "final_number": 14,
+      "reference_text": "Y. Dong, \"Tracking and reconstruction of object grasping hand using a RGB-D sensor,\" M.A.Sc. thesis, Simon Fraser University, 2024."
+    },
+    {
+      "source_number": 15,
+      "final_number": 15,
+      "reference_text": "A. Ahmad, C. Migniot, and A. Dipanda, \"Hand pose estimation and tracking in real and virtual interaction: A review,\" Image and Vision Computing, vol. 89, pp. 35-49, 2019."
+    },
+    {
+      "source_number": 16,
+      "final_number": 16,
+      "reference_text": "C. E. Leiserson, N. C. Thompson, J. S. Emer, B. C. Kuszmaul, B. W. Lampson, D. Sanchez, and T. B. Schardl, \"There's plenty of room at the Top: What will drive computer performance after Moore's law?,\" Science, vol. 368, no. 6495, art. eaam9744, 2020."
+    },
+    {
+      "source_number": 17,
+      "final_number": 17,
+      "reference_text": "Y. Dong and S. Payandeh, \"Hand kinematic model construction based on tracking landmarks,\" Applied Sciences, vol. 15, no. 16, p. 8921, 2025, doi: 10.3390/app15168921."
+    },
+    {
+      "source_number": 18,
+      "final_number": 18,
+      "reference_text": "Y. Dong and S. Payandeh, \"Bayesian estimation of hand kinematics from spatially tracked landmarks,\" Journal of Intelligent Systems and Control, vol. 4, no. 2, pp. 105-124, 2025, doi: 10.56578/jisc040203."
+    },
+    {
+      "source_number": 20,
+      "final_number": 19,
+      "reference_text": "R. Y. Wang and J. Popovic, \"Real-time hand-tracking with a color glove,\" ACM Transactions on Graphics, vol. 28, no. 3, pp. 1-8, 2009."
+    },
+    {
+      "source_number": 21,
+      "final_number": 20,
+      "reference_text": "C. Diaz and S. Payandeh, \"Multimodal sensing interface for haptic interaction,\" Journal of Sensors, vol. 2017, art. 2072951, pp. 1-24, 2017, doi: 10.1155/2017/2072951."
+    },
+    {
+      "source_number": 22,
+      "final_number": 21,
+      "reference_text": "I. Oikonomidis, N. Kyriazis, and A. A. Argyros, \"Efficient model-based 3D tracking of hand articulations using Kinect,\" in Proc. British Machine Vision Conf. (BMVC), 2011."
+    },
+    {
+      "source_number": 23,
+      "final_number": 22,
+      "reference_text": "A. Tagliasacchi et al., \"Robust articulated-ICP for real-time hand tracking,\" Computer Graphics Forum, vol. 34, no. 5, pp. 101-114, 2015."
+    },
+    {
+      "source_number": 24,
+      "final_number": 23,
+      "reference_text": "C. Qian, X. Sun, Y. Wei, X. Tang, and J. Sun, \"Realtime and robust hand tracking from depth,\" in Proc. IEEE Conf. Computer Vision and Pattern Recognition (CVPR), 2014."
+    },
+    {
+      "source_number": 25,
+      "final_number": 24,
+      "reference_text": "L. Ge, H. Liang, J. Yuan, and D. Thalmann, \"Robust 3D hand pose estimation from single depth images using multi-view CNNs,\" IEEE Transactions on Image Processing, vol. 27, no. 9, pp. 4422-4436, 2018."
+    },
+    {
+      "source_number": 26,
+      "final_number": 25,
+      "reference_text": "G. Pavlakos, D. Shan, I. Radosavovic, A. Kanazawa, D. Fouhey, and J. Malik, \"Reconstructing hands in 3D with transformers,\" in Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2024."
+    },
+    {
+      "source_number": 27,
+      "final_number": 26,
+      "reference_text": "H. Dong et al., \"Hamba: Single-view 3D hand reconstruction with graph-guided bi-scanning Mamba,\" in Advances in Neural Information Processing Systems, vol. 37, pp. 2127-2160, 2024."
+    },
+    {
+      "source_number": 28,
+      "final_number": 27,
+      "reference_text": "F. Zhang, V. Bazarevsky, A. Vakunov, A. Tkachenka, G. Sung, C.-L. Chang, and M. Grundmann, \"MediaPipe Hands: On-device real-time hand tracking,\" arXiv:2006.10214, 2020."
+    },
+    {
+      "source_number": 29,
+      "final_number": 28,
+      "reference_text": "M. Kalaitzakis, B. Cain, S. Carroll, A. Ambrosi, C. Whitehead, and N. Vitzilaios, \"Fiducial markers for pose estimation: Overview, applications and experimental comparison,\" Journal of Intelligent and Robotic Systems, vol. 101, art. 71, 2021."
+    },
+    {
+      "source_number": 30,
+      "final_number": 29,
+      "reference_text": "J. L. Pulloquinga, D. Corrata, V. Mata, A. Valera, and M. Valles, \"Experimental analysis of pose estimation based on ArUco markers,\" in Innovations in Industrial Engineering III (Lecture Notes in Mechanical Engineering), Cham: Springer, 2024, pp. 138-149."
+    },
+    {
+      "source_number": 19,
+      "final_number": 30,
+      "reference_text": "A. Ahmad, C. Migniot, and A. Dipanda, \"Tracking hands in interaction with objects: A review,\" in Proc. Int. Conf. Signal-Image Technology and Internet-Based Systems (SITIS), 2017."
+    },
+    {
+      "source_number": 31,
+      "final_number": 31,
+      "reference_text": "F. Krebs and T. Asfour, \"Formalization of temporal and spatial constraints of bimanual manipulation categories,\" in Proc. IEEE/RSJ Int. Conf. Intelligent Robots and Systems (IROS), 2024."
+    },
+    {
+      "source_number": 32,
+      "final_number": 32,
+      "reference_text": "G. Moon, S.-I. Yu, H. Wen, T. Shiratori, and K. M. Lee, \"InterHand2.6M: A dataset and baseline for 3D interacting hand pose estimation from a single RGB image,\" in Proc. European Conf. Computer Vision (ECCV), 2020."
+    },
+    {
+      "source_number": 33,
+      "final_number": 33,
+      "reference_text": "W. Wang et al., \"RGB2Hands: Real-time tracking of 3D hand interactions from monocular RGB video,\" ACM Transactions on Graphics, vol. 39, no. 6, 2020."
+    },
+    {
+      "source_number": 34,
+      "final_number": 34,
+      "reference_text": "T.-W. Chen and W.-L. Lin, \"3D human motion reconstruction in Unity with monocular camera,\" in Proc. Int. SoC Design Conf. (ISOCC), 2020."
+    },
+    {
+      "source_number": 35,
+      "final_number": 35,
+      "reference_text": "V. N. Dubey and S. K. Manna, \"Design of a game-based rehabilitation system using Kinect sensor,\" in Proc. ASME Design of Medical Devices Conf. (DMD), 2019."
+    },
+    {
+      "source_number": 36,
+      "final_number": 36,
+      "reference_text": "Y. Chen et al., \"RePose: A real-time 3D human pose estimation and biomechanical analysis framework for rehabilitation,\" arXiv:2601.00625, 2026."
+    },
+    {
+      "source_number": 37,
+      "final_number": 37,
+      "reference_text": "M. S. Ahn, H. Chae, D. Noh, H. Nam, and D. Hong, \"Analysis and noise modeling of the Intel RealSense D435 for mobile robots,\" in Proc. Int. Conf. Ubiquitous Robots (UR), 2019."
+    },
+    {
+      "source_number": 38,
+      "final_number": 38,
+      "reference_text": "E. Curto and H. Araujo, \"Fitting a normal probability distribution to depth estimations of three RealSense RGB-D cameras tested in scenes with transparency,\" ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 2022."
+    },
+    {
+      "source_number": 39,
+      "final_number": 39,
+      "reference_text": "S. Hampali, M. Rad, M. Oberweger, and V. Lepetit, \"HOnnotate: A method for 3D annotation of hand and object poses,\" in Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition (CVPR), 2020."
+    },
+    {
+      "source_number": 58,
+      "final_number": 40,
+      "reference_text": "A. Grunnet-Jepsen, J. N. Sweetser, and J. Woodfill, \"Best-known-methods for tuning Intel RealSense D400 depth cameras for best performance,\" Intel Corporation, white paper, rev. 1.9."
+    },
+    {
+      "source_number": 42,
+      "final_number": 41,
+      "reference_text": "J. J. Craig, Introduction to Robotics: Mechanics and Control, 4th ed. New York, NY, USA: Pearson, 2018."
+    },
+    {
+      "source_number": 45,
+      "final_number": 42,
+      "reference_text": "R. Hartley, J. Trumpf, Y. Dai, and H. Li, \"Rotation averaging,\" International Journal of Computer Vision, vol. 103, no. 3, pp. 267-305, 2013."
+    },
+    {
+      "source_number": 52,
+      "final_number": 43,
+      "reference_text": "T. Collins and A. Bartoli, \"Infinitesimal plane-based pose estimation,\" International Journal of Computer Vision, vol. 109, no. 3, pp. 252-286, 2014."
+    },
+    {
+      "source_number": 53,
+      "final_number": 44,
+      "reference_text": "F. R. Hampel, \"The influence curve and its role in robust estimation,\" Journal of the American Statistical Association, vol. 69, no. 346, pp. 383-393, 1974."
+    },
+    {
+      "source_number": 54,
+      "final_number": 45,
+      "reference_text": "R. K. Pearson, Y. Neuvo, J. Astola, and M. Gabbouj, \"Generalized Hampel filters,\" EURASIP Journal on Advances in Signal Processing, vol. 2016, art. 87, 2016."
+    },
+    {
+      "source_number": 55,
+      "final_number": 46,
+      "reference_text": "A. V. Oppenheim and R. W. Schafer, Discrete-Time Signal Processing, 3rd ed. Upper Saddle River, NJ, USA: Pearson, 2010."
+    },
+    {
+      "source_number": 56,
+      "final_number": 47,
+      "reference_text": "S. Butterworth, \"On the theory of filter amplifiers,\" Experimental Wireless and the Wireless Engineer, vol. 7, pp. 536-541, 1930."
+    },
+    {
+      "source_number": 57,
+      "final_number": 48,
+      "reference_text": "F. Gustafsson, \"Determining the initial states in forward-backward filtering,\" IEEE Transactions on Signal Processing, vol. 44, no. 4, pp. 988-992, 1996."
+    },
+    {
+      "source_number": 40,
+      "final_number": 49,
+      "reference_text": "G. Casiez, N. Roussel, and D. Vogel, \"1 euro filter: A simple speed-based low-pass filter for noisy input in interactive systems,\" in Proc. SIGCHI Conf. Human Factors in Computing Systems (CHI), 2012, pp. 2527-2530."
+    },
+    {
+      "source_number": 43,
+      "final_number": 50,
+      "reference_text": "V. Bazarevsky, I. Grishchenko, K. Raveendran, T. Zhu, F. Zhang, and M. Grundmann, \"BlazePose: On-device real-time body pose tracking,\" arXiv:2006.10204, 2020."
+    },
+    {
+      "source_number": 44,
+      "final_number": 51,
+      "reference_text": "P. Dobrowolski, \"Swing-twist decomposition in Clifford algebra,\" arXiv:1506.05481, 2015."
+    },
+    {
+      "source_number": 41,
+      "final_number": 52,
+      "reference_text": "Y. Dong and S. Payandeh, \"Toward tracking and reconstruction of grasping hand kinematics: A framework based on RGB-D sensing,\" Applied Sciences, vol. 15, no. 16, art. 8737, 2025."
+    },
+    {
+      "source_number": 46,
+      "final_number": 53,
+      "reference_text": "A. Savitzky and M. J. E. Golay, \"Smoothing and differentiation of data by simplified least squares procedures,\" Analytical Chemistry, vol. 36, no. 8, pp. 1627-1639, 1964."
+    },
+    {
+      "source_number": 47,
+      "final_number": 54,
+      "reference_text": "Unity Technologies, \"Unity scripting reference: Transform, Quaternion,\" Unity Documentation. [Online]. Available: https://docs.unity3d.com/ScriptReference/"
+    },
+    {
+      "source_number": 49,
+      "final_number": 55,
+      "reference_text": "D. Takahashi, \"Jensen Huang Q&A: Why Moore's Law is dead, and smart design is replacing it,\" GamesBeat/VentureBeat, Sep. 21, 2022. [Online]. Available: https://gamesbeat.com/jensen-huang-qa-why-moores-law-is-dead-and-smart-design-is-replacing-it/"
+    },
+    {
+      "source_number": 51,
+      "final_number": 56,
+      "reference_text": "Z. Zhang, \"A flexible new technique for camera calibration,\" IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 22, no. 11, pp. 1330-1334, 2000."
+    },
+    {
+      "source_number": 48,
+      "final_number": 57,
+      "reference_text": "J. Wang and E. Olson, \"AprilTag 2: Efficient and robust fiducial detection,\" in Proc. IEEE/RSJ Int. Conf. Intelligent Robots and Systems (IROS), 2016, pp. 4193-4198."
+    }
+  ],
+  "removed_uncited": [
+    {
+      "source_number": 50,
+      "reference_text": "I. H. Lopez-Nava and A. Munoz-Melendez, \"Wearable inertial sensors for human motion analysis: A review,\" IEEE Sensors Journal, vol. 16, no. 22, pp. 7821-7834, 2016."
+    }
+  ],
+  "occurrences": [
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 3,
+      "source_number": 1,
+      "final_number": 1
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 3,
+      "source_number": 2,
+      "final_number": 2
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 3,
+      "source_number": 3,
+      "final_number": 3
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 3,
+      "source_number": 4,
+      "final_number": 4
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 4,
+      "source_number": 5,
+      "final_number": 5
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 4,
+      "source_number": 6,
+      "final_number": 6
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 5,
+      "source_number": 7,
+      "final_number": 7
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 5,
+      "source_number": 8,
+      "final_number": 8
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 5,
+      "source_number": 9,
+      "final_number": 9
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 5,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 11,
+      "final_number": 11
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 12,
+      "final_number": 12
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 13,
+      "final_number": 13
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 14,
+      "final_number": 14
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 15,
+      "final_number": 15
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 6,
+      "source_number": 16,
+      "final_number": 16
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 7,
+      "source_number": 17,
+      "final_number": 17
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 7,
+      "source_number": 18,
+      "final_number": 18
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 11,
+      "source_number": 20,
+      "final_number": 19
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 11,
+      "source_number": 21,
+      "final_number": 20
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 11,
+      "source_number": 22,
+      "final_number": 21
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 11,
+      "source_number": 23,
+      "final_number": 22
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 11,
+      "source_number": 24,
+      "final_number": 23
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 25,
+      "final_number": 24
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 26,
+      "final_number": 25
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 27,
+      "final_number": 26
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 28,
+      "final_number": 27
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 3,
+      "final_number": 3
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 17,
+      "final_number": 17
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 12,
+      "source_number": 13,
+      "final_number": 13
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 13,
+      "source_number": 29,
+      "final_number": 28
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 13,
+      "source_number": 30,
+      "final_number": 29
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 13,
+      "source_number": 11,
+      "final_number": 11
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 13,
+      "source_number": 12,
+      "final_number": 12
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 15,
+      "source_number": 19,
+      "final_number": 30
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 15,
+      "source_number": 31,
+      "final_number": 31
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 15,
+      "source_number": 32,
+      "final_number": 32
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 15,
+      "source_number": 8,
+      "final_number": 8
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 15,
+      "source_number": 33,
+      "final_number": 33
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 17,
+      "source_number": 34,
+      "final_number": 34
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 17,
+      "source_number": 35,
+      "final_number": 35
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 17,
+      "source_number": 36,
+      "final_number": 36
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 17,
+      "source_number": 14,
+      "final_number": 14
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 18,
+      "source_number": 37,
+      "final_number": 37
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 18,
+      "source_number": 38,
+      "final_number": 38
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 24,
+      "source_number": 20,
+      "final_number": 19
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 24,
+      "source_number": 21,
+      "final_number": 20
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 28,
+      "source_number": 22,
+      "final_number": 21
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 28,
+      "source_number": 23,
+      "final_number": 22
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 28,
+      "source_number": 24,
+      "final_number": 23
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 32,
+      "source_number": 25,
+      "final_number": 24
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 32,
+      "source_number": 26,
+      "final_number": 25
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 32,
+      "source_number": 27,
+      "final_number": 26
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 36,
+      "source_number": 28,
+      "final_number": 27
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 36,
+      "source_number": 3,
+      "final_number": 3
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 36,
+      "source_number": 13,
+      "final_number": 13
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 36,
+      "source_number": 17,
+      "final_number": 17
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 40,
+      "source_number": 29,
+      "final_number": 28
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 40,
+      "source_number": 30,
+      "final_number": 29
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 44,
+      "source_number": 11,
+      "final_number": 11
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 44,
+      "source_number": 12,
+      "final_number": 12
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 48,
+      "source_number": 32,
+      "final_number": 32
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 48,
+      "source_number": 8,
+      "final_number": 8
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 49,
+      "source_number": 32,
+      "final_number": 32
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 49,
+      "source_number": 8,
+      "final_number": 8
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 52,
+      "source_number": 33,
+      "final_number": 33
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 56,
+      "source_number": 34,
+      "final_number": 34
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 56,
+      "source_number": 35,
+      "final_number": 35
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 56,
+      "source_number": 36,
+      "final_number": 36
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 19,
+      "final_number": 30
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 33,
+      "final_number": 33
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 39,
+      "final_number": 39
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 14,
+      "final_number": 14
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 17,
+      "final_number": 17
+    },
+    {
+      "source_file": "Chapter_1_Introduction.docx",
+      "paragraph_index": 61,
+      "source_number": 18,
+      "final_number": 18
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 38,
+      "source_number": 37,
+      "final_number": 37
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 38,
+      "source_number": 38,
+      "final_number": 38
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 38,
+      "source_number": 58,
+      "final_number": 40
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 46,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 48,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 166,
+      "source_number": 45,
+      "final_number": 42
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 194,
+      "source_number": 28,
+      "final_number": 27
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 199,
+      "source_number": 29,
+      "final_number": 28
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 199,
+      "source_number": 52,
+      "final_number": 43
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 207,
+      "source_number": 53,
+      "final_number": 44
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 207,
+      "source_number": 54,
+      "final_number": 45
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 213,
+      "source_number": 55,
+      "final_number": 46
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 213,
+      "source_number": 56,
+      "final_number": 47
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 213,
+      "source_number": 57,
+      "final_number": 48
+    },
+    {
+      "source_file": "Chapter_2_Experimental_Setup.docx",
+      "paragraph_index": 213,
+      "source_number": 40,
+      "final_number": 49
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 15,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 36,
+      "source_number": 43,
+      "final_number": 50
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 70,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 84,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 104,
+      "source_number": 44,
+      "final_number": 51
+    },
+    {
+      "source_file": "Chapter_3_Kinematic_Modeling.docx",
+      "paragraph_index": 137,
+      "source_number": 41,
+      "final_number": 52
+    },
+    {
+      "source_file": "Chapter_4_Object_Tracking.docx",
+      "paragraph_index": 17,
+      "source_number": 46,
+      "final_number": 53
+    },
+    {
+      "source_file": "Chapter_5_Pose_Recovery.docx",
+      "paragraph_index": 121,
+      "source_number": 55,
+      "final_number": 46
+    },
+    {
+      "source_file": "Chapter_5_Pose_Recovery.docx",
+      "paragraph_index": 144,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_6_System_Integration.docx",
+      "paragraph_index": 58,
+      "source_number": 47,
+      "final_number": 54
+    },
+    {
+      "source_file": "Chapter_6_System_Integration.docx",
+      "paragraph_index": 65,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Chapter_6_System_Integration.docx",
+      "paragraph_index": 71,
+      "source_number": 47,
+      "final_number": 54
+    },
+    {
+      "source_file": "Chapter_8_Real_Time_Feasibility.docx",
+      "paragraph_index": 3,
+      "source_number": 55,
+      "final_number": 46
+    },
+    {
+      "source_file": "Chapter_8_Real_Time_Feasibility.docx",
+      "paragraph_index": 3,
+      "source_number": 55,
+      "final_number": 46
+    },
+    {
+      "source_file": "Chapter_8_Real_Time_Feasibility.docx",
+      "paragraph_index": 3,
+      "source_number": 57,
+      "final_number": 48
+    },
+    {
+      "source_file": "Chapter_8_Real_Time_Feasibility.docx",
+      "paragraph_index": 11,
+      "source_number": 40,
+      "final_number": 49
+    },
+    {
+      "source_file": "Chapter_8_Real_Time_Feasibility.docx",
+      "paragraph_index": 71,
+      "source_number": 43,
+      "final_number": 50
+    },
+    {
+      "source_file": "Chapter_10_Conclusions_Future_Work.docx",
+      "paragraph_index": 12,
+      "source_number": 49,
+      "final_number": 55
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 2,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 47,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 67,
+      "source_number": 43,
+      "final_number": 50
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 67,
+      "source_number": 28,
+      "final_number": 27
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 67,
+      "source_number": 3,
+      "final_number": 3
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 67,
+      "source_number": 13,
+      "final_number": 13
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 124,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 124,
+      "source_number": 37,
+      "final_number": 37
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 124,
+      "source_number": 38,
+      "final_number": 38
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 126,
+      "source_number": 51,
+      "final_number": 56
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 154,
+      "source_number": 10,
+      "final_number": 10
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 169,
+      "source_number": 29,
+      "final_number": 28
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 169,
+      "source_number": 30,
+      "final_number": 29
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 174,
+      "source_number": 29,
+      "final_number": 28
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 174,
+      "source_number": 48,
+      "final_number": 57
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 178,
+      "source_number": 52,
+      "final_number": 43
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 185,
+      "source_number": 42,
+      "final_number": 41
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 235,
+      "source_number": 53,
+      "final_number": 44
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 235,
+      "source_number": 54,
+      "final_number": 45
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 236,
+      "source_number": 55,
+      "final_number": 46
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 236,
+      "source_number": 56,
+      "final_number": 47
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 236,
+      "source_number": 57,
+      "final_number": 48
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 237,
+      "source_number": 46,
+      "final_number": 53
+    },
+    {
+      "source_file": "Appendices.docx",
+      "paragraph_index": 239,
+      "source_number": 40,
+      "final_number": 49
+    }
+  ]
+}

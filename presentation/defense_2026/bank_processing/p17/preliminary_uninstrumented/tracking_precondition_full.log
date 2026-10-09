@@ -1,0 +1,11 @@
+landmarks_raw.csv: 1050 frames @ 30.0 fps, person-present span 0.0-35.0 s (1050 frames)
+  [PASS] left_hip        coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_hip       coverage  99.9 %  longest gap  0.0 s
+  [PASS] left_shoulder   coverage  99.3 %  longest gap  0.0 s
+  [PASS] right_shoulder  coverage 100.0 %  longest gap  0.0 s
+  [PASS] left_elbow      coverage 100.0 %  longest gap  0.0 s
+  [PASS] left_wrist      coverage 100.0 %  longest gap  0.0 s
+  [PASS] right_elbow     coverage  99.0 %  longest gap  0.1 s
+  [PASS] right_wrist     coverage  95.6 %  longest gap  0.2 s
+VERDICT: torso PASS | left-hand evaluation PASS | right-hand evaluation PASS
+[json] /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p17/tracking_precondition_full.json

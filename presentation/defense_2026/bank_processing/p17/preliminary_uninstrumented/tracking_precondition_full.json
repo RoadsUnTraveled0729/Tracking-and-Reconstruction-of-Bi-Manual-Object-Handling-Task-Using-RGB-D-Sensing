@@ -1,0 +1,58 @@
+{
+ "stem": "ENSC498_right_arm_raise_cube_untouched_test_20260121_180042",
+ "span_s": [
+  0.0,
+  34.99196
+ ],
+ "criteria": {
+  "min_coverage": 0.95,
+  "max_gap_s": 0.5
+ },
+ "landmarks": {
+  "left_hip": {
+   "coverage": 1.0,
+   "longest_gap_s": 0.0,
+   "pass": true
+  },
+  "right_hip": {
+   "coverage": 0.999,
+   "longest_gap_s": 0.03,
+   "pass": true
+  },
+  "left_shoulder": {
+   "coverage": 0.9933,
+   "longest_gap_s": 0.03,
+   "pass": true
+  },
+  "right_shoulder": {
+   "coverage": 1.0,
+   "longest_gap_s": 0.0,
+   "pass": true
+  },
+  "left_elbow": {
+   "coverage": 1.0,
+   "longest_gap_s": 0.0,
+   "pass": true
+  },
+  "left_wrist": {
+   "coverage": 1.0,
+   "longest_gap_s": 0.0,
+   "pass": true
+  },
+  "right_elbow": {
+   "coverage": 0.9905,
+   "longest_gap_s": 0.07,
+   "pass": true
+  },
+  "right_wrist": {
+   "coverage": 0.9562,
+   "longest_gap_s": 0.23,
+   "pass": true
+  }
+ },
+ "verdicts": {
+  "torso": true,
+  "left_hand_windows": true,
+  "right_hand_windows": true
+ }
+}

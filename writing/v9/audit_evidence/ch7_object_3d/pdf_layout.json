@@ -1,0 +1,27 @@
+{
+  "pages": 192,
+  "pdf_sha256": "ae3eae4293fac4664620c6b3ca44896cc3881833fcc83b1a066db3f580692cc9",
+  "figure_pages": [
+    {
+      "figure": "Figure 7.1",
+      "page": 116,
+      "caption": "Figure 7.1. Rail recording: selected video frames show object acquisition, lift, slide and arrival at the far end. Below, accepted marker-centre samples and the four reconstructed waypoints are shown in {Scene}: x-y at upper left, x-z at lower left and a three-dimensional view on the right. The x-y view expands the height scale to show the lift; the other views use equal metric scale. All positions include the recording-specific floor translation. The video frames do not define the waypoint estimates.",
+      "caption_complete_on_one_page": true,
+      "page_image": "writing/v9/audit_evidence/ch7_object_3d/page_116.png",
+      "page_image_sha256": "2ccf6644756b006e225e0f08edc7fb9a87fcd9b995fcb4bac0f8dc6b950e5c96",
+      "visual_status": "PASS"
+    },
+    {
+      "figure": "Figure 7.2",
+      "page": 118,
+      "caption": "Figure 7.2. Handover recording: selected video frames show the right-hand slide, transfer, left-hand slide and arrival at the far end. Below, accepted marker-centre samples and the four reconstructed waypoints are shown in {Scene}: x-y at upper left, x-z at lower left and a three-dimensional view on the right. The plots use this recording's floor translation and the scale conventions of Figure 7.1. The selected video moments provide task context.",
+      "caption_complete_on_one_page": true,
+      "page_image": "writing/v9/audit_evidence/ch7_object_3d/page_118.png",
+      "page_image_sha256": "61b52ef4cf3e01b0ff3ed3e78afe92687013f2d0e620055ce884b6d83cafa82d",
+      "visual_status": "PASS"
+    }
+  ],
+  "visual_status": "PASS",
+  "visual_scope": "Final PDF physical pages 116 and 118 inspected: real-video strips retained; upper-left x-y, lower-left x-z and larger right 3D panels; legible labels, W4 clear of tick numbers, complete captions, no clipping.",
+  "initial_proof": "initial_layout retains the shorter first plot proof. Final taller plots and W4 text offset correct its readability issues without moving data."
+}

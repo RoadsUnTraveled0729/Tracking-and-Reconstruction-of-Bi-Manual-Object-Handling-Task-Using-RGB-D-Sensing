@@ -1,0 +1,208 @@
+{
+ "output": "overlay_landmark_frames.png",
+ "thesis_source": "Thesis V9 Sections 3.2.1 and 3.2.2, Figure 3.5 (landmarks L11-L16, L23, L24; root at the right hip L24)",
+ "landmarks": "tpose_landmarks_mediapipe.json",
+ "panels": [
+  {
+   "id": "photo",
+   "photo": "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg",
+   "crop_px": [
+    1280,
+    600,
+    3080,
+    2100
+   ],
+   "box_px": [
+    0,
+    0,
+    1440,
+    1200
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "panel": "photo",
+   "from": 16,
+   "to": 14
+  },
+  {
+   "panel": "photo",
+   "from": 14,
+   "to": 12
+  },
+  {
+   "panel": "photo",
+   "from": 12,
+   "to": 11
+  },
+  {
+   "panel": "photo",
+   "from": 11,
+   "to": 13
+  },
+  {
+   "panel": "photo",
+   "from": 13,
+   "to": 15
+  },
+  {
+   "panel": "photo",
+   "from": 12,
+   "to": 24
+  },
+  {
+   "panel": "photo",
+   "from": 11,
+   "to": 23
+  },
+  {
+   "panel": "photo",
+   "from": 23,
+   "to": 24
+  }
+ ],
+ "points": [
+  {
+   "panel": "photo",
+   "landmark": 16,
+   "label": {
+    "text": "L16",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 14,
+   "label": {
+    "text": "L14",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 12,
+   "label": {
+    "text": "L12",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 11,
+   "label": {
+    "text": "L11",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 13,
+   "label": {
+    "text": "L13",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 15,
+   "label": {
+    "text": "L15",
+    "offset": [
+     0,
+     -62
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 23,
+   "label": {
+    "text": "L23",
+    "offset": [
+     75,
+     55
+    ]
+   }
+  },
+  {
+   "panel": "photo",
+   "landmark": 24,
+   "radius": 14,
+   "rgb": [
+    255,
+    64,
+    64
+   ],
+   "label": {
+    "text": "L24",
+    "offset": [
+     -85,
+     40
+    ]
+   }
+  }
+ ],
+ "texts": [
+  {
+   "text": "shoulder  L11, L12",
+   "xy": [
+    30,
+    890
+   ],
+   "anchor": "lm"
+  },
+  {
+   "text": "elbow  L13, L14",
+   "xy": [
+    30,
+    956
+   ],
+   "anchor": "lm"
+  },
+  {
+   "text": "wrist  L15, L16",
+   "xy": [
+    30,
+    1022
+   ],
+   "anchor": "lm"
+  },
+  {
+   "text": "hip  L23",
+   "xy": [
+    30,
+    1088
+   ],
+   "anchor": "lm"
+  },
+  {
+   "text": "root  L24",
+   "xy": [
+    30,
+    1154
+   ],
+   "anchor": "lm",
+   "rgb": [
+    255,
+    64,
+    64
+   ]
+  }
+ ]
+}

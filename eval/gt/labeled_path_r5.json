@@ -1,0 +1,318 @@
+{
+  "frame": "desk_marker_world",
+  "units": "m",
+  "survey": {
+    "method": "detected from the recording (dwell-station clustering on the ArUco box-center track, leveled-frame geometry) plus the parked rest position as the start waypoint; no physical survey",
+    "date": "2026-08-26",
+    "default_sigma_m": null
+  },
+  "waypoints": [
+    {
+      "id": "W1_start",
+      "xyz": [
+        -0.2554,
+        -0.1075,
+        0.1921
+      ],
+      "leveled_xyz": [
+        -0.2565,
+        0.0153,
+        0.2183
+      ],
+      "height_above_table_m": 0.0221,
+      "sigma_m": null,
+      "dwell_expected": false,
+      "source": "rest_position",
+      "detected": {
+        "frames": [
+          [
+            0,
+            655
+          ]
+        ],
+        "dwell_total_s": null,
+        "dwell_std_mm": null
+      }
+    },
+    {
+      "id": "W2_back_end",
+      "xyz": [
+        -0.1628,
+        -0.2399,
+        0.4297
+      ],
+      "leveled_xyz": [
+        -0.1654,
+        0.0254,
+        0.4906
+      ],
+      "height_above_table_m": 0.0322,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            903,
+            955
+          ]
+        ],
+        "dwell_total_s": 1.73,
+        "dwell_std_mm": [
+          0.3,
+          0.7,
+          1.3
+        ]
+      }
+    },
+    {
+      "id": "W3_desk_handover",
+      "xyz": [
+        -0.0771,
+        -0.2264,
+        0.4115
+      ],
+      "leveled_xyz": [
+        -0.0799,
+        0.0253,
+        0.4686
+      ],
+      "height_above_table_m": 0.0321,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            984,
+            994
+          ],
+          [
+            1025,
+            1059
+          ]
+        ],
+        "dwell_total_s": 1.47,
+        "dwell_std_mm": [
+          12.6,
+          2.3,
+          4.1
+        ]
+      }
+    },
+    {
+      "id": "W4_left_end",
+      "xyz": [
+        0.1651,
+        -0.235,
+        0.4393
+      ],
+      "leveled_xyz": [
+        0.1625,
+        0.0271,
+        0.4983
+      ],
+      "height_above_table_m": 0.0338,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            1195,
+            1234
+          ]
+        ],
+        "dwell_total_s": 1.3,
+        "dwell_std_mm": [
+          0.9,
+          2.0,
+          4.4
+        ]
+      }
+    },
+    {
+      "id": "W5_forward_end",
+      "xyz": [
+        0.1779,
+        -0.1952,
+        0.3662
+      ],
+      "leveled_xyz": [
+        0.1758,
+        0.0223,
+        0.4152
+      ],
+      "height_above_table_m": 0.029,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            1274,
+            1306
+          ],
+          [
+            1313,
+            1336
+          ]
+        ],
+        "dwell_total_s": 1.83,
+        "dwell_std_mm": [
+          1.0,
+          4.9,
+          4.3
+        ]
+      }
+    },
+    {
+      "id": "W6_lift_top",
+      "xyz": [
+        0.1314,
+        0.0468,
+        0.5583
+      ],
+      "leveled_xyz": [
+        0.136,
+        0.3301,
+        0.4513
+      ],
+      "height_above_table_m": 0.3369,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            1475,
+            1632
+          ]
+        ],
+        "dwell_total_s": 5.24,
+        "dwell_std_mm": [
+          4.8,
+          6.2,
+          11.5
+        ]
+      }
+    },
+    {
+      "id": "W7_wire_handover",
+      "xyz": [
+        -0.069,
+        0.0454,
+        0.5619
+      ],
+      "leveled_xyz": [
+        -0.0643,
+        0.3354,
+        0.4538
+      ],
+      "height_above_table_m": 0.3422,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            1713,
+            1754
+          ]
+        ],
+        "dwell_total_s": 1.37,
+        "dwell_std_mm": [
+          9.1,
+          2.0,
+          2.5
+        ]
+      }
+    },
+    {
+      "id": "W8_wire_left",
+      "xyz": [
+        -0.1776,
+        0.038,
+        0.5393
+      ],
+      "leveled_xyz": [
+        -0.1732,
+        0.3197,
+        0.4378
+      ],
+      "height_above_table_m": 0.3264,
+      "sigma_m": null,
+      "dwell_expected": true,
+      "source": "detected_dwell",
+      "detected": {
+        "frames": [
+          [
+            1790,
+            1814
+          ]
+        ],
+        "dwell_total_s": 0.8,
+        "dwell_std_mm": [
+          4.2,
+          1.2,
+          2.3
+        ]
+      }
+    }
+  ],
+  "segments": [
+    {
+      "from": "W1_start",
+      "to": "W2_back_end",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W2_back_end",
+      "to": "W3_desk_handover",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W3_desk_handover",
+      "to": "W4_left_end",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W4_left_end",
+      "to": "W5_forward_end",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W5_forward_end",
+      "to": "W6_lift_top",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W6_lift_top",
+      "to": "W7_wire_handover",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W7_wire_handover",
+      "to": "W8_wire_left",
+      "type": "line",
+      "constrained_axes": null
+    },
+    {
+      "from": "W8_wire_left",
+      "to": "W1_start",
+      "type": "line",
+      "constrained_axes": null
+    }
+  ],
+  "wall_marker_surveyed": {
+    "xyz": null,
+    "sigma_m": null
+  },
+  "note": "R5 (recording_20260825_222315) waypoint geometry, EIGHT waypoints per the operator's designed trajectory (2026-08-26): start, back-move end, desk handover, left-move end, forward-push end, lift top, wire handover, wire left end. Coordinates are DETECTED from the recording itself, not surveyed with a ruler - user decision 2026-08-26; W1_start is the parked rest position, the others are duration-weighted dwell-cluster means. leveled_xyz / height_above_table_m give the gravity-leveled twin of each waypoint (the desk-marker frame is tilted 31.7 deg). Segments form the closed loop in traversal order; the un-paused corners (the far-left desk corner and the wire's left descent corner) are cut by the polyline. See eval/gt/detect_waypoints.py and eval/reports/r5_waypoint_eval.md."
+}

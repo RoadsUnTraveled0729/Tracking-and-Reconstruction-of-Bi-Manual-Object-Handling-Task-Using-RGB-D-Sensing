@@ -1,0 +1,19 @@
+{
+  "bag": "/home/luo/Desktop/ENSC498/recordings/ENSC498_right_arm_raise_cube_untouched_test_20260121_180042.bag",
+  "delegate_requested": "gpu",
+  "delegate_used": "gpu",
+  "model": "/home/luo/Desktop/bimanual-tracking/v1/mediapipe/models/pose_landmarker_heavy.task",
+  "frames": 1050,
+  "wall_s": 40.0,
+  "min_vis": 0.5,
+  "depth_window": 5,
+  "filter": {
+    "window": 11,
+    "k": 3.0,
+    "abs_floor_m": 0.035,
+    "max_rejects": 3,
+    "one_euro": "freq 30, min_cutoff 1.0, beta 1.0 (CausalLandmarkFilter defaults)"
+  },
+  "live_module": "v1/realtime/person/realtime_person.py",
+  "playback": "set_real_time(True): recorded pacing, as the live loop"
+}

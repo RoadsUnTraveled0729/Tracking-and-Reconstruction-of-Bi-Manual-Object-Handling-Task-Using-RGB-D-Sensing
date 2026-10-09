@@ -1,0 +1,19 @@
+{
+  "exitCode": 0,
+  "report": {
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 0,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [],
+    "slide_count": 78,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "stderr": ""
+}

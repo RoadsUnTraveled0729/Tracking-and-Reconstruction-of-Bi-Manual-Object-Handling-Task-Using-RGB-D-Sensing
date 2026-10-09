@@ -1,0 +1,86 @@
+{
+  "PSF1_global": {
+    "struct_format": "<IIIIiiIdd4f5fiII",
+    "packed_bytes": 92,
+    "allocated_bytes": 128
+  },
+  "PSF1_slot_header": {
+    "struct_format": "<IiIdd",
+    "packed_bytes": 28,
+    "allocated_bytes": 32
+  },
+  "PSR2": {
+    "struct_format": "<IIif3f13fHH",
+    "packed_bytes": 84,
+    "allocated_bytes": 84
+  },
+  "PSB2": {
+    "struct_format": "<IIif3f3fH2x",
+    "packed_bytes": 44,
+    "allocated_bytes": 44
+  },
+  "PSI2": {
+    "struct_format": "<IIif3f13f3f3fHHHH",
+    "packed_bytes": 112,
+    "allocated_bytes": 112
+  },
+  "source_sha256": {
+    "v2/common/shm_ring.py": "8b91db56d862e6370fe82cb896bf9f25b4d2dac2c982e1863c53f72482ea222c",
+    "v2/common/person_shm_v2.py": "bccfebae1ed588b19272106a45f294eb8d7e6726f09f039e31b257d42a3877b9",
+    "v1/realtime/integration/realtime_integrate.py": "1c75ee42a92ac640c4f898a198d8ceddc0e04724bd3b91002def554de9c8c6b1",
+    "v2/integration/v2_integrate.py": "70a0b4eb7e1fdb0c1dd731d3d1effa63f14d30e39bd5f269d7770fb151e05cc1",
+    "Unity/Assets/Scripts/IntegratedSceneReceiverV2.cs": "6239ad603a0ec52b2a380200209e83c059180cd498346c2ad884eb6414dc0446"
+  },
+  "duration_s": 44,
+  "gif_nominal_fps": 10,
+  "mp4_encoded_fps": 30,
+  "output_size": [
+    1280,
+    720
+  ],
+  "drawing_size": [
+    1600,
+    900
+  ],
+  "text_bounds_checks": 16659,
+  "minimum_font_at_drawing_scale": 21,
+  "font_reductions": [
+    [
+      "ACCEPT new tick\nApply person + object",
+      28,
+      26
+    ],
+    [
+      "During that read, Python publishes 11 (odd), writes the payload, then commits 12 (even).",
+      29,
+      28
+    ],
+    [
+      "Each branch copies the payload, then verifies unchanged even sequence + expected frame.",
+      29,
+      28
+    ],
+    [
+      "Shared-memory records: extraction, resampling and safe reads",
+      42,
+      41
+    ],
+    [
+      "This panel shows a permitted interpolation bracket. Exact/near samples, holds and return blends are separate cases.",
+      25,
+      24
+    ]
+  ],
+  "schematic_sequence_examples": [
+    10,
+    11,
+    12
+  ],
+  "race_cases": [
+    "odd at start: skip payload",
+    "changed during read: reject, retry, accept stable new tick"
+  ],
+  "model_claim": "Source-traced consistency check; no claim of formal memory ordering proof.",
+  "overlapped_labels_suppressed": 685,
+  "label_policy": "Suppress whole labels if an incoming tile intersects their measured glyph bounds."
+}

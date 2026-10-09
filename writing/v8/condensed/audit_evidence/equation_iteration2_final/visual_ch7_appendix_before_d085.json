@@ -1,0 +1,130 @@
+{
+  "pdf_sha256": "7f285378a027d6c99f1bd8d96e7aca25591630a48342c9ff6b2388630434f5f3",
+  "pdf_pages": 189,
+  "assembled_docx_sha256": "8f7f27eb7c7655180bd2b9201082de89d2f1039f62e5968548e24185f2f14577",
+  "Chapter_7_Evaluation_docx_sha256": "eb4855f227a775f6861c5f04a7d96b6afd52e7581be2c17dfceb69934cad0498",
+  "Appendices_docx_sha256": "dc6702a7680ea88dc803b1446518be1d0e97ee8d13a6644b00ba501acb095ba1",
+  "manual_reviewed_pages": [
+    {
+      "physical_pdf_page": 114,
+      "sha256": "9fd19728e0c66f8210b9df5f2b8b21d360a00394da0409d132b451f2a1f23477"
+    },
+    {
+      "physical_pdf_page": 115,
+      "sha256": "448eb96030b89b0ca93eb7d45935ef9bfa5cd85f0929301aaaeff8f55cf0e3f9"
+    },
+    {
+      "physical_pdf_page": 116,
+      "sha256": "33d2829b92c44580257ada0086f11e05163a8a30cb9c75b2e0f512601adae4d6"
+    },
+    {
+      "physical_pdf_page": 117,
+      "sha256": "58598321ca2bb2a8b0a7af0563d9937f192759ebde546425eacdbdee21f54dae"
+    },
+    {
+      "physical_pdf_page": 118,
+      "sha256": "e6eb0a4b0e43389295e312670a0d44447187b54d706d2ac8752e7ea0e1d2f92a"
+    },
+    {
+      "physical_pdf_page": 120,
+      "sha256": "021a9efd2a8f36d367131bab15110a9327b688d7883fc14241a6f8ce3b2f5940"
+    },
+    {
+      "physical_pdf_page": 121,
+      "sha256": "994e2a2505b83ef2547736629da5bc640077ae50f9e3687929647c549e99e09f"
+    },
+    {
+      "physical_pdf_page": 122,
+      "sha256": "af52973909f38b7b99025411c7c1812dc0d2c2b448b9cfab45bb588e2e6cd2a1"
+    },
+    {
+      "physical_pdf_page": 123,
+      "sha256": "c90c19543129227afd07de34789a9266063428e35547a96f025105b7c1b922bb"
+    },
+    {
+      "physical_pdf_page": 124,
+      "sha256": "a12a63cca2ec97c182679380a48fbf07aff240822da157f47ed145ffa298e300"
+    },
+    {
+      "physical_pdf_page": 125,
+      "sha256": "9ae3ebf0bd4d3cc98288450d392be7b0667c5cc6bf411b5572c73c4763fc0f2a"
+    },
+    {
+      "physical_pdf_page": 126,
+      "sha256": "802321b0a0f3e5feef428b5dd6f2da8cbd716e36015108d3e69a01ba02876a7e"
+    },
+    {
+      "physical_pdf_page": 127,
+      "sha256": "50477c4cafe4b57fbf536c0717024b5362e4818afce24e30214c4ae11e365d0e"
+    },
+    {
+      "physical_pdf_page": 128,
+      "sha256": "f4638aed6fa6eb2688bdd0b63bbf23dc998c1a6ff2bc271b383d81bebf1879d4"
+    },
+    {
+      "physical_pdf_page": 129,
+      "sha256": "89638c28e6e95d91f329786188f6372bdea812efa786ecd7e3fd71adff0985c1"
+    },
+    {
+      "physical_pdf_page": 130,
+      "sha256": "9cf5a02e709f21a4b78d624825ceeb184dfeb31756378601c61d4b530e450292"
+    },
+    {
+      "physical_pdf_page": 131,
+      "sha256": "ffe27d6496af3a213cc821df73fabc6b711a6a9f332c73b5d1abead6fcaa0916"
+    },
+    {
+      "physical_pdf_page": 167,
+      "sha256": "828bf369e9aaf2dcb45c56387182799a23a41ab842406ba1d8c7f0409bd489ec"
+    },
+    {
+      "physical_pdf_page": 170,
+      "sha256": "cdd62a352eb6c888e35bf2ec5383d80cf4b925c6f8313f7cf0ce9cae1d650e43"
+    },
+    {
+      "physical_pdf_page": 171,
+      "sha256": "ce98fb2b056b1b3561a5e8b0d9ea51f544050111c175097c0e8994fbc1b0a7a1"
+    },
+    {
+      "physical_pdf_page": 172,
+      "sha256": "ca3c99fb33950d1c033671003c5976531c8307cb0768068885accb44036396de"
+    },
+    {
+      "physical_pdf_page": 173,
+      "sha256": "d280b710b53f2aa263ab9802ed6954721d1b582a16d3fb13a7a2ca7eff5ce579"
+    },
+    {
+      "physical_pdf_page": 174,
+      "sha256": "dd488190f11794436847bbeb08a6fce701ef0c7554e7abd5e37271a8fbe81247"
+    },
+    {
+      "physical_pdf_page": 179,
+      "sha256": "601564b432909f4ff3ed916a6d80c2195941c1cfe55059d907df7be39112f04d"
+    },
+    {
+      "physical_pdf_page": 180,
+      "sha256": "59008182546f6d783c2839516ab576e76aa90d11c71b5eb911df233f6a19c576"
+    },
+    {
+      "physical_pdf_page": 181,
+      "sha256": "5dddb9395598e4946a36c21cea53b4cc93ba0c1ce4970aaabda63ed367ca6cb3"
+    },
+    {
+      "physical_pdf_page": 182,
+      "sha256": "17d8452aca27571d42851a2201199e78c452773101f487f201b62d945cba370b"
+    },
+    {
+      "physical_pdf_page": 183,
+      "sha256": "71ec2e1d03dd06e25a5f3b59a5cf3b960d607629a5889e968868a5019b48f069"
+    },
+    {
+      "physical_pdf_page": 185,
+      "sha256": "056b41a7de7189a22b922cbdc464bada5d8c65e25b09e6feb584f7336032b8d4"
+    },
+    {
+      "physical_pdf_page": 188,
+      "sha256": "dc26f6bf7adf6e6ea6a16b71230700baf37f8a05cee343fd6fa7b646d79e9d2e"
+    }
+  ],
+  "finding": "MINOR: Figure D.1 image on physical page 172 and caption on page 173. Parent applied D-085; final rerender pending."
+}

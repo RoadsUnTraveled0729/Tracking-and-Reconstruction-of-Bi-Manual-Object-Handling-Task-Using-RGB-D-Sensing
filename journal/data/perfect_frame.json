@@ -1,0 +1,682 @@
+{
+  "bag": "R7_rail_handover_earlier_take_20260908_235500.bag",
+  "pass": "fine",
+  "frame_index": 1174,
+  "frame_index_definition": "0-based count of framesets with colour and depth, as the 'frame' column of v1/mediapipe/extract_landmarks_to_csv.py",
+  "hw_frame_number": 1463,
+  "timestamp_ms": 1788936950924.003,
+  "time_s_from_bag_start": 39.163103,
+  "intrinsics": {
+    "fx": 607.561279296875,
+    "fy": 607.0150756835938,
+    "ppx": 323.93756103515625,
+    "ppy": 248.0174102783203,
+    "width": 640,
+    "height": 480,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "depth_scale_m_per_unit": 0.0010000000474974513
+  },
+  "coordinate_frame": "camera (colour): X right, Y down, Z forward, metres",
+  "landmarks": {
+    "0": {
+      "name": "nose",
+      "x": 0.590911,
+      "y": 0.039813,
+      "z": -0.478766,
+      "u": 378.183,
+      "v": 19.11,
+      "visibility": 0.999537,
+      "presence": 0.999806
+    },
+    "1": {
+      "name": "L1",
+      "x": 0.599092,
+      "y": 0.001734,
+      "z": -0.456941,
+      "u": 383.419,
+      "v": 0.832,
+      "visibility": 0.997954,
+      "presence": 0.999533
+    },
+    "2": {
+      "name": "L2",
+      "x": 0.609003,
+      "y": 0.001048,
+      "z": -0.457671,
+      "u": 389.762,
+      "v": 0.503,
+      "visibility": 0.997922,
+      "presence": 0.999602
+    },
+    "3": {
+      "name": "L3",
+      "x": 0.615741,
+      "y": -0.000256,
+      "z": -0.457642,
+      "u": 394.074,
+      "v": -0.123,
+      "visibility": 0.998266,
+      "presence": 0.999522
+    },
+    "4": {
+      "name": "L4",
+      "x": 0.56671,
+      "y": -0.00032,
+      "z": -0.470349,
+      "u": 362.694,
+      "v": -0.153,
+      "visibility": 0.998712,
+      "presence": 0.999372
+    },
+    "5": {
+      "name": "L5",
+      "x": 0.555872,
+      "y": -0.000735,
+      "z": -0.471017,
+      "u": 355.758,
+      "v": -0.353,
+      "visibility": 0.998979,
+      "presence": 0.999478
+    },
+    "6": {
+      "name": "L6",
+      "x": 0.545196,
+      "y": -0.000769,
+      "z": -0.471426,
+      "u": 348.925,
+      "v": -0.369,
+      "visibility": 0.999131,
+      "presence": 0.99938
+    },
+    "7": {
+      "name": "L7",
+      "x": 0.610805,
+      "y": 0.009248,
+      "z": -0.292673,
+      "u": 390.915,
+      "v": 4.439,
+      "visibility": 0.998765,
+      "presence": 0.999599
+    },
+    "8": {
+      "name": "L8",
+      "x": 0.522988,
+      "y": 0.010844,
+      "z": -0.349683,
+      "u": 334.712,
+      "v": 5.205,
+      "visibility": 0.998154,
+      "presence": 0.999114
+    },
+    "9": {
+      "name": "L9",
+      "x": 0.603242,
+      "y": 0.065744,
+      "z": -0.407225,
+      "u": 386.075,
+      "v": 31.557,
+      "visibility": 0.999518,
+      "presence": 0.999826
+    },
+    "10": {
+      "name": "L10",
+      "x": 0.568438,
+      "y": 0.065454,
+      "z": -0.428317,
+      "u": 363.801,
+      "v": 31.418,
+      "visibility": 0.99955,
+      "presence": 0.999615
+    },
+    "11": {
+      "name": "left_shoulder",
+      "x": 0.681986,
+      "y": 0.166582,
+      "z": -0.233163,
+      "u": 436.471,
+      "v": 79.96,
+      "visibility": 0.99997,
+      "presence": 0.99998
+    },
+    "12": {
+      "name": "right_shoulder",
+      "x": 0.442396,
+      "y": 0.170988,
+      "z": -0.229913,
+      "u": 283.133,
+      "v": 82.074,
+      "visibility": 0.999881,
+      "presence": 0.999875
+    },
+    "13": {
+      "name": "left_elbow",
+      "x": 0.758305,
+      "y": 0.353201,
+      "z": -0.289072,
+      "u": 485.315,
+      "v": 169.537,
+      "visibility": 0.993818,
+      "presence": 0.99988
+    },
+    "14": {
+      "name": "right_elbow",
+      "x": 0.352082,
+      "y": 0.34312,
+      "z": -0.236496,
+      "u": 225.332,
+      "v": 164.698,
+      "visibility": 0.96697,
+      "presence": 0.999825
+    },
+    "15": {
+      "name": "left_wrist",
+      "x": 0.752064,
+      "y": 0.551104,
+      "z": -0.590346,
+      "u": 481.321,
+      "v": 264.53,
+      "visibility": 0.993851,
+      "presence": 0.999915
+    },
+    "16": {
+      "name": "right_wrist",
+      "x": 0.384315,
+      "y": 0.502809,
+      "z": -0.38873,
+      "u": 245.961,
+      "v": 241.348,
+      "visibility": 0.987415,
+      "presence": 0.999959
+    },
+    "17": {
+      "name": "L17",
+      "x": 0.745784,
+      "y": 0.612475,
+      "z": -0.671198,
+      "u": 477.302,
+      "v": 293.988,
+      "visibility": 0.989555,
+      "presence": 0.999547
+    },
+    "18": {
+      "name": "L18",
+      "x": 0.368221,
+      "y": 0.57402,
+      "z": -0.453949,
+      "u": 235.662,
+      "v": 275.53,
+      "visibility": 0.980252,
+      "presence": 0.999774
+    },
+    "19": {
+      "name": "L19",
+      "x": 0.720351,
+      "y": 0.597543,
+      "z": -0.71418,
+      "u": 461.025,
+      "v": 286.82,
+      "visibility": 0.99084,
+      "presence": 0.999638
+    },
+    "20": {
+      "name": "L20",
+      "x": 0.401793,
+      "y": 0.564891,
+      "z": -0.491859,
+      "u": 257.148,
+      "v": 271.148,
+      "visibility": 0.982376,
+      "presence": 0.999837
+    },
+    "21": {
+      "name": "L21",
+      "x": 0.717695,
+      "y": 0.582611,
+      "z": -0.61269,
+      "u": 459.325,
+      "v": 279.653,
+      "visibility": 0.988027,
+      "presence": 0.999829
+    },
+    "22": {
+      "name": "L22",
+      "x": 0.414741,
+      "y": 0.542577,
+      "z": -0.408425,
+      "u": 265.434,
+      "v": 260.437,
+      "visibility": 0.976389,
+      "presence": 0.999933
+    },
+    "23": {
+      "name": "left_hip",
+      "x": 0.625307,
+      "y": 0.658486,
+      "z": -0.002829,
+      "u": 400.197,
+      "v": 316.073,
+      "visibility": 0.99887,
+      "presence": 0.999572
+    },
+    "24": {
+      "name": "right_hip",
+      "x": 0.472097,
+      "y": 0.656575,
+      "z": 0.00246,
+      "u": 302.142,
+      "v": 315.156,
+      "visibility": 0.998745,
+      "presence": 0.999408
+    },
+    "25": {
+      "name": "L25",
+      "x": 0.632246,
+      "y": 0.91082,
+      "z": 0.235302,
+      "u": 404.637,
+      "v": 437.193,
+      "visibility": 0.107547,
+      "presence": 0.94582
+    },
+    "26": {
+      "name": "L26",
+      "x": 0.449319,
+      "y": 0.881319,
+      "z": 0.195066,
+      "u": 287.564,
+      "v": 423.033,
+      "visibility": 0.063778,
+      "presence": 0.955804
+    },
+    "27": {
+      "name": "L27",
+      "x": 0.65225,
+      "y": 1.190337,
+      "z": 0.588609,
+      "u": 417.44,
+      "v": 571.362,
+      "visibility": 0.022,
+      "presence": 0.361302
+    },
+    "28": {
+      "name": "L28",
+      "x": 0.469965,
+      "y": 1.155703,
+      "z": 0.53408,
+      "u": 300.777,
+      "v": 554.737,
+      "visibility": 0.016923,
+      "presence": 0.337377
+    },
+    "29": {
+      "name": "L29",
+      "x": 0.660299,
+      "y": 1.221206,
+      "z": 0.615615,
+      "u": 422.591,
+      "v": 586.179,
+      "visibility": 0.025283,
+      "presence": 0.224498
+    },
+    "30": {
+      "name": "L30",
+      "x": 0.478375,
+      "y": 1.195052,
+      "z": 0.563684,
+      "u": 306.16,
+      "v": 573.625,
+      "visibility": 0.020137,
+      "presence": 0.331843
+    },
+    "31": {
+      "name": "L31",
+      "x": 0.620333,
+      "y": 1.301358,
+      "z": 0.509549,
+      "u": 397.013,
+      "v": 624.652,
+      "visibility": 0.021174,
+      "presence": 0.224626
+    },
+    "32": {
+      "name": "L32",
+      "x": 0.454537,
+      "y": 1.254129,
+      "z": 0.454245,
+      "u": 290.903,
+      "v": 601.982,
+      "visibility": 0.015798,
+      "presence": 0.235594
+    }
+  },
+  "landmarks_note": "x, y normalised image coordinates; u = x*width, v = y*height (pixels, float); z MediaPipe relative depth (not metres)",
+  "model_landmarks": {
+    "11": {
+      "name": "left_shoulder",
+      "u_int": 436,
+      "v_int": 79,
+      "depth_px_m": 1.309,
+      "xyz_px_m": [
+        0.24144,
+        -0.364478,
+        1.309
+      ],
+      "depth_med5_m": 1.309,
+      "xyz_med5_m": [
+        0.24144,
+        -0.364478,
+        1.309
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.3090000621741638,
+        "std_m": 0.001614501499817545,
+        "range_m": 0.0050000002374872565
+      }
+    },
+    "12": {
+      "name": "right_shoulder",
+      "u_int": 283,
+      "v_int": 82,
+      "depth_px_m": 1.322,
+      "xyz_px_m": [
+        -0.089077,
+        -0.361564,
+        1.322
+      ],
+      "depth_med5_m": 1.322,
+      "xyz_med5_m": [
+        -0.089077,
+        -0.361564,
+        1.322
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.3220000627916306,
+        "std_m": 0.00305908901150697,
+        "range_m": 0.014000000664964318
+      }
+    },
+    "13": {
+      "name": "left_elbow",
+      "u_int": 485,
+      "v_int": 169,
+      "depth_px_m": 1.198,
+      "xyz_px_m": [
+        0.317586,
+        -0.155948,
+        1.198
+      ],
+      "depth_med5_m": 1.198,
+      "xyz_med5_m": [
+        0.317586,
+        -0.155948,
+        1.198
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.1980000569019467,
+        "std_m": 0.004730924990421367,
+        "range_m": 0.01600000075995922
+      }
+    },
+    "14": {
+      "name": "right_elbow",
+      "u_int": 225,
+      "v_int": 164,
+      "depth_px_m": 1.253,
+      "xyz_px_m": [
+        -0.204043,
+        -0.173429,
+        1.253
+      ],
+      "depth_med5_m": 1.253,
+      "xyz_med5_m": [
+        -0.204043,
+        -0.173429,
+        1.253
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.2530000595143065,
+        "std_m": 0.005940671238110825,
+        "range_m": 0.021000000997446477
+      }
+    },
+    "15": {
+      "name": "left_wrist",
+      "u_int": 481,
+      "v_int": 264,
+      "depth_px_m": 1.062,
+      "xyz_px_m": [
+        0.274541,
+        0.027962,
+        1.062
+      ],
+      "depth_med5_m": 1.062,
+      "xyz_med5_m": [
+        0.274541,
+        0.027962,
+        1.062
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.0620000504422933,
+        "std_m": 0.007806668251843693,
+        "range_m": 0.027000001282431185
+      }
+    },
+    "16": {
+      "name": "right_wrist",
+      "u_int": 245,
+      "v_int": 241,
+      "depth_px_m": 1.133,
+      "xyz_px_m": [
+        -0.147205,
+        -0.013098,
+        1.133
+      ],
+      "depth_med5_m": 1.133,
+      "xyz_med5_m": [
+        -0.147205,
+        -0.013098,
+        1.133
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.1330000538146123,
+        "std_m": 0.004252652081814518,
+        "range_m": 0.018000000854954123
+      }
+    },
+    "23": {
+      "name": "left_hip",
+      "u_int": 400,
+      "v_int": 316,
+      "depth_px_m": 1.238,
+      "xyz_px_m": [
+        0.154989,
+        0.13865,
+        1.238
+      ],
+      "depth_med5_m": 1.238,
+      "xyz_med5_m": [
+        0.154989,
+        0.13865,
+        1.238
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.2380000588018447,
+        "std_m": 0.004088004810188272,
+        "range_m": 0.01500000071246177
+      }
+    },
+    "24": {
+      "name": "right_hip",
+      "u_int": 302,
+      "v_int": 315,
+      "depth_px_m": 1.219,
+      "xyz_px_m": [
+        -0.044015,
+        0.134514,
+        1.219
+      ],
+      "depth_med5_m": 1.219,
+      "xyz_med5_m": [
+        -0.044015,
+        0.134514,
+        1.219
+      ],
+      "depth_win9": {
+        "valid_frac": 1.0,
+        "median_m": 1.2190000578993931,
+        "std_m": 0.002822979413208465,
+        "range_m": 0.012000000569969416
+      }
+    }
+  },
+  "model_landmarks_note": "u_int, v_int = int(x*width), int(y*height) as the frozen extractor; depth_px_m = aligned depth at that single pixel; xyz_px_m = rs2_deproject_pixel_to_point at (u_int, v_int) with depth_px_m; depth_med5_m and xyz_med5_m = the same with the 5x5 median of nonzero returns (the frozen extractor's --depth-window 5 default, the values the thesis pipeline uses); depth_win9 = valid_frac, median_m, std_m (population std) and range_m (max - min) of the nonzero aligned depth in the 9x9 window centred on (u_int, v_int) (journal/DECISIONS.md J-010)",
+  "scores": {
+    "vis_min8": 0.96697,
+    "vis_min_face": 0.997922,
+    "margin_ok": true,
+    "depth_ok": true,
+    "sharpness": 453.811,
+    "tpose": 0.619502,
+    "shoulder_px_width": 153.338,
+    "gated": true,
+    "tpose_ok": false,
+    "face_top_y": -0.000769,
+    "head_in": false,
+    "headin_ok": false,
+    "hip_minus_shoulder_depth_m": -0.087,
+    "depth_clean8": true,
+    "depth_std_max8": 0.007806668251843693,
+    "depth_valid_min8": 1.0
+  },
+  "selection": {
+    "default_run": {
+      "script": "journal/scripts/select_perfect_frame.py",
+      "model_file": "v1/mediapipe/models/pose_landmarker_heavy.task",
+      "mediapipe_version": "0.10.15",
+      "pyrealsense2_version": "2.55.1.6486",
+      "delegate": "CPU",
+      "num_poses": 1,
+      "min_pose_detection_confidence": 0.3,
+      "min_pose_presence_confidence": 0.3,
+      "min_tracking_confidence": 0.3,
+      "stride": 5,
+      "vis_gate": 0.9,
+      "margin_frac": 0.03,
+      "tpose_gate": 0.15,
+      "window": 25,
+      "refine_top": 3,
+      "ranking": "gated (vis_min8 >= vis_gate, margin_ok, depth_ok); vis_min8 desc, sharpness desc",
+      "bags_processed": 28,
+      "bags_failed": [],
+      "coarse_scored": 6192,
+      "coarse_gated": 720,
+      "fine_scored": 306,
+      "fine_gated": 208,
+      "refinement_centres": [
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235500.bag",
+          "frame_index": 1240
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235500.bag",
+          "frame_index": 1185
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235402.bag",
+          "frame_index": 670
+        },
+        {
+          "bag": "ENSC498_arms_outstretched_pose_test_arm_test.bag",
+          "frame_index": 35
+        },
+        {
+          "bag": "ENSC498_arms_outstretched_pose_test_arm_test.bag",
+          "frame_index": 170
+        },
+        {
+          "bag": "R5_occlusion_waypoint_loop_primary_20260825_222315.bag",
+          "frame_index": 205
+        }
+      ],
+      "hw_frame_number_mismatches": 0,
+      "run_time_s": 523.9,
+      "run_time_coarse_s": 404.8,
+      "run_time_fine_s": 118.7,
+      "run_date": "2026-10-07 10:59:39"
+    },
+    "depth_clean_stage": {
+      "script": "journal/scripts/select_perfect_frame.py --depth-clean",
+      "dc_window": 9,
+      "dc_valid_frac": 0.95,
+      "dc_std_max_m": 0.008,
+      "dc_refine_top": 5,
+      "ranking": "gated (J-005) and depth_clean8 (every landmark window: valid_frac >= dc_valid_frac and std_m <= dc_std_max_m); vis_min8 desc, sharpness desc; picks from fine and fine2 rows",
+      "gated_rows": 1206,
+      "depth_clean_rows": 291,
+      "fine_clean_rows": 119,
+      "fine2_centres": [
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 840
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 835
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 830
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 825
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 820
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 780
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235712.bag",
+          "frame_index": 905
+        },
+        {
+          "bag": "R7_rail_handover_earlier_take_20260908_235402.bag",
+          "frame_index": 610
+        },
+        {
+          "bag": "R5_waypoint_loop_earlier_take_20260825_222149.bag",
+          "frame_index": 265
+        },
+        {
+          "bag": "ENSC498_right_arm_landmark_test_right_arm_test.bag",
+          "frame_index": 105
+        }
+      ],
+      "fine2_rows": 315,
+      "fine2_determinism_checked": 0,
+      "fine2_determinism_mismatches": 0,
+      "hw_frame_number_mismatches": 0,
+      "run_time_s": 90.1,
+      "run_date": "2026-10-07 11:21:25"
+    }
+  },
+  "values_source": "journal/data/perfect_frame_candidates.csv or _fine2.csv row (6 decimals); intrinsics read from the bag"
+}

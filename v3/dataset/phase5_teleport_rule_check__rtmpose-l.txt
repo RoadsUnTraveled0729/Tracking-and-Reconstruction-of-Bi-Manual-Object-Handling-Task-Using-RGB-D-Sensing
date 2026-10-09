@@ -1,0 +1,47 @@
+V3 D-033 teleport rule check (bench/teleport_rule_check.py)
+variant rtmpose-l; D-003 manifest v3/output/pose_sweep/scenarios__rtmpose-l.json; D-033 manifest v3/configs/scenarios_20260224__rtmpose-l__oracle_union.json (derived 2026-09-25 10:44:15, twist_min_bend_deg 30)
+S2: smoother none, warm_start True, step_cap_source manifest; overrides []
+D-033 note: D-033: 1.5 x p99.9 of ORACLE per-frame steps (bench/oracle.py zero-phase angles) over the base CSV (warmup 60 excluded) UNION the clean windows of clean_windows.json for variant rtmpose-l (1628 steps); twist steps only where the oracle twist_ok is true AND the elbow bend is >= 30 deg on both frames (r_twist 1347, l_twist 835 steps); the same mask gates the teleport count
+
+1. Teleport budgets (deg per frame)
+     angle    D-003    D-033   ratio
+    root_x    0.565    1.769    3.13
+    root_y    1.019    3.994    3.92
+    root_z    0.473    0.772    1.63
+ r_swing_y    1.575    9.706    6.16
+ r_swing_z    0.878    5.113    5.82
+   r_twist    1.680    4.791    2.85
+ r_elbow_y    1.032    6.486    6.28
+ r_elbow_z    0.000    0.000     n/a
+ l_swing_y    2.813    9.231    3.28
+ l_swing_z    1.129    2.041    1.81
+   l_twist    4.129    4.041    0.98
+ l_elbow_y    2.404    4.694    1.95
+ l_elbow_z    0.000    0.000     n/a
+
+2. S2 step caps (deg per frame; 0.8 x smallest non-degenerate budget of the track's angles, D-021 rule / D-032)
+   track   fixed  D-003m  D-033m
+    root   0.450   0.378   0.618
+ r_swing   1.000   0.702   4.090
+ r_twist   1.900   1.344   3.833
+ r_elbow   1.100   0.826   5.189
+ l_swing   1.000   0.903   1.633
+ l_twist   1.900   3.303   3.233
+ l_elbow   1.100   1.923   3.756
+
+3. Injection check: +1.5 x budget, one step (step function) on the first frame after the pose_loss window whose group is MEASURED; graded on the D-033 manifest with its twist mask
+  un-injected S2: teleports 0, worst step 3.23 deg -> PASS (expected PASS)
+  inject r_swing_z +7.669 deg (budget 5.113) at frame 720: natural step 0.082, injected step 7.586 deg; teleports 1 -> FAIL (expected FAIL)
+  inject r_elbow_y +9.729 deg (budget 6.486) at frame 720: natural step 0.096, injected step 9.824 deg; teleports 1 -> FAIL (expected FAIL)
+  injection check: OK (3/3 as expected)
+
+4. Cap activity on the clean windows (fraction of window frames whose output step was bound by the track cap; S2 as configured)
+   track  fixed caps  D-033 caps
+    root       0.499       0.325
+ r_swing       0.255       0.038
+ r_twist       0.306       0.148
+ r_elbow       0.258       0.010
+ l_swing       0.253       0.099
+ l_twist       0.322       0.211
+ l_elbow       0.116       0.019
+  frames: 795 over 4 windows

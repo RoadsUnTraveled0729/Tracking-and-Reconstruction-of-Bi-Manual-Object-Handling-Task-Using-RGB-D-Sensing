@@ -1,0 +1,90 @@
+[
+  {
+    "number": "(6.1)",
+    "math_tokens": "  Unity P  =  S     World P MappedMarker Unity R  =  S   Object World R   S S  =  1 0 0 0 0 1 0 1 0"
+  },
+  {
+    "number": "(6.2)",
+    "math_tokens": "  Unity P  =  Camera' Unity R     Camera' q  +    Unity P CameraORG ,         Camera' Unity R  =  S   Camera World R   F -1 ,   Unity P 1  =  Camera' Unity T     Camera' q 1 ,         Camera' Unity T  =  Camera' Unity R   Unity P CameraORG 0 1"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera World R"
+  },
+  {
+    "number": "",
+    "math_tokens": "  World P CameraORG"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera World T"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera' Unity T"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera World T"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera' Unity R"
+  },
+  {
+    "number": "(6.3)",
+    "math_tokens": "Camera' Unity R  =  S   Camera World R   F -1  =  S   Camera World R   S   S   F -1  =  S   Camera World R   S   S   F -1 , MappedCamera Unity R  =  S   Camera World R   S ,         Camera' MappedCamera R  =  S   F -1 , S   F -1  =  1 0 0 0 0 1 0 1 0   1 0 0 0 \u22121 0 0 0 1  =  1 0 0 0 0 1 0 \u22121 0  =  R x -90 deg"
+  },
+  {
+    "number": "(6.4)",
+    "math_tokens": "L14 Camera' R  =  L24 Camera' R   L14 L24 R , L16 Camera' R  =  L24 Camera' R   L14 L24 R   L16 L14 R"
+  },
+  {
+    "number": "(6.5)",
+    "math_tokens": "Bone Scene R  =  Camera' Scene R   Segment Camera' R   Bone Segment R"
+  },
+  {
+    "number": "",
+    "math_tokens": "G"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera' Scene R  =  G   Camera' Unity R"
+  },
+  {
+    "number": "",
+    "math_tokens": "G"
+  },
+  {
+    "number": "",
+    "math_tokens": "t f"
+  },
+  {
+    "number": "(6.6)",
+    "math_tokens": "Unity Scene T  =  G t f 0 1 ,         t f  =  0 d 0   Scene P  =  G   S     World P  +  t f"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera World R  =  1.00 \u22120.02 \u22120.01 0.00 \u22120.48 0.88 \u22120.02 \u22120.88 \u22120.48   World P CameraORG  = (\u22120.01, \u22120.39, 0.43) m"
+  },
+  {
+    "number": "",
+    "math_tokens": "Camera' Unity R  =  S   Camera World R   F -1  =  1.00 0.02 \u22120.01 \u22120.02 0.88 \u22120.48 0.00 0.48 0.88   Unity P CameraORG  =  S     World P CameraORG  = (\u22120.01, 0.43, \u22120.39) m"
+  },
+  {
+    "number": "",
+    "math_tokens": "  Camera' q  = (0.03, \u22120.18, 0.99) m   Unity P  =  Camera' Unity R     Camera' q  +    Unity P CameraORG  = (0.00, \u22120.21, 0.39) m"
+  },
+  {
+    "number": "",
+    "math_tokens": "G  =  1.00 0.02 0.01 \u22120.02 0.85 0.53 0.01 \u22120.53 0.85 G     Unity P  = (0.00, 0.03, 0.44) m   Scene P 1  =  Unity Scene T     Unity P 1   Scene P  =  G     Unity P  +  t f  = (0.00, 0.75, 0.44) m"
+  },
+  {
+    "number": "",
+    "math_tokens": "World Camera R  =  Camera World R T  =  1.00 0.00 \u22120.02 \u22120.02 \u22120.48 \u22120.88 \u22120.01 0.88 \u22120.48   Camera P WorldORG  = (0.02, 0.19, 0.55) m"
+  },
+  {
+    "number": "",
+    "math_tokens": "  World P  =  S     Unity P  =  S  (\u22120.23, \u22120.19, 0.43) = (\u22120.23, 0.43, \u22120.19) m   Camera P  =  World Camera R     World P  +    Camera P WorldORG  = (\u22120.21, 0.15, 1.02) m"
+  }
+]

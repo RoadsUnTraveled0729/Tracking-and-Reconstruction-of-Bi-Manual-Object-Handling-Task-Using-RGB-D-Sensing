@@ -1,0 +1,117 @@
+{
+  "source_revision": "d2544cdee3496248d28598e8e16fe8fd05bde17d",
+  "inputs": [
+    {
+      "path": "v2/output/v2_person_dump_r6b_full.csv",
+      "bytes": 314301,
+      "sha256": "4b0e93d28a60d1fdbf14447b562383faf5a9e4230bb23e0b380e66e70abe7324"
+    },
+    {
+      "path": "v2/output/v2_object_dump_r6b_full.csv",
+      "bytes": 144752,
+      "sha256": "f56617c546dc38b5285c0c3369925b377af1254c7f82eae50a11a012fe038a14"
+    },
+    {
+      "path": "v2/output/v2_integrate_dump_r6b_full.csv",
+      "bytes": 263117,
+      "sha256": "65518136cb368855ba33090aac548d3988dd3db0f370d71180c634ba082ea939"
+    },
+    {
+      "path": "v1/mediapipe/output/recording_20260831_065553_landmarks_filtered.csv",
+      "bytes": 288445,
+      "sha256": "7c52c0725b78cf5a1a532b3ef2377c9e3a778f6beef6c1b3ca60a6c3c051652c"
+    },
+    {
+      "path": "eval/output/recording_20260831_065553_scaled_object_world_filtered_clean.csv",
+      "bytes": 170105,
+      "sha256": "a96561ddc789b14be74a2acdf768b44c8d6faeeef8134f033d25fc69adbf7d4a"
+    },
+    {
+      "path": "eval/output/scene_calibration_r6bc.json",
+      "bytes": 5270,
+      "sha256": "b889d84be75fed40b6add38f0b247fc34f362392a5e705949c69587ae235f5c6"
+    },
+    {
+      "path": "eval/reports/recording_20260831_065553_inspection.json",
+      "bytes": 14580,
+      "sha256": "a547138e98828c2aae2f93537d513ccadf0ca9e40c22f7904edc98ac7015da72"
+    },
+    {
+      "path": "eval/reports/recording_20260831_065553_offset_fit.json",
+      "bytes": 815,
+      "sha256": "3dfc6b7570c79b78882642912713ca7fe38126c3c065f874301bfd1b694d49cb"
+    },
+    {
+      "path": "eval/output/recovery_r6b/failure_mask.csv",
+      "bytes": 35577,
+      "sha256": "b8fe75b4a40cb67e799a0c14794651f0fe91a566aedd8dd0694cabd16a53b659"
+    },
+    {
+      "path": "eval/output/recovery_r6b/grip_episodes.json",
+      "bytes": 396,
+      "sha256": "3027c20cb3a2ad29090c328b037a6f891604655de66442fb20080589a375742c"
+    },
+    {
+      "path": "eval/output/recovery_r6b/angles_recovery.csv",
+      "bytes": 142229,
+      "sha256": "8f617768b38db2ecac55b135303f8bd8f0273615a8732079e68868f5047e1d74"
+    },
+    {
+      "path": "v2/dataset/r6b_probe_validation.txt",
+      "bytes": 955,
+      "sha256": "a616bab16cf486821f012d1108b5d21033f4d393d243d3c2db855985285b2479"
+    },
+    {
+      "path": "v2/dataset/r6b_probe_baseline.txt",
+      "bytes": 4115,
+      "sha256": "a1bc42153105c4ec50eac70f35059c7079c05325cba94e36bc48d72821b31182"
+    },
+    {
+      "path": "eval/failure/recovery_core.py",
+      "bytes": 10330,
+      "sha256": "65a40d73d0f1bdee58de2adb532d58c952c6bd709dca28bceeeda3526196c574"
+    },
+    {
+      "path": "eval/failure/run_recovery.py",
+      "bytes": 4197,
+      "sha256": "0c0902a9c6db82cb8fead33be9c05dcb5039172c36eb810799d584c31396d810"
+    },
+    {
+      "path": "eval/failure/grip_state.py",
+      "bytes": 6446,
+      "sha256": "78cd645cd5f54d45c527978914bf977f08bfcde92efab302e2ca570ca7d0a454"
+    },
+    {
+      "path": "eval/offset/fit_offset.py",
+      "bytes": 8280,
+      "sha256": "4daef5a80aeb6020c2feed835532ff8fa13e13b09962afa3067523616725589c"
+    },
+    {
+      "path": "eval/offset/carry.py",
+      "bytes": 8564,
+      "sha256": "716ce318a6ab762c21447cc2722feb15d98d2f968882707a8f8420b038c9a33c"
+    },
+    {
+      "path": "eval/common/paths.py",
+      "bytes": 4819,
+      "sha256": "0134ee41a9a3e97db4c47a07bba677d49dd10d7e5399b13fe0be66a9dd7704dd"
+    },
+    {
+      "path": "v1/kinematics/occlusion.py",
+      "bytes": 5318,
+      "sha256": "25de2f141ac4fc5a04195f4196990a14391bf2e93d88f98eb3a98686a163cd28"
+    },
+    {
+      "path": "v1/kinematics/root_frame.py",
+      "bytes": 2564,
+      "sha256": "8cd5782ab0e95701ab2c02aee5b7b1960e33c49987a49181bb114ad06e5d0875"
+    },
+    {
+      "path": "v1/kinematics/shoulder.py",
+      "bytes": 6600,
+      "sha256": "39160c319430a9fd22af03ca77b835552a86f55f044241147d4739f280a4db69"
+    }
+  ],
+  "current_grip_regeneration_byte_equal": true,
+  "current_reference_regeneration_byte_equal": true
+}

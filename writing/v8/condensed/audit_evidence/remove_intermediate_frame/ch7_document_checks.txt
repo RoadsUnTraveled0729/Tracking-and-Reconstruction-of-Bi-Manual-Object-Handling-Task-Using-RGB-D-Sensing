@@ -1,0 +1,2 @@
+PASS: Figures 7.1 to 7.6 are unique and in order; six embedded images.
+PASS: Section 7.3.4 follows 7.3.3 and precedes 7.4.

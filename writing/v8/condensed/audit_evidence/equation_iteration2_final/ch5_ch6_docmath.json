@@ -1,0 +1,31 @@
+{
+  "assembled_sha256": "d99335e683b9cf2cebcfdf424be495a9b1d9f9a52a4fbd30c6815036c4996b14",
+  "chapters": {
+    "5": {
+      "part_sha256": "d9f1ebe946f7b6ecaf7b2fb67e104a1d76bd1d771565e3dd0478756612d95199",
+      "part_math_count": 118,
+      "assembled_math_count": 118,
+      "chapter_heading_candidates": [
+        113,
+        623
+      ],
+      "selected_body_heading": 623,
+      "same_ordered_math": true,
+      "differences": []
+    },
+    "6": {
+      "part_sha256": "ac26fdb988f7fa806b144da03499b8d50fd44df9c02671726d2c7fcc50e91788",
+      "part_math_count": 22,
+      "assembled_math_count": 22,
+      "chapter_heading_candidates": [
+        120,
+        736
+      ],
+      "selected_body_heading": 736,
+      "same_ordered_math": true,
+      "differences": []
+    }
+  },
+  "scope": "Ordered mathematical text and structure; run-font properties excluded.",
+  "status": "PASS"
+}

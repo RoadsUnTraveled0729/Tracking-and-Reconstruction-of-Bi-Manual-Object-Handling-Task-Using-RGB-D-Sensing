@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "slide": 12,
+  "kind": "chain_growth",
+  "purpose": "Slide 12 \"Linked landmarks and constraints\": the landmark chain of the T-pose figure lights up layer by layer from the root L24 (author request 2026-10-06, D-387).",
+  "asset": "presentation/defense_2026/media/p12_chain_growth.mp4",
+  "poster": "presentation/defense_2026/media/p12_chain_growth_poster.png",
+  "poster_is": "last frame (complete chain)",
+  "duration_s": 8.0,
+  "frames": 240,
+  "fps": 30,
+  "dimensions": [
+    1440,
+    1200
+  ],
+  "sha256": {
+    "mp4": "c3c72c7c25199f1271c0f533575a5113b8e605c4e82332038680b005c5419650",
+    "png": "30f28ff9b2b206e164be00057698cfac0a262e8230ffe64457989b0661f67d65"
+  },
+  "bytes": {
+    "mp4": 388853,
+    "png": 1770468
+  },
+  "inputs": {
+    "presentation/defense_2026/figures/coordinate_frames/overlay/spec_landmark_frames.json": "542748a2f7955b38f8e90256c0b20a33a116d39cc2aaa65b09a0cba2d60890b6",
+    "presentation/defense_2026/figures/coordinate_frames/overlay/tpose_landmarks_mediapipe.json": "4a626cb49c276e7c69d798fc650bc0ecf40e52585253c0759ba729b12c1b6c59",
+    "presentation/defense_2026/figures/coordinate_frames/tpose_source.jpg": "54e5137fc203f73bdedf63e44c0365d0df454c818c1941e639cca9be339391b4",
+    "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_landmark_frames.png": "e44cdf1fa8c350352334258b8e0fd5190247ecc42df9f7e8782aeaf438b88265",
+    "presentation/defense_2026/make_frame_overlay_figures.py": "ddd42c9f03653d9985dae4dfa49ea531dfe57c8198cabff609db201448e2a4d1"
+  },
+  "layers": [
+    {
+      "name": "layer one",
+      "colour": "#FF4040",
+      "landmarks": [
+        24
+      ]
+    },
+    {
+      "name": "layer two",
+      "colour": "#40E070",
+      "landmarks": [
+        23,
+        12,
+        11
+      ]
+    },
+    {
+      "name": "layer three",
+      "colour": "#408CFF",
+      "landmarks": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "layer four",
+      "colour": "#E8B35A",
+      "landmarks": [
+        15,
+        16
+      ]
+    }
+  ],
+  "layer_order_note": "Author order 2026-10-06: L24 -> L23, L12, L11 -> L13, L14 -> L15, L16. The thesis groups L23 with L24 in level one; the deck follows the author here.",
+  "growth_steps": [
+    {
+      "name": "layer two a",
+      "bones_parent_to_child": [
+        [
+          24,
+          23
+        ],
+        [
+          24,
+          12
+        ]
+      ]
+    },
+    {
+      "name": "layer two b",
+      "bones_parent_to_child": [
+        [
+          12,
+          11
+        ],
+        [
+          23,
+          11
+        ]
+      ]
+    },
+    {
+      "name": "layer three",
+      "bones_parent_to_child": [
+        [
+          12,
+          14
+        ],
+        [
+          11,
+          13
+        ]
+      ]
+    },
+    {
+      "name": "layer four",
+      "bones_parent_to_child": [
+        [
+          14,
+          16
+        ],
+        [
+          13,
+          15
+        ]
+      ]
+    }
+  ],
+  "timeline_frames": [
+    {
+      "kind": "hold",
+      "what": "start",
+      "frames": 30,
+      "seconds": 1.0
+    },
+    {
+      "kind": "grow",
+      "what": "layer two a",
+      "frames": 15,
+      "seconds": 0.5
+    },
+    {
+      "kind": "grow",
+      "what": "layer two b",
+      "frames": 15,
+      "seconds": 0.5
+    },
+    {
+      "kind": "hold",
+      "what": "after layer two",
+      "frames": 45,
+      "seconds": 1.5
+    },
+    {
+      "kind": "grow",
+      "what": "layer three",
+      "frames": 15,
+      "seconds": 0.5
+    },
+    {
+      "kind": "hold",
+      "what": "after layer three",
+      "frames": 45,
+      "seconds": 1.5
+    },
+    {
+      "kind": "grow",
+      "what": "layer four",
+      "frames": 15,
+      "seconds": 0.5
+    },
+    {
+      "kind": "hold",
+      "what": "final",
+      "frames": 60,
+      "seconds": 2.0
+    }
+  ],
+  "timeline_last_frame_index": {
+    "hold start": 29,
+    "grow layer two a": 44,
+    "grow layer two b": 59,
+    "hold after layer two": 104,
+    "grow layer three": 119,
+    "hold after layer three": 164,
+    "grow layer four": 179,
+    "hold final": 239
+  },
+  "timing_decision": "Growth 0.5 s per step (brief). Holds are a judgement call (master decision 2026-10-06, D-387): first hold 1.0 s, 1.5 s after layers two and three, final hold 2.0 s; the briefed 0.6 s / 0.4 s holds gave 5.4 s against the author target of about 8 s.",
+  "colour_rules": {
+    "unlit_dots_and_bones": "#656565 (anim/unified_panels.py GREY_EDGE)",
+    "lit_bone": "colour of the layer of its child end",
+    "growth": "linear, parent to child, partial segment drawn on top",
+    "dot": "changes to its layer colour on the frame its bones arrive",
+    "labels": "white throughout (spec colour)",
+    "legend": "white until every landmark the line names is lit, then the layer colour; root L24 red from the first frame"
+  },
+  "geometry_check": {
+    "reference": "presentation/defense_2026/figures/coordinate_frames/overlay/overlay_landmark_frames.png",
+    "reference_sha256": "e44cdf1fa8c350352334258b8e0fd5190247ecc42df9f7e8782aeaf438b88265",
+    "original_colour_reproduction": "pixel-identical",
+    "final_frame_pixels_differing_from_reference": 28046,
+    "differing_pixels_outside_drawn_mask": 0
+  },
+  "drawing_reused_from": {
+    "generator": "presentation/defense_2026/make_frame_overlay_figures.py",
+    "fade": 0.5,
+    "label_px": 57,
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "resample": "cv2.INTER_AREA"
+  },
+  "decode_check": {
+    "codec_name": "h264",
+    "width": 1440,
+    "height": 1200,
+    "pix_fmt": "yuv420p",
+    "r_frame_rate": "30/1",
+    "duration": "8.000000",
+    "nb_read_frames": "240"
+  },
+  "encoding": {
+    "command": [
+      "ffmpeg",
+      "-y",
+      "-v",
+      "error",
+      "-f",
+      "rawvideo",
+      "-pix_fmt",
+      "rgb24",
+      "-s",
+      "1440x1200",
+      "-r",
+      "30",
+      "-i",
+      "-",
+      "-an",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "19",
+      "-threads",
+      "2",
+      "-pix_fmt",
+      "yuv420p",
+      "-movflags",
+      "+faststart",
+      "<asset>"
+    ],
+    "source": "anim/bank_axes_kinematics.py build() ffmpeg call"
+  },
+  "generator": "presentation/defense_2026/anim/chain_growth.py",
+  "generator_sha256": "08d13d41e453f2cafdcedc565c750e2d6d5740de1181484251373f1c23b5d749",
+  "command": "/home/luo/anaconda3/bin/python -B presentation/defense_2026/anim/chain_growth.py",
+  "interpreter": "/home/luo/anaconda3/bin/python",
+  "python": "3.11.9",
+  "playback_in_powerpoint": "not verified (author check)"
+}

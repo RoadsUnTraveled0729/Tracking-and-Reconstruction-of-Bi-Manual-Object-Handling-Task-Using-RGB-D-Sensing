@@ -1,0 +1,171 @@
+{
+  "decision": "D-080",
+  "selection_purpose": "Qualitative task illustrations only; existing experimental samples, frames, masks, statistics and interpretations are unchanged.",
+  "frame_pairing": "Recorded RGB frame indices are paired with saved Unity PNG filenames. EvalFrameDump names sensor-view PNGs from ArucoSceneReceiver.lastFrame after the receiver update. This is a frame-index pairing, not a new timing or anatomical-accuracy validation.",
+  "composition": "Three rows by two columns per recording. Recorded video on the left; saved calibrated Unity sensor view on the right. Complete 640 by 480 source images; no crop, warp, geometric shift, recolouring or new overlay inside the images.",
+  "capture_limits": "Saved captures retain their actual rig and display discrepancies. The handover sensor-capture report retains 7 PASS and 1 FAIL; the failed existing hypothesis concerns concentration of left-hand disagreement on torso-failure frames, not orphan PNG identifiers. No new rendering, experiment or capture validation is claimed.",
+  "shared_evidence": [
+    {
+      "path": "Unity/Assets/Scripts/EvalFrameDump.cs",
+      "sha256": "384ce84155cf7e19514aba83ba8baf1213f90c1586a0d0c0e3ebdaabfef2f186"
+    }
+  ],
+  "recordings": {
+    "r6b": {
+      "recording_stem": "recording_20260831_065553",
+      "figure": "ch7_visual_examples_r6b.png",
+      "figure_number": "7.5",
+      "capture_context": "Saved 2026-09-07 sensor-view capture of recovery_r6b, as documented by the existing make_ch7_unity_pairs.py. These images are qualitative examples; no identity with the later trajectory-table capture is asserted.",
+      "evidence": [
+        {
+          "path": "writing/v8/condensed/scripts/make_ch7_unity_pairs.py",
+          "sha256": "02b8737ebdb79e4fd4cdfc810702d193a4157965638d80145443b39a1d9b4d2b"
+        },
+        {
+          "path": "writing/v8/condensed/scripts/make_ch7_frame_strip.py",
+          "sha256": "cb69b5d1cbb0cd7337b9b03a5c514405e5be4ab975d76aaf7b66e75d7602280a"
+        },
+        {
+          "path": "writing/v8/condensed/figures/ch7_frames_strip.json",
+          "sha256": "aaaff95e3577cbac01f3708d7427baac4fa7b3b8509cafaf741cf423d3741781"
+        }
+      ],
+      "rows": [
+        {
+          "frame": 95,
+          "phase": "Object acquisition",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r6b_frame00095.png",
+            "sha256": "d95c364f5185f5b642641a30da7ae46fd12aad0807c93b937238a275be754ac0"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/r6b_unity_f00095.png",
+            "sha256": "51fe0390e80a35c31278ee28ba1a55f6e0175cb3c83ba1239226613ea4364b42",
+            "original_path": "writing/v8/condensed/figures/src/r6b_unity_f00095.png",
+            "original_sha256": "51fe0390e80a35c31278ee28ba1a55f6e0175cb3c83ba1239226613ea4364b42"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame": 505,
+          "phase": "Lift",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r6b_frame00505.png",
+            "sha256": "517213d988a45942356efe22d7e402176300181f1a581b37d70e6e8b8bb51126"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/r6b_unity_f00505.png",
+            "sha256": "39e70ff7eafff2df3e4a9f6c596fd3b3a0e91457d67760eda23b6b2bf43dd920",
+            "original_path": "writing/v8/condensed/figures/src/r6b_unity_f00505.png",
+            "original_sha256": "39e70ff7eafff2df3e4a9f6c596fd3b3a0e91457d67760eda23b6b2bf43dd920"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame": 700,
+          "phase": "Slide",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r6b_frame00700.png",
+            "sha256": "7588e17b916e6f9ea80cff0d86ec737225a97b068aed418a69999f08f526cca6"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/r6b_unity_f00700.png",
+            "sha256": "c904028c97c8f24ca186b572427428c9652b0d986f55b80ef7a945c1216f48f8",
+            "original_path": "writing/v8/condensed/figures/src/r6b_unity_f00700.png",
+            "original_sha256": "c904028c97c8f24ca186b572427428c9652b0d986f55b80ef7a945c1216f48f8"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        }
+      ]
+    },
+    "r7": {
+      "recording_stem": "recording_20260909_000024",
+      "figure": "ch7_visual_examples_r7.png",
+      "figure_number": "7.6",
+      "capture_context": "Saved sensor-view capture documented by eval/reports/unity_check_r7/sensor_capture.txt, launched 2026-09-09 00:48:56 and finished 00:50:32, with a 0.517 m torso override. The later trajectory-table capture editor log starts 2026-09-09T07:52:16Z (00:52:16 local). No identity of these runs or of their complete rig configurations is asserted.",
+      "evidence": [
+        {
+          "path": "writing/v8/condensed/scripts/make_ch7_handover_frames.py",
+          "sha256": "d6cbd0310d08e1b27f0b7b0ccde09f9716a671ff7cf419f360f5d83b5b471dca"
+        },
+        {
+          "path": "eval/reports/unity_check_r7/sensor_capture.txt",
+          "sha256": "e2489effa51774388a86e1093f17e1368eab2e77cea8006d5f542902a5ba64e7"
+        },
+        {
+          "path": "eval/reports/unity_check_r7/check_unity_log.txt",
+          "sha256": "7d51e2b8339f69a48299ec52b03e53c71612abcdafdaa3932c1c4f81813a08b6"
+        },
+        {
+          "path": "writing/v8/condensed/figures/src/ch7_handover_trails/editor.log",
+          "sha256": "9959377c746cb5144fe320b4b07ed77dc1c3c42dc93ddf3b2b0f7a4d771dd015"
+        }
+      ],
+      "rows": [
+        {
+          "frame": 700,
+          "phase": "Right-hand slide",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r7_frame00700.png",
+            "sha256": "b11e56d2c3cec3c2b4a8ab9af729fa891ccca81f82c9451f6637464927c1cd71"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/ch7_visual_examples/r7_unity_f00700.png",
+            "sha256": "f91d60447179d44466c1a77e5bbdece1a5e58d69bf55edc170ded6ac98ab2d72",
+            "original_path": "eval/output/unity_check_r7/frames/f00700.png",
+            "original_sha256": "f91d60447179d44466c1a77e5bbdece1a5e58d69bf55edc170ded6ac98ab2d72"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame": 950,
+          "phase": "Transfer",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r7_frame00950.png",
+            "sha256": "e8b2fa2e2c72bee20511b2fd406c5332871707b397bf771d5eea5f7cb38e8a9f"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/ch7_visual_examples/r7_unity_f00950.png",
+            "sha256": "d4f46f476ca7cab707536f753ac1faf5c906cfde05542e7ce201e8110aaec972",
+            "original_path": "eval/output/unity_check_r7/frames/f00950.png",
+            "original_sha256": "d4f46f476ca7cab707536f753ac1faf5c906cfde05542e7ce201e8110aaec972"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        },
+        {
+          "frame": 1042,
+          "phase": "Left-hand slide",
+          "recorded_video": {
+            "path": "writing/v8/condensed/figures/src/r7_frame01042.png",
+            "sha256": "843912c5c73203e5855c09739616d22ddb8191d1e9a66c3a1787fb41b716fdef"
+          },
+          "unity": {
+            "path": "writing/v8/condensed/figures/src/ch7_visual_examples/r7_unity_f01042.png",
+            "sha256": "769075f9267f99df386092a31f4f4874356a720a6480a3a779bbc56b8c1beb7e",
+            "original_path": "eval/output/unity_check_r7/frames/f01042.png",
+            "original_sha256": "769075f9267f99df386092a31f4f4874356a720a6480a3a779bbc56b8c1beb7e"
+          },
+          "size_pixels": [
+            640,
+            480
+          ]
+        }
+      ]
+    }
+  }
+}

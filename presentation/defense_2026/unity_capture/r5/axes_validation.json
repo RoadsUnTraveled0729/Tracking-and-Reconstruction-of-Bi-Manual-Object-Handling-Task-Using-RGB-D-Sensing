@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Composed model bases match independent calibrated axis-angle products",
+      "passed": true,
+      "max_component_error": 1.1279102085648418e-06,
+      "tolerance": 1e-05
+    },
+    {
+      "name": "Origins match actual rendered joints, with pelvis named separately from L24",
+      "passed": true,
+      "max_component_error_m": 5.500000000990823e-07,
+      "tolerance_m": 2e-06
+    },
+    {
+      "name": "Logged source timestamps equal streamed frame timestamps",
+      "passed": true,
+      "max_error_s": 5.999999999062311e-06,
+      "tolerance_s": 2e-05
+    },
+    {
+      "name": "Captured camera bases are orthonormal",
+      "passed": true,
+      "max_component_error": 7.952349729833941e-07
+    },
+    {
+      "name": "All five model frames are present for each recorded source frame",
+      "passed": true
+    },
+    {
+      "name": "No measured wrist orientation is invented",
+      "passed": true
+    }
+  ],
+  "distinct_source_frames": 2098,
+  "sources": {
+    "axes_matrices.csv": "8021337727e9de6a1c7c01311c647d5cc26421146efbae8ccd71f76f51b7aced",
+    "integrated_stream.csv": "f68bbffc5a2593ba4555e283e18a4aa691fd1cd685198ec118603a864c0076e4",
+    "unity_person_log.csv": "95953bde8e34ca863dd2cbbf7b586d6e0f9836496a771f861d418890203e7b4e"
+  },
+  "interpretation": "Fresh explanatory rig replay. Model bases precede bone rest offsets. These checks establish application consistency, not anatomical accuracy."
+}

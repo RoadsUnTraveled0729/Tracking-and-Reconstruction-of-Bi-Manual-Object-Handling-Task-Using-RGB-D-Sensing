@@ -1,0 +1,17 @@
+sizing         /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/eval/reports/r5_rig_sizing.json
+rig dimensions /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/unity_capture/r5/rig_dimensions.csv
+sizing note    /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/unity_capture/r5/rig_sizing_used.txt
+[PASS] upper_arm_R measured on the scaled rig equals the sizing json within 1 mm - rig 0.2560 m vs sizing 0.2560 m (diff +0.00 mm)
+[PASS] upper_arm_L measured on the scaled rig equals the sizing json within 1 mm - rig 0.2620 m vs sizing 0.2620 m (diff +0.00 mm)
+[PASS] forearm_R measured on the scaled rig equals the sizing json within 1 mm - rig 0.2520 m vs sizing 0.2520 m (diff +0.00 mm)
+[PASS] forearm_L measured on the scaled rig equals the sizing json within 1 mm - rig 0.2470 m vs sizing 0.2470 m (diff +0.00 mm)
+[PASS] torso_hip_to_midshoulder measured on the scaled rig equals the sizing json within 1 mm - rig 0.4828 m vs sizing 0.4828 m (diff +0.00 mm)
+[PASS] rig_sizing_used.txt names the sizing file as its source - source=/tmp/defense_axes_capture/r5_rig_sizing
+[PASS] rig_sizing_used.txt carries the stem of the sizing json - note stem=recording_20260825_222315 vs json recording_20260825_222315
+[PASS] requested_upper_arm_R equals the sizing json - note 0.2560 vs json 0.256
+[PASS] requested_upper_arm_L equals the sizing json - note 0.2620 vs json 0.262
+[PASS] requested_forearm_R equals the sizing json - note 0.2520 vs json 0.252
+[PASS] requested_forearm_L equals the sizing json - note 0.2470 vs json 0.247
+[PASS] requested_torso equals the sizing json - note 0.4828 vs json 0.4828
+
+=== 12 passed, 0 failed ===

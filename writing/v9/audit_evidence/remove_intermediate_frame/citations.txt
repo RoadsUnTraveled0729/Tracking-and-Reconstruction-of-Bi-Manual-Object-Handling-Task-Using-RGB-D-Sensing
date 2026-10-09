@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "citation_occurrences": 132,
+  "cited_entries": 57,
+  "source_entries": 58,
+  "removed_uncited_source_numbers": [
+    50
+  ],
+  "source_paragraphs_verified": 1793,
+  "checks": [
+    "every source paragraph preserves text except citation numbers",
+    "every final citation resolves to the exact source reference text",
+    "global first-appearance order includes appendices",
+    "final bibliography is contiguous and contains no uncited entries"
+  ]
+}
+saved /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/audit_evidence/final_completion/citation_mapping.json

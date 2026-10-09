@@ -1,0 +1,50 @@
+{
+ "stem": "recording_20260831_065553",
+ "calib": "eval/output/scene_calibration_r6bc.json",
+ "frames": 900,
+ "carried_frames": 681,
+ "carry_segments": [
+  [
+   207,
+   785
+  ],
+  [
+   787,
+   888
+  ]
+ ],
+ "hold_radius_m": 0.25,
+ "neither_hand_measurable_frames": 99,
+ "per_hand": {
+  "left": null,
+  "right": {
+   "held_frames": 582,
+   "mu_cm": [
+    -1.5,
+    -1.8,
+    6.7
+   ],
+   "std_cm": [
+    3.4,
+    3.2,
+    1.5
+   ],
+   "resid_median_cm": 4.1,
+   "resid_p95_cm": 8.4,
+   "wrist_to_center_median_cm": 8.3,
+   "wrist_to_center_p95_cm": 12.5
+  }
+ },
+ "segment_lengths_m": {
+  "shoulder_width": 0.377,
+  "upper_arm_R": 0.317,
+  "upper_arm_L": 0.31,
+  "forearm_R": 0.205,
+  "forearm_L": 0.257,
+  "torso_hip_to_midshoulder": 0.599
+ },
+ "pinned_r1_forearm_m": {
+  "forearm_R": 0.185,
+  "forearm_L": 0.232
+ }
+}

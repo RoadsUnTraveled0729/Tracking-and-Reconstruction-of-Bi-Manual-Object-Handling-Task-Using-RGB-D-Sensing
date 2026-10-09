@@ -1,0 +1,20 @@
+{
+  "scope": "Numerical consistency of an illustrative diagram, not an experiment",
+  "circle_upper_arm_max_error": 5.551115123125783e-17,
+  "circle_forearm_max_error": 5.551115123125783e-17,
+  "selected_upper_arm_error": 0.0,
+  "selected_forearm_error": 2.7755575615628914e-17,
+  "prior_projection_error": 0.0,
+  "projection_basis_orthogonality": 3.93276761243634e-17,
+  "selected_distance_minus_sampled_nearest_distance": -4.9107493163561694e-05,
+  "width": 960,
+  "height": 720,
+  "duration_seconds": 11.0,
+  "diagram_labels": [
+    "Shoulder",
+    "Wrist",
+    "Elbow"
+  ],
+  "layout_check": "PASS: sampled text bounds",
+  "source_sha256": "c4fc810fd2e4915e07846acfa86fb96676cbbfd65e5d9e836aa4ef1abfe3c122"
+}

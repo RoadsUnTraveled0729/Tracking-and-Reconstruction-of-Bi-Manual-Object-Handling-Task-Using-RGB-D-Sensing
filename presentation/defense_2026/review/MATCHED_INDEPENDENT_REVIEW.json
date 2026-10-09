@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "Independent matched-media source, algebra, projection, history and map review; no detector/solver rerun or new experiment",
+  "reviewed_at_utc": "2026-09-22T08:13:57.682444+00:00",
+  "manifest_sha256": "758b2c733c1cfb2a92d083056c1f9bff15fa08a794afe2a8b57719f4b409190b",
+  "generator_sha256": "fed66c6696fb8e72c5ffc93821c2b66696cd7b5ae9d0a592fa33dbf95b77efc3",
+  "generation_report_sha256": "1f691e4d0141610327da7ba786e7b06ffed4065bca0bd520b43af6e50fa448f6",
+  "review_script_sha256": "17d57b4a5bda5ba3392feefe6f81f637bfa630ff4e4ad93287ec9ebd5b1bff93",
+  "source_files_hash_checked": [
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.csv",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_raw.meta.json",
+    "v1/mediapipe/output/recording_20260909_000024_landmarks_filtered.csv",
+    "v1/mediapipe/output/recording_20260831_065553_landmarks_raw.csv",
+    "v1/mediapipe/output/recording_20260831_065553_landmarks_raw.meta.json",
+    "eval/output/recording_20260909_000024_scaled_object_world_filtered_clean.csv",
+    "eval/output/scene_calibration_r7c.json",
+    "eval/output/recovery_r7/failure_mask.csv",
+    "eval/output/recovery_r7/grip_episodes.json",
+    "eval/failure/grip_state.py",
+    "eval/failure/recovery_core.py",
+    "eval/offset/carry.py",
+    "eval/offset/fit_offset.py",
+    "v2/output/v2_person_dump_r6b_full.csv",
+    "v2/output/v2_object_dump_r6b_full.csv",
+    "v2/output/v2_integrate_dump_r6b_full.csv",
+    "v2/common/shm_ring.py",
+    "writing/v9/Thesis_V9.pdf"
+  ],
+  "records_checked": 141,
+  "all_right_shoulders_and_elbows_accepted": true,
+  "wrist_depth_loss_frames": [
+    705,
+    706,
+    707
+  ],
+  "offset_freeze_exact": true,
+  "maximum_absolute_residuals": {
+    "object_transform": 5.551115123125783e-17,
+    "target_identity": 1.1102230246251565e-16,
+    "local_observation": 1.1102230246251565e-16,
+    "target_camera_prime": 2.220446049250313e-16,
+    "target_projection_px": 1.1368683772161603e-13,
+    "marker_projection_px": 1.7053025658242404e-13,
+    "input_projection_px": 0.0,
+    "offset_update": 0.0,
+    "circle_segment_lengths": 4.3021142204224816e-16,
+    "shoulder_source": 0.0
+  },
+  "camera_distortion_coefficients": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "two_sphere_trials_per_frame": 137,
+  "near_extension_fraction_range": [
+    0.9265249683749555,
+    0.9915549510545105
+  ],
+  "frames_above_98_percent": 20,
+  "constraints_only_not_runtime_recovery": true,
+  "source_capture_and_render_tick_distinguished": true,
+  "assets": [
+    {
+      "asset": "matched_grasp",
+      "frames": 462,
+      "mapping": "PASS",
+      "sha256": "de663d68e1a1c519e3802924ea9c517c53ac8474165e68a286fc1f42e8ed544e"
+    },
+    {
+      "asset": "matched_frame_journey",
+      "frames": 1320,
+      "mapping": "PASS",
+      "sha256": "e5d0b97e0b378410ae6933764a16d5ab231763d84d6619ba1bb6cc2b83f9f0c0"
+    },
+    {
+      "asset": "matched_elbow_constraints",
+      "frames": 462,
+      "mapping": "PASS",
+      "sha256": "850d4d7de30c1c1b49a107cc99c497840c10f4bca203d0b5190c7aa4e616ccd2"
+    }
+  ],
+  "limits": [
+    "Original bag extraction audit is relied upon; every selected cached RGB file was hash-checked here.",
+    "The recorded elbow is measured; ideal circles are endpoint constraints before runtime guards, not observed missing-elbow recovery.",
+    "Slide24 uses separately labelled illustrative geometry; its selected elbow is not a recovered R7 measurement.",
+    "All playback pauses and process stages are editorial, not measured latency."
+  ]
+}

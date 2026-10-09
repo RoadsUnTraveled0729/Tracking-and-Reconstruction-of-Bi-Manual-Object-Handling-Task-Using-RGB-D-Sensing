@@ -1,0 +1,17 @@
+manifest: /home/luo/Desktop/bimanual-tracking/v3/configs/scenarios_20260224__rtmpose-l__oracle_union.json (derived 2026-09-25 10:44:15, commit 2b718aa44, variant rtmpose-l)
+base csv: v3/output/extraction_recording_20260224_083945__rtmpose-l.csv
+s2: smoother quat_one_euro, warm_start True, step caps manifest; bones.project False; overrides ['strategy.s2_quat_prediction.smoother="quat_one_euro"']
+teleport twist gate: oracle_twist_ok (r_twist steps counted 837, l_twist 615 of 837)
+
+=== strategy: s2_quat_prediction ===
+    scenario   e_occ   e_max   reacq  recov tele   wstep  fmeas estcov
+ wrist_short    0.13    0.24    0.14      0    0    2.71  0.000   0.00
+  wrist_long    0.97    1.74    0.58      0    0    2.71  0.000   0.68
+  elbow_long    1.80    2.48    2.36      0    0    2.71  0.000   0.68
+         hip    0.64    0.88    0.36      0    0    2.71  0.000   1.00
+   pose_loss    2.48    4.52    3.94      3    0    3.23  0.000   1.00
+    root_ref    0.87    1.80    0.55      0    0    2.71  0.000   1.00
+
+hard gates (bench.json ranking.hard_gates):
+  latency_p99: budget check: total p99 12.59 ms vs 33.3 ms -> PASS (phase5_realtime__rtmpose-l__quat_one_euro.txt)
+  s2_quat_prediction: teleport_zero PASS (0/6 scenarios fail), honesty_false_measured PASS (0/6 fail)

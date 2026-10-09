@@ -1,0 +1,10 @@
+{
+  "manifest_sha256": "450ebcfcfbbb966c0640aefe962a412904fc1b48a514787c508789cc241b5524",
+  "crop": [
+    112,
+    78,
+    1200,
+    679
+  ],
+  "figure_sha256": "35bdb54381a38f3d7bd3708ac4cf653f91745e15e54b54c0c60f7dd43152fd19"
+}

@@ -1,0 +1,25 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790206411.365799 1311404 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1790206411.467354 1311452 gl_context.cc:357] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 575.57.08), renderer: NVIDIA GeForce RTX 3080/PCIe/SSE2
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1790206411.516688 1311467 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790206411.597714 1311477 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790206411.709422 1311462 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+/home/luo/anaconda3/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+[INFO] Model: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/models/pose_landmarker_heavy.task
+[INFO] Inference delegate: cpu
+[INFO] Bag opened: ENSC498_right_arm_landmark_test_right_arm_test.bag (640x480, color format format.bgr8)
+[>] 100 frames (100 with pose, 25.6 fps)
+[>] 200 frames (200 with pose, 25.6 fps)
+[>] 300 frames (300 with pose, 25.7 fps)
+[>] 400 frames (400 with pose, 25.6 fps)
+[>] 500 frames (500 with pose, 25.7 fps)
+[>] 600 frames (600 with pose, 25.7 fps)
+[>] 700 frames (700 with pose, 25.7 fps)
+[>] 800 frames (800 with pose, 25.8 fps)
+
+[+] Done: 899 frames, 899 with pose (39.9s)
+[+] Blocked landmark cells: 0 (low_vis 0, no_depth 0)
+[+] CSV:  /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p18/landmarks_raw.csv
+[+] Meta: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p18/landmarks_raw.meta.json

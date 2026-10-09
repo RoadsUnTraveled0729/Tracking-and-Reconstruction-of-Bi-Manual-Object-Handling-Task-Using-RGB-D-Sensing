@@ -1,0 +1,119 @@
+{
+ "stem": "recording_20260831_065553",
+ "step": 5,
+ "depth_scale": 0.0010000000474974513,
+ "intrinsics": {
+  "width": 640,
+  "height": 480,
+  "ppx": 323.93756103515625,
+  "ppy": 248.0174102783203,
+  "fx": 607.561279296875,
+  "fy": 607.0150756835938,
+  "model": "inverse_brown_conrady",
+  "coeffs": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "frames": {
+  "550": [
+   "right"
+  ],
+  "555": [
+   "right"
+  ],
+  "560": [
+   "right"
+  ],
+  "565": [
+   "right"
+  ],
+  "570": [
+   "right"
+  ],
+  "575": [
+   "right"
+  ],
+  "580": [
+   "right"
+  ],
+  "585": [
+   "right"
+  ],
+  "590": [
+   "right"
+  ],
+  "595": [
+   "right"
+  ],
+  "600": [
+   "right"
+  ],
+  "605": [
+   "right"
+  ],
+  "610": [
+   "right"
+  ],
+  "615": [
+   "right"
+  ],
+  "620": [
+   "right"
+  ],
+  "625": [
+   "right"
+  ],
+  "630": [
+   "right"
+  ],
+  "635": [
+   "right"
+  ],
+  "674": [
+   "right"
+  ],
+  "679": [
+   "right"
+  ],
+  "684": [
+   "right"
+  ],
+  "500": [
+   "right"
+  ],
+  "520": [
+   "right"
+  ],
+  "540": [
+   "right"
+  ],
+  "700": [
+   "right"
+  ],
+  "720": [
+   "right"
+  ]
+ },
+ "clean_frames": {
+  "500": [
+   "right"
+  ],
+  "520": [
+   "right"
+  ],
+  "540": [
+   "right"
+  ],
+  "700": [
+   "right"
+  ],
+  "720": [
+   "right"
+  ]
+ },
+ "note": "clean_frames: frames outside the failure mask where the tracker is trusted, added 2026-09-06 as a check of the label reference (label vs MediaPipe wrist vs object estimate); same cuff-seam convention."
+}

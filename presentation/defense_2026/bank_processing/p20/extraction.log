@@ -1,0 +1,26 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1790206649.736456 1316296 gl_context_egl.cc:85] Successfully initialized EGL. Major : 1 Minor: 5
+I0000 00:00:1790206649.865480 1316376 gl_context.cc:357] GL version: 3.2 (OpenGL ES 3.2 NVIDIA 575.57.08), renderer: NVIDIA GeForce RTX 3080/PCIe/SSE2
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1790206649.920296 1316390 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790206649.995623 1316397 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790206650.155248 1316398 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+/home/luo/anaconda3/lib/python3.11/site-packages/google/protobuf/symbol_database.py:55: UserWarning: SymbolDatabase.GetPrototype() is deprecated. Please use message_factory.GetMessageClass() instead. SymbolDatabase.GetPrototype() will be removed soon.
+  warnings.warn('SymbolDatabase.GetPrototype() is deprecated. Please '
+[INFO] Model: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/v1/mediapipe/models/pose_landmarker_heavy.task
+[INFO] Inference delegate: cpu
+[INFO] Bag opened: ENSC498_right_shoulder_arms_out_test_right_shoulder.bag (640x480, color format format.bgr8)
+[>] 100 frames (94 with pose, 9.9 fps)
+[>] 200 frames (194 with pose, 9.9 fps)
+[>] 300 frames (294 with pose, 9.9 fps)
+[>] 400 frames (394 with pose, 10.0 fps)
+[>] 500 frames (494 with pose, 10.0 fps)
+[>] 600 frames (594 with pose, 10.1 fps)
+[>] 700 frames (694 with pose, 10.1 fps)
+[>] 800 frames (794 with pose, 10.1 fps)
+
+[+] Done: 899 frames, 893 with pose (94.1s)
+[+] Blocked landmark cells: 71 (low_vis 71, no_depth 0)
+[+] CSV:  /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_raw.csv
+[+] Meta: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p20/landmarks_raw.meta.json
+LOGGED 899 exact inference frames for p20

@@ -1,0 +1,136 @@
+== validate_aruco (R4, 21 checks) ==
+=== Pipeline B validation on recording_20260825_070152_aruco_raw.csv (1499 frames) ===
+
+--- 1. detection coverage ---
+[PASS] id2 (desk, world anchor) detected on every frame — 1499/1499
+[PASS] id1 (object) detected on >=95% of frames (hand may cover it while carried) — 1495/1499
+[info] id0 (wall) coverage 1447/1499 (52 dropouts — person crossing in front; wall is a cross-check only)
+[info] wall planar ambiguity: 48 frames gravity/continuity-resolved (near-degenerate lobes), 1399 clear, 0 unresolved
+[PASS] no unresolved ambiguous wall frames
+
+--- 2. reprojection error ---
+[PASS] id0 mean reprojection < 1 px — mean 0.259 px, max 0.311 px
+[PASS] id2 mean reprojection < 1 px — mean 0.350 px, max 0.385 px
+[PASS] id1 mean reprojection < 1 px — mean 0.196 px, max 0.735 px
+
+--- 3. camera-invariance (wall in desk frame, per frame) ---
+[info] 1447 frames | position dev mm: mean 5.82, p95 10.58, max 18.61
+[info]   along view ray (monocular scale noise): p95 9.73 mm | lateral: p95 5.65 mm
+[info] rotation dev deg: mean 0.614, p95 1.275, max 1.927
+[info] desk anchor over all frames: pos p95 1.34 mm, rot p95 0.245 deg (x 2.70 m lever = 11.5 mm at the wall)
+[PASS] desk anchor position static (p95 < 5 mm)
+[PASS] desk anchor orientation drift bounded (p95 < 1.5 deg)
+[PASS] wall lateral spread explained by desk drift x lever arm — lateral p95 5.7 mm < bound 19.3 mm
+[PASS] wall range scatter within monocular expectation (along-ray p95 < 35 mm)
+[PASS] wall stays put in the desk frame (rot p95 < 3 deg)
+[PASS] depth-gravity seed agrees with the wall lobe (< 11 deg) — 4.40 deg
+
+--- 4. depth cross-check (PnP tz vs depth-median z) ---
+[PASS] id0 PnP z vs depth z within 5% of range — bias -75.3 mm at 2.98 m range, std 14.3 mm
+[FAIL] id2 PnP z vs depth z within 5% of range — bias +80.2 mm at 0.64 m range, std 0.6 mm
+[FAIL] id1 PnP z vs depth z within 5% of range — bias +143.5 mm at 1.11 m range, std 17.6 mm
+
+--- 5. calibration & world math ---
+[PASS] chordal mean recovers known rotation from noisy samples — 0.0941 deg from truth (2 deg noise, 200 samples)
+[PASS] stored 'desk' pose: SO(3) + Unity Euler round-trip exact — round-trip 0.00e+00 deg
+[PASS] stored 'wall' pose: SO(3) + Unity Euler round-trip exact — round-trip 1.30e-13 deg
+[PASS] stored 'camera' pose: SO(3) + Unity Euler round-trip exact — round-trip 9.19e-14 deg
+[PASS] world->Unity conjugation stays SO(3)
+[PASS] object_world CSV reproduces exactly from raw + calibration — pos 9.31e-17 m, rot 5.33e-15 deg, euler 1.78e-07 deg
+
+=== 19 passed, 2 failed ===
+
+== validate_real_recording (R4 filtered landmarks) ==
+recording_20260825_070152_landmarks_filtered.csv: per-joint availability over 1499 frames (blocked landmarks cost only their own joints):
+  root           live 1449/1499 (96.7%), held 50
+  R swing        live 1430/1499 (95.4%), held 69
+  R twist+elbow  live 1426/1499 (95.1%), held 73
+  L swing        live 1094/1499 (73.0%), held 405
+  L twist+elbow  live 818/1499 (54.6%), held 681
+frames with ALL landmarks (used for the exact-inverse checks below): 790/1499
+
+1. Root-frame invariants (worst frame):
+  [PASS] max |det(R) - 1|: 6.661e-16
+  [PASS] max |R^T R - I|: 6.661e-16
+  [PASS] max Euler round-trip: 5.690e-16
+
+2. Solve reconstructs measured directions (worst frame, deg):
+  [PASS] R upper-arm reconstruction angle: 8.568e-14
+  [PASS] R forearm reconstruction angle: 2.308e-14
+  [PASS] L upper-arm reconstruction angle: 2.298e-13
+  [PASS] L forearm reconstruction angle: 2.321e-14
+
+3. Plausibility:
+  [PASS] elbow ey in [-180, 0] on all frames (range -90.7 .. -13.1)
+  twist unobservable (near-straight elbow) on 0/790 frames; |ey| on those frames max 0.00 deg
+  [PASS] LEFT elbow ey in [-180, 0] on all frames (range -47.3 .. -6.7)
+  root mean [-6.5 91.2 -1.7], std [  3.7 143.8   2.7], max frame-to-frame jump [14.4 33.7  5.8] deg
+  R shoulder mean [  7.8 -73.2  59.1], std [35.5  6.5 36.7], max frame-to-frame jump [ 64.8  14.1 162. ] deg
+  R elbow mean [-35.1   0. ], std [18.1  0. ], max frame-to-frame jump [42.6  0. ] deg
+  L shoulder mean [ 13.7 -74.4  69.2], std [42.2  5.7 68.1], max frame-to-frame jump [110.6  12.2 127.2] deg
+  L elbow mean [-16.6  -0. ], std [7. 0.], max frame-to-frame jump [12.2  0. ] deg
+
+ALL PASS
+
+== validate_v2 (unchanged, R1-referenced: spurious failures pre-declared) ==
+[PASS] person dump covers the recording -- 1499 frames, strictly increasing
+[PASS] object dump covers the recording -- 1499 frames
+
+  causal-vs-offline angle difference (deg, after warm-up):
+    root xyz    median   5.32  p95  28.87  max   75.39
+    R shoulder  median  40.92  p95 104.18  max  149.61
+    R elbow     median   8.25  p95  51.03  max   61.99
+    L shoulder  median  36.83  p95 144.06  max  177.77
+    L elbow     median   0.02  p95  47.58  max   54.46
+[FAIL] causal person angles track the offline solve -- worst joint-group median 40.92 deg (<5), p95 144.06 deg (<20)
+[FAIL] causal lag is a few frames -- cross-correlation peak at -14 frames (-466 ms, r=-0.604)
+[FAIL] person joints live after warm-up -- 47.1% of frames all-13-joints live
+[FAIL] pelvis matches offline -- median 105.2 mm, p95 261.1 mm
+[FAIL] object live coverage close to offline detections -- rt live 826 vs offline detected 877
+[FAIL] object position matches offline filter -- median 553.5 mm, p95 741.3 mm
+[PASS] person per-frame compute fits the 30 fps budget -- p99 23.8 ms (budget 33.3)
+[PASS] object per-frame compute fits the 30 fps budget -- p99 17.7 ms (budget 33.3)
+
+[PASS] steady output cadence -- tick interval p50 33.22 ms, p99 35.30 ms (nominal 33.33)
+[PASS] render time never regresses -- 1528 ticks, tau monotonic
+[PASS] declared delay honoured -- future-bracket lead over tau: p50 15.0 ms, p95 28.7 ms (declared 67 ms)
+[PASS] person states partition the ticks -- measured 111  interp 1387  held 30  blend 0  of 1528
+[PASS] object states partition the ticks -- measured 98  interp 1258  held 138  blend 34  of 1528
+[PASS] person interpolation lies between its brackets -- 1387 interp ticks recomputed, worst angle error 3.29e-03 deg
+[PASS] object interpolation lies between its brackets -- 1258 interp ticks recomputed, worst pos error 6.46e-07 m, worst rot error 2.38e-04 deg
+
+  object live=0 runs in the dump: [(328, 328, 1), (335, 336, 2), (362, 362, 1), (380, 380, 1), (392, 393, 2), (399, 401, 3), (422, 424, 3), (437, 437, 1), (479, 480, 2), (482, 482, 1), (485, 487, 3), (509, 511, 3), (521, 521, 1), (523, 523, 1), (525, 526, 2), (528, 528, 1), (532, 533, 2), (535, 535, 1), (537, 538, 2), (543, 543, 1), (550, 552, 3), (562, 564, 3), (573, 573, 1), (576, 576, 1), (578, 578, 1), (580, 580, 1), (583, 583, 1), (585, 588, 4), (593, 593, 1), (598, 598, 1), (601, 601, 1), (605, 605, 1), (609, 609, 1), (612, 612, 1), (626, 627, 2), (638, 638, 1), (773, 773, 1), (779, 780, 2), (786, 786, 1), (803, 804, 2), (806, 806, 1), (808, 810, 3), (818, 818, 1), (825, 825, 1), (829, 830, 2), (897, 897, 1), (915, 917, 3), (947, 949, 3), (967, 967, 1), (983, 983, 1), (986, 986, 1), (989, 991, 3), (998, 999, 2), (1003, 1005, 3), (1110, 1110, 1), (1214, 1216, 3), (1223, 1225, 3), (1235, 1237, 3), (1253, 1255, 3), (1284, 1286, 3), (1298, 1298, 1), (1300, 1300, 1), (1304, 1304, 1), (1307, 1307, 1), (1311, 1311, 1)]
+[PASS] short object dropouts are bridged and flagged
+[PASS] long object occlusions are held with olive=0 -- 52 held ticks over long runs
+[PASS] reacquisition after long occlusions blends -- 34 object blend ticks
+[PASS] PSI2 shm region well-formed
+
+6 failure(s)
+
+== validate_v2_r4 (part 1 re-referenced to R4) ==
+[PASS] person dump covers the recording -- 1499 frames vs offline 1499, strictly increasing
+[PASS] object dump covers the recording -- 1499 frames vs offline 1499
+
+  causal-vs-offline angle difference (deg, after warm-up, both-live frames only):
+    root xyz    median   0.43  p95   2.53  max   59.06  (1374 frames)
+    R shoulder  median   1.35  p95  10.23  max  162.70  (1281 frames)
+    R elbow     median   0.00  p95   3.43  max   60.55  (1281 frames)
+    L shoulder  median   1.37  p95  22.34  max  111.32  (711 frames)
+    L elbow     median   0.00  p95   3.20  max   22.24  (711 frames)
+[FAIL] causal person angles track the offline solve -- worst joint-group median 1.37 deg (<5), p95 22.34 deg (<20)
+[PASS] causal lag is a few frames -- cross-correlation peak at 4 frames (133 ms, r=0.969)
+
+  per-group live fraction, causal vs offline (after warm-up):
+    root xyz    rt  95.5%  offline 100.0%
+    R shoulder  rt  89.0%  offline  99.1%
+    R elbow     rt  89.0%  offline  99.1%
+    L shoulder  rt  49.4%  offline  55.8%
+    L elbow     rt  49.4%  offline  55.8%
+[FAIL] causal liveness tracks offline availability per group (rt >= 90% of offline)
+[PASS] pelvis matches offline -- median 5.7 mm, p95 30.3 mm
+[FAIL] object live coverage close to offline detections -- rt live 1388 vs offline detected 1495
+[PASS] object position matches offline filter -- median 5.4 mm, p95 19.3 mm
+[PASS] person per-frame compute fits the 30 fps budget -- p99 23.8 ms (budget 33.3)
+[PASS] object per-frame compute fits the 30 fps budget -- p99 17.7 ms (budget 33.3)
+
+=== FAILED: 6/9 part-1 checks ===

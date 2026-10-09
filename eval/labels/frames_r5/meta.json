@@ -1,0 +1,302 @@
+{
+ "stem": "recording_20260825_222315",
+ "step": 5,
+ "depth_scale": 0.0010000000474974513,
+ "intrinsics": {
+  "width": 640,
+  "height": 480,
+  "ppx": 323.93756103515625,
+  "ppy": 248.0174102783203,
+  "fx": 607.561279296875,
+  "fy": 607.0150756835938,
+  "model": "inverse_brown_conrady",
+  "coeffs": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ]
+ },
+ "frames": {
+  "1427": [
+   "left"
+  ],
+  "1432": [
+   "left"
+  ],
+  "1437": [
+   "left"
+  ],
+  "1442": [
+   "left"
+  ],
+  "1447": [
+   "left"
+  ],
+  "1452": [
+   "left"
+  ],
+  "1457": [
+   "left"
+  ],
+  "1462": [
+   "left"
+  ],
+  "1467": [
+   "left"
+  ],
+  "1472": [
+   "left"
+  ],
+  "1477": [
+   "left"
+  ],
+  "1482": [
+   "left"
+  ],
+  "1487": [
+   "left"
+  ],
+  "1492": [
+   "left"
+  ],
+  "1497": [
+   "left"
+  ],
+  "1502": [
+   "left"
+  ],
+  "1507": [
+   "left"
+  ],
+  "1512": [
+   "left"
+  ],
+  "1517": [
+   "left"
+  ],
+  "1522": [
+   "left"
+  ],
+  "1527": [
+   "left"
+  ],
+  "1532": [
+   "left"
+  ],
+  "1537": [
+   "left"
+  ],
+  "1542": [
+   "left"
+  ],
+  "1547": [
+   "left"
+  ],
+  "1552": [
+   "left"
+  ],
+  "1557": [
+   "left"
+  ],
+  "1562": [
+   "left"
+  ],
+  "1567": [
+   "left"
+  ],
+  "1572": [
+   "left"
+  ],
+  "1577": [
+   "left"
+  ],
+  "1582": [
+   "left"
+  ],
+  "1587": [
+   "left"
+  ],
+  "1592": [
+   "left"
+  ],
+  "1597": [
+   "left"
+  ],
+  "1602": [
+   "left"
+  ],
+  "1607": [
+   "left"
+  ],
+  "1612": [
+   "left"
+  ],
+  "1617": [
+   "left"
+  ],
+  "1622": [
+   "left"
+  ],
+  "1627": [
+   "left"
+  ],
+  "1632": [
+   "left"
+  ],
+  "1637": [
+   "left"
+  ],
+  "1642": [
+   "left"
+  ],
+  "1647": [
+   "left"
+  ],
+  "1652": [
+   "left"
+  ],
+  "1657": [
+   "left"
+  ],
+  "1662": [
+   "left"
+  ],
+  "1667": [
+   "left"
+  ],
+  "1775": [
+   "right"
+  ],
+  "1777": [
+   "left"
+  ],
+  "1780": [
+   "right"
+  ],
+  "1782": [
+   "left"
+  ],
+  "1785": [
+   "right"
+  ],
+  "1787": [
+   "left"
+  ],
+  "1790": [
+   "right"
+  ],
+  "1792": [
+   "left"
+  ],
+  "1795": [
+   "right"
+  ],
+  "1797": [
+   "left"
+  ],
+  "1800": [
+   "right"
+  ],
+  "1805": [
+   "right"
+  ],
+  "1810": [
+   "right"
+  ],
+  "1815": [
+   "right"
+  ],
+  "1820": [
+   "right"
+  ],
+  "1825": [
+   "right"
+  ],
+  "1830": [
+   "right"
+  ],
+  "1835": [
+   "right"
+  ],
+  "1840": [
+   "right"
+  ],
+  "1845": [
+   "right"
+  ],
+  "1850": [
+   "right"
+  ],
+  "1855": [
+   "right"
+  ],
+  "1860": [
+   "right"
+  ],
+  "1865": [
+   "right"
+  ],
+  "1870": [
+   "right"
+  ],
+  "1875": [
+   "right"
+  ],
+  "1880": [
+   "right"
+  ],
+  "1885": [
+   "right"
+  ],
+  "1890": [
+   "right"
+  ],
+  "1380": [
+   "left"
+  ],
+  "1400": [
+   "left"
+  ],
+  "1420": [
+   "left"
+  ],
+  "1740": [
+   "right"
+  ],
+  "1760": [
+   "right"
+  ],
+  "1900": [
+   "right"
+  ],
+  "1920": [
+   "right"
+  ]
+ },
+ "clean_frames": {
+  "1380": [
+   "left"
+  ],
+  "1400": [
+   "left"
+  ],
+  "1420": [
+   "left"
+  ],
+  "1740": [
+   "right"
+  ],
+  "1760": [
+   "right"
+  ],
+  "1900": [
+   "right"
+  ],
+  "1920": [
+   "right"
+  ]
+ },
+ "note": "clean_frames: frames outside the failure mask where the tracker is trusted, added 2026-09-06 as a check of the label reference (label vs MediaPipe wrist vs object estimate); the label convention on this recording is the wrist jewellery (bead bracelet on the left wrist, watch on the right)."
+}

@@ -1,0 +1,86 @@
+Independent language review: self-reference removal, 2026-09-12
+
+Scope: every changed manuscript sentence in the 16 changed paragraph/caption
+definitions, compared with /tmp/thesis-self-reference/before/build_chN.py.
+Reviewed builder lines: ch2 134; ch4 227, 233; ch5 252;
+ch7 123, 139, 196, 200, 366, 458, 475; ch9 92, 140, 346;
+ch10 72, 81. Unchanged surrounding prose is outside this revision review.
+Rules: writing/WRITING_SKILL.md, .agent/CHAPTER_REVIEW.md,
+writing/GLOSSARY.md, skill_set/thesis-statement-style.md,
+skill_set/measurement-precision-reporting.md, and the user's specific request.
+
+RULE 1 Inflated claims: PASS
+RULE 2 Name-dropping: PASS
+RULE 3 Shallow analysis: PASS
+RULE 4 Sales language: PASS
+RULE 5 Vague sources: PASS
+RULE 6 Formulaic challenges: PASS
+RULE 7 Overused AI words: PASS
+RULE 8 Avoiding simple verbs: PASS
+RULE 9 Formulaic contrasts: PASS
+RULE 10 Forced groups of three: PASS
+RULE 11 Renaming and repeated openings: PASS
+RULE 12 False ranges: PASS
+RULE 13 Passive voice and missing subjects: PASS
+RULE 14 Dashes: PASS
+RULE 15 Excessive bold: PASS
+RULE 16 Lists with mini-headings: PASS
+RULE 17 Heading case: PASS (project house-style exception)
+RULE 18 Emojis: PASS
+RULE 19 Curly quotation marks: PASS
+RULE 20 Chatbot text: PASS
+RULE 21 Knowledge disclaimers and guesses: PASS
+RULE 22 Overly agreeable tone: PASS
+RULE 23 Filler: PASS
+RULE 24 Excessive qualifiers: PASS
+RULE 25 Generic endings: PASS
+RULE 26 Excessive hyphenation: PASS
+RULE 27 Deeper-truth claims: PASS
+RULE 28 Announcing the next point: PASS
+RULE 29 Repeated headings: PASS
+RULE 30 Previous-version narrative: PASS
+RULE 31 Dramatic fragments: PASS
+RULE 32 Formulaic sayings: PASS
+RULE 33 Fake-candid openings: PASS
+RULE 34 Unsupported objections: PASS
+RULE 35 Fake alternatives: PASS
+RULE P1 Question-style titles: PASS
+RULE P2 Number-led sentences: PASS
+RULE P3 Data-credibility meta-claims: PASS
+RULE V1 Technical vocabulary: PASS
+RULE V2 Non-technical vocabulary: PASS
+RULE V3 Invented compounds: PASS
+RULE V4 Unnecessary nominalization: PASS
+RULE V5 Academic padding: PASS
+RULE V6 Sentence clarity: PASS
+RULE V7 Measurement precision: PASS for this edit (all existing values retained;
+no new measurement or precision introduced, as the user requires).
+
+RULE U1 Objective procedure/data descriptions: PASS
+RULE U2 No mechanical I/we replacement: PASS
+RULE U3 Single-annotator attribution stated once: PASS
+RULE U4 Manual-label methodology preserved: PASS
+RULE U5 Copyright and unrelated authored wording preserved: PASS
+RULE U6 Numerical values and labels preserved: PASS
+
+Notes: Objective passive constructions describe collection, measurement,
+annotation, exclusion and validation directly, consistent with the user's
+examples. The isolated word "additionally" is not a violation under the
+writing skill's false-positive guidance. The annotation rewrite retains
+single-click selection, aligned-depth deprojection, complete-occlusion
+exclusion, and checking every retained point against the adjacent cube depth.
+No new factual interpretation or terminology was introduced.
+
+Rendered assembled document checked:
+writing/v8/Thesis_V8_Condensed.docx
+The only "the author" occurrence is the protected copyright sentence.
+The phrase "the rig as authored" remains. "Single annotator" occurs once.
+
+Automated check command:
+/home/luo/anaconda3/bin/python writing/v8/condensed/scripts/check_style.py Chapter_2_Experimental_Setup Chapter_4_Object_Tracking Chapter_5_Pose_Recovery Chapter_7_Evaluation Chapter_9_Discussion Chapter_10_Conclusions_Future_Work
+Result: exit 0; zero hits in each of the six affected chapters.
+
+TERMS NOT IN GLOSSARY: none
+WORDS ABOVE C1: none
+VERDICT: PASS
+VIOLATIONS: 0
