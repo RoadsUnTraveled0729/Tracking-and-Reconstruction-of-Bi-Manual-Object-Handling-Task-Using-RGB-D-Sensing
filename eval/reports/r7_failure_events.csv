@@ -1,5 +1,0 @@
-start_frame,stop_frame,duration_s,frames,entity,detectors,phase
-651,758,3.603,108,torso,d3;d4;d5_torso,manipulation
-809,965,5.237,157,torso,d3;d4;d5_torso,manipulation
-994,1054,2.035,61,torso,d3;d5_torso,manipulation
-1156,1218,2.101,63,arm_L,d2_L;d5_L,retreat

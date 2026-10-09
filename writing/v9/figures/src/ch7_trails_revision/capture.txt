@@ -1,4 +1,0 @@
-Editor capture lines of the accepted run (editor.log is not committed), launched 2026-09-14 18:05:38
-[Chapter7TrailView] captured carry at 500
-[Chapter7TrailView] captured lift at 528
-[Chapter7TrailView] captured slide at 899

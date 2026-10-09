@@ -1,3 +1,0 @@
-[+] scene written once -> /dev/shm/aruco_scene (desk, wall, camera poses + gravity, tabletop drop -11 mm, cube 70 mm, sensor FOVy 43.1 deg)
-Replaying saved stream: /home/luo/Desktop/New_SandBox/eval/output/unity_check_r7/integrated_stream.csv
-Completed saved-stream pass

@@ -1,6 +1,0 @@
-# Runtime licensing/session/process logs are local-only.
-**/editor.log
-**/editor_stdout.log
-**/sender.log
-**/processes.json
-__pycache__/

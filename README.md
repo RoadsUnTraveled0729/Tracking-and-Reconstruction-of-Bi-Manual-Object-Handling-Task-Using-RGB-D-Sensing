@@ -1,82 +1,72 @@
 # Tracking and Reconstruction of Bi-Manual Object Handling Task Using RGB-D Sensing
 
-One depth camera watches a person handling an object with both hands, and
-this system rebuilds the person's arms and the object in a digital scene.
-It records whether each joint was measured, estimated, or unavailable.
-Body landmarks and depth feed a swing-twist arm model; ArUco markers locate
-the object; timestamped streams feed a Unity reconstruction.
+This undergraduate thesis reconstructs a person's upper-body motion and the object they handle from one depth camera. It places the person, object and surrounding surfaces together in a calibrated 3D scene, and uses the object's motion to help recover wrists hidden from view.
 
-## System
+The Python implementation combines Intel RealSense D435 RGB-D sensing, MediaPipe Pose landmarks, OpenCV ArUco marker tracking, swing-twist arm kinematics and object-assisted two-link inverse kinematics. Unity displays the reconstructed body and object in their shared coordinate frame.
 
-![Person and object reconstruction](release/system.svg)
-
-## Versions
-
-| Version | Purpose | Status | Documentation |
-| --- | --- | --- | --- |
-| v1 | Thesis pipeline and reference implementation | Frozen | [V1.md](v1/V1.md) |
-| v2 | Shared frame broker and causal live merger | Active code; development paused; camera bring-up unverified | [README](v2/README.md) |
-| v3 | Isolated detector and occlusion exploration | Exploratory; outside final thesis claims | [README](v3/README.md) |
-
-## Key results
-
-The results below are historical pinned measurements, not new release runs.
-
-- On R7, one subject carrying the marked cube on the rail, the marker origin
-  against the fitted rail line over 1,072 slide frames had median distance
-  0.26 cm and p95 1.65 cm. This is a rail-line consistency measurement, not
-  absolute 3D ground truth. [Report](eval/reports/r7_handover.md).
-- On the pinned 899-frame recording, causal reconstruction compared with
-  the offline reference at three frames lag had worst joint-group median
-  error 0.64 deg and p95 3.24 deg. These measure agreement with that
-  reference. [Pinned validation](v2/dataset/m3_validate_output.txt).
-- The final thesis and defence are provided as [thesis PDF](writing/v9/Thesis_V9.pdf)
-  and [DOCX](writing/v9/Thesis_V9.docx), [defence PPTX](presentation/defense_2026/Thesis_Defence_2026.pptx)
-  and [PDF](presentation/defense_2026/Thesis_Defence_2026.pdf).
-  [Speaker script](presentation/defense_2026/Thesis_Defence_2026_Speaker_Script.pdf),
-  [outline and QA guide](presentation/defense_2026/Thesis_Defence_2026_Outline_and_QA_Index.pdf),
-  and [committee questions](presentation/defense_2026/COMMITTEE_QUESTIONS.pdf)
-  support review. Their inclusion and exact hashes are recorded in the
-  [source manifest](release/source_manifest.jsonl).
-
-## What this is NOT
-
-This is a single-person, single-camera, rigid marked-object study. It does
-not track fingers. Recovery has holding-context and visibility limits;
-regrasping, free-arm occlusion and simultaneous marker loss remain limits.
-The public snapshot includes scientific source and pinned evidence, but
-excludes raw recordings, model weights and generated environments. Full
-reproduction needs the original data and workstation dependencies.
-[Reproduction limits](release/REPRODUCTION.md). The Unity character's
-redistribution rights have not been established by this release.
-[Credits and rights](release/THIRD_PARTY_NOTICES.md).
-
-## Repository map
-
-- `v1/`, `v2/`, `v3/`: reference pipeline, live transport and isolated exploration.
-- `Unity/`: Assets, Packages and ProjectSettings for the reconstruction.
-- `eval/`: calibration, labels, evaluation scripts, fixtures and pinned reports.
-- `writing/`: final V9 dependencies plus archived source and figure inputs.
-- `presentation/`: final defence, builders, media and measurement evidence.
-- `thesis/`, `journal/`: mathematical write-ups and journal derivations.
-- `knowledge/`, `research/`, `skill_set/`: scientific facts, literature and procedures.
-- `scripts/`: Unity MCP startup utility.
-- `.agent/`: scientific decisions and findings only.
-- `Video/`: documented recording placeholder; no recording is distributed.
-- `release/`: selection manifest, source accounting, verification and release notes.
-- `ASSUMPTIONS.md`: scientific preconditions and scope.
-
-## How to run it
-
-The reviewer check needs Python 3 and its standard library. No install or
-camera is needed. From this repository root:
-
-```bash
-python3 -B release/reviewer_smoke.py
+```text
+RealSense RGB-D -> synchronized frame broker
+                    |                   |
+              MediaPipe Pose       ArUco + IPPE pose
+                    |                   |
+              depth + kinematics <-- object pose + grasp offset
+                    |                   |
+                    +---- time-aligned merger ----+
+                                                  |
+                                      shared memory (PSI2)
+                                                  |
+                                        Unity reconstruction
 ```
 
-It verifies source accounting, copied SHA-256 hashes and embedded defence
-media, and prints the scope of the checks. For existing manuscript checks
-and full pipeline prerequisites, use [REPRODUCTION.md](release/REPRODUCTION.md).
-[Selection notes](release/SELECTION.md) explain omitted working material and
-historical documentation links.
+## Thesis and defence
+
+- [Final thesis PDF](Thesis_V9.pdf): methods, experiments, results and limitations.
+- [Final defence presentation](Thesis_Defence_2026.pptx): original PowerPoint, including embedded videos and backup slides.
+
+The thesis reports a median wrist discrepancy of 1.03 cm per arm against accepted depth-derived landmarks in the handover task (Section 7.3.2). This is consistency with the observed landmarks, rather than independent motion-capture accuracy. The synchronized implementation processed all 900 input frames at approximately 29 FPS in the recorded replay reported in Chapter 8. These conditions do not establish performance for every live scene.
+
+## Repository contents
+
+| Path | Contents |
+| --- | --- |
+| `Python/runtime/` | Synchronized capture, person and object pipelines, recovery, calibration and stream merger. |
+| `Python/core/` | Shared landmark, kinematics, ArUco, filtering and transport code used by the runtime. |
+| `Unity/` | Rig scene, receivers, required model and rendering assets, project settings and package dependencies. |
+| `Thesis_V9.pdf` | Final thesis. |
+| `Thesis_Defence_2026.pptx` | Final defence presentation. |
+
+The runtime is the synchronized implementation described in the thesis. Names such as `v2_person.py` and `IntegratedSceneReceiverV2` identify its existing stream implementation; their names and shared-memory protocol remain compatible.
+
+## Run
+
+Use Linux: the Python and Unity processes communicate through files in `/dev/shm`. The project targets Unity **6000.3.19f1**. Python dependencies are pinned in `Python/requirements.txt` to the versions available in the thesis environment; Python 3.11 is recommended for this package set.
+
+From the repository root:
+
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r Python/requirements.txt
+python Python/runtime/integration/run_v2.py --help
+```
+
+For a recorded session, supply a RealSense `.bag` file and its scene-calibration JSON:
+
+```bash
+python Python/runtime/integration/run_v2.py \
+  --source bag --bag /path/to/session.bag \
+  --calib /path/to/scene_calibration.json \
+  --object-recovery --plausibility-gate --display-lpf
+```
+
+For a connected D435, use `--source live` with a calibration JSON for the current camera and marker arrangement. `--calibrate` can generate a new calibration from visible wall, desk and object markers; see `Python/runtime/calibration/live_calibrate.py --help` for capture requirements. The first person-pipeline run downloads the MediaPipe heavy pose model if it is absent.
+
+Open `Unity/` in Unity Hub, open `Assets/Scenes/rig.unity`, and enter Play mode after the Python stream starts. The integrated receiver starts automatically when the scene and PSI2 shared-memory files exist. Stop Python with Ctrl+C. Runtime logs are generated locally and ignored by Git.
+
+Calibration must use the actual printed marker dimensions. Marker IDs and calibration defaults are in `Python/core/aruco/frames.py`; its original desk/object defaults are 50 mm. The thesis measurements used a corrected 45 mm scale. Set marker dimensions to match your own prints before generating calibration; do not apply an extra scale correction to a JSON that is already corrected.
+
+## Scope and limitations
+
+This repository contains the thesis implementation and final submission documents. Recordings, participant-specific calibration files, evaluation programs, writing sources and exploratory projects are not distributed here. Experiments and their conditions are documented in the thesis PDF.
+
+Object-assisted recovery assumes a valid tracked object pose and a previously observed grasp offset. Long occlusion, changing grasps and unreliable depth remain limitations. Displayed held or reconstructed joints are distinguished from directly observed joints; the system does not provide independent ground truth.

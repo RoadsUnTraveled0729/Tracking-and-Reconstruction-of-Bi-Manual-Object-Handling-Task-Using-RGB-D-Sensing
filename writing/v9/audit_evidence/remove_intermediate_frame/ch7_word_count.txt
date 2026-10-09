@@ -1,2 +1,0 @@
-Chapter_7_Evaluation.docx                     prose=  3568 captions=  444 headings=  52 tables=  100 eqs=  0
-TOTAL                                         prose=  3568 captions=  444 headings=  52 tables=  100 eqs=  0

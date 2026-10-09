@@ -1,2 +1,0 @@
-PASS: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/figures/ch7_valid_joints_r6b.png
-PASS: /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/figures/ch7_valid_joints_r7.png

@@ -1,4 +1,0 @@
-frames 897, person found 897 (100.0 pct), det ran 73 (8.1 pct)
-detector-stage latency ms (excl. first 60 warmup): p50 2.72 p95 8.37 p99 8.96 max 9.78
-warmup max 324.19 ms
-v1-landmark (COCO 5-12) mean score: median 0.757 p5 0.716

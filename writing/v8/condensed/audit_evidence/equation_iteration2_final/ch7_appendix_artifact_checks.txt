@@ -1,1 +1,0 @@
-PASS: all 18 math objects are unchanged; only the authorized Appendix H table cell differs.

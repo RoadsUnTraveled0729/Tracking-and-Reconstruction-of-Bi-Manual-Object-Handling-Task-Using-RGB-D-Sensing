@@ -1,8 +1,0 @@
-[info] 899 frames from bank_p18_landmarks_filtered.csv
-[solve] baseline done
-[solve] robust done
-[len] upper R 0.252 L 0.246  fore R 0.233 L 0.227 m
-[fk] right wrist FK-vs-measured: median 0.9 cm, p95 4.8 cm (899 frames)
-[fk] left wrist FK-vs-measured: median 0.3 cm, p95 0.6 cm (899 frames)
-[plot] /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p18/v1_overlay_check/v1_check_plots.png
-[video] /home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/presentation/defense_2026/bank_processing/p18/v1_overlay_check/v1_overlay_baseline.mp4 (899 frames)

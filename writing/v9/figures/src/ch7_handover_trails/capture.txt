@@ -1,4 +1,0 @@
-Editor capture lines of the accepted run (editor.log is not committed), launched 2026-09-14 18:06:44
-[Chapter7TrailView] captured right at 863
-[Chapter7TrailView] captured handover at 1022
-[Chapter7TrailView] captured left at 1498

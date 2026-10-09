@@ -1,4 +1,0 @@
-frames 898, person found 898, det runs 73 (8.1 pct), wall 5.3 s
-blocked landmark samples: no_depth 0, out_of_frame 0 of 7184 total
-csv:  /home/luo/Desktop/New_SandBox/v3/output/extraction_recording_20260224_083945.csv
-meta: /home/luo/Desktop/New_SandBox/v3/output/extraction_recording_20260224_083945.meta.json

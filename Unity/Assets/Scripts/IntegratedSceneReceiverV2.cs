@@ -4,11 +4,8 @@ using UnityEngine;
 
 /// v2 integration receiver: the Pipeline B scene (base class) plus the
 /// Pipeline A person, driven from the v2 merger's delay-buffer output.
-/// The v1 receiver (IntegratedSceneReceiver) is left untouched and stays
-/// dormant: it bootstraps only when /dev/shm/integrated_scene exists,
-/// which the v2 stack never creates.
 ///
-/// Shared memory (v2/integration/v2_integrate.py):
+/// Shared memory (Python/runtime/integration/v2_integrate.py):
 ///   /dev/shm/aruco_scene           PSB3, static scene, once (base class)
 ///   /dev/shm/integrated_scene_v2   PSI2, 112 B seqlock, per output tick:
 ///     u32 magic 'PSI2' | u32 seq | i32 tick | f32 tau
@@ -37,10 +34,8 @@ using UnityEngine;
 /// alone) is not marked; the honest record of it is the flags field
 /// itself.
 ///
-/// The person-driving mathematics is duplicated verbatim from
-/// IntegratedSceneReceiver (its members are private; editing v1 is
-/// forbidden by the freeze) -- see that file for the anchor/rest-pose
-/// derivation and its failure-mode notes.
+/// The calibrated anchor transforms the reconstructed person into the
+/// same desk-relative scene as the tracked object.
 public class IntegratedSceneReceiverV2 : ArucoSceneReceiver
 {
     const uint MagicIntegrated = 0x32495350; // 'PSI2'
@@ -58,7 +53,7 @@ public class IntegratedSceneReceiverV2 : ArucoSceneReceiver
     static readonly Color RecoveredCol = new Color(0.15f, 0.5f, 0.95f);
 
     public string integratedShmPath = "/dev/shm/integrated_scene_v2";
-    public string personLogPath = "/home/luo/Desktop/New_SandBox/v2/output/unity_person_log_v2.csv";
+    public string personLogPath = "Logs/unity_person_log_v2.csv";
     public float personHeightM = 1.70f;
 
     [Header("Person debug (read-only)")]
@@ -91,7 +86,7 @@ public class IntegratedSceneReceiverV2 : ArucoSceneReceiver
 
     void Awake()
     {
-        logPath = "/home/luo/Desktop/New_SandBox/v2/output/unity_object_log_v2.csv";
+        logPath = "Logs/unity_object_log_v2.csv";
     }
 
     protected override Vector3 WorldOffset() { return Vector3.zero; }
@@ -122,7 +117,6 @@ public class IntegratedSceneReceiverV2 : ArucoSceneReceiver
         // No other receiver may drive the same bones or cube.
         foreach (var b in FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))
             if (b != this && (b is ArmAngleReceiver
-                              || b is IntegratedSceneReceiver
                               || b.GetType().Name == "PoseStreamReceiver"
                               || b.GetType().Name == "RootAngleReceiver"))
                 b.enabled = false;

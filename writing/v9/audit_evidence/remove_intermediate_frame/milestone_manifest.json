@@ -1,8 +1,0 @@
-{
-  "stage": "D-082 frame removal, before resumed equation corrections",
-  "docx_sha256": "a0125df75ed4e0d525ba9bec202235031f358f891b17c6fffcebeaacec8f2bfe",
-  "pdf_sha256": "aabb3c466f4b1d3e5edb25c2a5984f3fa2dda660e7174d67e7403f9f49cb43df",
-  "pdf_info": "Author:          python-docx\nCreator:         Writer\nProducer:        LibreOffice 24.2\nCreationDate:    Sun Sep 13 05:24:33 2026 PDT\nCustom Metadata: no\nMetadata Stream: no\nTagged:          yes\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           189\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       9945845 bytes\nOptimized:       no\nPDF version:     1.7\n",
-  "pdf_forbidden_terms": 0,
-  "visual_review": "Direct raster inspection: initial physical pages 34,77,78,79,99,103,105,109,115,117. Final removal render rechecked physical34 (inventory row intact),81 (Figure5.3 with caption and least-squares displays),126/127 (paired video/Unity images and captions). Prior initially inspected pages retain mathematical content; final full delivery receives another independent render review. No omitted-image generator: affected current images all regenerated. Native Word upright rendering remains manual QA."
-}

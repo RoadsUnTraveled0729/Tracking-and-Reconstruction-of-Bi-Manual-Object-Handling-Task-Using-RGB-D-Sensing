@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/scripts/validate_ch7_trails_revision.py", line 98, in <module>
-    main()
-  File "/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/scripts/validate_ch7_trails_revision.py", line 92, in main
-    assert digest(ROOT / "figures" / image) in hashes, (path, image)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: (PosixPath('/home/luo/Desktop/Tracking-and-Reconstruction-of-Bi-Manual-Object-Handling-Task-Using-RGB-D-Sensing/writing/v8/condensed/Chapter_7_Evaluation.docx'), 'ch7_fig_rail_traj.png')

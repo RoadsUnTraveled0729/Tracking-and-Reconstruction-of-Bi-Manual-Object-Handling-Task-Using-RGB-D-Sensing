@@ -1,7 +1,0 @@
-run,transport,package_bytes,rate_hz,n,delivered,lost,median_ms,min_ms,max_ms,reader_poll,recv_buffer_bytes
-1,shm,1536204,30.0,1000,1000,0,0.0586,0.0556,0.1569,busy-wait,
-1,udp,1536204,30.0,1000,472,528,0.3115,0.2328,0.3618,blocking recv,212992
-1,tcp,1536204,30.0,1000,1000,0,0.2946,0.1765,0.6332,blocking recv,131072
-2,shm,1536204,30.0,1000,1000,0,0.0569,0.0549,0.1667,busy-wait,
-2,udp,1536204,30.0,1000,332,668,0.3130,0.2303,0.3742,blocking recv,212992
-2,tcp,1536204,30.0,1000,1000,0,0.2929,0.1931,0.5603,blocking recv,131072

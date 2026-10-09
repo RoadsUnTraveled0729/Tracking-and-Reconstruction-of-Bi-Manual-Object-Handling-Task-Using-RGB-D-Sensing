@@ -39,7 +39,7 @@ public class ArucoSceneReceiver : MonoBehaviour
 
     public string sceneShmPath = "/dev/shm/aruco_scene";
     public string objectShmPath = "/dev/shm/aruco_object";
-    public string logPath = "/home/luo/Desktop/New_SandBox/v1/aruco/output/unity_aruco_log.csv";
+    public string logPath = "Logs/unity_aruco_log.csv";
 
     [Header("Scene numbers (read from PSB3)")]
     public Vector3 gravityUpLocal;   // world-local Unity coords
@@ -79,7 +79,7 @@ public class ArucoSceneReceiver : MonoBehaviour
     {
         // The integrated receiver builds the same scene itself — never both.
         if (!File.Exists("/dev/shm/aruco_scene")) return;
-        if (File.Exists("/dev/shm/integrated_scene")) return;
+        if (File.Exists("/dev/shm/integrated_scene_v2")) return;
         if (FindFirstObjectByType<ArucoSceneReceiver>() != null) return;
         new GameObject("ArucoSceneReceiver").AddComponent<ArucoSceneReceiver>();
     }
@@ -126,7 +126,7 @@ public class ArucoSceneReceiver : MonoBehaviour
     // consistent with the log paths this scene already uses; a missing
     // file falls back to the plain plate.
     public static string markerTexDir =
-        "/home/luo/Desktop/New_SandBox/eval/output/markers";
+        "Assets/StreamingAssets/Markers";
 
     /// Thin plate marking a physical ArUco card (marker plane = local x/z,
     /// normal = local up). markerId >= 0 textures the plate with the real
